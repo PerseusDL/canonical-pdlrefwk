@@ -1,0 +1,1 @@
+Note: I have removed viaf66541464.001.perseus-eng2.xml as this file appeared older than perseus-eng1 and did not validate.
