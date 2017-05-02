@@ -1,6 +1,11 @@
 Canonical - PDLREFWK Literature
 =========
 
+[![DOI](https://zenodo.org/badge/56595003.svg)](https://zenodo.org/badge/latestdoi/56595003)
+[![Hook Coverage](http://ci.perseids.org/api/hook/v2.0/badges/PerseusDL/canonical-pdlrefwk/coverage.svg)](http://ci.perseids.org/repo/PerseusDL/canonical-pdlrefwk)
+[![Hook Texts](http://ci.perseids.org/api/hook/v2.0/badges/PerseusDL/canonical-pdlrefwk/texts.svg)](http://ci.perseids.org/repo/PerseusDL/canonical-pdlrefwk)
+[![Hook Metadata](http://ci.perseids.org/api/hook/v2.0/badges/PerseusDL/canonical-pdlrefwk/metadata.svg)](http://ci.perseids.org/repo/PerseusDL/canonical-pdlrefwk)
+
 This will be the base repo for all text and annotation data published in the PDL
 
 Tufts University holds the overall copyright to the Perseus Digital Library; the materials therein 
