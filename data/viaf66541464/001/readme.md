@@ -1,4 +1,3 @@
-Note: I have removed viaf66541464.001.perseus-eng2.xml as this file appeared older than perseus-eng1 and did not validate.
 
 This text may be freely distributed under a CC BY-SA 3.0 license, subject to the following restrictions: 
 
@@ -12,4 +11,8 @@ You leave this availability statement intact
 You offer Perseus any modifications you make.
 
 Please include file header information found in <fileDesc> or <sourceDesc> tags: particularly title, authors, publisher, ISBN, etc. whenever possible.
+    
+
+
+Note: removed viaf66541464.001.perseus-eng2.xml as this file appeared older than perseus-eng1 and did not validate.
 
