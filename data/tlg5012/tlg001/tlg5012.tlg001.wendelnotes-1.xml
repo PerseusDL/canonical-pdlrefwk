@@ -16,7 +16,7 @@
                 <publisher>Universitätsbibliothek Regensburg</publisher>
                 <idno type="filename">tlg5012.tlg001.wendelnotes-1.xml</idno>
                 <idno type="CTS-URN">urn:cts:greekLit:tlg5012.tlg001.wendelnotes-1</idno>
-                <date type="release" when="2026-XX-XX">Perseus 5.0</date>
+                <date type="release" when="2026-09-22">Perseus 5.0</date>
                 <availability>
                     <p>Public Domain</p>
                     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
