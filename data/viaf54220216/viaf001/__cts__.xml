@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    urn="urn:cts:greekLit:viaf54220216.viaf001" xml:lang="eng"
+    groupUrn="urn:cts:greekLit:viaf54220216">
+    <ti:title xml:lang="eng">Eumenides</ti:title>
+
+    <ti:commentary xml:lang="eng" workUrn="urn:cts:greekLit:viaf54220216.viaf001"
+        urn="urn:cts:greekLit:viaf54220216.viaf001.perseus-eng1">
+        <ti:label xml:lang="eng">Commentary on Aeschylus: Eumenides</ti:label>
+        <ti:about urn="urn:cts:greekLit:tlg0085.tlg007" />
+        <ti:description>Aeschylus. Eumenides. Sidgwick, Arthur, editor. Oxford: Clarendon Press, 1887.</ti:description>
+
+    </ti:commentary>
+
+    <ti:genre confidence="high">attic-tragedy</ti:genre>
+</ti:work>

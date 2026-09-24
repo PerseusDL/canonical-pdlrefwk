@@ -1,0 +1,11 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" 
+    groupUrn="urn:cts:germLit:viaf32364342"
+    urn="urn:cts:norseLit:viaf32364342.001" 
+    xml:lang="eng">
+    <ti:title xml:lang="eng">Zoega's Old Icelandic dictionary</ti:title>
+    <ti:commentary workUrn="urn:cts:viaf32364342.001"
+        urn="urn:cts:norseLit:viaf32364342.001" xml:lang="eng">
+        <ti:label xml:lang="eng">Zoega's Old Icelandic dictionary</ti:label>
+        <ti:description xml:lang="eng">Zoëga, Geir, T. A Concise Dictionary of Old Icelandic. Oxford: Clarendon Press, 1910.</ti:description>
+    </ti:commentary>
+</ti:work>

@@ -1,1 +1,4 @@
 build
+scripts
+.DS_Store
+.venv

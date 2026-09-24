@@ -1,0 +1,13 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:latinLit:viaf39744457"
+    urn="urn:cts:latinLit:viaf39744457.001"
+    xml:lang="eng">
+    <ti:title xml:lang="eng">Allen and Greenough's New Latin Grammar for Schools and Colleges</ti:title>
+    <ti:commentary workUrn="urn:cts:latinLit:viaf39744457.001"
+        urn="urn:cts:latinLit:viaf39744457.001.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Allen and Greenough's New Latin Grammar for Schools and Colleges</ti:label>
+        <ti:description xml:lang="eng">Allen and Greenough's New Latin Grammar for Schools and Colleges.
+            Greenough, James Bradstreet; Kittredge, George Lyman; Howard, A.A.; D'Ooge, Benjamin, L.; editors.
+            Boston, New York, Chicago, London: Ginn &amp; Company, 1903.</ti:description>
+    </ti:commentary>
+</ti:work>

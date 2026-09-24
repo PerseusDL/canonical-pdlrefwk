@@ -1,0 +1,8 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:viaf76387703" urn="urn:cts:greekLit:viaf76387703.viaf001" xml:lang="eng">
+    <ti:title xml:lang="eng">Commentary on Thucydides Book 2</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf76387703.viaf001" urn="urn:cts:greekLit:viaf76387703.viaf001.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Commentary on Thucydides Book 2</ti:label>
+        <ti:description xml:lang="eng">Thucydides, Book II. Marchant, Edgar C., editor. London: Macmillan and Company, 1891.</ti:description>
+        <ti:about urn="urn:cts:greekLit:tlg0003.tlg001" />
+    </ti:commentary>
+</ti:work>

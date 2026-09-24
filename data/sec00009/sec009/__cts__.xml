@@ -1,0 +1,14 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:latinLit:sec00009"
+    urn="urn:cts:latinLit:sec00009.sec009"
+    xml:lang="eng">
+    <ti:title xml:lang="eng">Commentary on Plea for Ligarius</ti:title>
+
+    <ti:commentary workUrn="urn:cts:latinLit:sec00009.sec009"
+        urn="urn:cts:latinLit:sec00009.sec009.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Commentary on Plea for Ligarius</ti:label>
+        <ti:description xml:lang="eng">Select Orations of Cicero (Allen and Greenough's Edition). Greenough, James Bradstreet; Kittredge, George Lyman, editors.
+            Boston, London: Ginn &amp; Company, 1897. </ti:description>
+        <ti:about urn="urn:cts:latinLit:phi0474.phi033" />
+    </ti:commentary>
+</ti:work>

@@ -1,0 +1,2449 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Introduction to Apollonius: Argonautica</title>
+				<author>George W. Mooney</author>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Bridget Almas</name>
+					<name>Lisa Cerrato</name>
+					<name>Rashmi Singhal</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:Tufts">Tufts University</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" notBefore="2002-07-24">Perseus 3.0</date>
+				<idno type="filename">viaf45640099.viaf002.perseus-eng1.xml</idno>
+				<idno type="CTS-URN">urn:cts:greekLit:viaf45640099.viaf002.perseus-eng1</idno>
+				<availability>
+					<p>Public Domain</p>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Argonautica</title>
+						<author>Apollonius Rhodius</author>
+						<editor>George W. Mooney</editor>
+						<imprint>
+							<pubPlace>London</pubPlace>
+							<publisher>Longmans, Green</publisher>
+							<date>1912</date>
+						</imprint>
+					</monogr>
+					<ref target="https://archive.org/details/argonauticaedite00apoluoft/page/n13/mode/2up">Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<correction method="silent" status="medium">
+					<p>professional data entry</p>
+				</correction>
+			</editorialDecl>
+			<refsDecl n="CTS">
+				<cRefPattern n="section" matchPattern="([1-7])"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='textpart'][@subtype='introduction']/tei:div[@type='textpart'][@subtype='section'][@n='$1'])" />
+			</refsDecl>
+			<refsDecl xml:id="CTS">
+				<citeStructure match="/TEI/text/body" use="@xml:base">
+					<citeStructure match="./div[@type='commentary']/div[@subtype='introduction']"
+						use="@n"
+						unit="Introduction" delim=":">
+						<citeStructure match="./div[@type='section']" use="@n" unit="section"
+							delim="." n="chunk" />
+					</citeStructure>
+				</citeStructure>
+			</refsDecl>
+
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="grc">Greek</language>
+				<language ident="xgreek">transliterated Greek (for early forms)</language>
+				<language ident="lat">Latin</language>
+				<language ident="de">German</language>
+				<language ident="fra">French</language>
+				<language ident="it">Italian</language>
+				<language ident="sanskrit">Sanskrit in Harvard-Kyoto code</language>
+				<language ident="xavestan">transliterated Avestan</language>
+				<language ident="pie">Indo-European</language>
+				<language ident="xpsem">transliterated proto-Semitic</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-08-22" who="Greg Crane">Regularized the Mooney introduction as CTS-addressable EpiDoc;
+				textual content and pagination retained.</change>
+			<change when="2002">Initial Perseus markup and subsequent legacy corrections retained in
+				the source file.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text xml:lang="eng">
+		<body xml:base="urn:cts:greekLit:viaf45640099.viaf002.perseus-eng1" xml:lang="eng">
+			<div type="textpart" subtype="introduction"
+				n="urn:cts:greekLit:viaf45640099.viaf002.perseus-eng1" xml:id="introduction"
+				xml:lang="eng">
+				<pb n="1" />
+				<head>Introduction</head>
+				<div type="textpart" n="1" subtype="section" xml:id="introduction-s1">
+					<head>Life of Apollonius</head>
+					<p>For the meagre details of the life of our poet we are mainly dependent on the
+						two epitomes which are appended to the scholia in the Codex Laurentianus:--</p>
+					<p>I. <foreign xml:lang="grc">Ἀπολλώνιος ὁ τῶν Ἀργοναυτικῶν ποιητὴς τὸ μὲν γένος
+						ἦν Ἀλεξανδρεύς, υἱὸς δὲ Σιλλέως, ὡς δέ τινες Ἰλλέως, φυλῆς Πτολεμαΐδος.
+						ἐγένετο δὲ ἐπὶ τῶν Πτολεμαίων, Καλλιμάχου μαθητής, τὸ μὲν πρῶτον συνὼν
+						Καλλιμάχῳ τῷ ἰδίῳ διδασκάλῳ· ὀψὲ δὲ ἐπὶ τὸ ποιεῖν ποιήματα ἐτρέπετο. τοῦτον
+						λέγεται ἔτι ἔφηβον ὄντα ἐπιδείξασθαι τὰ Ἀργοναυτικὰ καὶ κατεγνῶσθαι, μὴ
+						φέροντα δὲ τὴν αἰσχύνην τῶν πολιτῶν καὶ τὸ ὄνειδος καὶ τὴν διαβολὴν τῶν
+							ἄλλων ποιητῶν καταλιπεῖν τὴν πατρίδα καὶ μετεληλυθέναι εἰς Ῥόδον, κἀκεῖ
+						αὐτὰ
+							ἐπιξέσαι καὶ ὀρθῶσαι καὶ οὕτως ἐπιδείξασθαι καὶ ὑπερευδοκιμῆσαι· διὸ καὶ
+						Ῥόδιον ἑαυτὸν ἐν τοῖς ποιήμασιν ἀναγράφει. ἐπαίδευσε δὲ λαμπρῶς ἐν αὐτῇ καὶ
+						τῆς Ῥοδίων πολιτείας καὶ τιμῆς ἠξιώθη.</foreign>
+					</p>
+					<p>II. <foreign xml:lang="grc">Ἀπολλώνιος ὁ ποιητὴς τὸ μὲν γένος ἦν Ἀλεξανδρεύς,
+						πατρὸς δὲ Σιλλέως, ἤτοι Ἰλλέως, μητρὸς δὲ Ῥόδης. οὗτος ἐμαθήτευσε Καλλιμάχῳ
+						ἐν Ἀλεξανδρείᾳ ὄντι γραμματικῷ, καὶ συντάξας ταῦτα τὰ ποιήματα ἐπεδείξατο.
+						σφόδρα δὲ ἀποτυχὼν καὶ ἐρυθριάσας παρεγένετο ἐν τῇ Ῥόδῳ κἀκεῖ ἐπολιτεύσατο
+						καὶ σοφιστεύει ῥητορικοὺς λόγους, ὅθεν αὐτὸν καὶ Ῥόδιον ἀποκαλεῖν βούλονται.
+						ἐνταῦθα τοίνυν διάγων καὶ ἐπιξέσας αὑτοῦ τὰ ποιήματα, εἶτα ἐπιδειξάμενος
+						σφόδρα εὐδοκίμησεν, ὡς καὶ τῆς Ῥοδίων ἀξιωθῆναι πολιτείας καὶ τιμῆς. τινὲς
+							δέ φασιν ὅτι ἐπανῆλθεν ἐν Ἀλεξανδρείᾳ καὶ αὖτις ἐκεῖσε ἐπιδειξάμενος εἰς
+						ἄκρον εὐδοκίμησεν, ὡς κὰ τῶν βιβλιοθηκῶν τοῦ μουσείου ἀξιωθῆναι αὐτὸν καὶ
+						ταφῆναι δὲ σὸν αὐτῷ τῷ Καλλιμάχῳ.</foreign>
+					</p>
+					<p>These two accounts were apparently derived from <pb n="2" />one common
+						source,<note anchored="true">
+							<p>v. Linde, <title xml:lang="lat">De diversis recensionibus Ap. Rhod.
+						Argonauticon,</title> p. 11. In the first life unless we take <foreign
+									xml:lang="grc">ὀψέ</foreign> in the sense of <foreign
+									xml:lang="grc">ὕστερον</foreign> it is inconsistent with <foreign
+									xml:lang="grc">ἔτι ἔφηβον ὄντα</foreign> in the next sentence.
+						Linde suggests that the original source, which was probably fuller, and
+						contained a reference to the quarrel with Callimachus, may have read
+						somewhat as follows:--<foreign xml:lang="grc">ἐγένετο δὲ ἐπὶ τῶν Πτολεμαίων
+						τὸ μὲν πρῶτον συνὼν Καλλιμάχῳ, τῷ ἰδίῳ διδασκάλῳ, ἐπειδὴ δὲ ὕστερον ἐπὶ τὸ
+						ποιεῖν ποιήματα ἐτρέπετο, ἀπ’ αὐτοῦ ἀφιστάμενος. καὶ πολλὴν εἰς ἔχθραν ἦλθον
+						ἀλλήλοις. λέγεται δὲ τοῦτον ἔτι ἔφηβον ὄντα ἐπιδείξασθαι τὰ Ἀργοναυτικὰ καὶ
+						κατεγνῶσθαι.</foreign>
+							</p>
+						</note>
+						and seem, in turn, to have been the source of such brief biographies as we
+						find in later mss.</p>
+					<p>We have further the following notice in Suidas:--</p>
+					<p>
+						<foreign xml:lang="grc">Ἀπολλώνιος Ἀλεξανδρεύς, ἐπῶν ποιητής, διατρίψας ἐν
+							Ῥόδῳ υἱὸς Σιλλέως, μαθητὴς Καλλιμάχου, σύγχρονος Ἐρατοσθένους καὶ
+							Τιμάρχου, ἐπὶ Πτολεμαίου τοῦ Εὐεργέτου ἐπικληθέντος, καὶ διάδοχος
+							Ἐρατοσθένους γενόμενος ἐν τῇ προστασίᾳ τῆς ἐν Ἀλεξανδρείᾳ βιβλιοθήκης.</foreign>
+					</p>
+					<p>The date of the birth of Apollonius is quite uncertain. Dates ranging from
+						296 to 235 b.c. have been assigned by different critics.<note
+							anchored="true">
+							<p>v. Weichert, <title xml:lang="deu">Ueber das Leben und Gedicht des
+						Apollonius von Rhodus;</title> Merkel, <title xml:lang="lat">Prolegomena ad
+						Ap. Rhod.;</title> Couat, <title>La poésie Alexandrine;</title> Susemihl, <title>Geschichte
+						der griechischen Litteratur in der Alexandrinerzeit;</title> Knaack ap.
+						Pauly-Wissowa, <title>Real-Encyclopädie.</title>
+							</p>
+						</note>
+						On the whole it is most satisfactory to assume that he was born about 265.
+						We thus allow a sufficient time for the development of the deadly feud which
+						raged between him and Callimachus who died about 240-235. Those who would
+						fix his birth thirty years earlier are prepared to throw over altogether the
+						tradition that he succeeded Eratosthenes as Librarian at Alexandria about
+						196 b.c. The birthplace of Apollonius is also uncertain. Suidas <pb n="3" />and
+						Strabo<note anchored="true">
+							<p>Strab. 559, 47 (ed. Didot) <foreign xml:lang="grc">Διονύσιος δὲ ὁ
+									Θρὰξ καὶ Ἀπολλώνιος ὁ τοὺς Ἀργοναύτας ποιήσας, Ἀλεξανδρεῖς μέν,
+						ἐκαλοῦντο δὲ
+									Ῥόδιοι.</foreign>
+							</p>
+						</note>
+						describe him as an Alexandrian, whereas Athenaeus<note anchored="true">
+							<p>Athen. vii 283 <foreign xml:lang="grc">Ἀπολλώνιος ὁ *)ρόδιος ἢ
+						Ναυκρατίτης.</foreign> Aelian, <title>H. A.</title> xv 23, uses the same
+						words.</p>
+						</note> and Aelian mention also the other
+						tradition that he was a native of Naucratis, a town situated a little to the
+						east of Alexandria. The simplest solution of the difficulty is to assume
+						that he was born at Naucratis, but brought up at Alexandria from his early
+						years. His connexion with Naucratis lends special point to the attack made
+						by Callimachus upon him in the <title>Ibis,</title> as we shall see later.</p>
+					<p>Apollonius attached himself as a pupil to Callimachus, who was the leading
+						literary figure of the day, and Librarian of the great Alexandrian Library.
+						Couat, in his admirable work <title>La poésie Alexandrine,</title> has shown
+						how the Alexandrian savants were divided into the same two classes as the
+						Roman writers in the Augustan epoch, and the French writers in the
+						seventeenth and nineteenth centuries. These were the conservatives and the
+						innovators, those who adhered to the ancient poets, and those who sought to
+						introduce newer styles more in accordance with the spirit of the age. Homer
+						was reverenced by all as the greatest of poets, but Homer was imitable by
+						none<note anchored="true">
+							<p>Cf. Euphorion, frag. 62 (Meineke): <title>Anth. Pal.</title> xi 130.</p>
+						</note>;
+						and so the Alexandrian school chose generally as models Hesiod,<note
+							anchored="true">
+							<p>For the appreciation of Hesiod v. <title>Anth. P.</title> ix 64, 507
+						xii 168.</p>
+						</note> with his didactic style and love
+						of mythological speculation, Antimachus of Colophon, the author of the <pb
+							n="4" />
+					<title>Lyde,</title>
+					<note anchored="true">
+							<p>
+								<title>Anth. P.</title> ix 63-- <quote xml:lang="grc">
+									<l>*ti/s ga\r e)/m' ou)k h)/eise; ti/s ou)k a)nele/cato *lu/dhn;</l>
+									<l rend="indent">*to\ cuno\n *mousw=n gra/mma kai\ *)antima/xou.</l>
+								</quote>
+							</p>
+						</note>
+						with his long-drawn elegies teeming with legends little known, and
+						Mimnermus,<note anchored="true">
+							<p>
+								<title>Anth. P.</title> xii 168.</p>
+						</note>
+						who had given to elegy its passionate erotic tone. Some preferred the poems
+						of Erinna,<note anchored="true">
+							<p>
+								<title>Anth. P.</title> ix 190-- <quote xml:lang="grc">
+									<l>*le/sbion *)hri/nnhs to/de khri/on: ei) de/ ti mikro/n,</l>
+									<l rend="indent">*)all' o(/lon e)k *mouse/wn kirna/menon
+										me/liti.</l>
+									<l>*oi( de\ trihko/sioi tau/ths sti/xoi i)=soi *(omh/rw|, k.t.l.</l>
+								</quote>
+							</p>
+						</note>
+						which combined brevity with perfection of artistic form, to the longer and
+						heavier work of Antimachus. Callimachus, in spite of his erudition, was of
+						the latter class. He censures the <title>Lyde</title> as of coarse texture
+						and wanting in subtle delicacy.<note anchored="true">
+							<p>frag. 74 <foreign xml:lang="grc">Λύδη καὶ παχὺ γράμμα καὶ οὐ τορόν.</foreign>
+							</p>
+						</note>
+						He exhorts poets who would win success to avoid the beaten track,<note
+							anchored="true">
+							<p>frag. 293 <foreign xml:lang="grc">ἑτέρων ἴχνια μὴ καθ’ ὁμά.</foreign>
+							</p>
+						</note>
+						to pursue originality of style and form, to cultivate the poetry which
+						consists in short and flawless pieces--odes, idylls, epigrams, and to shun a
+						big book as a big evil.<note anchored="true">
+							<p>frag. 359 <foreign xml:lang="grc">τὸ [γὰρ] μέγα βιβλίον ἶσον τῷ
+									μεγάλῳ κακῷ.</foreign>
+							</p>
+						</note>
+						To presume to rival the great epics of the past, to challenge comparison
+						with Homer, was an unpardonable sin in the eyes of Callimachus. So too
+						Theocritus says, "I hate all birds of the Muses that vainly toil with their
+						cackling note against the Minstrel of Chios."<note anchored="true">
+							<p>
+								<title>Idyll</title> vii 45-- <quote xml:lang="grc">
+									<l>*)/ws moi kai\ te/ktwn me/g' a)pe/xqetai, o(/stis e)reunh=|</l>
+									<l>=*)ison o)/reus korufa=| tele/sai do/mon eu)rume/dontos,</l>
+									<l>*kai\ *moisa=n o)/rnixes, o(/soi poti\ *xi=on a)oido\n</l>
+									<l>*)anti/a kokku/zontes e)tw/sia moxqi/zonti.</l>
+								</quote>
+							</p>
+							<p>Merkel finds a retort of Apollonius to these lines in <title>Arg.</title>
+						i 737-741, "Habes aedificationem, habes <foreign xml:lang="grc">οὔρεος
+						ἠλιβάτοιο κάρη,</foreign> habes locutionem Theocriteam <foreign
+									xml:lang="grc">μογέοντι ἐοικώς,</foreign> habes allegoriam non
+						abstrusam, duo cum faciant idem, non esse idem." (<title>Prolegomena,</title>
+						p. xxvii.)</p>
+						</note>
+					<pb n="5" />
+					</p>
+					<p>Yet there were not wanting stubborn spirits who would not yield to the sway
+						of Callimachus, authors who essayed mythological and historical epics.
+						Antagoras of Rhodes produced a <title>Thebais,</title> Rhianus of Crete an
+						epic on the second Messenian war, with Aristomenes as its hero. The youthful
+						Apollonius feared not to break away from his master's doctrines and to take
+						as his theme for a heroic epic the quest of the golden fleece. He was still
+						an <foreign xml:lang="grc">ἔφηβος,</foreign> i.e. between the ages of
+						eighteen and twenty, when he gave the first <foreign xml:lang="grc">
+						ἐπίδειξις,</foreign> or formal recitation, probably not of the whole work,
+						which could hardly have been completed, but of parts thereof. Callimachus
+						and his followers, however, were far too strong for him, and his efforts
+						were greeted with ridicule. Callimachus, we may be sure, treated the
+						youthful epic with the merciless sarcasm which he meted out to 'cyclic
+						poems.'<note anchored="true">
+							<p>
+								<title>Anth. P.</title> xii 43-- <quote xml:lang="grc">
+									<l>*)exqai/rw to\ poi/hma to\ kukliko/n, ou)de\ keleu/qw|</l>
+									<l rend="indent">*xai/rw, ti/s pollou\s w(=de kai\ w(=de fe/rei:
+						k.t.l.</l>
+									<l>*kalli/maxos to\ ka/qarma, to\ pai/gnion, o( culino\s nou=s,</l>
+									<l rend="indent">*ai)/tios o( gra/yas *ai)/tia *kalli/maxos.</l>
+								</quote>
+							</p>
+							<p>"Callimachus, the offscourings, the dolly, the absolute blockhead:
+						Cause of this verdict is he, writer of <title>Causes</title> himself."</p>
+						</note>
+					</p>
+					<p>How long the mortified poet remained to face the mockery of his triumphant
+						critics we know not. His wounded pride must soon have led him to snake off
+						the dust of Alexandria. It was at Rhodes, that great centre of literary
+						Hellendom, that the Alexandrian exile resolved to settle. With dogged
+						determination and unshaken confidence in his powers he set himself, <pb
+							n="6" />in the intervals of his duties as a teacher of rhetoric,<note
+							anchored="true">
+							<p>Dilthey needlessly assumes that the statement in the lives that the
+						poet taught rhetoric is due to a confusion with Apollonius Molon.</p>
+						</note>
+						to revise and perfect his poem, and soon his labour met with a rich reward.
+						The second <foreign xml:lang="grc">ἐπίδειξις,</foreign> when he recited his
+						completed work at Rhodes, was as striking a triumph as the first at
+						Alexandria had been a failure. The Rhodians exalted him to offices of
+						honour, enrolling him amongst the citizens, whence he is known as Apollonius
+						'the Rhodian.'</p>
+					<p>The fame which he had won nerved him with fresh confidence in flinging back
+						with added sting the contemptuous taunts of the Alexandrian dictator.</p>
+					<p>Rage burned unceasingly in his heart against Callimachus, to whose influence
+						he rightly attributed his first disgrace, and the feud between them stands
+						out as the most bitter in the ancient world of letters. Couat<note
+							anchored="true">
+							<p>
+								<title>La querelle de Callimaque et d' Apollonius de Rhodes.</title>
+							</p>
+						</note>
+						has attempted to trace the progress of the quarrel, though the data we have
+						to work on are very slender. But, slender as they are, they suffice to give
+						us glimpses of the venom and rancour which prevailed. One biting epigram by
+						Apollonius<note anchored="true">
+							<p>
+								<title>Anth. P.</title> xi 275--The epigram is entitled <foreign
+									xml:lang="grc">Ἀπολλωνίου τοῦ γραμματικοῦ,</foreign> a
+						designation which our poet often receives, and there can be no reasonable
+						doubt of his authorship, though it is disputed by Bernhardy (<title>Grundr.</title>
+						1 362). There are many trenchant epigrams in the Anthology on the soulless
+						pedantry of Callimachus and his school (<foreign xml:lang="grc">οἱ
+						Περικαλλίμαχοι</foreign>), e.g. xi 322:-- <quote xml:lang="grc">
+									<l>*grammatikw=n peri/erga ge/nh, r(izw/ruxa mou/shs</l>
+									<l rend="indent">*)allotri/hs, a)tuxei=s sh=tes a)kanqoba/tai,</l>
+									<l>*tw=n mega/lwn khli=des, e)p' *)hri/nnh| de\ komw=ntes,</l>
+									<l rend="indent">*pikroi\ kai\ chroi\ *kallima/xou pro/kunes,</l>
+									<l>*poihtw=n lw=bai, paisi\ sko/tos a)rxome/noisin,</l>
+									<l rend="indent">*)/erroit' eu)fw/nwn laqroda/knai ko/ries.</l>
+								</quote>
+							</p>
+						</note>
+						on his master has been preserved:-- <pb n="7" />
+					</p>
+					<p>In these lines Apollonius expresses his utter contempt for the affectation
+						and sterility of the author of the <title xml:lang="grc">Αἴτια</title>, a
+						poem in four books treating of the causes of various myths and ceremonies.
+						In one of the books the legend of the Argonauts had been introduced, and
+						Callimachus may have charged his pupil with plagiarism from his work.
+						Apollonius, and probably others to whom the literary autocracy of
+						Callimachus was irksome, imputed Callimachus' dislike of a 'big book' to his
+						inability to produce such. To these insinuations Callimachus triumphantly
+						replies in the famous passage at the close of the hymn to Apollo.<note
+							anchored="true">
+							<p>
+								<quote xml:lang="grc">
+									<l>*(o fqo/nos *)apo/llwnos e)p' ou)/ati la/qrios ei)=pen,</l>
+									<l>*ou)k a)/gamai to\n a)oido\n o(\s ou)d' o(/sa po/ntos
+						a)ei/dei.</l>
+									<l>*to\n fqo/non w(po/llwn podi/ t' h)/lasen w(=de t' e)/eipen:</l>
+									<l>*)assuri/ou potamoi=o me/gas r(o/os, a)lla\ ta\ polla\</l>
+									<l>*lu/mata gh=s kai\ pollo\n e)f' u(/dati surfeto\n e(/lkei.</l>
+									<l>*dhoi= d' ou)k a)po\ pa/ntos u(/dwr fore/ousi me/lissai,</l>
+									<l>*)all' h(/tis kaqarh/ te kai\ a)xra/antos a)ne/rpei</l>
+									<l>*pi/dakos e)c i(erh=s o)li/gh li/bas, a)/kron a)/wton:</l>
+									<l>*xai=re, a)/nac: o( de\ *mw=mos, i(/n' o( fqo/ros, e)/nqa
+						ne/oito.</l>
+								</quote>
+							</p>
+							<p>Couat regards these lines as a later addition made by Callimachus
+						when he brought out a complete edition of the Hymns towards the end of his
+						life. In the last line (where he retains the old reading <foreign
+									xml:lang="grc">φθόνος</foreign>) he finds a reference to
+						Apollonius' exile at Rhodes.</p>
+						</note> We may have
+						a parody of the opening of this passage in the third book of the <pb n="8" />
+					<title>
+						Argonautica.</title>
+					<note anchored="true">
+							<p>v. 932 <quote xml:lang="grc">
+									<l>*)akleih\s o(/de ma/ntis, o(\s ou)d' o(/sa pai=des i)/sasin</l>
+									<l>*oi)=de no/w| fra/ssasqai.</l>
+								</quote>
+							</p>
+						</note>
+						But Callimachus gave also a practical refutation of the accusation by
+						writing a long epic which gained immediate favour. This was the <title>
+						Hecale,</title> so called from the aged crone who hospitably entertained the
+						hero Theseus when he was going forth to contend against the Marathonian
+						bull. The choice of such a humble theme was another reproof of the
+						presumption of Apollonius. The fresh laurels which Callimachus thus gained
+						in the field of epic poetry must have rendered his supremacy at Alexandria
+						more indisputable than ever, yet the feud with his unrepentant pupil still
+						went on with unabated fury.</p>
+					<p>The most curious product of the quarrel was the <title>Ibis</title> of
+						Callimachus. The immediate provocation which led to it we know not, but the
+						epigram of Apollonius must still have been rankling in his soul. The work
+						itself has perished, but the poem of Ovid which bears the same name, and
+						which was avowedly an imitation thereof, enables us to judge of the style
+						and contents. Callimachus must have devoted his enemy to destruction in the
+						same way as Ovid does, and we may presume that the whole poem also was
+						obscured with the same mass of <foreign xml:lang="lat">caecae historiae</foreign>
+						drawn from the darkest recesses of the storehouse of legend. Critics have
+						been sorely vexed in trying to determine why Callimachus should have chosen
+						the bird ibis to represent Apollonius. Couat, and Ellis in his Prolegomena
+						to the <title>Ibis</title> of Ovid, have collected the various theories
+						which have been put forward. The ibis, as Plato<note anchored="true">
+							<p>
+								<title>Phaedr.,</title> 274.</p>
+						</note>
+						tells us, was sacred <pb n="9" />to the god Theuth, or Hermes, worshipped
+						originally at Naucratis, which was probably the birthplace of Apollonius.
+						The connexion between the ibis and the god Theuth was very close.<note
+							anchored="true">
+							<p>Aelian, <title>H. A.</title> x 29: <bibl>Plut. <title>Symp.</title>
+						ix 2, 2</bibl>: <bibl n="Cic. N.D. 3.22.56">Cic. <title>N. D.</title> iii
+						22, 56.</bibl>
+							</p>
+						</note>
+						The god was depicted with the head of the bird, and the bird was regarded as
+						the familiar minister of the god. The filthy peculiarities of the ibis are
+						often mentioned by the ancients,<note anchored="true">
+							<p>
+								<bibl n="Ov. Ib. 449">Ov. <title>Ib.</title> 449</bibl>: <bibl>Plin. <title>N.
+						H.</title> viii 97</bibl>: Ael. <title>H. A.</title> ii 35.</p>
+						</note>
+						and we may be sure that these habits of the bird, a native of Naucratis like
+						Apollonius, were employed by Callimachus as a retort to the scurrilous way
+						in which he had been stigmatized as <foreign xml:lang="grc">κάθαρμα.</foreign>
+						Hermes, amongst his other functions, was the god of thieves, and so
+						Apollonius was probably assailed as a familiar of the god of thieves by
+						reason of his plagiarisms from Homer and Callimachus.<note anchored="true">
+							<p>v. Couat, op. cit. Ellis ingeniously argues from Plato's attributing
+						the division of letters into vowels, mutes, and <foreign xml:lang="lat">
+						mediae</foreign> to Hermes or Theuth (<bibl n="Plat. Phileb. 18">
+									<title>Phil.</title> 18</bibl>) that Callimachus may have
+						censured Apollonius for artificially combining letters to produce striking
+						effects in the <title>Argonautica.</title> If so, it is a clear case of <foreign
+									xml:lang="grc">κεραμεὺς κεραμεῖ.</foreign>
+							</p>
+						</note>
+						Conjectures like these are but a groping in the dark, and the key to the
+						riddle has been lost for ever.</p>
+					<p>There can be little doubt that the honours in this literary warfare were
+						regarded as resting with Callimachus. The struggle was brought to a close by
+						his death, 240-235 b.c. In his epitaph written by himself he claims to have
+						triumphed over spite.<note anchored="true">
+							<p>
+								<title>Anth. P.</title> vii 525-- <quote xml:lang="grc">
+									<l>*)/ostis e)mo\n para\ sh=ma fe/reis po/da, *kallima/xou me</l>
+									<l rend="indent">*)/isqi *kurhnai/ou pai=da/ te kai\ gene/thn.</l>
+									<l>*ei)dei/hs d' a)/mfw ken, o( me/n pote patri/dos o(/plwn</l>
+									<l rend="indent">*)hrcen, o( d' h)/eisen krei/ssona baskani/hs.</l>
+								</quote>
+							</p>
+						</note>
+					<pb
+							n="10" />
+					</p>
+					<p>Apollonius did not return to Alexandria immediately on the death of his great
+						antagonist. He remained for many years at Rhodes, ever bringing the fruits
+						of his ripe experience and grammatical studies to bear upon his well-beloved
+						poem. A dense mist envelops the closing period of his life. Did he pass the
+						rest of his days at Rhodes, as Susemihl maintains, or did he return to
+						Alexandria and become Librarian as successor to Eratosthenes? The first of
+						the two lives is silent on this question; the other, in a sentence
+						introduced by <foreign xml:lang="grc">τινὲς δέ φασιν,</foreign>
+					<note
+							anchored="true">
+							<p>The sentence was probably thus cautiously introduced from its having
+						been omitted in the first of the two lives (v. Linde, op. cit.).</p>
+						</note>
+						mentions his return and the fact that he became Librarian after a third <foreign
+							xml:lang="grc">ἐπίδειξις</foreign> of his poem at Alexandria. We have
+						furthermore the definite statement in the notice in Suidas that he succeeded
+						Eratosthenes as head of the Library. Though this assertion has been disputed
+						by many critics in modern times,<note anchored="true">
+							<p>e.g. by Bernhardy and Knaack. Susemihl's arguments (op. cit. 385)
+								seem singularly unconvincing.</p>
+						</note> I
+						see no valid reason for rejecting it. There is nothing improbable in
+						thinking that there may have been a reaction against the theories of
+						Callimachus after his death, and that the favour accorded to the third
+						recitation of the <title>
+							Argonautica</title> and the appointment of its author as Librarian may
+						have been the outcome of this reaction. The whole chronology of the
+						Alexandrian school is in the most hopeless confusion, and no two critics
+						seem able to agree even approximately about the number, order, and dates of
+						the early Librarians.<note anchored="true">
+							<p>v. Seeman, <title>De primis sex bibliothecae Alexandrinae custodibus:</title>
+						Busch, <title>De bibliothecariis Alex. qui feruntur primis:</title> Couat,
+						op. cit. c. 2.</p>
+						</note> We <pb n="11" />have seen
+						that the dates assigned for the birth of Apollonius vary over a period of
+						more than half a century, so that the arguments, based on so-called
+						chronology, against Suidas and one of the lives deserve but little
+						attention. Assuming, as we have done, that Apollonius was born about 265, he
+						would have been between the ages of sixty-five and seventy when he succeeded
+						Eratosthenes,<note anchored="true">
+							<p>The conjecture of Ritschl (<title>Alex. Bibl.,</title> p. 82) that
+						Eratosthenes resigned his position as Librarian some years before his death
+						on account of failing sight (v. Suidas) is vigorously supported by Merkel (<title>
+						Prol.,</title> p. xiv). If this view be adopted, Apollonius may have
+						returned to Alexandria in the reign of Ptolemy Philopator (221-204), an
+						assumption which is rendered probable by that monarch's enthusiasm for
+						Homer, and the honours and rewards by which he encouraged Homeric studies.</p>
+						</note>
+						who was born about 278 and lived to the age of eighty or eighty-two.
+						Apollonius was succeeded by Aristophanes of Byzantium, about whom we are
+						definitely told that he became Librarian at the age of sixty-two. He was
+						born about 255, so we may assume that Apollonius' tenure of the office
+						terminated about 193, which we may regard as approximately the year of the
+						poet's death.</p>
+					<p>One last tradition concerning Apollonius, recorded at the end of the second
+						life, is that he was buried with Callimachus. Susemihl unnecessarily impugns
+						this statement as involving a desecration of the tomb of Callimachus.<note
+							anchored="true">
+							<p>Cf. Gerhard, <title>Lectiones Apollonianae,</title> p. 7. In the
+						epitaph of Callimachus already cited he expresses a wish that he should be
+						buried with his father in Cyrene. This wish, apparently, remained
+						unfulfilled.</p>
+						</note> There may well have been, as <pb
+							n="12" />Weichert suggests, a place set apart at Alexandria by the
+						Ptolemies for the burial of those who had filled the honoured post of
+						Librarian.<note anchored="true">
+							<p>This is also the view of Couat and of Merkel who says: <quote
+									xml:lang="lat">"Satis credibile est principes Musei viros <foreign
+										xml:lang="grc">ἐν τοῖς βασιλείοις</foreign> Alexandrinis
+						sepultos fuisse, velut in eis, quae Strabo commemorat p. 794 <foreign
+										xml:lang="grc">ἡ νῆσος καὶ ὁ πύργος ὁ Φάρος‐‐εἰσπλεύσαντι δ’
+						ἐν ἀριστερᾷ ἐστι συνεχῆ‐‐τὰ ἐνδοτέρω βασίλεια πολλὰς καὶ ποικίλας ἔχοντα
+						διαίτας καὶ ἄλση,</foreign> quod eo certe litore Eratosthenis sepulcrum
+						indicatur in epigrammatis Dionysii Cyziceni <bibl n="AP 7.78">Anth. Pal. vii
+						78</bibl> versu postremo <foreign xml:lang="grc">πὰρ τόδε Πρωτῆος κράσπεδον
+						αἰγιαλοῦ,</foreign> ne de nemore manium Callimachi et Philetae apud
+						Propertium coniciam."</quote> Merkel assumes, as a development of Ritschl's
+						theory, that Apollonius died before Eratosthenes, and so would be buried
+						next to Callimachus.</p>
+						</note> And so, after life's
+						fitful fever, master and pupil would rest side by side in the silent
+						fellowship of the grave.</p>
+				</div>
+				<div type="textpart" n="2" subtype="section" xml:id="introduction-s2">
+					<head>Sources of the <title>Argonautica</title>
+					</head>
+					<p>To enumerate the probable and possible sources of the poem would be to
+						enumerate the greater part of Greek literature. Nurtured in a literary
+						atmosphere, Apollonius had devoted himself, heart and soul, to the study of
+						all previous writings which could aid him in his work. The rhetor Aelius
+						Theon attributes to him the saying <foreign xml:lang="grc">Ἀνάγνωσις τροφὴ
+						λέξεως,</foreign> and assuredly he must have dipped deeply into the
+						treasures of the great Alexandrian libraries. In trying to sketch briefly
+						the materials at his disposal when he began to write, we must rely, to a
+						very large extent, on the information <pb n="13" />which has come down to us
+						through the scholia. From them we learn much; but we must remember that they
+						are merely excerpts from the larger works of the grammarians, and,
+						therefore, necessarily imperfect. The sources from which our poet derived
+						materials for his work and the authors whom he imitated may be classified as
+						follows:--(1) The Homeric poems; (2) other ancient epic poems; (3) early
+						logographers and geographers; (4) previous writers of <title>Argonautica;</title>
+						(5) writers who had introduced the story of the Argonauts incidentally; (6)
+						narrators of the deeds of Heracles; (7) authors, most of them little known,
+						to whom Apollonius was indebted on special points; (8) Alexandrian poets.</p>
+					<p>I. The Homeric poems constitute in the truest sense the <foreign
+							xml:lang="grc">πηγὴ καὶ ἀρχή</foreign> of the <title>Argonautica.</title>
+						Though the matter of the work is not derived from them, yet the diction and
+						the form in which the particular incidents are set forth continually recall
+						to our minds the words of 'the poet,' as the ancients reverently described
+						Homer. Apollonius knew Homer by heart, and one of the chief charms of his
+						work is to come across the familiar phrases reset, some, it may be, dimmed
+						in the process, others shining with added lustre. Our poet was no servile
+						imitator. Nothing could be more erroneous than to regard his work as a mere
+						cento of Homeric phrases. Professor R. Ellis admirably states his position:
+						"For Apollonius the problem was how to write an epic which should be
+						modelled on the Homeric epics, yet be so completely different as to suggest,
+						not resemblance, but contrast. <pb n="14" />We think no one who has read
+						even a hundred lines of the poem can fail to be struck by this. It is in
+						fact the reason why it is a success. The <title>Argonautica</title> could
+						not have been written without the <title>Iliad</title> and <title>Odyssey,</title>
+						but it is in no sense an echo of either. Nay, we believe that a minute
+						examination of Apollonius' language and rhythm would show that he placed
+						himself under the most rigid laws of <emph>intentional dissimilarity.</emph>
+						"<note anchored="true">
+							<p>Quoted by Way, <title>The Tale of the Argonauts,</title> p. 208.</p>
+							<p>The relation of Apollonius to Homer, with regard to forms,
+						vocabulary, and syntax, has been discussed by Rzach, <title>Grammatische
+						Studien zu Ap. Rhod.;</title> Merkel, <title>Prolegomena;</title> Schmidt, <title>De
+						Ap. Rhod. elocutione;</title> Seaton, <title>Amer. Jour. Phil.</title> xix;
+						Cholevius, <title>Ueber den griech. Epiker Ap. Rhod.;</title> Linsenbarth, <title>De
+						Ap. Rhod. Casuum Syntaxi;</title> Goodwin, <title>Ap. Rhod., His Figures,
+						Syntax, and Vocabulary;</title> Oswald. <title>The Prepositions in Ap.
+									Rhod.;</title> etc.</p>
+						</note> In the
+						period between the recensions of Zenodotus and Aristarchus Apollonius had
+						made a critical study of the Homeric poems, as we shall see when we come to
+						consider his other works.</p>
+					<p>The <title>Argonautica</title> often enables us to infer the meaning which he
+						assigned to doubtful words in Homer and the views which he must have held on
+						disputed passages. This has been worked out with the most painstaking
+						fullness by Merkel in his <title>Prolegomena.</title> Merkel illustrates at
+						length, what F. A. Wolf had already noticed, that many words which occur
+						only once or twice in Homer are only found once or twice in Apollonius, e.g. <foreign
+							xml:lang="grc">ἀαγής, ἀβλής, ἀγέραστος, ἅψεα, γαυλός, τρύφος, γλῆνος,
+						κάγκανος, ῥαφαί, μέσφα, ἀμφίδυμος.</foreign> He also shows that in the case
+						of words like <foreign xml:lang="grc">ἀδινός, τηλύγετος, ἀδευκής,
+							αὐτάγρετος,</foreign> etc., the different <pb n="15" />views of the
+						ancient grammarians about their meanings are reproduced in different
+						passages of the <title>
+							Argonautica.</title>
+					</p>
+					<p>II. We may be sure that Apollonius, in cultivating the epic style, had
+						studied the other old epic poems, not merely those belonging to the
+						so-called Epic Cycle, such as the <foreign xml:lang="grc">Νόστοι, Θηβαιίς,
+						Ἀλκμαιωνίς,</foreign> but also works like the <foreign xml:lang="grc">
+						Αἰγίμιος</foreign> (ascribed by some to Hesiod), and the <foreign
+							xml:lang="grc">Φορωνίς</foreign> (a genealogical poem by an unknown poet
+						of Argos), both of which are cited in the scholia for purposes of
+						illustration. We have no evidence that Apollonius derived any of his matter
+						from them. His familiarity with the Homeric hymns is often shown, e.g. in
+						the opening line of the first book.</p>
+					<p>III. Large use must have been made of the early historians and geographers,
+						especially Herodotus, Hellanicus, Hecataeus, and Acusilaus, whose writings
+						are frequently mentioned in the scholia. Weichert<note anchored="true">
+							<p>op. cit., p. 146.</p>
+						</note> shows that
+						Apollonius in all probability studied the <foreign xml:lang="grc">λογογράφοι</foreign>
+						more than the poets, and, in consequence, passed over in silence some things
+						very closely connected with his theme, e.g. a description of the Argo, which
+						must have been given by the earlier poets, while he is very full in dealing
+						with places, peoples, etc. Amongst the old prose writers Simonides of Ceos
+						is often referred to by the scholiasts as agreeing with our poet, e.g. on ii
+						866, <foreign xml:lang="grc">καὶ Σιμωνίδης ὁ γενεαλόγος ὁμοίως τῷ Ἀπολλωνίῳ
+						γενεαλογεῖ.</foreign> Suidas tells us that he was reputed to be a grandson
+						of the famous lyric poet,<note anchored="true">
+							<p>For probable references in our scholia to the lyric poet v. Bergk,
+						Poetae Lyrici Graeci iii 382 sqq. (frag. 3, 43, 206, 212, 213).</p>
+						</note>
+					<pb
+							n="16" />that he lived before the Peloponnesian War, and that he wrote a <foreign
+							xml:lang="grc">Γενεαλογία</foreign> in three books, and <foreign
+							xml:lang="grc">Εὑρήματα,</foreign> also in three books. He may have
+						introduced the myth of the Argo into the <foreign xml:lang="grc">Γενεαλογία.</foreign>
+						In the schol. on i 763 we find a reference to a work of his, <foreign
+							xml:lang="grc">Σύμμικτα,</foreign> which is not mentioned by Suidas.</p>
+					<p>IV. Most interest naturally attaches to the writers who had dealt with the
+						voyage of the Argo in special works. Of these the three principal were
+						Cleon, Herodorus, and Dionysius. <list type="simple">
+							<label>(a) </label>
+							<item>Cleon was a native of Curium in Cyprus. We have no means of
+						determining his date. That Apollonius was indebted to his <foreign
+									xml:lang="grc">Ἀργοναυτικά</foreign> is apparent from the schol.
+						on i 625, <foreign xml:lang="grc">ὅτι δὲ ἐνθάδε Θόας ἐσώθη, καὶ Κλέων ὁ
+						Κουριεὺς ἱστορεῖ, καὶ Ἀσκληπιάδης</foreign>
+							<note anchored="true">
+									<p>Suidas says that this Asclepiades was a <foreign
+											xml:lang="grc">μαθητὴς Ἀπολλωνίου</foreign> who
+						afterwards taught at Rome in the days of Pompey. Unless the word <foreign
+											xml:lang="grc">μαθητής</foreign> is loosely used, these
+						two statements are chronologically irreconcilable.</p>
+								</note>
+							<foreign
+									xml:lang="grc">ὁ Μυρλεανός, δεικνὺς ὅτι παρὰ Κλέωνος</foreign>
+							<note
+									anchored="true">
+									<p>Two lines earlier the schol. says <foreign xml:lang="grc">εἴληφε
+						τὴν ἱστορίαν παρὰ Θεολύτου.</foreign> Mueller (<title>Frag. Gr. Hist.</title>
+						iv 515) assumes that Apollonius drew from Cleon, and Cleon from Theolytus.</p>
+								</note>
+							<foreign
+									xml:lang="grc">τὰ πάντα μετήνεγκεν Ἀπολλώνιος.</foreign>
+							</item>
+							<label>(b) </label>
+							<item>Herodorus was born at Heraclea in Pontus. He seems to have lived
+						in the latter part of the sixth century, and so would be a contemporary of
+						Hecataeus. The erroneous theory that his <foreign xml:lang="grc">Ἀργοναυτικά</foreign>
+						was a poem arose from the schol. on ii 1211 ascribing to him two lines from <bibl>h.
+						Hom. 34</bibl>.<note anchored="true">
+									<p>Cf. <bibl>Diod. Sic. i 15. 4</bibl>, where they are rightly
+						assigned.</p>
+								</note> The quotations from the
+						work show that it was written in prose. To judge from our scholia,
+						Apollonius agreed with him on many points, though Herodorus made the <pb
+									n="17" />Argonauts return by the same route as on the outward
+						voyage. Another important work of his dealt with Heracles, <foreign
+									xml:lang="grc">τὰ καθ’ Ἡρακλέα,</foreign> and it is referred to
+						both in our scholia and in those on Pindar. We have a quotation from it in
+						Athenaeus.<note anchored="true">
+									<p>ix, p. 410.</p>
+								</note>
+							</item>
+							<label>(c) </label>
+							<item>The notices in Suidas of the various writers who bore the name of
+						Dionysius are hopelessly confused,<note anchored="true">
+									<p>v. Welcker, <title>Der epische Cyclus</title> 1 72 sqq.;
+						Meier, <title>Quaestiones Argonauticae,</title> cap. i.</p>
+								</note>
+						and it is impossible to determine accurately whether both Dionysius of
+						Miletus and Dionysius of Mitylene wrote <foreign xml:lang="grc">Ἀργοναυτικά.</foreign>
+						Dionysius <foreign xml:lang="grc">Μιτυληναῖος</foreign> is twice mentioned
+						in our scholia and Dionysius <foreign xml:lang="grc">Μιλήσιος</foreign> five
+						or six times, and furthermore we have frequently the vague reference <foreign
+									xml:lang="grc">Διονύσιος ἐν τοῖς Ἀργοναύταις.</foreign> Suidas
+						enumerates amongst the works of Dionysius of Mitylene <foreign
+									xml:lang="grc">Ἀργοναύτας ἐν βιβλίοις ἕξ,</foreign> written in
+						prose, and also attributes to Dionysius of Miletus, a contemporary of
+						Hecataeus, a <foreign xml:lang="grc">Κύκλος ἱστορικός,</foreign> and a <foreign
+									xml:lang="grc">Κύκλος μυθικός.</foreign> The contents of the
+						latter are probably given by Diod. Sic. (iii 66): <foreign xml:lang="grc">
+						Οὗτος</foreign> (sc. <foreign xml:lang="grc">Διονύσιος</foreign>) <foreign
+									xml:lang="grc">τὰ περὶ τὸν Διόνυσον, καὶ τὰς Ἀμαζόνας, ἔτι δὲ
+						τοὺς Ἀργοναύτας, καὶ τὰ κατὰ τὸν Ἰλιακὸν πόλεμον πραχθέντα, καὶ πόλλ’ ἕτερα
+						συνέταξε.</foreign>
+							</item>
+						</list>
+					</p>
+					<p>We may presume that Apollonius was familiar also with the poem in 6500 verses
+						describing <foreign xml:lang="grc">Ἀργοῦς ναυπηγία καὶ Ἰάσονος εἰς Κόλχους
+						ἀπόπλους,</foreign> which was ascribed to Epimenides<note anchored="true">
+							<p>Diog. Laert. i 111.</p>
+						</note> of Crete, a
+						contemporary of Solon, though the references to it in our scholia are very
+						slight. <pb n="18" />
+					</p>
+					<p>The so-called <foreign xml:lang="grc">Ὀρφέως Ἀργοναυτικά</foreign> cannot be
+						included amongst the sources, as it is in all probability an imitation of
+						the work of Apollonius by some versifier of the early Christian era. It
+						consists of one book containing 1376 lines. Orpheus, one of the Argonauts
+						himself, tells, in the first person, of the main incident, of the adventure,
+						dwelling at length on the scenes in which he had played the leading part,
+						and more briefly describing the rest. The lateness of the work seems clearly
+						indicated by internal evidence, though some would assign it and more of the
+						'Orphic' poetry to an early date.<note anchored="true">
+							<p>v. Schneider's preface to his edition of the <title>Orphic
+						Argonautica.</title>
+							</p>
+						</note>
+					</p>
+					<p>V. Besides those authors who had written special <title>Argonautica</title>
+						there were several others who had introduced the story incidentally, from
+						whom, as far as we can estimate from our scholia, Apollonius drew more, and
+						more directly, than from the former group. <list type="simple">
+							<label>(a) </label>
+							<item>Eumelus of Corinth was reckoned by some as belonging to the Epic
+						Cycle. Eusebius makes him contemporary with Arctinus about the fifth
+						olympiad. The cyclic poem on the return of the Greeks from Troy (<foreign
+									xml:lang="grc">Νόστοι</foreign>) is attributed to him by
+						Pausanias. In this poem apparently the story of Jason and Medea was
+						introduced, and from it, according to our scholia, Apollonius took <bibl
+									n="Apollon. 3.1372">iii 1372 sqq.</bibl> He also wrote a hymn in
+						honour of the Delian Apollo, <title>Bougonia</title> (a poem on bees,
+						containing the fable of Aristaeus), <title>Europia, Titanomachia,</title>
+						and <title>Corinthiaca.</title> Both the <title>Titanomachia</title> and <title>
+						Corinthiaca</title> are referred to in the scholia on the <title>
+						Argonautica.</title>
+							</item>
+							<label>(b) </label>
+							<item>To Hesiod Apollonius seems to have <pb n="19" />been greatly
+						indebted, though we could better estimate his obligation if the <foreign
+									xml:lang="grc">Ἠοῖαι μεγάλαι</foreign> (or <foreign
+									xml:lang="grc">Κατάλογος γυναικῶν</foreign>)<note
+									anchored="true">
+									<p>With reference to the question of the identity of these poems
+						it is interesting to note that they are distinguished by the Schol. on 11
+						181: <foreign xml:lang="grc">πεπηρῶσθαι δὲ Φινέα φησὶν Ἡσίοδος ἐν Μεγάλαις
+						Ἠοίαις, ὅτι Φρίξῳ τὴν ὁδὸν ἐμήνυσεν, ἐν δὲ τῷ γ Καταλόγων, ἐπειδὴ τὸν μακρὸν
+						χρόνον τῆς ὄψεως προέκρινεν.</foreign>
+									</p>
+								</note>
+						had come down to us, for the legend of the Argonauts must have entered
+						largely into it. In several passages our Schol. say that Apollonius directly
+						followed Hesiod (<foreign xml:lang="grc">Ἡσιόδῳ ἐπηκολούθησεν</foreign>),
+						e.g. <bibl n="Apollon. 1.859">i 859</bibl>, <bibl n="Apollon. 3.311">iii 311</bibl>
+						, <bibl n="Apollon. 4.892">iv 892</bibl>. At other times the divergence of
+						Hesiod's views is mentioned, especially about the return voyage of the Argo.
+						In the <title>Theogonia</title>
+							<note anchored="true">
+									<p>vv. 992 sqq.-- <quote xml:lang="grc">
+											<l>*kou/rhn d' *ai)h/tao diotrefe/os basilh=os</l>
+											<l>*ai)soni/dhs boulh=|si qew=n ai)eigeneta/wn</l>
+											<l>*)hge par' *ai)h/tew, tele/sas stono/entas a)e/qlous,</l>
+											<l>*tou\s pollou\s e)pe/telle me/gas basileu\s
+												u(perh/nwr</l>
+											<l>*(ubristh\s *peli/hs kai\ a)ta/sqalos o)brimoergo/s.</l>
+											<l>*tou\s tele/sas e)s *)iwlko\n a)fi/keto, polla\
+						mogh/sas,</l>
+											<l>*)wkei/hs e)pi\ nho\s a)/gwn e(likw/pida kou/rhn</l>
+											<l>*ai)soni/dhs, kai/ min qalerh\n poih/sat' a)/koitin.</l>
+										</quote>
+									</p>
+								</note>
+						Hesiod outlines the whole theme of the <title>Argonautica</title> in a few
+						verses, from the orders of Pelias to the return of Jason to his native land.</item>
+							<label>(c) </label>
+							<item>There is no writer more frequently cited by the Scholiasts, and
+						none with whom our poet more often agrees, than Pherecydes of Leros, one of
+						the most celebrated of the early logographers. His chief work was a
+						mythological history in ten books entitled <foreign xml:lang="grc">Ἀρχαιολογίαι,
+						Ἱστορίαι,</foreign> or <foreign xml:lang="grc">Αὐτόχθονες.</foreign> The
+						opening book was a <title>Theogonia,</title> and then followed a description
+						of the heroic age. <pb n="20" />The legend of the Argonauts and the history
+						of Jason came probably in the sixth and seventh books. Apollonius acquired
+						from Pherecydes not merely details connected with the Argonauts, but also
+						historical and geographical notices which he worked into his poem.</item>
+							<label>(d) </label>
+							<item>Another author often mentioned in the scholia is <foreign
+									xml:lang="grc">ὁ τὰ Ναυπάκτια πεποιηκώς,</foreign> once (ii 299)<note
+									anchored="true">
+									<p>Where Keil needlessly alters the schol. in a mistaken effort
+						to secure uniformity. On the question of the authorship, see Clinton (<title>F.
+						H.</title> i 349). It was sometimes attributed to a Neoptolemus of Miletus.</p>
+								</note>
+						expressly called <foreign xml:lang="grc">Νεοπτόλεμος ὁ τὰ Ναυπάκτια
+						πεποιηκώς.</foreign> It has been generally assumed that Neoptolemus of Paros
+						(or Parium in Mysia) either wrote it or commented on it. Pausanias (x 38, 6)
+						agrees with Charon of Lampsacus in attributing it to the cyclic poet
+						Carcinus of Naupactus, the work deriving its name from the birth-place of
+						its author, like the <foreign xml:lang="grc">Κύπρια</foreign> of Stasinus of
+						Cyprus. The subject of the <foreign xml:lang="grc">Ναυπάκτια,</foreign>
+						according to Pausanias, was <foreign xml:lang="grc">ἔπη πεποιημένα εἰς
+						γυναῖκας.</foreign> Amongst the famous heroines we may infer that Medea was
+						introduced, and consequently the story of the golden fleece. Only once<note
+									anchored="true">
+									<p>Schol. on ii 299, in reference to the retreat of the harpies
+						to Crete.</p>
+								</note> is the author mentioned
+						as agreeing with Apollonius, in all other cases as differing, the difference
+						being strongly marked with regard to the flight of Medea.<note
+									anchored="true">
+									<p>See note on iv 87.</p>
+								</note>
+							</item>
+							<label>(e) </label>
+							<item>Pindar in his masterpiece the fourth Pythian ode sings of the
+						voyage of the Argo, telling of the foundation of Cyrene by Battus from
+						Thera, and the fate-fraught clod of earth given by the god Triton to
+						Euphemus <pb n="21" />in Libya.<note anchored="true">
+									<p>Cf. <title>Arg.</title> iv 1551 sqq.</p>
+								</note>
+						The story of Aristaeus and the Etesian winds is derived from Pind. <title>
+						Pyth.</title> ix. According to the Schol. Pindar agreed with Hesiod and
+						differed from our poet about the return of the Argonauts.</item>
+							<label>(f) </label>
+							<item>Antimachus of Colophon is another poet whose influence on
+						Apollonius must have been very great. Weichert<note anchored="true">
+									<p>op. cit., p. 233.</p>
+								</note>
+						well describes him as "gleich berühmt als Epiker durch seine Thebais, wie
+						als Elegiker durch seine Lyde, und in beiden Gattungen der Poesie das
+						Vorbild der Alexandriner." The love tragedy of Jason and Medea must surely
+						have formed part of his <title>Lyde.</title> On ii 296 we are told that
+						Apollonius took from him the version that the harpies were not slain by the
+						sons of Boreas, and again on iv 156 we find that Apollonius described the
+						drugging of the dragon and the winning of the fleece <foreign xml:lang="grc">συμφώνως
+						Ἀντιμάχῳ.</foreign>
+							<note anchored="true">
+									<p>The differences mentioned in the schol. are trifling except
+						with regard to the return voyage where Antimachus agreed with Hesiod and
+						Pindar.</p>
+								</note>
+							</item>
+							<label>(g) </label>
+							<item>The three great Tragedians must have frequently woven the quest of
+						the Argonauts into their lost plays. Aeschylus' drama <foreign
+									xml:lang="grc">Ὑψιπύλη</foreign> is cited by the Schol. on i 773
+						as describing the meeting of the heroes with the women of Lemnos, and on i
+						105 there is a reference to a work of his entitled <foreign xml:lang="grc">
+						Ἀργώ.</foreign> On iv 284 we are told that our poet followed the <foreign
+									xml:lang="grc">Προμηθεὺς λυόμενος</foreign> in making the Ister
+						flow from the land of the Hyperboreans and the Rhipaean Mountains. In
+						another play, the <foreign xml:lang="grc">Κάβειροι,</foreign> we know that
+						Aeschylus brought the Argonauts into contact with those strange <pb n="22" />
+						divinities<note anchored="true">
+									<p>See note on i 917.</p>
+								</note>.
+						The plays of Sophocles embracing the legend which are quoted in the scholia
+						are those entitled <foreign xml:lang="grc">Κολχίδες, Σκύθαι, Λήμνιαι, Τάλως,
+						Ῥιζοτόμοι,</foreign> and <foreign xml:lang="grc">Φινεύς.</foreign> In
+						portraying the character of Medea Apollonius must have had ever present to
+						his mind the great tragedy of Euripides, and also the tragedies of lesser
+						writers such as Neophron on the same theme. Another play of Euripides, the <foreign
+									xml:lang="grc">Φρίξος,</foreign> is referred to on ii 382 as
+						describing the birds which discharged their plumes as shafts on the island
+						of Ares.</item>
+						</list>
+					</p>
+					<p>VI. Our poet, to judge from the scholia, made abundant use of the many
+						authors of <foreign xml:lang="grc">Ἡράκλεια,</foreign> whose writings
+						recounted the deeds of Heracles. Of these we may mention Cinaethon the
+						cyclic poet of Lacedaemon, Pisander of Camirus in Rhodes, and Panyasis of
+						Halicarnassus the kinsman of Herodotus. Writers on the same theme who were
+						contemporary with, or subsequent to, Apollonius were Demaratus, Rhianus, and
+						Conon. There are three other authors of treatises, partly historical, partly
+						geographical, on the town of Heraclea and the legends associated therewith,
+						Promathidas, Nymphis, and Callistratus. They are not merely mentioned as
+						agreeing with Apollonius, but we are also directly told that Apollonius took
+						certain statements from the first two, who were both natives of Heraclea.
+						From Promathidas<note anchored="true">
+							<p>Mueller, op. cit. iii 201, shows that Promathidas probably lived much
+						later than Apollonius (about 80 b.c.), and so Lehrs would alter the schol.
+						on ii 911, on the assumption of a lacuna, into <foreign xml:lang="grc">τὴν
+									δὲ περὶ Σθενέλου ἱστορίαν ἔλαβε παρὰ … (ἔστι καὶ παρἂ Προμαθίδᾳ</foreign>
+						(mss. <foreign xml:lang="grc">Προμαθίδα</foreign>). This change is adopted
+						by Keil.</p>
+						</note> he took <pb n="23" />the story
+						of Sthenelus (ii 911), also the legend of the foundation of the town of
+						Heraclea (ii 845), while the description of the <foreign xml:lang="grc">ἄκρη
+						Ἀχερουσίς</foreign> (ii 728) is from Nymphis.</p>
+					<p>VII. Some of the philosophic doctrines of Empedocles find expression in i 496
+						sqq., iv 676 sqq. In the account of the Idaean Dactyli (i 1129 sqq.)
+						Apollonius was indebted to Menander as well as to Stesimbrotus. In the fine
+						passage, <bibl n="Apollon. 3.158">iii 158 sqq.</bibl>, we are told <foreign
+							xml:lang="grc">διὰ τούτων τῶν στίχων παραγράφει τὰ εἰρημένα ὑπὸ Ἰβύκου,</foreign>
+						and Ibycus is also imitated in iv 814.</p>
+					<p>Other authorities cited at times by the Scholiasts, though to us in many
+						cases they are mere names, are Nymphodorus of Amphipolis, author of <foreign
+							xml:lang="grc">Νόμιμα Ἀσίας,</foreign> from whom Apollonius drew his
+						account of the customs of the Colchi (<bibl n="Apollon. 3.203">iii 203</bibl>),
+						the Tibareni (ii 1012), and the Mossynoeci (ii 1020)<note anchored="true">
+							<p>It is curious that the works of Xenophon are never mentioned in our
+						scholia, though his account of these tribes closely resembles that of
+						Apollonius.</p>
+						</note>; Deilochus, or Deiochus, of
+						Proconnesus, who wrote a work <foreign xml:lang="grc">περὶ Κυζίκου,</foreign>
+						from which our poet got much of his information about that town, agreeing
+						with him also in his account of the death of Amycus<note anchored="true">
+							<p>ii 97 sqq.</p>
+						</note>; Evanthes, probably of
+						Samos, author of <foreign xml:lang="grc">Μυθικά,</foreign> who had told of
+						the death of Clite, wife of king Cyzicus (i 1063); Theolytus, an epic poet
+						of Methymna, author of <foreign xml:lang="grc">Βακχικὰ ἔπη,</foreign>
+						already mentioned in connexion with Cleon; Androetas of Tenedos, who wrote a <foreign
+							xml:lang="grc">περίπλους τῆς Προποντίδος</foreign> (cited on ii 159);
+						and, lastly, Timagetus <pb n="24" />from whom Apollonius derived his version
+						of the return voyage of the Argonauts through the Ister. His work <foreign
+							xml:lang="grc">περὶ λιμένων</foreign> is often referred to by the
+						Scholiasts in connexion with the flight of the Argonauts from Colchis,
+						though otherwise there is nothing known of him.</p>
+					<p>VIII. Apollonius had studied closely the didactic poem of Aratus, as we see
+						by comparing <list type="simple">
+							<item>
+								<cit>
+									<bibl n="Apollon. 1.30">
+										<title>Arg.</title> i 30</bibl>
+									<quote xml:lang="grc">ἑξείης στιχόωσιν</quote>
+								</cit>
+						, <cit>
+									<bibl n="Arat. 372">
+										<title>Phaen.</title> 372</bibl>
+									<quote xml:lang="grc">ἑξείης στιχόωντα</quote>
+								</cit>
+							</item>
+							<item>
+								<cit>
+									<bibl n="Apollon. 1.555">
+										<title>Arg.</title> i 555</bibl>
+									<quote xml:lang="grc">βαρείῃ χειρὶ κελεύων</quote>
+								</cit>
+						, <cit>
+									<bibl n="Arat. 631">
+										<title>Phaen.</title> 631</bibl>
+									<quote xml:lang="grc">μεγάλῃ ἀνὰ χειρὶ κελεύει</quote>
+								</cit>
+							</item>
+							<item>
+								<cit>
+									<bibl n="Apollon. 1.1141">
+										<title>Arg.</title> i 1141</bibl>
+									<quote xml:lang="grc">ἐοικότα σήματ’ ἔγεντο</quote>
+								</cit>
+						, <cit>
+									<bibl n="Arat. 820">
+										<title>Phaen.</title> 820</bibl>
+									<quote xml:lang="grc">ἐοικότα σήματα κεῖται</quote>
+								</cit>
+							</item>
+							<item>
+								<bibl n="Apollon. 1.1201">
+									<title>Arg.</title> i 1201</bibl>, <bibl n="Apollon. 2.1253">ii
+						1253</bibl>, <bibl n="Arat. 423">
+									<title>Phaen.</title> 423</bibl> sqq. (quoted in the note <ref
+									target="viaf45640099.viaf001.perseus-eng1.xml#b1-cl0715">on i
+						1201</ref>)</item>
+							<item>
+								<cit>
+									<bibl n="Apollon. 4.984">
+										<title>Arg.</title> iv 984</bibl>
+									<quote xml:lang="grc">ἵλατε Μοῦσαι, οὐκ ἐθέλων ἐνέπω προτέρων
+						ἔπος</quote>
+								</cit>, <cit>
+									<bibl n="Arat. 637">
+										<title>Phaen.</title> 637</bibl>
+									<quote xml:lang="grc">Ἄρτεμις ἱλήκοι· προτέρων λόγος, οἵ μιν
+						ἔφαντο κ.τ.λ.</quote>
+								</cit>
+							</item>
+							<item>
+								<cit>
+									<bibl n="Apollon. 4.997">
+										<title>Arg.</title> iv 997</bibl>
+									<quote xml:lang="grc">φαίης κεν ἑοῖς ἐπὶ παισὶ γάνυσθαι</quote>
+								</cit>
+						, <cit>
+									<bibl n="Arat. 196">
+										<title>Phaen.</title> 196</bibl>
+									<quote xml:lang="grc">φαίης κεν ἀνιάζειν ἐπὶ παιδί.</quote>
+								</cit>
+							</item>
+						</list>
+						The simile in <bibl n="Apollon. 2.933">ii 933</bibl> is derived from <cit>
+							<bibl n="Arat. 278">
+								<title>Phaen.</title> 278</bibl>
+							<quote xml:lang="grc">αὐτὰρ ὅγ’ εὐδιόωντι ποτὴν ὄρνιθι ἐοικώς.</quote>
+						</cit>
+						Leutsch<note anchored="true">
+							<p>
+								<title>Philol.</title> xii 66.</p>
+						</note>
+						shows that it was from Phanocles, author of elegies under the title <foreign
+							xml:lang="grc">Ἔρωτες ἢ καλοί,</foreign> that Apollonius, in all
+						probability, imitated the lengthening of the second syllable in <foreign
+							xml:lang="grc">Θρηίκιος.</foreign> The address to the Libyan goddesses
+						(iv 1309, 1322) is modelled on the epigram of Nicaenetus beginning <foreign
+							xml:lang="grc">Ἡρῷσσαι Λιβύων ὄρος ἄκριτον αἵτε νέμεσθε.</foreign>
+					<note
+							anchored="true">
+							<p>
+								<title>Anth. Pal.</title> vi 225.</p>
+						</note>
+						In iv 447, <foreign xml:lang="grc">ἄλγεα τ’ ἄλλ’ ἐπὶ τοῖσιν ἀπείρονα
+						τετρήχασιν,</foreign> we have a clear reminiscence of Philetas (xvi 3,
+						Jacobs), <foreign xml:lang="grc">Οὐδ’ ἀπὸ Μοῖρα τέλος τι κακῶν φέρει ἀλλὰ
+						μένουσιν Ἔμπεδα καὶ τοῖσιν ἄλλα προσαυξάνεται.</foreign>
+					<pb n="25" />
+					</p>
+					<p>The number of coincidences which we can detect between the <title>Argonautica</title>
+						and the works of Callimachus is very small, as we have few fragments of the <foreign
+							xml:lang="grc">Αἴτια,</foreign> which had contained among its subjects
+						the story of the Argonauts. In i 1309 we have a verse apparently taken
+						completely from Callimachus (<bibl n="Call. fr. 212">fr. 212</bibl>).<note
+							anchored="true">
+							<p>See Appendix on the Double Recension of the <title>Argonautica.</title>
+							</p>
+						</note>
+						Other resemblances are referred to in the notes on <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b1-cl0093">i 129</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b1-cl0449">738</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b1-cl0582">972</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b1-cl0598">997</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b1-cl0662">1116</ref>; <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b2-cl0420">ii 713</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b2-cl0454">770</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b2-cl0649">1094</ref>; <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b3-cl0183">iii 277</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b3-cl0517">876</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b3-cl0547">932</ref>; <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b4-cl0590">iv 961</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b4-cl0688">1165</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b4-cl0941">1614</ref>, <ref
+							target="viaf45640099.viaf001.perseus-eng1.xml#b4-cl0997">1717.</ref>
+					</p>
+					<p>Though Theocritus took for his theme some of the subjects which Apollonius
+						also treats of, we cannot say that Apollonius borrowed from him, as the
+						uncertainty of the chronology in the case of both poets prevents any
+						definite conclusion as to their influence on each other. Knaack and Gercke<note
+							anchored="true">
+							<p>
+								<title>Rh. Mus.</title> xliv 137 sqq.</p>
+						</note>
+						assume, on quite insufficient grounds, that Theocritus' poems on Hylas
+						(xiii) and the Dioscuri (xxii) were composed as the most effective form of
+						criticism on Apollonius' defective treatment of the same subjects at the end
+						of the first book and the beginning of the second. In his <title>Thalusia</title>
+						Theocritus had introduced the attack on imitators of Homer, which we have
+						already quoted in dealing with the life of our poet, though there is no
+						evidence that it was directed against Apollonius in particular.</p>
+					<p>Some of the post-Homeric verbs used in the <title>Argonautica</title> may
+						have been derived from Lycophron.<note anchored="true">
+							<p>v. Boesch, <title>De Ap. Rhod. Elocutione,</title> p. 50. He gives as
+						instances <foreign xml:lang="grc">γατομέω</foreign> (ii 1005; Lyc. 268,
+						1396), <foreign xml:lang="grc">δωμάω</foreign> (ii 531; Lyc. 719), <foreign
+									xml:lang="grc">μυδαίνω</foreign> (<bibl n="Apollon. 3.1042">iii
+						1042</bibl>; Lyc. 1008), <foreign xml:lang="grc">δύπτω</foreign> (i 1008,
+						1326; Lyc. 715).</p>
+						</note>
+					<pb n="26" />
+					</p>
+				</div>
+				<div type="textpart" n="3" subtype="section" xml:id="introduction-s3">
+					<head>The <title>Argonautica</title>
+					</head>
+					<p>The writers whom we have enumerated formed part of the broad foundation of
+						literary lore on which Apollonius reared the structure of his poem. We have
+						next to consider the nature of this poem itself, and how our poet employed
+						the mass of materials which he had accumulated.</p>
+					<p>Apollonius chose for his theme the legend of the Argonauts, the quest of the
+						golden fleece. For the purposes of an epic poem such a theme was well
+						adapted. The voyage of the Argo, the first vessel which ploughed the lonely
+						deep, was placed in a remote past antecedent to the poems of Homer, to the
+						siege of Troy, and the wanderings of Odysseus.<note anchored="true">
+							<p>In <title>Od.</title> 12. 69 the Argo is spoken of as in all men's
+						minds, <foreign xml:lang="grc">Οἵη δὴ κείνη γε παρέπλω ποντοπόρος νηῦς Ἀργὼ
+						πᾶσι μέλουσα παρ’ Αἰήταο πλέουσα.</foreign>
+							</p>
+						</note>
+						The origin of the legend is wrapped in the mist of antiquity. Whether there
+						is any historical basis for it or not we cannot say.<note anchored="true">
+							<p>Herodotus (i 2) represents the carrying off of Medea by the Greeks
+						from Colchis as an act of reprisal for the carrying off of lo by the
+						Phoenicians. Rawlinson, in his note, traces an ethnic relationship between
+						the Colchians and the Phoenicians.</p>
+						</note> It may
+						have arisen from traders sailing to the eastern boundary of the world, as
+						Colchis was then regarded, and bringing back wondrous tales of the countries
+						they had visited, <pb n="27" />and the adventures they had encountered on
+						their perilous voyage. Strabo<note anchored="true">
+							<p>428, 25 (ed. Didot), <foreign xml:lang="grc">λέγεται καὶ χρυσὸν
+						καταφέρειν τοὺς χειμάρρους, ὑποδέχεσθαι δ’ αὐτὸν τοὺς βαρβάρους … μαλλωταῖς
+						δοραῖς· ἀφ’ οὗ δὴ μεμυθεῦσθαι καὶ τὸ χρυσόμαλλον δέρας.</foreign> Suidas (s.
+						v. <foreign xml:lang="grc">δέρας</foreign>) explains the golden fleece as <foreign
+									xml:lang="grc">βιβλίον ἐν δέρμασι γεγραμμένον, περιέχον ὅπως δεῖ
+						γίνεσθαι διὰ χημείας χρυσόν.</foreign> The same extraordinary view was
+						attributed to Charax by Eustathius on Dion. Perieg. 689.</p>
+						</note>
+						held that the myth of the golden fleece was connected with the wealth of
+						gold dust washed down by Colchian rivers rich as the Lydian Pactolus. But,
+						whatever the origin may have been, we know that the legend was one ever dear
+						to the Greeks as a seafaring people, so that in choosing it as his subject
+						Apollonius was assured of the sympathetic interest of his public. The
+						conquest of Alexander and the spread of commerce had turned men's minds to
+						far-off lands, and tales of romantic adventure were becoming an established
+						literary type.</p>
+					<p>The character of the poetry of the Alexandrian school was to a large extent
+						determined by the character of the age in which they wrote. Whatever the
+						talents of the poet might be, his work must be replete with historical and
+						legendary lore if it was to meet with approval from the literary circles in
+						the days of the Ptolemies. Apollonius, like Catullus, well deserved the
+						title <foreign xml:lang="lat">doctus.</foreign> As Couat<note
+							anchored="true">
+							<p>op. cit. p. 297.</p>
+						</note> expresses it, "La
+						véritable difficulté pour Apollonius ne fut pas d'inventer, mais de
+						choisir." To have assimilated materials of such a heterogeneous nature
+						required ability of no mean order. His vast industry would, <pb n="28" />however,
+						have resulted merely in a <foreign xml:lang="lat">rudis indigestaque moles,</foreign>
+						had it not been for the true poetic genius with which he was endowed.</p>
+					<p>How far our poet possessed the gift of originality we cannot determine. We
+						are mainly dependent on the evidence of the scholia, and, to judge from
+						them, Apollonius might have truly said with Callimachus<note anchored="true">
+							<p>
+								<bibl n="Call. fr. 442">frag. 442.</bibl>
+							</p>
+						</note>
+					<foreign
+							xml:lang="grc">ἀμᾴρτυρον οὐδὲν ἀείδω.</foreign> But most of the works to
+						which they refer as agreeing or differing have not come down to us, so that
+						we are unable to decide for ourselves the precise nature of our poet's
+						obligations. However much he may have been indebted to his predecessors for
+						the matter, the form of the poem is his own, and everywhere we find traces
+						of that sense of proportion which ensures the symmetry of the whole.</p>
+					<p>His work fulfils many of the requirements of epic poetry. Great are the
+						achievements of his heroes--great and wonderful. The mind of the reader is
+						filled with amaze at the recital of their deeds. The understanding is
+						enriched with the tales of diverse lands and diverse peoples. The
+						imagination is stirred by the fabulous and the mystical, by the intercourse
+						of gods with men. The aesthetic sense is awed with the feeling of the
+						sublime, the contrast between divine omnipotence and mortal frailty. Every
+						emotion of the human soul is faithfully reflected in the poem, love and
+						hatred, joy and sorrow, hope and fear. So cunningly are the various episodes
+						woven into the web of the story that our attention seldom flags, <pb n="29" />our
+						expectation is whetted with the eagerness of anticipation.</p>
+					<p>With the features of the older epic poetry are blended the graces of the
+						elegy in the romantic loves of Jason and Medea. At times we seem to have a
+						statue or picture reproduced in verse, as in the description of the youthful
+						Eros and Ganymede playing at dice together in the gardens of Olympus<note
+							anchored="true">
+							<p>
+								<bibl n="Apollon. 3.114">iii 114</bibl> sqq.</p>
+						</note>--an
+						exquisite passage which shows in all its fullness our poet's skill in simple
+						word-painting.</p>
+					<p>One of the most prominent characteristics of the poem is the beauty of the
+						similes, a feature which seems above all others to have attracted Virgil.
+						Apart from their intrinsic charm, they set forth in a brighter light and
+						with a relevancy of detail the incidents to which they refer. There is a
+						special appositeness in their use which at times is not to be found in the
+						similes of Homer. Few who have studied the poem carefully will agree with
+						Dr. Mahaffy's criticism that "the poet's similes are rather introduced for
+						their prettiness than for their aptness." To take but one example from the
+						wealth the poem affords,<note anchored="true">
+							<p>There are seventy-six similes developed in the <title>Argonautica</title>
+						(5833 lines); in the <title>Iliad</title> (15,600 lines) there are about
+						200, so that the proportion is nearly the same.</p>
+						</note>
+						the simile of the bees,<note anchored="true">
+							<p>i 879 sqq. Other good examples will be found in <bibl
+									n="Apollon. 2.70">ii 70</bibl>, <bibl n="Apollon. 3.875">iii 875</bibl>
+						, <bibl n="Apollon. 3.956">956</bibl>, <bibl n="Apollon. 4.948">iv 948</bibl>
+						, <bibl n="Apollon. 4.1062">1062</bibl>, <bibl n="Apollon. 4.1682">1682</bibl>
+						.</p>
+						</note> to which the women of Lemnos are
+						likened as they throng about the departing heroes, is peculiarly happy in
+						every circumstance and every detail. In it Apollonius may be said to have
+						surpassed <pb n="30" />both Homer and Virgil who employ the same imagery in
+						a different connexion. Beautiful in its freshness is the comparison of the
+						throbbing of Medea's heart to the dancing beams of sunlight reflected from
+						the eddying water:-- <cit>
+							<quote xml:lang="grc">
+								<l>pukna\ de/ oi( kradi/h sthqe/wn e)/ntosqen e)/quien</l>
+								<l>h)eli/ou w(/s ti/s te do/mois e)nipa/lletai ai)/glh</l>
+								<l>u(/datos e)caniou=sa, to\ dh\ ne/on h)e\ le/bhti</l>
+								<l>h)e/ pou e)n gaulw=| ke/xutai: h( d' e)/nqa kai\ e)/nqa</l>
+								<l>w)kei/h| strofa/liggi tina/ssetai a)i/ssousa:</l>
+								<l>w(=s de\ kai\ e)n sth/qessi ke/ar e)leli/zeto kou/rhs.</l>
+							</quote>
+							<bibl n="Apollon. 3.755">-- iii 755 sqq.</bibl>
+						</cit>
+					</p>
+					<p>Virgil (<bibl n="Verg. A. 8.22">
+							<title>Aen.</title> 8. 22 sqq.</bibl>) was not slow to adopt this as his
+						own.</p>
+					<p>Another charm of the <title>Argonautica</title> lies in the grace and
+						vividness of the descriptive passages. Be it the glorious majesty of Apollo
+						or the sufferings of Phineus, the beauty of Jason or the deformity of
+						Polyxo, the o'erweening pride of Aeetes or the love-pangs of Medea, the
+						might of the hero going forth to battle or the weariness of the husbandman
+						returning home at even, the resistless fury of the raging sea or the dreary
+						waste of the Libyan sands, all are set before us with the same realistic
+						power. As the scenes of action unfold themselves, we are no longer readers,
+						we are witnesses. We see, as if we were present, that the rude boxing of
+						Amycus can be of no avail against the skill of Polydeuces. The brazen-hoofed
+						bulls with fiery nostrils, the warriors springing from the furrow, the
+						sleepless dragon which guards the fleece are quickened into life by the
+						poet's pen. Again, in scenes of repose, the spirit of restful calm steals
+						over <pb n="31" />us as we read the lines depicting the unbroken
+						peacefulness of a stilly night:-- <cit>
+							<quote xml:lang="grc">
+								<l>*nu\c me\n e)/peit' e)pi\ gai=an a)/gen kne/fas: oi( d' e)ni\
+						po/ntw|</l>
+								<l>nau=tai ei)s *(eli/khn te kai\ a)ste/ras *)wri/wnos</l>
+								<l>e)/drakon e)k nhw=n: u(/pnoio de\ kai/ tis o(di/ths</l>
+								<l>h)/dh kai\ pulawro\s e)e/ldeto: kai/ tina pai/dwn</l>
+								<l>mhte/ra teqnew/twn a)dino\n peri\ kw=m' e)ka/lupten:</l>
+								<l>ou)de\ kunw=n u(lakh\ e)/t' a)na\ pto/lin, ou) qro/os h)=en</l>
+								<l>h)xh/eis: sigh\ de\ melainome/nhn e)/xen o)/rfnhn.</l>
+							</quote>
+							<bibl n="Apollon. 3.744">-- iii 744 sqq.</bibl>
+						</cit>
+					</p>
+					<p>A large part is played by the gods in all epic poetry, and the <title>
+						Argonautica</title> is no exception, though in it their intervention is
+						strangely fitful, and their characterization at times quite un-Homeric.<note
+							anchored="true">
+							<p>Cf. Hémardinquer, <title>De Ap. Rh. Argonauticis.</title>
+							</p>
+						</note>
+						Apollonius exercised a certain restraint in introducing them. He seems to
+						have followed the rule which Horace prescribes for the writers of tragedy, <quote
+							xml:lang="lat">"nec deus intersit, nisi dignus vindice nodus."</quote>
+						Thus it is to Athene that the building of the Argo is ascribed.<note
+							anchored="true">
+							<p>i 226.</p>
+						</note> The mortal skill of Argus
+						could never unaided have fashioned a vessel to face the perils of the
+						unknown sea. It is Athene who brings the heroes safely through the clashing
+						of the Cyanean rocks.<note anchored="true">
+							<p>ii 537 sqq.</p>
+						</note> So too it is Hera who
+						stays with her thunderstorms the pursuing forces of the Colchians, and
+						rescues the Argonauts from impending doom as they thread the tortuous
+						channel of the Rhone.<note anchored="true">
+							<p>iv 640 sqq.</p>
+						</note>
+					</p>
+					<p>Zeus, though often mentioned with his various attributes as <foreign
+							xml:lang="grc">Ξείνιος, Ἱκέσιος, Ἐπόψιος,</foreign> and <foreign
+							xml:lang="grc">Φύξιος,</foreign> appears but seldom in the working out
+						of the main <pb n="32" />theme. We are told of his wrath against the sons of
+						Aeolus, which can only be appeased by the propitiation of Phrixus and the
+						recovery of the fleece.<note anchored="true">
+							<p>
+								<bibl n="Apollon. 3.337">iii 337</bibl> sqq.</p>
+						</note>
+						His anger is manifested against the heroes after the murder of Absyrtus, and
+						he ordains that Jason and Medea must be purified by Circe.<note
+							anchored="true">
+							<p>iv 557 sqq.</p>
+						</note>
+					</p>
+					<p>Phoebus Apollo is the divinity who inspires the whole adventure. At the
+						opening of the poem we have the oracle which alarms Pelias and makes him
+						send forth Jason on an apparently hopeless quest. Jason comforts his weeping
+						mother by telling her that Phoebus has vouchsafed a prosperous voyage.<note
+							anchored="true">
+							<p>i 301 sqq.</p>
+						</note> Before entering on the
+						expedition Jason had gone to consult the god at Delphi, and the god had
+						given him two tripods, to be dedicated in places to which they would come on
+						their journey. One of these tripods, Apollonius tells us, was dedicated in
+						the land of the Hyllaeans,<note anchored="true">
+							<p>iv 528 sqq.</p>
+						</note> the other in Libya at
+						Lake Tritonis.<note anchored="true">
+							<p>iv 1548 sqq.</p>
+						</note> To Apollo, under the
+						titles of <foreign xml:lang="grc">Ἄκτιος</foreign> and <foreign
+							xml:lang="grc">Ἐμβάσιος,</foreign> they sacrifice ere setting out.<note
+							anchored="true">
+							<p>i 359, 403.</p>
+						</note> Altars are raised to
+						him at many places where they land.<note anchored="true">
+							<p>e.g. i 966. ii 927.</p>
+						</note> On the isle of
+						Thynias the god appears to them at morn as he is returning from the Lycians
+						to the Hyperboreans, and again they sacrifice and make vows to him as <foreign
+							xml:lang="grc">Ἐῶος,</foreign>
+					<note anchored="true">
+							<p>ii 674 sqq.</p>
+						</note> the god of the dawning
+						day. When they are nearing home again, a dense darkness envelops them on
+						leaving Crete, but Phoebus with his flashing bow illumines for them the
+						island which they name the <pb n="33" />Isle of the Appearance (<foreign
+							xml:lang="grc">Ἀνάφη</foreign>), and they dedicate an altar to him as <foreign
+							xml:lang="grc">Αἰγλήτης.</foreign>
+					<note anchored="true">
+							<p>iv 1694 sqq.</p>
+						</note>
+					</p>
+					<p>The building of the Argo by Athene is not described by Apollonius; only
+						incidentally is it mentioned as her handiwork. Valerius Flaccus has given us
+						a vivid narrative thereof. With Hera Athene watches over the passage of the
+						Argo near Scylla and Charybdis.<note anchored="true">
+							<p>iv 959.</p>
+						</note> With Hera too she goes to
+						Aphrodite to implore her aid and that of her son Eros in moving Medea's
+						heart to succour Jason.<note anchored="true">
+							<p>
+								<bibl n="Apollon. 3.7">iii 7</bibl> sqq.</p>
+						</note>
+					</p>
+					<p>The goddess who takes the principal and most direct part in the story is
+						Hera. It is strange that she is not mentioned when our poet is describing
+						the first assembling of the heroes. We are not told how they were brought
+						together. Far more striking is the opening of the poem of Valerius Flaccus,
+						where Jason, hearing the ordeal imposed on him by Pelias, prays to Hera and
+						Athene for their help. The goddesses hear his prayer, and, while Athene
+						builds for him the vessel, Hera goes through Argolis and Macedonia summoning
+						the heroes to take part in the adventure. In the first two books of our poem
+						Hera is passed over almost in silence in the description of the outward
+						voyage, but from the beginning of the third book to the end of the poem her
+						powers are exercised actively and frequently. Two causes are assigned by her
+						for her watchful care of Jason.<note anchored="true">
+							<p>
+								<bibl n="Apollon. 3.60">iii 60</bibl> sqq.</p>
+						</note>
+						One is her wrath against Pelias for neglecting her in sacrifice; the other
+						is her fondness for Jason from the day when he had borne her over the
+						swollen torrent Anaurus as she <pb n="34" />roamed the earth making trial of
+						the righteousness of men. Throughout the sojourn in the land of Colchis and
+						on the homeward voyage she shows in manifold ways her lovingkindness towards
+						the hero. Widely different is her rôle in the <title>Aeneid,</title> where,
+						as the vengeful jealous wife of Jove, she thwarts and baffles the
+						stormtossed Aeneas.</p>
+					<p>The fondness of the Greeks for representing the gods as endowed with like
+						forms and like passions with themselves is strikingly illustrated in the
+						famous passage at the beginning of the third book where Cypris is surprised
+						at her toilet by Hera and Athene;<note anchored="true">
+							<p>
+								<bibl n="Apollon. 3.43">iii 43</bibl> sqq.</p>
+						</note>
+						and the interview which follows between the goddesses is characterized by a
+						polished diplomacy and duplicity, which, as Couat<note anchored="true">
+							<p>op. cit. p. 306.</p>
+						</note> well says, is
+						worthy of the court of the Ptolemies, and is far removed from the tumultuous
+						councils of the gods in the <title>Iliad.</title>
+					</p>
+					<p>We hear but little of the other gods and goddesses. Glaucus rises up from the
+						sea to declare that it is the will of heaven that Heracles and Polyphemus
+						should not journey further with the Argonauts.<note anchored="true">
+							<p>i 1310 sqq.</p>
+						</note> Iris comes down from
+						Olympus to stay the sons of Boreas in their pursuit of the harpies.<note
+							anchored="true">
+							<p>ii 286 sqq.</p>
+						</note> The sea-god Triton
+						shows the toil-worn mariners the outlet from Lake Tritonis to the sea.<note
+							anchored="true">
+							<p>iv 1551 sqq.</p>
+						</note>
+					</p>
+					<p>The <title>Argonautica</title> cannot be described as a religious poem in the
+						sense in which the <title>Iliad</title> and <title>Odyssey</title> are
+						religious poems. In the <title>Iliad</title> and the <title>Odyssey</title>
+						there is a continuous working out of a divine purpose, and <pb n="35" />every
+						step in the action is determined thereby. In the <title>Argonautica,</title>
+						on the other hand, the religious motive is present, but this motive is
+						rather in the poem than of it; it fills the mind neither of the poet nor his
+						readers, and Jason, though nominally the instrument chosen to fulfil a
+						divine mission, in reality plays the part of a leader of adventurers.</p>
+					<p>At times we find a tinge of scepticism when the poet is recounting some
+						wondrous legend concerning the gods. "Withhold not your favour, O goddesses
+						of song," he cries, "unwillingly I tell the tale our fathers told."<note
+							anchored="true">
+							<p>iv 985.</p>
+						</note> Such wavering faith in
+						venerable tradition is characteristic of the Alexandrian school.</p>
+					<p>Throughout the whole poem we detect an undercurrent of sadness, of that
+						pessimism which was peculiarly Greek, the realization of the inevitableness
+						of doom,<note anchored="true">
+							<p>e.g. i 1035, iv 1504.</p>
+						</note> the feeling
+						that the cup of happiness must ever be embittered with an admixture of
+						sorrow.<note anchored="true">
+							<p>iv 1166-- <quote xml:lang="grc">
+									<l>a)lla\ ga\r ou)/pote fu=la duhpaqe/wn a)nqrw/pwn</l>
+									<l>terpwlh=s e)pe/bhmen o(/lw| podi/: su\n de/ tis ai)ei\</l>
+									<l>pikrh\ parme/mblwken e)ufrosu/nh|sin a)ni/h.</l>
+								</quote>
+							</p>
+						</note>
+					</p>
+					<p>In estimating the worth of a narrative poem a question of paramount
+						importance is the poet's power of delineating character (<foreign
+							xml:lang="grc">ἠθοποιία</foreign>). Judged from this standpoint we can
+						only attribute to Apollonius a very partial success. Of the multitude of
+						figures which fill the canvas one, and one only, stands out in bold relief;
+						the others are sketched in vague and shadowy outline. The poet lavished all
+						his colours on the portraiture <pb n="36" />of the wonder-working Medea. Her
+						varying moods enthral us from the moment when first she beholds the godlike
+						Jason as he enters her father's court<note anchored="true">
+							<p>
+								<bibl n="Apollon. 3.275">iii 275</bibl> sqq.</p>
+						</note>
+						until their nuptials are consummated on the isle of the Phaeacians.<note
+							anchored="true">
+							<p>iv 1141 sqq.</p>
+						</note> Her inmost feelings
+						are laid bare to us with a psychological subtlety strangely modern and
+						unknown to Homer. Impulsive, passionate with the passionateness of the East,
+						torn at first by the conflict betwixt love and duty, gradually she yields to
+						the overmastering sway of Eros. Duty and honour are flung to the winds. She
+						steals forth at night from her father's home. For Jason alone she lives. The
+						ties of kin no longer bind her. Cunningly and remorselessly she plots her
+						brother's death. Woe unto Jason if he should prove false to her! Fickle and
+						faithless he proved himself in after years, and Euripides has shown us that
+						"Hell hath no fury like a woman scorned." In his wondrous drama the
+						intensity of Medea's hate is only equalled by the intensity of her love as
+						depicted in our poem. The third book, in which the love interest is
+						introduced, is incomparably superior to the other three.<note
+							anchored="true">
+							<p>Cf. Sainte-Beuve, <title>La Médée d'Apollonius.</title>
+							</p>
+						</note>
+						The passage<note anchored="true">
+							<p>
+								<bibl n="Apollon. 3.802">iii 802</bibl> sqq.</p>
+						</note>
+						where Medea would end the turmoil of her soul by self-destruction, but
+						shrinks from death as she reflects that life is sweet and that she is still
+						in the morning of life, is one of the great things in Greek literature, and
+						has been compared with the splendid scene near the opening of Goethe's <title>
+						Faust.</title>
+					<note anchored="true">
+							<p>Mahaffy, <title>History of Greek Literature,</title> vol. i c. 9.</p>
+						</note>
+						As we <pb n="37" />read of this hapless maiden, daughter of a savage sire,
+						priestess of the weird goddess Hecate in her lonely temple on the plain, and
+						see her suddenly called by fate to a new and strange destiny, made the
+						instrument for the fulfilment of the purposes of gods and men, smitten by a
+						love which her young heart cannot understand, though it obeys its impulses,
+						we are moved in a way in which the widowed Dido with her mad infatuation,
+						amid the hum and bustle of rising Carthage, moves us not.</p>
+					<p>Compared with Medea the character of Jason is tame and insipid. Endowed with
+						the radiant beauty of Apollo<note anchored="true">
+							<p>i 207.</p>
+						</note> he is brave and gallant as
+						heroes are wont to be, and steadfastly fulfils his task of recovering the
+						golden fleece. He is tactful, lovable, and urbane in his dealings with his
+						comrades, and is slow to wrath even when provoked by the taunting words of
+						the Colchian king. He is prone to exhibit a soft sentimentality, seen also
+						in the character of Aeneas which is largely modelled on that of Jason.<note
+							anchored="true">
+							<p>Cf. Henry, <title>Aeneidea,</title> vol. ii, p. 359.</p>
+						</note>
+						In his intercourse with Medea he displays a calculating and deliberate
+						selfishness which reappears as the dominant note in his character in the
+						play of Euripides. We cannot discern in him the qualities of a leader of
+						men. We feel that he is but one of the four-and-fifty heroes, many of them
+						riper in years and more famous for their doughty deeds than he. Upon the
+						shore at Pagasae Jason bids them choose out a leader from among their
+						number, and with one accord they acclaim Heracles.<note anchored="true">
+							<p>i 332 sqq.</p>
+						</note> Heracles will not take <pb
+							n="38" />command, and persuades the others to acknowledge Jason as their
+						chief. Such is the position of Jason, a leader chosen by his comrades
+						against their own better judgment. Nominally he is first and foremost, in
+						reality he is but <foreign xml:lang="lat">primus inter pares.</foreign> So
+						it is throughout the poem. On the outward voyage the only prominent part he
+						plays is in the love-adventures with Hypsipyle on the island of Lemnos.<note
+							anchored="true">
+							<p>i 609 sqq.</p>
+						</note> At the opening of the
+						second book it is Polydeuces who flings back the haughty challenge of
+						Amycus, while Jason takes but little part even in the slaughter of the
+						Bebrycians which follows the downfall of their champion. Again and again
+						when a crisis arises we find him sorely perplexed. When Idmon and Tiphys are
+						stricken by death, Jason, like the rest, throws himself down with muffled
+						head on the seashore in the anguish of despair, until Ancaeus, ignoring him,
+						declares to Peleus his willingness to take the helmsman's post.<note
+							anchored="true">
+							<p>ii 855 sqq.</p>
+						</note> It is Amphidamas, not
+						Jason, who bethinks himself how to ward off the birds of the brazen plumes
+						on the isle of Ares.<note anchored="true">
+							<p>ii 1046 sqq.</p>
+						</note> On that same isle the
+						shipwrecked sons of Phrixus reveal to the heroes the implacable nature of
+						the Colchian king and the dangers which lie before them. It is Peleus, not
+						Jason, who revives their drooping spirits when dismayed at this recital.<note
+							anchored="true">
+							<p>ii 1217 sqq.</p>
+						</note> At last they reach
+						the realms of Aeetes. Jason bears the petulant insults of the incensed
+						monarch<note anchored="true">
+							<p>
+								<bibl n="Apollon. 3.372">iii 372</bibl> sqq.</p>
+						</note>
+						with a forbearance, wise, perhaps, but with the wisdom of a later age. The
+						ordeal of yoking the fire-breathing bulls and <pb n="39" />sowing the
+						dragon's teeth is appointed. How does Jason meet it? Gladly he has recourse
+						to the magic drugs of Medea, and his achievements are shorn of half their
+						greatness. To Medea, not to his own right hand, he owes the winning of the
+						golden fleece. Now begins the flight from Colchis with the Colchians in
+						close pursuit. When the Argonauts are sorely pressed, Jason makes a
+						treacherous truce,<note anchored="true">
+							<p>iv 338 sqq.</p>
+						</note> and, with Medea's aid,
+						compasses the murder of the Colchian chief, Medea's brother, Absyrtus.
+						Purified from this foul deed by Circe, anon they reach Phaeacia.<note
+							anchored="true">
+							<p>iv 982 sqq.</p>
+						</note> Thither come the
+						Colchian forces demanding the surrender of Medea. Now at length it seems as
+						if a deadly contest must ensue, in which the heroes may prove their prowess
+						in the face of fearful odds, but Jason avoids the struggle by putting
+						himself and Medea under the protection of the Phaeacian king, Alcinous, and
+						fulfilling the conditions which he prescribes. From this to the end of the
+						poem we hear little of Jason save when the Libyan goddesses appear to him to
+						deliver him and his comrades from death,<note anchored="true">
+							<p>iv 1305 sqq.</p>
+						</note> and when he
+						sacrifices thank-offerings to Triton at Lake Tritonis and to Apollo at the
+						Isle of the Appearance.<note anchored="true">
+							<p>iv 1595, 1700.</p>
+						</note> It is in his
+						delineation of Jason that Valerius Flaccus far surpasses our poet. In
+						reading the poem of the Roman writer we feel that Jason has a part assigned
+						to him worthy of a leader, and that he stands out unmistakably in the
+						forefront of his comrades.</p>
+					<p>Among the other Argonauts only two can be said to have any distinctive
+						personality, Orpheus <pb n="40" />and Peleus. Orpheus, with his wondrous
+						lyre, whose music charmed rocks, streams, and trees, is the first to be
+						mentioned in the catalogue of heroes. His minstrelsy holds as with a spell
+						the rowers of the Argo. Their oars dip rhythmically to his melodious
+						strains.<note anchored="true">
+							<p>i 540.</p>
+						</note> When angry feelings would
+						rage tumultuously he soothes them with a lay whose burden is that Earth's
+						fair harmony arose from discord at the first.<note anchored="true">
+							<p>i 495 sqq.</p>
+						</note> He cheers his comrades
+						when downhearted, and brings them safely past the temptings of the Sirens
+						with a chant surpassing in sweetness even their alluring notes.<note
+							anchored="true">
+							<p>iv 905.</p>
+						</note> Peleus, the noble father
+						of a nobler son, acts the part of the wise counsellor to his
+						fellow-Argonauts.<note anchored="true">
+							<p>e.g. <bibl n="Apollon. 2.880">ii 880</bibl>, <bibl n="Apollon. 3.505">iii
+						505</bibl>, <bibl n="Apollon. 4.495">iv 495</bibl>.</p>
+						</note>
+						To him, rather than to Jason, they turn for guidance in times of doubt and
+						difficulty. His confidence gives confidence to them. Fatherly love dwells
+						strong within him. One of the most touching passages in the poem is the
+						description of the wife of Chiron holding up the babe Achilles in her arms
+						in fond farewell to Peleus as the Argo passes along the coast of Thessaly.<note
+							anchored="true">
+							<p>i 557.</p>
+						</note>
+					</p>
+					<p>Heracles is left behind in Mysia early in the voyage, a version of the legend
+						which must have been well-pleasing to our poet, avoiding, as it does, the
+						difficulty of subordinating his dominant individuality to the weakness of
+						Jason throughout the adventure. During the brief period for which he
+						journeyed with the other heroes we see him as the man of mighty physical
+						strength and restless energy. The bench in the centre of the vessel, which
+						required the rowers with the <pb n="41" />stoutest thews, is given without
+						lot to him and Ancaeus.<note anchored="true">
+							<p>i 396.</p>
+						</note> He will have no part in the
+						revellings in Lemnos, and in tones of bitter irony he utters his contempt
+						for Jason's dalliance with Hypsipyle.<note anchored="true">
+							<p>i 855 sqq.</p>
+						</note> His club deals out
+						destruction to the giants in the island of Cyzicus.<note anchored="true">
+							<p>i 1040.</p>
+						</note> The breaking of his oar<note
+							anchored="true">
+							<p>i 1167.</p>
+						</note> beneath the strain of his
+						sinewy arms leads to his going on shore to replace it and to the loss of
+						Hylas. Terrible in its intensity is his grief for the well-beloved youth,<note
+							anchored="true">
+							<p>i 1260 sqq.</p>
+						</note> and roaming
+						distractedly in search of him he passes from our view.</p>
+					<p>Of the minor characters little need be said. The brutal Amycus,<note
+							anchored="true">
+							<p>ii 5 sqq.</p>
+						</note> the hot-headed arrogant
+						Idas<note anchored="true">
+							<p>
+								<bibl n="Apollon. 1.462">i 462</bibl> sqq., <bibl n="Apollon. 3.556">iii
+						556</bibl> sqq., <bibl n="Apollon. 3.1169">1169</bibl>.</p>
+						</note>
+						are well depicted. In Telamon we recognize some of the traits of his son
+						Ajax. He is a blunt outspoken warrior, staunch to his friends, quick to
+						quarrel, but generous in admitting his faults.<note anchored="true">
+							<p>i 1289 sqq.</p>
+						</note>
+					</p>
+					<p>Two famous criticisms on Apollonius have come down to us from ancient times,
+						the one by a Greek, the other by a Latin writer, and both when examined are
+						found to express practically the same view. [Longinus], in his treatise <foreign
+							xml:lang="grc">περὶ ὕψους</foreign> (33, 4), says <foreign
+							xml:lang="grc">ἐπείτοιγε καὶ ἄπτωτος ὁ Ἀπολλώνιος ἐν τοῖς Ἀργοναύταις
+						ποιητὴς … ἆρ’ οὖν Ὄμηρος ἂν μᾶλλον ἢ Ἀπολλώνιος ἐθέλοις γενέσθαι;</foreign>
+						The writer is contrasting two classes of poets, the brilliant genius whose
+						very brilliancy makes him at times careless and negligent in detail, and the
+						author possessed of less natural talent who, <pb n="42" />by that genius
+						which consists in the infinite capacity for taking pains, avoids the slips
+						to which the other is prone. Homer, who, as Horace says, sometimes nods, is
+						the type of the former, Apollonius of the latter. The question which
+						Longinus asks carries, of course, its own answer with it. It is true that
+						Apollonius was the greatest Greek writer of epic poetry after Homer--<foreign
+							xml:lang="lat">proximus sed longo intervallo,</foreign> but to compare
+						him with Homer is to apply to him a test which no ancient poet will stand,
+						not even Virgil himself. We should bear in mind the words of Cicero, <quote
+							xml:lang="lat">"in poetis non Homero soli locus est, aut Archilocho, aut
+						Sophocli, aut Pindaro, sed horum vel secundis vel etiam infra secundos."</quote>
+					<note
+							anchored="true">
+							<p>
+								<title>Orator</title> i 4.</p>
+						</note>
+					</p>
+					<p>Quintilian's estimate harmonizes with that of the Greek critic. His words
+						are: <quote xml:lang="lat">"Apollonius in ordinem a grammaticis datum non
+						venit, quia Aristarchus atque Aristophanes poetarum iudices neminem sui
+						temporis in numerum redigerunt; non tamen contemnendum reddidit ['produced']
+						opus aequali quadam mediocritate."</quote>
+					<note anchored="true">
+							<p>x i, 54.</p>
+						</note> Peterson, in his note ad
+						loc., says justly: "No disparagement is implied: the meaning is that
+						Apollonius keeps pretty uniformly to the genus medium, neither rising on the
+						one hand to the genus grande nor on the other descending to the genus
+						subtile. So in the <foreign xml:lang="grc">περὶ ὕψους</foreign> he receives
+						the epithet <foreign xml:lang="grc">ἄπτωτος.</foreign>" <title>Mediocritas</title>
+						thus expresses what Cicero calls the <foreign xml:lang="lat">modicum</foreign>
+						or <foreign xml:lang="lat">temperatum dicendi genus,</foreign> and it is to
+						be observed that this <foreign xml:lang="lat">mediocritas</foreign> was
+						according to Varro the characteristic of Terence. <pb n="43" />Weichert<note
+							anchored="true">
+							<p>op. cit., p. 412.</p>
+						</note> argues, though I
+						think it is possibly straining the words of Quintilian, that in accordance
+						with the ancient use of litotes we are justified in translating 'non
+						contemnendum opus' not merely as 'ein schätzbares' but even as 'ein sehr
+						schätzbares Werk.' In spite of the obvious meaning of Quintilian's judgment
+						many critics perversely hold that he is sneering at Apollonius as a poet of
+						respectable mediocrity. A sufficient answer to this is furnished by his
+						explaining why Apollonius was not admitted to the canon of Greek poets by
+						the Alexandrian critics, and also by his own words in introducing the list
+						of authors whom he discusses, <quote xml:lang="lat">'paucos qui sunt
+						eminentissimi excerpere in animo est.'</quote>
+					</p>
+					<p>The one testimony to the poetic worth of Apollonius which outweighs all
+						others is that of Virgil. With the exception of Homer there is no Greek
+						writer from whom Virgil drew so largely. The fourth book of the <title>
+						Aeneid</title> owes much of its ineffable charm to the romantic loves of
+						Jason and Medea. Conington, though he consistently disparages Apollonius in
+						order to exalt Virgil, has summed up some of the principal obligations of
+						the Latin poet to his Alexandrian predecessor:--"Not only is the passion of
+						Medea confessedly the counterpart of the passion of Dido, but the instances
+						are far from few where Virgil has conveyed an incident from his Alexandrian
+						predecessor, altering and adapting, but not wholly disguising it. The
+						departure of Jason from his father and mother resembles the departure of
+						Pallas from Evander; the <pb n="44" />song of Orpheus is contracted into the
+						song of Iopas, as it had already been expanded into the song of Silenus; the
+						reception of the Argonauts by Hypsipyle is like the reception of the Trojans
+						by Dido, and the parting of Jason from the Lemnian princess reappears,
+						though in very different colours, in the parting of Aeneas from the queen of
+						Carthage; the mythical representations in Jason's scarf answer to the
+						historical representations which distinguish the shield of Aeneas from that
+						of Achilles; the combat of Pollux with Amycus is reproduced in the combat of
+						Entellus with Dares; the harpies of Virgil are the harpies of Apollonius,
+						while the deliverance of Phineus by the Argonauts may have furnished a hint
+						for the deliverance of Achemenides by the Trojans, an act of mercy which has
+						another parallel in the deliverance of the sons of Phrixus; Phineus'
+						predictions are like the predictions of Helenus; the cave of Acheron in Asia
+						Minor suggests the cave of Avernus in Italy; Evander and Pallas appear once
+						more in Lycus and Dascylus; Hera addresses Thetis as Juno addresses Juturna;
+						Triton gives the same vigorous aid in launching the Argo that he gives to
+						the stranded vessels of Aeneas, or that Portunus gives to the ship of
+						Cloanthus in the Sicilian race."<note anchored="true">
+							<p>
+								<title>Commentary on Virgil,</title> vol. ii, p. 19.</p>
+						</note>
+					</p>
+					<p>These are but a few of the resemblances which strike us again and again in
+						reading the <title>Aeneid.</title> To many at the present day the work of
+						Apollonius is only known by the references of the commentators on Virgil.
+						When discussing the unfair treatment which <pb n="45" />our poet has
+						received at the hands of the moderns, Preston<note anchored="true">
+							<p>Translation of the <title>Argonautica,</title> p. 6.</p>
+						</note>
+						says: Even when Apollonius is remembered among the learned, he is usually
+						introduced in the degrading attitude of a captive, bound to the chariot and
+						following the triumphal pomp of Virgil, who has literally fulfilled in the
+						person of the poet his own prediction in the third Georgic, <title>Aonio
+						rediens deducam vertice Musas.</title> Thus is the name of Apollonius lost
+						and absorbed in that of his conqueror. His poetical beauties are all hung up
+						as trophies to decorate the shrine of Virgil. His primary and original
+						claims on our attention, in his own right, are forgotten; and he is honoured
+						only with the derivative and subordinate praise of having supplied to the
+						Mantuan bard the crude materials and unformed elements from whence some of
+						his beauties have been wrought and fashioned."</p>
+					<p>The influence of Apollonius at Rome was by no means confined to Virgil. The <title>
+						Argonautica</title> was translated with some freedom into Latin by Varro, a
+						native of Atax in Insubrian Gaul (82-37 b.c.). This version was highly
+						esteemed by the ancients,<note anchored="true">
+							<p>Cf. <bibl>Ov. <title>Am.</title> i 15, 21</bibl>, <bibl n="Ov. Ars 2">
+									<title>A. A.</title> 111</bibl>, <bibl n="Ov. Ars 3">335</bibl>, <bibl
+									n="Ov. Tr. 2.439">
+									<title>Trist.</title> ii 439</bibl>; <bibl>Prop. ii 34, 85</bibl>
+						; <bibl n="Stat. Silv. 2.7.77">Stat. <title>Silv.</title> ii 7, 77</bibl>;
+						Sen. <title>Controv.</title> xvi 28. For the fragments v. Baehrens, <title>Poet.
+						Lat. Min.</title> vi 332.</p>
+						</note> and some
+						fragments of it are still extant. Catullus, Propertius, and especially Ovid<note
+							anchored="true">
+							<p>v. Zoellner, <title>Analecta Ovidiana.</title> Washietl, <title>De
+						similitudinibus imaginibusque Ovidianis,</title> enumerates over thirty
+						similes taken directly or indirectly from the <title>Argonautica.</title>
+							</p>
+						</note>
+						afford evidence in their poetry of their familiarity with the work of
+						Apollonius. Lucan imitates him in his description <pb n="46" />of Africa and
+						the deadly serpents which infest it.<note anchored="true">
+							<p>
+								<title>Arg.</title> iv 1505 sqq.: <title>Phars.</title> ix 619-699.</p>
+						</note>
+						In the days of Vespasian and Domitian Valerius Flaccus wrote an epic poem on
+						the Argonauts which has come down to us. It is largely borrowed from the
+						work of Apollonius, though there are many differences from the Greek
+						original.<note anchored="true">
+							<p>The points of resemblance and divergence are fully discussed by
+						Meier, <title>Quaestiones Argonauticae,</title> and by Moltzer, <title>De
+						Apollonii Rhodii et Valerii Flacci Argonauticis.</title>
+							</p>
+						</note>
+						As Apollonius imitated Homer's style and language, so Valerius Flaccus
+						imitated Virgil. The work is incomplete, the story of the return voyage
+						being left untold, but the merit of the eight completed books was recognized
+						by Quintilian, who says of him, "multum in Valerio Flacco nuper amisimus."<note
+							anchored="true">
+							<p>x 1, 90.</p>
+						</note> How favourite a theme the
+						legend of the Argonauts had become at Rome amongst rhetorical poets of this
+						age is shown by Juvenal's well-known lines in the first Satire.<note
+							anchored="true">
+							<p>vv. 7 sqq.</p>
+						</note>
+					</p>
+					<p>The chief cause of the neglect with which the work of Apollonius has been
+						treated in modern times is to be found in its form. Apollonius chose the
+						historical form for his poem, a choice which was largely determined by his
+						theme, and we cannot help feeling how vastly superior is Homer's method of
+						plunging the reader <foreign xml:lang="lat">in medias res non secus ac
+							notas.</foreign> The catalogue of the heroes with which the work opens,
+						after a brief preface, is apt to repel us before our sympathies are
+						elicited, though catalogues of this kind form a traditional part of all
+						great epics, as Homer, Virgil, and Milton show. The geographical minuteness
+						with which <pb n="47" />the outward voyage is described contrasts
+						unfavourably with the delightfully vague and imaginary geography of the
+						Homeric poems, and when in narrating the return of the heroes from the land
+						of Colchis all geographical probability, or even possibility, is ignored,
+						the resulting compound is unpalatable. When we read the fourth book we wish
+						in vain that our poet had shaken himself loose from the coils of legendary
+						tradition and given free play to his inventive talent. But, in whatever way
+						the poet might best have treated the return voyage, it would have been
+						difficult, if not impossible, to remove the impression of anti-climax which
+						the greater portion of the last book produces on us. The second part of the
+						story, all that follows after the taking of the fleece, the fresh dangers
+						faced, the fresh privations endured, does not heighten the effect but rather
+						diminishes it.</p>
+					<p>Another cause of the unpopularity of the <title>Argonautica</title> is that
+						it is a learned work, and those who love the direct simplicity of the
+						earlier epic are prone to turn aloof from such. This learning, as we have
+						seen, was demanded from the poet by the age in which he lived, but, with few
+						exceptions, he makes no ostentatious display of his learning in the way
+						Callimachus or Propertius would have done if treating of the same theme. In
+						the description of men and places, in the various incidents of the poem,
+						there is a studied moderation. Apollonius knew how essential to a poet is
+						the precept <foreign xml:lang="grc">μηδὲν ἄγαν.</foreign> Rarely does the
+						language of extravagant hyperbole strike a jarring note.<note
+							anchored="true">
+							<p>As in iv 130 sqq.</p>
+						</note> The <pb n="48" />versification
+						of the poem is remarkably smooth and harmonious, and the diction, as a rule,
+						simple and unaffected, rare and obsolete words occurring but seldom. The
+						most noticeable affectation is in the use or abuse of the pronouns.</p>
+					<p>One misses naturally the freshness and charm of the language of Homer, the
+						living appreciation of earlier ages being replaced by a merely literary and
+						imitative interest. The old order had changed. The minds of men had
+						developed far beyond the stage when speech is the artless childlike overflow
+						of feeling. A literary atmosphere had come into being. Little wonder that
+						Apollonius, strive as he might to relive the past, could not "set his soul
+						to the same key Of the remembered melody."</p>
+					<p>Such are some of the characteristics of a poem at once so Homeric and so
+						un-Homeric. Taken as a whole it may be justly said to be deficient in epic
+						unity and inspiration. The unity which it possesses is mainly that of
+						chronological sequence. It is a mosaic, but a mosaic fashioned and put
+						together with artistic skill. The tempering of the stricter epic with the
+						charm of elegy and romance constitutes the strength and weakness of the
+						work. It would be manifestly unjust to apply to Apollonius Ovid's criticism
+						on Callimachus <quote xml:lang="lat">"quamvis ingenio non valet, arte valet"</quote>
+						;<note anchored="true">
+							<p>
+								<bibl>
+									<title>Am.</title> i 15, 14.</bibl>
+							</p>
+						</note>
+						rather would I adopt Cicero's judgment of the work of Lucretius and say of
+						the <title>Argonautica</title>
+					<quote xml:lang="lat">"multis luminibus
+						ingenii, multae tamen artis."</quote>
+					<note anchored="true">
+							<p>
+								<bibl n="Cic. Q. Fr. 2.9">
+									<title>Ep. ad Q. Fr.</title> ii 9.</bibl>
+							</p>
+						</note>
+					<pb
+							n="49" />
+					</p>
+				</div>
+				<div type="textpart" n="4" subtype="section" xml:id="introduction-s4">
+					<head>Other works of Apollonius</head>
+					<p>The literary activity of Apollonius was not exclusively confined to the <title>
+						Argonautica,</title> as we find references to various other writings which
+						are attributed to him with more or less probability.<note anchored="true">
+							<p>The fragments are collected and classified by Michaelis, <title>De
+						Apollonii Rhodii Fragmentis.</title>
+							</p>
+						</note>
+					</p>
+					<p>(1) The Epigrams of Apollonius are mentioned by Antonius Liberalis: <foreign
+							xml:lang="grc">ἱστορεῖ Νίκανδρος καὶ Ἀπολλώνιος ὁ Ῥόδιος ἐν τοῖς
+						ἐπιγράμμασιν.</foreign>
+					<note anchored="true">
+							<p>
+								<title>Metamm.</title> xxiii.</p>
+						</note> The
+						only epigram of his which has been preserved is that on Callimachus already
+						quoted in connexion with the quarrel between the two poets.</p>
+					<p>(2) His <foreign xml:lang="grc">Κτίσεις,</foreign> which are frequently
+						cited, were poetical works describing the history, antiquities, and
+						characteristics, either of whole regions or of special cities. We hear of
+						works of this kind written by him on Alexandria,<note anchored="true">
+							<p>Schol. <bibl n="Nic. Ther. 11">Nicand. <title>Ther.</title> 11</bibl>
+						.</p>
+						</note> Canopus,<note anchored="true">
+							<p>Steph. Byz. s.v. <foreign xml:lang="grc">Κόρινθος,</foreign> s.v. <foreign
+									xml:lang="grc">Χώρα.</foreign>
+							</p>
+						</note>
+						Caunus,<note anchored="true">
+							<p>Parthenius, <foreign xml:lang="grc">περὶ ἐρωτικῶν παθημάτων,</foreign>
+						c. i, c. xi. To this work probably belong the five hexameters in Meineke, <title>Analecta
+						Alexandr.,</title> p. 402, one of which is ascribed to Apollonius by Tzetzes
+						on Lycophron 1285.</p>
+						</note> Cnidus,<note
+							anchored="true">
+							<p>Steph. Byz. s.v. <foreign xml:lang="grc">Ψυκτήριος.</foreign>
+							</p>
+						</note>
+						Naucratis,<note anchored="true">
+							<p>Athen. vii 283.</p>
+						</note> and Rhodes.<note
+							anchored="true">
+							<p>Steph. Byz. s.v. <foreign xml:lang="grc">Δώτιον</foreign>: Schol.
+						Pind. <title>O.</title> vii 86.</p>
+						</note> These
+						were probably all separate works, <pb n="50" />and not parts of one larger
+						whole, as the metres vary, the fragments from the <foreign xml:lang="grc">Κτίσις
+						Κανώπου</foreign> being scazons, while the fragments of the other <foreign
+							xml:lang="grc">Κτίσεις</foreign> are all hexameters. Suidas tells us
+						that Callimachus also wrote <foreign xml:lang="grc">Κτίσεις Νήσων καὶ
+							Πόλεων.</foreign>
+					</p>
+					<p>(3) As a Homeric critic Apollonius acquired a considerable reputation, though
+						he does not seem to have published any edition of the <title>Iliad</title>
+						or <title>Odyssey.</title> We read of a work of his, <foreign xml:lang="grc">πρὸς
+						Ζηνόδοτον,</foreign>
+					<note anchored="true">
+							<p>Schol. A., <title>Il.</title> 13. 657: <foreign xml:lang="grc">Ἀπολλώνιος
+						ὁ Ῥόδιος ἐν τῷ πρὸς Ζηνόδοτον "ἐς δίφρον ἀναθέντες."</foreign> Schol. B.L.: <foreign
+									xml:lang="grc">ἀνέσαντες· ἤτοι καθίσαντες, μᾶλλον δὲ ἀναθέντες·
+						νεκρὸς γάρ ἐστιν.</foreign>
+							</p>
+						</note>
+						in which he criticized the readings defended by Zenodotus in his edition.
+						The loss of this work is greatly to be deplored, as the knowledge we possess
+						from other sources of the views of Zenodotus on Homeric questions is
+						fragmentary and unreliable. Only in a few instances<note anchored="true">
+							<p>Schol. B.L., <title>Il.</title> 1. 3: <foreign xml:lang="grc">ψυχάς·
+						Ἀπολλώνιος ὁ Ῥόδιος κεφαλάς γράφει.</foreign> Schol. <title>A., Il.</title>
+						2. 436: <foreign xml:lang="grc">ἐγγυαλίζει· διὰ τοῦ ζ ἐγγυαλίζει αἱ
+						Ἀριστάρχειοι καὶ Ἀπολλώνιος δὲ ὁ Ῥόδιος ὁμοίως προφέρεται καὶ ἡ
+									Ἀριστοφάνους.</foreign>
+							</p>
+						</note>
+						do we find the full title, <foreign xml:lang="grc">Ἀπολλώνιος ὁ Ῥόδιος,</foreign>
+						given in the scholia on the <title>Iliad,</title> but in many other cases<note
+							anchored="true">
+							<p>E.g. Schol. A., <bibl n="Hom. Il. 4.410">
+									<title>Il.</title> 4. 410</bibl>: <quote xml:lang="grc">Ἀρίσταρχος
+						ἓν ποιεῖ τὸ ἔνθεο ἀντὶ τοῦ ἔνθου … Ἀπολλώνιος δὲ διαστέλλει τὸ ἔν, ἵνα
+						γένηται ἐν ὁμοίᾳ</quote> (the line is <foreign xml:lang="grc">τῶ μή μοι
+						πατέρας ποθ’ ὁμοίῃ ἔνθεο τιμῇ</foreign>). The anastrophe of <foreign
+									xml:lang="grc">ἐν</foreign> is at least three times more
+						frequent in the <title>Argonautica</title> than in Homer. Schol. A., <title>
+						Il.</title> 11. 97: <foreign xml:lang="grc">ἐγκέφαλος δέ. ἡ διπλῆ, ὅτι
+						Ἀπολλώνιος ποιεῖ ἐγκέφαλόνδε καὶ τὸν ἑξῆς ἀθετεῖ.</foreign> In <title>Arg.</title>
+						ii 192 we find <foreign xml:lang="grc">λευκανίηνδε,</foreign> where see
+						note.</p>
+						</note> where simply <foreign
+							xml:lang="grc">Ἀπολλώνιος</foreign> is found, a comparison of the usages
+						in the <title>Argonautica</title> shows that it is our poet whose views are
+						cited. Often, where we have no direct evidence, we can judge indirectly of
+						the attitude of Apollonius <pb n="51" />to Zenodotus by a consideration of
+						forms adopted or rejected in the <title>Argonautica,</title> which the
+						Scholiasts on Homer tell us were read by Zenodotus in the Homeric text.</p>
+					<p>Amongst the Zenodotean forms which Apollonius adopts are <foreign
+							xml:lang="grc">τεθνειώς, θέλω, ἥδυμος, μόλις, πασσυδίῃ, δυσάσχετος,
+						Γοργόνος, Ῥείην, ἤμελλε, κἀκεῖνος</foreign> (Aristarchus <foreign
+							xml:lang="grc">καὶ κεῖνος</foreign>), <foreign xml:lang="grc">ἐπιμάρτυρες,
+						Μίνω,</foreign> and <foreign xml:lang="grc">χρώς.</foreign> On the other
+						hand, while Zenodotus wrote in Homer the forms <foreign xml:lang="grc">δένδρος,
+						εὐποιητῇσι, ἀγχιάλην, ἔηξεν, ἀναπτάς, δεδάασθαι, στεναχή, Ἀριήδνη,
+						πολυπιδάκου, ἐυστρόφῳ,</foreign> Apollonius uses <foreign xml:lang="grc">δένδρεον,
+						εὐποίητον ἱμάσθλην, ἀγχιάλου ἀκτῆς</foreign> (<foreign xml:lang="grc">
+						Ἀγχιάλη</foreign> as prop. name), <foreign xml:lang="grc">ἆξεν</foreign> (or <foreign
+							xml:lang="grc">ἔαξε</foreign>), <foreign xml:lang="grc">ἀμπετάσας,
+						δεδαῆσθαι, στοναχή, Ἀριάδνη, πολυπίδακος, ἐυστρεφεῖ.</foreign> Apollonius
+						seems to have agreed with Zenodotus' views on many points, especially in the
+						use of the pronouns (e.g. <foreign xml:lang="grc">οὗ, εἷο, ἑοῖο</foreign>: <foreign
+							xml:lang="grc">μιν</foreign> as acc. pl.: the extended application of <foreign
+							xml:lang="grc">ὅς, ἑός, σφωίτερος,</foreign> etc.), though, on the
+						whole, he conforms rather to the principles of Aristarchus, as Merkel shows
+						in his <title>Prolegomena</title> by a minute examination of the relations
+						between Apollonius, Zenodotus, Aristophanes, and Aristarchus.</p>
+					<p>(4) Apollonius is also mentioned as a critic of the Hesiodic poems.<note
+							anchored="true">
+							<p>Schol. <title>Theog.</title> 26. Proclus ad <title>Op.</title> 826.</p>
+						</note>
+						The author of Argument III to the <title>Scutum Herculis</title> tells us
+						that Apollonius maintained the genuineness of this work, the authenticity of
+						which was disputed by Aristophanes of Byzantium amongst others.</p>
+					<p>(5) Athenaeus refers to a work of our poet <foreign xml:lang="grc">περὶ</foreign>
+					<pb
+							n="52" />
+					<foreign xml:lang="grc">Ἀρχιλόχου,</foreign>
+					<note
+							anchored="true">
+							<p>Athen. x 451.</p>
+						</note> but the precise
+						nature of this cannot be determined. It may have formed part of a more
+						general work comprising <foreign xml:lang="grc">ὑπομνήματα</foreign> or
+						commentaries on the ancient poets.<note anchored="true">
+							<p>v. Muetzel, <title>De emendatione Theogoniae Hesiodeae,</title> p.
+						287.</p>
+						</note>
+					</p>
+					<p>(6) To a general work of this kind might also be referred the views in the
+						scholia<note anchored="true">
+							<p>e.g. <bibl n="Aristoph. Frogs 1122">
+									<title>Ran.</title> 1122</bibl>, <bibl n="Aristoph. Frogs 1267">
+						1267</bibl>, <bibl n="Aristoph. Frogs 1433">1433</bibl>: <bibl
+									n="Aristoph. Birds 1242">
+									<title>Av.</title> 1242</bibl>.</p>
+						</note>
+						on Aristophanes which are ascribed to an Apollonius who is supposed to be
+						our poet. It is a very much disputed point, however, whether this Apollonius
+						is the Rhodian, or one of the hundred other grammarians who bore the name.<note
+							anchored="true">
+							<p>v. O. Schneider, <title>De veterum in Aristoph. scholiorum fontibus,</title>
+						p. 89.</p>
+						</note>
+					</p>
+					<p>(7) Lastly, there are two works of Apollonius mentioned by Athenaeus, one
+						dealing with the Egyptians<note anchored="true">
+							<p>Athen. v 191.</p>
+						</note> (though Athenaeus
+						may be referring merely to some of the <foreign xml:lang="grc">Κτίσεις</foreign>
+						such as those of Alexandria or Naucratis), the other entitled <foreign
+							xml:lang="grc">Τριηρικός,</foreign>
+					<note anchored="true">
+							<p>Athen. iii 97 (v. Schweighaeuser ad loc.).</p>
+						</note>
+						which probably dealt with the technical terms employed in describing a
+						trireme.</p>
+				</div>
+				<div type="textpart" n="5" subtype="section" xml:id="introduction-s5">
+					<head>MSS. of the <title>Argonautica</title>
+					</head>
+					<p>The principal ms. of the <title>Argonautica</title> is the Laurentianus
+						xxxii, 9, in the Laurentian Library at Florence, dating from the tenth
+						century. This famous ms. contains also the plays of Aeschylus and Sophocles.
+						It is adopted <pb n="53" />by Merkel as his basis in constituting the text
+						of the <title>Argonautica.</title> Of its importance for the text of
+						Sophocles, Jebb says: "With L safe, the loss of our other mss. would have
+						been a comparatively light misfortune."<note anchored="true">
+							<p>Introduction to the <title>Oedipus Tyrannus,</title> p. lv.</p>
+						</note>
+					</p>
+					<p>Three centuries later than L we have three other mss. of Apollonius: (1)
+						Vaticanus 280, in the Palatine Library, collated by Flangini. (2)
+						Guelferbytanus, the ms. of Wolfenbüttel. This ms., known as G, ranks next in
+						importance to L. (3) Laurentianus xxxii, 16. Keil regarded this ms. as
+						transcribed either from L or a copy of L, but Ziegler and Merkel have shown
+						from its frequent and striking agreements with G that both it and G are from
+						a common archetype.</p>
+					<p>All other mss. are of the fifteenth or sixteenth century. They are classified
+						by Merkel as follows: <list type="simple">
+							<label>(a) </label>
+							<item>
+								<title>Membranacei</title>--Ambrosianus B 98; Laurentianus xxxi, 26;
+						Laurentianus xxxi, 11; Laurentianus xxxii, 35.</item>
+							<label>(b) </label>
+							<item>
+								<title>Chartacei</title>--Ambrosianus 22, containing the first two
+						books; Ambrosianus 37; Ambrosianus 64, ending at <bibl n="Apollon. 3.1306">iii,
+						1306</bibl>; Laurentianus xxxi, 29; Vaticanus 150, containing the first
+						three books; Vaticanus 36; Vaticanus 37; Vaticanus 146; Vaticanus 1358;
+						Ottobonensis 306; Ricardianus 35; Parisienses 2727, 2846, 2728, 2729, 1845;
+						Vindobonensis and Wratislavensis, both collated by Wellauer.</item>
+						</list>
+					</p>
+					<p>There are thus twenty-six mss. in all, of which the last twenty-two,
+						according to Merkel, are far inferior to the first four.</p>
+					<p>The value of the Paris mss. has been much <pb n="54" />disputed. Brunck
+						esteemed them very highly, and mainly relied on them in his edition. Merkel,
+						on the other hand, seems to go to the opposite extreme in disparaging them,
+						assigning them to the same category as the interpolated Italian mss. of
+						Latin poets. He says of them: <quote xml:lang="lat">"Inest his non nihil
+						forsitan e melioribus libris petitum, sed quo uti non liceat aliter nisi cum
+						carere possis."</quote> Whatever is in the text on their authority has, in
+						Merkel's opinion, no more weight than an ingenious conjecture. These
+						strictures appear far too severe in the case of mss. on which we have to
+						rely to an appreciable extent. There are over fifty passages in the ordinary
+						accepted text of the <title>Argonautica</title> where the reading rests on
+						the authority of the Paris mss.,<note anchored="true">
+							<p>i 82, 103, 179, 339, 714, 812, 881, 941, 1146, 1187. ii 132, 173,
+								260, 327, 356, 399, 411, 474, 498, 682, 745, 1030, 1086, 1094, 1170.
+						iii 15,
+								164, 166, 198, 208, 290, 325, 376, 397, 404, 608, 723, 816, 1054,
+						1172,
+								1180, 1299. iv 117, 182, 219, 244-5, 288, 326, 796, 1235, 1255,
+						1402, 1537,
+								1585, 1598, 1634.</p>
+						</note> and in all
+						these passages L and G are but broken reeds.</p>
+					<p>All the mss. of the thirteenth century are vitiated by interpolations, and
+						this is a prominent feature of G. As a typical instance of this defect we
+						may take iv 1429, <foreign xml:lang="grc">δενδρέων, οἷαι ἔσαν, τοῖαι πάλιν
+						ἔμπεδον αὔτως,</foreign> where for <foreign xml:lang="grc">οἷαι</foreign> G
+						has <foreign xml:lang="grc">ροἱαὶ,</foreign> with a gloss <foreign
+							xml:lang="grc">ῥόαι καὶ ροιαὶ καὶ ροΐδεα δένδρα εὔκαρπα.</foreign> Apart
+						from these interpolations, its readings in conjunction with those of L carry
+						great weight, and in several places where L is corrupt G has preserved the
+						true reading.<note anchored="true">
+							<p>E.g. i 204, 917. ii 78, 637. iii 75, 1331. iv 600, 738, 1034, 1157,
+						1200, 1209, 1336, 1686, etc.</p>
+						</note> In the <pb
+							n="55" />first book there is a serious break in G, three hundred lines
+						(560-861) being wanting.</p>
+					<p>In L we find many corrections made by a later hand. These corrections, as
+						Keil and Merkel show, were made, not from the Laurentian archetype, but from
+						the archetype of G and L 16, as they agree very closely in writing,
+						spelling, and form with G and not with L. It is uncertain whether this
+						second hand was the hand of the same scribe as the first, only working at a
+						later period, as Keil thinks, or not, but that is of no great consequence,
+						since in any case it affords us fragments of a different recension. This
+						same second hand wrote the Laurentian scholia, which are more in accord with
+						the readings of G than with those of L.</p>
+					<p>It is possible to trace the family of mss. to which G and L 16 are to be
+						referred considerably further back than the tenth century, for the <title>Et.
+						Mag.</title> often cites Apollonius, and the readings it contains, which
+						were derived from grammarians like Choeroboscus (c. 6 cent.), agree as a
+						rule with the archetype of G and L 16. From this it is clear that another
+						recension of Apollonius distinct from L existed in the fifth or fourth
+						century. But this by no means detracts from the authority of L, which by the
+						superiority of its readings in countless doubtful passages, and the purity
+						and correctness of its forms,<note anchored="true">
+							<p>Merkel adopts in his text such modes of writing as <foreign
+									xml:lang="grc">οὐ δέ, παρ’ ἐκ, κατα στόμα, νῆσον δέ</foreign>
+						(for <foreign xml:lang="grc">οὐδέ, παρέκ, κατὰ στόμα, νῆσόνδε</foreign>),
+						thinking that these represent more correctly the doctrines of the
+						Alexandrian grammarians. L, however, on which he relies, is very
+						inconsistent in its evidence on such points, and the other mss. are in
+						favour of the more familiar forms.</p>
+						</note> must
+						always constitute the basis of any critical text of the <title>Argonautica.</title>
+					<note
+							anchored="true">
+							<p>v. Seaton's Preface to his edition.</p>
+						</note>
+					<pb
+							n="56" />
+					</p>
+				</div>
+				<div type="textpart" n="6" subtype="section" xml:id="introduction-s6">
+					<head>Scholia on the <title>Argonautica</title>
+					</head>
+					<p>The scholia on the <title>Argonautica</title> are generally known as the
+						Florentine and the Parisian. The Florentine scholia are those first
+						published by Ioannes Lascaris, who supervised the Editio Princeps of the
+						poem at Florence in 1496 a.d. For the next three centuries editors simply
+						republished the scholia as given by him. Then Ruhnken discovered scholia in
+						Codex Parisinus 2727, of the fifteenth century, which seemed to him better
+						than those previously known. These new scholia were published along with the
+						old by Schaefer in his revision of Brunck's edition in 1813. The relative
+						value of the two sets of scholia was long a moot point, but Keil has shown
+						that they are both to be referred to a common source, namely the scholia
+						contained in Codex Laurentianus xxxii, 9. From it 'addendo, detrahendo,
+						immutando,' the different copies of scholia were derived. There is only one
+						ms., Parisinus 2846, containing part of the scholia on the first and fourth
+						books, in which the Laurentian version is completely followed. In discussing
+						the relation between the Florentine and Parisian scholia Keil points out
+						that the Florentine reproduce the form of the archetype more accurately than
+						the Parisian, yet in several cases the Parisian preserve what had been
+						carelessly omitted or rashly altered in the Florentine. However, there is
+						such unanimity between them in many cases where <pb n="57" />they both
+						depart from their common source, that it it is plain that both recensions
+						were derived, not from the archetype itself directly, but through the medium
+						of a more recent source which itself was derived from the archetype.</p>
+					<p>The additions made to the original stock preserved in the Laurentian
+						archetype consist of grammatical notes on forms and structures, statements
+						of the poet's purpose, quotations of parallel passages from ancient writers,
+						and conjectures as to the derivations of words. Keil, who edited the scholia
+						in Merkel's edition, reproduces them as they are found in the Codex
+						Laurentianus (with the exception of a few obvious interpolations of recent
+						date), distinguishing them according as they are written on the outer margin
+						of the ms., or between the lines, or on the inner margin as the glosses on
+						individual words and the shorter explanations generally are. He also notes
+						all important variations from the archetype in the Florentine and Parisian
+						scholia. He concludes that the scholia in L were written by the same hand as
+						the text and the lives which are appended. Wellauer combines both the
+						Florentine and Parisian scholia, which renders his edition in some ways the
+						most convenient for consulting, as one can see at a glance how much was
+						common to the two. Though, as we have said, the Parisian scholia often
+						supply what is omitted in the Florentine, yet, on the whole, they are less
+						full and less reliable. The corruptions in the Parisian are greater,
+						especially in proper names, while they omit the names of the authorities for
+						certain interpretations which are preserved in the Florentine. Often the two
+						sets of <pb n="58" />scholia agree almost verbally, except that what is
+						stated directly in the Florentine is introduced by <foreign xml:lang="grc">
+						λέγει</foreign> or <foreign xml:lang="grc">φησί</foreign> in the Parisian.</p>
+					<p>An interesting feature in the Florentine scholia is that in four places (i
+						543, 725, 788, 801) they have recorded the readings of the <foreign
+							xml:lang="grc">προέκδοσις</foreign> or earlier edition (v. App. I) where
+						they are omitted in the Parisian. In two places only (i 285, 515) do the
+						Parisian mention the differences in the <foreign xml:lang="grc">προέκδοσις</foreign>
+						noticed in the Florentine.</p>
+					<p>The scholia which have come down to us are probably merely extracts compiled
+						from the fuller works of grammarians and commentators. The names of the
+						three principal commentators known to us are Lucillus, Sophocles, and Theon.
+						The three are mentioned at the end of the scholia on the fourth book,<note
+							anchored="true">
+							<p>
+								<foreign xml:lang="grc">παράκειται τὰ σχόλια ἐκ τῶν Λουκίλλου
+						Ταρραίου καὶ Σοφοκλέους καὶ Θέωνος.</foreign>
+							</p>
+						</note>
+						and are also referred to by the Scholiast on Aristophanes, <bibl
+							n="Aristoph. Cl. 397">
+							<title>Nub.</title> 397</bibl>, who, commenting on the word <foreign
+							xml:lang="grc">βεκκεσέληνε,</foreign> quotes <title>Arg.</title> iv 264,
+						and gives the explanation which is found in our scholia, prefaced by the
+						words <foreign xml:lang="grc">τοῦτο δὲ τοὖπος οἱ περὶ τὸν Λούκιλλον τὸν
+						Ταρραῖον καὶ Σοφόκλειον (?) καὶ Θέωνα ἑρμηνεύοντες τάδε φασίν.</foreign>
+					</p>
+					<p>Lucillus was a native of Tarrha in Crete, and in our schol. is called simply <foreign
+							xml:lang="grc">ὁ Ταρραῖος.</foreign> Sophocles is twice mentioned as a
+						commentator on Apollonius by Steph. Byz. (s.v. <foreign xml:lang="grc">
+						Ἄβαρνος</foreign> and <foreign xml:lang="grc">Κάναστρον</foreign>). It is
+						not possible to identify Theon with certainty. In all probability he was the
+						Alexandrian sophist and rhetorician Aelius Theon, to whom the scholia on <pb
+							n="59" />Aratus are attributed, and who wrote, as Suidas tells us,
+						commentaries on Xenophon, Isocrates, and Demosthenes. Theon is not mentioned
+						by name in our scholia, and Sophocles only once. Stender<note
+							anchored="true">
+							<p>
+								<title>De Argonautarum ad Colchos usque expeditione fabulae historic
+						critica.</title>
+							</p>
+						</note>
+						tries to separate the part of the scholia due to Theon and Sophocles, but
+						the scanty evidence on which he works renders his conclusions at best only
+						remotely probable.</p>
+					<p>We learn from our scholia the names of two other commentators on the works of
+						Apollonius, Chares and Irenaeus. Chares (or Charon) was probably the
+						historian of Naucratis mentioned by Suidas. In the schol. on ii 1054 we find <foreign
+							xml:lang="grc">Οὕτω</foreign> (sc. <foreign xml:lang="grc">πλωίδας</foreign>
+						) <foreign xml:lang="grc">δὲ αὐτὰς ὀνομάζει καὶ Σέλευκος ἐν Συμμίκτοις καὶ
+						Χάρης, αὐτοῦ τοῦ Ἀπολλωνίου γνώριμος, ἐν τῷ περὶ ἱστοριῶν τοῦ Ἀπολλωνίου.</foreign>
+						The title <foreign xml:lang="grc">ἱστορίαι</foreign> would seem to refer to
+						the <foreign xml:lang="grc">Κτίσεις,</foreign> the lost work of our poet,
+						not to the <title>Argonautica.</title> Irenaeus is mentioned in the schol.
+						on <foreign xml:lang="grc">λαῖτμα</foreign> (i 1299), <foreign
+							xml:lang="grc">Σιληνὸς δὲ ἐν Γλώσσαις πέλαγος εἶναι, καὶ Εἰρηναῖος ἐν
+						πρώτῳ Ἀπολλωνίου</foreign> (i.e. in his commentary on Bk. i of the <title>
+						Argonautica</title>) <foreign xml:lang="grc">ἀποδεδώκασιν.</foreign> Again,
+						in the schol. on <foreign xml:lang="grc">ἐπιπαμφαλόωντες</foreign> (ii 127),
+						we find <foreign xml:lang="grc">παραιτητέον δὲ Εἰρηναιο=ν ἀμφανόωντες
+						γράφοντα καὶ ἐξηγούμενον κτείνοντες. οὔτε γὰρ κέχρηταί τις οὕτως τῇ λέξει,
+						οὔτε ἐστὶν ἁπαξαπλῶς ἡ γραφὴ τοῦ ποιητοῦ.</foreign> Irenaeus was also known
+						under the Latin name of Minucius Pacatus, and lived about the age of
+						Augustus. Suidas enumerates several works of his dealing with the
+						Alexandrian and Attic dialects.</p>
+					<p>Merkel would also include Methodius among the <pb n="60" />first Scholiasts
+						on Apollonius. He was the principal redactor of the <title>Et. Mag.</title>
+						Merkel's argument is based on the fact that the frequent citations of the
+						scholia on the <title>Argonautica</title> in the <title>Et. Mag.</title>
+					<note
+							anchored="true">
+							<p>v. Berckmann, <title>De scholiis in Ap. Rh. Arg. Etymologici Magni
+						fonte.</title>
+							</p>
+						</note>
+						differ considerably from those we know, and point to a recension anterior to
+						that of the Laurentian ms., and so he regards Methodius either as being one
+						of the first Scholiasts on Apollonius, or else as reproducing more
+						faithfully than the compiler of the Laurentian the tradition of the older
+						Scholiasts on the <title>Argonautica.</title>
+					</p>
+					<p>In the commentary I have generally cited the Laurentian scholia as given by
+						Keil, employing the others whenever they served to throw light on the dark
+						places of the poem. They are often a confused medley, but still they abound
+						with indispensable information, which would have been lost to us without
+						their aid. Like most scholia they furnish us with the most desperate
+						etymologies, e.g. i 292, <foreign xml:lang="grc">κινύρετο</foreign>: <foreign
+							xml:lang="grc">ἐθρήνει. κυρίως … ἐπὶ βοός, παρὰ τὸ κινεῖν τὴν οὐρὰν ἐν
+							τῷ μυκᾶσθαι</foreign>: i 401, <foreign xml:lang="grc">οἰήια</foreign>: <foreign
+							xml:lang="grc">τὰ πηδάλια, οἷον οἰήσια, ἐπειδὴ οἰήσεως χρεία τῷ
+						κυβερνήτῃ.</foreign> Defects of this kind are, however, of minor importance,
+						and we may regard ourselves as fortunate in possessing a mass of scholia as
+						valuable as those which have come down to us on any ancient author. To the
+						industry of our Scholiasts we owe the preservation of many lines of Hesiod
+						and other poets which would otherwise have perished, as well as many curious
+						and interesting fragments of old Greek writers on history, geography, and
+						mythology. <pb n="61" />
+					</p>
+				</div>
+				<div type="textpart" n="7" subtype="section" xml:id="introduction-s7">
+					<head>Editions and translations of the <title>Argonautica</title>
+					</head>
+					<p>Editions</p>
+					<list type="simple">
+						<label>I. </label>
+						<item>The Editio Princeps, edited by Lascaris, published by Alopa at
+							Florence in 1496. The text is printed in uncials with accents, the
+							scholia in cursive minuscules on the margin of the text.</item>
+						<label>II. </label>
+						<item>The Aldine edition, published at Venice in 1521. This contains the
+							text followed by the scholia. The Preface is due to Franciscus Asulanus,
+							who mentions as collaborator Hercules Mantuanus.</item>
+						<label>III. </label>
+						<item>The Paris edition of 1541, more accurate than the two preceding,
+							containing only the Greek text without the scholia.</item>
+						<label>IV. </label>
+						<item>The Frankfort edition, published by Petrus Brubachius in 1546. It is a
+							reproduction of the Aldine.</item>
+						<label>V. </label>
+						<item>The Basle edition, with the scholia at the end of the text, published
+							by Oporinus in 1550. This is the first edition with a Latin translation,
+							the translation being that of Hartung. This work was republished in the
+							same town in 1570 and 1572, with a translation in Latin verse by Rotmar.</item>
+						<label>VI. </label>
+						<item>The edition of Henricus Stephanus, with scholia on the margin of the
+							text, published at Geneva in 1574. <pb n="62" />In the Preface are
+							discussed various questions with regard to the poem and the scholia, and
+							at the end there are some conjectures.</item>
+						<label>VII. </label>
+						<item>Beck mentions a Corpus Poetarum Graecorum, published at Geneva in
+							1606, in which Jacobus Lectius inserted the text of the <title>
+							Argonautica</title> with the Latin translation by Hartung.</item>
+						<label>VIII. </label>
+						<item>Hoelzlin's edition, with Latin translation, commentary, and scholia,
+							published by Elzevir at Leyden in 1641.</item>
+						<label>IX. </label>
+						<item>Shaw's edition, based on that of Hoelzlin, published by the Clarendon
+							Press, Oxford, in 1777. This sumptuously printed quarto includes what
+							professes to be an almost entirely new Latin version, the scholia,
+							indices, notes selected from previous editions, and a few original
+							remarks. It was reprinted two years afterwards as an octavo volume. In
+							it we find repeated most of the errors contained in Hoelzlin's edition,
+							and it was attacked by Brunck with a vehemence which has become
+							proverbial amongst scholars.</item>
+						<label>X. </label>
+						<item>Brunck's edition, published at Argentoratum (Strassburg) in 1780. This
+							was the first attempt at a really critical edition, the Codices Parisini
+							being taken as the foundation in constituting the text. It contains no
+							Latin translation.</item>
+						<label>XI. </label>
+						<item>Flangini's edition, published at Rome in 1791-1794. The text is a
+							reprint of that of Brunck, and there is an Italian translation by
+							Cardinal Flangini, who also added notes and recorded the variants of
+							four Vatican mss.</item>
+						<label>XII. </label>
+						<item>Beck's edition, published at Leipzig in 1797. <pb n="63" />The text is
+							that of Brunck with slight variations, generally improvements. There is
+							also a Latin translation. The second volume, which was to contain the
+							revised scholia and commentary, was never published.</item>
+						<label>XIII. </label>
+						<item>Hoerstel's edition, published at Brunswick in 1807.</item>
+						<label>XIV. </label>
+						<item>Schaefer's revision of Brunck's edition, published at Leipzig in
+							1810-1813. The second volume is valuable as it contains for the first
+							time the Parisian scholia.</item>
+						<label>XV. </label>
+						<item>Wellauer's edition, published by Teubner, Leipzig, in 1828. It
+							consists of two volumes, the first containing the text with full
+							critical and occasional explanatory notes, the second containing the
+							scholia, both Florentine and Parisian, and indices which are useful,
+							though often most inaccurate.</item>
+						<label>XVI. </label>
+						<item>Lehrs' edition, published by Didot, Paris, in 1840. The text is a
+							reproduction of Wellauer's, with slight alterations, and the Latin
+							translation is closely modelled on that of Beck.</item>
+						<label>XVII. </label>
+						<item>Merkel's smaller edition, published at Leipzig in 1852. It is a text
+							based on the Codex Laurentianus, and is familiar as being still the
+							ordinary Teubner text.</item>
+						<label>XVIII. </label>
+						<item>Merkel's larger edition, published by Teubner, Leipzig, in 1853. The
+							text in this invaluable edition is a marked improvement on the earlier
+							one. The work includes a full apparatus criticus, the readings of L and
+							G being recorded with most minute accuracy, while those of the other
+							mss. are <pb n="64" />noticed where necessary. The second volume
+							contains, in addition to Merkel's <title>Prolegomena,</title> the
+							scholia from the Codex Laurentianus edited by Keil.</item>
+						<label>XIX. </label>
+						<item>Seaton's edition, with brief critical notes, published by the
+							Clarendon Press, Oxford, in 1901.</item>
+					</list>
+					<p>Translations <list type="simple">
+							<label>Latin. </label>
+							<item>The first Latin translation was that by Hartung, published in the
+						Basle edition of 1550. In addition to that by Rotmar (Salzburg, 1570), which
+						was incorporated in the later Basle editions, we have those of Hoelzlin,
+						Shaw, Beck, and Lehrs, already mentioned in connexion with their editions of
+						the poem.</item>
+							<label>English. </label>
+							<item>E. B. Green and F. Fawkes (London, 1780), W. Preston (Dublin,
+						1803), E. P. Coleridge (London, 1889), A. S. Way (London, 1910).</item>
+							<label>French. </label>
+							<item>Caussin (Paris, 1796), H. de la Ville de Mirmont (Bordeaux and
+						Paris, 1892). There is also a translation of a part of the poem entitled:
+						"Apollonius de Rhodes, Jason et Médée. Traduction et notices d'A. Pons.
+						Paris, 1882."</item>
+							<label>German. </label>
+							<item>Bodmer (Zürich, 1779), Wilmann (Cologne, 1832), C. N. v. Osiander
+						(Stuttgart, 1837).</item>
+							<label>Italian. </label>
+							<item>Subsequent to Flangini's, which we have already mentioned, there
+						are those of Rota (3rd ed., Milan, 1864) and Bellotti (Florence, 1873).</item>
+							<label>Swedish. </label>
+							<item>Palmblad (Upsala, 1836).</item>
+							<label>Danish. </label>
+							<item>Christensen-Schmidt (Kjobenhavn, 1897).</item>
+						</list>
+					<pb
+							n="65" />
+					<pb n="66" />
+					<table>
+							<row role="data">
+								<cell cols="2" role="data" rows="1">SIGLA</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">G</cell>
+								<cell cols="1" role="data" rows="1">= Codex Guelferbytanus</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">L</cell>
+								<cell cols="1" role="data" rows="1">= Codex Laurentianus xxxii, 9</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">L 16</cell>
+								<cell cols="1" role="data" rows="1">= Codex Laurentianus xxxii, 16</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">Pariss.</cell>
+								<cell cols="1" role="data" rows="1">= Codices quinque Parisini</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">Vatt.</cell>
+								<cell cols="1" role="data" rows="1">= Codices quattuor Vaticani</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">Vind.</cell>
+								<cell cols="1" role="data" rows="1">= Codex Vindobonensis</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">Vrat.</cell>
+								<cell cols="1" role="data" rows="1">= Codex Vratislaviensis</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">schol.</cell>
+								<cell cols="1" role="data" rows="1">= scholia Laurentiana</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">schol. Flor.</cell>
+								<cell cols="1" role="data" rows="1">= scholia Florentina</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">schol. Par.</cell>
+								<cell cols="1" role="data" rows="1">= scholia Parisina</cell>
+							</row>
+							<row role="data">
+								<cell cols="1" role="data" rows="1">schol. utraque</cell>
+								<cell cols="1" role="data" rows="1">= schol. Flor. et schol. Par.</cell>
+							</row>
+						</table>
+					</p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

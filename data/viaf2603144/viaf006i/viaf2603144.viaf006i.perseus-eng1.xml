@@ -1,0 +1,1512 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title>Introduction to Commentary on Sophocles: Philoctetes</title>
+				<author>Sir Richard C. Jebb</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>Jeffrey Rydberg-Cox</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Digital Library Project</authority>
+				<date type="release" when="2000-08-16" cert="high">Perseus 3.0</date>
+				<idno type="filename">viaf2603144.viaf006i.perseus-eng1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International
+						License</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Sophocles: The Plays and Fragments</title>
+						<title type="subtitle" xml:lang="mul">The Philoctetes</title>
+						<author>Richard Claverhouse Jebb</author>
+						<imprint>
+							<pubPlace>Cambridge</pubPlace>
+							<publisher>Cambridge University Press</publisher>
+							<date>1932</date>
+						</imprint>
+						<biblScope unit="part">4</biblScope>
+					</monogr>
+					<ref
+						target="https://archive.org/details/sophoclesplaysa03campgoog/page/n10/mode/2up">The
+						Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+)"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+					n="section">
+					<p>This pointer extracts section.</p>
+				</cRefPattern>
+			</refsDecl>
+			<refsDecl xml:id="CTS" n="CTS">
+				<citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0"
+					match="/tei:TEI/tei:text/tei:body" use="@xml:base">
+					<citeStructure unit="section" delim=":" match="tei:div[@type='section']"
+						use="@n" />
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+				<language ident="deu">German</language>
+				<language ident="fre">French</language>
+				<language ident="ita">Italian</language>
+				<language ident="san">Sanskrit</language>
+				<language ident="goth">Gothic</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-09-16" who="Alison Babeu">Final review and updating of header information</change>
+			<change when="2026-07-21" who="Charles Pletcher">Added citeStructure and other TEI changes</change>
+			<change when="2025-03-13" who="Alison Babeu">Updated header and schema</change>
+			<change when="2010-06-16" who="lcerrato">Revision 1.2 fixed bibls for Plut. Mor. to
+				correct work title</change>
+			<change when="2009-12-08" who="rsingh04">Revision 1.1 moved more xml files around based
+				on copyright status</change>
+			<change when="2009-07-31" who="student">Revision 1.22 fixed Aristot. Poet. references -
+				zr</change>
+			<change when="2009-07-30" who="student">Revision 1.21 fixed bibl errors - zr</change>
+			<change when="2009-07-29" who="lcerrato">Revision 1.20 fixed references to Aristot. Pol.</change>
+			<change when="2009-07-28" who="student">Revision 1.19 fixed Pindar errors - zr</change>
+			<change when="2009-07-27" who="student">Revision 1.18 fixed bibl errors - zr</change>
+			<change when="2009-07-02" who="lcerrato">Revision 1.17 fixed references to Aristot. Pol.
+				up through book 4</change>
+			<change when="2009-06-24" who="lcerrato">Revision 1.16 fixed bad bibls</change>
+			<change when="2009-06-22" who="student">Revision 1.15 fixed Pl. Poen. references - zr</change>
+			<change when="2009-06-19" who="rsingh04">Revision 1.14 removed ?bibl? tags</change>
+			<change when="2009-06-19" who="lcerrato">Revision 1.13 fixed bad bibls</change>
+			<change when="2009-06-19" who="student">Revision 1.12 fixed Pl. Mil. references - zr</change>
+			<change when="2009-06-17" who="student">Revision 1.11 changed Pl. Am. from tln to
+				act.scene - zr</change>
+			<change when="2009-06-12" who="lcerrato">Revision 1.10 fixed bad bibls</change>
+			<change when="2009-05-19" who="lcerrato">Revision 1.9 fixed bad bibls</change>
+			<change when="2009-05-06" who="lcerrato">Revision 1.8 fixing bad bibls</change>
+			<change when="2009-04-29" who="lcerrato">Revision 1.7 fixed bad bibls</change>
+			<change when="2009-04-17" who="lcerrato">Revision 1.6 fixing bad bibls</change>
+			<change when="2009-04-03" who="lcerrato">Revision 1.5 fixing bad bibl refs</change>
+			<change when="2009-03-05" who="lcerrato">Revision 1.4 fixing bad bibls</change>
+			<change when="2008-11-14" who="lcerrato">Revision 1.3 fixed author names for consistent
+				sorting</change>
+			<change when="2005-08-01" who="packel">Revision 1.2 removed stray item tags</change>
+			<change when="2005-07-25" who="packel">Revision 1.1 Converted to XML</change>
+			<change when="2003-09-02" who="amahoney">Revision 1.15 mark refs to Lys. 1</change>
+			<change when="2003-07-01" who="yorkc">Revision 1.14 Updated texts to TEI P4 and Perseus
+				P4 extensions; minor cleanup (esp. character encodings and typos.)</change>
+			<change when="2002-07-23" who="amahoney">Revision 1.13 ensure refs to Callimachus and
+				Theophrastus (Characters) are correct</change>
+			<change when="2002-05-24" who="amahoney">Revision 1.12 fix references to Plautus</change>
+			<change when="2001-03-12" who="amahoney">Revision 1.11 wrap cits around refs to Tacitus,
+				and get abbreviations into bibls where they were missing</change>
+			<change when="2001-02-21" who="amahoney">Revision 1.10 mark more cits (which make better
+				reverse links)</change>
+			<change when="2001-02-20" who="amahoney">Revision 1.9 put proper bibl refs for
+				Shakespeare</change>
+			<change when="2000-08-15" who="amahoney">Revision 1.8 fix mdash in headers (displays
+				badly on some browsers)</change>
+			<change when="2000-08-13" who="amahoney">Revision 1.7 fix smooth breathings that should
+				be apostrophes</change>
+			<change when="2000-08-11" who="amahoney">Revision 1.6 fix refs to Apollonius Rhodius,
+				who is "A. R."</change>
+			<change when="2000-08-11" who="amahoney">Revision 1.5 fix Stephanus sections on refs to
+				Plato</change>
+			<change when="2000-08-11" who="amahoney">Revision 1.4 fix references to orators</change>
+			<change when="2000-08-02" who="amahoney">Revision 1.3 fisher done</change>
+			<change when="2000-06-21" who="amahoney">Revision 1.2 fix some obvious typos</change>
+			<change when="2000-05-10" who="amahoney">Revision 1.1 structure markup minimally done</change>
+		</revisionDesc>
+	</teiHeader>
+	<text xml:lang="eng">
+		<body xml:base="urn:cts:greekLit:viaf2603144.viaf006i.perseus-eng1" xml:lang="eng">
+			<div xml:id="cis1" type="section" n="1">
+				<p>On the eastern coast of Greece, just north of Thermopylae, <note anchored="true"
+						place="marg" resp="RCJ">The home of Philoctetes</note> lies a region which
+					in ancient times was called Malis, ‘the sheep-land.’ This was the country of
+					Philoctetes,—the home to which, in the play of Sophocles, his thoughts are
+					constantly turning<note anchored="true" place="foot" n="1" resp="RCJ">The
+					Homeric Catalogue includes this district in Phthia, the realm of Achilles (<ref
+							n="Hom. Il. 2.682">
+							<title>Il.</title> 2. 682</ref>). It assigns Philoctetes to a more
+					northerly part of Thessaly,—viz., the narrow and mountainous strip of coast, N.
+					and E. of the Pagasaean Gulf, which was known in historical times as Magnesia.
+					His four towns were Methonè, Thaumacia, Meliboea and Olizon. ( <ref
+							n="Hom. Il. 2.716">
+							<title>Il.</title> 2. 716</ref> f.) This agrees with the fact that
+					Poeas, the father of Philoctetes, was called the son of Thaumacus, and was
+					numbered among the Argonauts who sailed from Iolcus ( <ref n="Apollod. 1.9.16">Apollod.
+					1. 9. 16</ref>). In its original form, the story of Poeas and his son must have
+					belonged, like that of Jason, to the legends of the Minyae who dwelt on the
+					eastern coasts of Thessaly. Cp. Anthol. append. 61 (vol. II. p. 754 ed. Jacobs): <quote
+							xml:lang="grc">τόξων
+							Ἡρακλέους ταμίην, Ποιάντιον υἱόν, ἥδε Φιλοκτήτην γῆ Μινυὰς κατέχει</quote>.
+					It was when the myth became interwoven with the apotheosis of Heracles that the
+					home of Poeas was transferred to the country around Trachis.</note>. It will be
+					well to form some idea of its chief features and associations. <!-- there's a
+					map in this paragraph, placed after "snowy" -->
+				</p>
+				<p>Pindus, the spine of northern Greece, terminates at the south in Typhrestus, a
+					great pyramidal height from which two mountain-ranges branch out towards the
+					eastern sea. One of these is Othrys, which skirts the southern border of
+					Thessaly; the other, south of it, is Oeta, which, like Malis, takes its name
+					from its pastures. The deep and broad depression between them is the fertile
+					valley of the Spercheius (the ‘hurrying’ or ‘vehement’) —which rises at the foot
+					of Typhrestus, and flows into the Malian Gulf. A few miles from the sea, the
+					valley opens. While Othrys continues its eastward direction, Oeta recedes
+					southward, and then, with a sudden bend to the south-east, sweeps down upon
+					Thermopylae, where the fir-clad and snowy summit of Callidromus rises above the
+					pass. Precipitous cliffs are thrown forward from this part of the Oetaean range,
+					forming an irregular crescent round the southern and western sides of the plain.
+					These cliffs were called of old ‘the Trachinian Rocks.’ Trachis, the ‘city of
+					the crags,’ stood on a rocky spur beneath them, a little north of the point
+					where they are cleft by the magnificent gorge of the Asopus,—that steep ravine
+					by which Hydarnes led his Persians up through the mountain oak-woods, on the
+					night before he surprised Leonidas. Between the Asopus and the Spercheius are
+					the narrow channels of two lesser streams, anciently known as the Melas and the
+					Dyras<note anchored="true" place="foot" n="1" resp="RCJ">The Dyras was said to
+					have first started from the ground in order to relieve the fiery pangs of
+					Heracles ( <ref n="Hdt. 7. 198">Her. 7. 198</ref>). In a vase-painting noticed
+					below (n. on v. 728, p. 121, 1st col.), the Nymph who seeks to quench the pyre
+					probably symbolises this stream. The ancient mouth of the Spercheius was some
+					miles N. W. of Thermopylae; the present mouths are a little E.N. E. of it, and
+					the line of the coast has been considerably advanced, so that there is no longer
+					a narrow pass. The Asopus, Melas and Dyras formerly had separate courses to the
+					sea. They are now mere affluents of the Spercheius,—the Melas and Dyras uniting
+					before they reach it.</note>. The name Malis denoted this whole seaboard plain,
+					with the heights around it, from the lower spurs of Othrys on the north to those
+					of Oeta on the south and west. Just opposite the entrance of the Gulf, the bold
+					north-west promontory of Euboea, once called Cape Cenaeum, runs out towards the
+					mainland. There was a peculiar fitness in the phrase of Sophocles, when he
+					described this district, with its varied scenery, as ‘the haunt of Malian Nymphs<note
+						anchored="true" place="foot" n="2" resp="RCJ">v. 725 <quote xml:lang="grc">αὐλὰν
+					Μαλιάδων νυμφᾶν</quote>.</note>,’ those beings of the forest and the river, of
+					the hills and the sea.</p>
+				<p>It was in this region that legend placed the last deeds of Heracles, and his
+					death, or rather his passage from earth to Olympus. After taking Oechalia in
+					Euboea, he was sacrificing on Cape Cenaeum when the fatal robe did its work. He
+					was carried to his home at Trachis; and then he commanded that he should be
+					borne to the top of Mount Oeta, sacred to Zeus, and burnt alive. He was obeyed;
+					as the flames arose on the mountain, they were answered from heaven by the blaze
+					of lightning and the roll of thunder; and by that sign his companions knew that
+					the spirit of the great warrior had been welcomed to the home of his immortal
+					father. Somewhere in the wilds of those lonely summits tradition showed the
+					sacred spot known as ‘the Pyre’; and once, at least, in later days a Roman
+					Consul, turning aside from a victorious progress, went up to visit the solemn
+					place where the most Roman of Greek heroes had received the supreme reward of
+					fortitude<note anchored="true" place="foot" n="1" resp="RCJ">Manius Acilius
+					Glabrio, after taking
+						Heracleia near Trachis, in the war with Antiochus (191 B.C.). Livy 36. 30:
+					ipse Oetam ascendit, Herculique sacrificium fecit in eo loco quem Pyram,
+						quod ibi mortale corpus eius dei sit crematum, appellant. Cp. Silius
+						Italicus 6. 452: Vixdum clara dies summa lustrabat in Oeta | Herculei
+					monimenta rogi.—The name Pyra seems to have been usually associated with a
+						height about eight miles W.N.W. of Trachis.</note>. </p>
+			</div>
+			<div xml:id="cis2" type="section" n="2">
+				<p>Heracles had constrained his son Hyllus to aid in pre- <note anchored="true"
+						place="marg" resp="RCJ">The legend in epic poetry.</note> paring the
+					funeral-pile, but could not prevail upon him to kindle it. That office was
+					performed, at his urgent prayer, by the youthful Philoctetes, son of Poeas, king
+					of Malis<note anchored="true" place="foot" n="2" resp="RCJ">With regard
+						to the other version, according to which Poeas was the kindler, see on v.
+					802.</note>. In token of gratitude, Heracles bequeathed to Philoctetes the bow
+					and arrows which he himself had received from Apollo.</p>
+				<p>In the myths relating to the Trojan war a most important part belonged to the man
+					who had thus inherited the invincible weapons. Homer, indeed, does not say much
+					about him; but the <title>Iliad</title> contains only an episode in the tenth
+					year of the war: the part played by Philoctetes came before and after that
+					moment. The allusion in the Second Book of the <title>Iliad</title> is, however,
+					significant; it glances backwards and forwards. He is there mentioned as a
+					skilful archer, who had sailed from Greece in command of seven ships, but had
+					been left behind in Lemnos, wounded by the bite of a deadly water-snake. And
+					then the poet adds that the Greeks at Troy will soon have cause to bethink them
+					of Philoctetes<note anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Hom. Il. 2.721">
+							<title>Il.</title> 2. 721</ref> ff.: <quote xml:lang="grc">ἀλλ’ ὁ
+							μὲν ἐν νήσῳ κεῖτο κρατέρ’ ἄλγεα πάσχων, Λήμνῳ ἐν ἠγαθέῃ, ὅθι μιν λίπον
+					υἷες
+							Ἀχαιῶν, ἕλκει μοχθίζοντα κακῷ ὀλοόφρονος ὕδρου· ἔνθ’ ὅ γε κεῖτ’ ἀχέων·
+					τάχα
+							δὲ μνήσεσθαι ἔμελλον Ἀργεῖοι παρὰ νηυσὶ Φιλοκτήταο ἄνακτος</quote>.</note>
+					In the <title>Odyssey</title> he is named only twice; in one place, as having
+					been the best bowman at Troy; in another, as one of those heroes who came safely
+					home<note anchored="true" place="foot" n="2" resp="RCJ">
+						<ref n="Hom. Od. 8.219">
+							<title>Od.</title> 8. 219</ref>: 3. 190.</note> But his adventures were
+					fully told in other epics. The events preceding the action of the <title>
+						Iliad</title> were contained in the <title>Cypria</title>, an epic whose
+					reputed author, Stasînus of Cyprus, lived early in the eighth century B.C. That
+					poem described how Philoctetes was bitten by the snake,—while the Greeks, on
+					their way to Troy, were at Tenedos,—and was abandoned in Lemnos. His later
+					fortunes were narrated in the <title>Little Iliad</title>, ascribed to Lesches
+					of Mitylene (<emph>circa</emph> 700 B.C.), and in the <title>
+						Iliupersis</title>, or ‘Sack of Troy,’ by Arctînus of Miletus (<emph>c.</emph>
+					776 B.C.). The contents of these lost works are known chiefly from the prose
+					summaries of the grammarian Proclus (140 A.D. ), as partly preserved by Photius
+					in his <title>Bibliotheca.</title> The following is an outline of the story in
+					its epic form. </p>
+			</div>
+			<div xml:id="cis3" type="section" n="3">
+				<p>When the Greeks under Agamemnon were about to sail against Troy, it became
+					known that an oracle had commanded them to offer sacrifice, in the course of
+					their voyage across the Aegean, at the altar of a deity named Chrysè. All
+					the accounts placed this altar somewhere in the north-east of the
+					Archipelago. The prevalent version assigned it to a small island which, like
+					the deity herself, was called Chrysè, and lay close to the eastern shore of
+					Lemnos. Jason, it was said, had sacrificed at this altar when he was leading
+					the Argonauts in quest of the golden fleece. Heracles had paid it a like
+					homage when he was levying war against Laomedon. </p>
+				<p>Philoctetes, with his seven ships, was in the fleet of Agamemnon, and
+					undertook to act as guide. He alone knew where the isle of Chrysè was to be
+					found; for, in his early youth, he had been present at the sacrifice offered
+					there by Heracles.</p>
+				<p>The altar stood in a sacred precinct, under the open sky. When, followed by
+					the Greek chieftains, he approached it, he was bitten in the foot by a
+					serpent. The wound mortified, and became noisome. His cries of pain made it
+					impossible to perform the religious rites, which required the absence of all
+					ill-omened sounds. The fetid odour of his wound also made his presence a
+					distress to the chiefs. They conveyed him from the islet of Chrysè to the
+					neighbouring coast of Lemnos, where they put him ashore; and then sailed for
+					Troy.</p>
+				<p>It should be noticed that the circumstances of this desertion, as set forth in
+					the early legend, were probably less inhuman than they appear in the version
+					adopted by Sophocles. In the first place, it can hardly be doubted that these
+					cyclic poets, like Homer, imagined Lemnos as an inhabited island<note
+						anchored="true" place="foot" n="1" resp="RCJ">See Introduction to commentary
+					on v. 2.</note> And, according to one account, some followers of Philoctetes
+					were left in charge of him<note anchored="true" place="foot" n="2" resp="RCJ">
+					Philostratus <title>
+							Heroica</title> 6: <quote xml:lang="grc">τὰ δὲ τῆς νόσου καὶ τῶν
+					ἰασαμένων
+							αὐτὸν ἑτέρως λέγει</quote> (<quote xml:lang="grc">Πρωτεσίλαος</quote>). <quote
+							xml:lang="grc">καταλειφθῆναι μὲν γὰρ ἐν Λήμνῳ τὸν Φιλοκτήτην, οὐ μὴν
+					ἔρημον τῶν θεραπευσόντων οὐδ’ ἀπερριμμένον τοῦ Ἑλληνικοῦ· πολλούς τε γὰρ τῶν
+					Μελίβοιαν οἰκούντων ξυγκαταμεῖναι</quote> (<quote xml:lang="grc">στρατηγὸς
+							δὲ τούτων ἦν</quote>), <quote xml:lang="grc">τοῖς τ’ Ἀχαιοῖς δάκρυα
+					ἐπελθεῖν, ὅτ’ ἀπέλιπε σφᾶς ἀνὴρ πολεμικὸς καὶ πολλῶν ἀντάξιος</quote>. As to
+					Meliboea, see above, § 1 n. 1.</note>.</p>
+				<p>Ten years elapsed. The sufferer was still languishing in Lemnos; his former
+					comrades were still on the shore of the Hellespont, besieging the city which
+					they could not capture. Achilles had already fallen; Ajax had died by his
+					own hand. In their despondency, the Atreidae turned to the prophet who had
+					so often admonished or consoled them; but Calchas replied that the fate of
+					Ilium must now be learned from other lips than his. They must consult the
+					Trojan Helenus, son of Priam,—a warrior whom they had often seen in the
+					front of battle on the plain; a seer who, as rumour told, had warned, though
+					he could not save, his brother Hector. </p>
+				<p>Helenus was made prisoner by a stratagem of Odysseus, and then declared that,
+					before the Greeks could prevail, two things must be done. First, Philoctetes
+					must be brought back from Lemnos: Troy could never fall, until he launched
+					against it the arrows of Heracles. Secondly, Neoptolemus, the youthful son
+					of Achilles, must come from the island of Scyros, and must receive his due
+					heritage, the wondrous armour wrought for his father by the god Hephaestus.</p>
+				<p>Both injunctions were obeyed. Diomedes went to Lemnos, and brought
+					Philoctetes. Odysseus went to Scyros, and brought Neoptolemus. Philoctetes
+					was healed by the physician Machaon, son of Asclepius. He then slew Paris in
+					single combat, and shared with Neoptolemus the glory of final victory over
+					Troy.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Characteristics of the epic
+						version.</note>
+				</p>
+			</div>
+			<div xml:id="cis4" type="section" n="4">
+				<p>In this epic form of the story, two points deserve remark. (1) The mission to
+					Lemnos and the mission to Scyros are entrusted to different persons, and are
+					conceived as simultaneous, or nearly so. In the <title>Little Iliad</title> of
+					Lesches, the voyage to Lemnos seems to have been related first. (2) Diomedes has
+					apparently no difficulty in persuading Philoctetes to accompany him. For the
+					purposes of epic narrative, it would evidently suffice that Diomedes should
+					announce an oracle which promised health to the sufferer and honour to the
+					exile. The epic Philoctetes would accept these overtures in a speech of
+					dignified magnanimity; and all would be happily settled. This particular point
+					is curiously illustrated by Quintus Smyrnaeus, though in other respects he has
+					varied widely from the old epic version. He represents the wrath of Philoctetes
+					as immediately disarmed by the first soothing words of the Greek envoys
+					(Diomedes and Odysseus). Indeed, that brevity which sometimes marks the poet of
+					Smyrna is seldom quainter than in this passage of his ninth book. At verse 398
+					Philoctetes is preparing to shoot his visitors. At verse 426 they are carrying
+					their recovered friend, with pleasant laughter, to their ship:— </p>
+				<p>
+					<quote xml:lang="grc">οἱ δέ μιν αἶψ’ ἐπὶ νῆα καὶ ἠϊόνας βαρυδούπους
+						καγχαλόωντες ἔνεικαν ὁμῶς σφετέροισι βελέμνοις</quote>. </p>
+			</div>
+			<div xml:id="cis5" type="section" n="5">
+				<p>But all this was changed when Philoctetes became a <note anchored="true"
+						place="marg" resp="RCJ">The story as a theme for drama.</note> subject of
+					tragic drama. The very essence of the situation, as a theme for Tragedy, was the
+					terrible disadvantage at which the irony of fate had placed the Greeks. Here was
+					a brave and loyal man, guiltless of offence, whom they had banished from their
+					company,—whom they had even condemned to long years of extreme
+					suffering,—because a misfortune,—incurred by him in the course of doing them a
+					service,—had rendered his person disagreeable to them. For ten years he had been
+					pining on Lemnos; and now they learned that their miserable victim was the
+					arbiter of their destinies. It was not enough if, by force or fraud, they could
+					acquire his bow. The oracle had said that the bow must be used at Troy by
+					Philoctetes himself. How could he be induced to give this indispensable aid?</p>
+				<p>A dramatist could not glide over this difficulty with the facile eloquence of an
+					epic poet. If the Lemnian outcast was to be brought, in all his wretchedness,
+					before the eyes of the spectators, nature and art alike required the inference
+					that such misery had driven the iron into his soul. It would seem a violation of
+					all probability if, when visited at last by an envoy from the camp, he was
+					instantly conciliated by a promise—be the sanction what it might—that, on going
+					to Troy, he would be healed, and would gain a victory of which the profit would
+					be shared by the authors of his past woes. Rather the Philoctetes of drama would
+					be conceived as one to whom the Greeks at Troy were objects of a fixed mistrust,
+					and their leaders, of an invincible abhorrence; one to whom their foes were
+					friends, and their disasters, consolations; one who could almost think that his
+					long agony had been an evil dream, if he could but hear that they were utterly
+					overthrown, and that it was once more possible for him. without misgiving or
+					perplexity, to recognise the justice of the gods<note anchored="true"
+						place="foot" n="1" resp="RCJ">See, <foreign xml:lang="lat">e.g.</foreign>,
+					in this play, vv. 451 f., 631 f., 1043 f.</note>. </p>
+			</div>
+			<div xml:id="cis6" type="section" n="6">
+				<p>Aeschylus, Euripides, and Sophocles—to place their <note anchored="true"
+						place="marg" resp="RCJ">The three great dramatists.</note> names in the
+					chronological order of their plays on this subject— solved the problem each in
+					his own manner. A comparison of their methods is interesting. That it is
+					possible, is due in great measure to a fortunate accident. Dion, surnamed the
+					goldenmouthed, eminent as a rhetorician and essayist, was born at Prusa in
+					Bithynia about the middle of the first century, and eventually settled at Rome,
+					where he enjoyed the favour of Nerva and of Trajan. The eighty ‘discourses’ (<quote
+						xml:lang="grc">λόγοι</quote>) extant under his name are partly orations,
+					partly short pieces in the nature of literary essays,—many of them very slight,
+					and written in an easy, discursive style. In one of these (no. LII.) he
+					describes how he spent a summer afternoon in reading the story of Philoctetes at
+					Lemnos, as dramatised by Aeschylus, Euripides, and Sophocles. He reflects that,
+					even if he had lived at Athens in their time, he could not have enjoyed
+					precisely this treat,—of hearing the three masters, one after another, on the
+					same theme. And, as the result of his perusal, he declares that, if he had been
+					a sworn judge in the Dionysiac theatre, it would have puzzled him to award the
+					prize. After such a preface, it is rather disappointing that he does not tell us
+					more about the two plays which are lost. However, his little essay, which fills
+					scarcely seven octavo pages, throws light on several points of interest; and in
+					another of his short pieces (LIX.) he gives a prose paraphrase of the opening
+					scene in the <title>
+						Philoctetes</title> of Euripides. Apart from these two essays of Dion, the
+					fragments of the plays themselves would not help us far. From the Aeschylean
+					play, less than a dozen lines remain; from the Euripidean, about thirty-five.
+					Such, then, are the principal materials for a comparison.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The <title>Philoctetes</title> of
+						Aeschylus.</note>
+				</p>
+			</div>
+			<div xml:id="cis7" type="section" n="7">
+				<p>In the play of Aeschylus, the task of bringing Philoctetes from Lemnos to
+					Troy was undertaken, not by Diomedes,— as in the epic version,—but by
+					Odysseus. This change at once strikes the key-note of the theme, as Tragedy
+					was to handle it. Odysseus was the man of all others whom Philoctetes
+					detested; no envoy more repulsive to him could have been found. On the other
+					hand, the choice of that wily hero for the mission implies that its success
+					was felt to depend on the use of stratagem. As Dion shows us, Aeschylus
+					boldly brought Odysseus face to face with Philoctetes, and required the
+					spectators to believe that Philoctetes did not recognise his old enemy. The
+					excuse which Dion suggests for this improbability is not that the appearance
+					of Odysseus was greatly altered, but that the memory of Philoctetes had been
+					impaired by ten years of suffering. It may be inferred that the text of
+					Aeschylus supplied no better explanation.</p>
+				<p>The unrecognised Odysseus then proceeded to win the ear of Philoctetes by a false
+					story of misfortunes to the Greeks at Troy; Agamemnon was dead; Odysseus, too,
+					was gone—having been put to death for an atrocious crime (Dion does not say
+					what): and the whole army was in extremities. This story having won the
+					confidence of Philoctetes, the Aeschylean Odysseus perhaps seized the arms while
+					the sick man was in a paroxysm of his disease. A fragment indicates that
+					Aeschylus described the bow as hanging on a pine-tree near the cave. How
+					Philoctetes was finally brought away, we do not know: but it may be assumed that
+					there was no <emph>deus ex machina</emph>, and also that Odysseus had no
+					accomplice. The play probably belonged to a period when Aeschylus had not yet
+					adopted the third actor. Inhabitants of the island formed the Chorus. These
+					Lemnians, Dion says, vouchsafed no apology for having left Philoctetes unvisited
+					during ten years; and he told them his whole story, as if it were new to them.
+					But, as the essayist adds, the unfortunate are always ready to speak of their
+					troubles, and we may charitably suppose that some Lemnians had occasionally
+					cheered his solitude.</p>
+				<p>The general impression made on Dion's mind by the play of Aeschylus was that of a
+					simplicity and dignity suitable to ideal Tragedy. It had an austere grandeur of
+					diction and of sentiment which sustained the characters on the heroic level<note
+						anchored="true" place="foot" n="1" resp="RCJ">Dion or. 52 § 4 <quote
+							xml:lang="grc">ἥ τε γὰρ τοῦ Αἰσχύλου μεγαλοφροσύνη καὶ τὸ ἀρχαῖον,
+							ἔτι δὲ τὸ αὔθαδες</quote> (‘rugged boldness’) <quote xml:lang="grc">τῆς
+					διανοίας καὶ τῆς φράσεως πρέποντα ἐφαίνετο τραγῳδίᾳ καὶ τοῖς παλαιοῖς ἤθεσι
+							τῶν ἡρώων· οὐδὲν ἐπιβεβουλευμένον οὐδὲ στωμύλον οὐδὲ ταπεινόν</quote>.
+					So, again, he ascribes to Aeschylus <quote xml:lang="grc">τὸ αὔθαδες καὶ ἁπλοῦν</quote>
+					(§ 15).</note>; though in some respects the management of the plot was open to
+					the cavils of a more critical and more prosaic age. </p>
+			</div>
+			<div xml:id="cis8" type="section" n="8">
+				<p>The <title>Philoctetes</title> of Euripides was produced in 431 B.C.<note
+						anchored="true" place="foot" n="2" resp="RCJ">Argum. The <title>Medea</title>
+					, <title>Philoctetes</title> and <title>Dictys</title> formed a trilogy, with
+					the <title>Theristae</title> as satyric drama.</note>, <note anchored="true"
+						place="marg" resp="RCJ">The <title>Philoctetes</title> of Euripides.</note>
+					—some forty years or more, perhaps, after that of Aeschylus. Euripides combined
+					the epic precedent with the Aeschylean by sending Diomedes along with Odysseus
+					to Lemnos. A soliloquy by Odysseus opened the play<note anchored="true"
+						place="foot" n="1" resp="RCJ">Dion's 59th discourse bears the title <quote
+							xml:lang="grc">ΦΙΛΟΚΤΗΤΗΣ. ΕΣΤΙ ΔΕ
+							ΠΑΡΑΦΡΑΣΙΣ</quote>. It is simply a prose paraphrase—without preface or
+					comment—of the soliloquy and the subsequent dialogue, down to the point at which
+					Philoctetes invites Odysseus to enter his cave. Although it would be easy to
+					turn Dion's prose into iambics (as Bothe and others have done), it is evident
+					that, at least in several places, the paraphrase has been a free one. The whole
+					passage, in its original form, cannot have been much shorter than the <quote
+							xml:lang="grc">πρόλογος</quote> in the play of Sophocles.</note>. The
+					astute warrior was in a highly nervous state of mind. ‘Such,’ he said in effect,
+					‘are the consequences of ambition! I might have stayed at Troy, with a
+					reputation secured; but the desire of increasing it has brought me here to
+					Lemnos, where I am in great danger of losing it altogether, by failing in this
+					most ticklish business.’ He then explained that, when the Atreidae had first
+					proposed the mission to him, he had declined, because he knew that all his
+					resources of persuasion would be thrown away on Philoctetes, the man to whom he
+					had done a wrong so terrible. His first appearance would be the signal for an
+					arrow from the unerring bow. But afterwards his guardian goddess Athena had
+					appeared to him in a dream, and had told him that, if he would go to Lemnos, she
+					would change his aspect and his voice, so that his enemy should not know him.
+					Thus reassured, he had undertaken the task. We note in passing that Euripides
+					was here indirectly criticising Aeschylus, who had assumed that Odysseus could
+					escape recognition. The device of Athena's intervention was borrowed from the <title>
+					Odyssey</title>, where she similarly transforms her favourite at need. But
+					Euripides, in his turn, invites the obvious comment that such a device was more
+					suitable to epic narrative than to drama<note anchored="true" place="foot" n="2"
+						resp="RCJ">In the <title>Ajax</title>, Athena makes Odysseus invisible to
+					the hero (v. 85); but Ajax is already frenzied; and the scene is short.</note>.</p>
+				<p>Continuing his soliloquy, Odysseus said that, as he had reason to know, a rival
+					embassy was coming to Philoctetes from the Trojans, who hoped by large promises
+					to gain him for their side. Here, then, was a crisis that demanded all his
+					energies. At this moment, he saw Philoctetes approaching, and, with a hasty
+					prayer to Athena, prepared to meet him. Philoctetes limped slowly forward,—clad
+					(according to Dion's paraphrase) in the skins of wild beasts which he had shot<note
+						anchored="true" place="foot" n="1" resp="RCJ">Dion or. 59 § 5 (Odysseus
+					speaks): <quote xml:lang="grc">δοραὶ θηρίων καλύπτουσιν
+							αὐτόν</quote>. (Cp. <ref n="Aristoph. Ach. 424.">Ar. <title>Ach.</title>
+					424.</ref>)</note>. On finding that his visitor is a Greek from Troy,
+					Philoctetes pointed an arrow at him<note anchored="true" place="foot" n="2"
+						resp="RCJ">
+						<title>Ib.</title>§ 6 <quote xml:lang="grc">ΦΙ..τούτων δὴ τῆς ἀδικίας
+							αὐτίκα μάλα σὺ ὑφέξεις δίκην. ΟΔ. ἀλλ’ ὦ πρὸς θεῶν ἐπίσχες ἀφεῖναι τὸ
+					βέλος</quote> .</note> But he was quickly appeased by learning that the stranger
+					was a cruelly wronged fugitive,—a friend of that Palamedes whom the unscrupulous
+					malice of Odysseus had brought to death on a false charge of treason<note
+						anchored="true" place="foot" n="3" resp="RCJ">By this reference to his
+						own base crime, the cynicism of the Euripidean Odysseus is made needlessly
+					odious. The Sophoclean Odysseus merely authorises his young friend to abuse
+						him (64 f.).</note>. ‘Will Philoctetes befriend him?’ ‘Hapless man!’—was the
+					reply —‘the ally whom you invoke is more forlorn than yourself. But you are
+					welcome to share his wretched abode, until you can find some better resource.’
+					Philoctetes then invited his new friend into his cave.</p>
+				<p>Presently the Chorus entered,—composed, as in the Aeschylean play, of Lemnians.
+					They began by excusing themselves for their long neglect of the sufferer. This
+					was another glance at Aeschylus, whose Lemnians had made no such apologies. As
+					the judicious Dion says, however, that was perhaps the wiser course. But
+					Euripides had a further expedient for redeeming the character of the islanders;
+					he introduced a Lemnian called Actor, who had occasionally visited the sick man<note
+						anchored="true" place="foot" n="4" resp="RCJ">Dion or. 52 § 8 <quote
+							xml:lang="grc">ὁ Εὐριπίδης τὸν Ἄκτορα</quote> [MSS. <quote
+							xml:lang="grc">Ἕκτορα</quote>] <quote xml:lang="grc">εἰσάγει
+							ἕνα Λημνίων ὡς γνώριμον τῷ Φιλοκτήτῃ προσιόντα καὶ πολλάκις συμβεβληκότα</quote>.
+					Hyginus <ref n="Hyg. Fab. 102">
+							<title>Fab.</title> 102</ref>(in an outline of the story, taken from
+					Euripides) says:—<quote xml:lang="lat">quem expositum pastor regis
+							Actoris nomine Iphimachus Dolopionis filius nutrivit.</quote>
+					Schneidewin, supposing that Hyginus had accidentally interchanged the names,
+					proposed to read, <quote xml:lang="lat">pastor regis Iphimachi Dolopionis filii
+					nomine
+							Actor.</quote> Milani (<title>Mito di Filottete</title> p. 34) obtains
+					the same result in a more probable way when he conjectures, <quote
+							xml:lang="lat">pastor regis Iphimachi nomine Actor Dolopionis
+							filius.</quote> As he remarks, Euphorion, in his <quote xml:lang="grc">
+					Φιλοκτήτης</quote> (on which see below, § 18), introduced a <quote
+							xml:lang="grc">Δολοπιονίδης</quote> (Stobaeus <title>Flor.</title> 59.
+					16). And Dion's description of Actor as <quote xml:lang="grc">ἕνα
+							Λημνίων</quote> would apply to a shepherd better than to a king. Ovid,
+					however, seems to make Actor king of Lemnos (<title>Trist.</title> 1. 10. 17): <title>Fleximus
+					in laevum cursus</title>, <emph>et ab Actoris urbe</emph> | <title>Venimus ad
+					portus</title>, <title>Imbria terra</title>, <emph>tuos.</emph> The best MSS.
+					there have <title>Actoris:</title> others, <title>Hectoris.</title>
+					</note>.
+					The climax of dramatic interest must have been marked by the arrival of that
+					Trojan embassy which Odysseus had foreshadowed in the prologue. It came,
+					probably, before the seizure of the bow, and while, therefore, Odysseus was
+					still disguised. Two verses, spoken by him in the play, run thus:— </p>
+				<p>
+					<quote xml:lang="grc">ὑπέρ γε μέντοι παντὸς Ἑλλήνων στρατοῦ αἰσχρὸν σιωπᾶν
+					βαρβάρους δ’ ἐᾶν λέγειν</quote>
+						<note anchored="true" place="foot" n="1"
+						resp="RCJ">The first of these two verses is preserved by <ref
+							n="Plut. Adv. Col. 1108b">Plut. <title>Mor.</title> 1108</ref>B, who
+					from the second v. quotes only <quote xml:lang="grc">αἰσχρὸν σιωπᾶν</quote>. The
+					second v. was made proverbial by Aristotle's parody (<quote xml:lang="grc">αἰσχρὸν
+					σιωπᾶν Ἰσοκράτην δ’ ἐᾶν λέγειν</quote>). That the original word was <quote
+							xml:lang="grc">βαρβάρους</quote> appears from <emph>Cic.
+							de orat.</emph> 3. 35. 141; where, as in Quintil. 3. 1. 14, it is called
+					‘a verse from the <title>Philoctetes.</title>’ That this was the play of
+					Euripides, is a certain inference from the fact of the Trojan embassy.</note> .</p>
+				<p>Such words would be fitting in the mouth of a Greek speaker who pretended to
+					have been wronged by his countrymen. They suggest a context of the following
+					kind;—‘(Although I have been badly treated by the Greek chiefs,) yet, in the
+					cause of the Greek army at large, I cannot be silent, while barbarians
+					plead.’ The leader of the Trojan envoys—perhaps Paris—would urge Philoctetes
+					to become their ally. Then the appeal to Hellenic patriotism would be made
+					with striking effect by one who alleged that, like Philoctetes himself, he
+					had personal injuries to forget. This scene would end with the discomfiture
+					and withdrawal of the Trojan envoys. It may be conjectured that the
+					subsequent course of the action was somewhat as follows. Philoctetes was
+					seized with an attack of his malady; the disguised Odysseus, assisted
+					perhaps by the Lemnian shepherd, was solicitous in tending him; and
+					meanwhile Diomedes, entering at the back of the group, contrived to seize
+					the bow. Odysseus then revealed himself, and, after a stormy scene,
+					ultimately prevailed on Philoctetes to accompany him. His part would here
+					give scope for another great speech, setting forth the promises of the
+					oracle. Whether Athena intervened at the close, is uncertain.</p>
+				<p>This play of Euripides struck Dion as a masterpiece of declamation, and as a
+					model of ingenious debate,—worthy of study, indeed, as a practical lesson in
+					those arts. When he speaks of the ‘contrast’ to the play of Aeschylus, he is
+					thinking of these qualities<note anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Eur. Orest. 52"> Or. 52</ref>§ 11 <quote xml:lang="grc">ὥσπερ
+					ἀντίστροφός ἐστι τῇ τοῦ Αἰσχύλου, πολιτικωτάτη καὶ ῥητορικωτάτη οὖσα κ.τ.λ.</quote>
+					So, again, he speaks of the <quote xml:lang="grc">ἐνθυμήματα πολιτικά</quote>
+					used by Odysseus: of the <quote xml:lang="grc">ἰαμβεῖα σαφῶς καὶ κατὰ φύσιν
+							καὶ πολιτικῶς ἔχοντα</quote>: and of the whole play as marked by <quote
+							xml:lang="grc">τὸ ἀκριβὲς καὶ δριμὺ καὶ πολιτικόν</quote>. The word <quote
+							xml:lang="grc">πολιτικός</quote> is here used in the special sense which
+					Greek writers on rhetoric had given to it. By <quote xml:lang="grc">πολιτικὸς
+					λόγος</quote> they meant public speaking as distinguished from scholastic
+					exercises,—especially speaking in a deliberative assembly or a law-court. See <title>Attic
+					Orators</title>, vol. I. p. 90. Dion's reiteration of the word marks his feeling
+					that the rhetorical dialectic of Euripides in this play would have been telling
+					in the contests of real life. And hence the play is described by him as <quote
+							xml:lang="grc">τοῖς ἐντυγχάνουσι πλείστην
+							ὠφέλειαν παρασχεῖν δυναμένη</quote>,—‘to those who engage in
+					discussion.’ For this use of <quote xml:lang="grc">ἐντυγχάνειν</quote>, cp. <ref
+							n="Aristot. Top. 1. 2">Arist. <title>Top.</title> 1. 2</ref>, where
+					dialectic is said to be profitable <quote xml:lang="grc">πρὸς τὰς ἐντεύξεις</quote>:
+					and <ref n="Aristot. Rh. 1.1.12">Arist. <title>Rhet.</title> 1. 1. 12</ref>,
+					with Cope's note.</note>. With regard to the plot, no student of Euripides will
+					be at a loss to name the trait which is most distinctive of his hand. It is the
+					invention of the Trojan embassy,—a really brilliant contrivance for the purpose
+					which he had in view. We cannot wonder if, in the period of classical antiquity
+					during which controversial rhetoric chiefly flourished, the <title>Philoctetes</title>
+					of Euripides was more generally popular than either of its rivals. </p>
+			</div>
+			<div xml:id="cis9" type="section" n="9">
+				<p>The originality of Sophocles can now be estimated. <note anchored="true"
+						place="marg" resp="RCJ">Sophocles.</note> Hitherto, one broad characteristic
+					had been common to epic and dramatic treatments of the subject. The fate of
+					Philoctetes had been considered solely as it affected the Greeks at Troy. The
+					oracle promised victory to them, if they could regain him: to him it offered
+					health and glory. This was an excellent prospect for him: if he would not
+					embrace it voluntarily, he must, if possible, be compelled to submission. But
+					there had been no hint that, outside of this prospect, he had any claim on human
+					pity. Suppose him to say,—‘I refuse health and glory, at the price of rejoining
+					the men who cast me forth to worse than death; but I pray to be delivered from
+					this misery, and restored to my home in Greece.’ Would not that be a warrantable
+					choice, a reasonable prayer? Not a choice or a prayer, perhaps, that could win
+					much sympathy from a Diomedes or an Odysseus, men who had consented to the act
+					of desertion, and who now had their own objects to gain. But imagine some one in
+					whom a generous nature, or even an ordinary sense of justice and humanity, could
+					work without hindrance from self-interest;— might not such a man be moved by the
+					miseries of Philoctetes, and recognise that he had human rights which were not
+					extinguished by his refusal to obey the summons of the Atreidae?</p>
+				<p>Again, the two plays on this subject which Sophocles found existing, both
+					depended, for their chief dramatic interest, on the successful execution of
+					a plan laid by the envoys. The Odysseus of Aeschylus, the Odysseus and
+					Diomedes of Euripides, alike carry a stratagem to a triumphant issue.</p>
+				<p>In associating Odysseus with Neoptolemus, the youthful son of Achilles,
+					Sophocles chose the person who, if any change was to be made in that
+					respect, might most naturally be suggested by the epic version of the fable.
+					But this new feature was no mere variation on the example of his
+					predecessors. It prepared the way for a treatment of the whole story which
+					was fundamentally different from theirs.</p>
+				<p>This will best be shown by a summary of the plot. The events supposed to have
+					occurred before the commencement of the play can be told in a few words.
+					Achilles having fallen, his armour had been awarded to Odysseus, and Ajax
+					had committed suicide. Then Helenus had declared the oracle (as related
+					above, § 3). Phoenix and Odysseus had gone to Scyros, and had brought the
+					young Neoptolemus thence to Troy; where his father's armour was duly given
+					to him. (In his false story to Philoctetes, he represents the Atreidae as
+					having defrauded him of it.) Then he set out with Odysseus for
+					Lemnos,—knowing that the object was to bring Philoctetes, but not that any
+					deceit was to be used. The chiefs had told him that he himself was destined
+					to take Troy; but not that the aid of Philoctetes was an indispensable
+					condition.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Analysis of the play. I.
+						Prologue: 1—134.</note>
+				</p>
+			</div>
+			<div xml:id="cis10" type="section" n="10">
+				<p>The scene is laid on the lonely north-east coast of Lemnos. Odysseus and
+					Neoptolemus have just landed, and have now walked along the shore to a little
+					distance from their ships<note anchored="true" place="foot" n="1" resp="RCJ">Odysseus
+					comes in one ship, and Neoptolemus in another. Each chief has his own men. Hence
+					Odysseus can threaten to sail at once, leaving Neoptolemus behind, and denounce
+					him to the Greek army (1257 f.). And Neoptolemus can propose to sail with
+					Philoctetes, but without Odysseus, for Malis (1402 ff.). Where the singular <quote
+							xml:lang="grc">ναῦς</quote> is used, with or without the definite
+					article, it refers to the ship of Neoptolemus (<foreign xml:lang="lat">e.g.</foreign>
+					125, 461, 527, 881, 1076, 1180).</note>, which are no longer visible. Odysseus
+					tells his young comrade that here, long ago, he put Philoctetes ashore, by
+					command of the Atreidae. He desires the youth to examine the rocks which rise
+					above their heads, and to look for a cave, with a spring near it. Neoptolemus
+					presently finds the cave, with traces in it which show that it is still
+					inhabited.</p>
+				<p>A seaman, in attendance on Neoptolemus, is then despatched to act as sentry,
+					lest Philoctetes should come on them by surprise.</p>
+				<p>Odysseus explains that it is impossible for <emph>him</emph> to face Philoctetes;
+					he must remain concealed, on peril of his life; Neoptolemus must conduct the
+					parley. Neoptolemus must tell Philoctetes truly who he is—but must pretend that
+					he has quarrelled with the Greeks at Troy, for depriving him of his father's
+					arms, and is sailing home to Greece.</p>
+				<p>The youth at first refuses to utter such a falsehood; but yields at last to
+					the argument that otherwise he cannot take Troy. Odysseus now departs to his
+					ship,—promising that, after a certain time, he will send an accomplice to
+					help Neoptolemus in working on the mind of Philoctetes. This will be the man
+					who had been acting as sentry; he will be disguised as a sea-captain.</p>
+				<p>The Chorus of fifteen seamen (from the ship of Neoptolemus) <note anchored="true"
+						place="marg" resp="RCJ">Parodos: 135—218.</note> now enters. They ask their
+					young chief how they are to aid his design. He invites them to look into the
+					cave, and instructs them how they are to act when Philoctetes returns. In answer
+					to their words of pity for the sufferer, he declares his belief that heaven
+					ordains those sufferings only till the hour for Troy to fall shall have come.</p>
+				<p>Philoctetes appears. He is glad to find that the strangers <note anchored="true"
+						place="marg" resp="RCJ">II. First episode: 219—675.</note> are Greeks; he is
+					still more rejoiced when he learns that the son of Achilles is before him. He
+					tells his story; and Neoptolemus, in turn, relates his own ill-treatment by the
+					chiefs. The Chorus, in a lyric strophe, confirm their master's fiction. After
+					some further converse about affairs at Troy, Philoctetes implores Neoptolemus to
+					take him home. They are on the point of setting out for their ship, when two men
+					are seen approaching.</p>
+				<p>The supposed sea-captain (sent by Odysseus) enters, with a sailor from the
+					ship of Neoptolemus. He describes himself as master of a small
+					merchant-vessel, trading in wine between Peparethus (an island off the south
+					coast of Thessaly) and the Greek camp at Troy. He announces that the Greeks
+					have sent emissaries in pursuit of Neoptolemus:—also that Odysseus and
+					Diomedes have sailed in quest of Philoctetes. He then departs.</p>
+				<p>Philoctetes is now more anxious than ever to start at once. Accompanied by
+					Neoptolemus, he enters his cave, in order to fetch his few necessaries.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Stasimon: 676—729.</note>In the
+					choral ode which follows, the seamen give full expression to their pity for
+					Philoctetes. They have heard of Ixion, but they have never seen any doom so
+					fearful as that of this unoffending man.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">III. Second episode: 730—826.</note>Just
+					as he is leaving the cave with Neoptolemus, Philoctetes is seized with a sharp
+					attack of pain. He vainly seeks to hide his agony. Neoptolemus is touched, and
+					asks what he can do. Philoctetes, feeling drowsy, says that, before he falls
+					asleep, he wishes to place the bow and arrows in his friend's hands. Thus
+					Neoptolemus (still with treason in his heart) gets the bow into his keeping.</p>
+				<p>A second and sharper paroxysm now comes upon Philoctetes. In his misery, he
+					prays for death—he beseeches his friend to cast him into the crater of the
+					burning mountain which can be seen from the cave. Neoptolemus is deeply
+					moved. He solemnly promises that he will not leave the sick man; who
+					presently sinks into slumber.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Kommos (taking the place of a
+					second stasimon): 827—864.</note>Invoking the Sleep-god to hold Philoctetes
+					prisoner, the Chorus urge Neoptolemus to desert the sleeper, and quit Lemnos
+					with the bow. Neoptolemus replies that such a course would be as futile as
+					base,—since the oracle had directed them to bring not only the bow, but its
+					master.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">IV. Third episode: 865—1080.</note>Philoctetes
+					awakes, and, aided by Neoptolemus, painfully rises to his feet. They are ready
+					to set out for their ship. And now Neoptolemus has reached the furthest point to
+					which the deception can be carried; for at the ships Philoctetes will find
+					Odysseus. Shame and remorse prevail. He tells Philoctetes that their destination
+					is Troy.</p>
+				<p>The unhappy man instantly demands his bow—but Neoptolemus refuses to restore
+					it. And then the despair of Philoctetes finds terrible utterance. The
+					youth's purpose is shaken. He is on the point of giving back the weapon,
+					when suddenly Odysseus starts forth from a hiding-place near the cave, and
+					prevents him. Philoctetes—whom Odysseus threatens to take by force—is about
+					to throw himself from the cliffs, when he is seized by the attendants. In
+					answer to his bitter reproaches, Odysseus tells him that he can stay in
+					Lemnos, if he chooses:— other hands can wield the bow at Troy. Odysseus then
+					departs to his ship, ordering his young comrade to follow; but, by the
+					latter's command, the Chorus stay with Philoctetes, in the hope that he may
+					yet change his mind.</p>
+				<p>In a lyric dialogue, Philoctetes bewails his fate, while the <note
+						anchored="true" place="marg" resp="RCJ">Second Kommos (taking the place
+						of a third stasimon): 1081— 1217.</note> Chorus remind him that it is in his
+					own power to escape from Lemnos. But at the bare hint of Troy, his anger blazes
+					forth, and he bids them depart. They are going, when he frantically recalls
+					them. Once more they urge their counsel—only to elicit a still more passionate
+					refusal. He craves but one boon of them—some weapon with which to kill himself.</p>
+				<p>They are about to leave him—since no persuasions avail— <note anchored="true"
+						place="marg" resp="RCJ">V. Exodos: 1218 —1471.</note> when Neoptolemus is
+					seen hurrying back, with the bow in his hand,—closely followed by Odysseus, who
+					asks what he means to do. Neoptolemus replies that he intends to restore the bow
+					to its rightful owner. Odysseus remonstrates, blusters, threatens, and finally
+					departs, saying that he will denounce this treason to the army.</p>
+				<p>The youth next calls forth Philoctetes, and gives him the bow. Odysseus once
+					more starts forth from ambush—but this time he is too late. The weapon is
+					already in the hands of Philoctetes, who bends it at his foe, and would have
+					shot him, had not Neoptolemus interposed. Odysseus hastily retires, and is
+					not seen again.</p>
+				<p>Philoctetes now hears from Neoptolemus the purport of the oracle; he is to be
+					healed, and is to share the glory of taking Troy. He hesitates for a
+					moment—solely because he shrinks from paining his friend by a refusal. But
+					he cannot bring himself to go near the Atreidae. And so he calls upon
+					Neoptolemus to fulfil his promise—to take him home.</p>
+				<p>Neoptolemus consents. He forebodes the vengeance of the Greeks—but
+					Philoctetes reassures him: the arrows of Heracles shall avert it. They are
+					about to set forth for Greece, when a divine form appears in the air above
+					them.</p>
+				<p>Heracles has come from Olympus to declare the will of Zeus. Philoctetes must
+					go to Troy with Neoptolemus, there to find health and fame. He yields to the
+					mandate of heaven, brought by one who, while on earth, had been so dear to
+					him. He makes his farewell to Lemnos; and the play closes as he moves with
+					Neoptolemus towards the ships, soon to be sped by a fair wind to Sigeum.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">General scope of the treatment.</note>
+				</p>
+			</div>
+			<div xml:id="cis11" type="section" n="11">
+				<p>Even a mere outline of the plot, such as the above, will serve to exhibit the
+					far-reaching consequences of the change made by Sophocles, when he
+					introduced Neoptolemus as the associate of Odysseus. The man who retains the
+					most indelible memory of a wrong may be one who still preserves a
+					corresponding depth of sensibility to kindness; the abiding resentment can
+					coexist with undiminished quickness of gratitude for benefits, and with
+					loyal readiness to believe in the faith of promises. Such is the Philoctetes
+					of Sophocles; he has been cast forth by comrades whom he was zealously
+					aiding; his occasional visitors have invariably turned a deaf ear to his
+					prayers; but, inexorably as he hates the Greek chiefs, all the ten years in
+					Lemnos have not made him a Timon. He is still generous, simple,
+					large-hearted, full of affection for the friends and scenes of his early
+					days; the young stranger from the Greek camp, who shows pity for him, at
+					once wins his warmest regard, and receives proofs of his absolute
+					confidence. It is the combination of this character with heroic fortitude
+					under misery that appeals with such irresistible pathos to the youthful son
+					of Achilles, and gradually alters his resolve. But this character could
+					never have been unfolded except in a sympathetic presence. The disclosure is
+					possible only because Neoptolemus himself, a naturally frank and chivalrous
+					spirit, is fitted to invite it. In converse with Diomedes or Odysseus, only
+					the sterner aspects of Philoctetes would have appeared.</p>
+				<p>Nor, again, was it dramatically possible that Diomedes or Odysseus should regard
+					Philoctetes in any other light than that of an indispensable ally: they must
+					bring him to Troy, if possible: if not, then he must remain in Lemnos. Hence
+					neither Aeschylus nor Euripides could have allowed the scheme of Odysseus to
+					fail; for then not even a <emph>deus ex machina</emph> could have made the
+					result satisfactory. It was only a person like Neoptolemus, detached from the
+					past policy of the chiefs, who could be expected to view Philoctetes simply as a
+					wronged and suffering man, with an unconditional claim to compassion. The
+					process by which this view of him gains upon the mind of Neoptolemus, and
+					finally supersedes the desire of taking him to Troy, is delineated with
+					marvellous beauty and truth. Odysseus is baffled; but the decree of Zeus, whose
+					servant he called himself, is performed. The supernatural agency of Heracles is
+					employed in a strictly artistic manner, because the dead-lock of motives has
+					come about by a natural process: the problem now is how to reconcile human
+					piety, as represented by the decision of Neoptolemus, with the purpose of the
+					gods, as declared in the oracle of Helenus. Only a divine message could bend the
+					will of Philoctetes, or absolve the conscience of the man who had promised to
+					bring him home.</p>
+				<p>Thus it is by the introduction of Neoptolemus that Sophocles is enabled to invest
+					the story with a dramatic interest of the deepest kind. It is no longer only a
+					critical episode in the Trojan war, turning on the question whether the envoys
+					of the Greeks can conciliate the master of their fate. It acquires the larger
+					significance of a pathetic study in human character,— a typical illustration of
+					generous fortitude under suffering, and of the struggle between good and evil in
+					an ambitious but loyal mind. Dion, in his comparison of the three plays on this
+					subject, gives unstinted praise, as we have seen, to the respective merits of
+					Aeschylus and of Euripides; but he reserves for Sophocles the epithet of ‘most
+					tragic<note anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Eur. Orest. 52"> Or. 52</ref>§ 15 <quote xml:lang="grc">ὁ δὲ
+							Σοφοκλῆς μέσος ἔοικεν ἀμφοῖν εἶναι, οὔτε τὸ ἄθαδες καὶ ἁπλοῦν τὸ τοῦ
+					Αἰσχύλου ἔχων, οὔτε τὸ ἀκριβὲς καὶ δριμὺ καὶ πολιτικὸν τὸ τοῦ Εὐριπίδου·
+							σεμνὴν δέ τινα καὶ μεγαλοπρεπῆ ποίησιν, τραγικώτατα καὶ εὐεπέστατα
+					ἔχουσαν,
+							ὥστε πλείστην εἶναι ἡδονήν, &lt;καὶ&gt; μετὰ ὔψους καὶ σεμνότητος
+					ἐνδείκνυσθαι</quote>.</note>.’ Sophocles was indeed the poet who first revealed
+					the whole capabilities of the fable as a subject for Tragedy.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The oracle.</note>
+				</p>
+			</div>
+			<div xml:id="cis12" type="section" n="12">
+				<p>While the general plot of the <title>Philoctetes</title> is simple and lucid,
+					there are some points in it which call for remark.</p>
+				<p>In the first place, some questions suggest themselves with regard to the
+					oracle which commanded the Greeks to bring Philoctetes from Lemnos. Helenus
+					appears to have said that he must be brought by persuasion, not by force
+					(vv. 612, 1332). Odysseus, indeed, offered to compel him, if necessary
+					(618); and, at one moment, threatens to do so (985). But it would be in
+					keeping with his character—as depicted in this play— that he should think it
+					unnecessary to observe the letter of the oracle in this respect. If his
+					stratagem had succeeded, force would have been needless.</p>
+				<p>Then at v. 1340 Helenus is quoted as saying that Troy is doomed to fall in
+					the summer. The Greeks could understand this only in a conditional sense,
+					since he had told them that their victory depended on the return of
+					Philoctetes (611 f.). But the absolute statement in v. 1340 is intelligible,
+					if the seer be conceived as having a prevision of the event, and therefore a
+					conviction that, by some means, Philoctetes would be brought.</p>
+				<p>Again,—is the ignorance of the oracle shown by Neoptolemus at v. 114
+					inconsistent with the knowledge which he shows afterwards? (197 ff.: 1337
+					ff.) I think not. The only fact of which v. 114 proves him ignorant is that
+					Troy could not be taken without Philoctetes. What he says afterwards on that
+					point could be directly inferred from what Odysseus then told him (v. 115).
+					He may have known from the first that Philoctetes was a desirable ally, and
+					that, if he came to Troy, he would be healed.</p>
+				<p>At v. 1055 Odysseus declares his willingness to leave Philoctetes in Lemnos. It
+					is enough that the bow has been captured. But the oracle had expressly said that
+					Philoctetes himself must be brought (841). Indeed, the difficulty of securing <emph>
+					him</emph> is the basis of the whole story. Therefore, in 1055 ff., Odysseus
+					must be conceived as merely using a last threat, which, he hopes, may cause
+					Philoctetes to yield. The alternative in the mind of Odysseus—we must
+					suppose—was to carry him aboard by force. In vv. 1075 ff. Neoptolemus directs
+					the Chorus to stay with Philoctetes—on the chance of his relenting—until the
+					ship is ready, and then to come quickly, when called. It would certainly seem
+					from this that Neoptolemus understood his chief as seriously intending to leave
+					Philoctetes behind. And the words of the Chorus at v. 1218 suggest the same
+					thing. But it does not follow that they had penetrated the real purpose of their
+					crafty leader. </p>
+			</div>
+			<div xml:id="cis13" type="section" n="13">
+				<p>In the opening scene Odysseus orders Neoptolemus <note anchored="true"
+						place="marg" resp="RCJ">Episode of the merchant (vv. 542 —627).</note> to
+					remain at the cave, while he himself returns to his ship. ‘If’ (he says in
+					effect) ‘you seem to be staying here too long—that is, if there is reason to
+					fear some hitch in our plan—then I will send one of your men to the cave,
+					disguised as the captain of a merchant-ship. He will tell an artful story, from
+					which you can take hints.’ Neoptolemus has already won the confidence of
+					Philoctetes (who believes that he is to be taken home), when this pretended
+					merchant appears (v. 542). Feigning to come from Troy, he reports that Odysseus
+					and Diomedes have sailed for Lemnos in quest of Philoctetes, while other
+					emissaries are in pursuit of Neoptolemus. This story quickens the impatience of
+					Philoctetes to leave Lemnos (v. 635), while it also strengthens his sympathy for
+					the son of Achilles. It brings out, too, the feeling with which he regards the
+					errand of Odysseus. ‘Sooner would I hearken to that deadliest of my foes, the
+					viper which made me the cripple that I am’ (vv. 631 f.). But the episode has a
+					further result. It supplies a motive for the transfer of the bow. Philoctetes,
+					feeling drowsy after an attack of pain, fears that his enemies may arrive in
+					Lemnos and seize his weapons while he is asleep. He therefore hands the bow and
+					arrows to Neoptolemus, begging him to keep them safe (vv. 763—773)<note
+						anchored="true" place="foot" n="1" resp="RCJ">An able critic in the <ref>
+							<title>Athenœum</title> (<date when="1892-08-13">Aug. 13, 1892</date> )</ref>
+					further suggests that the episode of the merchant may serve to explain an
+					obscure point. When Philoctetes discovers that he is to be taken to Troy, he
+					denounces the deceit of Neoptolemus (vv. 927—962). And yet in v. 1365 he speaks
+					as if he still believed the false story told by Neoptolemus in vv. 343—390, that
+					he had been defrauded of his father's arms. The apparent inconsistency can be
+					explained (the critic remarks) if Philoctetes supposed that, while he was
+					asleep, Odysseus reached Lemnos, and then for the first time won Neoptolemus to
+					his plans. On this view, in vv. 971 f. (<quote xml:lang="grc">οὐκ εἶ κακὸς σύ,
+					πρὸς κακῶν δ’ ἀνδρῶν μαθὼν</quote> | <quote xml:lang="grc">ἔοικας ἥκειν αἰσχρά</quote>
+					), <quote xml:lang="grc">
+							ἥκειν</quote> must mean, ‘to have come <emph>back</emph>’ (from a
+					colloquy with Odysseus, held near the spot where Philoctetes was sleeping. But
+					the natural sense of <quote xml:lang="grc">ἥκειν</quote> is clearly, ‘to have
+					come <emph>to Lemnos.</emph>’ And if (notwithstanding his alleged wrong)
+					Neoptolemus could listen to Odysseus in Lemnos, why should he not have become
+					his accomplice before leaving Troy? Another point, however, which the critic
+					notes is independent of this question. Neoptolemus would naturally feel some
+					fresh remorse and shame when he perceived (from v. 1365) that the whole extent
+					of his duplicity was not even then surmised by Philoctetes. And these feelings
+					may have been conceived by the dramatist as motives which helped to determine
+					his final resolve.</note>. </p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The Chorus.</note>
+				</p>
+			</div>
+			<div xml:id="cis14" type="section" n="14">
+				<p>The management of the Chorus deserves notice. If Sophocles had followed the
+					example of Aeschylus and Euripides, he would have composed it of Lemnians. He
+					felt, probably, that it was better to avoid raising the question which was then
+					suggested,—viz., why some effective succour had not been rendered to Philoctetes
+					in the course of the ten years. But there was a further motive for the change.
+					The attitude of a Lemnian Chorus would be that of a sympathetic visitor, leading
+					Philoctetes to recount his sufferings, and speaking words of comfort in return;
+					while, with respect to the scheme of Odysseus for bringing him to Troy, it would
+					be neutral. But the dramatic effect of the situation is heightened by every
+					circumstance that contributes to the isolation of the central figure. As in the <title>
+					Antigone</title> the heroine is the more forlorn because the Theban elders
+					support Creon, so here the loneliness of Philoctetes becomes more complete when
+					the Chorus is formed of persons attached to the Greek chiefs. In these ten years
+					he has seen no human face, and heard no voice, save when some chance vessel put
+					in at the coast, only to mock him with a gleam of delusive hope. And now he
+					stands alone against all.</p>
+				<p>The key-note of the part played by the seamen is their wish to second the design
+					of their master, Neoptolemus; but they also feel genuine pity for Philoctetes.
+					This is powerfully expressed in the stasimon (676 ff.), where they are alone
+					upon the scene; though, at the close of that ode, when the sufferer returns,
+					they once more seek to deceive him with the belief that he is going home to
+					Malis (718 f.). But there is one passage which is in startling discord with the
+					general tone of their utterances: it is where they press Neoptolemus to seize
+					the moment while Philoctetes sleeps, and to decamp with the bow (833 ff.). It
+					would be a poor excuse to suggest that they regard his sleep as the presage of
+					imminent death (861 <quote xml:lang="grc">ὡς Ἀΐδᾳ πάρα κείμενος</quote>). The
+					dramatic motive of this passage is, indeed, evident: it elicits a reproof from
+					Neoptolemus, and illustrates his honourable constancy (839 ff.). As for the
+					Chorus, it may at least be said that this jarring note is struck only once. The
+					humane temper which they had shown up to that point reappears in the sequel.</p>
+				<p>The Chorus of this play is essentially an active participator in the plot—aiding
+					the strategy of Neoptolemus, and endeavouring to alter the purpose of
+					Philoctetes (1081—1217). Hence it is natural that there should be only one
+					stasimon. The other lyrics subsequent to the Parodos either form parentheses in
+					the dialogue (391 ff., 507 ff.), or belong to the <quote xml:lang="grc">κομμοί</quote>
+					. </p>
+			</div>
+			<div xml:id="cis15" type="section" n="15">
+				<p>It is interesting to compare the Odysseus of this play— <note anchored="true"
+						place="marg" resp="RCJ">Odysseus.</note> one of the poet's latest works—with
+					that of the <title>Ajax</title>, which was one of the earliest. There, Odysseus
+					appears as one who has deeply taken to heart the lesson of moderation, and of
+					reverence for the gods, taught by Athena's punishment of his rival; and, if
+					there is no great elevation in his character, at least he performs a creditable
+					part in dissuading the Atreidae from refusing burial to the dead. Here, he is
+					found avowing that a falsehood is not shameful, if it brings advantage (v. 109);
+					he can be superlatively honest, he says, when there is a prize for honesty; but
+					his first object is always to gain his end (1049 ff.). He is not content with
+					urging Neoptolemus to tell a lie, but adds a sneer at the youth's reluctance (84
+					f.). Yet, as we learn from Dion, he is ‘far gentler and simpler’ than the
+					Odysseus who figured in the <title>
+						Philoctetes</title> of Euripides. The Homeric conception of the resourceful
+					hero had suffered a grievous decline in the later period of the Attic drama; but
+					Sophocles, it would seem, was comparatively lenient to him. </p>
+				<p>In the <title>Ajax</title>, it will be remembered, Odysseus is terrified at the
+					prospect of meeting his insane foe, and Athena reproves his ‘cowardice’ (74 f.).
+					His final exit in the <title>Philoctetes</title> is in flight from the bent bow
+					of the hero, who remarks that he is brave only in words (1305 ff.). And, at an
+					earlier moment in the play, he is ironically complimented by Neoptolemus on his
+					prudence in declining to fight (1259). All these passages indicate that the
+					conventional stage Odysseus to whom Attic audiences had become accustomed was
+					something of a poltroon. But it is instructive to remark the delicate reserve of
+					Sophocles in hinting a trait which was so dangerously near to the grotesque. For
+					it is no necessary disparagement to the courage of Odysseus that he should
+					shrink from confronting Ajax,—a raging maniac intent on killing him,—or that he
+					should decline to be a target for the ‘unerring’ shafts of Philoctetes,—or that
+					he should refrain from drawing his sword on a young comrade, Neoptolemus.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Topography.</note>
+				</p>
+			</div>
+			<div xml:id="cis16" type="section" n="16">
+				<p>A few words must be added concerning the topography of the play<note
+						anchored="true" place="foot" n="1" resp="RCJ">A sketch-map of Lemnos is
+						given in the Appendix, note on v. 800.</note>. Mount Hermaeum, which
+					re-echoed the cries of Philoctetes, may safely be identified with the
+					north-eastern promontory of Lemnos, now Cape Plaka. His cave was imagined by the
+					poet as situated in the cliffs on the north-east coast, not far south of
+					Hermaeum (<ref n="Soph. Phil. 1455">cp. 1455</ref> ff.), and at some height
+					above the shore (v. 1000: cp. v. 814). The east coast is probably that on which
+					the volcano Mosychlus (visible from the cave) once existed; and the islet called
+					Chrysè lay near it. Philoctetes describes Lemnos as uninhabited (v. 220), and as
+					affording no anchorage (v. 302). This raises a curious point as to the degree of
+					licence that a dramatist of that age would have allowed himself in a matter of
+					this sort,—and as to the choice which he would have made between two kinds of
+					improbability. In the time of Sophocles, Lemnos had long been a possession of
+					Athens, and it was a fact familiar to Athenians that the island possessed
+					excellent harbours on every side except the east. Then, if an Athenian audience
+					were required to suppose that, in the heroic age, Lemnos was a desert island,
+					they would at once remember the ‘well-peopled’ Lemnos of the <title>Iliad.</title>
+					Hence, the simplest supposition—viz., that Sophocles chose to make Lemnos
+					desolate for the nonce—is not really so easy as it might appear. One asks, then,
+					did he mean us to remember, here also, the maimed condition of Philoctetes, who
+					could not move many yards from his cave in the eastern cliffs? The centres of
+					population, in ancient times, were on the west and north coasts. The area of
+					Lemnos has been computed as about a hundred and fifty square miles, or nearly
+					the same as that of the Isle of Wight<note anchored="true" place="foot" n="1"
+						resp="RCJ">
+						<title>Encycl. Brit.</title> (9th ed.) vol. XIV. p. 436: vol. XXIV. p. 561.</note>.
+					It would not, then, be absurd to suppose that, even in the space of many years,
+					no Lemnian had chanced to find that particular spot, at the extreme verge of a
+					desolate region, in which the sick man was esconced. </p>
+			</div>
+			<div xml:id="cis17" type="section" n="17">
+				<p>The fortunes of the hero after his return to Troy <note anchored="true"
+						place="marg" resp="RCJ">Other literature of the subject.</note> formed the
+					subject of another play by Sophocles (<quote xml:lang="grc">Φιλοκτήτης ὁ
+						ἐν Τροίᾳ</quote>). The healing of Philoctetes, and his slaying of Paris,
+					must have been the principal incidents; but the few words which remain give no
+					clue to the treatment. It is only a conjecture— though a probable one—that
+					Asclepius himself was introduced as aiding the skill of his sons<note
+						anchored="true" place="foot" n="2" resp="RCJ">At v. 1437 Heracles promises
+					to send Asclepius to Troy,—a passage which has groundlessly been regarded as
+					inconsistent with the mention of the Asclepiadae in 1333. If the <title>Philoctetes
+					at Troy</title> was the earlier play, this may be an allusion to it,— like that
+					to the <title>Antigone</title> in the <title>Oedipus Coloneus</title> (v. 1410
+					n.).</note>.</p>
+				<p>Besides the three great dramatists, other tragic poets of the <note
+						anchored="true" place="marg" resp="RCJ">Greek plays.</note> same period
+					wrote on the story of Philoctetes<note anchored="true" place="foot" n="3"
+						resp="RCJ">The <quote xml:lang="grc">Φιλοκτήτης</quote> by Achaeus of
+					Eretria (a contemporary of Sophocles) dealt with the hero's adventures at Troy.
+					See Nauck, <title>Trag. Graec. Fragm.</title> p. 755 (2nd ed.). The poet
+					Antiphon (<emph>c.</emph> 400 B.C.) also wrote a <quote xml:lang="grc">
+					Φιλοκτήτης</quote>, if Meineke is right in altering <quote xml:lang="grc">
+					Ἀντιφάνους</quote> to <quote xml:lang="grc">Ἀντιφῶντος</quote> in Stobaeus <title>
+					Flor.</title> 115. 15 (Nauck, p. 793). The <quote xml:lang="grc">Φιλοκτήτης</quote>
+					mentioned by Suidas among the works of Philocles may have been that of his uncle
+					Aeschylus, as Otto Ribbeck suggested (<title>Rom. Tragöd.</title> p. 376).</note>.
+					Nothing of interest is known concerning these lost works,—except, indeed, one
+					curious detail. Theodectes, whose repute stood high in the time of Aristotle,
+					represented the sufferer as wounded in the hand, not in the foot<note
+						anchored="true" place="foot" n="4" resp="RCJ">In <title>Eth.
+							N.</title> 7. 8 (p. 1150 <emph>b</emph> 9) the Philoctetes of Theodectes
+					is cited as an instance of a man fighting against pain which at last overcomes
+					him. A schol. there (<title>Anecd. Paris.</title> vol. I. p. 243, 15) says that
+					this poet represented him as <quote xml:lang="grc">τὴν χεῖρα δεδηγμένον</quote>,
+					and as exclaiming, <quote xml:lang="grc">κόψατε τὴν ἐμὴν χεῖρα</quote>. The last
+					words are doubtless a mere paraphrase.</note>. The motive of this innovation is
+					not difficult to divine. Aristophanes touches on the predilection of Euripides
+					for maimed heroes; and in the comedies which had been written on the subject of
+					Philoctetes his disabled foot had doubtless been made a prominent trait<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Aristoph. Ach. 411.">Ar. <title>Ach.</title> 411.</ref>The Sicilian
+					Epicharmus had written a piece on Philoctetes; and Strattis, one of the latest
+					poets of the Old Comedy (<emph>c.</emph> 412—384 B.C.), had taken the same
+					theme. The ascription of a play on this subject to Antiphanes (of the Middle
+					Comedy) is perhaps erroneous: see p. xxxi, n. 3.</note>. Theodectes wished to
+					avoid all associations of burlesque. His expedient for dignifying the warrior's
+					misfortune is very characteristic of the decadence.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Attius.</note> § 18. In the best
+					age of Roman Tragedy, Attius (<emph>c.</emph> 140 B.C.) composed a <title>
+					Philocteta</title>, of which some small fragments remain,— less than fifty lines
+					in all. Much ingenuity has been expended on conjectures as to the plot. But the
+					evidence is too scanty to warrant any conclusion<note anchored="true"
+						place="foot" n="2" resp="RCJ">Ribbeck (<title>Scenicae
+							Rom. poesis fragm.</title> pp. 308 ff.) thinks that Attius followed
+					Euripides, for the most part, in his general design, but borrowed occasional
+					touches from Aeschylus, Sophocles, and the minor Greek dramatists. The
+					impossibility of solving the question is sensibly recognised by Schneidewin (<title>
+					Philologus</title> IV. p. 656) and Milani (<title>Mito di F.</title>, p. 47).
+					One point of interest may, however, be noticed. Attius made <emph>some
+							one</emph> tell the same story which is told by the Neoptolemus of
+					Sophocles—viz., that Odysseus still held the armour of Achilles (see fr. 16).
+					But no one could use this fiction with so much effect as the person chiefly
+					aggrieved. Perhaps, then, Attius followed Sophocles in associating Odysseus with
+					Neoptolemus.</note>. Many of the verses have a rugged power,—as these, for
+					instance, spoken by the hero in his agony:— </p>
+				<p>Heu! qui salsis fluctibu' mandet Me ex sublimo vertice saxi? Iamiam absumor:
+					conficit animam Vis vulneris, ulceris aestus.</p>
+				<p>The adventures of Philoctetes after the Trojan war were <note anchored="true"
+						place="marg" resp="RCJ">Euphorion.</note>related by Euphorion of Chalcis (<emph>
+					c.</emph> 220 B.C.), in a short epic (<quote xml:lang="grc">
+						Φιλοκτήτης</quote>), of which only five lines, preserved by Stobaeus, are
+					extant, but of which the contents are partly known from a note of Tzetzes on
+					Lycophron<note anchored="true" place="foot" n="3" resp="RCJ">
+						<title>Flor.</title> 59. 16. Tzetzes on Lycophron 911.</note>. Philoctetes
+					arrived in southern Italy, and there founded the city of Cremissa, near Crotona.
+					He raised a shrine to Apollo the protector of wanderers<note anchored="true"
+						place="foot" n="4" resp="RCJ">Tzetzes on <ref>Lyc.
+							911</ref>
+							<quote xml:lang="grc">παυθεὶς τῆς ἄλης, Ἀλαίου Ἀπόλλωνος ἱερὸν
+					κτίζει</quote>. Others connect <quote xml:lang="grc">ἀλαῖος</quote> with <quote
+							xml:lang="grc">ἀλέα</quote> (Welcker, <title>Götterl.</title> I. p.
+					465).</note>, and dedicated in it the bow of Heracles. He was slain while aiding
+					an expedition of Rhodians against some Achaeans of Pellene who had settled in
+					Italy. </p>
+			</div>
+			<div xml:id="cis19" type="section" n="19">
+				<p>Once, at least, in modern literature the story of Philo- <note anchored="true"
+						place="marg" resp="RCJ">Fénelon's <title>Télémaque.</title>
+					</note>
+					ctetes has been treated with a really classical grace. The mind of Fénelon was
+					in natural sympathy with the spirit of ancient Greek poetry; and the twelfth
+					book of the <title>Télémaque</title>, where Philoctetes relates his fortunes to
+					Telemachus, is marked by this distinction. Fénelon varies the earlier part of
+					the legend, following a version which is given by Servius<note anchored="true"
+						place="foot" n="1" resp="RCJ">On <ref n="Verg. A. 3. 402.">Verg. <title>Aen.</title>
+					3. 402.</ref>
+					</note>. Heracles, when about to perish on
+					Mount Oeta, wished that the resting-place of his ashes should remain unknown.
+					Philoctetes swore to keep the secret. Odysseus afterwards came in search of
+					Heracles, and at last prevailed on Philoctetes to reveal the spot,—not, indeed,
+					by words, but by stamping upon it. It was for this that Philoctetes was punished
+					by the gods. One of the arrows of Heracles—tinged with the venom of the Lernaean
+					hydra—dropped from his hand, and wounded the offending foot. For almost all that
+					part of the story which passes in Lemnos, Fénelon has closely followed the play
+					of Sophocles. Many passages are translated or paraphrased with happy effect. He
+					wished, however, to present the father of Telemachus in a more favourable light;
+					and so it is Odysseus, not Neoptolemus, who restores the bow.</p>
+				<p>‘Farewell, thou promontory where Echo so often repeated <note anchored="true"
+						place="marg" resp="RCJ">Lessing.</note> my cries’—says the Philoctetes of
+					Fénelon,—true to the text of Sophocles. The <title>Télémaque</title> appeared in
+					1699. More than half a century later, these laments of Philoctetes became the
+					starting-point of a discussion destined to have fruitful results. Winckelmann,
+					speaking of the Laocoon, had observed that the marble indicates no loud cry, but
+					rather ‘a subdued groan of anguish’: ‘Laocoon suffers, but he suffers like the
+					Philoctetes of Sophocles.’ Lessing, in his <title>Laocoon</title> (1766),
+					pointed out that the Philoctetes of Sophocles shrieks aloud, and that Heracles,
+					in the <title>
+						Trachiniae</title>, does the same. ‘The ancient Greek uttered his anguish
+					and his sorrow; he was ashamed of no mortal weakness.’ If, then, the poet
+					expresses the cry of bodily pain, while the sculptor refrains from expressing
+					it, the reason must be sought in the different conditions of the two arts. At
+					the time when Lessing wrote, the general tendency of contemporary taste was in
+					agreement with the view on which Cicero insists, that any outward manifestation
+					of pain is unworthy of a great mind, and that a wrong had been done to the
+					heroic character by those poets who had permitted their heroes to utter
+					lamentations<note anchored="true" place="foot" n="1" resp="RCJ">
+						<title>Tusc. Disp.</title> 2. 13. 32, Afflictusne et iacens et lamentabili
+					voce deplorans, audies, <title>O virum fortem?</title> Te vero, ita affectum, ne
+					virum quidem dixerit quisquam. Aut mittenda igitur fortitudo est, aut
+					sepeliendus dolor.</note>. This maxim is exemplified in the tragedies of the
+					stoic Seneca, whose persons are forcibly described by Lessing as ‘prize-fighters
+					in buskins<note anchored="true" place="foot" n="2" resp="RCJ">He ingeniously
+					remarks that the influence of the gladiatorial
+						shows may have been perverting, in this respect, to Roman Tragedy. But he
+					might have excepted the best age of Roman Tragedy,—the second century
+						B.C.,—when the Greek masters (chiefly Euripides) were the models. Thus
+					Attius—as we have seen—did not shrink from allowing Philoctetes to utter
+						cries of anguish.</note>’: it had also been observed on the classical stage
+					of France.</p>
+				<p>In a passage of excellent criticism,—which has lost nothing of its value because
+					it closed the aesthetic controversy which it concerns,—Lessing shows how
+					Sophocles, in the <title>Philoctetes</title>, has reconciled the necessary
+					portrayal of physical suffering with the highest requirements of tragic art. He
+					takes up three points. (1) The nature of the suffering itself. The wound is a
+					divine punishment, and there is a supernatural element in its operation: ‘a
+					poison worse than any to be found in nature’ vexes the victim. Then this
+					affliction is joined to other evils,—solitude, hunger, hardship. (2) The
+					expression of the suffering. It is true that, in the scene where Philoctetes
+					utters his cries of pain (vv. 730 ff.), he believes that he is about to be
+					rescued from Lemnos: his anguish, there, is physical only. But these cries are
+					wrung from him by extreme torment, despite his efforts to stifle them (vv. 742
+					f.). They detract nothing from the heroic firmness of his character,—displayed
+					not only in the strength of his attachments, but also (as ancient Greeks would
+					deem) in the fixity of his resentments. ‘And then we are asked to suppose that
+					Athenians would have scorned this rock of a man, because he reverberates to
+					waves which cannot shake him<note anchored="true" place="foot" n="3" resp="RCJ">
+						<ref n="Soph. Phil. 1460">Cp. 1460</ref>
+							<quote xml:lang="grc">
+							χειμαζομένῳ</quote>.</note>!’ (3) The effect of this expression upon the
+					other persons. As Lessing acutely remarks, the dramatic inconvenience of a hero
+					who cries aloud from bodily pain is that such a cry, though it need not excite
+					contempt, seems to demand <emph>more</emph> sympathy than is usually
+					forthcoming. Sophocles has forestalled this difficulty ‘by causing the other
+					persons of the drama to have their own interests.’ That is, when Philoctetes
+					shrieks, the mind of the spectator is not occupied in gauging the precise amount
+					of sympathy shown by Neoptolemus, but rather in watching how it will affect his
+					secret purpose. ‘If Philoctetes had been able to hide his suffering, Neoptolemus
+					would have been able to sustain his deceit... Philoctetes, who is all nature,
+					brings back Neoptolemus to his own nature. This return is excellent, and the
+					more affecting because it is the result of pure humanity.’</p>
+				<p>The last words allude to a French drama in which a different <note
+						anchored="true" place="marg" resp="RCJ">French dramas.</note> motive had
+					been employed. Châteaubrun, in his <title>Philoctète</title> (1755), had given
+					the hero a daughter named Sophie, who (with her <emph>gouvernante</emph>)
+					visited Lemnos; and the romantic passion with which Sophie inspired Neoptolemus
+					became his chief reason for assisting her father. Two other French dramas of the
+					same title, those of Ferrand (1780) and La Harpe (1781), are noticed by M. Patin<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<emph>Études sur les Tragiques grecs: Sophocle:</emph> pp. 92 ff.; 149 f.</note>;
+					but a comparative respect for the example of Sophocles is the highest merit
+					which he ascribes to either. </p>
+			</div>
+			<div xml:id="cis20" type="section" n="20">
+				<p>The legend of Philoctetes, as embodied in classical <note anchored="true"
+						place="marg" resp="RCJ">The legend in </note> Art.poetry, is illustrated at
+					every step by extant monuments of classical art,—vase-paintings, engraved gems,
+					reliefs, or wallpaintings,—ranging in date from the fifth century B.C. to the
+					second or third century of the Christian era<note anchored="true" place="foot"
+						n="2" resp="RCJ">A complete account of these has been given by L. MilaniA. ,
+					in his admirable and exhaustive monograph, <title>Il Mito
+							di Filottete nella Letteratura classica e nell' Arte figurata</title>
+					(Florence, 1879). The plates subjoined to the work reproduce, on a small scale,
+					50 illustrations of the myth from various sources. A supplement, entitled <title>Nuovi
+					Monumenti di Filottete</title> (Rome, 1882), contains at the end a synoptical
+					table, enumerating 63 works of art which relate to the subject.</note>. He is
+					seen assisting, in his youth, at the sacrifices offered to Chrysè by Heracles
+					and by Jason;—standing beside the pyre of Heracles on Oeta; —wounded by the
+					serpent, at his second visit to Chrysè's shrine; —abandoned in Lemnos;—finally,
+					tended by the ‘healing hands’ at Troy, and victorious over Paris.</p>
+				<p>A peculiar interest belongs to the representations of his sufferings in Lemnos,
+					since they exhibit three principal types, each of which can be traced to the
+					influence of an eminent artist. (i) The sculptor Pythagoras of Rhegium (<emph>c.</emph>
+					460 B.C.), famous especially for his athletes, excelled in the expression of
+					sinews and veins. One of his best-known works was a statue at Syracuse, which
+					represented a man limping, with a sore in his foot. ‘Those who look at it,’ says
+					Pliny, ‘seem to feel the pain<note anchored="true" place="foot" n="1" resp="RCJ">
+						<title>Hist. Nat.</title> 34. 59.</note>.’ There can be no doubt that the
+					subject was Philoctetes. As an example of the later works which were probably
+					copied, more or less directly, from this statue, may be mentioned a cornelian
+					intaglio, now in the Museum of Berlin<note anchored="true" place="foot" n="2"
+						resp="RCJ">Milani, <title>Mito di F.</title>, p. 78.</note>. Philoctetes is
+					walking, with the aid of a stick held in his left hand: in his right he carries
+					the bow and quiver: his left foot,—the wounded one, as a bandage indicates,—is
+					put forward, while the weight of the body is thrown on the right foot. The
+					figure illustrates a principle which Pythagoras of Rhegium is said to have
+					introduced,—viz., a correspondence between the attitude of the left leg and that
+					of the right arm, or <emph>vice versa</emph>,—a symmetry obtained by an
+					artificial balance of movements<note anchored="true" place="foot" n="3"
+						resp="RCJ">Such equipoise was technically called
+						‘chiasmus,’—a term borrowed from the form of the Greek X, and transferred
+					from rhetoric to sculpture.</note>. It is noteworthy that a standing or walking
+					Philoctetes occurs only on engraved gems, and in one mural painting at Pompeii
+					(of about 30 B.C.) which may also have been suggested by the Syracusan statue.
+					(ii) A very beautiful Athenian vase-painting, of about 350 B.C., shows
+					Philoctetes sitting on a rock in Lemnos, under the leafless branches of a
+					stunted tree; his head is bowed, as if in dejection; the bandaged left foot is
+					propped on a stone, and the left hand clasps the left knee<note anchored="true"
+						place="foot" n="4" resp="RCJ">
+						<title>Ib.</title>p. 80. Milani has chosen this picture as the frontispiece
+					of his monograph. The vase is an aryballos, now the property of CastellaniA. ,
+					of Rome.</note>. He wears a sleeveless Doric chiton, girt round the waist; at
+					his right side the bow and arrows rest on the ground. It is probable that the
+					source of this vase-painting was a picture by Parrhasius, who is known to have
+					taken Philoctetes for his subject at a date slightly earlier than that to which
+					the vase is referred. The distinctive feature here is the predominance of mental
+					over physical pain;—a conception which might have been suggested to the painter
+					by the Attic dramatists. (iii) In a third series of representations, Philoctetes
+					reclines on the ground, fanning his wounded foot with the wing of a bird, or
+					with a branch. This type occurs only on gems, and appears to have been
+					originated by Boethus of Chalcedon, a gem-engraver of high repute, who lived
+					probably in the early part of the third century B.C.<note anchored="true"
+						place="foot" n="1" resp="RCJ">Milani, pp. 85 ff., and <title>Nuovi Monumenti</title>,
+					p. 275.—It has been conjectured that the <title>Philoctetes</title> of Aeschylus
+					was the literary source used by Boethus. This is not improbable (see next note).
+					But it is not likely that the winged creatures which the sufferer fanned away
+					from his foot are the <quote xml:lang="grc">ὄκορνοι</quote> (‘locusts’) or <quote
+							xml:lang="grc">φάβες</quote> (‘wild pigeons’) which were mentioned in
+					that play (fr. 251 f., ed. Nauck).</note>
+				</p>
+				<p>Some other scenes found on works of art, in which Philoctetes is no longer alone,
+					were directly inspired by Attic Tragedy. An engraved gem, now in the British
+					Museum, represents the theft of the bow by Odysseus, as Aeschylus appears to
+					have imagined it<note anchored="true" place="foot" n="2" resp="RCJ">The gem is a
+					sardonyx intaglio, no. 829 in the Hertz collection, and shows the recumbent
+					Philoctetes fanning his foot to keep off some winged creatures; while Odysseus,
+					characterised by the <quote xml:lang="grc">πῖλος</quote>, stands at his back, in
+					the act of taking the bow from the place where it is suspended. This recalls a
+					fragment of the Aeschylean <title>Philoctetes</title>, <quote xml:lang="grc">
+					κρεμάσασα</quote> (<quote xml:lang="grc">κρεμαστὰ</quote>?) <quote
+							xml:lang="grc">τόξα πίτυος ἐκ μελανδρύου</quote>. See Milani, <title>Mito
+					di F.</title>, p. 90.</note>. Euripides has been the source of some reliefs on
+					alabaster urns of the second century B.C.; two Trojan envoys, on the left hand
+					of Philoctetes, are inviting him to follow them, while on his right hand are
+					Odysseus and Diomedes, in an attitude of remonstrance; or Philoctetes, in acute
+					pain, is tended by Odysseus, while Diomedes, at the sufferer's back, seizes the
+					bow and quiver<note anchored="true" place="foot" n="3" resp="RCJ">Milani, pp. 96
+					ff. Each of these subjects occurs on
+						several urns, most of which were found at Volterra; some of them are in the
+					museum there, others at Florence, and one at Cortona.</note>. Nor has Sophocles
+					been neglected; Odysseus instructing Neoptolemus appears on a marble medallion<note
+						anchored="true" place="foot" n="4" resp="RCJ">Now in
+						the Vatican Library. Milani, p. 91.</note> of the first or second century
+					A.D. ; and a sarcophagus<note anchored="true" place="foot" n="5" resp="RCJ">Now
+					in the garden of the Villa Gherardesca at Florence. <title>Ib.</title>pp. 92 ff.</note>
+					of the same period shows the moment when Odysseus starts forward to prevent his
+					more generous comrade from restoring the bow to its despairing master (v. 974). </p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The scene of the sacrifice.</note>
+				</p>
+			</div>
+			<div xml:id="cis21" type="section" n="21">
+				<p>But the most valuable contribution of art to the interpretation of the play is a
+					vase-painting of Philoctetes wounded at the shrine of Chrysè. This incident,
+					like the personality of Chrysè herself, is left indistinct by the allusions in
+					the poet's text; and such indistinctness,—easily tolerated by ancient audiences
+					in matters which lay ‘outside of the tragedy,’—tends to weaken a modern reader's
+					grasp of the story. It is therefore interesting to know how the whole scene was
+					conceived by a Greek artist nearly contemporary with Sophocles. The painting
+					occurs on a round wine-jar (<quote xml:lang="grc">στάμνος</quote>), found at
+					Caere in southern Etruria, and now in the Campana collection of the Louvre: the
+					date to which it is assigned is about 400 B.C.<note anchored="true" place="foot"
+						n="1" resp="RCJ">Milani,
+						p. 68.</note>
+					<!-- this paragraph is illustrated by a vase from the Louvre;  we don't have
+						a picture of it -->
+				</p>
+				<p>The place is the sacred precinct of Chrysè—‘the roofless sanctuary’ of which
+					Sophocles speaks—in the island of the same name, near the eastern coast of
+					Lemnos. Philoctetes, who has just been bitten in the foot by the snake, is lying
+					on the ground, overcome by pain, and crying aloud, as the open mouth indicates.
+					The laurel-wreath worn by him, as by all the other persons of the group, denotes
+					that he had been sacrificing. A beardless youth who bends over the sufferer, as
+					if about to raise him in his arms, is probably Palamedes; his chlamys is girt
+					about his loins in the manner used by sacrificers. On the left, the image of
+					Chrysè is seen behind her burning altar; the snake, ‘the lurking guardian’ of
+					her shrine (v. 1327 f.),— which had crept forth as Philoctetes approached—is
+					again seeking its hiding-place, while Agamemnon strikes at it with his sceptre.
+					Next to him on the right is the beardless Achilles, with chlamys girt at the
+					waist, and a piece of flesh, roasted for the sacrifice, on a spit (<quote
+						xml:lang="grc">ὀβελός</quote>) in his hand: then the bearded Diomedes, wrapt
+					in his himation: and, on the extreme right, a similar form, possibly Menelaus<note
+						anchored="true" place="foot" n="1" resp="RCJ">So Michaelis conjectures (<title>Annal.
+					dell' Istit. di Corr. Archeol.</title>, 1857, p. 252). Milani, however, thinks
+					that the artist introduced this figure merely because the symmetry of the
+					picture required it, and had no definite person in view (p. 69).</note>. The
+					attitudes express horror at the disaster<note anchored="true" place="foot" n="2"
+						resp="RCJ">In the original, the names <quote xml:lang="grc">ΦΙΛΟΚΤΕΤΕΣ,
+					ΧΡΥΣΕ, ΔΙΟΜΕ .. Σ</quote> appear above the heads of those persons respectively:
+					the names of Agamemnon and Achilles have been almost obliterated, but <quote
+							xml:lang="grc">Α......ΩΝ</quote> and <quote xml:lang="grc">Α......Σ</quote>
+					remain. No trace of a name appears over the supposed Menelaus.</note>. If the
+					followers of the Greek chiefs are imagined as gathered around this group,
+					awe-struck spectators of the interrupted rite, nothing is wanting to a picture
+					of the moment indicated by Sophocles, when the ‘ill-omened cries’ of Philoctetes
+					‘filled the camp,’ and at length prompted the cruel resolve to carry him across
+					the narrow strait, and abandon him on the lonely shore of Lemnos. </p>
+			</div>
+			<div xml:id="cis22" type="section" n="22">
+				<p>A further point of interest in this vase-painting is its <note anchored="true"
+						place="marg" resp="RCJ">Chrysè.</note> representation of the mysterious
+					Chrysè. Her image has the rigid character of a primitive temple-image (<quote
+						xml:lang="grc">ξόανον</quote>). The high <quote xml:lang="grc">κάλαθος</quote>
+					or <quote xml:lang="grc">πόλος</quote> on her head seems to indicate a Chthonian
+					power, as in the case of Demeter, Artemis Tauropolos, and Artemis Orthia. A very
+					similar representation of her occurs on another vase—a ‘vinegar-cup’ (oxybaphon)
+					of the fifth or fourth century B.C., now in the Lamberg collection at Vienna<note
+						anchored="true" place="foot" n="3" resp="RCJ">Milani, pp. 60 ff.</note>. The
+					scene there depicted is the first sacrifice of Philoctetes at Chrysè's altar, in
+					company with Heracles; and there, as here, her identity is made certain by her
+					name being written above. There, too, her hands are uplifted; but she wears a
+					corona, not the calathus; and a broad stripe, which runs down her robe from neck
+					to feet, is studded with two rows of discs, which appear to symbolise stars.
+					Here, also, such discs are seen, though only on the girdle and on the lower edge
+					of the garment. According to one theory, Chrysè was merely a form of Athena,—the
+					epithet ‘golden’ having been substituted for the personal name,—and the serpent
+					at her shrine is to be compared with the guardian of the Erechtheum (<ref
+						target="cl1327">see on 1327</ref> ff.). But there is more probability in the
+					view of Petersen<note anchored="true" place="foot" n="1" resp="RCJ">Ersch and
+					Gruber's <title>Encyc.</title>, art. <title>Griechische Mythologie</title>, p.
+					294.</note>, that Chrysè is a Greek form of Bendis. The Thracian Bendis was a
+					lunar deity, sharing some attributes of Artemis (with whom the Greeks chiefly
+					associated her), Hecate, Selene, and Persephone. The worship of Bendis seems to
+					have existed in Lemnos, as at Athens. On the other hand, Chrysè is always
+					connected with places near the Thracian coasts. Lenormant, adopting this view,
+					remarked that, if the name Bendis meant ‘bright<note anchored="true"
+						place="foot" n="2" resp="RCJ">As Jacob Grimm conjectured, comparing <title>
+					Vanadis</title>, a surname of Freyja.</note>,’ then <quote xml:lang="grc">Χρύση</quote>
+					(=<quote xml:lang="grc">χρυσῆ</quote>) may have been a direct translation of it<note
+						anchored="true" place="foot" n="3" resp="RCJ">Daremberg and Saglio, <title>Dict.
+					des Antiquités</title>, I. p. 686.</note>. Thus, when Heracles, Jason and
+					Agamemnon—all bound on perilous enterprises—offered sacrifice at Chrysè's altar,
+					they might be regarded as seeking to conciliate an alien deity. Sophocles
+					imagines her as a cruel being (<quote xml:lang="grc">ὠμόφρων</quote>) whom
+					higher powers—for their own good purpose—have permitted to wreak her anger; but
+					he does not further define her supernatural rank.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Supposed political reference.</note>
+				</p>
+			</div>
+			<div xml:id="cis23" type="section" n="23">
+				<p>The <title>Philoctetes</title> was produced at the Great Dionysia, late in March,
+					409 B.C., and gained the first prize<note anchored="true" place="foot" n="4"
+						resp="RCJ">See the second Argument to the play, p. 4.</note>. Sophocles,
+					according to the tradition, would then have been eighty-seven. Able critics have
+					favoured the view that his choice of this subject was in some way connected with
+					the return of Alcibiades<note anchored="true" place="foot" n="5" resp="RCJ"> Sch
+					Ad.öll, <title>Sophokles. Sein Leben
+							und Wirken.</title> (Frankfort, 2nd ed. 1870.) Lenormant Ch., in the <title>
+					Correspondant</title> of July 25, 1855. M. Patin (<title>Sophocle</title>, p.
+					125) mentions, as the earliest expression of such a view, an art. by M. Lebeau
+					jeune in the <title>Mém. de l' Acad. des Inscriptions</title>, vol. XXXV.</note>.
+					It was in 411 B.C. that Thrasybulus had prevailed on the democratic leaders at
+					Samos to send for Alcibiades, and to elect him one of the ten generals<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Thuc. 8.81">Thuc. 8. 81, 82</ref>. The first overtures of Alcibiades
+					had been made to the oligarchs in the army at Samos (<ref n="Thuc. .8.47">ib. 47</ref>),
+					and had led to the Revolution of the Four Hundred.</note>,—a measure by which,
+					as Grote says, ‘he was relieved substantially, though not in strict form,’ from
+					the penalties of banishment. In 410 Alcibiades had been the principal author of
+					the Athenian victory at Cyzicus. Thus, at the date of the <title>Philoctetes</title>,
+					men's minds had already been prepared for his formal restitution to
+					citizenship—which took place on his return to Athens in 407 B.C. It is easy to
+					draw a parallel between the baffled army at Troy, with their fate hanging on an
+					estranged comrade, and the plight of Athens, whose hopes were centred on an
+					exile. Nay, even the passage where Philoctetes learns who have perished, and who
+					survive, in the Greek army has been read as a series of allusions to dead or
+					living Athenians. Then Neoptolemus is Thrasybulus: and the closing words of
+					Heracles (<quote xml:lang="grc">εὐσεβεῖν τὰ πρὸς θεούς</quote>) convey a lesson
+					to the suspected profaner of the Mysteries. Now, to suppose that Sophocles
+					intended a political allegory of this kind, is surely to wrong him grievously as
+					a poet. At the same time it must be recognised that the coincidence of date is
+					really remarkable. It is not impossible that his thoughts may have been first
+					turned to this theme by the analogy which he perceived in it to events of such
+					deep interest for his countrymen<note anchored="true" place="foot" n="2"
+						resp="RCJ">There is one passage in the <title>
+							Philoctetes</title>, which, though it should not be regarded as a direct
+					allusion to recent events, might certainly suggest that they were present to the
+					poet's mind: see commentary on vv. 385 ff.</note>. But the play itself is the
+					best proof that, having chosen his subject, he treated it for itself alone. </p>
+			</div>
+			<div xml:id="cis24" type="section" n="24">
+				<p>The diction of the <title>Philoctetes</title> has been regarded by <note
+						anchored="true" place="marg" resp="RCJ">Diction.</note> Schneidewin and
+					others as somewhat deficient in the lofty force of earlier compositions. But
+					this criticism is not warranted by those passages which gave the fittest scope
+					for such a quality,— as the invocation of the Great Mother (391—402),—the noble
+					stasimon (676—729),—and the denunciations by Philoctetes of the fraud practised
+					against him (927—962: 1004—1044). If, in the larger part of the play, the
+					language is of a less elevated strain, this results from the nature of the
+					subject; since the gradual unfolding of character, to which the plot owes its
+					peculiar interest, is effected by the conversations of Neoptolemus with Odysseus
+					or with Philoctetes, in which a more familiar tone necessarily predominates.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Versification.</note>
+				</p>
+			</div>
+			<div xml:id="cis25" type="section" n="25">
+				<p>The versification, however, clearly shows, in one respect, the general stamp of
+					the later period. If the <title>Philoctetes</title> is compared (for example)
+					with the <title>Antigone</title>, it will be apparent that the structure of the
+					iambic trimeter has become more Euripidean. The use of tribrachs is very large.
+					Two such feet occur consecutively in the same verse (<cit>
+						<bibl n="Soph. Phil. 1029">1029</bibl>
+						<quote xml:lang="grc">καὶ νῦν τί μ’ ἄγετε; τί μ’ ἀπάγεσθε; τοῦ χάριν;</quote>
+					</cit>):
+					a tribrach precedes a dactyl (<cit>
+						<bibl n="Soph. Phil. 1232">1232</bibl>
+						<quote xml:lang="grc">παρ’ οὗπερ ἔλαβον τάδε τὰ τόξ), αὖθις πάλιν</quote>
+					</cit>):
+					or follows it (<cit>
+						<bibl n="Soph. Phil. 932">932</bibl>
+						<quote xml:lang="grc">ἀπόδος, ἱκνοῦμαί ς), ἀπόδος, ἱκετεύω, τέκνον</quote>
+					</cit>).
+					In two instances a verse ends with a single word which forms a ‘paeon quartus’ (<cit>
+						<bibl n="Soph. Phil. 1302">1302</bibl>
+						<quote xml:lang="grc">πολέμιον</quote>
+					</cit>, <cit>
+						<bibl n="Soph. Phil. 1327">1327</bibl>
+						<quote xml:lang="grc">ἀκαλυφῆ</quote>
+					</cit>),—a licence
+					used, indeed, by Aeschylus, but in a trimeter which belongs to a lyric passage (<ref
+						n="Aesch. Eum. 780">
+						<title>Eum.</title> 780</ref>). An anapaest in the first place of the verse
+					occurs not less than thirteen times (<ref n="Soph. Phil. 308">308</ref> , <ref
+						n="Soph. Phil. 470">470</ref>, <ref n="Soph. Phil. 486">486</ref> , <ref
+						n="Soph. Phil. 544">544</ref>, <ref n="Soph. Phil. 742">742</ref> , <ref
+						n="Soph. Phil. 745">745</ref>, <ref n="Soph. Phil. 749">749</ref> , <ref
+						n="Soph. Phil. 898">898</ref>, <ref n="Soph. Phil. 923">923</ref> , <ref
+						n="Soph. Phil. 939">939</ref>, <ref n="Soph. Phil. 941">941</ref> , <ref
+						n="Soph. Phil. 967">967</ref>, <ref n="Soph. Phil. 1228">1228</ref>),—without
+					counting <ref n="Soph. Phil. 815">815</ref> (<quote xml:lang="grc">τί
+						παραφρονεῖς</quote>, where the first foot may be a tribrach), <ref
+						n="Soph. Phil. 549">549</ref> (a proper name), or <ref n="Soph. Phil. 585">
+					585</ref> (<quote xml:lang="grc">ἐγώ εἰμ)</quote>, a case of synizesis). Not a
+					single instance occurs in the <title>Antigone;</title> and in no other play are
+					there more than five. These relaxations of metre in the <title>Philoctetes</title>
+					may be partly explained, perhaps, by the more colloquial tone which prevails in
+					much of the dialogue. But at any rate the pervading tendency to greater freedom
+					is unmistakable, and is certainly more strongly marked than in any other of the
+					poet's plays. </p>
+			</div>
+
+		</body>
+	</text>
+</TEI>

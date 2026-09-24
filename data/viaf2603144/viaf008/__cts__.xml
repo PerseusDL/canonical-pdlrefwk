@@ -1,0 +1,8 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:viaf2603144" urn="urn:cts:greekLit:viaf2603144.viaf008" xml:lang="eng">
+    <ti:title xml:lang="eng">The Attic Orators from Antiphon to Isaeos</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf2603144.viaf008" urn="urn:cts:greekLit:viaf2603144.viaf008.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">The Attic Orators from Antiphon to Isaeos</ti:label>
+        <ti:description xml:lang="eng">The Attic Orators from Antiphon to Isaeos. Jebb, Richard Claverhouse, author. London: Macmillan, 1876.</ti:description>
+        <ti:about urn="urn:cts:greekLit:viaf2603144.viaf008.perseus-eng1"/>
+    </ti:commentary>
+</ti:work>

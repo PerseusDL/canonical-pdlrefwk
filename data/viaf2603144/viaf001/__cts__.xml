@@ -1,0 +1,15 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" 
+    groupUrn="urn:cts:greekLit:viaf2603144"
+    urn="urn:cts:greekLit:viaf2603144.viaf001" 
+    xml:lang="eng"
+>
+    <ti:title xml:lang="eng">Commentary on Sophocles: Oedipus Tyrannus</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf2603144.viaf001"
+        urn="urn:cts:greekLit:viaf2603144.viaf001.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Commentary on Sophocles: Oedipus Tyrannus</ti:label>
+        <ti:description xml:lang="eng">Sophocles, The plays and fragments with critical notes. Part
+            1, The Oedipus Tyrannus. Jebb, Richard Claverhouse, author. Cambridge, UK: Cambridge
+            University Press, 1887.</ti:description>
+        <ti:about urn="urn:cts:greekLit:tlg0011.tlg004"/>
+    </ti:commentary>
+</ti:work>

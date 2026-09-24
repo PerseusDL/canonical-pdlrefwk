@@ -1,21 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+	<TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>XML version of Zoega's Old Icelandic dictionary</title>
+				<title>Zoega's Old Icelandic dictionary</title>
+				<author>Geir T. Zoëga</author>
 				<respStmt>
-					<resp> Prepared under the supervision of: </resp>
-					<name>created by</name>
+					<resp>Prepared under the supervision of</resp>
 					<name>Kryztof Urban</name>
-				</respStmt>
+					<name>David Mimno</name>
+					<name>Bridge Almas</name>
+					<name>Rashmi Singhal</name>
+					<name>Lisa Cerrato</name>
+				</respStmt>				
 			</titleStmt>
 			<publicationStmt>
 				<distributor>CHLT (Cultural Heritage Language Technologies)</distributor>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Digital Library Project</authority>
+				<date type="release" when="2005-05-27">Perseus 4.0</date>
+				<idno type="filename">viaf2603144.001.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International
+						License</licence>
+				</availability>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl>Zoega's Old Icelandic dictionary</bibl>
+			<biblStruct>
+				<monogr>
+					<title>A Concise Dictionary of Old Icelandic</title>
+					<author>Geir T. Zoëga</author>
+					<imprint>
+						<pubPlace>Oxford</pubPlace>
+						<publisher>Clarendon Press</publisher>
+						<date>1910</date>
+					</imprint>
+				</monogr>
+				<ref target="https://archive.org/details/zoegaaconcisedictionaryofold_202207/">Internet Archive</ref>
+			</biblStruct>
+				<!-- Source data for this edition is drawn from this article https://www.dlib.org/dlib/may05/rydberg-cox/05rydberg-cox.html -->
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
@@ -26,11 +52,13 @@
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
-				<language ident="en">English</language>
+				<language ident="eng">English</language>
 				<language ident="non">Old Norse</language>
 			</langUsage>
 		</profileDesc>
-
+		<revisionDesc>
+			<change when="2026-09-16" who="Alison Babeu">Updated basic header information and created cts_xml files</change>
+		</revisionDesc>
 
 	</teiHeader>
 	<text xml:lang="non">
