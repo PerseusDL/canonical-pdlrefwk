@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:greekLit:viaf45640099"
+    urn="urn:cts:greekLit:viaf45640099.viaf003"
+    xml:lang="eng">
+    <ti:title xml:lang="eng">Appendices to Apollonius Rhodius: Argonautica</ti:title>
+    <ti:commentary
+        urn="urn:cts:greekLit:viaf45640099.viaf003.perseus-eng1"
+        workUrn="urn:cts:greekLit:viaf45640099.viaf003"
+        xml:lang="eng">
+        <ti:label xml:lang="eng">Appendices to Apollonius Rhodius: Argonautica</ti:label>
+        <ti:description xml:lang="mul">Appendices to Apollonius Rhodius' Argonautica by George W. Mooney. London: Longmans, Green, 1912.</ti:description>
+        <ti:about urn="urn:cts:greekLit:tlg0001.tlg001"/>
+    </ti:commentary>
+</ti:work>

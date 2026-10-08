@@ -4,8 +4,7 @@
   <fileDesc>
    <titleStmt>
     <title>A Dictionary of Greek and Roman biography and mythology</title>
-    <editor role="editor">William Smith</editor>
-    
+    <editor>William Smith</editor>    
     <sponsor>Perseus Project, Tufts University</sponsor>
     <principal>Gregory Crane</principal>
     <respStmt>
@@ -20,23 +19,31 @@
     <publisher>Trustees of Tufts University</publisher>
     <pubPlace>Medford, MA</pubPlace>
     <authority>Perseus Project</authority>
-    <date type="release">2004-07-20</date>
+    <date type="release" when="2004-07-20">Perseus 3.0</date>
+    <availability>
+     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+      under a Creative Commons Attribution-ShareAlike 4.0 International
+      License</licence></availability>
    </publicationStmt>
    <sourceDesc>
     <biblStruct>
      <monogr>
-      <editor role="editor">William Smith</editor>
       <title>A Dictionary of Greek and Roman biography and mythology</title>
+      <editor>William Smith</editor>
       <imprint>
        <pubPlace>London</pubPlace>
-       <publisher>John Murray, Albemarle Street. Printed by Spottiswoode and Co., New-Street Square and Parliament
-        Street.</publisher>
-       <date>1848, 1873 (printing)</date>
+       <publisher>John Murray</publisher>
+       <date>1843</date>
+       <date type="printing">1873</date>
+       <biblScope unit="volume">1-3</biblScope>
        <!--<date>In the article on Soranus, we find: "at this present time (1848)" and this date seems
         to reflect the dates of works cited</date>
        <date>1873 - probably the printing date</date>-->
       </imprint>
      </monogr>
+     <ref target="http://hdl.handle.net/2027/hvd.hn39iz" n="Volume 1">HathiTrust</ref>
+     <ref target="http://hdl.handle.net/2027/hvd.hn39id" n="Volume 2">HathiTrust</ref>
+     <ref target=">http://hdl.handle.net/2027/hvd.hn39ie" n="Volume 3">HathiTrust</ref>
     </biblStruct>
    </sourceDesc>
   </fileDesc>

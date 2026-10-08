@@ -1,0 +1,1214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title>Commentary on The Pardon of Marcellus</title>
+				<author>James Bradstreet Greenough</author>
+				<author>George Lyman Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Bridget Almas</name>
+					<name>Lisa Cerrato</name>
+					<name>Rashmi Singhal</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" notBefore="2009-03-12">Perseus 4.0</date>
+				<idno type="filename">sec00009.sec008.perseus-eng1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Select orations of Cicero</title>
+						<author>Cicero</author>
+						<editor>James Bradstreet Greenough</editor>
+						<editor>George Lyman Kittredge</editor>
+						<edition>Allen and Greenough’s edition</edition>
+						<imprint>
+							<pubPlace>Boston</pubPlace>
+							<publisher>Ginn and Company</publisher>
+							<date>1897</date>
+						</imprint>
+					</monogr>
+					<ref target="https://hdl.handle.net/2027/mdp.39015008024815?urlappend=%3Bseq=341%3Bownerid=13510798888294386-371">
+						HathiTrust</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])" n="section">
+					<p>This pointer extracts chapter and section.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])" n="chapter">
+					<p>This pointer extracts chapter.</p>
+				</cRefPattern>
+			</refsDecl>
+			<refsDecl xml:id="CTS" n="CTS">
+				<citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0" match="/tei:TEI/tei:text/tei:body" use="@xml:base">
+					<citeStructure unit="chapter" delim=":" match="tei:div[@type='chapter']" use="@n">
+						<citeStructure unit="section" delim="." match="tei:div[@type='section']" use="@n"/>
+					</citeStructure>
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="lat">Latin</language>
+				<language ident="grc">Greek</language>
+				<language ident="fra">French</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-09-18" who="Alison Babeu">Final review and updating of header information</change>
+			<change when="2026-07-31" who="Charles Pletcher">Added citeStructure and other TEI changes</change>
+			<change when="2025-04-09" who="Alison Babeu">Adding in header and bibliographic metadata</change>
+			<change when="2009-10-09" who="rsing04">
+				more reorganizing of texts module by collection
+			</change>
+			<change when="2009-09-22" who="rsingh04">
+				fixed references to Cic. Ver.
+			</change>
+			<change when="2009-08-25" who="rsingh04">
+				changed bibls with Perseus:abo to corresponding abbreviation
+			</change>
+			<change when="2009-07-30" who="rsingh04">
+				fixed allen and greenough refs
+			</change>
+			<change when="2009-07-29" who="student">
+				fixed bibl errors - zr
+				fixed bibl errors through speech 3 of Catiline - zr
+			</change>
+			<change when="2009-06-05" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-06-03" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-05-27" who="rsingh04">
+				added/fixed cvs log keyword
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text n="Marc." xml:lang="eng">
+		<body xml:lang="eng" xml:base="urn:cts:latinLit:sec00009.sec008.perseus-eng1">
+			<div type="chapter" n="Argument">
+				<div type="section" n="Argument">
+					<head>The Pardon of Marcellus. (<title xml:lang="lat">Pro M. Marcello</title> ) <date>B.C.
+						46.</date>
+					</head>
+					<head>Argument</head>
+					<list type="simple">
+						<item>Chap. <ref n="Cic. Marc. 1">1</ref>. Cicero's long silence broken.
+							Caesar's pardon of Marcellus the earnest of a restored republic. </item>
+						<item>
+							<ref n="Cic. Marc. 2">2</ref>. This is the greatest of Caesar's deeds. </item>
+						<item>
+							<ref n="Cic. Marc. 3">3</ref>. Conquest is a natural and frequent thing:
+							self-conquest is a divine attribute. Other praises are drowned by the
+							noise of war: this wins love and gratitude. </item>
+						<item>
+							<ref n="Cic. Marc. 4">4</ref>. This glory none can claim to share.
+							Victory itself is conquered when its rights are renounced. </item>
+						<item>
+							<ref n="Cic. Marc. 5">5</ref>, <ref n="Cic. Marc. 6">6</ref>. This
+							pardon reaches far beyond Caesar's other acts. Cicero had feared the
+							violence of his own side if victorious: Caesar's spirit was the nobler. </item>
+						<item>
+							<ref n="Cic. Marc. 7">7</ref>. Caesar has nothing to fear from
+							Marcellus: the state itself will defend its savior. </item>
+						<item>
+							<ref n="Cic. Marc. 8">8</ref>. The wounds of the Civil War must be
+							healed: he must live to restore the republic. </item>
+						<item>
+							<ref n="Cic. Marc. 9">9</ref>. This glory must ever remain: unless the
+							state is restored, his other glories will have no abiding place. </item>
+						<item>
+							<ref n="Cic. Marc. 10">10</ref>. The Civil War is finished. </item>
+						<item>
+							<ref n="Cic. Marc. 11">11</ref>. Cicero is the mouthpiece of all in
+							rendering thanks to Caesar. </item>
+					</list>
+				</div>
+			</div>
+			<div type="chapter" n="I">
+				<div type="section" n="1" corresp="urn:cts:latinLit:phi0474.phi032:1">
+					<p>Cicero's long silence broken. Caesar's pardon of Marcellus is the earnest
+						of a restored republic.
+					</p>
+					<milestone n="214.1" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#diuturni_silenti_1">diuturni silenti
+						</seg>
+						<seg type="comment" xml:id="diuturni_silenti_1">:
+							it was now more than six years since the defence of Milo, which was
+							followed almost immediately by Cicero's absence as proconsul in Cilicia,
+							whence he returned only on the eve of the Pharsalian campaign. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#eram_usus_1">eram . . . usus
+						</seg>
+						<seg type="comment" xml:id="eram_usus_1"> , <gloss>had kept</gloss>
+							<milestone n="214.3" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#verecundia_1">verecundia
+						</seg>
+						<seg type="comment" xml:id="verecundia_1"> , <gloss>modesty</gloss>, i.e.
+							distrust of himself under the circumstances. <milestone n="214.4" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#vellem_1">vellem
+						</seg>
+						<seg type="comment" xml:id="vellem_1">: not subj. of indir. question, but
+							informal indir. disc.; § <ref n="AG 592">592</ref>, 2 (341, c); B. 323;
+							G. 662; 11.649, ii (528, I); H.-B. 535, I, a. <milestone n="214.5" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tantam_mansuetudinem_1">tantam mansuetudinem
+						</seg>
+						<seg type="comment" xml:id="tantam_mansuetudinem_1">, etc.: no doubt these
+							words express the genuine and grateful surprise felt at Caesar's
+							clemency, so different from the conduct of former conquerors in civil
+							wars (as Sulla, for example). <milestone n="214.6" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#rerum_omnium_1">rerum omnium
+						</seg>
+						<seg type="comment" xml:id="rerum_omnium_1">, in <gloss>every respect</gloss>
+							. </seg>
+					</p>
+				</div>
+				<div type="section" n="2" corresp="urn:cts:latinLit:phi0474.phi032:2">
+					<milestone n="214.13" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#in_causa_2">in eadem causa
+						</seg>
+						<seg type="comment" xml:id="in_causa_2">: Cicero also had been on Pompey's
+							side. <milestone n="214.15" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#versari_me_2">versari me
+						</seg>
+						<seg type="comment" xml:id="versari_me_2">: this phrase belongs as well with <foreign xml:lang="lat">persuadere</foreign> as with <foreign xml:lang="lat">fas
+							esse</foreign>, but its construction is determined by the latter. </seg>
+					</p>
+				</div>
+				<div type="section" n="3" corresp="urn:cts:latinLit:phi0474.phi032:3">
+					<milestone n="214.21" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#in_ipso_3">in multis . . . in me ipso
+						</seg>
+						<seg type="comment" xml:id="in_ipso_3"> , <gloss>in the case of many, and
+							especially in my own</gloss>. <milestone n="214.22" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#paulo_ante_3">paulo ante
+						</seg>
+						<seg type="comment" xml:id="paulo_ante_3"> , <gloss>just now</gloss>. </seg>
+					</p>
+					<p>[<foreign xml:lang="lat">in</foreign>] <seg type="lemma" ana="#omnibus_3">
+						omnibus
+						</seg>
+						<seg type="comment" xml:id="omnibus_3">, i.e. by
+						pardoning Marcellus, whom he thought a most violent opponent, Caesar had
+						shown that his clemency would extend to all, however much they had opposed
+						him. <milestone n="214.26" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#suspicionibus_3">suspicionibus
+						</seg>
+						<seg type="comment" xml:id="suspicionibus_3">: Caesar is said to have
+							suspected Marcellus of plotting his assassination (cf. sect. <ref n="Cic. Marc. 21">21</ref>). <milestone n="214.26" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ille_3">ille
+						</seg>
+						<seg type="comment" xml:id="ille_3">,
+							i.e. Marcellus too. </seg>
+					</p>
+				</div>
+				<div type="section" n="4" corresp="urn:cts:latinLit:phi0474.phi032:4">
+					<p>This pardon is the greatest of Caesar's deeds. His other exploits were
+						glorious victories: this is the conquest of himself. He shares this
+						conquest with no one.
+					</p>
+				</div>
+				<div type="section" n="5" corresp="urn:cts:latinLit:phi0474.phi032:5">
+					<milestone n="215.16" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#usurpare_5">usurpare
+						</seg>
+						<seg type="comment" xml:id="usurpare_5"> , <gloss>dwell on</gloss>. <milestone n="215.28" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#et_certe_5">et certe
+						</seg>
+						<seg type="comment" xml:id="et_certe_5">, etc., <gloss>and it is certainly
+							true that</gloss> etc. </seg>
+					</p>
+				</div>
+				<div type="section" n="6" corresp="urn:cts:latinLit:phi0474.phi032:6">
+					<milestone n="215.30" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#Fortuna_6">Fortuna
+						</seg>
+						<seg type="comment" xml:id="Fortuna_6">: see Manil. Law, sect. <ref n="Cic. Man. 47">47</ref>. </seg>
+					</p>
+				</div>
+				<div type="section" n="7" corresp="urn:cts:latinLit:phi0474.phi032:7">
+					<milestone n="215.32" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#hujus_gloriae_7">hujus gloriae
+						</seg>
+						<seg type="comment" xml:id="hujus_gloriae_7">, i.e. the glory of granting
+							this pardon. <milestone n="216.3" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#centurio_7">centurio
+						</seg>
+						<seg type="comment" xml:id="centurio_7">, the infantry officer (see note on <ref n="pl83.31">p. 83, l. 31</ref>). <milestone n="216.4" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#praefectus_7">praefectus
+						</seg>
+						<seg type="comment" xml:id="praefectus_7">, the commander of the auxiliary
+							cavalry. So <foreign xml:lang="lat">
+								cohors</foreign> and <foreign xml:lang="lat">turma</foreign>
+							correspond to each other, as the infantry and cavalry divisions. </seg>
+					</p>
+				</div>
+				<div type="section" n="8" corresp="urn:cts:latinLit:phi0474.phi032:8">
+					<milestone n="216.9" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#immanitate_barbaras_8">immanitate barbaras
+						</seg>
+						<seg type="comment" xml:id="immanitate_barbaras_8">, i.e. <gloss>barbarous
+							and fierce</gloss>: his first conquests had subdued the Gauls, Germans,
+							and Britons. <milestone n="216.10" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#locis_infinitas_8">locis infinitas
+						</seg>
+						<seg type="comment" xml:id="locis_infinitas_8">: Caesar moved from Gaul, <date when="-0049">B.C. 49</date>, into Italy, and the same year to Spain.
+							In 48 he crossed over to Greece, and thence to Egypt; in 47 he carried
+							on war in Asia Minor, and in 46 gained the crowning victory of Thapsus
+							in Africa. <milestone n="216.13" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#animum_vincere_8">animum vincere
+						</seg>
+						<seg type="comment" xml:id="animum_vincere_8"> , <gloss>to rule his spirit</gloss>;
+							cf. Proverbs xvi, 32: "He that is slow to anger is better than the
+							mighty; and he that ruleth his spirit than he that taketh a city." <milestone n="216.14" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#victoriam_temperare_8">victoriam temperare
+						</seg>
+						<seg type="comment" xml:id="victoriam_temperare_8"> , <gloss>to control the
+							passions of victory</gloss> (cf. sect. <ref n="Cic. Mil. 9">9</ref>, <ref n="pl216.27">p. 216, l. 27</ref>). <pb n="469"/>
+							<milestone n="216.15" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nobilitate_praestantem_8">nobilitate . . .
+							praestantem
+						</seg>
+						<seg type="comment" xml:id="nobilitate_praestantem_8">: this description is
+							inserted to enhance the credit of Caesar's act, inasmuch as the greater
+							the adversary the more dangerous his restoration would seem. <milestone n="216.17" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#haec_facit_8">haec qui facit
+						</seg>
+						<seg type="comment" xml:id="haec_facit_8">: a slight break in the
+							construction (anacoluthon); the proper predicate of the preceding
+							infins. would be connected with them by <foreign xml:lang="lat">est</foreign>;
+							the proper object of <foreign xml:lang="lat">facit</foreign> would be a
+							result clause with <foreign xml:lang="lat">ut</foreign>. The effect of
+							the Latin can be exactly reproduced in translation. </seg>
+					</p>
+				</div>
+				<div type="section" n="9" corresp="urn:cts:latinLit:phi0474.phi032:9">
+					<milestone n="216.19" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#illae_quidem_9">illae quidem
+						</seg>
+						<seg type="comment" xml:id="illae_quidem_9">: the pronoun (as often in
+							concessive sentences) is inserted only to carry <foreign xml:lang="lat">
+							quidem</foreign>, adding nothing to the sense; § <ref n="AG 298">298</ref>,
+							a (195, c) ; H.-B. 274, 3. <milestone n="216.22" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nescio_modo_9">nescio quo modo
+						</seg>
+						<seg type="comment" xml:id="nescio_modo_9">: here (as often) with a slight
+							tone of regret; Cf. our colloquial "somehow or other." <milestone n="216.23" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tubarum_9">tubarum
+						</seg>
+						<seg type="comment" xml:id="tubarum_9">, <gloss>of
+								trumpets</gloss>: the <foreign xml:lang="lat">tuba</foreign> was a
+							long, straight horn, used in infantry; the <foreign xml:lang="lat">
+							lituus</foreign> a curved one, used in cavalry. </seg>
+					</p>
+				</div>
+				<div type="section" n="10" corresp="urn:cts:latinLit:phi0474.phi032:10">
+					<milestone n="216.31" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#ut_velis_10">ut velis
+						</seg>
+						<seg type="comment" xml:id="ut_velis_10">: for this rare constr., see § <ref n="AG 571">571</ref>,c (332,f); Cf. G. 553,4; cf. H. 571, 2 (501, i,
+							2); Cf. H.-B. 521,3 and N. <milestone n="217.2" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#studiis_prosequemur_10">studiis prosequemur
+						</seg>
+						<seg type="comment" xml:id="studiis_prosequemur_10">, the figure is that of
+							a distinguished Roman escorted by a throng with enthusiastic
+							acclamations (<foreign xml:lang="lat">studiis</foreign>). <milestone n="217.4" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hujus_curiae_10">hujus curiae
+						</seg>
+						<seg type="comment" xml:id="hujus_curiae_10">: the old Curia Hostilia, on
+							the north side of the <foreign xml:lang="lat">
+								Comitium</foreign>, was destroyed by fire in the riots after the
+							death of Clodius, <date when="-0052">B.C. 52</date> (see Milo, sect. <ref n="Cic. Mil. 33">33</ref>); but was rebuilt by Faustus Sulla, son of
+							the dictator. <milestone n="217.6" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#C_Marcelli_10">C. Marcelli
+						</seg>
+						<seg type="comment" xml:id="C_Marcelli_10">: Cos. <date when="-0050">B.C. 50</date>,
+							cousin of M. Marcellus. <milestone n="217.10" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#suam_10">suam
+						</seg>
+						<seg type="comment" xml:id="suam_10">: § <ref n="AG 301">301</ref>, c (196,
+							g); B. 244, a, 4; G. 309, 2; H. 503, 4 (449, 2); H.-B. 264, 2. </seg>
+					</p>
+				</div>
+				<div type="section" n="11" corresp="urn:cts:latinLit:phi0474.phi032:11">
+					<milestone n="217.18" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#tropaeis_monumentis_11">tropaeis et monumentis
+						</seg>
+						<seg type="comment" xml:id="tropaeis_monumentis_11">: the <foreign xml:lang="lat">tropaea</foreign> were memorials of victory,
+							consisting of armor of the conquered, arranged in human form, and either
+							erected by itself or attached to some monument, as a column or arch. As
+							to monuments, Caesar did not live to carry out his plans fully; he
+							built, however, a new enclosure for assemblies, the <foreign xml:lang="lat">Saepta Julia</foreign>, and laid out a <pb n="470"/>
+							new forum for courts of justice, the <foreign xml:lang="lat">Forum
+								Julium</foreign>, north of the old Forum. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#adlatura_sit_11">adlatura sit
+						</seg>
+						<seg type="comment" xml:id="adlatura_sit_11">, though in form introduced by <foreign xml:lang="lat">ut</foreign>, is not the real result of <foreign xml:lang="lat">tanta est</foreign>, which should be some verb in
+							sect. <ref n="Cic. Marc. 12">12</ref>; this, however, by a change in the
+							construction, is suppressed, and the sentence begins again with a future
+							(<foreign xml:lang="lat">florescet</foreign> ). </seg>
+					</p>
+				</div>
+				<div type="section" n="12" corresp="urn:cts:latinLit:phi0474.phi032:12">
+					<milestone n="217.22" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#operibus_12">operibus
+						</seg>
+						<seg type="comment" xml:id="operibus_12">, dat.: § <ref n="AG 381">381</ref>
+							(229); B. 188, 2, d; G. 345; H. 426, 2 (385, 2); H.-B. 371. <milestone n="217.23" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#victores_12">victores
+						</seg>
+						<seg type="comment" xml:id="victores_12">, i.e. Cinna, Marius, and Sulla. <milestone n="217.25" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#perinde_atque_12">perinde. . . atque
+						</seg>
+						<seg type="comment" xml:id="perinde_atque_12"> , <gloss>just as</gloss>. <milestone n="217.28" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#omnes_12">omnes
+						</seg>
+						<seg type="comment" xml:id="omnes_12">, <gloss>all
+								of us</gloss> (as is shown by <foreign xml:lang="lat">sumus</foreign>
+							). <milestone n="217.29" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#occidissemus_12">occidissemus
+						</seg>
+						<seg type="comment" xml:id="occidissemus_12"> , <gloss>had fallen</gloss>: a
+							rhetorical exaggeration for "had forfeited our lives." </seg>
+					</p>
+				</div>
+				<div type="section" n="13" corresp="urn:cts:latinLit:phi0474.phi032:13">
+					<p>This pardon reaches far beyond Caesar's other acts. Peace has always been
+						his aim. His clemency in the hour of triumph contrasted with the fury of
+						the Pompeians. Let him continue his noble moderation.
+					</p>
+					<milestone n="218.2" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#illa_13">illa
+						</seg>
+						<seg type="comment" xml:id="illa_13">, i.e. Pompey's. <milestone n="218.7" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sibi_13">sibi
+						</seg>
+						<seg type="comment" xml:id="sibi_13">: see note on Cat. 2, sect. <ref n="Cic. Catil. 2.17">17</ref> (<ref n="pl120.17">p. 120, l. 17</ref>
+							). <milestone n="218.8" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#reddidit_13">reddidit
+						</seg>
+						<seg type="comment" xml:id="reddidit_13"> , <gloss>restored</gloss>, by
+							inspiring them with confidence that no vengeance would follow, so that
+							they have returned to their homes. <milestone n="218.9" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hostis_13">hostis
+						</seg>
+						<seg type="comment" xml:id="hostis_13">,
+							acc. plur. </seg>
+					</p>
+				</div>
+				<div type="section" n="14" corresp="urn:cts:latinLit:phi0474.phi032:14">
+					<milestone n="218.15" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#Ilagitantium_14">Ilagitantium
+						</seg>
+						<seg type="comment" xml:id="Ilagitantium_14">: before the outbreak of the
+							Civil War, Caesar sent C. Curio (son of C. Curio, Verr. 1, sect. <ref n="Cic. Ver. 1.1.18">18</ref>) to Rome with offers of compromise,
+							which were spurned by the Senate. <milestone n="218.18" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hominem_14">hominem
+						</seg>
+						<seg type="comment" xml:id="hominem_14"> (emphat.), <gloss>the man</gloss>
+							(Pompey), not his measures. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#consilio_14">consilio
+						</seg>
+						<seg type="comment" xml:id="consilio_14"> , <gloss>reasons</gloss>. <milestone n="218.19" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#grati_animi_14">grati animi
+						</seg>
+						<seg type="comment" xml:id="grati_animi_14">:
+							at the time of Cicero's recall, Pompey interested himself to go in
+							person to several of the Italian towns to encourage the general feeling
+							in his favor, and so atoned in part for the tardiness of his support and
+							his earlier hesitating, cold, and ungracious course. </seg>
+					</p>
+				</div>
+				<div type="section" n="15" corresp="urn:cts:latinLit:phi0474.phi032:15">
+					<milestone n="218.23" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#integra_re_15">integra re
+						</seg>
+						<seg type="comment" xml:id="integra_re_15"> , <gloss>before anything had
+								been done</gloss> (i.e. before peace was broken). <milestone n="218.24" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cum_periculo_15">cum capitis mei periculo
+						</seg>
+						<seg type="comment" xml:id="cum_periculo_15">: it is said that after
+							Pompey's defeat the command was urged upon Cicero by Cato; and on his
+							refusal to conduct the war, Sextus Pompey would have stabbed him unless
+							Cato had interfered. <milestone n="218.27" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#statim_censuerit_15">statim censuerit
+						</seg>
+						<seg type="comment" xml:id="statim_censuerit_15">: Cicero was welcomed and
+							kindly treated by Caesar on his return to Italy, <date when="-0047">B.C.
+							47</date>. The war was not finished till the next year, hence <foreign xml:lang="lat">incertus exitus</foreign>, etc. <pb n="471"/>
+							<milestone n="218.29" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#victor_15">victor
+						</seg>
+						<seg type="comment" xml:id="victor_15">, <gloss>when
+								victorious</gloss> (opposed to <foreign xml:lang="lat">incertus</foreign>,
+							etc.). </seg>
+					</p>
+				</div>
+				<div type="section" n="16" corresp="urn:cts:latinLit:phi0474.phi032:16">
+					<milestone n="219.4" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#certorum_hominum_16">certorum hominum
+						</seg>
+						<seg type="comment" xml:id="certorum_hominum_16">: such senatorial leaders
+							as Metellus, Scipio, and Dolabella. Cicero says, in a letter to M.
+							Marius (Fam. 7.3): "Excepting the chief and a few besides, the others —
+							the leaders I mean — were so grasping in the campaign and so cruel in
+							their talk, that I shuddered at the thought of victory. There was
+							nothing good except the cause." And to Atticus (Att. 9.7)," It is their
+							plan to stifle (<foreign xml:lang="lat">suffocare</foreign>) the city
+							and Italy by famine, then ravage the fields, set fire, and not spare the
+							money of the rich." Pompey, he says, would often say, <foreign xml:lang="lat">Sulla potuit: ego non potero?</foreign> (Att. 9. 10). </seg>
+					</p>
+				</div>
+				<div type="section" n="17" corresp="urn:cts:latinLit:phi0474.phi032:17">
+					<milestone n="219.11" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#ut_debeat_17">ut . . . debeat
+						</seg>
+						<seg type="comment" xml:id="ut_debeat_17">, clause of result. <milestone n="219.12" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#excitaret_17">excitaret
+						</seg>
+						<seg type="comment" xml:id="excitaret_17">: more exactly <foreign xml:lang="lat">excitaturus fuerit</foreign>; cf. § <ref n="AG 517">
+							517</ref>, d (308, d, N.); B. 322; G. 597, R5, a; H. 541, N.1 (496,
+							N.2); cf. H-B. 581, b, 2. </seg>
+					</p>
+				</div>
+				<div type="section" n="18" corresp="urn:cts:latinLit:phi0474.phi032:18">
+					<milestone n="219.16" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#otiosis_18">otiosis
+						</seg>
+						<seg type="comment" xml:id="otiosis_18">, <gloss>the
+								neutral.</gloss>
+							<milestone n="219.22" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#contulisse_ad_18">contulisse ad
+						</seg>
+						<seg type="comment" xml:id="contulisse_ad_18"> , <gloss>made all hope</gloss>,
+							etc., <gloss>depend on</gloss>, etc. </seg>
+					</p>
+				</div>
+				<div type="section" n="19" corresp="urn:cts:latinLit:phi0474.phi032:19">
+					<milestone n="219.26" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#est_19">est
+						</seg>
+						<seg type="comment" xml:id="est_19">, <gloss>
+								comes</gloss>. <milestone n="219.31" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quae_19">quae
+						</seg>
+						<seg type="comment" xml:id="quae_19">, <gloss>things
+								which</gloss>. The Stoics held that virtue was the <foreign xml:lang="lat">summum bonum</foreign>, and Cicero here alludes to
+							that doctrine. <milestone n="220.3" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#commodata_19">commodata
+						</seg>
+						<seg type="comment" xml:id="commodata_19"> , <gloss>loaned</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="20" corresp="urn:cts:latinLit:phi0474.phi032:20">
+					<milestone n="220.4" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#praesertim_20">praesertim
+						</seg>
+						<seg type="comment" xml:id="praesertim_20">
+							belongs with </seg>
+						<seg type="lemma" ana="#lapsis_20">lapsis
+						</seg>
+						<seg type="comment" xml:id="lapsis_20">. <milestone n="220.5" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#opinione_20">opinione
+						</seg>
+						<seg type="comment" xml:id="opinione_20"> , <gloss>notion</gloss>. <milestone n="220.6" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#specie_20">specie
+						</seg>
+						<seg type="comment" xml:id="specie_20">, etc., i.e. with the idea of
+							following the apparently established government (that of the Senate,
+							which was on Pompey's side). <milestone n="220.7" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#si_timuerunt_20">si . . . timuerunt
+						</seg>
+						<seg type="comment" xml:id="si_timuerunt_20">: cf. § <ref n="AG 572">572</ref>,
+							b, N. (333, R.); the <foreign xml:lang="lat">protasis</foreign> is
+							logically the subject of <foreign xml:lang="lat">est</foreign>. <milestone n="220.8" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#senserunt_20">senserunt
+						</seg>
+						<seg type="comment" xml:id="senserunt_20"> , <gloss>found by experience</gloss>
+							. </seg>
+					</p>
+				</div>
+				<div type="section" n="21" corresp="urn:cts:latinLit:phi0474.phi032:21">
+					<p>Caesar has nothing to fear from Marcellus. All good citizens desire the
+						safety of Caesar, for the restoration of the state depends on him.
+					</p>
+					<milestone n="220.9" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#querelam_21">querelam
+						</seg>
+						<seg type="comment" xml:id="querelam_21">, etc., that the partisans of
+							Pompey wished to kill him. <milestone n="220.16" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#de_tuis_21">de tuis
+						</seg>
+						<seg type="comment" xml:id="de_tuis_21">,
+							i.e. his immediate companions; </seg>
+						<seg type="lemma" ana="#qui_uni_21">qui uni
+						</seg>
+						<seg type="comment" xml:id="qui_uni_21">, those on the same side. <milestone n="220.17" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#qui_fuerunt_21">qui fuerunt
+						</seg>
+						<seg type="comment" xml:id="qui_fuerunt_21">, Sc. <foreign xml:lang="lat">
+							inimici</foreign>. </seg>
+					</p>
+				</div>
+				<div type="section" n="22" corresp="urn:cts:latinLit:phi0474.phi032:22">
+					<milestone n="220.28" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#nihil_cogitans_22">nihil . . . cogitans
+						</seg>
+						<seg type="comment" xml:id="nihil_cogitans_22"> , <gloss>inconsiderate</gloss>
+							<milestone n="220.30" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#equidem_22">equidem
+						</seg>
+						<seg type="comment" xml:id="equidem_22">, <gloss>for
+								my part</gloss>
+							<milestone n="220.31" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#dumtaxat_22">dumtaxat
+						</seg>
+						<seg type="comment" xml:id="dumtaxat_22"> , <gloss>merely</gloss> (i.e. even
+							the ordinary chances of life, to say nothing of violence and plots). </seg>
+					</p>
+				</div>
+				<div type="section" n="23" corresp="urn:cts:latinLit:phi0474.phi032:23">
+					<p>The wounds of war must be healed. Caesar has a great task yet to perform.
+						His work is not done till the state is restored: only then will his fame
+						be secure.
+					</p>
+					<milestone n="221.8" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#constituenda_judicia_23">constituenda judicia
+						</seg>
+						<seg type="comment" xml:id="constituenda_judicia_23">, etc.: the short
+							period of Caesar's dictatorship was distinguished by a number of
+							salutary enactments, almost equivalent to a complete revision of the
+							constitution. <milestone n="221.9" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#propaganda_suboles_23">propaganda suboles
+						</seg>
+						<seg type="comment" xml:id="propaganda_suboles_23">: the waste of population
+							by incessant wars had already begun to alarm the best minds of Rome. It
+							was, in fact, the chief direct cause of the ruin of the Empire. <milestone n="221.10" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#diffiuxerunt_23">diffiuxerunt
+						</seg>
+						<seg type="comment" xml:id="diffiuxerunt_23"> , <gloss>have run wild</gloss>
+							(like vines). </seg>
+					</p>
+				</div>
+				<div type="section" n="24" corresp="urn:cts:latinLit:phi0474.phi032:24">
+					<milestone n="221.13" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#fuisset_24">fuisset
+						</seg>
+						<seg type="comment" xml:id="fuisset_24">, subj. of integral part. <milestone n="221.15" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#faceret_24">faceret
+						</seg>
+						<seg type="comment" xml:id="faceret_24">, in the same constr. as <foreign xml:lang="lat">perderet</foreign> - <foreign xml:lang="lat">
+							prohibuisset</foreign>, cont. to fact apod.; the prot. is implied in <foreign xml:lang="lat">togatus</foreign>. <milestone n="221.16" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sananda_24">sananda
+						</seg>
+						<seg type="comment" xml:id="sananda_24"> , <gloss>to be healed</gloss>
+							(referring to the result); </seg>
+						<seg type="lemma" ana="#mederi_24">mederi
+						</seg>
+						<seg type="comment" xml:id="mederi_24"> , <gloss>to
+								remedy</gloss> (referring to treatment). <milestone n="221.22" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#doctorum_hominum_24">doctorum hominum
+						</seg>
+						<seg type="comment" xml:id="doctorum_hominum_24"> , <gloss>philosophers</gloss>
+							. <milestone n="221.25" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tam_24">tam
+						</seg>
+						<seg type="comment" xml:id="tam_24">, referring (as often) to the <foreign xml:lang="lat">protasis</foreign> which follows: § <ref n="AG 512">
+							512</ref>, b (304, b); G. 590, N.1; H.-B. 578,5. <milestone n="221.29" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hic_24">hic
+						</seg>
+						<seg type="comment" xml:id="hic_24"> , <gloss>ill
+								these circumstances</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="26" corresp="urn:cts:latinLit:phi0474.phi032:26">
+					<milestone n="222.1" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#immo_vero_26">immo vero
+						</seg>
+						<seg type="comment" xml:id="immo_vero_26"> , <gloss>on the contrary</gloss>. <milestone n="222.5" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#futurus_fuit_26">futurus fuit
+						</seg>
+						<seg type="comment" xml:id="futurus_fuit_26"> , <gloss>was to be</gloss>. <milestone n="222.8" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#si_quidem_26">si quidem
+						</seg>
+						<seg type="comment" xml:id="si_quidem_26"> , <gloss>since in fact</gloss>: § <ref n="AG 515">515</ref>, a, N. (306, a, N.); G. 595, R1; H. 574, I
+							(507, 3, N.2); Cf. H-B. 582, 9. </seg>
+					</p>
+				</div>
+				<div type="section" n="27" corresp="urn:cts:latinLit:phi0474.phi032:27">
+					<milestone n="222.11" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#hic_actus_27">hic . . . actus
+						</seg>
+						<seg type="comment" xml:id="hic_actus_27">, as in a play; hence <foreign xml:lang="lat">elaborandum</foreign>, a word used of literary
+							composition. <milestone n="222.15" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#dicito_27">dicito
+						</seg>
+						<seg type="comment" xml:id="dicito_27">,
+							fut. as referring to the time designated by </seg>
+						<seg type="lemma" ana="#tum_27">tum
+						</seg>
+						<seg type="comment" xml:id="tum_27">: § <ref n="AG 449">449</ref>, I (269,d,
+							I); B. 281, I, a; G. 268, 2; H. 560, 4(487, 21); H-B. 496. <milestone n="222.16" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#diu_27">diu
+						</seg>
+						<seg type="comment" xml:id="diu_27">: § <ref n="AG 33">33</ref> (29, c); G.
+							20, iii; H-B. 58, 3. <milestone n="222.19" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#angustus_27">angustus
+						</seg>
+						<seg type="comment" xml:id="angustus_27"> , <gloss>narrow bounds</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="28" corresp="urn:cts:latinLit:phi0474.phi032:28">
+					<milestone n="222.24" unit="pg_l"/>
+					<p>[<foreign xml:lang="lat">ut</foreign>]<seg type="lemma" ana="#inservias_28">
+						inservias
+						</seg>
+						<seg type="comment" xml:id="inservias_28">: § <ref n="AG 565">565</ref> (331,f R.); cf. B. 295, 8; cf. G. 553, a.1; cf.
+						H. 554, ii,1 (502, I); cf. H.-B. 513, 5. <milestone n="222.25" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quae_quidem_28">quae quidem
+						</seg>
+						<seg type="comment" xml:id="quae_quidem_28">, i.e. <foreign xml:lang="lat">
+							aeternitas</foreign>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quae_miretur_28">quae miretur
+						</seg>
+						<seg type="comment" xml:id="quae_miretur_28">, purpose clause; the subject
+							is vita. <milestone n="222.27" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#certe_28">certe
+						</seg>
+						<seg type="comment" xml:id="certe_28"> , <gloss>
+								doubtless</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#imperia_28">imperia
+						</seg>
+						<seg type="comment" xml:id="imperia_28">, etc., obj. of <foreign xml:lang="lat">audientes</foreign> and <foreign xml:lang="lat">
+							legentes</foreign>. 222 29 <foreign xml:lang="lat">munera</foreign>, <gloss>
+							gifts</gloss> to the people, such as monuments and spectacular
+							performances. </seg>
+					</p>
+				</div>
+				<div type="section" n="29" corresp="urn:cts:latinLit:phi0474.phi032:29">
+					<milestone n="223.2" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#sedem_29">sedem
+						</seg>
+						<seg type="comment" xml:id="sedem_29"> , <gloss>
+								abiding-place</gloss>; </seg>
+						<seg type="lemma" ana="#domicilium_29">domicilium
+						</seg>
+						<seg type="comment" xml:id="domicilium_29"> , <gloss>home</gloss>. <milestone n="223.6" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#requirent_29">requirent
+						</seg>
+						<seg type="comment" xml:id="requirent_29"> , <gloss>will miss</gloss>. <milestone n="223.7" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fllud_29">fllud
+						</seg>
+						<seg type="comment" xml:id="fllud_29">, i.e. the war; hoc, i.e. the public
+							safety. <milestone n="223.8" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#servi_judicibus_29">servi eis judicibus
+						</seg>
+						<seg type="comment" xml:id="servi_judicibus_29"> , <gloss>pay regard to
+								those judges</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="30" corresp="urn:cts:latinLit:phi0474.phi032:30">
+					<p>The Civil War is finished. Boundless gratitude is due to Caesar, not only
+						for restoring Marcellus to his country but for all which that act
+						implies.
+					</p>
+					<milestone n="223.13" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#non_pertinebit_30">non pertinebit
+						</seg>
+						<seg type="comment" xml:id="non_pertinebit_30"> , <gloss>will have no
+								concern for</gloss>. Such was the doctrine of the Epicureans, who
+							believed in annihilation after death. <milestone n="223.17" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#obscuritas_30">obscuritas
+						</seg>
+						<seg type="comment" xml:id="obscuritas_30"> , <gloss>uncertainty</gloss>,
+							i.e. as to which side a good citizen ought to take. <milestone n="223.20" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#deceret_30">deceret
+						</seg>
+						<seg type="comment" xml:id="deceret_30"> , <gloss>was becoming</gloss>, i.e.
+							to their position and circumstances. A Senator, for example, however
+							well affected to Caesar, might have felt it his duty to side with his
+							class (who were in general partisans of Pompey). Such conflicts of mind
+							of course constantly arise in civil wars. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#liceret_30">liceret
+						</seg>
+						<seg type="comment" xml:id="liceret_30"> , <gloss>was</gloss>
+							<foreign xml:lang="lat">legat</foreign> Both Caesar and Pompey claimed to be
+							acting under the laws. </seg>
+					</p>
+				</div>
+				<div type="section" n="31" corresp="urn:cts:latinLit:phi0474.phi032:31">
+					<milestone n="223.20" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#perfuncta_est_31">perfuncta est
+						</seg>
+						<seg type="comment" xml:id="perfuncta_est_31"> , <gloss>has done with</gloss>
+							. <milestone n="223.22" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#inllammaret_31">inllammaret
+						</seg>
+						<seg type="comment" xml:id="inllammaret_31">, etc.: cf. sect. <ref n="Cic. Marc. 16">16</ref> and note (<ref n="pl219.4">p. 219, l. 4</ref>
+							). <milestone n="223.24" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ab_31">ab
+						</seg>
+						<seg type="comment" xml:id="ab_31">, etc.: the first <foreign xml:lang="lat">
+							ab</foreign> means <gloss>by</gloss>; the second, <gloss>from</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="32" corresp="urn:cts:latinLit:phi0474.phi032:32">
+					<milestone n="224.1" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#sanitatis_32">sanitatis
+						</seg>
+						<seg type="comment" xml:id="sanitatis_32"> , <gloss>a sound mind</gloss>
+							(ordinary intelligence). <milestone n="224.4" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#haec_32">haec
+						</seg>
+						<seg type="comment" xml:id="haec_32"> (with a gesture), <gloss>this glorious
+							city</gloss>. <milestone n="224.9" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#oppositus_32">oppositus
+						</seg>
+						<seg type="comment" xml:id="oppositus_32"> , <gloss>interposition</gloss>,
+							literally plur.: § <ref n="AG 100">
+								100</ref>, c (75, c); B. 55,4, c; G. 204, N.1; H. 138, 2 (130, 2);
+							H-B. 240,5, b. </seg>
+					</p>
+				</div>
+				<div type="section" n="33" corresp="urn:cts:latinLit:phi0474.phi032:33">
+					<milestone n="224.10" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#unde_33">unde
+						</seg>
+						<seg type="comment" xml:id="unde_33"> , <gloss>with
+								which</gloss> (in Latin the beginning is regarded as the source <gloss>from
+							which</gloss>). <milestone n="224.11" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#agimus_33">agimus
+						</seg>
+						<seg type="comment" xml:id="agimus_33"> , <gloss>
+								express</gloss>; </seg>
+						<seg type="lemma" ana="#habemus_33">habemus
+						</seg>
+						<seg type="comment" xml:id="habemus_33"> , <gloss>feel</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="34" corresp="urn:cts:latinLit:phi0474.phi032:34">
+					<milestone n="224.19" unit="pg_l"/>
+					<p>
+						<seg type="lemma" ana="#mea_34">mea
+						</seg>
+						<seg type="comment" xml:id="mea_34"> , <gloss>on
+								my pa;]</gloss>. <milestone n="224.22" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cum_praestiterim_34">cum id . . . praestiterim
+						</seg>
+						<seg type="comment" xml:id="cum_praestiterim_34"> , <gloss>while I have
+							fulfilled it</gloss>
+							<milestone n="224.25" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#me_conservato_34">me . . . conservato
+						</seg>
+						<seg type="comment" xml:id="me_conservato_34"> , <gloss>while I have been
+							preserved</gloss>. <milestone n="224.27" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quod_arbitrabar_34">quod . . . non arbitrabar
+						</seg>
+						<seg type="comment" xml:id="quod_arbitrabar_34"> , <gloss>which I thought no
+							longer possible</gloss>.</seg>
+					</p>
+				</div>
+			</div>
+		</body>
+	</text>
+	<standOff>
+		<linkGrp type="commentary">
+			<link target="urn:cts:latinLit:phi0474.phi032:1 #diuturni_silenti_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:1 #eram_usus_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:1 #verecundia_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:1 #vellem_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:1 #tantam_mansuetudinem_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:1 #rerum_omnium_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:2 #in_causa_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:2 #versari_me_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:3 #in_ipso_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:3 #paulo_ante_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:3 #omnibus_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:3 #suspicionibus_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:3 #ille_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:5 #usurpare_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:5 #et_certe_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:6 #Fortuna_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:7 #hujus_gloriae_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:7 #centurio_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:7 #praefectus_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:8 #immanitate_barbaras_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:8 #locis_infinitas_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:8 #animum_vincere_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:8 #victoriam_temperare_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:8 #nobilitate_praestantem_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:8 #haec_facit_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:9 #illae_quidem_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:9 #nescio_modo_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:9 #tubarum_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:10 #ut_velis_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:10 #studiis_prosequemur_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:10 #hujus_curiae_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:10 #C_Marcelli_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:10 #suam_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:11 #tropaeis_monumentis_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:11 #adlatura_sit_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:12 #operibus_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:12 #victores_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:12 #perinde_atque_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:12 #omnes_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:12 #occidissemus_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:13 #illa_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:13 #sibi_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:13 #reddidit_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:13 #hostis_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:14 #Ilagitantium_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:14 #hominem_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:14 #consilio_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:14 #grati_animi_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:15 #integra_re_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:15 #cum_periculo_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:15 #statim_censuerit_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:15 #victor_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:16 #certorum_hominum_16"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:17 #ut_debeat_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:17 #excitaret_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:18 #otiosis_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:18 #contulisse_ad_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:19 #est_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:19 #quae_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:19 #commodata_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:20 #praesertim_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:20 #lapsis_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:20 #opinione_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:20 #specie_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:20 #si_timuerunt_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:20 #senserunt_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:21 #querelam_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:21 #de_tuis_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:21 #qui_uni_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:21 #qui_fuerunt_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:22 #nihil_cogitans_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:22 #equidem_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:22 #dumtaxat_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:23 #constituenda_judicia_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:23 #propaganda_suboles_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:23 #diffiuxerunt_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:24 #fuisset_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:24 #faceret_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:24 #sananda_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:24 #mederi_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:24 #doctorum_hominum_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:24 #tam_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:24 #hic_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:26 #immo_vero_26"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:26 #futurus_fuit_26"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:26 #si_quidem_26"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:27 #hic_actus_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:27 #dicito_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:27 #tum_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:27 #diu_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:27 #angustus_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:28 #inservias_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:28 #quae_quidem_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:28 #quae_miretur_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:28 #certe_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:28 #imperia_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:29 #sedem_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:29 #domicilium_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:29 #requirent_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:29 #fllud_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:29 #servi_judicibus_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:30 #non_pertinebit_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:30 #obscuritas_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:30 #deceret_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:30 #liceret_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:31 #perfuncta_est_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:31 #inllammaret_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:31 #ab_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:32 #sanitatis_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:32 #haec_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:32 #oppositus_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:33 #unde_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:33 #agimus_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:33 #habemus_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:34 #mea_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:34 #cum_praestiterim_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:34 #me_conservato_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi032:34 #quod_arbitrabar_34"/>
+		</linkGrp>
+	</standOff>
+</TEI>

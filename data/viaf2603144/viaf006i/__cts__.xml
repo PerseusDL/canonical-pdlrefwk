@@ -1,0 +1,8 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:viaf2603144" urn="urn:cts:greekLit:viaf2603144.viaf006i" xml:lang="eng">
+    <ti:title xml:lang="eng">Introduction to Commentary on Sophocles: Philoctetes</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf2603144.viaf006i" urn="urn:cts:greekLit:viaf2603144.viaf006i.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Introduction to Commentary on Sophocles: Philoctetes</ti:label>
+        <ti:description xml:lang="mul">Sophocles, The plays and fragments with critical notes. Part 4, The Philoctetes. Jebb, Richard Claverhouse, author. Cambridge, UK: Cambridge University Press, 1932.</ti:description>
+        <ti:about urn="urn:cts:greekLit:tlg0011.tlg006"/>
+    </ti:commentary>
+</ti:work>

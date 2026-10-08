@@ -1,0 +1,4089 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title>Impeachment of Verres</title>
+				<author>James Bradstreet Greenough</author>
+				<author>George Lyman Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Bridget Almas</name>
+					<name>Lisa Cerrato</name>
+					<name>Rashmi Singhal</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" notBefore="2009-03-12">Perseus 4.0</date>
+				<idno type="filename">sec00009.sec003a.perseus-eng1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Select orations of Cicero</title>
+						<author>Cicero</author>
+						<editor>James Bradstreet Greenough</editor>
+						<editor>George Lyman Kittredge</editor>
+						<edition>Allen and Greenough’s edition</edition>
+						<imprint>
+							<pubPlace>Boston</pubPlace>
+							<publisher>Ginn and Company</publisher>
+							<date>1897</date>
+						</imprint>
+					</monogr>
+					<ref target="https://hdl.handle.net/2027/mdp.39015008024815?urlappend=%3Bseq=178%3Bownerid=13510798888294386-190"/>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])" n="section">
+					<p>This pointer extracts chapter and section</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])" n="chapter">
+					<p>This pointer extracts chapter</p>
+				</cRefPattern>
+			</refsDecl>
+			<refsDecl xml:id="CTS" n="CTS">
+				<citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0" match="/tei:TEI/tei:text/tei:body" use="@xml:base">
+					<citeStructure unit="chapter" delim=":" match="tei:div[@type='chapter']" use="@n">
+						<citeStructure unit="section" delim="." match="tei:div[@type='section']" use="@n"/>
+					</citeStructure>
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="lat">Latin</language>
+				<language ident="grc">Greek</language>
+				<language ident="fre">French</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-09-18" who="Alison Babeu">Final review and updating of header information</change>
+			<change when="2026-07-31" who="Charles Pletcher">Added citeStructure and other TEI changes</change>
+			<change when="2024-12-10" who="Alison Babeu">Adding in header and bibliographic
+				metadata</change>
+			<change when="2024-01-30" who="pletcher">Updating TEI-XML</change>
+			<change when="2023-07-17" who="pletcher">CTS and other transformations</change>
+			<change when="2009-10-09" who="rsing04">more reorganizing of texts module by collection </change>
+			<change when="2009-09-22" who="rsingh04">fixed references to Cic. Ver.</change>
+			<change when="2009-08-25" who="rsingh04">changed bibls with Perseus:abo to
+				corresponding abbreviation </change>
+			<change when="2009-07-30" who="rsingh04">fixed allen and greenough refs</change>
+			<change when="2009-07-29" who="student"> fixed bibl errors - zr fixed bibl errors
+				through speech 3 of Catiline - zr </change>
+			<change when="2009-06-05" who="Lisa Cerrato">fixed bad bibls</change>
+			<change when="2009-06-03" who="Lisa Cerrato">fixed bad bibls</change>
+			<change when="2009-05-27" who="rsingh04">added/fixed cvs log keyword</change>
+		</revisionDesc>
+	</teiHeader>
+	<text n="Ver." xml:lang="eng">
+		<body xml:lang="eng" xml:base="urn:cts:latinLit:sec00009.sec003a.perseus-eng1">
+			<div type="chapter" n="Argument" corresp="urn:cts:latinLit:phi0474.phi005:Argument">
+				<div type="section" n="argument" corresp="urn:cts:latinLit:phi0474.phi005:argument">
+					<head>Impeachment of Verres. (<title xml:lang="lat">In C. Verrem</title>) <date>B.C.
+						70.</date>
+					</head>
+					<head>Argument</head>
+					<list type="outline">
+						<item>CHAP <ref n="Cic. Ver. 1.1.1">1</ref>. The jurors are congratulated on
+							the opportunity of restoring the good name of the senatorial courts by
+							convicting Verres. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.2">2</ref>, <ref n="Cic. Ver. 1.1.3">3</ref>
+							Attempts of Verres to avoid the trial: placing all his hope in bribery,
+							he is intriguing for the postponement of the case. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.4">4</ref>, <ref n="Cic. Ver. 1.1.5">5</ref>. His
+							crimes in administration, of pillage, extortion, and cruelty, are
+							flagrant and notorious. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.6">6</ref>. Hence bribery is his only resource:
+							his attempt to contract in advance for acquittal. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.7">7</ref>, <ref n="Cic. Ver. 1.1.8">8</ref>. His
+							hopes in the election of Hortensius as consul and Metellus as praetor
+							for the following year. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.9">9</ref>, <ref n="Cic. Ver. 1.1.10">10</ref>.
+							Cicero’s anxiety. The great effort to have the case tried before
+							Metellus, which was to be effected by delaying the trial till after the
+							holidays. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.11">11</ref>. Cicero proposes to display his case
+							at once,without argument, and so prevent its being laid over. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.12">12</ref>, <ref n="Cic. Ver. 1.1.13">13</ref>.
+							The domination of Hortensius is dangerous to the state and must be met
+							by proofs of corruption in the senatorial courts. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.14">14</ref>, <ref n="Cic. Ver. 1.1.15">15</ref>.
+							The acquittal of Verres will be subversive of the whole judicial system:
+							the jurors are urged to vindicate the courts by convicting him. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.16">16</ref>. All Rome is on the watch: the court
+							itself is on trial: acquittal can have but one meaning. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.17">17</ref>. Glabrio is urged to stand firm. </item>
+						<item>
+							<ref n="Cic. Ver. 1.1.18">18</ref>. The Sicilians must not be baffled.
+							Cicero, by despatch, will prevent the case from going over to the next
+							year: he will introduce his witnesses at once, without previous
+							argument. Brief statement of the charges, including the plunder of
+							4,000,000 sesterces from the Sicilians.</item>
+					</list>
+				</div>
+			</div>
+			<div type="chapter" n="1_31" corresp="urn:cts:latinLit:phi0474.phi005:1-31">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:1-31">
+					<p>Caius Verres, a man of noble birth, but notorious for his crimes and
+						exactions in the civil war and in the offices he had held since, was city
+						praetor (<foreign xml:lang="lat">praetor urbanus</foreign>) <date>B.C.
+							74</date>. At the close of his term of office, he went, in accordance
+						with the law, as propraetor, to govern the province of Sicily. By reason of
+						the disturbed condition of Italy, from the revolt of Spartacus, he was not
+						relieved at the end of a year, as the law required, but continued two years
+						longer in the government of the province, when he was succeeded by Lucius
+						Caecilius Metellus. During these three years he was guilty of the most
+						abominable oppressions and exactions; and the Sicilians, as soon as they
+						were relieved of his presence, brought suit against him in the court of
+						Repetundae (that for the trial of cases of Extortion), then presided over by
+						the praetor Manius Acilius Glabrio. To conduct the prosecution they had
+						recourse to Cicero, who already stood high among Roman advocates, and who
+						was personally known and trusted by the Sicilians on account of his
+						honorable administration of the quaestorship in their island in <date>B.C.
+							77</date>. Cicero willingly took charge of the case, the more so as the
+						counsel for Verres was Hortensius, the leading lawyer of the time, against
+						whom he was eager to measure his strength. </p>
+					<p>Although the cruelty and rapacity of Verres were notorious, yet his relations
+						to the Roman nobility insured him the same kind of support at home which
+						recently, under somewhat similar circumstances, was afforded to Governor
+						Eyre in England, on his return from Jamaica: not only Hortensius, but Curio,
+						a man of excellent reputation, with members of the eminent families of
+						Scipio and Metellus, stood firmly by him. The only hope of Verres lay in
+						preventing a fair and speedy trial. First he tried to obtain a prosecutor
+						who should be in collusion with him, and would not push him too hard. For
+						this purpose one Caecilius was put forward, an insignificant person, but a
+						native of Sicily. Cicero’s first speech in the case (<title xml:lang="lat">In
+						Q. Caecilium</title>) was therefore a preliminary argument before the
+						praetor Glabrio in person, to show that he, rather than Caecilius, should be
+						allowed to conduct the case. This it was not hard to do, and he set out at
+						once for Sicily to collect evidence, for which purpose he was allowed one
+						hundred and ten days. </p>
+					<p>To consume time the opposition had planned to bring before the same court a
+						trumped-up action against another provincial governor which should have
+						precedence of the trial of Verres. To this end they had procured for the
+						prosecutor in the rival suit an allowance of one hundred and eight days for
+						collecting evidence in Achaia — or two days less than the time which Cicero
+						was expected to need. This intrigue was foiled by Cicero’s industry and
+						skill. He used not quite half of the time allowed him, arriving in Rome,
+						with ample evidence, not only before the prosecutor in the rival case was
+						ready, but even before the latter had left Italy on his pretended tour of
+						investigation. The trial of Verres was now fixed for Aug. 5, <date>B.C.
+							70</date> (consulship of Pompey and Crassus). </p>
+					<p>Meantime (in the latter part of July) the elections were held for the next
+						year. As was the custom in Rome, these occurred several months before the
+						newly elected magistrates were to enter upon their offices. The successful
+						candidates, under the title of <foreign xml:lang="lat">
+							designati</foreign>, enjoyed a dignity almost equal to that of the
+						actual magistrates, although with no real power (see <ref n="Cic. Ver. 1.1.9">ch. ix</ref>.). In these elections Cicero was
+						designated aedile; but his rival Hortensius was chosen consul, with Quintus
+						Metellus Creticus, Verres’ fast friend, as his colleague. More than this,
+						Marcus Metellus, brother of Quintus, was chosen praetor, and the lot fell to
+						him to preside the next year in the court of Repetundae. If now the trial
+						could be put over till the next year, when Hortensius and the two Metelli
+						would be in the three most influential positions in the State, Verres felt
+						quite sure of getting clear. Neither did it seem as if this would be very
+						hard to bring about; for the last six months of the Roman year were so full
+						of festivals and other days on which the court could not sit, that the case
+						would be liable to constant interruptions and delays. The postponement would
+						have disappointed Cicero sorely, for, by good luck in drawing the names, and
+						sagacity in challenging, he had a jury that he could trust, and he was not
+						willing to run the risk of a change. </p>
+					<p>Under these circumstances Cicero made the second speech of the Verrine group
+						— that which is known as the Actio Prima (included in the present edition,
+						pp. 28-47 below). In this oration he declared his intention of departing
+						from the usual course of procedure in order to push the trial through before
+						the New Year. It was customary for the prosecutor, after opening the case
+						(as in the present speech), to present his proofs and arguments in a long
+						connected oration (or a series of orations); there followed a reply from the
+						defendant’s counsel, and then the witnesses were introduced. Cicero,
+						omitting the long statement just described, proceeded to bring forward his
+						witnesses immediately. Since the only hope of the defence lay in putting off
+						the trial, Cicero’s promptitude was decisive: Hortensius soon threw up his
+						case, and Verres went into exile, with a name forever associated with
+						extortion and misgovernment. Full restitution of the plunder was, however,
+						not obtained: a compromise was made, by which a less sum was paid in
+						satisfaction of the claims. The five speeches known as the <q rend="double">
+						Accusation</q> proper (<title xml:lang="lat">Actio Secunda</title>) were
+						never delivered, but were written out and published in order to put on
+						record the facts which Cicero had gathered with so much pains, and to give a
+						specimen of his powers in the way of forensic composition. </p>
+					<p>With the trial of Verres the student may compare the impeachment of
+						Warren
+						Hastings in the eighteenth century, probably the most famous modern
+						instance
+						of the arraignment of a provincial governor for alleged misgovernment,
+						extortion, and cruelty. The prosecution in this case (and in particular
+						Burke) seem to have modelled their speeches on the Verrine orations of
+						Cicero, and many parallels may easily be discovered A few of these are
+						quoted in these notes. That the similarity of the two situations was
+						clearly
+						felt at the time may be seen from Lord Erskine’s Defence of Stockdale
+						(December, 1789) on a charge connected with the impeachment of Hastings:
+						“When Cicero impeached Verres before the great tribunal of Rome, of
+						similar
+						cruelties and depredations in her provinces, the Roman people were not
+						left
+						to such inquiries. All Sicily surrounded the Forum, demanding justice
+						upon
+						her plunderer and spoiler, with tears and imprecations. It was not by
+						the
+						eloquence of the orator, but by the cries and tears of the miserable,
+						that
+						Cicero prevailed in that illustrious case. Verres fled from the oaths of
+						his
+						accusers and their witnesses, and not from the voice of Tully.”</p>
+				</div>
+			</div>
+			<div type="chapter" n="1_3" corresp="urn:cts:latinLit:phi0474.phi005:1-3">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:1-3">
+					<p>The trial of Verres gives the senatorial order an opportunity to redeem
+						the reputation of the courts. Verres had no defence, but had expected to
+						escape by bribing the jury in case he should be prosecuted. His guilt
+						was notorious, so that the chief question now to be determined was that
+						of the integrity of the jury. Cicero accordingly makes this the main
+						point of the present oration: it is the court, he insists, that is on
+						trial rather than Verres.
+					</p>
+				</div>
+				<div type="section" n="1" corresp="urn:cts:latinLit:phi0474.phi005:1">
+					<p>
+						<seg type="lemma" ana="#erat_optandum_1">erat optandum,
+						</seg>
+						<seg type="comment" xml:id="erat_optandum_1">
+							<gloss>what
+								was chiefly to be wished:</gloss> not implying a protasis contrary
+							to fact. See § <ref n="AG 522">522</ref>, a (311, c); B. 304, 3; G. 254,
+							R.1; H. 583 (511, 1, N.8); H.-B. 582, 3, a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quod_pertinebat_1">quod . . .pertinebat,
+						</seg>
+						<seg type="comment" xml:id="quod_pertinebat_1">
+							<gloss>the
+								one thing which most tended</gloss> (or, <gloss>was of
+								chief importance).</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#invidiam_infamiamque_1">invidiam . . . infamiamque,
+						</seg>
+						<seg type="comment" xml:id="invidiam_infamiamque_1">
+							<gloss>odium
+								and ill repute</gloss>, from the partisan use of the courts by the
+							Senators. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#vestri_ordinis_1">vestri ordinis
+						</seg>
+						<seg type="comment" xml:id="vestri_ordinis_1">, i.e. the senatorial order.
+							The word <foreign xml:lang="lat">ordo</foreign> signified, loosely, any
+							recognized body of citizens—as freedmen, publicans, clerks; but it was
+							more especially used of the two powerful classes of the Roman
+							aristocracy, the Senatorial and the Equestrian, which struggled with
+							each other for power during the last century of the Republic. The
+							Senators, from whom the jurors were at this time taken (see note on
+							Rosc. Am., p. 2,1. l), formed a limited (300 to 600) order of nobility
+							which virtually controlled the government. The <foreign xml:lang="lat">
+							equites</foreign> constituted a moneyed aristocracy. Naturally these two
+							orders had opposing interests, as the Senators were excluded from trade
+							and the <foreign xml:lang="lat">equites</foreign> practically from
+							political power. Their antagonism showed itself more especially in the
+							matter of the provinces, which the Senators wished to oppress by
+							official plunder and the <foreign xml:lang="lat">equites</foreign> by
+							commercial extortion. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#summo_tempore_1">summo . . . tempore
+						</seg>
+						<seg type="comment" xml:id="summo_tempore_1">, most <gloss>critical time</gloss>
+							(more lit. <gloss>extreme</gloss> crisis): the year of the consulship of
+							Pompey and Crassus (<date when="-0070">B.C. 70</date>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#inveteravit_1">inveteravit
+						</seg>
+						<seg type="comment" xml:id="inveteravit_1"> (emphatic position), <gloss>there
+							has come to be deeply
+								rooted</gloss> (observe that the figure is quite different in the
+							Latin). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#opinio_1">opinio
+						</seg>
+						<seg type="comment" xml:id="opinio_1"> , <gloss>
+								notion</gloss> or <gloss>idea</gloss> (not so strong as our <gloss>
+							opinion</gloss>, which should be <foreign xml:lang="lat">sententia</foreign>
+							). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#exteras_nationes_1">exteras nationes:
+						</seg>
+						<seg type="comment" xml:id="exteras_nationes_1">the
+							reference is, of course, to the peoples subject to Rome, who were
+							aggrieved by the rapacity of the provincial governors. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#his_iudiciis_1">his iudiciis
+						</seg>
+						<seg type="comment" xml:id="his_iudiciis_1">:
+							in consequence of the situation described above (note on </seg>
+						<seg type="lemma" ana="#ordinis_1">ordinis
+						</seg>
+						<seg type="comment" xml:id="ordinis_1">,
+							l. 2) it became all important for one class or the other to control the
+							courts, before which any misdoings of either party were likely to come
+							for trial. For years these two orders had struggled for such control. At
+							this particular time the courts were in the hands of the Senators, who
+							were bound together by a common cause to shield any one of their number
+							who might be charged with misconduct as a provincial governor. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#neminem_1">neminem
+						</seg>
+						<seg type="comment" xml:id="neminem_1"> (more emphatic than <foreign xml:lang="lat">nullum</foreign>) </seg>
+						<seg type="lemma" ana="#_1">:
+						</seg>
+						<seg type="comment" xml:id="_1"> translate, <gloss>never.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="2" corresp="urn:cts:latinLit:phi0474.phi005:2">
+					<p>
+						<seg type="lemma" ana="#cum_2">cum
+						</seg>
+						<seg type="comment" xml:id="cum_2">
+							(causal) </seg>
+						<seg type="lemma" ana="#sint_2">sint
+						</seg>
+						<seg type="comment" xml:id="sint_2"> , <gloss>when
+								men are ready.—</gloss>
+						</seg>
+						<seg type="lemma" ana="#contionibus_legibus_2">contionibus et legibus,
+						</seg>
+						<seg type="comment" xml:id="contionibus_legibus_2">
+							<gloss>harangues
+								and bills</gloss> (proposed laws). The proposition of a law which
+							took the exclusive control of the courts from the Senators was even now
+							pending, and the law (<foreign xml:lang="lat">Lex Aurelia</foreign>) was
+							passed before the case of Verres was decided. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#conentur_2">conentur
+						</seg>
+						<seg type="comment" xml:id="conentur_2">,
+							purpose clause. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#magnitudine_2">magnitudine
+						</seg>
+						<seg type="comment" xml:id="magnitudine_2">,
+							abl. of means. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#spe_2">spe
+						</seg>
+						<seg type="comment" xml:id="spe_2">,
+							abl. of specification. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#actor_2">actor
+						</seg>
+						<seg type="comment" xml:id="actor_2"> , <gloss>
+								complainant</gloss>, i.e. agent or <gloss>attorney</gloss> for
+							conducting the suit in personal processes (<gloss>in personam</gloss> ). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#adduxi_hominem_2">adduxi enim hominem,
+						</seg>
+						<seg type="comment" xml:id="adduxi_hominem_2">etc.: cf. Burke, Impeachment
+							of Warren Hastings: <q rend="double">We have
+								brought before your Lordships the first man in property and power;
+								we have brought before you the head, the chief, the
+								captain-general
+								in iniquity,—one in whom all the frauds, all the peculations,
+								all
+								the tyranny in India are embodied, disciplined, and arrayed.
+								Then,
+								if we have brought before you such a person, if you strike at
+								him,
+								you will not have need of a great many more examples,— you
+								strike at
+								the whole corps if you strike at the head:</q>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_quo_2">in quo
+						</seg>
+						<seg type="comment" xml:id="in_quo_2"> , <gloss>in
+								whose case</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#reconciliare_2">reconciliare,
+						</seg>
+						<seg type="comment" xml:id="reconciliare_2"> etc., <gloss>win back the lost
+							repute.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#possetis_2">possetis
+						</seg>
+						<seg type="comment" xml:id="possetis_2">,
+							purpose. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#depeculatorem_2">depeculatorem,
+						</seg>
+						<seg type="comment" xml:id="depeculatorem_2">etc.: for a more complete
+							statement of these charges, see chs. <ref n="Cic. Ver. 1.1.4">iv</ref>, <ref n="Cic. Ver. 1.1.5">v</ref> . </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#juris_urbani_2">juris urbani,
+						</seg>
+						<seg type="comment" xml:id="juris_urbani_2"> i.e. <gloss>as praetor urbanus</gloss>
+							(see sect. <ref n="Cic. Ver. 1.1.12">12</ref>). </seg>
+					</p>
+				</div>
+				<div type="section" n="3" corresp="urn:cts:latinLit:phi0474.phi005:3">
+					<p>
+						<seg type="lemma" ana="#vos_3">vos
+						</seg>
+						<seg type="comment" xml:id="vos_3">,
+							opposed to </seg>
+						<seg type="lemma" ana="#ego_3">ego
+						</seg>
+						<seg type="comment" xml:id="ego_3">
+							below. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#religiose_3">religiose,
+						</seg>
+						<seg type="comment" xml:id="religiose_3">
+							<gloss>according to your oath.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#religionem_veritatemque_3">religionem veritatemque:
+						</seg>
+						<seg type="comment" xml:id="religionem_veritatemque_3"> here, <gloss>feeling
+							of obligation and regard for the
+								truth.</gloss>Notice that the Latin, having a comparatively poor
+							vocabulary, is obliged to use one word for all the phrases or sides of
+							an idea; hence such a word as <foreign xml:lang="lat">veritas</foreign>
+							may mean <gloss>truth</gloss> (abstractly), <gloss>a truth</gloss>
+							(concretely), the <gloss>truth</gloss> (generally), <gloss>regard
+								for truth</gloss>, or <gloss>truthful
+								conduct.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#judicium_3">judicium
+						</seg>
+						<seg type="comment" xml:id="judicium_3">, etc., i.e. the <gloss>court</gloss>
+							will be found wanting,—not a suitable defendant or a zealous prosecutor. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#equidem_3">equidem
+						</seg>
+						<seg type="comment" xml:id="equidem_3">,
+							i.e. for my own part. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quas_partim_3">quas partim,
+						</seg>
+						<seg type="comment" xml:id="quas_partim_3">
+							<gloss>some of which.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#devitarim_3">devitarim,
+						</seg>
+						<seg type="comment" xml:id="devitarim_3">subj.
+							as a part of the concession contained in </seg>
+						<seg type="lemma" ana="#cum_sint_3">cum . . .sint
+						</seg>
+						<seg type="comment" xml:id="cum_sint_3">: § <ref n="AG 593">593</ref> (342);
+							B. 324, I; G. 663, I; H. 652 (529, ii); H-B. 539. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="3_10" corresp="urn:cts:latinLit:phi0474.phi005:3-10">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:3-10">
+					<p>Verres had already relied on bribing the courts. His vain attempt to
+						delay his trial by the trumped-up Achaian case. His present effort
+						to
+						procure a postponement by corrupt means. </p>
+				</div>
+				<div type="section" n="3" corresp="urn:cts:latinLit:phi0474.phi005:3">
+					<p>
+						<seg type="lemma" ana="#neque_neque_3">neque . . . neque
+						</seg>
+						<seg type="comment" xml:id="neque_neque_3">,
+							following </seg>
+						<seg type="lemma" ana="#numquam_3">numquam,
+						</seg>
+						<seg type="comment" xml:id="numquam_3"> does not destroy the negative, but
+							is more emphatic than <foreign xml:lang="lat">aut . . . aut</foreign>. </seg>
+					</p>
+				</div>
+				<div type="section" n="4" corresp="urn:cts:latinLit:phi0474.phi005:4">
+					<p>
+						<seg type="lemma" ana="#istius_4">istius
+						</seg>
+						<seg type="comment" xml:id="istius_4">: see note on Rosc. Am., <ref n="pl4.16">p. 4, l. 16</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Glabrioni_4">Glabrioni
+						</seg>
+						<seg type="comment" xml:id="Glabrioni_4">:
+							the praetor presiding. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ordini_senatorio_4">ordini . . . senatorio,
+						</seg>
+						<seg type="comment" xml:id="ordini_senatorio_4">
+							<gloss>the senatorial order, nay, the very name of Senator.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#dictitat_4">dictitat,
+						</seg>
+						<seg type="comment" xml:id="dictitat_4">
+							<gloss>constantly
+								repeats:</gloss> § <ref n="AG 263">263</ref>, 2 (167, b); B. 155, 2,
+							a; G. 191, I; H. 364 (336); H.-B. 212, I. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#esse_metuendum_4">esse metuendum
+						</seg>
+						<seg type="comment" xml:id="esse_metuendum_4">: for <foreign xml:lang="lat">erat
+							met.</foreign> in dir. disc.; hence followed by the secondary sequence,
+							i.e. <gloss>those
+								would have to fear</gloss> (if the case were theirs), but <gloss>
+								he,</gloss> etc. § <ref n="AG 584">584</ref>, a and N. (336 A, N.l);
+							H.-B. 581, b, I. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quod_4">quod
+						</seg>
+						<seg type="comment" xml:id="quod_4">,
+							i.e. only what. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#multis_4">multis,
+						</seg>
+						<seg type="comment" xml:id="multis_4">i.e. not only for himself but also for
+							his counsel and for those whom he may wish to bribe,—in particular, the
+							jurors (see sect. <ref n="Cic. Ver. 1.1.40">40</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#pecunia_4">pecunia
+						</seg>
+						<seg type="comment" xml:id="pecunia_4">belongs
+							to both clauses, as is shown by their parallelism. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#possit_4">possit:
+						</seg>
+						<seg type="comment" xml:id="possit_4">for tense, see § <ref n="AG 485">485</ref>,
+							c (287, c); B. 268, 7; G. 513; H. 550 (495, vi); cf. H.-B. 478. </seg>
+					</p>
+				</div>
+				<div type="section" n="5" corresp="urn:cts:latinLit:phi0474.phi005:5">
+					<p>
+						<seg type="lemma" ana="#esset_5">esset:
+						</seg>
+						<seg type="comment" xml:id="esset_5">imperf. subj. in protasis of a <gloss>
+							continued</gloss> condition lasting till now; § <ref n="AG 517">517</ref>,
+							a (308, a); B. 304, 2; G. 597, R.l; H. 579, I (510, N.2); H.-B. 581. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fefellisset_5">fefellisset,
+						</seg>
+						<seg type="comment" xml:id="fefellisset_5">
+							<gloss>he would have eluded us.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cadit_5">cadit:
+						</seg>
+						<seg type="comment" xml:id="cadit_5">pres. tense, of an action lasting till
+							now; § <ref n="AG 466">466</ref> (276, a); B. 259, 4; G. 230; H. 533
+							(467, 2); H.-B. 485. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#corrumpendi_judici_5">corrumpendi judici
+						</seg>
+						<seg type="comment" xml:id="corrumpendi_judici_5"> , <gloss>of bribing the
+							court</gloss> (cf. our phrase <q rend="double">bribery
+								and corruption</q>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#factus_sit_5">factus sit:
+						</seg>
+						<seg type="comment" xml:id="factus_sit_5">for sequence, see § <ref n="AG 485">485</ref>, c, N.2 (287, C, N.); B. 268, 6; G. 513; H. 550
+							(495, vi); cf. H.-B. 478; notice that the perf. would necessarily be
+							used in the dir. disc. with </seg>
+						<seg type="lemma" ana="#cum_primum_5">cum primum
+						</seg>
+						<seg type="comment" xml:id="cum_primum_5">
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tempus_offenderet_5">tempus . . . offenderet,
+						</seg>
+						<seg type="comment" xml:id="tempus_offenderet_5">
+							<gloss>he
+								hit an unfavorable time;</gloss> because popular sentiment was
+							already so exasperated in regard to the corruption of the courts. </seg>
+					</p>
+				</div>
+				<div type="section" n="6" corresp="urn:cts:latinLit:phi0474.phi005:6">
+					<p>
+						<seg type="lemma" ana="#in_inquirendi_6">in Siciliam inquirendi,
+						</seg>
+						<seg type="comment" xml:id="in_inquirendi_6"> i.e. <gloss>for going into
+							Sicily to make an
+								investigation</gloss> (hence the acc.). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#invenit_qui_6">invenit . . . qui,
+						</seg>
+						<seg type="comment" xml:id="invenit_qui_6">
+							<gloss>he found some one who.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_Achaiam_6">in Achaiam
+						</seg>
+						<seg type="comment" xml:id="in_Achaiam_6">,
+							sc.</seg>
+						<seg type="lemma" ana="#inquirendi_6">inquirendi:
+						</seg>
+						<seg type="comment" xml:id="inquirendi_6">on
+							this trumped-up case, which was intended to have the precedence of the
+							trial of Verres, see Introd. to this Oration (p. 27). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_conficeret_6">ut . . . conficeret,
+						</seg>
+						<seg type="comment" xml:id="ut_conficeret_6">purp.
+							clause dependent on </seg>
+						<seg type="lemma" ana="#invenit_6">invenit.
+						</seg>
+						<seg type="comment" xml:id="invenit_6">
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Brundisium_6">Brundisium,
+						</seg>
+						<seg type="comment" xml:id="Brundisium_6">
+							<gloss>
+								Brindisi</gloss>,the port whence the greater part of Italian travel,
+							now as then, embarks for the East. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#obii_6">obii
+						</seg>
+						<seg type="comment" xml:id="obii_6"> ,<gloss>went
+								throughout</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#populorum_6">populorum
+						</seg>
+						<seg type="comment" xml:id="populorum_6"> ,<gloss>commmunities:</gloss> the
+							word <foreign xml:lang="lat">
+								populus, </foreign>meaning originally <gloss>multitude</gloss>, is a
+							semi-abstract noun often used to denote the community in its official
+							capacity Our use of the word <gloss>people</gloss> in some later
+							meanings frequently produces confusion in the minds of beginners. The
+							political system of the ancients was composed of an indefinite number of
+							petty communities, all possessing a certain degree of independence.
+							Hence the plur. is used here to indicate several such communities. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_posset_6">ut . . . posset
+						</seg>
+						<seg type="comment" xml:id="ut_posset_6"> (clause of result), imperf by seq.
+							of tenses: translate, however, <gloss>
+								can.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#qui_obsideret_6">qui . . . obsideret
+						</seg>
+						<seg type="comment" xml:id="qui_obsideret_6"> (purpose), <gloss>to block my
+							chance</gloss> (of bringing Verres to trial). </seg>
+					</p>
+				</div>
+				<div type="section" n="7" corresp="urn:cts:latinLit:phi0474.phi005:7">
+					<p>
+						<seg type="lemma" ana="#nunc_7">nunc:
+						</seg>
+						<seg type="comment" xml:id="nunc_7">i.e.
+							now that his former scheme has failed. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hoc_7">hoc
+						</seg>
+						<seg type="comment" xml:id="hoc_7"> ,<gloss>this
+								new idea.</gloss> What the idea is is detailed in sects. <ref n="Cic. Ver. 1.1.7">7</ref>,<ref n="Cic. Ver. 1.1.8">8</ref>: viz.
+							the reasons for desiring a postponement together with grounds for hoping
+							for it. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#civis_7">civis
+						</seg>
+						<seg type="comment" xml:id="civis_7"> ,<gloss>
+								citizens</gloss>, i.e. Romans travelling or doing business in the
+							provinces, or provincials who had received the citizenship. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#socios_7">socios,
+						</seg>
+						<seg type="comment" xml:id="socios_7">
+							<gloss>
+								allies:</gloss> citizens of communities which, although embraced
+							within the boundaries of Roman provinces, had, for special reasons, been
+							allowed to retain a nominal independence, with their own laws and
+							magistrates. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#auctoritatibus_7">auctoritatibus,
+						</seg>
+						<seg type="comment" xml:id="auctoritatibus_7">
+							<gloss>
+								documents</gloss>, i.e. official testimony (<q rend="double">
+							resolutions,</q> etc.) relating to the acts of Verres. </seg>
+					</p>
+				</div>
+				<div type="section" n="8" corresp="urn:cts:latinLit:phi0474.phi005:8">
+					<p>
+						<seg type="lemma" ana="#bonis_8">bonis
+						</seg>
+						<seg type="comment" xml:id="bonis_8"> ,<gloss>good
+								citizens:</gloss> here, as generally in Cicero, used in a partisan
+							sense for the aristocracy. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#experiatur_8">experiatur:
+						</seg>
+						<seg type="comment" xml:id="experiatur_8">this violates the sequence of
+							tenses in order to make the meaning clear; the imperf. would refer to
+							the time of getting the money, not to the present moment; cf. § <ref n="AG 481">481</ref>, N. (287, h, N.); B. 268, 7; G. 509, 1, N.;
+							H.-B. 478. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fuerit_8">fuerit
+						</seg>
+						<seg type="comment" xml:id="fuerit_8">:
+							the subj. shows that this is the thought of Verres, and not merely
+							something thrown in by Cicero. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tempus_8">tempus
+						</seg>
+						<seg type="comment" xml:id="tempus_8">:
+							the present scheme of the defence is by corrupt means to stave off the
+							trial to a more advantageous time (see chs. vi-viii). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#posses_8">posses:
+						</seg>
+						<seg type="comment" xml:id="posses_8">imperf.
+							to express his purpose at the time of the purchase. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#criminum_vim_8">criminum vim
+						</seg>
+						<seg type="comment" xml:id="criminum_vim_8"> ,<gloss>the force of the
+							charges.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#poterat_8">poterat
+						</seg>
+						<seg type="comment" xml:id="poterat_8">:indic.,
+							the reason being Cicero’s. (The whole passage is an instructive example
+							of the freedom of a living language from its own trammels. Rules are
+							made for language, not language for rules.) </seg>
+					</p>
+				</div>
+				<div type="section" n="9" corresp="urn:cts:latinLit:phi0474.phi005:9">
+					<p>
+						<seg type="lemma" ana="#eloquentia_gratia_9">eloquentia, gratia:
+						</seg>
+						<seg type="comment" xml:id="eloquentia_gratia_9">even
+							mere rhetorical skill or personal influence would be, to a criminal who
+							had no case </seg>
+						<seg type="lemma" ana="#causa_9">(causa),
+						</seg>
+						<seg type="comment" xml:id="causa_9">
+							a respectable (</seg>
+						<seg type="lemma" ana="#honesto_9">honesto
+						</seg>
+						<seg type="comment" xml:id="honesto_9">)
+							means of escape compared with these attempts at corruption. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#profecto_9">profecto
+						</seg>
+						<seg type="comment" xml:id="profecto_9"> ,<gloss>I am sure</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#aucuparetur_9">aucuparetur,
+						</seg>
+						<seg type="comment" xml:id="aucuparetur_9">
+							<gloss>be
+								fishing for</gloss> (lit. <gloss>set nets for
+								birds</gloss>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_fieret_9">ut . . . fieret,
+						</seg>
+						<seg type="comment" xml:id="ut_fieret_9">
+							<gloss>as
+								to have some one chosen to be put on trial</gloss> ; the Senate
+							itself was insulted by the selection of one of its members to be set up
+							as a man of straw, that Verres might get clear. The reference is to the
+							trumped-up case with regard to abuses in Achaia (see sect. <ref n="Cic. Ver. 1.1.6">6</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hic_9">hic
+						</seg>
+						<seg type="comment" xml:id="hic_9">,
+							i.e. Verres. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#causam_diceret_9">causam . . . diceret,
+						</seg>
+						<seg type="comment" xml:id="causam_diceret_9">
+							<gloss>stand
+								trial</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="10" corresp="urn:cts:latinLit:phi0474.phi005:10">
+					<p>
+						<seg type="lemma" ana="#quibus_rebus_10">quibus . . . rebus
+						</seg>
+						<seg type="comment" xml:id="quibus_rebus_10"> ,<gloss>from this</gloss>
+							(abl. of means with </seg>
+						<seg type="lemma" ana="#perspicio_10">perspicio
+						</seg>
+						<seg type="comment" xml:id="perspicio_10">
+							). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#consilio_10">consilio
+						</seg>
+						<seg type="comment" xml:id="consilio_10"> ,<gloss>panel</gloss>, i.e. the
+							body of jurors (cf. Rosc. Am., p. 24, I. 2). An obvious, and apparently
+							a deserved, compliment. Whatever the general character of the courts,
+							Cicero had in this instance secured a jury on whom he could rely. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_judicavit_10">in rejectione . . . judicavit,
+						</seg>
+						<seg type="comment" xml:id="in_judicavit_10">
+							<gloss>decided
+								at the challenging</gloss> (<q rend="double">throwing out</q>) <gloss>of
+							the jury</gloss>, i.e. on seeing the kind of men challenged by the two
+							sides respectively. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_arbitraretur_10">ut . . . constitueret . . .
+							arbitraretur:
+						</seg>
+						<seg type="comment" xml:id="ut_arbitraretur_10">subst.
+							clauses of result (justified by the introductory </seg>
+						<seg type="lemma" ana="#ea_10">ea
+						</seg>
+						<seg type="comment" xml:id="ea_10">) instead of the more regular acc. and
+							inf. of ind. disc.; § <ref n="AG 571">571</ref>, c (332,f); <gloss>G.
+							557</gloss>, R. and N1; cf. H. 571,4 (501, iii). </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="10_15" corresp="urn:cts:latinLit:phi0474.phi005:10-15">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:10-15">
+					<p>Crimes of Verres from his youth up. His quaestorships. His
+						city-praetorship.
+						His
+						career in Sicily. His guilt is notorious.
+					</p>
+				</div>
+				<div type="section" n="10" corresp="urn:cts:latinLit:phi0474.phi005:10">
+					<p>
+						<seg type="lemma" ana="#etenim_10">etenim,
+						</seg>
+						<seg type="comment" xml:id="etenim_10">introducing
+							the reason of </seg>
+						<seg type="lemma" ana="#nullam_rem_10">nullam sibi rem
+						</seg>
+						<seg type="comment" xml:id="nullam_rem_10">,
+							etc., above. </seg>
+					</p>
+				</div>
+				<div type="section" n="11" corresp="urn:cts:latinLit:phi0474.phi005:11">
+					<p>
+						<seg type="lemma" ana="#adulescentiae_11">adulescentiae,
+						</seg>
+						<seg type="comment" xml:id="adulescentiae_11">i.e.
+							before he entered public life. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quaestura_11">quaestura,
+						</seg>
+						<seg type="comment" xml:id="quaestura_11">
+							<gloss>
+								quaestorship</gloss>, the first grade of political honor. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Carbonem_11">Carbonem:
+						</seg>
+						<seg type="comment" xml:id="Carbonem_11">Carbo was the leader of the Marian
+							faction after the death of Marius and Cinna. He was consul <date when="-0082">B.C. 82</date>, the year of Sulla’s return and victory.
+							Verres was his quaestor (or paymaster), and went over to the enemy with
+							the money-chest when he saw which side was likely to prevail. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#necessitudinem_religionemque_11">necessitudinem religionemque:
+						</seg>
+						<seg type="comment" xml:id="necessitudinem_religionemque_11">the quaestor
+							was originally nominated specially by the consul; and the peculiarly
+							close and sacred relation (<foreign xml:lang="lat">
+								necessitudo</foreign>) existing between them was known as <foreign xml:lang="lat">pietas</foreign>,—a sentiment akin to filial
+							affection. The designation by lot (<foreign xml:lang="lat">sors</foreign>)
+							was also held to be a token of divine will, and therefore sacred (<foreign xml:lang="lat">religio</foreign>). In betraying his consul, then,
+							Verres was guilty of more than an ordinary breach of trust,—he committed
+							an act of impiety. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#legatio_11">legatio:
+						</seg>
+						<seg type="comment" xml:id="legatio_11">Verres was in <date from="-0080" to="-0079">
+								<date when="-0080">B.C. 80</date>-79</date>
+								<foreign xml:lang="lat">
+							legatus</foreign> and acting quaestor (</seg>
+						<seg type="lemma" ana="#pro_quaestore_11">pro quaestore
+						</seg>
+						<seg type="comment" xml:id="pro_quaestore_11">)
+							of Dolabella, whose province was Cilicia. The extortions of the two were
+							practiced in the adjoining regions of Pamphylia, Pisidia, and parts of
+							Asia (i.e. of the Roman province of Asia, the old kingdom of Pergamus,
+							embracing the western part of Asia Minor); </seg>
+						<seg type="lemma" ana="#totius_11">totius
+						</seg>
+						<seg type="comment" xml:id="totius_11">
+							is a rhetorical exaggeration. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#scelus_quaestorium_11">scelus . . . quaestorium:
+						</seg>
+						<seg type="comment" xml:id="scelus_quaestorium_11">Verres
+							treated Dolabella much as he had treated Carbo. Neither of these
+							infamous commanders deserved better treatment; but this does not excuse
+							the perfidy of Verres. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#pro_quaestore_11_2">pro quaestore,
+						</seg>
+						<seg type="comment" xml:id="pro_quaestore_11_2">
+							<gloss>acting
+								quaestor:</gloss>when there was a vacancy in a provincial
+							quaestorship, the commander might appoint any person to perform the
+							duties of the office. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#adduxit_11">adduxit:
+						</seg>
+						<seg type="comment" xml:id="adduxit_11">Dolabella,
+							in addition to the odium of his own crimes, had to bear the infamy of
+							the outrageous acts of Verres; and after all Verres saved himself by
+							turning against him (</seg>
+						<seg type="lemma" ana="#oppugnavit_11">oppugnavit
+						</seg>
+						<seg type="comment" xml:id="oppugnavit_11">)
+							and appearing as a witness in his trial for extortion. </seg>
+					</p>
+				</div>
+				<div type="section" n="12" corresp="urn:cts:latinLit:phi0474.phi005:12">
+					<p>
+						<seg type="lemma" ana="#aedium_12">aedium,
+						</seg>
+						<seg type="comment" xml:id="aedium_12">etc.
+							The public buildings were regularly under the charge of the aedile, not
+							of the praetor; the cases referred to here were certain flagrant
+							instances of corruption and extortion arising out of contracts for
+							public buildings, in which the praetor had it exceptionally in his power
+							to interfere for his own advantage. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_dicere_12">in jure dicundo: jus dicere
+						</seg>
+						<seg type="comment" xml:id="in_dicere_12"> (<foreign xml:lang="lat">
+							jurisdictio</foreign>),<gloss>declaring the
+								law</gloss>, was the primary function of the praetor. </seg>
+						<seg type="lemma" ana="#bonorum_addictio_12">bonorum . . . addictio
+						</seg>
+						<seg type="comment" xml:id="bonorum_addictio_12">is
+							the adjudging of property to a claimant; </seg>
+						<seg type="lemma" ana="#condonatio_12">condonatio
+						</seg>
+						<seg type="comment" xml:id="condonatio_12"> (<gloss>
+								grant</gloss>) is the act of giving it up to a defendant: no matter
+							which way the decision of Verres went in a case, his action was sure to
+							be unlawful and for his own corrupt ends. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#instituta_12">instituta
+						</seg>
+						<seg type="comment" xml:id="instituta_12"> ,<gloss>
+								precedents</gloss>. The edicts of the praetors made up a body of
+							common law, not absolutely binding, however, on their successors. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#jam_vero_12">jam vero,
+						</seg>
+						<seg type="comment" xml:id="jam_vero_12">
+							<gloss>but
+								finally</gloss>, introducing the climax of the list of crimes. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#possit_12">possit:
+						</seg>
+						<seg type="comment" xml:id="possit_12">for tense, see § <ref n="AG 485">485</ref>,
+							c (287, c); B. 268, 7; G. 513; H. 550 (495, vi); cf. H.-B. 478. </seg>
+					</p>
+				</div>
+				<div type="section" n="13" corresp="urn:cts:latinLit:phi0474.phi005:13">
+					<p>
+						<seg type="lemma" ana="#communia_jura_13">communia jura,
+						</seg>
+						<seg type="comment" xml:id="communia_jura_13"> the same as <foreign xml:lang="lat">jus gentium</foreign>, those laws common to all
+							mankind (see note on </seg>
+						<seg type="lemma" ana="#jure_gentium_13">jure gentium
+						</seg>
+						<seg type="comment" xml:id="jure_gentium_13">, Rosc. Am., <ref n="pl21.3">p.
+							21, l. 3</ref>). The terms <foreign xml:lang="lat">leges,
+							senatus-consulta, jura</foreign> include the three sources of provincial
+							law. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tantum_13">tantum,
+						</seg>
+						<seg type="comment" xml:id="tantum_13"> [only] <gloss>so
+								much.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#imprudentiam_subterfugit_13">imprudentiam subterfugit,
+						</seg>
+						<seg type="comment" xml:id="imprudentiam_subterfugit_13">
+							<gloss>escaped
+								his vigilance</gloss> (lit. <gloss>want of
+								vigilance).</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#res_13">res,
+						</seg>
+						<seg type="comment" xml:id="res_13">
+							<gloss>
+								case;</gloss>
+						</seg>
+						<seg type="lemma" ana="#res_13_2">res
+						</seg>
+						<seg type="comment" xml:id="res_13_2"> (next line), <gloss>
+								property.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ab_eo_13">ab eo
+						</seg>
+						<seg type="comment" xml:id="ab_eo_13"> ,<gloss>away
+								from him</gloss>, i.e. the possessor. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#aratorum_13">aratorum,
+						</seg>
+						<seg type="comment" xml:id="aratorum_13">
+							<gloss>
+								cultivators</gloss> (whether tenants or proprietors), who paid
+							tithes (<foreign xml:lang="lat">decumae</foreign>) to the state. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#socii_13">socii
+						</seg>
+						<seg type="comment" xml:id="socii_13">: see note on <ref n="pl30.31">p. 30,
+							l. 31</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cruciati_necati_13">cruciati et necati:
+						</seg>
+						<seg type="comment" xml:id="cruciati_necati_13">a Roman citizen could not
+							legally receive any punishment touching life or limb, except by judgment
+							of his peers in Rome. Thus, Jesus was crucified by the Roman governor
+							Pilate under the ordinary provincial law applying to Jews; while Paul, a
+							Roman citizen of the free city Tarsus, appealed to Caesar, and was sent
+							to Rome for trial. (See extract from Verr. v, and pp. 59-65: (<q rend="double">Crucifixion
+								of a Roman Citizen.</q>) </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#rei_facti_13">rei facti
+						</seg>
+						<seg type="comment" xml:id="rei_facti_13"> ,<gloss>
+								accused</gloss> (</seg>
+						<seg type="lemma" ana="#rei_13">rei
+						</seg>
+						<seg type="comment" xml:id="rei_13"> from <foreign xml:lang="lat">reus</foreign>).
+							The details of these charges are given in the five orations of the <foreign xml:lang="lat">Accusatio</foreign>; it would require too much space
+							to repeat them here. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ejecti_13">ejecti,
+						</seg>
+						<seg type="comment" xml:id="ejecti_13">
+							<gloss>
+								expelled</gloss> from the country. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#optimae_13">optimae
+						</seg>
+						<seg type="comment" xml:id="optimae_13"> ,<gloss>
+								best</gloss> in themselves;</seg>
+						<seg type="lemma" ana="#opportunissimae_13">opportunissimae,
+						</seg>
+						<seg type="comment" xml:id="opportunissimae_13">
+							<gloss>most
+								valuable</gloss> under the circumstances. </seg>
+					</p>
+				</div>
+				<div type="section" n="14" corresp="urn:cts:latinLit:phi0474.phi005:14">
+					<p>
+						<seg type="lemma" ana="#regum_14">regum
+						</seg>
+						<seg type="comment" xml:id="regum_14">:
+							the famous kings of Syracuse,— Hiero, Agathocles, etc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#imperatorum_14">imperatorum:
+						</seg>
+						<seg type="comment" xml:id="imperatorum_14">Marcellus,
+							who conquered Syracuse, and Scipio Africanus the elder, who had Sicily
+							as his province and crossed over from there for the conquest of
+							Carthage. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#deum_14">deum
+						</seg>
+						<seg type="comment" xml:id="deum_14">,
+							i.e. statue of a god (see pp. 55, 56). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#videretur_14">videretur:
+						</seg>
+						<seg type="comment" xml:id="videretur_14">subj.
+							of characteristic. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#commemorare_14">commemorare:
+						</seg>
+						<seg type="comment" xml:id="commemorare_14">complem. infin. for subj. with <foreign xml:lang="lat">ne</foreign> or <foreign xml:lang="lat">quominus</foreign>;
+							§<ref n="AG 558">558</ref>, b, N. (331, e, 2); B. 295, 3 and N.; G. 548,
+							N.2; H. 596, ii (505, ii); H.-B. 587 and a. </seg>
+					</p>
+				</div>
+				<div type="section" n="15" corresp="urn:cts:latinLit:phi0474.phi005:15">
+					<p>
+						<seg type="lemma" ana="#at_enim_15">at enim
+						</seg>
+						<seg type="comment" xml:id="at_enim_15"> (a supposed objection), <gloss>but,you
+							may say.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quin_possit_15">quin . . . possit:
+						</seg>
+						<seg type="comment" xml:id="quin_possit_15"> §<ref n="AG 559">559</ref>
+							(319, d ); B. 284, 3; G.556; H 595, I (504, I); H.-B 521, I. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_sit_15">ut . . . timendum sit:
+						</seg>
+						<seg type="comment" xml:id="ut_sit_15">clause
+							of result. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#multitudo_15">multitudo:
+						</seg>
+						<seg type="comment" xml:id="multitudo_15">including
+							a large number of Sicilians, present at Rome for the purpose of
+							prosecuting Verres, and of course personally cognizant of his crimes. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="15_20" corresp="urn:cts:latinLit:phi0474.phi005:15-20">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:15-20">
+					<p>Verres attempted to buy up the court in advance, but, on the selection of the
+						present jury, lost heart (sects. <ref n="Cic. Ver. 1.1.16">16</ref>,<ref n="Cic. Ver. 1.1.17">17</ref>). The election of Hortensius to the
+						consulship gave him fresh courage (sect. <ref n="Cic. Ver. 1.1.17">17</ref>).
+						A significant incident on election day (sects. <ref n="Cic. Ver. 1.1.18">18</ref>
+						-<ref n="Cic. Ver. 1.1.20">20</ref>). </p>
+					<p>Cicero here returns to the subject of bribery. He has already asserted
+						(sects. <ref n="Cic. Ver. 1.1.3">3</ref>-<ref n="Cic. Ver. 1.1.10">10</ref>)
+						that this had always been the sole hope of Verres; he has pointed out that
+						Verres need not expect to corrupt the present tribunal (sect. <ref n="Cic. Ver. 1.1.10">10</ref>), and that his guilt is so enormous and so
+						notorious that no honest jury could fail to convict him (sects. <ref n="Cic. Ver. 1.1.10">10</ref> -<ref n="Cic. Ver. 1.1.14">14</ref>). He
+						now goes on to show that in endeavoring to postpone the trial Verres is, as
+						heretofore, trying to defeat justice by corrupt means. In establishing this
+						point, the orator reviews the several schemes of bribery, thus leading up to
+						the matter immediately before the court and bringing out the fact that it is
+						like the devices that had preceded it.</p>
+				</div>
+				<div type="section" n="15" corresp="urn:cts:latinLit:phi0474.phi005:15">
+					<p>
+						<seg type="lemma" ana="#eloquentiam_15">eloquentiam,
+						</seg>
+						<seg type="comment" xml:id="eloquentiam_15">etc.: see note on <ref n="pl31.12">p. 31, l. 12</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#potentia_15">potentia,
+						</seg>
+						<seg type="comment" xml:id="potentia_15">
+							<gloss>control
+								of the courts:</gloss> a stronger word than </seg>
+						<seg type="lemma" ana="#gratia_15">gratia
+						</seg>
+						<seg type="comment" xml:id="gratia_15"> (<q rend="double">personal influence</q>)
+							or </seg>
+						<seg type="lemma" ana="#auctoritate_15">auctoritate
+						</seg>
+						<seg type="comment" xml:id="auctoritate_15"> (<q rend="double">official
+							influence</q>) and indicating a kind of <gloss>
+								domination</gloss> over the courts. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#simulat_proponit_15">simulat, proponit:
+						</seg>
+						<seg type="comment" xml:id="simulat_proponit_15">notice the emphatic
+							position of these verbs, as opposed to what Verres is really<gloss>
+							doing.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#proponit_15">proponit,
+						</seg>
+						<seg type="comment" xml:id="proponit_15">
+							<gloss>puts
+								forward</gloss> (i.e. as his backers). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#inania_15">inania
+						</seg>
+						<seg type="comment" xml:id="inania_15"> ,<gloss>
+								idle</gloss>: i.e. mere names, because Verres does not really rely
+							upon these men, but upon a scheme which Cicero details in the following
+							sections. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#noti_15">noti
+						</seg>
+						<seg type="comment" xml:id="noti_15"> ,<gloss>
+								notorious</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#simulat_15">simulat:
+						</seg>
+						<seg type="comment" xml:id="simulat_15">cf.
+							note on </seg>
+						<seg type="lemma" ana="#simulat_15_2">simulat,
+						</seg>
+						<seg type="comment" xml:id="simulat_15_2">l.
+							30, above. </seg>
+					</p>
+				</div>
+				<div type="section" n="16" corresp="urn:cts:latinLit:phi0474.phi005:16">
+					<p>
+						<seg type="lemma" ana="#redemptio_16">redemptio:
+						</seg>
+						<seg type="comment" xml:id="redemptio_16">a
+							contract with another party for buying up the court. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#mansit_pacto_16">mansit . . . pacto,
+						</seg>
+						<seg type="comment" xml:id="mansit_pacto_16">
+							<gloss>held
+								on to the terms of the bargain</gloss> (hendiadys): until the jury
+							was actually made up, the bargain could not be absolutely concluded;
+							when the character of the jury was known, the contract was annulled. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#rejectio_16">rejectio:
+						</seg>
+						<seg type="comment" xml:id="rejectio_16">after
+							Cicero’s careful challenging, the lot had fortunately given a
+							trustworthy jury. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#istorum_16">istorum,
+						</seg>
+						<seg type="comment" xml:id="istorum_16">i.e.
+							the partisans of Verres. </seg>
+					</p>
+				</div>
+				<div type="section" n="17" corresp="urn:cts:latinLit:phi0474.phi005:17">
+					<p>
+						<seg type="lemma" ana="#praeclare_17">praeclare,
+						</seg>
+						<seg type="comment" xml:id="praeclare_17">
+							<gloss>
+								admirably</gloss> well for the cause of justice. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#libelli_17">libelli,
+						</seg>
+						<seg type="comment" xml:id="libelli_17">
+							<gloss>
+								lists</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#color_17">color:
+						</seg>
+						<seg type="comment" xml:id="color_17">a covert allusion to a former case, in
+							which Hortensius had been counsel, and in which colored ballots were
+							given to the bribed jurors in order to make sure that they voted as they
+							had agreed (see sect. <ref n="Cic. Ver. 1.1.40">40</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sententiis_17">sententiis:
+						</seg>
+						<seg type="comment" xml:id="sententiis_17">this is the word regularly used
+							for a formal and official expression of opinion in the Senate (<gloss>
+							vote</gloss>) or in a court of justice (<gloss>
+								verdict</gloss>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cum_17">cum
+						</seg>
+						<seg type="comment" xml:id="cum_17"> ,<gloss>
+								whereupon</gloss> (inversion): § <ref n="AG 546">546</ref>, a (325,
+							b); B. 288, 2; G. 581; H. 600, i, I (521, ii, I); H.-B. 566, a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ex_alacri_17">ex alacri
+						</seg>
+						<seg type="comment" xml:id="ex_alacri_17"> ,<gloss>from
+								being</gloss>, etc.; cf. the Latinism in Milton, <gloss>Par.
+								Lost</gloss>, ix, 563: <q rend="double">How cam’st thou
+								speakable of
+								mute?</q>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#his_paucis_17">his diebus paucis
+						</seg>
+						<seg type="comment" xml:id="his_paucis_17"> ,<gloss>a few days ago:</gloss>
+							the consular and other elections were held this year, as usual, toward
+							the end of July. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#famae_fortunis_17">famae fortunis,
+						</seg>
+						<seg type="comment" xml:id="famae_fortunis_17">dat.
+							after </seg>
+						<seg type="lemma" ana="#insidiae_comparantur_17">insidiae comparantur.
+						</seg>
+						<seg type="comment" xml:id="insidiae_comparantur_17">
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#per_homines_17">per eosdem homines,
+						</seg>
+						<seg type="comment" xml:id="per_homines_17">i.e. the same professional
+							bribers (the <gloss>redemptor</gloss>, etc., referred to in sect. <ref n="Cic. Ver. 1.1.16">16</ref> ). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#aperto_17">aperto
+						</seg>
+						<seg type="comment" xml:id="aperto_17">, etc., <gloss>when
+								the door to suspicion had once been
+								opened.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="18" corresp="urn:cts:latinLit:phi0474.phi005:18">
+					<p>
+						<seg type="lemma" ana="#nam_18">nam:
+						</seg>
+						<seg type="comment" xml:id="nam_18">introducing
+							Cicero’s account of the significant incident referred to above in the
+							words </seg>
+						<seg type="lemma" ana="#pertenui_argumento_18">pertenui argumento
+						</seg>
+						<seg type="comment" xml:id="pertenui_argumento_18">
+							(l.24). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#reducebatur_18">reducebatur:
+						</seg>
+						<seg type="comment" xml:id="reducebatur_18">the
+							successful candidate was escorted home by his friends after the
+							election. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Campo_18">Campo:
+						</seg>
+						<seg type="comment" xml:id="Campo_18"> see note on <ref n="pl104.7">p. 104,
+							l. 7</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Curio_18">Curio
+						</seg>
+						<seg type="comment" xml:id="Curio_18">:
+							C. Scribonius Curio, one of the leaders of the aristocratic party, was
+							always a good friend of Cicero’s. Curio, like Horten sius and Metellus,
+							was a man of excellent reputation. His support of Verres was due to
+							political and social ties. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#honoris_causa_18">honoris causa
+						</seg>
+						<seg type="comment" xml:id="honoris_causa_18">: see note on Rosc. Am., <ref n="pl3.28">p. 3, l. 28</ref>. The words in brackets are probably not
+							genuine. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tamen_18">tamen,
+						</seg>
+						<seg type="comment" xml:id="tamen_18">i.e.
+							in spite of Curio’s open way of speaking. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ratio_18">ratio
+						</seg>
+						<seg type="comment" xml:id="ratio_18"> ,<gloss>
+								consideration.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="19" corresp="urn:cts:latinLit:phi0474.phi005:19">
+					<p>
+						<seg type="lemma" ana="#videt_19">videt
+						</seg>
+						<seg type="comment" xml:id="videt_19">,
+							etc.: observe the hist. pres., marking a change to lively narrative. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fornicem_Fabianum_19">fornicem Fabianum,
+						</seg>
+						<seg type="comment" xml:id="fornicem_Fabianum_19"> the<gloss> Fabian Arch</gloss>,
+							erected <date when="-0109">B.C.
+								109</date> by Q. Fabius Maximus Allobrogicus,—one of the earliest
+							triumphal arches in Rome. It stood at the southern end of the Forum, and
+							served as an entrance to it. Fig. 3 (Arch of Gallienus) shows the
+							situation of such structures with respect to streets. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#defertur_19">defertur
+						</seg>
+						<seg type="comment" xml:id="defertur_19">signifies
+							a formal announcement by some one person; </seg>
+						<seg type="lemma" ana="#narrabat_19">narrabat
+						</seg>
+						<seg type="comment" xml:id="narrabat_19"> means <gloss>
+								told</gloss>, casually, as a piece of news. The use of tenses in </seg>
+						<seg type="lemma" ana="#viderat_narrabat_19">viderat . . . narrabat
+						</seg>
+						<seg type="comment" xml:id="viderat_narrabat_19">is like that in the general
+							condition in past time: § <ref n="AG 518">518</ref>, b (309, c); cf. B.
+							302, 3; G. 594, N.I; cf. H.-B 579. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#criminum_ratione_19">criminum ratione,
+						</seg>
+						<seg type="comment" xml:id="criminum_ratione_19">
+							<gloss>the nature of the charges.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#positam_19">positam,
+						</seg>
+						<seg type="comment" xml:id="positam_19">
+							<gloss>resting on.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#altius_19">altius
+						</seg>
+						<seg type="comment" xml:id="altius_19"> ,<gloss>
+								deeper.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="20" corresp="urn:cts:latinLit:phi0474.phi005:20">
+					<p>
+						<seg type="lemma" ana="#ratiocinabantur_20">ratiocinabantur,
+						</seg>
+						<seg type="comment" xml:id="ratiocinabantur_20">
+							<gloss>
+								reasoned</gloss> (the imperf. describing a state of mind, and one
+							existing in different persons). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ipse_20">ipse
+						</seg>
+						<seg type="comment" xml:id="ipse_20">, etc.: cf. sect. <ref n="Cic. Ver. 1.1.17">17</ref>, ll. 17-19. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quod_20">quod
+						</seg>
+						<seg type="comment" xml:id="quod_20"> ,<gloss>the
+								fact that.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#negotiatores_20">negotiatores,
+						</seg>
+						<seg type="comment" xml:id="negotiatores_20">Roman
+							citizens doing business in Sicily. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#omnes_litterae_20">omnes . . . litterae,
+						</seg>
+						<seg type="comment" xml:id="omnes_litterae_20">
+							<gloss>all
+								kinds of</gloss>, etc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#publicae_20">publicae,
+						</seg>
+						<seg type="comment" xml:id="publicae_20">
+							<gloss>
+								official</gloss>, from cities of Sicily (as </seg>
+						<seg type="lemma" ana="#auctoritates_20">auctoritates,
+						</seg>
+						<seg type="comment" xml:id="auctoritates_20">
+							above). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#existimationem_20">existimationem,
+						</seg>
+						<seg type="comment" xml:id="existimationem_20">
+							<gloss>
+								opinion</gloss>, i.e. their estimate of the character of Verres. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#unius_20">unius,
+						</seg>
+						<seg type="comment" xml:id="unius_20">i.e.
+							Hortensius. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#moderatione_20">moderatione,
+						</seg>
+						<seg type="comment" xml:id="moderatione_20">
+							<gloss>control.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#vertentur_20">vertentur,
+						</seg>
+						<seg type="comment" xml:id="vertentur_20">
+							<gloss>are to turn on.</gloss>
+						</seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="20_25" corresp="urn:cts:latinLit:phi0474.phi005:20-25">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:20-25">
+					<p>sect. <ref n="Cic. Ver. 1.1.25">25</ref>. Metellus is chosen (by lot) to
+						preside over the Court of Extortion for the next year. Joy of Verres. His
+						attempts to defeat by bribery Cicero’s election to the aedileship revealed
+						to Cicero. Cicero made anxious, but finally elected. </p>
+				</div>
+				<div type="section" n="20" corresp="urn:cts:latinLit:phi0474.phi005:20">
+					<p>
+						<seg type="lemma" ana="#quidem_20">quidem
+						</seg>
+						<seg type="comment" xml:id="quidem_20"> (concessive), <gloss>it is true:</gloss>
+							this criminal may be rescued, but such a thing will not be allowed to
+							happen again; the judicial power will be given into other hands (i.e.
+							those of the <gloss>
+								equites</gloss>); cf. </seg>
+						<seg type="lemma" ana="#de_judiciis_20">de transferendis judiciis,
+						</seg>
+						<seg type="comment" xml:id="de_judiciis_20">
+							below. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nos_20">nos,
+						</seg>
+						<seg type="comment" xml:id="nos_20">i.e.
+							we Senators. </seg>
+					</p>
+				</div>
+				<div type="section" n="21" corresp="urn:cts:latinLit:phi0474.phi005:21">
+					<p>
+						<seg type="lemma" ana="#hominis_amplissimi_21">hominis amplissimi,
+						</seg>
+						<seg type="comment" xml:id="hominis_amplissimi_21">i.e.
+							Curio: the congratulations of so honored a man showed the expected
+							effect of the election on this trial. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nova_21">nova
+						</seg>
+						<seg type="comment" xml:id="nova_21"> ,<gloss>
+								strange</gloss> (surprising). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#dissimulare_21">dissimulare
+						</seg>
+						<seg type="comment" xml:id="dissimulare_21"> ,<gloss>to
+								conceal the fact that</gloss>, etc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sortirentur_21">sortirentur
+						</seg>
+						<seg type="comment" xml:id="sortirentur_21"> ,<gloss>were
+								drawing their lots:</gloss> the particular posts or duties of
+							coordinate magistrates (like the several praetors) were assigned by lot. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Metello_21">Metello:
+						</seg>
+						<seg type="comment" xml:id="Metello_21">a
+							brother of Q. Metellus Creticus, consul elect, and of L. Metellus,
+							praetor in Sicily. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#obtigisset_21">obtigisset,
+						</seg>
+						<seg type="comment" xml:id="obtigisset_21">
+							<gloss>had
+								fallen to</gloss> (the regular word for this kind of assignment). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_quaereret_21">ut . . . quaereret
+						</seg>
+						<seg type="comment" xml:id="ut_quaereret_21">, to <gloss>have charge of the
+							Court of Extortion:</gloss> subst. clause of result; § <ref n="AG 569">
+							569</ref>, 2 (332, a, 2); B. 297, 2; G. 553, 3; H. 571,1 (501, i, I);
+							H.-B. 521, 3, <gloss>a.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#de_repetundis_21">de pecuniis repetundis,
+						</seg>
+						<seg type="comment" xml:id="de_repetundis_21">
+							<gloss>of
+								extortion</gloss> (lit. <gloss>concerning demanding back
+								the</gloss> [extorted] <gloss>property).</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#factam_21">factam,
+						</seg>
+						<seg type="comment" xml:id="factam_21">
+							<gloss>offered.—</gloss>
+						</seg>
+						<seg type="lemma" ana="#pueros_21">pueros,
+						</seg>
+						<seg type="comment" xml:id="pueros_21">
+							<gloss>slaves.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="22" corresp="urn:cts:latinLit:phi0474.phi005:22">
+					<p>
+						<seg type="lemma" ana="#sane_22">sane,
+						</seg>
+						<seg type="comment" xml:id="sane_22"> you <gloss>may
+								be sure.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ne_quidem_22">ne haec quidem,
+						</seg>
+						<seg type="comment" xml:id="ne_quidem_22"> etc., <gloss>this incident did
+							not please me either.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#neque_intellegebam_22">neque . . . intellegebam,
+						</seg>
+						<seg type="comment" xml:id="neque_intellegebam_22">i.e.
+							his confidence in the integrity of Metellus was so great that he did not
+							even yet see through the tricks of the defence. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tanto_opere_22">tanto opere
+						</seg>
+						<seg type="comment" xml:id="tanto_opere_22"> ,<gloss>so
+								very well</gloss> (with </seg>
+						<seg type="lemma" ana="#intellegebam_22">intellegebam
+						</seg>
+						<seg type="comment" xml:id="intellegebam_22">
+							). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#reperiebam_22">reperiebam
+						</seg>
+						<seg type="comment" xml:id="reperiebam_22">:
+							the imperf. denotes a succession of items of information. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#senatore_22">senatore
+						</seg>
+						<seg type="comment" xml:id="senatore_22">, etc.: the Senator, a man of the
+							same class as Verres, put the money to be used in the elections and
+							trial into the hands of an <gloss>
+								eques</gloss>,one of the class that had the management of all such
+							financial operations. He retained, however, say (</seg>
+						<seg type="lemma" ana="#quasi_22">quasi
+						</seg>
+						<seg type="comment" xml:id="quasi_22">)
+							ten baskets, to be used directly to defeat Cicero’s election as aedile. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nomine_22">nomine
+						</seg>
+						<seg type="comment" xml:id="nomine_22">, on <gloss>account
+								of.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#divisores_22">divisores
+						</seg>
+						<seg type="comment" xml:id="divisores_22"> ,<gloss>
+								managers.</gloss> The money to be used at elections was put into the
+							hands of <foreign xml:lang="lat">sequestres</foreign> (election agents),
+							who themselves made use of <foreign xml:lang="lat">divisores</foreign>
+							to approach the voters personally. On this occasion, the exigency was so
+							great that Verres (</seg>
+						<seg type="lemma" ana="#istum_22">istum
+						</seg>
+						<seg type="comment" xml:id="istum_22">) summoned the <foreign xml:lang="lat">
+							divisores</foreign> to his own house, without the mediation of <foreign xml:lang="lat">sequestres</foreign> . </seg>
+					</p>
+				</div>
+				<div type="section" n="23" corresp="urn:cts:latinLit:phi0474.phi005:23">
+					<p>
+						<seg type="lemma" ana="#omnia_debere_23">omnia debere,
+						</seg>
+						<seg type="comment" xml:id="omnia_debere_23">
+							<gloss>was bound to do anything for me.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#proximis_23">proximis,
+						</seg>
+						<seg type="comment" xml:id="proximis_23">
+							<gloss>the last.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#negasse_audere_23">negasse audere
+						</seg>
+						<seg type="comment" xml:id="negasse_audere_23"> ,<gloss>said
+								they did not dare.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fortem_23">fortem,
+						</seg>
+						<seg type="comment" xml:id="fortem_23">
+							<gloss>
+								stanch</gloss> (ironical), in allusion to </seg>
+						<seg type="lemma" ana="#audere_23">audere
+						</seg>
+						<seg type="comment" xml:id="audere_23">
+							(l.23). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Romilia_23">Romilia
+						</seg>
+						<seg type="comment" xml:id="Romilia_23">,
+							without </seg>
+						<seg type="lemma" ana="#tribu_23">tribu
+						</seg>
+						<seg type="comment" xml:id="tribu_23">
+							expressed,—the regular way of giving the name of a man’s tribe. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ex_disciplina_23">ex optima . . . disciplina,
+						</seg>
+						<seg type="comment" xml:id="ex_disciplina_23">
+							<gloss>from
+								the best school</gloss> (ironical), i.e. that of Verres’ father. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#HS_23">HS
+						</seg>
+						<seg type="comment" xml:id="HS_23">: the defeat of Cicero would, therefore,
+							cost nearly $25,000; See § <ref n="AG 632">632</ref>-635(377-380); G.
+							493; H.757,2(647); H.-B.675 </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#se_esse_23">se unâ facturos esse
+						</seg>
+						<seg type="comment" xml:id="se_esse_23"> ,<gloss>that they would act with
+							him</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="24" corresp="urn:cts:latinLit:phi0474.phi005:24">
+					<p>A lively description of the embarrassment in which Cicero was placed
+						at the end of July by the election and the trial, both coming on
+						together. </p>
+					<p>
+						<seg type="lemma" ana="#in_ipsis_24">in his ipsis,
+						</seg>
+						<seg type="comment" xml:id="in_ipsis_24">
+							<gloss>in
+								that too</gloss> (as well as the trial). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#agere_deterrebar_24">agere . . . deterrebar
+						</seg>
+						<seg type="comment" xml:id="agere_deterrebar_24"> ,<gloss>from doing freely
+							what</gloss>, etc., <gloss>I was
+								deterred by</gloss>, etc.: § <ref n="AG 558">558</ref>, b (331, e,
+							2); B. 295, N.; G. 423, 2, N.2; H. 596, 2 (505, ii); H.-B. 587 and a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#petitioni_24">petitioni,
+						</seg>
+						<seg type="comment" xml:id="petitioni_24">
+							<gloss>canvass.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ratio_24">ratio
+						</seg>
+						<seg type="comment" xml:id="ratio_24">
+							<gloss>, good policy.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="25" corresp="urn:cts:latinLit:phi0474.phi005:25">
+					<p>
+						<seg type="lemma" ana="#denuntiatum_esse_25">denuntiatum esse,
+						</seg>
+						<seg type="comment" xml:id="denuntiatum_esse_25">
+							<gloss>that
+								a message was sent.</gloss> This compound implies a peremptory and
+							threatening message. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#primum_25">primum
+						</seg>
+						<seg type="comment" xml:id="primum_25">
+							corresponds to </seg>
+						<seg type="lemma" ana="#arcessit_alter_25">arcessit alter
+						</seg>
+						<seg type="comment" xml:id="arcessit_alter_25">, etc., <ref n="pl38.4">p.
+							38, l. 4</ref>, below. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_venirent_25">ut venirent
+						</seg>
+						<seg type="comment" xml:id="ut_venirent_25">:
+							subj. of purpose, since </seg>
+						<seg type="lemma" ana="#denuntiatum_est_25">denuntiatum est
+						</seg>
+						<seg type="comment" xml:id="denuntiatum_est_25"> expresses a command; § <ref n="AG 580">580</ref>, a (332, <gloss>h</gloss>); cf. B. 295, 1; G.
+							546, N.I; H. 564 (540, iii); H.-B. 502, 3, a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sane_liberos_25">sane liberos,
+						</seg>
+						<seg type="comment" xml:id="sane_liberos_25">
+							<gloss>pretty
+								independent</gloss>, i.e. in refusing to come. If he had been
+							consul, instead of merely consul elect, they would have had to come. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#venisse_25">venisse
+						</seg>
+						<seg type="comment" xml:id="venisse_25">:
+							the subj. acc. is </seg>
+						<seg type="lemma" ana="#eos_25">eos
+						</seg>
+						<seg type="comment" xml:id="eos_25">, the
+							implied antecedent of </seg>
+						<seg type="lemma" ana="#qui_25">qui
+						</seg>
+						<seg type="comment" xml:id="qui_25"> . </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ceterorum_25">ceterorum,
+						</seg>
+						<seg type="comment" xml:id="ceterorum_25">i.e.
+							those for consuls and praetors, which had lately been held. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cursare_25">cursare
+						</seg>
+						<seg type="comment" xml:id="cursare_25"> (historical infinitive), <gloss>ran
+							hither and
+								thither.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#paternos_amicos_25">paternos amicos:
+						</seg>
+						<seg type="comment" xml:id="paternos_amicos_25"> see <ref n="pl36.26">p. 36,
+							l. 26</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#appellare_convenire_25">appellare . . . et convenire,
+						</seg>
+						<seg type="comment" xml:id="appellare_convenire_25">
+							<gloss>accosted and conferred with.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cuius_25">cuius
+						</seg>
+						<seg type="comment" xml:id="cuius_25">:
+							the antecedent is </seg>
+						<seg type="lemma" ana="#eiusdem_25">eiusdem
+						</seg>
+						<seg type="comment" xml:id="eiusdem_25">
+							(l.19). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#de_fide_25">de fide
+						</seg>
+						<seg type="comment" xml:id="de_fide_25">, i.e. <gloss>his
+								good faith</gloss> to the Sicilians: probably a hint that Cicero
+							himself had been approached with a bribe. </seg>
+					</p>
+				</div>
+			</div>
+			<!-- Allen and Greenough do a strange there here, beginning a new "chapter" in their
+			commentary
+				by referencing the section numbers in Cicero's speech, rather than the chapter numbers that
+				they have inserted -->
+			<div type="chapter" n="26_31" corresp="urn:cts:latinLit:phi0474.phi005:26-31">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:26-31">
+					<p>Cicero learns of the efforts made to have the trial postponed to the next
+						year in order that it might be brought before Metellus. The Sicilians are
+						threatened by one of the consuls elect (Q. Metellus Creticus) (sects. <ref n="Cic. Ver. 1.1.26">26</ref>-<ref n="Cic. Ver. 1.1.28">
+							28</ref>). By that time not only would there be a favorably disposed
+						presiding judge, but most of the jury would have been changed. It seemed
+						easy to get the trial put off, for many holidays intervened (sects. <ref n="Cic. Ver. 1.1.29">29</ref>-<ref n="Cic. Ver. 1.1.31">31</ref> ). </p>
+				</div>
+				<div type="section" n="26" corresp="urn:cts:latinLit:phi0474.phi005:26">
+					<p>
+						<seg type="lemma" ana="#eo_26">eo
+						</seg>
+						<seg type="comment" xml:id="eo_26"> ,<gloss>in
+								this course</gloss>, i.e. postponing the trial. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#esse_26">esse:
+						</seg>
+						<seg type="comment" xml:id="esse_26">indir.
+							disc. </seg>
+					</p>
+					<p>The asterisk marks a defect in the text. </p>
+					<p>
+						<seg type="lemma" ana="#praerogativam_26">praerogativam
+						</seg>
+						<seg type="comment" xml:id="praerogativam_26"> ,<gloss>an
+								earnest</gloss>. In the <gloss>comitia
+								centuriata</gloss>, it was determined by lot which century should
+							first cast its vote. The vote of this century, called <gloss>
+							praerogativa</gloss> (<foreign xml:lang="lat">praerogo</foreign>), was
+							superstitiously regarded as an omen or <gloss>earnest</gloss> of the
+							result which it was likely to decide. Hence the word is here used of the
+							effective support given to Metellus at the polls by Verres. The <foreign xml:lang="lat">praerogativa</foreign> which Q. Metellus gave to
+							Verres, in return for the <foreign xml:lang="lat">
+								praerogativae</foreign> of the comitia, is described in the next
+							section. </seg>
+					</p>
+				</div>
+				<div type="section" n="27" corresp="urn:cts:latinLit:phi0474.phi005:27">
+					<p>
+						<seg type="lemma" ana="#cuiquam_27">cuiquam
+						</seg>
+						<seg type="comment" xml:id="cuiquam_27"> ,<gloss>for
+								anything.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#alter_designatus_27">alter consul designatus
+						</seg>
+						<seg type="comment" xml:id="alter_designatus_27">: Q. Caecilius Metellus
+							Creticus (see sect. <ref n="Cic. Ver. 1.1.21">
+								21</ref>). The three brothers, fast friends of Verres, were so
+							situated as to promise the greatest help the next year, when Quintus
+							would be consul, and Marcus praetor, presiding over the court of <foreign xml:lang="lat">Repetundae</foreign>, while Lucius was already
+							pro-praetor in Sicily. Some of the Sicilians, therefore, obeyed the
+							summons of Metellus, although they had disregarded that of Hortensius
+							(sect. <ref n="Cic. Ver. 1.1.25">25</ref>). The object of Metellus was
+							to induce the Sicilians to withdraw the suit, or at any rate to refrain
+							from appearing as witnesses. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quaesiturum_27">quaesiturum
+						</seg>
+						<seg type="comment" xml:id="quaesiturum_27"> (technical term), <gloss>was to
+							preside over the
+								court.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="28" corresp="urn:cts:latinLit:phi0474.phi005:28">
+					<p>
+						<seg type="lemma" ana="#quid_faceres_28">quid faceres:
+						</seg>
+						<seg type="comment" xml:id="quid_faceres_28">apodosis
+							of cont. to fact construction, with protasis implied in </seg>
+						<seg type="lemma" ana="#innocente_28">innocente.
+						</seg>
+						<seg type="comment" xml:id="innocente_28">
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#alienissimum_28">alienissimum
+						</seg>
+						<seg type="comment" xml:id="alienissimum_28"> ,<gloss>no
+								kin whatever of yours.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#dictitat_28">dictitat,
+						</seg>
+						<seg type="comment" xml:id="dictitat_28">
+							<gloss>says
+								incessantly</gloss> (see next section). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#alicui_28">alicui
+						</seg>
+						<seg type="comment" xml:id="alicui_28">depends
+							upon</seg>
+						<seg type="lemma" ana="#videatur_28">videatur.
+						</seg>
+						<seg type="comment" xml:id="videatur_28">
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ignoret_28">ignoret,
+						</seg>
+						<seg type="comment" xml:id="ignoret_28">subj.
+							of characteristic. </seg>
+					</p>
+				</div>
+				<div type="section" n="29" corresp="urn:cts:latinLit:phi0474.phi005:29">
+					<p>
+						<seg type="lemma" ana="#fato_ceteros_29">fato, ut ceteros,
+						</seg>
+						<seg type="comment" xml:id="fato_ceteros_29">etc.: the Metelli seemed born
+							to hold office. Cicero here alludes to a verse written by the poet
+							Naevius, a hundred and fifty years before: <foreign xml:lang="lat">
+								<q rend="double">Fato Metelli Romae fiunt
+									consules.</q>
+							</foreign>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#populi_existimationi_29">populi existimationi,
+						</seg>
+						<seg type="comment" xml:id="populi_existimationi_29">
+							<gloss>reputation
+								with the people.—</gloss>
+						</seg>
+						<seg type="lemma" ana="#M_Glabrionem_29">M’. Glabrionem:
+						</seg>
+						<seg type="comment" xml:id="M_Glabrionem_29">observe the skill with which
+							this compliment to the praetor before whom Cicero is now arguing the
+							case, and the following compliments to the <foreign xml:lang="lat">
+							judices</foreign>, are put into the mouth of Verres. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#illud_29">illud
+						</seg>
+						<seg type="comment" xml:id="illud_29">:
+							referring to what follows. Cicero makes Verres point out the changes in
+							the jury which must follow from changes in the government that is to
+							come in with the new year. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#conlega_29">conlega
+						</seg>
+						<seg type="comment" xml:id="conlega_29">: both Caesonius and Cicero were <foreign xml:lang="lat">aediles
+								designati</foreign>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#expediat_29">expediat
+						</seg>
+						<seg type="comment" xml:id="expediat_29">:
+							fut. apodosis with </seg>
+						<seg type="lemma" ana="#conemur_29">conemur
+						</seg>
+						<seg type="comment" xml:id="conemur_29">as
+							its</seg>
+						<seg type="lemma" ana="#_29">
+						</seg>
+						<seg type="comment" xml:id="_29">protasis, but hardly to be distinguished
+							from subj. of characteristic; cf. § <ref n="AG 534">534</ref> (319,
+							headnote). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Juniano_consilio_29">Juniano consilio:
+						</seg>
+						<seg type="comment" xml:id="Juniano_consilio_29"> referring to a case four
+							years before, in which wholesale bribery had been proved, so that the
+							presiding praetor, Junius, as well as almost the entire <foreign xml:lang="lat">consilium</foreign> (body of jurors), had been
+							stamped with infamy. Caesonius, a member of the jury, had been proof
+							against corruption, and had disclosed the whole affair (</seg>
+						<seg type="lemma" ana="#in_protulit_29">in medium protulit
+						</seg>
+						<seg type="comment" xml:id="in_protulit_29">
+							). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hunc_judicem_29">hunc judicem,
+						</seg>
+						<seg type="comment" xml:id="hunc_judicem_29">
+							<gloss>him as juryman.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ex_Jan_29">ex Kal. Jan.:
+						</seg>
+						<seg type="comment" xml:id="ex_Jan_29">after
+							the New Year; for at that time he would be excluded from the panel by
+							his aedileship. </seg>
+					</p>
+				</div>
+				<div type="section" n="30" corresp="urn:cts:latinLit:phi0474.phi005:30">
+					<p>
+						<seg type="lemma" ana="#P_Sulpicius_30">P. Sulpicius
+						</seg>
+						<seg type="comment" xml:id="P_Sulpicius_30">:
+							he had probably just been elected quaestor. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Non_Dec_30">Non. Dec
+						</seg>
+						<seg type="comment" xml:id="Non_Dec_30">.
+							(Dec. 5): on this day the new quaestors entered on their office. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#L_Cassius_30">L. Cassius
+						</seg>
+						<seg type="comment" xml:id="L_Cassius_30">: the family characteristic here
+							stated was proverbial (<foreign xml:lang="lat">Cassiani judices</foreign>
+							) </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tribuni_militares_30">tribuni militares:
+						</seg>
+						<seg type="comment" xml:id="tribuni_militares_30">at
+							this time legion-commanders. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#non_judicabunt_30">non judicabunt
+						</seg>
+						<seg type="comment" xml:id="non_judicabunt_30"> ,<gloss>will
+								not serve as jurors.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#subsortiemur_30">subsortiemur,
+						</seg>
+						<seg type="comment" xml:id="subsortiemur_30">i.e. we shall draw another <gloss>to
+							fill his place.</gloss> This is the regular use of </seg>
+						<seg type="lemma" ana="#sub_30">sub
+						</seg>
+						<seg type="comment" xml:id="sub_30"> in similar compounds: as <gloss>suffectus,
+							subrogatus</gloss> etc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#prope_toto_30">prope toto
+						</seg>
+						<seg type="comment" xml:id="prope_toto_30">:
+							the jury, therefore, apparently consisted of about twelve or fifteen. </seg>
+					</p>
+				</div>
+				<div type="section" n="31" corresp="urn:cts:latinLit:phi0474.phi005:31">
+					<p>
+						<seg type="lemma" ana="#Nonae_31">Nonae
+						</seg>
+						<seg type="comment" xml:id="Nonae_31">,
+							etc.: it was, therefore, about 3 P.M. of the 5th of August. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#votivos_31">votivos
+						</seg>
+						<seg type="comment" xml:id="votivos_31">: these games were in celebration of
+							Pompey’s victory over the Marian party in Spain (<date when="-0072">B.C.
+							72</date>). The votive games would occupy from Aug. 16 to Sept. I
+							(August had at this time only 29 days); On Sept. 4 began the <foreign xml:lang="lat">Ludi Romani</foreign>, continuing till the 19th. The
+							intervening days (Sept. 2, 3) were of no account for the trial, so that
+							it could not be resumed before Sept. 20, a suspension of 34 days (<foreign xml:lang="lat">prope
+								quadraginta</foreign>). The <foreign xml:lang="lat">Ludi Victoriae</foreign>
+							(established by Sulla in honor of his victory) would continue from Oct.
+							27 to Nov. I, and the <foreign xml:lang="lat">Ludi Plebeii</foreign>,
+							from Nov. 4 to Nov. 17. All these games were sacred festivals, during
+							which business was suspended: the time was occupied with religious
+							observances, accompanied by races and dramatic entertainments. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tum_denique_31">tum denique
+						</seg>
+						<seg type="comment" xml:id="tum_denique_31"> ,<gloss>not
+								till then.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Victoriae_31">Victoriae:
+						</seg>
+						<seg type="comment" xml:id="Victoriae_31">see
+							Fig. 4 (from the Column of Trajan). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#perpauci_31">perpauci:
+						</seg>
+						<seg type="comment" xml:id="perpauci_31">for
+							the month of December was full of festivals. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#rem_integram_31">rem integram,
+						</seg>
+						<seg type="comment" xml:id="rem_integram_31">i.e. from the beginning. The
+							zeal of the prosecution would have flagged, the public interest would
+							have cooled down, and the jury would be almost wholly new. The case
+							would therefore have to be taken up <foreign xml:lang="lat">de novo</foreign>
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#non_retinuissem_31">non retinuissem
+						</seg>
+						<seg type="comment" xml:id="non_retinuissem_31">,
+							i.e. I should have challenged him. Metellus was now one of the jurors. </seg>
+					</p>
+				</div>
+				<div type="section" n="32" corresp="urn:cts:latinLit:phi0474.phi005:32">
+					<p>
+						<seg type="lemma" ana="#nunc_32">nunc,
+						</seg>
+						<seg type="comment" xml:id="nunc_32">opposed
+							to </seg>
+						<seg type="lemma" ana="#si_essem_32">si diffisus essem,
+						</seg>
+						<seg type="comment" xml:id="si_essem_32">
+							above. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#eo_32">eo
+						</seg>
+						<seg type="comment" xml:id="eo_32">, etc. (abl. abs.), <gloss>with him as
+							juryman.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#jurato_32">jurato,
+						</seg>
+						<seg type="comment" xml:id="jurato_32">
+							<gloss>on
+								oath.</gloss> The <foreign xml:lang="lat">judices</foreign> were
+							sworn; the praetor was not. Metellus might therefore be trusted to vote
+							honestly as a juror, though he might, when praetor, connive at the
+							corruption of the jury men. Cicero ran less risk of offending Metellus
+							by thus accusing him of extreme partisanship than if he had accused him
+							of perjury. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="32_50" corresp="urn:cts:latinLit:phi0474.phi005:32-50">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:32-50">
+					<p>To prevent postponement, Cicero will push the trial, dispensing with the
+						usual long opening argument. He is forced to this by the tactics of
+						Hortensius (sects. <ref n="Cic. Ver. 1.1.32">32</ref>,<ref n="Cic. Ver. 1.1.33">33</ref>). Cicero will oppose the arrogance of
+						Hortensius and offers himself as the opponent of any who shall hereafter
+						attempt to bribe the courts. The illegal domination of Hortensius is
+						dangerous to justice. It must be met by proofs of judicial corruption, which
+						are abundant (sects. <ref n="Cic. Ver. 1.1.34">34</ref>-<ref n="Cic. Ver. 1.1.39">39</ref>). The acquittal of Verres will be
+						subversive of the whole judicial system (sects. <ref n="Cic. Ver. 1.1.40">
+							40</ref>-<ref n="Cic. Ver. 1.1.42">42</ref>). The jurors are urged to
+						vindicate the courts (sects <ref n="Cic. Ver. 1.1.43">43</ref> ,<ref n="Cic. Ver. 1.1.45">45</ref>). All Rome is on the watch, and bribery is
+						sure to be detected. Not Verres, but the senatorial courts are on trial
+						(sects. <ref n="Cic. Ver. 1.1.46">46</ref>-<ref n="Cic. Ver. 1.1.50">50</ref>
+						). </p>
+					<p>The skill of the argument in sects. <ref n="Cic. Ver. 1.1.32">32</ref>-<ref n="Cic. Ver. 1.1.50">50</ref> is remarkable. Cicero contrives, without
+						directly asserting that Hortensius is guilty of judicial corruption, to
+						suggest that he is in a measure responsible for its prevalence. He declares
+						his intention of devoting his aedileship to exposing such practices, and
+						adds that he expects to be opposed by Hortensius. He calls attention to
+						several notorious cases of bribery which he means to use as illustrations in
+						pressing his reforms. Then, in a moment, he makes it clear, by a sudden
+						turn, that he has not been digressing, but simply accumulating force for his
+						main point: <q rend="double">How shall I feel,</q> he asks suddenly (sect. <ref n="Cic. Ver. 1.1.40">40</ref>), <q rend="double">if I find this present
+						case of Verres added to the long list of instances of corruption? His guilt
+						is clear: <emph>it is the court that is on trial!</emph>
+						</q>
+						In this way what appears at the outset to be a personal attack on the
+						opposing counsel is made a most effective means for the introduction of the
+						central point of the whole oration.</p>
+				</div>
+				<div type="section" n="32" corresp="urn:cts:latinLit:phi0474.phi005:32">
+					<p>
+						<seg type="lemma" ana="#legitimo_tempore_32">legitimo tempore
+						</seg>
+						<seg type="comment" xml:id="legitimo_tempore_32">:
+							he had a right to use twenty days for developing the points of the
+							prosecution. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#capiam_32">capiam,
+						</seg>
+						<seg type="comment" xml:id="capiam_32">i.e.
+							by showing, in a long speech, how carefully he had prepared his case. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ne_elabatur_32">ne elabatur
+						</seg>
+						<seg type="comment" xml:id="ne_elabatur_32">,
+							with</seg>
+						<seg type="lemma" ana="#periculum_est_32">periculum est,
+						</seg>
+						<seg type="comment" xml:id="periculum_est_32">which
+							takes the constr. of a verb of fearing. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#possit_32">possit:
+						</seg>
+						<seg type="comment" xml:id="possit_32">see § <ref n="AG 535">535</ref>, a
+							(320, a); B. 283, 2; G. 631, 2; H. 591 (503, i); H.-B 521, I. </seg>
+					</p>
+				</div>
+				<div type="section" n="33" corresp="urn:cts:latinLit:phi0474.phi005:33">
+					<p>
+						<seg type="lemma" ana="#perpetua_oratione_33">perpetua oratione,
+						</seg>
+						<seg type="comment" xml:id="perpetua_oratione_33">
+							<gloss>a
+								continuous argument</gloss>, before bringing up the witnesses. This
+							is what we possess in the five speeches of the <foreign xml:lang="lat">
+							Accusatio</foreign>, which, in the usual order of proceeding, would have
+							been delivered before bringing up the witnesses, but which were in fact
+							never spoken at all (see Introd. to the oration, page 28). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#percipi_33">percipi,
+						</seg>
+						<seg type="comment" xml:id="percipi_33">
+							<gloss>
+								reaped:</gloss> the regular term for gathering crops. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#potuit_33">potuit
+						</seg>
+						<seg type="comment" xml:id="potuit_33"> ,<gloss>might
+								have been:</gloss> §<ref n="AG 517">517</ref>, c (308, c); B. 304,
+							3, a; G. 597, R.3; H. 583 (511, 1, N.3); H.-B. 582, 3,a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#publicis_33">publicis:
+						</seg>
+						<seg type="comment" xml:id="publicis_33">see note on <ref n="pl35.23">p. 35,
+							l. 23</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tabulis_33">tabulis,
+						</seg>
+						<seg type="comment" xml:id="tabulis_33">
+							<gloss>records.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#auctoritatibus_33">auctoritatibus
+						</seg>
+						<seg type="comment" xml:id="auctoritatibus_33"> ,<gloss>
+								documents.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#res_omnis_33">res omnis:
+						</seg>
+						<seg type="comment" xml:id="res_omnis_33">here,
+							after stating his plan briefly, Cicero goes off into a seeming
+							digression against Hortensius. In this he shows clearly one of his
+							principal motives in undertaking the prosecution, namely, to overthrow
+							the latter’s excessive control of the courts. The attack is skillfully
+							introduced. His sole reason, he says, for departing from the ordinary
+							course of procedure is that Hortensius does not wish to meet him in fair
+							legal fight. The sally against Hortensius, again, serves as a transition
+							to Cicero’s final appeal to the sense of shame and the prudence of the
+							court. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#diluendis_explicandis_33">diluendis, explicandis:
+						</seg>
+						<seg type="comment" xml:id="diluendis_explicandis_33">technical
+							terms in argument (see Vocab.). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ex_nature_33">ex tua nature:
+						</seg>
+						<seg type="comment" xml:id="ex_nature_33">Hortensius,
+							like M. Metullus, was personally an amiable and honorable man, though
+							pledged to a bad cause. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#rationi_33">rationi,
+						</seg>
+						<seg type="comment" xml:id="rationi_33">
+							<gloss>scheme,
+								course</gloss>, looking to the method; </seg>
+						<seg type="lemma" ana="#consilio_33">consilio,
+						</seg>
+						<seg type="comment" xml:id="consilio_33">
+							<gloss>plan
+								of action</gloss>, looking to the end. Cicero contrasts them more
+							than once. </seg>
+					</p>
+				</div>
+				<div type="section" n="34" corresp="urn:cts:latinLit:phi0474.phi005:34">
+					<p>
+						<seg type="lemma" ana="#binos_ludos_34">binos ludos,
+						</seg>
+						<seg type="comment" xml:id="binos_ludos_34">i.e.
+							Pompey’s and the Roman games. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#comperendinem_34">comperendinem,
+						</seg>
+						<seg type="comment" xml:id="comperendinem_34">
+							<gloss>close
+								my case</gloss> (lit. <gloss>adjourn over</gloss>). After the
+							testimony was all in, it was customary to adjourn over to the next day
+							but one (</seg>
+						<seg type="lemma" ana="#comperendinare_34">comperendinare
+						</seg>
+						<seg type="comment" xml:id="comperendinare_34">), in order to give
+							opportunity for a rehearing (usually a brief one). When this stage had
+							been reached, there was no chance for further postponement. Cicero’s
+							determination to bring about a <foreign xml:lang="lat">comperendinatio</foreign>
+							before Pompey’s games—i.e. within ten days settled the case in his
+							favor; for, as has been shown, the only hope of the defence lay in
+							putting off the trial, Hortensius having absolutely nothing to say in
+							behalf of his client’s innocence. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#necessarium_34">necessarium
+						</seg>
+						<seg type="comment" xml:id="necessarium_34"> ,<gloss>
+								unavoidable</gloss> (not a mere shrewd trick like that of
+							Hortensius). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#id_34">id
+						</seg>
+						<seg type="comment" xml:id="id_34">:
+							refers forward to </seg>
+						<seg type="lemma" ana="#eos_velle_34">eos velle
+						</seg>
+						<seg type="comment" xml:id="eos_velle_34">,
+							etc. (l. 24). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#amplum_praeclarum_34">amplum et praeclarum,
+						</seg>
+						<seg type="comment" xml:id="amplum_praeclarum_34">
+							<gloss>an
+								honor and distinction</gloss> (translating as nouns). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#innocentiae_34">innocentiae
+						</seg>
+						<seg type="comment" xml:id="innocentiae_34"> (an almost technical term), <gloss>purity
+							of
+								administration</gloss> in Sicily (see Introd. to the oration). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#majus_quiddam_34">majus quiddam
+						</seg>
+						<seg type="comment" xml:id="majus_quiddam_34">: what this was is explained
+							in sect. <ref n="Cic. Ver. 1.1.35">35</ref> . </seg>
+					</p>
+				</div>
+				<div type="section" n="35" corresp="urn:cts:latinLit:phi0474.phi005:35">
+					<p>
+						<seg type="lemma" ana="#illud_35">illud
+						</seg>
+						<seg type="comment" xml:id="illud_35">:
+							refers to </seg>
+						<seg type="lemma" ana="#istum_vocari_35">istum . . . vocari
+						</seg>
+						<seg type="comment" xml:id="istum_vocari_35">
+							(l. 29). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#potentia_35">potentia,
+						</seg>
+						<seg type="comment" xml:id="potentia_35">
+							<gloss>
+								domineering</gloss>(i.e. his illegal control of the courts); </seg>
+						<seg type="lemma" ana="#cupiditas_35">cupiditas
+						</seg>
+						<seg type="comment" xml:id="cupiditas_35"> (in a bad sense), <gloss>unscrupulous
+							eagerness</gloss> (for gaining your case). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#interponeretur_35">interponeretur:
+						</seg>
+						<seg type="comment" xml:id="interponeretur_35">for
+							fut. ind. of the dir. disc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nunc_35">nunc:
+						</seg>
+						<seg type="comment" xml:id="nunc_35">opposed
+							to the time of </seg>
+						<seg type="lemma" ana="#videbatur_35">videbatur.
+						</seg>
+						<seg type="comment" xml:id="videbatur_35">
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#regnum_judiciorum_35">regnum judiciorum,
+						</seg>
+						<seg type="comment" xml:id="regnum_judiciorum_35">
+							<gloss>lording it over the courts.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#homines_35">homines,
+						</seg>
+						<seg type="comment" xml:id="homines_35">i.e.
+							the corrupt senatorial jurors. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#inruere_35">inruere
+						</seg>
+						<seg type="comment" xml:id="inruere_35">, etc., <gloss>to
+								be bent on making themselves hateful and
+								offensive.</gloss> —hoc, i.e. to break down Hortensius’s control,
+							and the corruption of a few Senators. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nervos_aetatis_35">nervos aetatis:
+						</seg>
+						<seg type="comment" xml:id="nervos_aetatis_35">Cicero
+							was now 36. </seg>
+					</p>
+				</div>
+				<div type="section" n="36" corresp="urn:cts:latinLit:phi0474.phi005:36">
+					<p>
+						<seg type="lemma" ana="#ordo_36">ordo
+						</seg>
+						<seg type="comment" xml:id="ordo_36">,
+							i.e. the Senate. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#paucorum_36">paucorum
+						</seg>
+						<seg type="comment" xml:id="paucorum_36">,
+							artfully put so as not to offend the whole body. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#loco_36">loco
+						</seg>
+						<seg type="comment" xml:id="loco_36"> :<gloss>the
+								Rostra</gloss> (see Vocab., under <foreign xml:lang="lat">rostrum</foreign>
+							). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#secum_agere_36">secum agere:
+						</seg>
+						<seg type="comment" xml:id="secum_agere_36">the technical expression for
+							transacting business in the <foreign xml:lang="lat">comitia</foreign>
+							was <foreign xml:lang="lat">agere
+								cum populo</foreign> (or <foreign xml:lang="lat">plebe</foreign>).
+							Cicero refers to the office of curule aedile, upon which he was to enter
+							January 1. One of the most important functions of this magistrate was
+							the administration of criminal justice (</seg>
+						<seg type="lemma" ana="#de_improbis_36">de hominibus improbis
+						</seg>
+						<seg type="comment" xml:id="de_improbis_36">)
+							in cases where there had been an appeal from the sentence of a court to
+							the judgment of the public assembly. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#munus_36">munus,
+						</seg>
+						<seg type="comment" xml:id="munus_36">
+							<gloss>
+								service.</gloss> The word also means the <gloss>public
+								games</gloss>, which were given to the people by the aediles
+							especially; hence there is a kind of pun here. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#moneo_36">moneo
+						</seg>
+						<seg type="comment" xml:id="moneo_36">,
+							etc.: observe the climax. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#deponere_36">deponere
+						</seg>
+						<seg type="comment" xml:id="deponere_36"> ,<gloss>
+								deposit</gloss> with the <foreign xml:lang="lat">sequestres</foreign>
+							(see note on <ref n="pl36.15">p. 36, l.
+								15</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#accipere_36">accipere
+						</seg>
+						<seg type="comment" xml:id="accipere_36"> ,<gloss>
+								take</gloss> (money); </seg>
+						<seg type="lemma" ana="#recipere_36">recipere,
+						</seg>
+						<seg type="comment" xml:id="recipere_36">
+							<gloss>
+								undertake</gloss> to do anything (upon request or the like). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#polliceri_36">polliceri
+						</seg>
+						<seg type="comment" xml:id="polliceri_36"> ,<gloss>
+								offer.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#interpretes_36">interpretes,
+						</seg>
+						<seg type="comment" xml:id="interpretes_36">
+							<gloss>
+								go-betweens:</gloss> the <gloss>divisores</gloss> are probably
+							meant. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#potentiam_36">potentiam
+						</seg>
+						<seg type="comment" xml:id="potentiam_36">: it is hardly accidental that
+							this is the same word used above (sect. <ref n="Cic. Ver. 1.1.35">35</ref>,
+							l. 31) of the influence of Hortensius. In the next section Cicero
+							expressly asserts that he expects to meet with all possible opposition
+							from the latter. </seg>
+					</p>
+				</div>
+				<div type="section" n="37" corresp="urn:cts:latinLit:phi0474.phi005:37">
+					<p>
+						<seg type="lemma" ana="#erit_37">erit,
+						</seg>
+						<seg type="comment" xml:id="erit_37">
+							<gloss>will
+								be</gloss> (it is true): notice the</seg>
+						<seg type="lemma" ana="#_37">
+						</seg>
+						<seg type="comment" xml:id="_37">emphatic
+							position, opposing it to the clause with</seg>
+						<seg type="lemma" ana="#tamen_37">tamen
+						</seg>
+						<seg type="comment" xml:id="tamen_37">
+							(l. 24). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#imperio_potestate_37">imperio et potestate,
+						</seg>
+						<seg type="comment" xml:id="imperio_potestate_37">
+							<gloss>military
+								and civil power.</gloss> Of the regular magistrates, all possessed <foreign xml:lang="lat">potestas</foreign>, i.e. power in general (including
+							military power); but only consuls and praetors possessed the <foreign xml:lang="lat">imperium,</foreign>—i.e. sovereign power, as of a
+							general in the field, somewhat limited, however, in the city by special
+							privileges of Roman citizens. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#commemorabuntur_37">commemorabuntur,
+						</seg>
+						<seg type="comment" xml:id="commemorabuntur_37">
+							<gloss>shall
+								be mentioned</gloss> (by me). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#certis_rebus_37">certis rebus,
+						</seg>
+						<seg type="comment" xml:id="certis_rebus_37">
+							<gloss>well-ascertained facts.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#agentur_37">agentur,
+						</seg>
+						<seg type="comment" xml:id="agentur_37">
+							<gloss>made ground of action.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#inter_annos_37">inter decem annos,
+						</seg>
+						<seg type="comment" xml:id="inter_annos_37">i.e since Sulla’s <foreign xml:lang="lat">lex
+								judiciaria</foreign>, transferring the courts to the senatorial
+							order (see note on Rosc. Am., <ref n="pl2.1">p. 2, l. 1</ref>). </seg>
+					</p>
+				</div>
+				<div type="section" n="38" corresp="urn:cts:latinLit:phi0474.phi005:38">
+					<p>
+						<seg type="lemma" ana="#quinquaginta_38">quinquaginta,
+						</seg>
+						<seg type="comment" xml:id="quinquaginta_38">i.e. from the law of Caius
+							Gracchus, <date when="-0123">B.C.
+								123</date>, to that of Sulla, <date when="-0080">B.C. 80</date>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ne_suspicio_38">ne tenuissima quidem suspicio:
+						</seg>
+						<seg type="comment" xml:id="ne_suspicio_38">one of the exaggerations of the
+							advocate. If the courts were really worse in <date when="-0070">B.C. 70</date>
+							than they had been in 90, it was simply because the times were worse. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sublata_38">sublata,
+						</seg>
+						<seg type="comment" xml:id="sublata_38">
+							<gloss>taken away.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#populi_Romani_38">populi Romani,
+						</seg>
+						<seg type="comment" xml:id="populi_Romani_38">etc., i.e. the ability of the
+							people to hold in check the senatorial order by means of the tribunician
+							power suspended by Sulla (see note on <ref n="pl43.32">p. 43, l. 32</ref>
+							). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Q_Calidius_38">Q. Calidius:
+						</seg>
+						<seg type="comment" xml:id="Q_Calidius_38"> praetor <date when="-0079">B.C.
+							79</date>; condemned for extortion in Spain. It seems that Calidius,
+							being condemned <foreign xml:lang="lat">de repetundis</foreign>, with
+							bitter irony assailed the bribed jurors on account of the smallness of
+							the bribe for which he was condemned, saying that it was not respectable
+							(</seg>
+						<seg type="lemma" ana="#honestum_38">honestum
+						</seg>
+						<seg type="comment" xml:id="honestum_38">)
+							to condemn an ex-praetor for so small a sum. The allusion shows that the
+							corruption was notorious and universal. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#HS_triciens_38">HS triciens:
+						</seg>
+						<seg type="comment" xml:id="HS_triciens_38">
+							<gloss>3,000,000
+								sestertii</gloss> = $150,000 (nearly); § <ref n="AG 634">634</ref>
+							(379); G. p. 493; H. 757 (647, iv, I); H.-B. 675, 2. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#praetorium_38">praetorium:
+						</seg>
+						<seg type="comment" xml:id="praetorium_38">an ex-magistrate kept the rank of
+							the highest office he had held,—as <gloss>consularis,
+								praetorius, aedilicius.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#P_Septimio_38">P. Septimio
+						</seg>
+						<seg type="comment" xml:id="P_Septimio_38"> (Scaevola), condemned <date when="-0072">B.C. 72</date>; the damages were increased because of
+							his connection with the odious <foreign xml:lang="lat">consilium
+							Junianum</foreign> (sect. <ref n="Cic. Ver. 1.1.29">29</ref>). The
+							amount extorted was estimated in a separate process (<foreign xml:lang="lat">litis
+								aestimatio</foreign>), and in this case the money taken in bribery
+							was included in the reckoning. </seg>
+					</p>
+				</div>
+				<div type="section" n="39" corresp="urn:cts:latinLit:phi0474.phi005:39">
+					<p>
+						<seg type="lemma" ana="#inventi_sint_39">inventi sint
+						</seg>
+						<seg type="comment" xml:id="inventi_sint_39">represents
+							an hist. perf., and hence takes the secondary sequence (</seg>
+						<seg type="lemma" ana="#exirent_39">exirent
+						</seg>
+						<seg type="comment" xml:id="exirent_39">): see § <ref n="AG 485">485</ref>,
+							j (287, i); cf. B. 268, 7, b; G. 517, R.l; H.-B. 479, a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sortiente_39">sortiente:
+						</seg>
+						<seg type="comment" xml:id="sortiente_39">the
+							jurymen were drawn by lot by the presiding officer; in the case
+							mentioned there was collusion between Verres and the persons drawn, so
+							that the lot was a mere form. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#qui_exirent_39">qui . . . exirent
+						</seg>
+						<seg type="comment" xml:id="qui_exirent_39"> (purp. clause), <gloss>to be
+							drawn for</gloss> [the case of] <gloss>a
+								defendant to condemn him without a hearing</gloss> (through a
+							corrupt bargain between Verres and the packed jury). </seg>
+					</p>
+				</div>
+				<div type="section" n="40" corresp="urn:cts:latinLit:phi0474.phi005:40">
+					<p>
+						<seg type="lemma" ana="#jam_vero_40">jam vero
+						</seg>
+						<seg type="comment" xml:id="jam_vero_40"> ,<gloss>and
+								finally</gloss> (introducing the climax of all). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#illam_40">illam
+						</seg>
+						<seg type="comment" xml:id="illam_40">,
+							i.e. the one described in the passage </seg>
+						<seg type="lemma" ana="#hoc_esse_40">hoc factum esse
+						</seg>
+						<seg type="comment" xml:id="hoc_esse_40">,
+							etc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#discoloribus_signis_40">discoloribus signis:
+						</seg>
+						<seg type="comment" xml:id="discoloribus_signis_40">see
+							note on </seg>
+						<seg type="lemma" ana="#color_40">color,
+						</seg>
+						<seg type="comment" xml:id="color_40">
+							<ref n="pl34.16">p. 34, l. 16</ref>. The case referred to was one in
+							which Hortensius was counsel. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#acturum_esse_40">acturum esse,
+						</seg>
+						<seg type="comment" xml:id="acturum_esse_40">
+							<gloss>will
+								attend to</gloss> (i.e. officially, as aedile: cf. the use of</seg>
+						<seg type="lemma" ana="#agere_40">agere,
+						</seg>
+						<seg type="comment" xml:id="agere_40">
+							above). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hominem_40">hominem
+						</seg>
+						<seg type="comment" xml:id="hominem_40">,
+							i.e. Hortensius. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cujus_40">cujus
+						</seg>
+						<seg type="comment" xml:id="cujus_40">:
+							obj. gen. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#secum_agi_40">secum . . . agi,
+						</seg>
+						<seg type="comment" xml:id="secum_agi_40">
+							<gloss>he
+								was doing very well</gloss> (see Vocab., under </seg>
+						<seg type="lemma" ana="#ago_40">ago
+						</seg>
+						<seg type="comment" xml:id="ago_40"> ). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_suam_40">in rem suam,
+						</seg>
+						<seg type="comment" xml:id="in_suam_40">
+							<gloss>into his own pocket.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#patronis_40">patronis:
+						</seg>
+						<seg type="comment" xml:id="patronis_40">see note, Rosc. Am., sect. <ref n="Cic. S. Rosc. 1 4">4</ref>,<ref n="pl3.17">p. 3, l. 17</ref>. </seg>
+					</p>
+				</div>
+				<div type="section" n="41" corresp="urn:cts:latinLit:phi0474.phi005:41">
+					<p>
+						<seg type="lemma" ana="#quod_41">quod,
+						</seg>
+						<seg type="comment" xml:id="quod_41">
+							<gloss>at
+								which</gloss> (with </seg>
+						<seg type="lemma" ana="#commoveri_41">commoveri,
+						</seg>
+						<seg type="comment" xml:id="commoveri_41">l.6): cf. § <ref n="AG 390">390</ref>,
+							c (238, b); B. 176, 2; G. 333, 1; H. 416, 2 (378, 2); H.-B. 396, 2. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#apud_Glabrionem_41">apud Glabrionem,
+						</seg>
+						<seg type="comment" xml:id="apud_Glabrionem_41">i.e
+							in the preliminary proceedings. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#reiciundis_judicibus_41">reiciundis judicibus
+						</seg>
+						<seg type="comment" xml:id="reiciundis_judicibus_41"> (local. abl.), <gloss>at
+							the time of challenging</gloss> (making up the jury). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fore_uti_41">fore uti
+						</seg>
+						<seg type="comment" xml:id="fore_uti_41"> ,<gloss>that
+								the result would be.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tolleretur_41">tolleretur,
+						</seg>
+						<seg type="comment" xml:id="tolleretur_41">
+							<gloss>should
+								be abolished</gloss> (purp. clause with </seg>
+						<seg type="lemma" ana="#legatos_mitterent_41">legatos mitterent,
+						</seg>
+						<seg type="comment" xml:id="legatos_mitterent_41">which
+							is equivalent to a verb of requesting). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#victoriae_41">victoriae,
+						</seg>
+						<seg type="comment" xml:id="victoriae_41">i.e.
+							in the courts. They could endure it if a man stole only enough to
+							satisfy his own avarice (</seg>
+						<seg type="lemma" ana="#sibi_suis_41">sibi ac liberis suis
+						</seg>
+						<seg type="comment" xml:id="sibi_suis_41">),
+							but they cannot afford to be robbed of enough besides to secure him an
+							acquittal by bribery, if guilty (</seg>
+						<seg type="lemma" ana="#nocentissimi_victoriae_41">nocentissimi victoriae
+						</seg>
+						<seg type="comment" xml:id="nocentissimi_victoriae_41">). Cf. the similar
+							argument in Burke’s Opening Speech on the Impeachment of Warren
+							Hastings: <q rend="double">If, from any
+								appearance of chicane in
+								the court, justice should fail, all men will say, ’Better there
+								were no
+								courts at all.’</q>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="42" corresp="urn:cts:latinLit:phi0474.phi005:42">
+					<p>
+						<seg type="lemma" ana="#animo_42">animo
+						</seg>
+						<seg type="comment" xml:id="animo_42">:
+							abl. of means. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#majore_odio_42">majore . . . odio
+						</seg>
+						<seg type="comment" xml:id="majore_odio_42">:
+							abl. of quality. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="43_50" corresp="urn:cts:latinLit:sec00009.sec003:43-50">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:43-50">
+					<p>Sudden and powerful appeal to the jurors to save the senatorial courts
+						from present infamy and threatened destruction.
+					</p>
+				</div>
+				<div type="section" n="43" corresp="urn:cts:latinLit:phi0474.phi005:43">
+					<p>
+						<seg type="lemma" ana="#loco_43">loco
+						</seg>
+						<seg type="comment" xml:id="loco_43"> ,<gloss>
+								point</gloss> (raised in his argument). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#contemnimur_43">contemnimur
+						</seg>
+						<seg type="comment" xml:id="contemnimur_43">:
+							Cicero uses the first person to include himself as a member of the
+							Senate. </seg>
+					</p>
+				</div>
+				<div type="section" n="44" corresp="urn:cts:latinLit:phi0474.phi005:44">
+					<p>
+						<seg type="lemma" ana="#tribuniciam_potestatem_44">tribuniciam potestatem
+						</seg>
+						<seg type="comment" xml:id="tribuniciam_potestatem_44">: referring chiefly
+							to the power of the tribunes to try criminal cases before the <gloss>comitia
+							tributa;</gloss> this power, greatly abridged by Sulla, had been
+							restored by a law of Pompey early in this year, <date when="-0070">B.C.
+							70</date>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#verbo_44">verbo
+						</seg>
+						<seg type="comment" xml:id="verbo_44"> ,<gloss>in
+								name.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#re_vera_44">re vera
+						</seg>
+						<seg type="comment" xml:id="re_vera_44"> ,<gloss>in
+								fact.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#illam_44">illam,
+						</seg>
+						<seg type="comment" xml:id="illam_44">the
+							tribunician power (because this was a check on the power of the
+							Senators). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Catulum_44">Catulum
+						</seg>
+						<seg type="comment" xml:id="Catulum_44">:
+							Q. Lutatius Catulus was the best and most eminent man of the
+							aristocracy. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fugit_44">fugit
+						</seg>
+						<seg type="comment" xml:id="fugit_44"> ,<gloss>has
+								escaped.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#referente_44">referente,
+						</seg>
+						<seg type="comment" xml:id="referente_44">consulting
+							[the Senate]: the technical expression for bringing a matter before the
+							Senate for action. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#rogatus_44">rogatus
+						</seg>
+						<seg type="comment" xml:id="rogatus_44">:
+							each Senator in turn was asked his opinion (</seg>
+						<seg type="lemma" ana="#sententiam_44">sententiam
+						</seg>
+						<seg type="comment" xml:id="sententiam_44">)by
+							the consul or other presiding officer; cf. </seg>
+						<seg type="lemma" ana="#hos_rogo_44">hos sententiam rogo,
+						</seg>
+						<seg type="comment" xml:id="hos_rogo_44">Cat. 1, sect. <ref n="Cic. Catil. 1.9">9</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#patres_conscriptos_44">patres conscriptos
+						</seg>
+						<seg type="comment" xml:id="patres_conscriptos_44">: see note on Cat. 1,
+							sect. <ref n="Cic. Catil. 1.9">9</ref>,<ref n="pl103.6">p. 103, l. 6</ref>
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fuisse_desideraturos_44">fuisse desideraturos
+						</seg>
+						<seg type="comment" xml:id="fuisse_desideraturos_44"> (the regular way of
+							expressing the contrary to fact apodosis in indir. disc.), <gloss>would
+							have missed:</gloss> §<ref n="AG 589">
+								589</ref>, b, 2 (337, b, 2); 321, A, 2; G. 656, N.2; H. 647 (527,
+							iii); H.-B. 581, b, 1. </seg>
+					</p>
+				</div>
+				<div type="section" n="45" corresp="urn:cts:latinLit:phi0474.phi005:45">
+					<p>
+						<seg type="lemma" ana="#contionem_habuit_45">contionem habuit,
+						</seg>
+						<seg type="comment" xml:id="contionem_habuit_45">
+							<gloss>made
+								a speech:</gloss>
+								<foreign xml:lang="lat">contio</foreign> means,
+							strictly, an assembly called for the purpose of listening to discussion
+							merely (so in l.12, below). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ad_urbem_45">ad urbem,
+						</seg>
+						<seg type="comment" xml:id="ad_urbem_45">i.e.
+							in the Campus Martius, not in the city. Pompey was elected in his
+							absence, and while still clothed with the military imperium: he could
+							not therefore enter the city to meet the citizens, but called them to
+							him outside the walls. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ubi_45">ubi
+						</seg>
+						<seg type="comment" xml:id="ubi_45"> ,<gloss>in
+								which.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_eo_45">in eo
+						</seg>
+						<seg type="comment" xml:id="in_eo_45"> ,<gloss>at
+								that point</gloss> (properly <gloss>on that
+								point).</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#suam_45">suam
+						</seg>
+						<seg type="comment" xml:id="suam_45"> by its emphatic position gives the
+							force of the English <gloss>what</gloss> THEY <gloss>
+								desired.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="46" corresp="urn:cts:latinLit:phi0474.phi005:46">
+					<p>
+						<seg type="lemma" ana="#religione_46">religione
+						</seg>
+						<seg type="comment" xml:id="religione_46"> ,<gloss>regard
+								for oath.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tribuniciam_46">tribuniciam,
+						</seg>
+						<seg type="comment" xml:id="tribuniciam_46">i.e., the law referred to in the
+							note on sect. <ref n="Cic. Ver. 1.1.44">
+								44</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#unum_46">unum,
+						</seg>
+						<seg type="comment" xml:id="unum_46">
+							<gloss>one,
+								it is true;</gloss> but since he was <gloss>a man of no
+								means at all</gloss> (</seg>
+						<seg type="lemma" ana="#vel_tenuissimum_46">vel tenuissimum,
+						</seg>
+						<seg type="comment" xml:id="vel_tenuissimum_46">)his
+							conviction was no proof of the integrity of the courts. The present
+							trial will afford the people the criterion they wish. </seg>
+					</p>
+				</div>
+				<div type="section" n="47" corresp="urn:cts:latinLit:phi0474.phi005:47">
+					<p>
+						<seg type="lemma" ana="#nihil_sit_47">nihil sit,
+						</seg>
+						<seg type="comment" xml:id="nihil_sit_47">etc.,
+							i.e. this is simply a case of guilt and money; there are no political or
+							other disturbing influences. To acquit him, then, will be to admit that
+							you are bribed. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#gratia_47">gratia,
+						</seg>
+						<seg type="comment" xml:id="gratia_47">
+							<gloss>personal popularity.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="48" corresp="urn:cts:latinLit:phi0474.phi005:48">
+					<p>
+						<seg type="lemma" ana="#agam_48">agam
+						</seg>
+						<seg type="comment" xml:id="agam_48"> ,<gloss>
+								conduct.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#res_48">res
+						</seg>
+						<seg type="comment" xml:id="res_48"> ,<gloss>
+								facts.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#manifestas_48">manifestas
+						</seg>
+						<seg type="comment" xml:id="manifestas_48">:
+							a technical word denoting direct proof, not circumstantial evidence. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#a_contendere_48">a vobis . . . contendere
+						</seg>
+						<seg type="comment" xml:id="a_contendere_48"> ,<gloss>urge upon you.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#eorum_48">eorum,
+						</seg>
+						<seg type="comment" xml:id="eorum_48">i.e.
+							of the defence. </seg>
+					</p>
+				</div>
+				<div type="section" n="49" corresp="urn:cts:latinLit:phi0474.phi005:49">
+					<p>
+						<seg type="lemma" ana="#vos_49">vos
+						</seg>
+						<seg type="comment" xml:id="vos_49">:
+							opposed to former juries, which have occasioned the scandal. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#huic_ordini_49">huic ordini:
+						</seg>
+						<seg type="comment" xml:id="huic_ordini_49">cat. of agent; § <ref n="AG 375">
+							375</ref> (232, a); B. 189, 2; G. 354 H 431 (388, 1); H.-B. 373, 2. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#post_haec_49">post haec,
+						</seg>
+						<seg type="comment" xml:id="post_haec_49">etc., i.e. since the
+							reorganization of the courts by Sulla (see note on Rosc. Am., sect. <ref n="Cic. S. Rosc. 1 1">1</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#utimur_49">utimur
+						</seg>
+						<seg type="comment" xml:id="utimur_49"> ,<gloss>
+								have</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#splendore_49">splendore
+						</seg>
+						<seg type="comment" xml:id="splendore_49"> ,<gloss>personal
+								distinction</gloss>, from wealth and exploits. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#dignitate_49">dignitate
+						</seg>
+						<seg type="comment" xml:id="dignitate_49"> ,<gloss>
+								dignity</gloss>, from rank and office. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#si_offensum_49">si . . . offensum,
+						</seg>
+						<seg type="comment" xml:id="si_offensum_49">
+							<gloss>if
+								there is any slip</gloss> (a euphemism). </seg>
+					</p>
+				</div>
+				<div type="section" n="50" corresp="urn:cts:latinLit:phi0474.phi005:50">
+					<p>
+						<seg type="lemma" ana="#opto_50">opto
+						</seg>
+						<seg type="comment" xml:id="opto_50"> ,<gloss>
+								pray</gloss>. Observe the adroit union of compliment and threat in
+							this passage, which at the same time forms the transition to the appeal
+							to the praetor presiding. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="51_52" corresp="urn:cts:latinLit:sec00009.sec003:51-52">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:51-52">
+					<p>Appeal to Glabrio, the presiding praetor, to prevent bribery. </p>
+				</div>
+				<div type="section" n="51" corresp="urn:cts:latinLit:phi0474.phi005:51">
+					<p>
+						<seg type="lemma" ana="#is_51">is:
+						</seg>
+						<seg type="comment" xml:id="is_51">
+							referring to the Senate. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#judicio_51">judicio
+						</seg>
+						<seg type="comment" xml:id="judicio_51">:
+							abl. of means. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#qui_sis_51">qui sis
+						</seg>
+						<seg type="comment" xml:id="qui_sis_51"> ,<gloss>what
+								sort of man you are.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#reddere_51">reddere,
+						</seg>
+						<seg type="comment" xml:id="reddere_51">
+							<gloss>pay back.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fac_veniat_51">fac . . . veniat
+						</seg>
+						<seg type="comment" xml:id="fac_veniat_51">: §<ref n="AG 565">565</ref>
+							(33I, f, R.); cf. B. 295, 8; G. 553, I (end); H. 565, 4 (499, 2); H.-B.
+							502, 3, footnote 2 </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#legis_Aciliae_51">legis Aciliae:
+						</seg>
+						<seg type="comment" xml:id="legis_Aciliae_51">this (probably <date when="-0101">B.C. 101</date>) provided that there should be neither <foreign xml:lang="lat">ampliatio</foreign> (further hearing) nor <foreign xml:lang="lat">comperendinatio</foreign> (see note on sect. <ref n="Cic. Ver. 1.1.34">34</ref>,<ref n="pl40.18">p. 40, l.
+								18</ref>) in cases of <foreign xml:lang="lat">repetundae</foreign>
+								<gloss>
+							.</gloss> All earlier laws were superseded by the Cornelian law of
+							Sulla. </seg>
+					</p>
+				</div>
+				<div type="section" n="52" corresp="urn:cts:latinLit:phi0474.phi005:52">
+					<p>
+						<seg type="lemma" ana="#Summae_auctoritates_52">Summae auctoritates
+						</seg>
+						<seg type="comment" xml:id="Summae_auctoritates_52"> ,<gloss>strongest
+							influences</gloss>, especially family traditions, etc. To the Roman mind
+							an <foreign xml:lang="lat">auctor</foreign>, in this sense, was a
+							pattern for imitation. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quae_sinant_52">quae . . . non sinant
+						</seg>
+						<seg type="comment" xml:id="quae_sinant_52">: best regarded as a purpose
+							clause; cf. § <ref n="AG 531">531</ref>. 2, N. (317, N.). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_quis_52">ut ne quis
+						</seg>
+						<seg type="comment" xml:id="ut_quis_52">, etc.: § <ref n="AG 537">537</ref>,a,
+							N. (319, a, N.); G. 545,R.1; H.(499,1); cf. H.-B. 502, 3, a, footnote 2. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nocenti_reo_52">nocenti reo,
+						</seg>
+						<seg type="comment" xml:id="nocenti_reo_52"> etc., <gloss>for the accused,
+							if guilty, his great wealth has
+								had more weight to increase</gloss> (lit. <gloss>towards</gloss> )<gloss>
+							the suspicion of guilt than (to
+								secure) a means of safety.</gloss>
+						</seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="53_56" corresp="urn:cts:latinLit:sec00009.sec003:53-56">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:53-56">
+					<p>Cicero states his plan for preventing delay. He will introduce his
+						witnesses
+						at once, without preliminary argument. Brief statement of the charges
+						against Verres. End.
+					</p>
+				</div>
+				<div type="section" n="53" corresp="urn:cts:latinLit:phi0474.phi005:53">
+					<p>
+						<seg type="lemma" ana="#mihi_est_53">mihi certum est
+						</seg>
+						<seg type="comment" xml:id="mihi_est_53"> ,<gloss>for my part</gloss>
+							(emph.) <gloss>am
+								resolved.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#non_committere_53">non committere,
+						</seg>
+						<seg type="comment" xml:id="non_committere_53">
+							<gloss>not
+								to allow</gloss> (in the weak sense of <gloss>letting it
+								occur</gloss> by mistake or fault). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_mutetur_53">ut . . . mutetur
+						</seg>
+						<seg type="comment" xml:id="ut_mutetur_53"> ,<gloss>to be changed</gloss>; §<ref n="AG 568">568</ref>, N I (332, e); G. 553, I; cf. H. 566, I (498,
+							ii, N.2). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#nobis_53">nobis
+						</seg>
+						<seg type="comment" xml:id="nobis_53"> (eth. dat.), <gloss>our.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#servi_53">servi,
+						</seg>
+						<seg type="comment" xml:id="servi_53">etc.: Hortensius and Metellus (sects. <ref n="Cic. Ver. 1.1.25">25</ref> ,<ref n="Cic. Ver. 1.1.27">27</ref>),
+							while consuls elect, had sent for the Sicilians, but of course without
+							any authority to enforce their coming. Cicero suggests that, if the case
+							is put off till the next year, the summons may be repeated, this time by
+							means of lictors. Each consul was attended by twelve of these officers,
+							who had the power of arresting and coercing (see Manil. Law, note on
+							sect. <ref n="Cic. Ver. 1.1.32">
+								32</ref>,<ref n="pl81.15">p. 81,
+								l.
+								15</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#novo_exemplo_53">novo exemplo,
+						</seg>
+						<seg type="comment" xml:id="novo_exemplo_53">
+							<gloss>in an unheard-of manner.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ius_suum_53">ius suum,
+						</seg>
+						<seg type="comment" xml:id="ius_suum_53">
+							<gloss>
+								their</gloss> [lost] <gloss>rights</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#eorum_53">eorum:
+						</seg>
+						<seg type="comment" xml:id="eorum_53">this word suggests in a skillfully
+							vague way that Verres, the Metelli, and Hortensius are all in the same
+							conspiracy, as it were, to rob the Sicilians, Verres having used his <gloss>
+							imperium</gloss> to carry out the actual robbery, the others using
+							theirs to protect him by intimidating the victims. </seg>
+					</p>
+				</div>
+				<div type="section" n="54" corresp="urn:cts:latinLit:phi0474.phi005:54">
+					<p>
+						<seg type="lemma" ana="#nobis_responderi_54">nobis responderi,
+						</seg>
+						<seg type="comment" xml:id="nobis_responderi_54">i.e.
+							the argument for the defence to be made. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#adducta_sit_54">adducta sit:
+						</seg>
+						<seg type="comment" xml:id="adducta_sit_54"> §<ref n="AG 593">593</ref>
+							(342); B. 324, 1; G. 663, 1; H. 652 (529, ii); H-B. 539; if this were
+							not dependent on </seg>
+						<seg type="lemma" ana="#responderi_54">responderi,
+						</seg>
+						<seg type="comment" xml:id="responderi_54">it
+							would be fut. perf. ind. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#comitiorum_ludorum_54">comitiorum, ludorum:
+						</seg>
+						<seg type="comment" xml:id="comitiorum_ludorum_54">the trial came just
+							between the elections and Pompey’s votive games (sect. <ref n="Cic. Ver. 1.1.31">31</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#censendi_causâ_54">censendi causâ,
+						</seg>
+						<seg type="comment" xml:id="censendi_causâ_54">
+							<gloss>on
+								account of the census-taking</gloss> (<gloss>registration</gloss>).
+							At this time censors were in office, for the first time since Sulla’s
+							domination: they were holding a registration of property and voters, at
+							which citizens from all parts of Italy were obliged to report. The
+							importance of proceeding with the trial while Rome was thus filled with
+							citizens and provincials is obvious. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#vestrum_nostram_54">vestrum, nostram
+						</seg>
+						<seg type="comment" xml:id="vestrum_nostram_54"> (<gloss>mine</gloss>), and</seg>
+						<seg type="lemma" ana="#omnium_54">omnium
+						</seg>
+						<seg type="comment" xml:id="omnium_54">
+							(next page) are predicate after </seg>
+						<seg type="lemma" ana="#esse_54">esse
+						</seg>
+						<seg type="comment" xml:id="esse_54"> (<ref n="pl47.2">p. 47, l. 2</ref>). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quid_agatur_54">quid agatur
+						</seg>
+						<seg type="comment" xml:id="quid_agatur_54">
+							(inc. quest.) depends on the verbal noun </seg>
+						<seg type="lemma" ana="#scientiam_54">scientiam,
+						</seg>
+						<seg type="comment" xml:id="scientiam_54">as
+							the next clause does on </seg>
+						<seg type="lemma" ana="#memoriam_54">memoriam
+						</seg>
+						<seg type="comment" xml:id="memoriam_54">
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#omnium_54_2">omnium
+						</seg>
+						<seg type="comment" xml:id="omnium_54_2">,
+							i.e. not the inhabitants of Rome alone. </seg>
+					</p>
+				</div>
+				<div type="section" n="55" corresp="urn:cts:latinLit:phi0474.phi005:55">
+					<p>
+						<seg type="lemma" ana="#principes_55">principes
+						</seg>
+						<seg type="comment" xml:id="principes_55">:
+							the two distinguished brothers, L. and M. Lucullus. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ita_constituam_55">ita testis constituam
+						</seg>
+						<seg type="comment" xml:id="ita_constituam_55">, etc.: this is the <gloss>criminum
+							ratio</gloss> (sect. <ref n="Cic. Ver. 1.1.19">19</ref>, l.14). Cicero’s
+							plan appears to be so to arrange his witnesses that their examination
+							shall make the usual long introductory <foreign xml:lang="lat">accusatio</foreign>
+							unnecessary. He will, he says, produce his witnesses in such an order
+							and with such introduction in each case as to bring out the <foreign xml:lang="lat">crimen totum</foreign> in the course of these
+							proceedings. When he has explained what he expects to prove in a given
+							instance, he will immediately bring forward the appropriate witnesses,
+							and so on till the whole case is in. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#crimen_totum_55">crimen totum
+						</seg>
+						<seg type="comment" xml:id="crimen_totum_55"> ,<gloss>the
+								impeachment as a whole.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#crimen_55">crimen
+						</seg>
+						<seg type="comment" xml:id="crimen_55"> (below),<gloss>the
+								special charge of extortion</gloss> (stated formally in the next
+							section), the only charge for which Verres was really on trial. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#dantur_55">dantur
+						</seg>
+						<seg type="comment" xml:id="dantur_55"> ,<gloss>are
+								offered.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_res_55">in singulas res
+						</seg>
+						<seg type="comment" xml:id="in_res_55"> ,<gloss>to each point.</gloss>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#illis_55">illis,
+						</seg>
+						<seg type="comment" xml:id="illis_55">the
+							counsel for the defence. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#altera_actione_55">altera actione,
+						</seg>
+						<seg type="comment" xml:id="altera_actione_55">i.e. after the <foreign xml:lang="lat">comperendinatio</foreign>: in this sense the speeches
+							of the <foreign xml:lang="lat">accusatio</foreign> are correctly called <foreign xml:lang="lat">Actio Secunda</foreign> (see note above). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#haec_55">haec
+						</seg>
+						<seg type="comment" xml:id="haec_55"> (referring forward to sect. <ref n="Cic. Ver. 1.1.56">56</ref>), etc., <gloss>this is all the <foreign xml:lang="lat">Accusatio</foreign> there will be in the first
+							Action.</gloss>
+						</seg>
+					</p>
+				</div>
+				<div type="section" n="56" corresp="urn:cts:latinLit:phi0474.phi005:56">
+					<p>
+						<seg type="lemma" ana="#quadringentiens_56">quadringentiens
+						</seg>
+						<seg type="comment" xml:id="quadringentiens_56"> [<foreign xml:lang="lat">centena
+							milia</foreign>]</seg>
+						<seg type="lemma" ana="#sestertium_56">sestertium,
+						</seg>
+						<seg type="comment" xml:id="sestertium_56">
+							<gloss>40,000,000
+								sestertii</gloss>, = $2,000,000 (nearly): § <ref n="AG 634">634</ref>
+							(379); G. p. 493; H. 757 (647, iv, 1); H-B 675, 2. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#habuissemus_56">habuissemus:
+						</seg>
+						<seg type="comment" xml:id="habuissemus_56">cont. to fact protasis regularly
+							retained, without change of mood or tense, in indir. disc.; § <ref n="AG 589">589</ref>, b (337, b); B. 321, B; G. 659; H. 647 (527,
+							iii); H.-B. 581, b, N.; the apodosis is</seg>
+						<seg type="lemma" ana="#opus_fuisse_56">opus fuisse
+						</seg>
+						<seg type="comment" xml:id="opus_fuisse_56"> for <foreign xml:lang="lat">opus
+							fuit</foreign>
+								<gloss>, there would
+								have been no need</gloss>: §<ref n="AG 517">517</ref>, c (308, c);
+							B. 304, 3, a; G. 597, R.3 a; H. 525,1 (476, 4); H.-B. 582, 3, a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Dixi_56">Dixi
+						</seg>
+						<seg type="comment" xml:id="Dixi_56"> ,<gloss>I
+								have done:</gloss> a common formal ending.</seg>
+					</p>
+				</div>
+			</div>
+		</body>
+	</text>
+	<standOff>
+		<linkGrp type="commentary">
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #erat_optandum_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #quod_pertinebat_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #invidiam_infamiamque_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #vestri_ordinis_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #summo_tempore_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #inveteravit_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #opinio_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #exteras_nationes_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #his_iudiciis_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #ordinis_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #neminem_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:1 #_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #cum_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #sint_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #contionibus_legibus_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #conentur_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #magnitudine_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #spe_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #actor_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #adduxi_hominem_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #in_quo_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #reconciliare_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #possetis_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #depeculatorem_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:2 #juris_urbani_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #vos_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #ego_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #religiose_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #religionem_veritatemque_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #judicium_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #equidem_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #quas_partim_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #devitarim_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #cum_sint_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #neque_neque_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:3 #numquam_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #istius_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #Glabrioni_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #ordini_senatorio_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #dictitat_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #esse_metuendum_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #quod_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #multis_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #pecunia_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4 #possit_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:5 #esset_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:5 #fefellisset_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:5 #cadit_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:5 #corrumpendi_judici_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:5 #factus_sit_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:5 #cum_primum_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:5 #tempus_offenderet_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #in_inquirendi_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #invenit_qui_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #in_Achaiam_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #inquirendi_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #ut_conficeret_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #invenit_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #Brundisium_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #obii_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #populorum_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #ut_posset_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:6 #qui_obsideret_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:7 #nunc_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:7 #hoc_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:7 #civis_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:7 #socios_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:7 #auctoritatibus_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:8 #bonis_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:8 #experiatur_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:8 #fuerit_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:8 #tempus_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:8 #posses_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:8 #criminum_vim_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:8 #poterat_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #eloquentia_gratia_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #causa_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #honesto_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #profecto_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #aucuparetur_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #ut_fieret_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #hic_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:9 #causam_diceret_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #quibus_rebus_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #perspicio_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #consilio_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #in_judicavit_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #ut_arbitraretur_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #ea_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #etenim_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:10 #nullam_rem_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #adulescentiae_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #quaestura_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #Carbonem_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #necessitudinem_religionemque_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #legatio_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #pro_quaestore_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #totius_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #scelus_quaestorium_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #pro_quaestore_11_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #adduxit_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:11 #oppugnavit_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:12 #aedium_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:12 #in_dicere_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:12 #bonorum_addictio_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:12 #condonatio_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:12 #instituta_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:12 #jam_vero_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:12 #possit_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #communia_jura_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #jure_gentium_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #tantum_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #imprudentiam_subterfugit_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #res_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #res_13_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #ab_eo_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #aratorum_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #socii_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #cruciati_necati_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #rei_facti_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #rei_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #ejecti_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #optimae_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:13 #opportunissimae_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:14 #regum_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:14 #imperatorum_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:14 #deum_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:14 #videretur_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:14 #commemorare_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #at_enim_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #quin_possit_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #ut_sit_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #multitudo_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #eloquentiam_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #potentia_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #gratia_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #auctoritate_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #simulat_proponit_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #proponit_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #inania_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #noti_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #simulat_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:15 #simulat_15_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:16 #redemptio_16"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:16 #mansit_pacto_16"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:16 #rejectio_16"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:16 #istorum_16"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #praeclare_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #libelli_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #color_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #sententiis_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #cum_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #ex_alacri_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #his_paucis_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #famae_fortunis_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #insidiae_comparantur_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #per_homines_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #aperto_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #nam_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #pertenui_argumento_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #reducebatur_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #Campo_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #Curio_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #honoris_causa_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #tamen_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #ratio_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #videt_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #fornicem_Fabianum_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #defertur_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #narrabat_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #viderat_narrabat_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #criminum_ratione_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #positam_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #altius_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #ratiocinabantur_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #ipse_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #quod_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #negotiatores_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #omnes_litterae_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #publicae_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #auctoritates_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #existimationem_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #unius_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #moderatione_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #vertentur_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #quidem_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #de_judiciis_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #nos_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #hominis_amplissimi_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #nova_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #dissimulare_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #sortirentur_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #Metello_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #obtigisset_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #ut_quaereret_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #de_repetundis_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #factam_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #pueros_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #sane_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #ne_quidem_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #neque_intellegebam_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #tanto_opere_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #intellegebam_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #reperiebam_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #senatore_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #quasi_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #nomine_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #divisores_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:22 #istum_22"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #omnia_debere_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #proximis_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #negasse_audere_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #fortem_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #audere_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #Romilia_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #tribu_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #ex_disciplina_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #HS_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:23 #se_esse_23"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:24 #in_ipsis_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:24 #agere_deterrebar_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:24 #petitioni_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:24 #ratio_24"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #denuntiatum_esse_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #primum_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #arcessit_alter_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #ut_venirent_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #denuntiatum_est_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #sane_liberos_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #venisse_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #eos_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #qui_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #ceterorum_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #cursare_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #paternos_amicos_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #appellare_convenire_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #cuius_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #eiusdem_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:25 #de_fide_25"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:26 #eo_26"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:26 #esse_26"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:26 #praerogativam_26"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:27 #cuiquam_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:27 #alter_designatus_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:27 #quaesiturum_27"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:28 #quid_faceres_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:28 #innocente_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:28 #alienissimum_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:28 #dictitat_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:28 #alicui_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:28 #videatur_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:28 #ignoret_28"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #fato_ceteros_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #populi_existimationi_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #M_Glabrionem_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #illud_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #conlega_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #expediat_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #conemur_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #Juniano_consilio_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #in_protulit_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #hunc_judicem_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:29 #ex_Jan_29"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #P_Sulpicius_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #Non_Dec_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #L_Cassius_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #tribuni_militares_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #non_judicabunt_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #subsortiemur_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #sub_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:30 #prope_toto_30"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:31 #Nonae_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:31 #votivos_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:31 #tum_denique_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:31 #Victoriae_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:31 #perpauci_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:31 #rem_integram_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:31 #non_retinuissem_31"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #nunc_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #si_essem_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #eo_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #jurato_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #legitimo_tempore_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #capiam_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #ne_elabatur_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #periculum_est_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:32 #possit_32"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #perpetua_oratione_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #percipi_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #potuit_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #publicis_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #tabulis_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #auctoritatibus_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #res_omnis_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #diluendis_explicandis_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #ex_nature_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #rationi_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:33 #consilio_33"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #binos_ludos_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #comperendinem_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #comperendinare_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #necessarium_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #id_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #eos_velle_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #amplum_praeclarum_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #innocentiae_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:34 #majus_quiddam_34"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #illud_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #istum_vocari_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #potentia_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #cupiditas_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #interponeretur_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #nunc_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #videbatur_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #regnum_judiciorum_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #homines_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #inruere_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:35 #nervos_aetatis_35"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #ordo_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #paucorum_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #loco_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #secum_agere_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #de_improbis_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #munus_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #moneo_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #deponere_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #accipere_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #recipere_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #polliceri_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #interpretes_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:36 #potentiam_36"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #erit_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #tamen_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #imperio_potestate_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #commemorabuntur_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #certis_rebus_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #agentur_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:37 #inter_annos_37"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #quinquaginta_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #ne_suspicio_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #sublata_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #populi_Romani_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #Q_Calidius_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #honestum_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #HS_triciens_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #praetorium_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:38 #P_Septimio_38"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:39 #inventi_sint_39"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:39 #exirent_39"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:39 #sortiente_39"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:39 #qui_exirent_39"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #jam_vero_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #illam_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #hoc_esse_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #discoloribus_signis_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #color_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #acturum_esse_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #agere_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #hominem_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #cujus_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #secum_agi_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #ago_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #in_suam_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:40 #patronis_40"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #quod_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #commoveri_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #apud_Glabrionem_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #reiciundis_judicibus_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #fore_uti_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #tolleretur_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #legatos_mitterent_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #victoriae_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #sibi_suis_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:41 #nocentissimi_victoriae_41"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:42 #animo_42"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:42 #majore_odio_42"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:43 #loco_43"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:43 #contemnimur_43"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #tribuniciam_potestatem_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #verbo_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #re_vera_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #illam_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #Catulum_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #fugit_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #referente_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #rogatus_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #sententiam_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #hos_rogo_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #patres_conscriptos_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:44 #fuisse_desideraturos_44"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:45 #contionem_habuit_45"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:45 #ad_urbem_45"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:45 #ubi_45"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:45 #in_eo_45"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:45 #suam_45"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:46 #religione_46"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:46 #tribuniciam_46"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:46 #unum_46"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:46 #vel_tenuissimum_46"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:47 #nihil_sit_47"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:47 #gratia_47"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:48 #agam_48"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:48 #res_48"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:48 #manifestas_48"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:48 #a_contendere_48"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:48 #eorum_48"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:49 #vos_49"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:49 #huic_ordini_49"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:49 #post_haec_49"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:49 #utimur_49"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:49 #splendore_49"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:49 #dignitate_49"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:49 #si_offensum_49"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:50 #opto_50"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:51 #is_51"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:51 #judicio_51"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:51 #qui_sis_51"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:51 #reddere_51"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:51 #fac_veniat_51"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:51 #legis_Aciliae_51"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:52 #Summae_auctoritates_52"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:52 #quae_sinant_52"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:52 #ut_quis_52"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:52 #nocenti_reo_52"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #mihi_est_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #non_committere_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #ut_mutetur_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #nobis_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #servi_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #novo_exemplo_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #ius_suum_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:53 #eorum_53"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #nobis_responderi_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #adducta_sit_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #responderi_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #comitiorum_ludorum_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #censendi_causâ_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #vestrum_nostram_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #omnium_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #esse_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #quid_agatur_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #scientiam_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #memoriam_54"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:54 #omnium_54_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #principes_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #ita_constituam_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #crimen_totum_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #crimen_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #dantur_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #in_res_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #illis_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #altera_actione_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:55 #haec_55"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:56 #quadringentiens_56"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:56 #sestertium_56"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:56 #habuissemus_56"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:56 #opus_fuisse_56"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:56 #Dixi_56"/>
+		</linkGrp>
+	</standOff>
+</TEI>

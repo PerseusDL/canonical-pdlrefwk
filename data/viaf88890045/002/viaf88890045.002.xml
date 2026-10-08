@@ -3,8 +3,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Dictionary of Greek and Roman Geography (1854)</title>
-                <editor role="editor">William Smith, LLD</editor> <sponsor>Perseus Project, Tufts University</sponsor>
+                <title>Dictionary of Greek and Roman Geography</title>
+                <editor>William Smith</editor> 
+                <sponsor>Perseus Project, Tufts University</sponsor>
                 <principal>Gregory Crane</principal>
                 <respStmt>
                     <resp>Prepared under the supervision of</resp>
@@ -18,21 +19,29 @@
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
                 <authority>Perseus Project</authority>
-                <date type="release">2004-07-20</date>
+                <date type="release" when="2004-07-20">Perseus 3.0</date>
+                <idno type="filename">viaf88890045.002.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+                        under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</licence>
+                </availability>
             </publicationStmt>
             <sourceDesc>
                 <biblStruct>
                     <monogr>
-                        <title>Dictionary of Greek and Roman Geography, illustrated by numerous
-                            engravings on wood</title>
-                        <editor role="editor">William Smith, LLD</editor>
+                        <title>Dictionary of Greek and Roman Geography</title>
+                        <editor role="editor">William Smith</editor>
                         <imprint>
                             <pubPlace>London</pubPlace>
-                            <publisher>Walton and Maberly, Upper Gower Street and Ivy Lane,
-                                Paternoster Row; John Murray, Albemarle Street.</publisher>
-                            <date>1854</date>
+                            <publisher>Walton and Maberly</publisher>
+                            <publisher>John Murray</publisher>
+                            <date>1854-1857</date>
+                            <biblScope unit="volume">1-2</biblScope>
                         </imprint>
                     </monogr>
+                    <ref target="http://hdl.handle.net/2027/hvd.hn38ys" n="Volume 1">HathiTrust</ref>
+                    <ref target="http://hdl.handle.net/2027/mdp.39015010769043" n="Volume 2">HathiTrust</ref>
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
@@ -50,13 +59,13 @@
         </encodingDesc>
         <profileDesc>
             <langUsage>
-                <language ident="en">English </language>
-                <language ident="la">Latin </language>
-                <language ident="greek">Greek </language>
-                <language ident="fr">French </language>
-                <language ident="it">Italian </language>
-                <language ident="es">Spanish </language>
-                <language ident="he">Hebrew </language>
+                <language ident="en">English</language>
+                <language ident="la">Latin</language>
+                <language ident="greek">Greek</language>
+                <language ident="fr">French</language>
+                <language ident="it">Italian</language>
+                <language ident="es">Spanish</language>
+                <language ident="he">Hebrew</language>
                 <language ident="xarabic">Arabic, transliterated </language>
             </langUsage>
         </profileDesc>

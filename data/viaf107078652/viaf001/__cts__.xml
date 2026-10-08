@@ -1,0 +1,12 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:greekLit:viaf107078652"
+    urn="urn:cts:greekLit:viaf107078652.viaf001"
+    xml:lang="eng"
+>
+    <ti:title xml:lang="eng">Commentary on Plato, Protagoras</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf107078652.viaf001" urn="urn:cts:greekLit:viaf107078652.viaf001.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Commentary on Plato, Protagoras</ti:label>
+        <ti:description xml:lang="eng">Plato. Platonis Protagoras. Adam, James; Adam, Adela Marion, editors. Cambridge: Cambridge University Press, 1921.</ti:description>
+        <ti:about urn="urn:cts:greekLit:tlg0059.tlg022" />
+    </ti:commentary>
+</ti:work>

@@ -1,0 +1,8 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:viaf2603144" urn="urn:cts:greekLit:viaf2603144.viaf003" xml:lang="eng">
+    <ti:title xml:lang="eng">Commentary on Sophocles: Antigone</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf2603144.viaf003" urn="urn:cts:greekLit:viaf2603144.viaf003.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Commentary on Sophocles: Antigone</ti:label>
+        <ti:description xml:lang="mul">Sophocles, The plays and fragments with critical notes. Part 3, The Antigone. Jebb, Richard Claverhouse, author. Cambridge, UK: Cambridge University Press, 1900.</ti:description>
+        <ti:about urn="urn:cts:greekLit:tlg0011.tlg002"/>
+    </ti:commentary>
+</ti:work>

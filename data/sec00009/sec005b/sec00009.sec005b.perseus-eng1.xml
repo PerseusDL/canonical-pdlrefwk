@@ -1,0 +1,2343 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title>Commentary on Second Oration against Catiline</title>
+				<author>James Bradstreet Greenough</author>
+				<author>George Lyman Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Bridget Almas</name>
+					<name>Lisa Cerrato</name>
+					<name>Rashmi Singhal</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" cert="medium">2000-08-01</date>
+				<idno type="filename">sec00009.sec005b.perseus-eng1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Select orations of Cicero</title>
+						<author>Cicero</author>
+						<editor>James Bradstreet Greenough</editor>
+						<editor>George Lyman Kittredge</editor>
+						<edition>Allen and Greenough’s edition</edition>
+						<imprint>
+							<pubPlace>Boston</pubPlace>
+							<publisher>Ginn and Company</publisher>
+							<date>1897</date>
+						</imprint>
+					</monogr>
+					<ref target="https://hdl.handle.net/2027/mdp.39015008024815?urlappend=%3Bseq=244%3Bownerid=13510798888294386-264">
+						HathiTrust</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])" n="section">
+					<p>This pointer extracts chapter and section.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])" n="chapter">
+					<p>This pointer extracts chapter.</p>
+				</cRefPattern>
+			</refsDecl>
+			<refsDecl xml:id="CTS" n="CTS">
+				<citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0" match="/tei:TEI/tei:text/tei:body" use="@xml:base">
+					<citeStructure unit="chapter" delim=":" match="tei:div[@type='chapter']" use="@n">
+						<citeStructure unit="section" delim="." match="tei:div[@type='section']" use="@n"/>
+					</citeStructure>
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="lat">Latin</language>
+				<language ident="grc">Greek</language>
+				<language ident="fre">French</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-09-18" who="Alison Babeu">Final review and updating of header information</change>
+			<change when="2026-07-31" who="Charles Pletcher">Added citeStructure and other TEI changes</change>
+			<change when="2024-12-05" who="Alison Babeu">Adding in header and bibliographic metadata</change>
+			<change when="2009-10-09" who="rsing04">
+				more reorganizing of texts module by collection
+			</change>
+			<change when="2009-09-22" who="rsingh04">
+				fixed references to Cic. Ver.
+			</change>
+			<change when="2009-08-25" who="rsingh04">
+				changed bibls with Perseus:abo to corresponding abbreviation
+			</change>
+			<change when="2009-07-30" who="rsingh04">
+				fixed allen and greenough refs
+			</change>
+			<change when="2009-07-29" who="student">
+				fixed bibl errors - zr
+				fixed bibl errors through speech 3 of Catiline - zr
+			</change>
+			<change when="2009-06-05" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-06-03" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-05-27" who="rsingh04">
+				added/fixed cvs log keyword
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body xml:lang="eng" xml:base="urn:cts:latinLit:sec00009.sec005b.perseus-eng1">
+			<div type="chapter" n="Argument">
+				<head>Second Oration against Catiline</head>
+				<div type="section" n="Argument">
+					<head>Argument</head>
+					<list type="outline">
+						<item>Part 1. <list type="simple">
+								<item>CHAP <ref n="Cic. Catil. 2.1">1</ref>. Catiline is gone: the
+							city breathes again; there is now open war, and no longer a concealed
+							intestine conflict.</item>
+								<item>
+									<ref n="Cic. Catil. 2.2">2</ref>. He ought to have been put to
+							death; but all were not convinced: now, his guilt is manifest.</item>
+								<item>
+									<ref n="Cic. Catil. 2.3">3</ref>. His worthless partisans remain
+							at Rome; but they are powerless, being closely watched.</item>
+								<item>
+									<ref n="Cic. Catil. 2.4">4</ref>. Let them follow him. He was
+							the leader of all scoundrels and profligates.</item>
+								<item>
+									<ref n="Cic. Catil. 2.5">5</ref>. His associates are desperate
+							but contemptible; let them depart or take the consequences. </item>
+							</list>
+						</item>
+						<item>Part. 2. <list type="simple">
+								<item>Chapters <ref n="Cic. Catil. 2.6">6</ref>-<ref n="Cic. Catil. 2.7">7</ref>. Catiline is not in exile; he
+							has joined his army. Men say the consul has driven him into exile: would
+							the charge were true! </item>
+							</list>
+						</item>
+						<item>Part 3. <list type="simple">
+								<item>
+									<ref n="Cic. Catil. 2.8">8</ref>-<ref n="Cic. Catil. 2.10">10</ref>.
+							Character of Catiline's partisans: <list type="simple">
+										<item>(i) rich men in debt; </item>
+										<item>(ii) men eager for power and wealth; </item>
+										<item>(iii) Sulla's veterans; </item>
+										<item>(iv) ruined men, hoping for any change; </item>
+										<item>(v) criminals; </item>
+										<item>(vi) profligates and debauchees, men of Catiline's
+											own
+											stamp. </item>
+									</list>
+								</item>
+								<item>
+									<ref n="Cic. Catil. 2.11">11</ref>. Superiority of the patriot
+							forces arrayed against them. </item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">
+								<foreign xml:lang="lat">Peroratio</foreign>
+							</foreign>
+							. <list type="simple">
+								<item>
+									<ref n="Cic. Catil. 2.12">12</ref>. Citizens need not fear; the
+							consul will protect the state. The conspirators warned.</item>
+								<item>
+									<ref n="Cic. Catil. 2.13">13</ref>. There shall be no
+							disturbance: the people may trust in the gods.</item>
+							</list>
+						</item>
+					</list>
+				</div>
+			</div>
+			<div type="chapter" n="I">
+				<div type="section" n="title">
+					<head>I. <foreign xml:lang="lat">Pars Prima</foreign> (§§ 1-11).</head>
+					<milestone unit="chapter" n="1_4"/>
+					<p>Sects. 1-4. Catiline is gone. He ought to have been put to death: but the
+						time was
+						not ripe, for all were not convinced of his guilt.</p>
+				</div>
+				<div type="section" n="1" corresp="urn:cts:latinLit:phi0474.phi013:2.1">
+					<milestone unit="page_line" n="p113_l15"/>
+					<p>
+						<seg type="lemma" ana="#ejecimus_p113_l15">ejecimus
+						</seg>
+						<seg type="comment" xml:id="ejecimus_p113_l15"> , <gloss>
+								expelled</gloss> (with violence); </seg>
+						<seg type="lemma" ana="#emisimus_p113_l15">emisimus
+						</seg>
+						<seg type="comment" xml:id="emisimus_p113_l15"> , <gloss>
+								let</gloss> [him] <gloss>go</gloss>. The words <foreign xml:lang="lat">vel</foreign> . . . <foreign xml:lang="lat">vel</foreign>
+							(<gloss>or, if you like</gloss>) imply that the same act may be called
+							by either name. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ipsum_p113_l15">ipsum
+						</seg>
+						<seg type="comment" xml:id="ipsum_p113_l15"> , <gloss>of
+								his own accord</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p113_l16"/>
+					<p>
+						<seg type="lemma" ana="#verbis_prosecuti_p113_l16">verbis prosecuti
+						</seg>
+						<seg type="comment" xml:id="verbis_prosecuti_p113_l16">
+							may apply as well to kind words of dismissal as to invective. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#abiit_p113_l16">abiit
+						</seg>
+						<seg type="comment" xml:id="abiit_p113_l16">, simply, <gloss>is
+								gone</gloss>; </seg>
+						<seg type="lemma" ana="#excessit_p113_l16">excessit
+						</seg>
+						<seg type="comment" xml:id="excessit_p113_l16"> , <gloss>has
+								retreated</gloss> before the storm; </seg>
+						<seg type="lemma" ana="#evasit_p113_l16">evasit
+						</seg>
+						<seg type="comment" xml:id="evasit_p113_l16"> , <gloss>has
+								escaped</gloss> by stealth; </seg>
+						<seg type="lemma" ana="#erupit_p113_l16">erupit
+						</seg>
+						<seg type="comment" xml:id="erupit_p113_l16"> , <gloss>has
+								broken forth</gloss> with violence, — a climax of expression, but
+							nearly identical in sense. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l1"/>
+					<p>
+						<seg type="lemma" ana="#moenibus_p114_l1">moenibus
+						</seg>
+						<seg type="comment" xml:id="moenibus_p114_l1"> (dat. following <foreign xml:lang="lat">comparabitur</foreign>), <gloss>
+								against</gloss>, etc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#atque_p114_l1">atque
+						</seg>
+						<seg type="comment" xml:id="atque_p114_l1"> (adding with emphasis), <gloss>and
+							so</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hunc_quidem_p114_l1">hunc quidem
+						</seg>
+						<seg type="comment" xml:id="hunc_quidem_p114_l1"> , <gloss>him
+								at any rate</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l2"/>
+					<p>
+						<seg type="lemma" ana="#sine_controversia_p114_l2">sine controversia
+						</seg>
+						<seg type="comment" xml:id="sine_controversia_p114_l2"> , <gloss>without
+							dispute unquestionably</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l3"/>
+					<p>
+						<seg type="lemma" ana="#versabitur_p114_l3">versabitur
+						</seg>
+						<seg type="comment" xml:id="versabitur_p114_l3"> , <gloss>will
+								be busy</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l4"/>
+					<p>
+						<seg type="lemma" ana="#campo_p114_l4">campo
+						</seg>
+						<seg type="comment" xml:id="campo_p114_l4"> , </seg>
+						<seg type="lemma" ana="#foro_p114_l4">foro
+						</seg>
+						<seg type="comment" xml:id="foro_p114_l4"> , </seg>
+						<seg type="lemma" ana="#curia_p114_l4">curia
+						</seg>
+						<seg type="comment" xml:id="curia_p114_l4"> , </seg>
+						<seg type="lemma" ana="#parietes_p114_l4">parietes
+						</seg>
+						<seg type="comment" xml:id="parietes_p114_l4">: observe the narrowing
+							climax. <pb n="380"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p114_l5"/>
+					<p>
+						<seg type="lemma" ana="#loco_est_p114_l5">loco motus est
+						</seg>
+						<seg type="comment" xml:id="loco_est_p114_l5"> , <gloss>he
+								lost his vantage-ground</gloss>: a military expression, hence the
+							simple abl.; § <ref n="AG 428">428</ref>, f (258, a, N.2); cf. B. 229,
+							I; G. 390, 2, N.2; H. 463 (414, ii); H-B. 408, 2, a. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l6"/>
+					<p>
+						<seg type="lemma" ana="#nullo_impediente_p114_l6">nullo impediente
+						</seg>
+						<seg type="comment" xml:id="nullo_impediente_p114_l6">,
+							i.e. his defenders till now could screen him by forms of law. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l7"/>
+					<p>
+						<seg type="lemma" ana="#justum_p114_l7">justum
+						</seg>
+						<seg type="comment" xml:id="justum_p114_l7"> (if retained in the text), <gloss>regular,
+							in due form</gloss>; cf. note on latrocinio, p. 109,1. I. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l9"/>
+				</div>
+				<div type="section" n="2" corresp="urn:cts:latinLit:phi0474.phi013:2.2">
+					<p>
+						<seg type="lemma" ana="#quod_etc_p114_l9">quod . . . extulit etc.
+						</seg>
+						<seg type="comment" xml:id="quod_etc_p114_l9">: § <ref n="AG 572">572</ref>,
+							b (333, b); B. 331, V, a; G. 542; H. 588, i (540, iv, N.); H.-B. 594, c. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l10"/>
+					<p>
+						<seg type="lemma" ana="#cruentum_p114_l10">cruentum
+						</seg>
+						<seg type="comment" xml:id="cruentum_p114_l10"> (pred.), <gloss>reeking with
+							blood</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#vivis_nobis_p114_l10">vivis nobis
+						</seg>
+						<seg type="comment" xml:id="vivis_nobis_p114_l10"> (abl. abs.), <gloss>leaving
+							us alive</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l12"/>
+					<p>
+						<seg type="lemma" ana="#civis_p114_l12">civis
+						</seg>
+						<seg type="comment" xml:id="civis_p114_l12">:
+							acc. plur. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l13"/>
+					<p>
+						<seg type="lemma" ana="#jacet_p114_l13">jacet
+						</seg>
+						<seg type="comment" xml:id="jacet_p114_l13">, etc., <gloss>lies
+								prostrate</gloss>, etc. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l15"/>
+					<p>
+						<seg type="lemma" ana="#retorquet_oculos_p114_l15">retorquet oculos
+						</seg>
+						<seg type="comment" xml:id="retorquet_oculos_p114_l15">
+							begins the figure of a wild beast, which is continued in </seg>
+						<seg type="lemma" ana="#faucibus_p114_l15">faucibus
+						</seg>
+						<seg type="comment" xml:id="faucibus_p114_l15">
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#profecto_p114_l15">profecto
+						</seg>
+						<seg type="comment" xml:id="profecto_p114_l15"> , <gloss>no
+								doubt</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l16"/>
+					<p>
+						<seg type="lemma" ana="#quae_quidem_p114_l16">quae quidem
+						</seg>
+						<seg type="comment" xml:id="quae_quidem_p114_l16"> , <gloss>which
+								really</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l17"/>
+					<p>
+						<seg type="lemma" ana="#quod_projecerit_p114_l17">quod . . . projecerit
+						</seg>
+						<seg type="comment" xml:id="quod_projecerit_p114_l17">:
+							see note on </seg>
+						<seg type="lemma" ana="#quod_extulit_p114_l17">quod extulit
+						</seg>
+						<seg type="comment" xml:id="quod_extulit_p114_l17">, 1.9, above; for mood,
+							see § <ref n="AG 592">592</ref>,3 (341, d); B. 323; G. 541; H. 588, ii
+							(516, ii); H.-B. 535, 2, a. <milestone n="2" unit="chapter"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p114_l19"/>
+				</div>
+				<div type="section" n="3" corresp="urn:cts:latinLit:phi0474.phi013:2.3">
+					<p>
+						<seg type="lemma" ana="#For_followingsection_p114_l19">For the contents of
+							this and the following
+							section
+						</seg>
+						<seg type="comment" xml:id="For_followingsection_p114_l19">, cf. Cat. 1,
+							sects. <ref n="Cic. Catil. 2.27">27</ref>, <ref n="Cic. Catil. 2.28">28</ref>
+							where the supposed complaint against Cicero for not having put Catiline
+							to death and his reply to it are given at greater length. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#qualis_omnis_p114_l19">qualis omnis
+						</seg>
+						<seg type="comment" xml:id="qualis_omnis_p114_l19">:
+							acc. plur. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#oportebat_p114_l19">oportebat
+						</seg>
+						<seg type="comment" xml:id="oportebat_p114_l19">: § <ref n="AG 522">522</ref>,
+							a (3", c); B. 304, 3, a; G. 254, R.2; H. 583 (511, I, N.1); H.-B. 582,
+							3, a. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l20"/>
+					<p>
+						<seg type="lemma" ana="#qui_accuset_p114_l20">qui . . . accuset
+						</seg>
+						<seg type="comment" xml:id="qui_accuset_p114_l20"> , <gloss>as to accuse</gloss>:
+							§ <ref n="AG 535">535</ref> (320); B. 283, I ; G. 631,2; H. 591, I (503,
+							i); H-B. 521, I. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l22"/>
+					<p>
+						<seg type="lemma" ana="#ista_p114_l22">ista
+						</seg>
+						<seg type="comment" xml:id="ista_p114_l22">: for gender, see § <ref n="AG 296">296</ref>, a (195, d); cf. B. 250,3; G. 211, R.5; H. 396,
+							2 (445, 4); H.-B. 326, I. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l23"/>
+					<p>
+						<seg type="lemma" ana="#interfectum_esse_p114_l23">interfectum esse
+						</seg>
+						<seg type="comment" xml:id="interfectum_esse_p114_l23">: § <ref n="AG 486">
+							486</ref>, b, N. (288, d); B. 270, 2, a; G. 280, R.2; H.-B. 582, 3, a,
+							footnote 2; observe the emphatic position. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l24"/>
+					<p>
+						<seg type="lemma" ana="#oportebat_p114_l24">oportebat
+						</seg>
+						<seg type="comment" xml:id="oportebat_p114_l24">: for tense, see note on
+							Cat. 1, <ref n="pl100.13">p. 100, l. 13</ref> . </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l25"/>
+					<p>
+						<seg type="lemma" ana="#hujus_imperi_p114_l25">hujus imperi
+						</seg>
+						<seg type="comment" xml:id="hujus_imperi_p114_l25">: see note on Cat. 1, <ref n="pl104.16">p. 104, l. 16</ref>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#res_publica_p114_l25">res publica
+						</seg>
+						<seg type="comment" xml:id="res_publica_p114_l25"> , <gloss>the
+								public interest</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p114_l27"/>
+					<p>
+						<seg type="lemma" ana="#quam_multos_p114_l27">quam multos
+						</seg>
+						<seg type="comment" xml:id="quam_multos_p114_l27">,
+							etc.: the passages in brackets are probably spurious; it will be
+							observed that they merely repeat —the preceding statement in each case. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l1"/>
+				</div>
+				<div type="section" n="4" corresp="urn:cts:latinLit:phi0474.phi013:2.4">
+					<p>
+						<seg type="lemma" ana="#cum_p115_l1">cum
+						</seg>
+						<seg type="comment" xml:id="cum_p115_l1"> (causal) <foreign xml:lang="lat">
+							viderem</foreign>, <gloss>seeing</gloss>: its obj. is </seg>
+						<seg type="lemma" ana="#fore_possem_p115_l1">fore ut possem
+						</seg>
+						<seg type="comment" xml:id="fore_possem_p115_l1">
+							(which is the apod. of </seg>
+						<seg type="lemma" ana="#si_multassem_p115_l1">si multassem
+						</seg>
+						<seg type="comment" xml:id="si_multassem_p115_l1">) ; § <ref n="AG 569">569</ref>,
+							a (288, f); B. 270,3; G. 248; H. 619, 2 (537,3); H-B. 472, c </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ne_probata_p115_l1">ne . . . probata
+						</seg>
+						<seg type="comment" xml:id="ne_probata_p115_l1">: nearly equivalent to <foreign xml:lang="lat">cum ne vos quidem</foreign>. . . <foreign xml:lang="lat">probaretis</foreign>: implying that if <emph>
+								they</emph> do not sustain the act, much less will the people at
+							large. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l2"/>
+					<p>
+						<seg type="lemma" ana="#multassem_p115_l2">multassem
+						</seg>
+						<seg type="comment" xml:id="multassem_p115_l2">: for fut. perf. of direct; § <ref n="AG 589">589</ref>, 3 (337, 3); B. 319, B; G. 657, 5; H. 646 (527,
+							i). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fore_ut_p115_l2">fore ut
+						</seg>
+						<seg type="comment" xml:id="fore_ut_p115_l2"> , <gloss>the
+								result would be that</gloss>, etc. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l4"/>
+					<p>
+						<seg type="lemma" ana="#at_possetis_p115_l4">at . . . possetis
+						</seg>
+						<seg type="comment" xml:id="at_possetis_p115_l4">,
+							result clause explaining </seg>
+						<seg type="lemma" ana="#huc_p115_l4">huc
+						</seg>
+						<seg type="comment" xml:id="huc_p115_l4"> . </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l5"/>
+					<p>
+						<seg type="lemma" ana="#videretis_p115_l5">videretis
+						</seg>
+						<seg type="comment" xml:id="videretis_p115_l5">: § <ref n="AG 593">593</ref>
+							(342); B. 324, I G. 663, I; H. 652 (529, ii); H.-B. 539; if not
+							dependent on <foreign xml:lang="lat">
+								possetis</foreign>, it would be videbetis. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quem_quidem_p115_l5">quem quidem
+						</seg>
+						<seg type="comment" xml:id="quem_quidem_p115_l5"> , <gloss>whom,
+								by the way</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l6"/>
+					<p>
+						<seg type="lemma" ana="#intellegatis_p115_l6">intellegatis
+						</seg>
+						<seg type="comment" xml:id="intellegatis_p115_l6">: § <ref n="AG 565">565</ref>
+							(331, i); B. 295, 6; G. 553, 2; H. 564, ii, I (499, 3); H-B. 531, 2. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l7"/>
+					<p>
+						<seg type="lemma" ana="#quod_exierit_p115_l7">quod . . . exierit
+						</seg>
+						<seg type="comment" xml:id="quod_exierit_p115_l7">: § <ref n="AG 592">592</ref>,
+							3(341, d); B. 323; G. 539; H. 588, ii (5I6, ii); H-B. 535, 2, N.2. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l9"/>
+					<p>
+						<seg type="lemma" ana="#mihi_p115_l9">mihi
+						</seg>
+						<seg type="comment" xml:id="mihi_p115_l9">: eth. dat.; as if, <gloss>I
+								notice</gloss>; § <ref n="AG 380">380</ref> (236); B. 188, 2, b; G.
+							351; 11.432 (389); H.-B. 372. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l10"/>
+					<p>
+						<seg type="lemma" ana="#aes_alienum_p115_l10">aes alienum
+						</seg>
+						<seg type="comment" xml:id="aes_alienum_p115_l10">,
+							etc., i.e. petty debts run up in cook-shops and the like; not like the
+							heavy mortgages spoken of afterwards. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l11"/>
+					<p>
+						<seg type="lemma" ana="#reliquit_p115_l11">reliquit
+						</seg>
+						<seg type="comment" xml:id="reliquit_p115_l11">:
+							notice the emphatic position. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l12"/>
+					<p>
+						<seg type="lemma" ana="#quos_viros_p115_l12">quos viros
+						</seg>
+						<seg type="comment" xml:id="quos_viros_p115_l12">:
+							for a characterization of Catiline's partisans, see sects. 18-23. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l14"/>
+				</div>
+				<div type="section" n="5" corresp="urn:cts:latinLit:phi0474.phi013:2.5">
+					<p>His worthless partisans remain at Rome, but are powerless: let them follow
+						him. He was the ringleader of all scoundrels and profligates. Let his
+						associates depart or take the consequences. <milestone n="3" unit="chapter"/>
+					</p>
+					<p>
+						<seg type="lemma" ana="#prae_p115_l14">prae
+						</seg>
+						<seg type="comment" xml:id="prae_p115_l14"> , <gloss>in
+								comparison with</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Gallicanis_p115_l14">Gallicanis
+						</seg>
+						<seg type="comment" xml:id="Gallicanis_p115_l14">, i.e. those permanently
+							stationed in Cisalpine Gaul. The <foreign xml:lang="lat">ager Gallicus</foreign>
+							below was that strip of sea-coast north of Picenum formerly occupied by
+							the Senones, but at this time reckoned a part of Umbria. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l15"/>
+					<p>
+						<seg type="lemma" ana="#hoc_dilecta_p115_l15">hoc dilecta
+						</seg>
+						<seg type="comment" xml:id="hoc_dilecta_p115_l15">
+							refers to a levy recently raised. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Q_Metellus_p115_l15">Q. Metellus
+						</seg>
+						<seg type="comment" xml:id="Q_Metellus_p115_l15"> (Celer): see note on Cat.
+							1, sect. <ref n="Cic. Catil. 1.19">19</ref> , <ref n="pl107.13">p. 107,
+							l. 13</ref>. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l17"/>
+					<p>
+						<seg type="lemma" ana="#senibus_p115_l17">senibus
+						</seg>
+						<seg type="comment" xml:id="senibus_p115_l17">,
+							etc., i.e. those classes who naturally look forward to a revolution to
+							mend their fortunes. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l18"/>
+					<p>
+						<seg type="lemma" ana="#luxuria_p115_l18">luxuria
+						</seg>
+						<seg type="comment" xml:id="luxuria_p115_l18"> = <gloss>
+								high-livers</gloss>: abstract for concrete, as common in Latin and
+							older English; Cf. Shakespeare, <title>All's Well</title> ii. I, 91:
+							"Bring in the admiration"(i.e. this wonderful person). </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l19"/>
+					<p>
+						<seg type="lemma" ana="#vadimonia_deserere_p115_l19">vadimonia deserere
+						</seg>
+						<seg type="comment" xml:id="vadimonia_deserere_p115_l19"> , <gloss>desert</gloss>
+							their bondsmen, i.e. leave them in the lurch in their creditors' suits. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l21"/>
+					<p>
+						<seg type="lemma" ana="#edictum_praetoris_p115_l21">edictum praetoris
+						</seg>
+						<seg type="comment" xml:id="edictum_praetoris_p115_l21">, in effect like a <gloss>sheriff's
+							writ</gloss>. Any official order of a magistrate was an <foreign xml:lang="lat">edictum</foreign>. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l22"/>
+					<p>
+						<seg type="lemma" ana="#hos_p115_l22">hos
+						</seg>
+						<seg type="comment" xml:id="hos_p115_l22">, as opposed to those he did take
+							out. <pb n="382"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p115_l24"/>
+					<p>
+						<seg type="lemma" ana="#fulgent_purpura_p115_l24">fulgent purpura
+						</seg>
+						<seg type="comment" xml:id="fulgent_purpura_p115_l24">, i.e displaying their
+							rank as Senators, who alone had the right to wear the broad purple
+							stripe (<foreign xml:lang="lat">latus clavus</foreign>) on the tunic.
+							The reference, therefore, is to foppish young nobles. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#mallem_p115_l24">mallem
+						</seg>
+						<seg type="comment" xml:id="mallem_p115_l24">: § <ref n="AG 447">447</ref>,
+							I (311, b); B. 280, 4; G. 258, and N.1; H. 556 (486, i); H.-B. 519, I,
+							b. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#eduxisset_p115_l24">eduxisset
+						</seg>
+						<seg type="comment" xml:id="eduxisset_p115_l24">: § <ref n="AG 565">565</ref>(331,
+							f a.); B. 295, 8; G. 546, R.2; H. 565, 2 (499, 2); H.-B. 5;9, I, c. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#si_permanent_p115_l24">si . . . permanent
+						</seg>
+						<seg type="comment" xml:id="si_permanent_p115_l24">: a future condition; § <ref n="AG 516">516</ref>, a, N. (307, a, N.); G. 228; H. 533, 2 (467,
+							5); H.-B. 571. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l25"/>
+					<p>
+						<seg type="lemma" ana="#mementote_p115_l25">mementote
+						</seg>
+						<seg type="comment" xml:id="mementote_p115_l25">,
+							i.e. let them remember that they are objects of suspicion and shall be
+							watched accordingly. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l27"/>
+					<p>
+						<seg type="lemma" ana="#atque_hoc_p115_l27">atque hoc
+						</seg>
+						<seg type="comment" xml:id="atque_hoc_p115_l27">,
+							etc., i.e. their effrontery makes them still more a cause for alarm. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l28"/>
+				</div>
+				<div type="section" n="6" corresp="urn:cts:latinLit:phi0474.phi013:2.6">
+					<p>
+						<seg type="lemma" ana="#video_p115_l28">video
+						</seg>
+						<seg type="comment" xml:id="video_p115_l28">,
+							i.e. I know perfectly well. - </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l29"/>
+					<p>
+						<seg type="lemma" ana="#cui_sit_p115_l29">cui sit
+						</seg>
+						<seg type="comment" xml:id="cui_sit_p115_l29">, etc.: cf. Cat. 1, sect. <ref n="Cic. Catil. 1.9">9</ref>. </seg>
+					</p>
+					<milestone unit="page_line" n="p115_l31"/>
+					<p>
+						<seg type="lemma" ana="#superioris_noctis_p115_l31">superioris noctis
+						</seg>
+						<seg type="comment" xml:id="superioris_noctis_p115_l31">,
+							i.e. three nights ago. </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l3"/>
+					<p>
+						<seg type="lemma" ana="#ne_p116_l3">ne
+						</seg>
+						<seg type="comment" xml:id="ne_p116_l3"> , <gloss>
+								surely</gloss>: an affirmative particle sometimes wrongly spelled <foreign xml:lang="lat">nae</foreign>. <milestone n="116.5" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ut_videretis_p116_l3">ut . . . videretis
+						</seg>
+						<seg type="comment" xml:id="ut_videretis_p116_l3">:
+							clause of result explaining </seg>
+						<seg type="lemma" ana="#quod_p116_l3">quod
+						</seg>
+						<seg type="comment" xml:id="quod_p116_l3"> . </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l7"/>
+					<p>
+						<seg type="lemma" ana="#nisi_vero_p116_l7">nisi vero
+						</seg>
+						<seg type="comment" xml:id="nisi_vero_p116_l7">: ironical (as usual),
+							introducing a <foreign xml:lang="lat">reductio
+								ad
+								absurdunt</foreign>. (The </seg>
+						<seg type="lemma" ana="#si_p116_l7">si
+						</seg>
+						<seg type="comment" xml:id="si_p116_l7"> only doubles that in <foreign xml:lang="lat">nisi</foreign>.) </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l8"/>
+					<p>
+						<seg type="lemma" ana="#non_jam_p116_l8">non. . . jam
+						</seg>
+						<seg type="comment" xml:id="non_jam_p116_l8"> , <gloss>no
+								longer</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l11"/>
+					<p>
+						<seg type="lemma" ana="#Aurelia__via__p116_l11">Aurelia_ via_
+						</seg>
+						<seg type="comment" xml:id="Aurelia__via__p116_l11">: see Cat. 1, sect. <ref n="Cic. Catil. 1.24">24</ref>. </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l13"/>
+				</div>
+				<div type="section" n="7" corresp="urn:cts:latinLit:phi0474.phi013:2.7">
+					<p>
+						<seg type="lemma" ana="#rem_publicam_p116_l13">rem publicam
+						</seg>
+						<seg type="comment" xml:id="rem_publicam_p116_l13">: § <ref n="AG 397">397</ref>,
+							d (240, d); B. 183; G. 343, 1 H. 421 (381); H.-B. 399 </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sentinam_p116_l13">sentinam
+						</seg>
+						<seg type="comment" xml:id="sentinam_p116_l13"> , <gloss>
+								refuse</gloss> (see Cat. 1, <ref n="pl104.22">p. 104, l. 22</ref> ). </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l14"/>
+					<p>
+						<seg type="lemma" ana="#ejecerit_p116_l14">ejecerit
+						</seg>
+						<seg type="comment" xml:id="ejecerit_p116_l14">:
+							the conclusion is implied in </seg>
+						<seg type="lemma" ana="#O_fortunatam_p116_l14">O fortunatam
+						</seg>
+						<seg type="comment" xml:id="O_fortunatam_p116_l14">
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#exhausto_p116_l14">exhausto
+						</seg>
+						<seg type="comment" xml:id="exhausto_p116_l14"> , <gloss>drained
+								off</gloss> (cf. </seg>
+						<seg type="lemma" ana="#sentina_p116_l14">sentina
+						</seg>
+						<seg type="comment" xml:id="sentina_p116_l14">
+							). </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l15"/>
+					<p>
+						<seg type="lemma" ana="#recreata_p116_l15">recreata
+						</seg>
+						<seg type="comment" xml:id="recreata_p116_l15"> , <gloss>
+								invigorated</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l17"/>
+					<p>
+						<seg type="lemma" ana="#toti_Itali_p116_l17">toti Itali
+						</seg>
+						<seg type="comment" xml:id="toti_Itali_p116_l17">: § <ref n="AG 429">429</ref>,
+							2 (258,1 2); B. 228, I, b; G. 388; H. 485, I (425, 2); H.-B. 436, a. </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l18"/>
+					<p>
+						<seg type="lemma" ana="#subjector_p116_l18">subjector
+						</seg>
+						<seg type="comment" xml:id="subjector_p116_l18"> , <gloss>
+								forger</gloss>; </seg>
+						<seg type="lemma" ana="#circumscriptor_p116_l18">circumscriptor
+						</seg>
+						<seg type="comment" xml:id="circumscriptor_p116_l18"> , <gloss>
+								swindler</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l21"/>
+					<p>
+						<seg type="lemma" ana="#perditus_p116_l21">perditus
+						</seg>
+						<seg type="comment" xml:id="perditus_p116_l21"> , <gloss>abandoned
+								wretch</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p116_l22"/>
+					<p>
+						<seg type="lemma" ana="#hosce_p116_l22">hosce
+						</seg>
+						<seg type="comment" xml:id="hosce_p116_l22">: § <ref n="AG 146">146</ref>,
+							a, N.1 (101, footnote); B. 87, footnote 2; G. 104, i, N 1; H. 178, 2
+							(186, I); H.-B. 138, 2, c. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l3"/>
+				</div>
+				<div type="section" n="8" corresp="urn:cts:latinLit:phi0474.phi013:2.8">
+					<p>
+						<seg type="lemma" ana="#asciverit_p117_l3">asciverit
+						</seg>
+						<seg type="comment" xml:id="asciverit_p117_l3">: for tense, see § <ref n="AG 485">485</ref>, c (287, c); B. 268, 6; G. 513; H. 550 (495,
+							vi); H.-B. 481. <milestone n="5" unit="chapter"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p117_l4"/>
+				</div>
+				<div type="section" n="9" corresp="urn:cts:latinLit:phi0474.phi013:2.9">
+					<p>
+						<seg type="lemma" ana="#ut_possitis_p117_l4">ut . . . possitis
+						</seg>
+						<seg type="comment" xml:id="ut_possitis_p117_l4">: § <ref n="AG 532">532</ref>
+							(317, c); B. 282, 4; G. 545, R.3; Cf. H. 568, 4 (499, 2, N.) ; H.-B.
+							502, 2, c. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#diversa_studia_p117_l4">diversa studia
+						</seg>
+						<seg type="comment" xml:id="diversa_studia_p117_l4">. In another passage (<ref n="Cic. Cael. 13">Cael. 13</ref>) Cicero ascribes to Catiline: <foreign xml:lang="lat">Cum tristibus severe,
+								cum
+								remissis jucunde, cum senibus graviter, cum juventute comiter,
+								cum
+								facinorosis audaciter, cum libidinosis luxuriose vivere</foreign> . </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_ratione_p117_l4">in dissimili ratione
+						</seg>
+						<seg type="comment" xml:id="in_ratione_p117_l4"> , <gloss>in different
+							directions</gloss>. <pb n="383"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p117_l5"/>
+					<p>
+						<seg type="lemma" ana="#ludo_p117_l5">ludo
+						</seg>
+						<seg type="comment" xml:id="ludo_p117_l5">, the regular <gloss>
+							training-school</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#gladiatorio_p117_l5">gladiatorio
+						</seg>
+						<seg type="comment" xml:id="gladiatorio_p117_l5">: see Cat. 1, <ref n="pl110.31">p. 110, l. 31</ref>, and note. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l7"/>
+					<p>
+						<seg type="lemma" ana="#levior_p117_l7">levior
+						</seg>
+						<seg type="comment" xml:id="levior_p117_l7">,
+							etc.: the Roman actors, though some of them achieved distinction, were
+							generally regarded as a low class of men. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l8"/>
+					<p>
+						<seg type="lemma" ana="#tamen_p117_l8">tamen
+						</seg>
+						<seg type="comment" xml:id="tamen_p117_l8">,
+							i.e. though a companion of such dissolute persons, yet he possessed the
+							qualities of fortitude and endurance so much admired by the Romans. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l9"/>
+					<p>
+						<seg type="lemma" ana="#exercitatione_p117_l9">exercitatione
+						</seg>
+						<seg type="comment" xml:id="exercitatione_p117_l9"> (abl. of means), etc., <gloss>trained
+							by the practice of
+								debaucheries
+								and crimes to endure</gloss>, etc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#frigore_perferendis_p117_l9">frigore . . .
+							perferendis
+						</seg>
+						<seg type="comment" xml:id="frigore_perferendis_p117_l9">:
+							abl. with </seg>
+						<seg type="lemma" ana="#adsuefactus_p117_l9">adsuefactus
+						</seg>
+						<seg type="comment" xml:id="adsuefactus_p117_l9">; § <ref n="AG 507">507</ref>,
+							N.1 (301, N.); G. 431; cf. H-B. 612, iv, 431. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l10"/>
+					<p>
+						<seg type="lemma" ana="#fortis_p117_l10">fortis
+						</seg>
+						<seg type="comment" xml:id="fortis_p117_l10"> , <gloss>a
+								strong and able fellow</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#istis_p117_l10">istis
+						</seg>
+						<seg type="comment" xml:id="istis_p117_l10"> , <gloss>those
+								creatures:</gloss> § <ref n="AG 297">297</ref>, c (102, c); B. 246,
+							4; G. 306, N.; H. 507, 3 (450, i, N.); H.-B. 274, 4. 117 11 <foreign xml:lang="lat">cum</foreign> . . . <foreign xml:lang="lat">
+							consumeret</foreign> (not concessive), <gloss>while consuming</gloss> . </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#subsidia_p117_l10">subsidia
+						</seg>
+						<seg type="comment" xml:id="subsidia_p117_l10">,
+							etc., i.e. means (his uncommon powers of body and mind) which might have
+							been used, etc. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l13"/>
+				</div>
+				<div type="section" n="10" corresp="urn:cts:latinLit:phi0474.phi013:2.10">
+					<p>
+						<seg type="lemma" ana="#sui_p117_l13">sui
+						</seg>
+						<seg type="comment" xml:id="sui_p117_l13">: § <ref n="AG 301">301</ref>, b
+							(196, c); B. 244, 4; G. 309, 2; H. 503, 2 (449, 3); H.-B. 264, 2. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l17"/>
+					<p>
+						<seg type="lemma" ana="#audaciae_p117_l17">audaciae
+						</seg>
+						<seg type="comment" xml:id="audaciae_p117_l17"> , <gloss>acts
+								of audacity</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l19"/>
+					<p>
+						<seg type="lemma" ana="#obligaverunt_p117_l19">obligaverunt
+						</seg>
+						<seg type="comment" xml:id="obligaverunt_p117_l19"> , <gloss>
+								encumbered</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#res_p117_l19">res
+						</seg>
+						<seg type="comment" xml:id="res_p117_l19"> , <gloss>
+								property</gloss>; fides, <gloss>credit</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l21"/>
+					<p>
+						<seg type="lemma" ana="#libido_p117_l21">libido
+						</seg>
+						<seg type="comment" xml:id="libido_p117_l21">,
+							i.e. luxurious habits and tastes. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l23"/>
+					<p>
+						<seg type="lemma" ana="#quidem_p117_l23">quidem
+						</seg>
+						<seg type="comment" xml:id="quidem_p117_l23"> (concessive), <gloss>no doubt</gloss>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p117_l24"/>
+					<p>
+						<seg type="lemma" ana="#homines_p117_l24">homines
+						</seg>
+						<seg type="comment" xml:id="homines_p117_l24">
+							, </seg>
+						<seg type="lemma" ana="#viris_p117_l24">viris
+						</seg>
+						<seg type="comment" xml:id="viris_p117_l24">:
+							observe the difference in sense. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l26"/>
+					<p>
+						<seg type="lemma" ana="#mihi_p117_l26">mihi
+						</seg>
+						<seg type="comment" xml:id="mihi_p117_l26">: the ethical dat. gives the
+							phrase a familiar and contemptuous turn which may be reproduced in
+							English by <gloss>forsooth</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l28"/>
+					<p>
+						<seg type="lemma" ana="#obliti_p117_l28">obli^ti
+						</seg>
+						<seg type="comment" xml:id="obliti_p117_l28">:
+							observe the quantity. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l29"/>
+					<p>
+						<seg type="lemma" ana="#caedem_p117_l29">caedem
+						</seg>
+						<seg type="comment" xml:id="caedem_p117_l29">,
+							etc.: notice the strong contrast between the character of these worn-out
+							debauchees and the sanguinary nature of their threats. </seg>
+					</p>
+					<milestone unit="page_line" n="p117_l31"/>
+				</div>
+				<div type="section" n="11" corresp="urn:cts:latinLit:phi0474.phi013:2.11">
+					<p>
+						<seg type="lemma" ana="#instare_p117_l31">instare
+						</seg>
+						<seg type="comment" xml:id="instare_p117_l31"> , <gloss>is
+								close at hand</gloss>; plane merely emphasizes the idea of the verb. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l2"/>
+					<p>
+						<seg type="lemma" ana="#propagarit_p118_l2">propagarit
+						</seg>
+						<seg type="comment" xml:id="propagarit_p118_l2">: for tense, see § <ref n="AG 516">516</ref>, c, N. (307, c, a.) ; G. 595, N.2; H. 540(473). </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l3"/>
+					<p>
+						<seg type="lemma" ana="#pertimescamus_p118_l3">pertimescamus
+						</seg>
+						<seg type="comment" xml:id="pertimescamus_p118_l3">
+							, </seg>
+						<seg type="lemma" ana="#possit_p118_l3">possit
+						</seg>
+						<seg type="comment" xml:id="possit_p118_l3">:
+							subj. of characteristic. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l5"/>
+					<p>
+						<seg type="lemma" ana="#unius_p118_l5">unius
+						</seg>
+						<seg type="comment" xml:id="unius_p118_l5">:
+							Pompey, just returning from his triumphs in the East. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l10"/>
+					<p>
+						<seg type="lemma" ana="#quacumque_ratione_p118_l10">quacumque ratione
+						</seg>
+						<seg type="comment" xml:id="quacumque_ratione_p118_l10">, sc. <foreign xml:lang="lat">fieri potest</foreign>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p118_l11"/>
+					<p>
+						<seg type="lemma" ana="#resecanda_erunt_p118_l11">resecanda erunt
+						</seg>
+						<seg type="comment" xml:id="resecanda_erunt_p118_l11"> , <gloss>shall need
+							the knipe</gloss> (lit. <gloss>must be cut away</gloss>): the figure is
+							derived from surgery. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l12"/>
+					<p>
+						<seg type="lemma" ana="#si_permanent_p118_l12">si. . permanent
+						</seg>
+						<seg type="comment" xml:id="si_permanent_p118_l12">: § <ref n="AG 516">516</ref>,
+							a, N. (307, a, N.); G. 228; H. 533, 2 (467,5); H.-B. 572. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l13"/>
+					<p>
+						<seg type="lemma" ana="#exspectent_p118_l13">exspectent
+						</seg>
+						<seg type="comment" xml:id="exspectent_p118_l13">: hort. subj. in apod.; § <ref n="AG 516">516</ref>, d (307, d); B. 305, 2 G. 595; H. 580 (508, 4);
+							H.-B. 532,1. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="II">
+				<div type="section" n="title">
+					<head>II. <foreign xml:lang="lat">Pars Secunda</foreign> (§§ 12-16).</head>
+					<milestone unit="chapter" n="12_16"/>
+					<p>Catiline is not in exile: he has joined his hostile army. Men say the consul
+						has driven him into banishment; would the charge were true! <milestone n="6" unit="chapter"/>
+					</p>
+				</div>
+				<div type="section" n="12" corresp="urn:cts:latinLit:phi0474.phi013:2.12">
+					<milestone unit="page_line" n="p118_l14"/>
+					<p>
+						<seg type="lemma" ana="#etiam_p118_l14">etiam
+						</seg>
+						<seg type="comment" xml:id="etiam_p118_l14"> , <gloss>
+								still</gloss> (after all that has been done). </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l15"/>
+					<p>
+						<seg type="lemma" ana="#quod_p118_l15">quod
+						</seg>
+						<seg type="comment" xml:id="quod_p118_l15">, obj. of <foreign xml:lang="lat">
+							adsequi</foreign>, <gloss>if I could
+								effect it</gloss> (referring to </seg>
+						<seg type="lemma" ana="#ipsos_p118_l15">ipsos
+						</seg>
+						<seg type="comment" xml:id="ipsos_p118_l15">,
+							etc.), i.e. their expulsion. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l17"/>
+					<p>
+						<seg type="lemma" ana="#enim_p118_l17">enim
+						</seg>
+						<seg type="comment" xml:id="enim_p118_l17">,
+							i.e. the idea is absurd, as is implied in the irony following. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l19"/>
+					<p>
+						<seg type="lemma" ana="#quid_p118_l19">quid
+						</seg>
+						<seg type="comment" xml:id="quid_p118_l19"> , <gloss>tell
+								me</gloss>: i.e. "is that possible ?" in view of the circumstances,
+							which he proceeds to narrate. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#hesterno_die_p118_l19">hesterno die
+						</seg>
+						<seg type="comment" xml:id="hesterno_die_p118_l19">
+							qualifies </seg>
+						<seg type="lemma" ana="#convocavi_p118_l19">convocavi
+						</seg>
+						<seg type="comment" xml:id="convocavi_p118_l19">
+							. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l21"/>
+					<p>
+						<seg type="lemma" ana="#detuli_p118_l21">detuli
+						</seg>
+						<seg type="comment" xml:id="detuli_p118_l21">: technical term for laying a
+							matter before the Senate; cf. <foreign xml:lang="lat">referre</foreign>
+							(ad <foreign xml:lang="lat">
+								senatum</foreign>) in the Vocabulary. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l28"/>
+				</div>
+				<div type="section" n="13" corresp="urn:cts:latinLit:phi0474.phi013:2.13">
+					<p>
+						<seg type="lemma" ana="#quaesivi_p118_l28">quaesivi
+						</seg>
+						<seg type="comment" xml:id="quaesivi_p118_l28">, etc.: see Cat. 1, sect. <ref n="Cic. Catil. 1.9">9</ref>. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l29"/>
+					<p>
+						<seg type="lemma" ana="#necne_p118_l29">necne
+						</seg>
+						<seg type="comment" xml:id="necne_p118_l29">: § <ref n="AG 335">335</ref>,d(211,d);
+							B. 162,4; G.459; H.380, 1 (353, N.1); H.-B. 234, a. </seg>
+					</p>
+					<milestone unit="page_line" n="p118_l32"/>
+					<p>
+						<seg type="lemma" ana="#ei_p118_l32">ei
+						</seg>
+						<seg type="comment" xml:id="ei_p118_l32">: dat. of agent; § <ref n="AG 375">
+							375</ref> (232, a); B. 189, 2; G. 354; H. 431, 2 (388, I); H-B. 373, 2. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l1"/>
+					<p>
+						<seg type="lemma" ana="#teneretur_p119_l1">teneretur
+						</seg>
+						<seg type="comment" xml:id="teneretur_p119_l1"> , <gloss>was
+								caught</gloss>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p119_l2"/>
+					<p>
+						<seg type="lemma" ana="#pararet_p119_l2">pararet
+						</seg>
+						<seg type="comment" xml:id="pararet_p119_l2">: for pluperf. (see note on
+							Cat. 1, <ref n="pl100.13">p. 100, l. 13</ref> ). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#securis_p119_l2">securis
+						</seg>
+						<seg type="comment" xml:id="securis_p119_l2">
+							, </seg>
+						<seg type="lemma" ana="#fascis_p119_l2">fascis
+						</seg>
+						<seg type="comment" xml:id="fascis_p119_l2">: the use of these signified
+							that Catiline intended to assume the authority and <foreign xml:lang="lat">imperium</foreign> of consul (see Fig. 25, p.290). </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l3"/>
+					<p>
+						<seg type="lemma" ana="#aquilam_p119_l3">aquilam
+						</seg>
+						<seg type="comment" xml:id="aquilam_p119_l3">: see Cat. 1, <ref n="pl109.6">p.
+							109, l. 6</ref>, and note. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l5"/>
+				</div>
+				<div type="section" n="14" corresp="urn:cts:latinLit:phi0474.phi013:2.14">
+					<p>
+						<seg type="lemma" ana="#eiciebam_p119_l5">eiciebam
+						</seg>
+						<seg type="comment" xml:id="eiciebam_p119_l5">: conative imperf.; § <ref n="AG 471">471</ref>, c (277, c); B. 260, 3; G. 233; H. 534, 2 (469,
+							I); H.-B. 484. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l6"/>
+					<p>
+						<seg type="lemma" ana="#credo_p119_l6">credo
+						</seg>
+						<seg type="comment" xml:id="credo_p119_l6">:
+							ironical, as very often in this parenthetical use. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l8"/>
+					<p>
+						<seg type="lemma" ana="#suo_nomine_p119_l8">suo nomine
+						</seg>
+						<seg type="comment" xml:id="suo_nomine_p119_l8">,
+							i.e. not by Catiline's order; the whole is, of course, ironical, as is
+							already indicated by credo. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l10"/>
+					<p>
+						<seg type="lemma" ana="#Massiliam_p119_l10">Massiliam
+						</seg>
+						<seg type="comment" xml:id="Massiliam_p119_l10"> : <gloss>
+								Marseilles</gloss>, an ancient Greek city of Gaul, always faithful
+							and friendly to Rome. It was a favorite place of sojourn for Romans who
+							went into voluntary exile. <milestone n="119.11" unit="pg_l"/>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#condicionem_p119_l10">condicionem
+						</seg>
+						<seg type="comment" xml:id="condicionem_p119_l10"> , <gloss>
+								terms</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l12"/>
+					<p>
+						<seg type="lemma" ana="#nunc_p119_l12">nunc
+						</seg>
+						<seg type="comment" xml:id="nunc_p119_l12"> , <gloss>even
+								now</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l14"/>
+					<p>
+						<seg type="lemma" ana="#pertimuerit_p119_l14">pertimuerit
+						</seg>
+						<seg type="comment" xml:id="pertimuerit_p119_l14"> , <gloss>take
+								alarm</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l18"/>
+					<p>
+						<seg type="lemma" ana="#spe_conatuque_p119_l18">spe conatuque
+						</seg>
+						<seg type="comment" xml:id="spe_conatuque_p119_l18">:
+							referring of course to his treasonable hopes and designs. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l22"/>
+				</div>
+				<div type="section" n="15" corresp="urn:cts:latinLit:phi0474.phi013:2.15">
+					<p>
+						<seg type="lemma" ana="#est_tanti_p119_l22">est mihi tanti
+						</seg>
+						<seg type="comment" xml:id="est_tanti_p119_l22"> , <gloss>it
+								is worth my while</gloss>: § <ref n="AG 417">417</ref> (252, a); cf.
+							B. 203, 3; G. 380, I, R.; H. 448 (404); H.-B. 356, I. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l25"/>
+					<p>
+						<seg type="lemma" ana="#depellatur_p119_l25">depellatur
+						</seg>
+						<seg type="comment" xml:id="depellatur_p119_l25">: § <ref n="AG 528">528</ref>(314);
+							B. 310,ii; G.573; H. 587(313,i); H.-B. 529. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sane_p119_l25">sane
+						</seg>
+						<seg type="comment" xml:id="sane_p119_l25"> (concessive), <gloss>f you like</gloss>
+							(see Vocab.). </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l28"/>
+					<p>
+						<seg type="lemma" ana="#invidiae_p119_l28">invidiae
+						</seg>
+						<seg type="comment" xml:id="invidiae_p119_l28">,
+							etc.: rather than have his predictions verified in this way, Cicero
+							prefers the unjust odium of having arbitrarily driven Catiline to exile. </seg>
+					</p>
+					<milestone unit="page_line" n="p119_l31"/>
+					<p>
+						<seg type="lemma" ana="#aliquando_p119_l31">aliquando
+						</seg>
+						<seg type="comment" xml:id="aliquando_p119_l31"> , <gloss>
+								some</gloss> day. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quod_emiserim_p119_l31">quod. . . emiserim
+						</seg>
+						<seg type="comment" xml:id="quod_emiserim_p119_l31">: § <ref n="AG 592">592</ref>,
+							3 (341, d); B. 323; G. 541; H. 588, ii (516, ii); H-B. 535, 2, a. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#emiserim_p119_l31">emiserim
+						</seg>
+						<seg type="comment" xml:id="emiserim_p119_l31">
+							, </seg>
+						<seg type="lemma" ana="#eiecerim_p119_l31">eiecerim
+						</seg>
+						<seg type="comment" xml:id="eiecerim_p119_l31"> , <gloss>let
+								him go... drove him out</gloss>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p120_l2"/>
+					<p>
+						<seg type="lemma" ana="#si_interfectus_p120_l2">si interfectus
+						</seg>
+						<seg type="comment" xml:id="si_interfectus_p120_l2">, etc.: he thus adroitly
+							excuses himself to those who would have preferred harsher measures.
+							Notice the identity in sound in <foreign xml:lang="lat">profectus</foreign>
+							, <foreign xml:lang="lat">
+								interfectus</foreign>, and observe how the argument <foreign xml:lang="lat">a fortiori</foreign> is brought out by the exact
+							antithesis. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l3"/>
+				</div>
+				<div type="section" n="16" corresp="urn:cts:latinLit:phi0474.phi013:2.16">
+					<p>
+						<seg type="lemma" ana="#quamquam_p120_l3">quamquam
+						</seg>
+						<seg type="comment" xml:id="quamquam_p120_l3"> (corrective), <gloss>and yet</gloss>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p120_l4"/>
+					<p>
+						<seg type="lemma" ana="#dictitant_p120_l4">dictitant
+						</seg>
+						<seg type="comment" xml:id="dictitant_p120_l4">: notice the <foreign xml:lang="lat">frequentative</foreign>. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l5"/>
+					<p>
+						<seg type="lemma" ana="#nemo_p120_l5">nemo
+						</seg>
+						<seg type="comment" xml:id="nemo_p120_l5"> , <gloss>not
+								a man</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#misericors_p120_l5">misericors
+						</seg>
+						<seg type="comment" xml:id="misericors_p120_l5">:
+							his going to Manlius was his inevitable ruin, and yet, for all their
+							pity, they still wished him to go. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l8"/>
+					<p>
+						<seg type="lemma" ana="#latrocinantem_p120_l8">latrocinantem
+						</seg>
+						<seg type="comment" xml:id="latrocinantem_p120_l8"> , <gloss>in
+								partisan warfare</gloss> (see note on p.109, L I). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#vivere_p120_l8">vivere
+						</seg>
+						<seg type="comment" xml:id="vivere_p120_l8">: § <ref n="AG 583">583</ref>, c
+							(336, c, N.2) ; G. 644, R3, b; cf. H. 613, 7 (535, i, 6); H.-B. 535, I,
+							c. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l10"/>
+					<p>
+						<seg type="lemma" ana="#vivis_nobis_p120_l10">vivis nobis
+						</seg>
+						<seg type="comment" xml:id="vivis_nobis_p120_l10">,
+							i.e. without assassinating me. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="III">
+				<div type="section" n="title">
+					<head>III. <foreign xml:lang="lat">Pars Tertia</foreign> (§§ 17-25). </head>
+					<milestone unit="chapter" n="17_23"/>
+					<p>Character of Catiline's partisans: (i) rich men in debt (sect. <ref n="Cic. Catil. 2.18">18</ref>); (ii) men eager for power and wealth
+						(sect. <ref n="Cic. Catil. 2.19">19</ref>); (iii) old soldiers of Sulla
+						(sect. <ref n="Cic. Catil. 2.20">20</ref>); (iv) ruined debtors (sect. <ref n="Cic. Catil. 2.21">21</ref>); (v) cutthroats and criminals (sect. <ref n="Cic. Catil. 2.22">22</ref>); (vi) debauchees (sects. <ref n="Cic. Catil. 2.22">22</ref>, <ref n="Cic. Catil. 2.23">
+							23</ref>). <milestone n="8" unit="chapter"/>
+					</p>
+				</div>
+				<div type="section" n="17" corresp="urn:cts:latinLit:phi0474.phi013:2.17">
+					<milestone unit="page_line" n="p120_l17"/>
+					<p>
+						<seg type="lemma" ana="#sanare_p120_l17">sanare
+						</seg>
+						<seg type="comment" xml:id="sanare_p120_l17">: cf. note on <foreign xml:lang="lat">vivere</foreign>, 1.8, above. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sibi_p120_l17">sibi
+						</seg>
+						<seg type="comment" xml:id="sibi_p120_l17"> , <gloss>for
+								their own good</gloss>: for reflexive, see § <ref n="AG 301">
+								301</ref>, b, N. (I 96, c, N.); G. 520. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#placare_p120_l17">placare
+						</seg>
+						<seg type="comment" xml:id="placare_p120_l17"> , <gloss>gain
+								aver</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l20"/>
+					<p>
+						<seg type="lemma" ana="#comparentur_p120_l20">comparentur
+						</seg>
+						<seg type="comment" xml:id="comparentur_p120_l20"> , <gloss>are
+								made up</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#singulis_p120_l20">singulis
+						</seg>
+						<seg type="comment" xml:id="singulis_p120_l20"> , <gloss>to
+								them one by one</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l21"/>
+					<p>
+						<seg type="lemma" ana="#si_quam_p120_l21">si quam
+						</seg>
+						<seg type="comment" xml:id="si_quam_p120_l21">, sc. <foreign xml:lang="lat">
+							adferre</foreign>. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l22"/>
+				</div>
+				<div type="section" n="18" corresp="urn:cts:latinLit:phi0474.phi013:2.18">
+					<p>
+						<seg type="lemma" ana="#est_eorum_p120_l22">est eorum
+						</seg>
+						<seg type="comment" xml:id="est_eorum_p120_l22"> , <gloss>consists
+								of those</gloss> (pred. gen.). </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l23"/>
+					<p>
+						<seg type="lemma" ana="#possessiones_p120_l23">possessiones
+						</seg>
+						<seg type="comment" xml:id="possessiones_p120_l23"> , <gloss>landed
+								property</gloss>. <pb n="386"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p120_l24"/>
+					<p>
+						<seg type="lemma" ana="#dissolvi_p120_l24">dissolvi
+						</seg>
+						<seg type="comment" xml:id="dissolvi_p120_l24">, sc. <foreign xml:lang="lat">a
+							possessionibus</foreign>: i.e. although they might pay their debts by
+							the sale of their estates, they cannot make up their minds to do so. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l25"/>
+					<p>
+						<seg type="lemma" ana="#voluntas_causa_p120_l25">voluntas et causa
+						</seg>
+						<seg type="comment" xml:id="voluntas_causa_p120_l25"> , <gloss>their
+								purposes and claims</gloss>, i.e. their position before the world. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l26"/>
+					<p>
+						<seg type="lemma" ana="#tu_p120_l26">tu
+						</seg>
+						<seg type="comment" xml:id="tu_p120_l26">: the
+							use of the singular, as if he were addressing one of these men directly,
+							gives point to his reproach of the whole class. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l27"/>
+					<p>
+						<seg type="lemma" ana="#sis_p120_l27">sis
+						</seg>
+						<seg type="comment" xml:id="sis_p120_l27">: § <ref n="AG 444">444</ref>
+							(268); B. 277; G. 466; H. 5591 4 (484, v); H.-B. 503. </seg>
+					</p>
+					<milestone unit="page_line" n="p120_l30"/>
+					<p>
+						<seg type="lemma" ana="#tuas_p120_l30">tuas
+						</seg>
+						<seg type="comment" xml:id="tuas_p120_l30">:
+							emphatic. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#tabulas_novas_p120_l30">tabulas novas
+						</seg>
+						<seg type="comment" xml:id="tabulas_novas_p120_l30"> , <gloss>new
+								accounts</gloss>, i.e. a general scaling down of debts by
+							legislative enactment, such as that, <date when="-0086">B.C. 86</date>,
+							"which reduced every private claim to the fourth part of its nominal
+							amount, and cancelled three-fourths in favor of the debtors." </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l2"/>
+					<p>
+						<seg type="lemma" ana="#auctionariae_p121_l2">auctionariae
+						</seg>
+						<seg type="comment" xml:id="auctionariae_p121_l2">: a forced sale of their
+							estates would give them "new accounts" (<foreign xml:lang="lat">tabulae</foreign>)
+							by reducing their debts; </seg>
+						<seg type="lemma" ana="#auctionarinae_p121_l2">auctionarinae
+						</seg>
+						<seg type="comment" xml:id="auctionarinae_p121_l2"> [<foreign xml:lang="lat">
+							tabulae</foreign>] would be the <gloss>
+								placards</gloss> advertising the sale in question. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l4"/>
+					<p>
+						<seg type="lemma" ana="#quod_p121_l4">quod
+						</seg>
+						<seg type="comment" xml:id="quod_p121_l4">, obj. of <foreign xml:lang="lat">
+							facere</foreign>, relating to the forced sale. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#neque_p121_l4">neque
+						</seg>
+						<seg type="comment" xml:id="neque_p121_l4"> , <gloss>and
+								not</gloss>, connects <foreign xml:lang="lat">facere</foreign> and <foreign xml:lang="lat">certare</foreign>. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l5"/>
+					<p>
+						<seg type="lemma" ana="#certare_usuris_p121_l5">certare cum usuris
+						</seg>
+						<seg type="comment" xml:id="certare_usuris_p121_l5"> , <gloss>struggle to
+							meet the interest</gloss>: § <ref n="AG 413">
+								413</ref>, b (248, b); H. (419, II); H.-B. 419, 4. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fructibus_p121_l5">fructibus
+						</seg>
+						<seg type="comment" xml:id="fructibus_p121_l5">:
+							abl. of means. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l6"/>
+					<p>
+						<seg type="lemma" ana="#uteremur_p121_l6">uteremur
+						</seg>
+						<seg type="comment" xml:id="uteremur_p121_l6"> , <gloss>we
+								should find</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l7"/>
+					<p>
+						<seg type="lemma" ana="#hosce_p121_l7">hosce
+						</seg>
+						<seg type="comment" xml:id="hosce_p121_l7">: more emphatic than <foreign xml:lang="lat">hos</foreign>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#o_facturi_121">o vota facturi
+						</seg>
+						<seg type="comment" xml:id="o_facturi_121"> , <gloss>likely
+								to offer prayers</gloss>, i.e. they will confine themselves to
+							sympathizing with Catiline's revolt; no active cooperation with him need
+							be feared from them. <milestone n="9" unit="chapter"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p121_l11"/>
+				</div>
+				<div type="section" n="19" corresp="urn:cts:latinLit:phi0474.phi013:2.19">
+					<p>
+						<seg type="lemma" ana="#premuntur_p121_l11">premuntur
+						</seg>
+						<seg type="comment" xml:id="premuntur_p121_l11">:
+							notice the emphasis,—this class is insolvent; the former class is
+							heavily in debt, but has resources. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l13"/>
+					<p>
+						<seg type="lemma" ana="#quieta_publica_p121_l13">quieta re publica
+						</seg>
+						<seg type="comment" xml:id="quieta_publica_p121_l13">:
+							no poor man could hope to gain political prominence at Rome in ordinary
+							times; these men therefore look to anarchy to achieve their political
+							ends. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l15"/>
+					<p>
+						<seg type="lemma" ana="#scilicet_p121_l15">scilicet
+						</seg>
+						<seg type="comment" xml:id="scilicet_p121_l15"> , <gloss>in
+								fact</gloss>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p121_l16"/>
+					<p>
+						<seg type="lemma" ana="#desperent_p121_l16">desperent
+						</seg>
+						<seg type="comment" xml:id="desperent_p121_l16"> , <gloss>have
+								no hope</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l17"/>
+					<p>
+						<seg type="lemma" ana="#me_vigilare_p121_l17">me . . . vigilare
+						</seg>
+						<seg type="comment" xml:id="me_vigilare_p121_l17">, etc., indir. disc.
+							dependent on the idea of saying implied in <foreign xml:lang="lat">
+							praecipiendum</foreign>: § <ref n="AG 580">580</ref>, a (336, N.2); G.
+							652, R.2; H. 642, I (523, i, N.); H.-B. 589, a. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l18"/>
+					<p>
+						<seg type="lemma" ana="#magnos_animos_p121_l18">magnos animos
+						</seg>
+						<seg type="comment" xml:id="magnos_animos_p121_l18">:
+							see Vocab. under animus. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l22"/>
+					<p>
+						<seg type="lemma" ana="#praesentis_p121_l22">praesentis
+						</seg>
+						<seg type="comment" xml:id="praesentis_p121_l22">
+							agrees with </seg>
+						<seg type="lemma" ana="#deos_p121_l22">deos
+						</seg>
+						<seg type="comment" xml:id="deos_p121_l22"> : <gloss>will
+								be at hand, and</gloss>, etc. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l23"/>
+					<p>
+						<seg type="lemma" ana="#quod_si_p121_l23">quod si
+						</seg>
+						<seg type="comment" xml:id="quod_si_p121_l23"> , <gloss>now
+								if</gloss> (as often). The </seg>
+						<seg type="lemma" ana="#quod_p121_l23">quod
+						</seg>
+						<seg type="comment" xml:id="quod_p121_l23"> is merely adverbial acc.: § <ref n="AG 397">397</ref>, a (240, b); B. 185, 2; G. 610, R.2; H. 416, 2
+							(378, 2); cf. H.-B. 388, a, N.; not like </seg>
+						<seg type="lemma" ana="#quod_p121_l23_2">quod
+						</seg>
+						<seg type="comment" xml:id="quod_p121_l23_2"> in
+							1.4, above. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#jam_p121_l23">jam
+						</seg>
+						<seg type="comment" xml:id="jam_p121_l23"> , <gloss>at
+								once</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#sint_adepti_p121_l23">sint adepti
+						</seg>
+						<seg type="comment" xml:id="sint_adepti_p121_l23">:
+							fut. cond. less vivid. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cum_furore_p121_l23">cum summo furore
+						</seg>
+						<seg type="comment" xml:id="cum_furore_p121_l23">: § <ref n="AG 412">412</ref>,
+							a (248, N.); G. 399; 14.473, 31 N. (419, iii, N.1); H.-B. 445, 3. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l26"/>
+					<p>
+						<seg type="lemma" ana="#non_vident_p121_l26">non vident
+						</seg>
+						<seg type="comment" xml:id="non_vident_p121_l26"> , <gloss>don't
+								they see?</gloss> § <ref n="AG 332">332</ref>, a (210, b); B. 162,
+							2, d; G. 453; H. 378, I (351, 3); H.-B. 231, I, a. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l27"/>
+					<p>
+						<seg type="lemma" ana="#adepti_sint_p121_l27">adepti sint
+						</seg>
+						<seg type="comment" xml:id="adepti_sint_p121_l27">,
+							for the fut. perf. indic. of the direct disc. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#fugitivo_p121_l27">fugitivo
+						</seg>
+						<seg type="comment" xml:id="fugitivo_p121_l27">,
+							i.e. one of their own slaves; for, when law is overthrown, brute force
+							will control all. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l28"/>
+					<p>
+						<seg type="lemma" ana="#sit_necesse_p121_l28">sit necesse
+						</seg>
+						<seg type="comment" xml:id="sit_necesse_p121_l28">: § <ref n="AG 516">516</ref>,
+							d (307, d); G. 595; H. 580 (508, 4); cf. H.-B. 582, I. </seg>
+					</p>
+					<milestone unit="page_line" n="p121_l31"/>
+				</div>
+				<div type="section" n="20" corresp="urn:cts:latinLit:phi0474.phi013:2.20">
+					<p>
+						<seg type="lemma" ana="#ex_coloniis_p121_l31">ex eis coloniis
+						</seg>
+						<seg type="comment" xml:id="ex_coloniis_p121_l31">: Sulla rewarded his
+							veterans (120,000 in number) by liberal grants of land, partly in <foreign xml:lang="lat">municipia</foreign> already existing, partly in new
+							colonies which he founded for them. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l1"/>
+					<p>
+						<seg type="lemma" ana="#universas_p122_l1">universas
+						</seg>
+						<seg type="comment" xml:id="universas_p122_l1"> , <gloss>as
+								a whole</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#civium_esse_p122_l1">civium esse
+						</seg>
+						<seg type="comment" xml:id="civium_esse_p122_l1"> , <gloss>consist
+								of</gloss> etc. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l2"/>
+					<p>
+						<seg type="lemma" ana="#ei_coloni_p122_l2">ei sunt coloni
+						</seg>
+						<seg type="comment" xml:id="ei_coloni_p122_l2"> , <gloss>these
+								are colonists of this sort</gloss> (as opposed to the general
+							character of the colonies, which Cicero does not wish to impugn). </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l5"/>
+					<p>
+						<seg type="lemma" ana="#beati_p122_l5">beati
+						</seg>
+						<seg type="comment" xml:id="beati_p122_l5"> , <gloss>men
+								of wealth</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l7"/>
+					<p>
+						<seg type="lemma" ana="#Sulla_p122_l7">Sulla
+						</seg>
+						<seg type="comment" xml:id="Sulla_p122_l7">, etc., <gloss>Sulla
+								will have to be raised from the dead</gloss>, for they can have no
+							such hope in Catiline. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l8"/>
+					<p>
+						<seg type="lemma" ana="#agrestis_p122_l8">agrestis
+						</seg>
+						<seg type="comment" xml:id="agrestis_p122_l8"> , <gloss>
+								farmers</gloss>, not Sulla's colonists. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l9"/>
+					<p>
+						<seg type="lemma" ana="#veterum_p122_l9">veterum
+						</seg>
+						<seg type="comment" xml:id="veterum_p122_l9">:
+							alluding to the plunder of the disorderly times following Sulla's
+							victory over the Marian party. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l12"/>
+					<p>
+						<seg type="lemma" ana="#illorum_temporum_p122_l12">illorum temporum
+						</seg>
+						<seg type="comment" xml:id="illorum_temporum_p122_l12">, i.e. the times of
+							proscription. <milestone n="10" unit="chapter"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p122_l18"/>
+				</div>
+				<div type="section" n="21" corresp="urn:cts:latinLit:phi0474.phi013:2.21">
+					<p>
+						<seg type="lemma" ana="#vacillant_p122_l18">vacillant
+						</seg>
+						<seg type="comment" xml:id="vacillant_p122_l18"> , <gloss>stagger
+								under</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#vadimoniis_p122_l18">vadimoniis
+						</seg>
+						<seg type="comment" xml:id="vadimoniis_p122_l18">, etc.: the three steps in
+							bankruptcy,—<gloss>bail, judgment, and sale
+								of
+								property</gloss>; <foreign xml:lang="lat">proscriptio</foreign> is
+							strictly the public notice that property is for sale. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l21"/>
+					<p>
+						<seg type="lemma" ana="#infitiatores_lentos_p122_l21">infitiatores lentos
+						</seg>
+						<seg type="comment" xml:id="infitiatores_lentos_p122_l21"> , <gloss>dilatory
+							debtors</gloss> (lit. <gloss>deniers</gloss>, i.e. persons who avoid
+							payment of their debts by every possible subterfuge). </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l22"/>
+					<p>
+						<seg type="lemma" ana="#stare_p122_l22">stare
+						</seg>
+						<seg type="comment" xml:id="stare_p122_l22"> , <gloss>keep
+								their feet</gloss>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p122_l23"/>
+					<p>
+						<seg type="lemma" ana="#ita_p122_l23">ita
+						</seg>
+						<seg type="comment" xml:id="ita_p122_l23"> , <gloss>in
+								such a way</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#non_modo_p122_l23">non modo
+						</seg>
+						<seg type="comment" xml:id="non_modo_p122_l23">, etc.: § <ref n="AG 217">217</ref>,
+							e (149, c); B. 343, 2, a; G. 482,5, R.1; H. 656, 3 (552, 2); H.-B. 299. </seg>
+					</p>
+					<milestone unit="page_line" n="p122_l29"/>
+				</div>
+				<div type="section" n="22" corresp="urn:cts:latinLit:phi0474.phi013:2.22">
+					<p>
+						<seg type="lemma" ana="#non_revoco_p122_l29">non revoco
+						</seg>
+						<seg type="comment" xml:id="non_revoco_p122_l29">: § <ref n="AG 467">467</ref>
+							(276, b); B. 259, 2; G. 233; H. 530 (467, 6); H.-B. 484. </seg>
+					</p>
+					<milestone unit="page_line" n="p123_l1"/>
+					<p>
+						<seg type="lemma" ana="#carcer_p123_l1">carcer
+						</seg>
+						<seg type="comment" xml:id="carcer_p123_l1">: this is the <foreign xml:lang="lat">Tullianum</foreign>, a dungeon near the Forum, still
+							existing. It was properly a jail for temporary detention, as
+							imprisonment was not recognized in Rome as a form of punishment. </seg>
+					</p>
+					<milestone unit="page_line" n="p123_l2"/>
+					<p>
+						<seg type="lemma" ana="#numero_p123_l2">numero
+						</seg>
+						<seg type="comment" xml:id="numero_p123_l2"> , <gloss>in
+								order</gloss>; </seg>
+						<seg type="lemma" ana="#genere_p123_l2">genere
+						</seg>
+						<seg type="comment" xml:id="genere_p123_l2"> , <gloss>in
+								rank</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p123_l5"/>
+					<p>
+						<seg type="lemma" ana="#imberbis_p123_l5">imberbis
+						</seg>
+						<seg type="comment" xml:id="imberbis_p123_l5">:
+							a mark of effeminacy; </seg>
+						<seg type="lemma" ana="#bene_barbatos_p123_l5">bene barbatos
+						</seg>
+						<seg type="comment" xml:id="bene_barbatos_p123_l5"> , <gloss>
+								full-bearded</gloss>, doubtless a military affectation, as, until
+							lately, the wearing of a mustache. </seg>
+					</p>
+					<milestone unit="page_line" n="p123_l6"/>
+					<p>
+						<seg type="lemma" ana="#velis_p123_l6">velis
+						</seg>
+						<seg type="comment" xml:id="velis_p123_l6"> , <gloss>
+								veils</gloss>, rather than the substantial <foreign xml:lang="lat">
+							toga</foreign>, which was of unbleached wool. The whole description
+							suggests foppishness and effeminacy. </seg>
+					</p>
+					<milestone unit="page_line" n="p123_l11"/>
+				</div>
+				<div type="section" n="23" corresp="urn:cts:latinLit:phi0474.phi013:2.23">
+					<p>
+						<seg type="lemma" ana="#saltare_cantare_p123_l11">saltare et cantare
+						</seg>
+						<seg type="comment" xml:id="saltare_cantare_p123_l11">,
+							these accomplishments were hardly regarded as respectable by the better
+							classes. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#spargere_p123_l11">spargere
+						</seg>
+						<seg type="comment" xml:id="spargere_p123_l11">,
+							i.e. in food or drink: poisoning has in all ages been carried to a high
+							art in Italy. </seg>
+					</p>
+					<milestone unit="page_line" n="p123_l13"/>
+					<p>
+						<seg type="lemma" ana="#scitote_p123_l13">scitote
+						</seg>
+						<seg type="comment" xml:id="scitote_p123_l13">:
+							notice the second (fut.) imperat. (regularly used in this word). </seg>
+					</p>
+					<milestone unit="page_line" n="p123_l16"/>
+					<p>
+						<seg type="lemma" ana="#his_noctibus_p123_l16">his . . . noctibus
+						</seg>
+						<seg type="comment" xml:id="his_noctibus_p123_l16">:
+							although this was spoken Nov. 9, yet the Roman year was at this time in
+							such a state of confusion that the true date was probably some time in
+							December, just when the winter was setting in.</seg>
+					</p>
+					<milestone unit="page_line" n="p123_l27"/>
+				</div>
+				<div type="section" n="24" corresp="urn:cts:latinLit:phi0474.phi013:2.24">
+					<p>These followers of Catiline contrasted with the defenders of the
+						state.
+						The issue of such a contest cannot be doubtful.
+					</p>
+					<p>
+						<seg type="lemma" ana="#urbes_coloniarum_p123_l27">urbes coloniarum
+						</seg>
+						<seg type="comment" xml:id="urbes_coloniarum_p123_l27">,
+							etc.: the colonies and free communities (</seg>
+						<seg type="lemma" ana="#municipia_p123_l27">municipia
+						</seg>
+						<seg type="comment" xml:id="municipia_p123_l27">)
+							included the walled cities (</seg>
+						<seg type="lemma" ana="#urbes_p123_l27">urbes
+						</seg>
+						<seg type="comment" xml:id="urbes_p123_l27">) in their territory. These
+							well-manned walls would be more than a match for Catiline's rude works (<foreign xml:lang="lat">tumulis</foreign> ). </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l1"/>
+				</div>
+				<div type="section" n="25" corresp="urn:cts:latinLit:phi0474.phi013:2.25">
+					<p>
+						<seg type="lemma" ana="#causas_p124_l1">causas
+						</seg>
+						<seg type="comment" xml:id="causas_p124_l1">, i.e. the cause of the
+							conspirators and that of the state in their moral aspect (cf. in <foreign xml:lang="lat">eius modi</foreign>, etc., 1.12, below). </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l2"/>
+					<p>
+						<seg type="lemma" ana="#ex_ipso_p124_l2">ex eo ipso
+						</seg>
+						<seg type="comment" xml:id="ex_ipso_p124_l2"> , <gloss>from
+								the very comparison</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l10"/>
+					<p>
+						<seg type="lemma" ana="#bona_ratio_p124_l10">bona ratio
+						</seg>
+						<seg type="comment" xml:id="bona_ratio_p124_l10"> , <gloss>good
+								counsel</gloss>; </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#perdita_p124_l10">perdita
+						</seg>
+						<seg type="comment" xml:id="perdita_p124_l10"> , <gloss>
+								desperate</gloss>. <milestone n="12" unit="chapter"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p124_l17"/>
+				</div>
+				<div type="section" n="26" corresp="urn:cts:latinLit:phi0474.phi013:2.26">
+					<p>
+						<seg type="lemma" ana="#custodiis_vigilisque_p124_l17">custodiis vigilisque
+						</seg>
+						<seg type="comment" xml:id="custodiis_vigilisque_p124_l17">: see Cat. 1,
+							sect. <ref n="Cic. Catil. 1.8">8</ref> and note. </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l19"/>
+					<p>
+						<seg type="lemma" ana="#consultum_p124_l19">consultum
+						</seg>
+						<seg type="comment" xml:id="consultum_p124_l19">, etc., <gloss>
+								provident</gloss> measures have been taken. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#coloni_municipesque_p124_l19">coloni municipesque
+						</seg>
+						<seg type="comment" xml:id="coloni_municipesque_p124_l19">: a colony
+							differed from a <foreign xml:lang="lat">municipium</foreign> in being
+							founded by Roman (or Latin) citizens, who retained from the first their
+							citizenship, either in whole or in part. By Cicero's time there was no
+							longer any real difference between the two classes of towns; but the
+							colonies always retained a certain precedence in rank. </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l20"/>
+					<p>
+						<seg type="lemma" ana="#hac_excursione_p124_l20">hac . . . excursione
+						</seg>
+						<seg type="comment" xml:id="hac_excursione_p124_l20">:
+							see Introd., p. 113 of text. </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l22"/>
+					<p>
+						<seg type="lemma" ana="#gladiatores_p124_l22">gladiatores
+						</seg>
+						<seg type="comment" xml:id="gladiatores_p124_l22">: see <ref n="pl117.5">p.
+							117, l. 5</ref>. </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l23"/>
+					<p>
+						<seg type="lemma" ana="#quamquam_p124_l23">quamquam
+						</seg>
+						<seg type="comment" xml:id="quamquam_p124_l23"> (corrective), referring to <foreign xml:lang="lat">manum
+								certissimam</foreign>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p124_l24"/>
+					<p>
+						<seg type="lemma" ana="#tamen_p124_l24">tamen
+						</seg>
+						<seg type="comment" xml:id="tamen_p124_l24">:
+							pointing the contrast between the suppression of this body and
+							Catiline's expectations from them. </seg>
+					</p>
+					<milestone unit="page_line" n="p124_l29"/>
+					<p>
+						<seg type="lemma" ana="#vocari_videtis_p124_l29">vocari videtis
+						</seg>
+						<seg type="comment" xml:id="vocari_videtis_p124_l29">: the members of the
+							Senate had their gathering place (<foreign xml:lang="lat">senaculum</foreign>)
+							adjoining the <foreign xml:lang="lat">curia</foreign>, and were summoned
+							by heralds (<foreign xml:lang="lat">praecones</foreign>) from this into
+							the building. If any were absent, the heralds were sent to their houses.
+							The <foreign xml:lang="lat">curia</foreign> and <foreign xml:lang="lat">
+							senaculum</foreign> were visible from the place of assembly in the
+							Forum, and the heralds could no doubt be seen going their rounds. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="IV" corresp="2.26-2.29">
+				<div type="section" n="title">
+					<head>IV. <foreign xml:lang="lat">Peroratio</foreign> (§§ 26-29) </head>
+					<milestone unit="chapter" n="26_29"/>
+					<p>Citizens need not fear: the consul will protect the City. The
+						conspirators warned. There shall be no disturbance. The gods will lend
+						their aid.
+					</p>
+				</div>
+				<div type="section" n="27" corresp="urn:cts:latinLit:phi0474.phi013:2.27">
+					<milestone unit="page_line" n="p125_l2"/>
+					<p>
+						<seg type="lemma" ana="#monitos_volo_p125_l2">monitos . . . volo
+						</seg>
+						<seg type="comment" xml:id="monitos_volo_p125_l2">:
+							497, c, N. (292, d, N.); G. 537; H.-B. 605, 3. </seg>
+					</p>
+					<milestone unit="page_line" n="p125_l3"/>
+					<p>
+						<seg type="lemma" ana="#solutior_p125_l3">solutior
+						</seg>
+						<seg type="comment" xml:id="solutior_p125_l3">: for compar., see § <ref n="AG 291">291</ref>, a (93, a); B. 240, I G. 297; H. 498 (444, I);
+							H.-B. 241, 2. </seg>
+					</p>
+					<milestone unit="page_line" n="p125_l4"/>
+					<p>
+						<seg type="lemma" ana="#quod_p125_l4">quod
+						</seg>
+						<seg type="comment" xml:id="quod_p125_l4">, etc., <gloss>as
+								for the rest</gloss>, i.e. what remains to be done. </seg>
+					</p>
+					<milestone unit="page_line" n="p125_l5"/>
+					<p>
+						<seg type="lemma" ana="#horum_p125_l5">horum
+						</seg>
+						<seg type="comment" xml:id="horum_p125_l5">
+							and </seg>
+						<seg type="lemma" ana="#his_p125_l5">his
+						</seg>
+						<seg type="comment" xml:id="his_p125_l5">
+							relate to the citizens by whom he is surrounded, and imply a gesture. </seg>
+					</p>
+					<milestone unit="page_line" n="p125_l8"/>
+					<p>
+						<seg type="lemma" ana="#cujus_p125_l8">cujus
+						</seg>
+						<seg type="comment" xml:id="cujus_p125_l8">: referring, like <foreign xml:lang="lat">qui</foreign>, to the subject of <foreign xml:lang="lat">sentiet</foreign>. <milestone n="13" unit="chapter"/>
+						</seg>
+					</p>
+					<milestone unit="page_line" n="p125_l17"/>
+				</div>
+				<div type="section" n="28" corresp="urn:cts:latinLit:phi0474.phi013:2.28">
+					<p>
+						<seg type="lemma" ana="#me_p125_l17">me
+						</seg>
+						<seg type="comment" xml:id="me_p125_l17">,
+							etc., abl. abs. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#togato_p125_l17">togato
+						</seg>
+						<seg type="comment" xml:id="togato_p125_l17"> , <gloss>in
+								perfect peace</gloss>, i.e. without any military demonstration: the <foreign xml:lang="lat">toga</foreign> was the regular dress of the Roman in
+							time of peace. </seg>
+					</p>
+					<milestone unit="page_line" n="p125_l22"/>
+					<p>
+						<seg type="lemma" ana="#illud_p125_l22">illud
+						</seg>
+						<seg type="comment" xml:id="illud_p125_l22">:
+							in appos. with </seg>
+						<seg type="lemma" ana="#ut_possitis_p125_l22">ut . . . possitis
+						</seg>
+						<seg type="comment" xml:id="ut_possitis_p125_l22">: I <gloss>will secure
+								that</gloss>, etc. </seg>
+					</p>
+					<milestone unit="page_line" n="p125_l24"/>
+					<p>
+						<seg type="lemma" ana="#neque_que_p125_l24">neque. . . -que
+						</seg>
+						<seg type="comment" xml:id="neque_que_p125_l24"> , <gloss>not... and</gloss>
+							. </seg>
+					</p>
+				</div>
+				<div type="section" n="29" corresp="urn:cts:latinLit:phi0474.phi013:2.29">
+					<milestone unit="page_line" n="p125_l28"/>
+					<p>
+						<seg type="lemma" ana="#quibus_ducibus_p125_l28">quibus . . . ducibus
+						</seg>
+						<seg type="comment" xml:id="quibus_ducibus_p125_l28"> , <gloss>under whose
+							guidance</gloss>. </seg>
+					</p>
+					<milestone unit="page_line" n="p126_l3"/>
+					<p>
+						<seg type="lemma" ana="#quam_hanc_p126_l3">quam urbem... hanc
+						</seg>
+						<seg type="comment" xml:id="quam_hanc_p126_l3"> , <gloss>this city which</gloss>:
+							§ <ref n="AG 307">307</ref>, b, N. (200, b, N.); G. 616; H. 399, 5(445,
+							9); or (repeating the noun) <gloss>the
+								city which</gloss>, etc.,— <gloss>
+								<emph>that</emph> city</gloss>. </seg>
+					</p>
+				</div>
+			</div>
+		</body>
+	</text>
+	<standOff>
+		<linkGrp type="commentary">
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #ejecimus_p113_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #emisimus_p113_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #ipsum_p113_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #verbis_prosecuti_p113_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #abiit_p113_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #excessit_p113_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #evasit_p113_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #erupit_p113_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #moenibus_p114_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #atque_p114_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #hunc_quidem_p114_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #sine_controversia_p114_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #versabitur_p114_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #campo_p114_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #foro_p114_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #curia_p114_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #parietes_p114_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #loco_est_p114_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #nullo_impediente_p114_l6"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.1 #justum_p114_l7"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #quod_etc_p114_l9"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #cruentum_p114_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #vivis_nobis_p114_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #civis_p114_l12"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #jacet_p114_l13"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #retorquet_oculos_p114_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #faucibus_p114_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #profecto_p114_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #quae_quidem_p114_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #quod_projecerit_p114_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.2 #quod_extulit_p114_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #For_followingsection_p114_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #qualis_omnis_p114_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #oportebat_p114_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #qui_accuset_p114_l20"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #ista_p114_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #interfectum_esse_p114_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #oportebat_p114_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #hujus_imperi_p114_l25"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #res_publica_p114_l25"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.3 #quam_multos_p114_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #cum_p115_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #fore_possem_p115_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #si_multassem_p115_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #ne_probata_p115_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #multassem_p115_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #fore_ut_p115_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #at_possetis_p115_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #huc_p115_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #videretis_p115_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #quem_quidem_p115_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #intellegatis_p115_l6"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #quod_exierit_p115_l7"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #mihi_p115_l9"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #aes_alienum_p115_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #reliquit_p115_l11"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.4 #quos_viros_p115_l12"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #prae_p115_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #Gallicanis_p115_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #hoc_dilecta_p115_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #Q_Metellus_p115_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #senibus_p115_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #luxuria_p115_l18"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #vadimonia_deserere_p115_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #edictum_praetoris_p115_l21"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #hos_p115_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #fulgent_purpura_p115_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #mallem_p115_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #eduxisset_p115_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #si_permanent_p115_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #mementote_p115_l25"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.5 #atque_hoc_p115_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #video_p115_l28"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #cui_sit_p115_l29"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #superioris_noctis_p115_l31"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #ne_p116_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #ut_videretis_p116_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #quod_p116_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #nisi_vero_p116_l7"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #si_p116_l7"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #non_jam_p116_l8"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.6 #Aurelia__via__p116_l11"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #rem_publicam_p116_l13"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #sentinam_p116_l13"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #ejecerit_p116_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #O_fortunatam_p116_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #exhausto_p116_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #sentina_p116_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #recreata_p116_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #toti_Itali_p116_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #subjector_p116_l18"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #circumscriptor_p116_l18"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #perditus_p116_l21"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.7 #hosce_p116_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.8 #asciverit_p117_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #ut_possitis_p117_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #diversa_studia_p117_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #in_ratione_p117_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #ludo_p117_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #gladiatorio_p117_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #levior_p117_l7"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #tamen_p117_l8"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #exercitatione_p117_l9"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #frigore_perferendis_p117_l9"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #adsuefactus_p117_l9"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #fortis_p117_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #istis_p117_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.9 #subsidia_p117_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #sui_p117_l13"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #audaciae_p117_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #obligaverunt_p117_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #res_p117_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #libido_p117_l21"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #quidem_p117_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #homines_p117_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #viris_p117_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #mihi_p117_l26"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #obliti_p117_l28"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.10 #caedem_p117_l29"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #instare_p117_l31"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #propagarit_p118_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #pertimescamus_p118_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #possit_p118_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #unius_p118_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #quacumque_ratione_p118_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #resecanda_erunt_p118_l11"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #si_permanent_p118_l12"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.11 #exspectent_p118_l13"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #etiam_p118_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #quod_p118_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #ipsos_p118_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #enim_p118_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #quid_p118_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #hesterno_die_p118_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #convocavi_p118_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.12 #detuli_p118_l21"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #quaesivi_p118_l28"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #necne_p118_l29"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #ei_p118_l32"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #teneretur_p119_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #pararet_p119_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #securis_p119_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #fascis_p119_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.13 #aquilam_p119_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #eiciebam_p119_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #credo_p119_l6"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #suo_nomine_p119_l8"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #Massiliam_p119_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #condicionem_p119_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #nunc_p119_l12"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #pertimuerit_p119_l14"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.14 #spe_conatuque_p119_l18"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #est_tanti_p119_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #depellatur_p119_l25"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #sane_p119_l25"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #invidiae_p119_l28"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #aliquando_p119_l31"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #quod_emiserim_p119_l31"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #emiserim_p119_l31"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #eiecerim_p119_l31"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.15 #si_interfectus_p120_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.16 #quamquam_p120_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.16 #dictitant_p120_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.16 #nemo_p120_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.16 #misericors_p120_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.16 #latrocinantem_p120_l8"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.16 #vivere_p120_l8"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.16 #vivis_nobis_p120_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.17 #sanare_p120_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.17 #sibi_p120_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.17 #placare_p120_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.17 #comparentur_p120_l20"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.17 #singulis_p120_l20"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.17 #si_quam_p120_l21"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #est_eorum_p120_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #possessiones_p120_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #dissolvi_p120_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #voluntas_causa_p120_l25"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #tu_p120_l26"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #sis_p120_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #tuas_p120_l30"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #tabulas_novas_p120_l30"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #auctionariae_p121_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #auctionarinae_p121_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #quod_p121_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #neque_p121_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #certare_usuris_p121_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #fructibus_p121_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #uteremur_p121_l6"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #hosce_p121_l7"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.18 #o_facturi_121"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #premuntur_p121_l11"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #quieta_publica_p121_l13"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #scilicet_p121_l15"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #desperent_p121_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #me_vigilare_p121_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #magnos_animos_p121_l18"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #praesentis_p121_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #deos_p121_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #quod_si_p121_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #quod_p121_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #quod_p121_l23_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #jam_p121_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #sint_adepti_p121_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #cum_furore_p121_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #non_vident_p121_l26"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #adepti_sint_p121_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #fugitivo_p121_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.19 #sit_necesse_p121_l28"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #ex_coloniis_p121_l31"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #universas_p122_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #civium_esse_p122_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #ei_coloni_p122_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #beati_p122_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #Sulla_p122_l7"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #agrestis_p122_l8"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #veterum_p122_l9"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.20 #illorum_temporum_p122_l12"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.21 #vacillant_p122_l18"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.21 #vadimoniis_p122_l18"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.21 #infitiatores_lentos_p122_l21"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.21 #stare_p122_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.21 #ita_p122_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.21 #non_modo_p122_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.22 #non_revoco_p122_l29"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.22 #carcer_p123_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.22 #numero_p123_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.22 #genere_p123_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.22 #imberbis_p123_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.22 #bene_barbatos_p123_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.22 #velis_p123_l6"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.23 #saltare_cantare_p123_l11"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.23 #spargere_p123_l11"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.23 #scitote_p123_l13"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.23 #his_noctibus_p123_l16"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.24 #urbes_coloniarum_p123_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.24 #municipia_p123_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.24 #urbes_p123_l27"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.25 #causas_p124_l1"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.25 #ex_ipso_p124_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.25 #bona_ratio_p124_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.25 #perdita_p124_l10"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #custodiis_vigilisque_p124_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #consultum_p124_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #coloni_municipesque_p124_l19"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #hac_excursione_p124_l20"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #gladiatores_p124_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #quamquam_p124_l23"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #tamen_p124_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.26 #vocari_videtis_p124_l29"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.27 #monitos_volo_p125_l2"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.27 #solutior_p125_l3"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.27 #quod_p125_l4"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.27 #horum_p125_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.27 #his_p125_l5"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.27 #cujus_p125_l8"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.28 #me_p125_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.28 #togato_p125_l17"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.28 #illud_p125_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.28 #ut_possitis_p125_l22"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.28 #neque_que_p125_l24"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.29 #quibus_ducibus_p125_l28"/>
+			<link target="urn:cts:latinLit:phi0474.phi013:2.29 #quam_hanc_p126_l3"/>
+		</linkGrp>
+	</standOff>
+</TEI>

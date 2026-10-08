@@ -1,0 +1,12 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:greekLit:viaf107078652"
+    urn="urn:cts:greekLit:viaf107078652.viaf002"
+    xml:lang="eng"
+>
+    <ti:title xml:lang="eng">Commentary on Plato, Republic</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf107078652.viaf002" urn="urn:cts:greekLit:viaf107078652.viaf002.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Commentary on Plato, Republic</ti:label>
+        <ti:description xml:lang="eng">Plato. The Republic, Vol 1-2. Adam, James, editor. Cambridge: Cambridge University Press, 1902-1903.</ti:description>
+        <ti:about urn="urn:cts:greekLit:tlg0059.tlg030" />
+    </ti:commentary>
+</ti:work>

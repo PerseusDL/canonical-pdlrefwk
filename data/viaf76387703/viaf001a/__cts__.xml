@@ -1,0 +1,7 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:viaf76387703" urn="urn:cts:greekLit:viaf76387703.viaf001a" xml:lang="eng">
+    <ti:title xml:lang="eng">Commentary on Thucydides Book 1</ti:title>
+    <ti:commentary workUrn="urn:cts:greekLit:viaf76387703.viaf001a" urn="urn:cts:greekLit:viaf76387703.viaf001a.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">Commentary on Thucydides Book 1</ti:label>
+        <ti:description xml:lang="eng">Thucydides, Book I. Marchant, Edgar C., editor. London: Macmillan and Company, 1905.</ti:description>
+    </ti:commentary>
+</ti:work>

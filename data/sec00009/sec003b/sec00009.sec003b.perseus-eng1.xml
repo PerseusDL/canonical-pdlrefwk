@@ -1,0 +1,1077 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title>Commmentary on the Plunder of Syracuse</title>
+				<author>James Bradstreet Greenough</author>
+				<author>George Lyman Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" notBefore="2009-03-12">Perseus 4.0</date>
+				<idno type="filename">sec00009.sec003b.perseus-eng1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Select orations of Cicero</title>
+						<author>Cicero</author>
+						<editor>James Bradstreet Greenough</editor>
+						<editor>George Lyman Kittredge</editor>
+						<edition>Allen and Greenough’s edition</edition>
+						<imprint>
+							<pubPlace>Boston</pubPlace>
+							<publisher>Ginn and Company</publisher>
+							<date>1897</date>
+						</imprint>
+					</monogr>
+					<ref target="https://hdl.handle.net/2027/mdp.39015008024815?urlappend=%3Bseq=178%3Bownerid=13510798888294386-190"/>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])" n="section">
+					<p>This pointer extracts chapter and section</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])" n="chapter">
+					<p>This pointer extracts chapter</p>
+				</cRefPattern>
+			</refsDecl>
+			<refsDecl xml:id="CTS" n="CTS">
+				<citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0" match="/tei:TEI/tei:text/tei:body" use="@xml:base">
+					<citeStructure unit="chapter" delim=":" match="tei:div[@type='chapter']" use="@n">
+						<citeStructure unit="section" delim="." match="tei:div[@type='section']" use="@n"/>
+					</citeStructure>
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="lat">Latin</language>
+				<language ident="grc">Greek</language>
+				<language ident="fre">French</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-09-18" who="Alison Babeu">Final review and updating of header information</change>
+			<change when="2026-07-31" who="Charles Pletcher">Added citeStructure and other TEI changes</change>
+			<change when="2024-12-10" who="Alison Babeu">Adding in header and bibliographic
+				metadata</change>
+			<change when="2024-01-30" who="pletcher">Updating TEI-XML</change>
+			<change when="2023-07-17" who="pletcher">CTS and other transformations</change>
+			<change when="2009-10-09" who="rsing04">more reorganizing of texts module by collection </change>
+			<change when="2009-09-22" who="rsingh04">fixed references to Cic. Ver.</change>
+			<change when="2009-08-25" who="rsingh04">changed bibls with Perseus:abo to
+				corresponding abbreviation </change>
+			<change when="2009-07-30" who="rsingh04">fixed allen and greenough refs</change>
+			<change when="2009-07-29" who="student"> fixed bibl errors - zr fixed bibl errors
+				through speech 3 of Catiline - zr </change>
+			<change when="2009-06-05" who="Lisa Cerrato">fixed bad bibls</change>
+			<change when="2009-06-03" who="Lisa Cerrato">fixed bad bibls</change>
+			<change when="2009-05-27" who="rsingh04">added/fixed cvs log keyword</change>
+		</revisionDesc>
+	</teiHeader>
+	<text n="Ver." xml:lang="eng">
+		<body xml:lang="eng" xml:base="urn:cts:latinLit:sec00009.sec003b.perseus-eng1">
+			<div type="chapter" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:introduction">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:introduction">
+					<head>The Plunder of Syracuse. (<title xml:lang="lat">In C. Verrem: Actio
+							II., Lib.
+							IV.</title>, ch. 52-60.)</head>
+					<p>The passage which follows is from the fourth oration of the <foreign xml:lang="lat">Accusatio</foreign>, the most famous of all, known as the <title xml:lang="lat">De Signis</title> because it treats chiefly of the works
+						of art stolen by Verres. Cicero has been describing the plundering of many
+						temples and public buildings, and in this passage he recounts in detail the
+						case of one chief city, Syracuse, as a climax. Syracuse was by far the
+						largest and richest of all the Greek cities of Italy and Sicily. It was a
+						colony of Corinth, founded <date>B.C.
+							734</date>, and in course of time obtained the rule over the whole
+						eastern part of Sicily. It remained independent, with a considerable
+						territory, after the western part of the island (far the larger part) passed
+						under the power of Rome in the First Punic War; but in the Second Punic War
+						(B.C. 212) it was captured by Marcellus, and ever after was subject to Rome.
+						It was at this time the capital of the province. </p>
+				</div>
+			</div>
+			<div type="chapter" n="1_2" corresp="urn:cts:latinLit:phi0474.phi005:4.115–4.135">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:4.115-4.116">
+					<p>Contrast between the treatment of Syracuse by the conqueror Marcellus in
+						time of war and its treatment by Verres, the governor, in time of peace. </p>
+				</div>
+				<div type="section" n="1" corresp="urn:cts:latinLit:phi0474.phi005:4.115">
+					<p>
+						<seg type="lemma" ana="#aliquando_1">aliquando
+						</seg>
+						<seg type="comment" xml:id="aliquando_1"> ,<gloss>at last</gloss>, implying
+							impatience, here assumed as a kind of apology to his hearers for the
+							length of his account. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Marcello_1">Marcello
+						</seg>
+						<seg type="comment" xml:id="Marcello_1">: M. Claudius Marcellus, of a noble
+							plebeian family (all the other families of the Claudian <gloss>gens</gloss>
+							were patrician), was the ablest general the Romans had in the early
+							years of the Second Punic War, but illiterate and cruel. His capture of
+							Syracuse was in <date when="-0212">B.C. 212</date>. He was killed in
+							battle <date when="-0208">B.C. 208</date>. </seg>
+					</p>
+					<p> The contrast between Verres and Marcellus is a brilliant one; nevertheless,
+						the orator exaggerates, as on so many occasions. <q rend="double">Not
+							only did Marcellus stain his military honor by permitting a
+							general
+							pillage of the wealthy mercantile city, in the course of which
+							Archimedes and many other citizens were put to death, but the Roman
+						Senate lent a deaf ear to the complaints which the Syracusans
+							afterwards presented regarding that celebrated general, and neither
+						returned to individuals their property nor restored to the city its
+							freedom</q> (Mommsen). </p>
+					<p>
+						<seg type="lemma" ana="#imperatoris_1">imperatoris
+						</seg>
+						<seg type="comment" xml:id="imperatoris_1">: this title, properly belonging
+							to every holder of the <foreign xml:lang="lat">imperium</foreign>, was
+							by usage assumed by the commander only after his first considerable
+							victory. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#cohortem_1">cohortem
+						</seg>
+						<seg type="comment" xml:id="cohortem_1"> ,<gloss>train</gloss> of courtiers,
+							etc.: the provincial magistrates, representing the Roman <foreign xml:lang="lat">imperium</foreign>, had almost a royal suite, as well
+							as other insignia of royalty. </seg>
+					</p>
+				</div>
+				<div type="section" n="2" corresp="urn:cts:latinLit:phi0474.phi005:4.116">
+					<p>
+						<seg type="lemma" ana="#omitto_2">omitto
+						</seg>
+						<seg type="comment" xml:id="omitto_2">: a good example of the rhetorical
+							device known as <foreign xml:lang="lat">praeteritio</foreign>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#locis_2">locis
+						</seg>
+						<seg type="comment" xml:id="locis_2">, i.e. in the other speeches of the <foreign xml:lang="lat">Accusatio</foreign> . </seg>
+					</p>
+					<p>forum: every ancient town had its central market-place or square (<foreign xml:lang="lat">forum</foreign>,<foreign xml:lang="grc">ἀγορά</foreign>),
+						an open space, used for trading, public assemblies, and the administration
+						of justice. The same feature exists in European towns at the present day. </p>
+					<p>
+						<seg type="lemma" ana="#clausus_fuisset_2">clausus fuisset
+						</seg>
+						<seg type="comment" xml:id="clausus_fuisset_2">:
+							Marcellus had been obliged to starve out the city. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Cilicum_2">Cilicum
+						</seg>
+						<seg type="comment" xml:id="Cilicum_2">:
+							Cilicia was the chief seat of the organized bands of pirates who ruled
+							the Mediterranean at this time. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#illis_rebus_2">illis rebus
+						</seg>
+						<seg type="comment" xml:id="illis_rebus_2">,
+							i.e. the plunder of temples, etc. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="3_5" corresp="urn:cts:latinLit:phi0474.phi005:4.117-4.119">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:4.117-4.119">
+					<p>Situation and topography of Syracuse. </p>
+				</div>
+				<div type="section" n="3" corresp="urn:cts:latinLit:phi0474.phi005:4.117">
+					<p>
+						<seg type="lemma" ana="#maximam_3">maximam
+						</seg>
+						<seg type="comment" xml:id="maximam_3">: the circuit of its walls was about
+							180 <foreign xml:lang="lat">
+								stadia</foreign> = more than 20 miles. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ex_aditu_3">ex omni aditu
+						</seg>
+						<seg type="comment" xml:id="ex_aditu_3">
+							limits </seg>
+						<seg type="lemma" ana="#praeclaro_aspectum_3">praeclaro ad aspectum
+						</seg>
+						<seg type="comment" xml:id="praeclaro_aspectum_3">
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_aedificatione_3">in aedificatione
+						</seg>
+						<seg type="comment" xml:id="in_aedificatione_3">,
+							etc., i.e. enclosed by the buildings of the city. Ancient harbors (as at
+							Athens) were often at a considerable distance from the city. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#conjunguntur_3">conjunguntur
+						</seg>
+						<seg type="comment" xml:id="conjunguntur_3">: Ortygia (or <foreign xml:lang="lat">Insula</foreign>), the site of the original town, had
+							an independent harbor on each side connected by a narrow channel. This
+							channel is the </seg>
+						<seg type="lemma" ana="#exitus_3">exitus
+						</seg>
+						<seg type="comment" xml:id="exitus_3">
+							mentioned. </seg>
+					</p>
+				</div>
+				<div type="section" n="4" corresp="urn:cts:latinLit:phi0474.phi005:4.118">
+					<p>
+						<seg type="lemma" ana="#Hieronis_4">Hieronis
+						</seg>
+						<seg type="comment" xml:id="Hieronis_4">: Hiero II, king of Syracuse (<date when="-0270">B.C.
+								270</date> to about 216), who was during most of his reign a
+							steadfast ally of Rome. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Dianae_4">Dianae
+						</seg>
+						<seg type="comment" xml:id="Dianae_4">: the quail, <foreign xml:lang="grc">
+							ὄρτυξ</foreign> (whence the name <gloss>
+								Ortygia</gloss>), was sacred to Diana (Artemis). </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#istius_4">istius
+						</seg>
+						<seg type="comment" xml:id="istius_4">,
+							i.e. of Verres. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Arethusa_4">Arethusa
+						</seg>
+						<seg type="comment" xml:id="Arethusa_4">: for the myth of Arethusa and
+							Alpheus, see Ovid, Met. 5.573-641; Gayley, <gloss>Classic
+								Myths</gloss>. </seg>
+					</p>
+				</div>
+				<div type="section" n="5" corresp="urn:cts:latinLit:phi0474.phi005:4.119">
+					<p>
+						<seg type="lemma" ana="#Achradina_5">Achradina
+						</seg>
+						<seg type="comment" xml:id="Achradina_5">,
+							the plain and table-land north of Ortygia </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#prytaneum_5">prytaneum
+						</seg>
+						<seg type="comment" xml:id="prytaneum_5">: the building in which the city
+							was conceived to have its home. Here was the hearth, sacred to Vesta,
+							whence colonists carried the sacred fire to kindle a new hearth in the <gloss>
+							prytaneum</gloss> of their new home. It was also used for courts of
+							justice, public banquets, etc. Such public buildings were usually
+							grouped round the forum in the centre of the city. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#urbis_5">urbis
+						</seg>
+						<seg type="comment" xml:id="urbis_5">,
+							i.e. Achradina. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#perpetua_5">perpetua
+						</seg>
+						<seg type="comment" xml:id="perpetua_5"> ,<gloss>running its whole length</gloss>
+							. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#continentur_5">continentur
+						</seg>
+						<seg type="comment" xml:id="continentur_5"> ,<gloss>are lined in continuous
+							rows</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#gymnasium_5">gymnasium
+						</seg>
+						<seg type="comment" xml:id="gymnasium_5">:
+							the place for exercise and baths, with porticos, groves, and halls. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#coaedificata_5">coaedificata
+						</seg>
+						<seg type="comment" xml:id="coaedificata_5"> ,<gloss>built up</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#Neapolis_5">Neapolis
+						</seg>
+						<seg type="comment" xml:id="Neapolis_5">, i.e. <q rend="double">the new
+							city.</q>
+						</seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#quam_summam_5">quam ad summam
+						</seg>
+						<seg type="comment" xml:id="quam_summam_5"> ,<gloss>at the highest point of
+							which</gloss>. </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="6_7" corresp="urn:cts:latinLit:phi0474.phi005:4.120-4.121">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:4.120-4.121">
+					<p>Marcellus, the conqueror at Syracuse: compare Verres, the governor. </p>
+				</div>
+				<div type="section" n="6" corresp="urn:cts:latinLit:phi0474.phi005:4.120">
+					<p>
+						<seg type="lemma" ana="#pulchritudinem_6">pulchritudinem
+						</seg>
+						<seg type="comment" xml:id="pulchritudinem_6">: the English would put it
+							less abstractly, — <gloss>this
+								beautiful city</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_6">in
+						</seg>
+						<seg type="comment" xml:id="in_6"> ,<gloss>in
+								respect to</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#habuit_rationem_6">habuit victoriae rationem
+						</seg>
+						<seg type="comment" xml:id="habuit_rationem_6"> ,<gloss>had regard for the
+							right of victory</gloss>. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#deportare_6">deportare
+						</seg>
+						<seg type="comment" xml:id="deportare_6">:
+							a Roman custom, imitated in the nineteenth century by Napoleon. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#possent_6">possent
+						</seg>
+						<seg type="comment" xml:id="possent_6">,
+							subj. of characteristic. </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#humanitatis_6">humanitatis
+						</seg>
+						<seg type="comment" xml:id="humanitatis_6"> ,<gloss>the part of humanity</gloss>
+							. </seg>
+					</p>
+				</div>
+				<div type="section" n="7" corresp="urn:cts:latinLit:phi0474.phi005:4.121">
+					<p>
+						<seg type="lemma" ana="#Honoris_7">Honoris
+						</seg>
+						<seg type="comment" xml:id="Honoris_7">
+							etc the worship of abstractions was a characteristic of the Roman
+							religion Marcellus restored the temple of Honor and built the temple of
+							Virtus, the two were so connected that in common parlance they were
+							referred to as a single edifice </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#in_aedibus_7">in aedibus
+						</seg>
+						<seg type="comment" xml:id="in_aedibus_7">,
+							i.e. in his own house in town </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#ornamento_7">ornamento
+						</seg>
+						<seg type="comment" xml:id="ornamento_7">,
+							i.e. as being free from stolen treasures </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#deum_nullum_7">deum nullum
+						</seg>
+						<seg type="comment" xml:id="deum_nullum_7"> translate, in order to keep the
+							emphasis of the position, <gloss>of
+								the gods not one</gloss> (i e not a single statue) </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#comparetis_7">comparetis
+						</seg>
+						<seg type="comment" xml:id="comparetis_7">,
+							i e in renown and in personal character </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#pacem_bello_7">pacem cum bello
+						</seg>
+						<seg type="comment" xml:id="pacem_bello_7">,
+							etc implying that the administration of Verres in time of peace was
+							worse than the armed capture by Marcellus </seg>
+					</p>
+					<p>
+						<seg type="lemma" ana="#forum_dictionem_7">forum et juris dictionem
+						</seg>
+						<seg type="comment" xml:id="forum_dictionem_7"> ,<gloss>law and justice</gloss>
+							the forum is mentioned as being the place where the praetor administered
+							justice; </seg>
+						<seg type="lemma" ana="#juris_dictio_7">juris dictio
+						</seg>
+						<seg type="comment" xml:id="juris_dictio_7"> was his special function (see
+							note on Verres, 1, sect. <ref n="Cic. Ver. 1.1.12">12</ref>, p.32,
+							1.13). </seg>
+					</p>
+				</div>
+			</div>
+			<div type="chapter" n="8_17" corresp="urn:cts:latinLit:phi0474.phi005:4.120-4.132">
+				<div type="section" n="introduction" corresp="urn:cts:latinLit:phi0474.phi005:4.120-4.132">
+					<p>Details of the robberies of Verres. </p>
+					<div type="section" n="8" corresp="urn:cts:latinLit:phi0474.phi005:4.122">
+						<p>
+							<seg type="lemma" ana="#aedis_Minervae_8">aedis Minervae
+							</seg>
+							<seg type="comment" xml:id="aedis_Minervae_8">:
+								the illustration shows how this ancient temple of Minerva in
+								Syracuse has been made over into a church. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#tamen_bello_8">tamen in bello
+							</seg>
+							<seg type="comment" xml:id="tamen_bello_8">: translate <gloss>though in
+								war, still</gloss>, etc. The particle tamen (<q rend="double">still</q>)
+								often suggests a concession (<q rend="double">although</q>), not
+								expressed, but loosely implied in the context or the circumstances;
+								here the implied concession is <q rend="double">though the rights of
+								an enemy in war are unlimited.</q>
+							</seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#religionum_8">religionum
+							</seg>
+							<seg type="comment" xml:id="religionum_8"> ,<gloss>things sacred</gloss>
+								. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#consuetudinis_8">consuetudinis
+							</seg>
+							<seg type="comment" xml:id="consuetudinis_8">,
+								i.e. things hallowed by use. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Agathocli_8">Agathocli
+							</seg>
+							<seg type="comment" xml:id="Agathocli_8">: tyrant of Syracuse, <date from="-0317" to="-0289">
+									<date when="-0317">B.C. 317</date>-289</date>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#visendum_8">visendum
+							</seg>
+							<seg type="comment" xml:id="visendum_8">: see Manil., sect. <ref n="Cic. Man. 40">40</ref>,<gloss>p.85, l</gloss>. 6, note. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#profana_fecisset_8">profana fecisset
+							</seg>
+							<seg type="comment" xml:id="profana_fecisset_8">: the Romans had a
+								formula by which they called away (<foreign xml:lang="lat">evocare</foreign>)
+								and gained over to their side the tutelary deities of any cities
+								they were besieging. Of course, the temples of these gods then lost
+								all their sanctity and became profane buildings. With the same idea
+								the true name of Rome and that of its tutelar divinity were said to
+								be kept as a mystery, lest they should become known to an enemy, who
+								might thus disarm the city of its protector. </seg>
+						</p>
+						<p> Notwithstanding this doctrine, the Romans were often, as in the case of
+							Marcellus, prevented by religious feeling (<foreign xml:lang="lat">
+							religione</foreign>) from violating the sacred edifices of conquered
+							cities. Often, too, they transferred the worship of the deities in
+							question to Rome. On the whole idea, cf. Aeneid, 2. 351. </p>
+						<p>
+							<seg type="lemma" ana="#jam_8">jam
+							</seg>
+							<seg type="comment" xml:id="jam_8">
+								belongs with sacra religiosaque. </seg>
+						</p>
+					</div>
+					<div type="section" n="9" corresp="urn:cts:latinLit:phi0474.phi005:4.123">
+						<p>
+							<seg type="lemma" ana="#id_quod_9">id quod
+							</seg>
+							<seg type="comment" xml:id="id_quod_9"> ,<gloss>what</gloss>
+							</seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#deberet_9">deberet
+							</seg>
+							<seg type="comment" xml:id="deberet_9">: subj. of characteristic. <pb n="320"/>
+							</seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#in_erant_9">in quibus erant
+							</seg>
+							<seg type="comment" xml:id="in_erant_9"> ,<gloss>upon which were
+								represented</gloss>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#cognitione_formarum_9">cognitione formarum
+							</seg>
+							<seg type="comment" xml:id="cognitione_formarum_9"> ,<gloss>acquaintance
+								with their features</gloss>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#tamen_9">tamen
+							</seg>
+							<seg type="comment" xml:id="tamen_9">:
+								see note on p.52, i. 4. </seg>
+						</p>
+					</div>
+					<div type="section" n="10" corresp="urn:cts:latinLit:phi0474.phi005:4.124">
+						<p>
+							<seg type="lemma" ana="#tam_cupidum_10">tam . . . cupidum
+							</seg>
+							<seg type="comment" xml:id="tam_cupidum_10"> ,<gloss>that I am so eager</gloss>
+								(in appos. with <foreign xml:lang="lat">quod</foreign>). </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#illi_10">illi
+							</seg>
+							<seg type="comment" xml:id="illi_10">,
+								i.e. the Greeks, as being over-fond of art. The Romans were inclined
+								to look down upon culture and the fine arts as being less manly than
+								politics and war; cf. the famous passage in the Aeneid, 6. 846-853. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#argumenta_10">argumenta
+							</seg>
+							<seg type="comment" xml:id="argumenta_10"> ,<gloss>subjects</gloss> or <gloss>
+								stories</gloss> (in relief) ; cf. Aeneid, vi. 20, and note. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Gorgonis_10">Gorgonis
+							</seg>
+							<seg type="comment" xml:id="Gorgonis_10">:
+								the head of Medusa, a favorite subject of ancient art. See Fig. 10,
+								from an ancient marble mask. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#bullas_10">bullas
+							</seg>
+							<seg type="comment" xml:id="bullas_10">,
+								i.e. knobs. </seg>
+						</p>
+					</div>
+					<div type="section" n="11" corresp="urn:cts:latinLit:phi0474.phi005:4.125">
+						<p>
+							<seg type="lemma" ana="#in_nomine_11">in hoc nomine
+							</seg>
+							<seg type="comment" xml:id="in_nomine_11"> ,<gloss>at this item</gloss>
+								(i.e. wondering why Verres should have taken these). </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#commoveri_11">commoveri
+							</seg>
+							<seg type="comment" xml:id="commoveri_11"> ,<gloss>were surprised</gloss>
+								. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#satis_esset_11">satis esset
+							</seg>
+							<seg type="comment" xml:id="satis_esset_11">, i.e. they were only
+								curiosities. Any natural object which was, in the view of the
+								ancients, out of the common order of nature was regarded as a <foreign xml:lang="lat">monstrum</foreign> or <foreign xml:lang="lat">
+								prodigium</foreign>, and as therefore associated in some w-ay with
+								the gods ; hence such objects were frequently dedicated in temples. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#id_11">id
+							</seg>
+							<seg type="comment" xml:id="id_11">
+								merely repeats </seg>
+							<seg type="lemma" ana="#hastas_11">hastas
+							</seg>
+							<seg type="comment" xml:id="hastas_11">
+								. </seg>
+						</p>
+					</div>
+					<div type="section" n="12" corresp="urn:cts:latinLit:phi0474.phi005:4.126">
+						<p>nam explains (ironically) why he asks the last question. A passion
+							for art might, he suggests, excuse the theft of such an object as
+							the Sappho, but the stealing of the bamboos was a wanton sacrilege.
+						</p>
+						<p>potius, etc., <seg type="comment">rather than this most tasteful and
+							cultivated</seg> man. </p>
+						<p>
+							<seg type="lemma" ana="#haberet_12">haberet
+							</seg>
+							<seg type="comment" xml:id="haberet_12">: §<ref n="AG 444">444</ref>
+								(268); B. 277; G. 265; H. 559, 4 (484. v). H.-B. 503. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#nimirum_12">nimirum
+							</seg>
+							<seg type="comment" xml:id="nimirum_12"> (continuing the irony), <gloss>of
+								course</gloss>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#nostrum_12">nostrum
+							</seg>
+							<seg type="comment" xml:id="nostrum_12"> ,<gloss>of us</gloss> (emph.),
+								opp. to <gloss>Verres</gloss>.<pb n="321"/>
+							</seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#eat_12">eat
+							</seg>
+							<seg type="comment" xml:id="eat_12"> (hort. subj.), <gloss>must go</gloss>
+								. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#ad_Felicitatis_12">ad aedem Felicitatis
+							</seg>
+							<seg type="comment" xml:id="ad_Felicitatis_12">: the temple of <foreign xml:lang="lat">Felicitas</foreign> was adorned with the spoils
+								of conquered Corinth. Catulus had adorned his temple of <foreign xml:lang="lat">Fortuna</foreign>, and Metellus his portico, with
+								splendid works of art. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#istorum_12">istorum
+							</seg>
+							<seg type="comment" xml:id="istorum_12">,
+								Verres and his friends. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Tusculanum_12">Tusculanum
+							</seg>
+							<seg type="comment" xml:id="Tusculanum_12"> ,<gloss>villa at Tusculum</gloss>
+								(about 15 miles southeast of Rome) where the wealthy Romans,
+								Hortensius among the rest, had splendid country-houses. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#ornatum_12">ornatum
+							</seg>
+							<seg type="comment" xml:id="ornatum_12">,
+								i.e. as it was on festal days. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#commodarit_12">commodarit
+							</seg>
+							<seg type="comment" xml:id="commodarit_12"> ,<gloss>lent</gloss>: such
+								works of art were often placed temporarily in the Forum; cf. our
+								modern <q rend="double">loan
+									exhibitions.</q>
+							</seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#operari_12">operari
+							</seg>
+							<seg type="comment" xml:id="operari_12"> ,<gloss>mere day-laborer</gloss>:
+								said in contempt of Verres’s pretensions to culture. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#studia_12">studia
+							</seg>
+							<seg type="comment" xml:id="studia_12"> ,<gloss>fine</gloss>
+								<gloss>
+								tastes</gloss>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#delicias_12">delicias
+							</seg>
+							<seg type="comment" xml:id="delicias_12"> ,<gloss>luxurious pleasures</gloss>
+								(both ironical). </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#appositior_12">appositior
+							</seg>
+							<seg type="comment" xml:id="appositior_12"> ,<gloss>better fitted</gloss>
+								. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#ad_ferenda_12">ad ferenda
+							</seg>
+							<seg type="comment" xml:id="ad_ferenda_12">, etc., <gloss>to carry</gloss>
+								(as a porter) <gloss>than to
+									carry off</gloss> (as a connoisseur): a sarcasm on Verres’s
+								coarse and heavy build. </seg>
+						</p>
+					</div>
+					<div type="section" n="13" corresp="urn:cts:latinLit:phi0474.phi005:4.127">
+						<p>
+							<seg type="lemma" ana="#Graeculus_13">Graeculus
+							</seg>
+							<seg type="comment" xml:id="Graeculus_13">:
+								in contemptuous allusion to his pretence of taste. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#subtiliter_judicat_13">subtiliter judicat
+							</seg>
+							<seg type="comment" xml:id="subtiliter_judicat_13"> ,<gloss>is a fine
+								connoisseur of</gloss>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#nunc_13">nunc
+							</seg>
+							<seg type="comment" xml:id="nunc_13"> ,<gloss>now</gloss> (as it is)
+								opposed to </seg>
+							<seg type="lemma" ana="#si_13">si
+							</seg>
+							<seg type="comment" xml:id="si_13">
+								. . .</seg>
+							<seg type="lemma" ana="#tulisset_13">tulisset
+							</seg>
+							<seg type="comment" xml:id="tulisset_13">
+								. </seg>
+						</p>
+					</div>
+					<div type="section" n="14" corresp="urn:cts:latinLit:phi0474.phi005:4.128">
+						<p>
+							<seg type="lemma" ana="#parinum_14">parinum
+							</seg>
+							<seg type="comment" xml:id="parinum_14"> (corrupt and meaningless): the
+								common reading is parvum; perhaps the old conjecture Parium, <gloss>of
+								Parian marble</gloss>, is best. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Libero_patre_14">Libero patre
+							</seg>
+							<seg type="comment" xml:id="Libero_patre_14">: not <gloss>Liber his
+								father</gloss>, but <gloss>father
+									Liber</gloss>, pater being a common attribute of Liber as well
+								as of Mars and other gods. </seg>
+							<seg type="lemma" ana="#Liberi_filius_14">Liberi filius
+							</seg>
+							<seg type="comment" xml:id="Liberi_filius_14">
+								(1.6) is spurious. </seg>
+						</p>
+					</div>
+					<div type="section" n="15" corresp="urn:cts:latinLit:phi0474.phi005:4.129">
+						<p>
+							<seg type="lemma" ana="#Jovem_15">Jovem
+							</seg>
+							<seg type="comment" xml:id="Jovem_15">: the statue was of Zeus <foreign xml:lang="grc">οὖριος</foreign>, god of favorable weather,
+								identified, from some fancied resemblance, with <foreign xml:lang="lat">Juppiter
+									imperator</foreign>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#suo_15">suo
+							</seg>
+							<seg type="comment" xml:id="suo_15">:
+								the emphatic position continues the emphasis on </seg>
+							<seg type="lemma" ana="#Jovem_15_2">Jovem
+							</seg>
+							<seg type="comment" xml:id="Jovem_15_2"> .<pb n="322"/>
+							</seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Flamininus_15">Flamininus
+							</seg>
+							<seg type="comment" xml:id="Flamininus_15">: T. Quinctius Flamininus,
+								who defeated Philip of Macedon at Cynoscephalae, <date when="-0197">B.C.
+								197</date>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#in_ore_15">in Ponti ore
+							</seg>
+							<seg type="comment" xml:id="in_ore_15">:
+								the Thracian Bosporus, the strait extending from Constantinople to
+								the Black Sea, about 1 7 miles. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#sua_15">sua
+							</seg>
+							<seg type="comment" xml:id="sua_15">: §<ref n="AG 301">301</ref>, b
+								(196, c); cf. B. 244, 4; G. 309, 2; H. 503, 2 (449, 2); H.-B. 264,
+								2. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Capitolio_15">Capitolio
+							</seg>
+							<seg type="comment" xml:id="Capitolio_15">: the Capitol, or Temple of
+								Jupiter Capitolinus, had three <foreign xml:lang="lat">cellae</foreign>,
+								or chapels, sacred to the Capitolian triad, Jupiter, Juno, and
+								Minerva. This was now the most illustrious temple, <q rend="double">the
+								earthly abode,</q> of Jupiter. </seg>
+						</p>
+					</div>
+					<div type="section" n="16" corresp="urn:cts:latinLit:phi0474.phi005:16">
+						<p>
+							<seg type="lemma" ana="#incolae_16">incolae
+							</seg>
+							<seg type="comment" xml:id="incolae_16"> ,<gloss>residents</gloss>, i.e.
+								persons of foreign birth who made Syracuse their home, without
+								having obtained citizenship ; advenae (next line), <gloss>visitors</gloss>
+								. </seg>
+						</p>
+					</div>
+					<div type="section" n="17" corresp="urn:cts:latinLit:phi0474.phi005:17">
+						<p>
+							<seg type="lemma" ana="#adventu_17">adventu
+							</seg>
+							<seg type="comment" xml:id="adventu_17">,
+								abl. of cause. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#mensas_Delphicas_17">mensas Delphicas
+							</seg>
+							<seg type="comment" xml:id="mensas_Delphicas_17">:
+								tables with three legs, like the Delphic tripod (see Figs. 13, 14);
+								vasa Corinthia were made of a kind of bronze, of peculiar beauty and
+								very costly. </seg>
+						</p>
+					</div>
+				</div>
+				<div type="chapter" n="18_21" corresp="urn:cts:latinLit:phi0474.phi005:4.132-4.135">
+					<p>Robberies of works of art are especially odious to men of Greek blood. </p>
+					<div type="section" n="18" corresp="urn:cts:latinLit:phi0474.phi005:18">
+						<p>
+							<seg type="lemma" ana="#levia_contemnenda_18">levia et contemnenda
+							</seg>
+							<seg type="comment" xml:id="levia_contemnenda_18">: cf. note on <ref n="pl53.30">p. 53, l. 30</ref>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#fanorum_18">fanorum
+							</seg>
+							<seg type="comment" xml:id="fanorum_18"> ,<gloss>shrines</gloss>: the
+								word indicates the consecrated spot rather than the temple or altar
+								erected upon it. </seg>
+						</p>
+					</div>
+					<div type="section" n="19" corresp="urn:cts:latinLit:phi0474.phi005:19">
+						<p>
+							<seg type="lemma" ana="#nisi_forte_19">nisi forte
+							</seg>
+							<seg type="comment" xml:id="nisi_forte_19">:
+								introducing, as usual, an absurd supposition. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#desierunt_19">desierunt
+							</seg>
+							<seg type="comment" xml:id="desierunt_19"> ,<gloss>ceased</gloss>, i.e.
+								by the transference of the courts to the Senators. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Crasso_19">Crasso
+							</seg>
+							<seg type="comment" xml:id="Crasso_19">: L. Licinius Crassus, the famous
+								orator, and Quintus Scaevola, <gloss>pontifex
+									maximus</gloss>, the famous jurist and statesman, were close
+								friends, and colleagues in nearly every office. They were curule
+								aediles, <date when="-0103">B.C.
+									103</date>, and gave the first exhibition of lion-fights. The
+								splendor of their aedileship was the work of Crassus, a man of
+								elegant and luxurious tastes, while Scaevola was moderate and simple
+								in his habits. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Claudio_19">Claudio
+							</seg>
+							<seg type="comment" xml:id="Claudio_19">: probably a brother of Claudia,
+								the wife of Tiberius Gracchus. In his aedileship, <date when="-0099">B.C.
+								99</date>, he exhibited fights of elephants. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#commercium_19">commercium
+							</seg>
+							<seg type="comment" xml:id="commercium_19">:
+								Crassus and Claudius would have bought such objects of art if
+								anybody could have done it. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#fuisse_19">fuisse
+							</seg>
+							<seg type="comment" xml:id="fuisse_19">, sc. <foreign xml:lang="lat">
+								commercium</foreign>. </seg>
+						</p>
+					</div>
+					<div type="section" n="20" corresp="urn:cts:latinLit:phi0474.phi005:20">
+						<p>
+							<seg type="lemma" ana="#referri_20">referri
+							</seg>
+							<seg type="comment" xml:id="referri_20"> ,<gloss>be entered</gloss>, has
+								for subject </seg>
+							<seg type="lemma" ana="#pretio_abalienasse_20">pretio . . . abalienasse
+							</seg>
+							<seg type="comment" xml:id="pretio_abalienasse_20">
+								. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#rebus_istis_20">rebus istis
+							</seg>
+							<seg type="comment" xml:id="rebus_istis_20"> ,<gloss>things of that sort</gloss>
+								. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#apud_illos_20">apud illos
+							</seg>
+							<seg type="comment" xml:id="apud_illos_20">,
+								i.e. the Greeks generally. </seg>
+						</p>
+					</div>
+					<div type="section" n="21" corresp="urn:cts:latinLit:phi0474.phi005:21">
+						<p>The cities referred to in this section were all centres of Greek art or
+							celebrated for the possession of some masterpiece. Reginos: Rhegium, <seg type="comment">Reggio</seg>, was a very ancient Greek city at the
+							point of Italy nearest Sicily. It was a colony of Chalcis, probably
+							founded in the eighth century B.C., and became a Roman <foreign xml:lang="lat">municipium</foreign> after the Social War, <date from="-0091" to="-0090">
+								<date when="-0091">B.C. 91</date>-90</date>. </p>
+						<p>
+							<seg type="lemma" ana="#merere_velle_21">merere velle
+							</seg>
+							<seg type="comment" xml:id="merere_velle_21"> ,<gloss>would take</gloss>
+								. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#illa_21">illa
+							</seg>
+							<seg type="comment" xml:id="illa_21"> ,<gloss>that famous</gloss>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Tarentinos_21">Tarentinos
+							</seg>
+							<seg type="comment" xml:id="Tarentinos_21">: Tarentum was the largest
+								Greek city in Italy, a colony of Sparta, founded in the eighth
+								century B.C., subjugated by Rome just after the invasion of Pyrrhus, <date when="-0272">B.C. 272</date>. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#Cnidios_Coos_21">Cnidios . . . Coos
+							</seg>
+							<seg type="comment" xml:id="Cnidios_Coos_21">:
+								observe the chiasm. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#buculam_21">buculam
+							</seg>
+							<seg type="comment" xml:id="buculam_21">:
+								the celebrated bronze cow of Myron. </seg>
+						</p>
+						<p>
+							<seg type="lemma" ana="#longum_21">longum
+							</seg>
+							<seg type="comment" xml:id="longum_21"> est, <gloss>it would be tedious</gloss>:
+								§<ref n="AG 522">522</ref>, a (311, c) ; B. 304, 3 ; G. 254, R.1 ;
+								H. 525, 2 (476,5); H.-B. 582, 3, b. </seg>
+						</p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+	<standOff>
+		<linkGrp type="commentary">
+			<link target="urn:cts:latinLit:phi0474.phi005:4.115 #aliquando_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.115 #Marcello_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.115 #imperatoris_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.115 #cohortem_1"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.116 #omitto_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.116 #locis_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.116 #clausus_fuisset_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.116 #Cilicum_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.116 #illis_rebus_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.117 #maximam_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.117 #ex_aditu_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.117 #praeclaro_aspectum_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.117 #in_aedificatione_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.117 #conjunguntur_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.117 #exitus_3"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.118 #Hieronis_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.118 #Dianae_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.118 #istius_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.118 #Arethusa_4"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #Achradina_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #prytaneum_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #urbis_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #perpetua_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #continentur_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #gymnasium_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #coaedificata_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #Neapolis_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.119 #quam_summam_5"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.120 #pulchritudinem_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.120 #in_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.120 #habuit_rationem_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.120 #deportare_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.120 #possent_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.120 #humanitatis_6"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #Honoris_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #in_aedibus_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #ornamento_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #deum_nullum_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #comparetis_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #pacem_bello_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #forum_dictionem_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.121 #juris_dictio_7"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #aedis_Minervae_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #tamen_bello_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #religionum_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #consuetudinis_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #Agathocli_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #visendum_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #profana_fecisset_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.122 #jam_8"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.123 #id_quod_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.123 #deberet_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.123 #in_erant_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.123 #cognitione_formarum_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.123 #tamen_9"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.124 #tam_cupidum_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.124 #illi_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.124 #argumenta_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.124 #Gorgonis_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.124 #bullas_10"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.125 #in_nomine_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.125 #commoveri_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.125 #satis_esset_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.125 #id_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.125 #hastas_11"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #haberet_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #nimirum_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #nostrum_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #eat_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #ad_Felicitatis_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #istorum_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #Tusculanum_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #ornatum_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #commodarit_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #operari_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #studia_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #delicias_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #appositior_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.126 #ad_ferenda_12"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.127 #Graeculus_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.127 #subtiliter_judicat_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.127 #nunc_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.127 #si_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.127 #tulisset_13"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.128 #parinum_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.128 #Libero_patre_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.128 #Liberi_filius_14"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.129 #Jovem_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.129 #suo_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.129 #Jovem_15_2"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.129 #Flamininus_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.129 #in_ore_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.129 #sua_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:4.129 #Capitolio_15"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:16 #incolae_16"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #adventu_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:17 #mensas_Delphicas_17"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #levia_contemnenda_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:18 #fanorum_18"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #nisi_forte_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #desierunt_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #Crasso_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #Claudio_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #commercium_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:19 #fuisse_19"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #referri_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #pretio_abalienasse_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #rebus_istis_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:20 #apud_illos_20"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #merere_velle_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #illa_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #Tarentinos_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #Cnidios_Coos_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #buculam_21"/>
+			<link target="urn:cts:latinLit:phi0474.phi005:21 #longum_21"/>
+		</linkGrp>
+	</standOff>
+</TEI>

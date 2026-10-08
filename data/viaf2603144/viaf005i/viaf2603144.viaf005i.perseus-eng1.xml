@@ -1,0 +1,2605 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title>Introduction to Commentary on Sophocles: Electra</title>
+				<author>Sir Richard C. Jebb</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>Jeffrey Rydberg-Cox</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Digital Library Project</authority>
+				<date type="release" when="2000-08-16" cert="high">Perseus 3.0</date>
+				<idno type="filename">viaf2603144.viaf005i.perseus-eng1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International
+						License</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Sophocles: The Plays and Fragments</title>
+						<title type="subtitle" xml:lang="mul">The Electra</title>
+						<author>Richard Claverhouse Jebb</author>
+						<imprint>
+							<pubPlace>Cambridge</pubPlace>
+							<publisher>Cambridge University Press</publisher>
+							<date>1907</date>
+						</imprint>
+						<biblScope unit="part">6</biblScope>
+					</monogr>
+					<ref
+						target="https://archive.org/details/sophoclesplaysa04campgoog/page/n11/mode/2up">The
+						Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+)"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+					n="section">
+					<p>This pointer extracts section.</p>
+				</cRefPattern>
+			</refsDecl>
+			<refsDecl xml:id="CTS" n="CTS">
+				<citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0"
+					match="/tei:TEI/tei:text/tei:body" use="@xml:base">
+					<citeStructure unit="section" delim=":" match="tei:div[@type='section']"
+						use="@n" />
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+				<language ident="deu">German</language>
+				<language ident="fre">French</language>
+				<language ident="ita">Italian</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-09-16" who="Alison Babeu">Final review and updating of header information</change>
+			<change when="2026-07-21" who="Charles Pletcher">Added citeStructure and other TEI changes</change>
+			<change when="2025-04-07" who="Alison Babeu">Epidoc conversion</change>
+			<change when="2025-03-13" who="Alison Babeu">Updated header and schema</change>
+			<change when="2009-12-08" who="rsingh04">Revision 1.1 moved more xml files around based
+				on copyright status</change>
+			<change when="2009-07-29" who="lcerrato">Revision 1.18 fixed references to Aristot.
+				Pol.</change>
+			<change when="2009-07-28" who="student">Revision 1.17 fixed Pindar errors - zr</change>
+			<change when="2009-07-27" who="student">Revision 1.16 fixed bibl errors - zr</change>
+			<change when="2009-07-02" who="lcerrato">Revision 1.15 fixed references to Aristot. Pol.
+				up through book 4</change>
+			<change when="2009-06-24" who="lcerrato">Revision 1.14 fixed bad bibls</change>
+			<change when="2009-06-19" who="rsingh04">Revision 1.13 removed ?bibl? tags</change>
+			<change when="2009-06-19" who="lcerrato">Revision 1.12 fixed bad bibls</change>
+			<change when="2009-06-17" who="student">Revision 1.11 changed Pl. As. from tln to
+				act.scene - zr</change>
+			<change when="2009-06-12" who="lcerrato">Revision 1.10 fixed bad bibls</change>
+			<change when="2009-05-27" who="rsingh04">Revision 1.9 added/fixed cvs log
+				keyword</change>
+			<change when="2008-11-14" who="lcerrato">Revision 1.3 fixed author names for consistent
+				sorting</change>
+			<change when="2005-08-01" who="packel">Revision 1.2 removed stray item tags</change>
+			<change when="2005-07-25" who="packel">Revision 1.1 Converted to XML</change>
+			<change when="2003-09-02" who="amahoney">Revision 1.16 mark refs to Lys. 1</change>
+			<change when="2003-07-01" who="yorkc">Revision 1.15 Updated texts to TEI P4 and Perseus
+				P4 extensions; minor cleanup (esp. character encodings and typos.)</change>
+			<change when="2002-07-23" who="amahoney">Revision 1.14 ensure refs to Callimachus and
+				Theophrastus (Characters) are correct</change>
+			<change when="2001-03-12" who="amahoney">Revision 1.13 wrap cits around refs to Tacitus,
+				and get abbreviations into bibls where they were missing</change>
+			<change when="2001-02-21" who="amahoney">Revision 1.12 mark more cits (which make better
+				reverse links)</change>
+			<change when="2001-02-20" who="amahoney">Revision 1.11 put proper bibl refs for
+				Shakespeare</change>
+			<change when="2000-08-15" who="amahoney">Revision 1.10 fix mdash in headers (displays
+				badly on some browsers)</change>
+			<change when="2000-08-13" who="amahoney">Revision 1.9 fix smooth breathings that should
+				be apostrophes</change>
+			<change when="2000-08-11" who="amahoney">Revision 1.8 fix refs to Apollonius Rhodius,
+				who is "A. R."</change>
+			<change when="2000-08-11" who="amahoney">Revision 1.7 fix Stephanus sections on refs to
+				Plato</change>
+			<change when="2000-08-11" who="amahoney">Revision 1.6 fix references to orators</change>
+			<change when="2000-08-04" who="amahoney">Revision 1.5 fix "Metaphysics" that should be
+				"Metamorphoses", and ensure the override file is right</change>
+			<change when="2000-08-03" who="amahoney">Revision 1.4 more cleanup on Antigone, run
+				fisher on Electra</change>
+			<change when="2000-05-10" who="amahoney">Revision 1.3 fix problem in markup job: this
+				isn't Ajax</change>
+			<change when="2000-04-14" who="amahoney">Revision 1.2 more cleanup: in particular,
+				lemmata joined to previous Greek passages</change>
+			<change when="2000-04-13" who="amahoney">Revision 1.1 basic structural markup</change>
+		</revisionDesc>
+	</teiHeader>
+	<text xml:lang="eng">
+		<body xml:base="urn:cts:greekLit:viaf2603144.viaf005i.perseus-eng1" xml:lang="eng">
+			<div type="section" n="1">
+				<p>The story of Orestes the avenger was complete in every essential particular
+					before it came to the earliest of those three Attic dramatists, each of whom
+					has stamped it so strongly with the impress of his own mind.</p>
+				<p>In the <title>Iliad</title> there is no hint that the house of Pelops lay <note
+						anchored="true" place="marg" resp="RCJ">The legend in
+						Homer.</note> under a curse which entailed a series of crimes. The sceptre
+					made by Hephaestus for Zeus, and brought by Hermes to Pelops, is peacefully
+					inherited by Atreus, Thyestes and Agamemnon<note anchored="true"
+						place="foot" n="1" resp="RCJ">
+						<ref n="Hom. Il. 2.100">
+							<title>Il.</title> 2. 100 ff.</ref>
+					</note>. Yet the <title>
+					Iliad</title> makes at least one contribution to the material which Aeschylus
+					found ready to his hand. It is the figure of Agamemnon himself, with eyes and
+					head like those of Zeus, in girth like Ares, in breast like Poseidon<note
+						anchored="true" place="foot" n="2" resp="RCJ">
+						<ref n="Hom. Il. 2.478">ib. 478 f.</ref>
+					</note>; ‘clad
+					in flashing bronze, all glorious, and pre-eminent amid all<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<ref n="Hom. Il. 2.578">ib. 578 f.</ref>
+					</note>.’ As
+					Helen stands with Priam on the walls of Troy, and watches the Achaean warriors
+					moving on the battle-field, he asks who this one may be:—‘There are others even
+					taller by a head; but never did I behold a man so comely or so majestic (<quote
+						xml:lang="grc">γεραρόν</quote>); he is like unto one that is a king<note
+						anchored="true" place="foot" n="4" resp="RCJ">
+						<ref n="Hom. Il. 3.168">
+							<title>Il.</title> 3. 168 ff.</ref>
+					</note>.’ This is
+					the royal Agamemnon, <quote xml:lang="grc">ὁ
+						παντόσεμνος</quote>
+						<note anchored="true" place="foot" n="5" resp="RCJ">
+						<ref n="Aesch. Eum. 637">Aesch. <title>Eum.</title> 637.</ref>
+					</note>,
+					who lives in the Aeschylean drama, and whose image reappears in later poetry.
+					For the rest, the <title>Iliad</title> gives us just one far-off glimpse of the
+					king's home beyond the Aegaean, where Orestes is a child in the fortress-palace
+					at Mycenae, with three sisters, Chrysothemis, Laodicè, and Iphianassa<note
+						anchored="true" place="foot" n="6" resp="RCJ">
+						<ref n="Hom. Il. 9.142">
+							<title>Il.</title> 9. 142 ff.</ref>
+					</note>; children
+					of that Clytaemnestra to whom, in the opinion of her lord at Troy, the damsel
+					Chryseïs was ‘in no wise inferior, in beauty or in stature, in wit or in skill<note
+						anchored="true" place="foot" n="7" resp="RCJ">
+						<ref n="Hom. Il. 1.113">
+							<title>Il.</title> 1. 113</ref> ff.</note>.’</p>
+				<p>The <title>Odyssey</title> tells the story as follows. Agamemnon, before going to
+					Troy, charged a certain minstrel (<quote xml:lang="grc">ἀοιδός</quote>) to watch
+					over<note anchored="true" place="foot" n="1" resp="RCJ">
+						<quote xml:lang="grc">εἴρυσθαι ἄκοιτιν</quote>, <ref n="Hom. Od. 3.268.">
+							<title>Od.</title> 3. 268.</ref>Nothing could better illustrate the
+					social consideration enjoyed by the Homeric <quote xml:lang="grc">ἀοιδός</quote>,
+					or the reverence felt for his office. Athenaeus (p. 14 B) conceives this
+					guardian minstrel of Clytaemnestra as a sort of cultivated domestic chaplain,
+					whose function was not merely to keep her mind agreeably occupied, but also to
+					edify her with examples of female excellence (<quote
+							xml:lang="grc">ἀρετὰς γυναικῶν
+							διερχόμενος</quote>).</note> Clytaemnestra at Mycenae. The precaution
+					implies a sense of possible danger, but not necessarily distrust of
+					Clytaemnestra. Presently a tempter came to the lonely wife in the person of her
+					husband's first-cousin, Aegisthus, son of Thyestes, who, while his kinsmen were
+					fighting at Troy, dwelt ‘at peace, in the heart of Argos<note
+						anchored="true" place="foot" n="2" resp="RCJ">
+						<ref n="Hom. Od. 3.263.">
+							<title>Od.</title> 3. 263.</ref>
+					</note>.’ For some
+					time Clytaemnestra ‘refused the shameful deed; for she had a good understanding<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<cit>
+							<bibl n="Hom. Od. 3.265">ib. 265 f.</bibl>
+							<quote xml:lang="grc">ἡ δ’ ἦ τοι τὸ πρὶν μὲν ἀναίνετο ἔργον ἀεικές,
+								| δῖα Κλυταιμνήστρη· φρεσὶ γὰρ κέχρητ’ ἀγαθῇσι.</quote>
+						</cit>
+					</note>.’
+					Meanwhile the gods themselves, by their messenger Hermes, warned Aegisthus
+					against the course of crime upon which he was entering. But Hermes spoke in vain<note
+						anchored="true" place="foot" n="4" resp="RCJ">
+						<ref n="Hom. Od. 1.35">
+							<title>Od.</title> 1. 35</ref>—43.</note>. Aegisthus removed the
+					minstrel to a desert island, and there left him, a prey to dogs and birds. He
+					then took the ‘willing’ Clytaemnestra to his home; while he sought to propitiate
+					the gods by burnt-offerings on their altars, and by hanging up in their temples
+					‘many gifts of embroidery and gold<note anchored="true"
+						place="foot" n="5" resp="RCJ">
+						<ref n="Hom. Od. 3.269">
+							<title>Od.</title> 3. 269</ref> ff.</note>.’</p>
+				<p>Agamemnon, after a stormy voyage from Troy, landed on the coast of Argolis at a
+					point not far from the dwelling of Aegisthus; who, apprised by a watcher, came
+					in his chariot, and invited the king to a banquet; after which he slew him, ‘as
+					a man slays an ox at the manger<note anchored="true" place="foot"
+						n="6" resp="RCJ">
+						<ref n="Hom. Od. 4.514">
+							<title>Od.</title> 4. 514</ref>—535.</note>.’</p>
+				<p>In this narrative (given by Menelaüs to Telemachus) Clytaemnestra is not even
+					named; though Menelaüs had previously spoken of her ‘guile’ as aiding the crime<note
+						anchored="true" place="foot" n="7" resp="RCJ">
+						<ref n="Hom. Od. 4.92">
+							<title>Od.</title> 4. 92</ref>(Aegisthus slays Agamemnon) <quote
+							xml:lang="grc">λάθρῃ, ἀνωιστί, δόλῳ οὐλομένης
+							ἀλόχοιο</quote>.</note>. It is only in a part of the <title>Odyssey</title>
+					which is of later origin than the ‘Telemachy’ in books I—IV,—viz., the <quote
+						xml:lang="grc">Νέκυια</quote> in the eleventh book,—that Clytaemnestra
+					appears as actively sharing in the horrors of the banquet, where she slays
+					Cassandra with her own hand. And, even there, it is by the sword of Aegisthus
+					alone that Agamemnon is slain<note anchored="true" place="foot"
+						n="1" resp="RCJ">
+						<ref n="Hom. Od. 11.404">
+							<title>Od.</title> 11. 404</ref>—434 (the shade of Agamemnon tells the
+					story to Odysseus).</note>.</p>
+				<p>The young Orestes fled, or was conveyed, to Athens. For seven years Aegisthus and
+					Clytaemnestra reigned at Mycenae. In the eighth, Orestes returned, and slew
+					Aegisthus<note anchored="true" place="foot" n="2" resp="RCJ">
+						<ref n="Hom. Od. 3.304">
+							<title>Od.</title> 3. 304</ref>—308. Orestes returns <quote
+							xml:lang="grc">ἂψ ἀπ’ Ἀθηνάων</quote> (v. 307). Zenodotus wished to
+					reconcile the <title>Odyssey</title> with the later account by writing <quote
+							xml:lang="grc">ἂψ ἀπὸ Φωκήων</quote>.</note>. Clytaemnestra died at the
+					same time, but how, we are not told; and Orestes ‘made a funeral feast,’ for
+					both of them, ‘to the Argives<note anchored="true" place="foot" n="3"
+						resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 309 f. <quote xml:lang="grc">ἦ τοι
+							ὁ τὸν κτείνας δαίνυ τάφον Ἀργείοισι</quote> | <quote xml:lang="grc">μητρός
+					τε στυγερῆς καὶ ἀνάλκιδος Αἰγίσθοιο</quote>. According to the scholia in several
+					MSS. (M, Q, R, T) these two verses were absent from some of the ancient <quote
+							xml:lang="grc">ἐκδόσεις</quote>. But Aristarchus, at any rate must have
+					thought them genuine, since he remarked (as we learn from the same source) <quote
+							xml:lang="grc">ὅτι
+							διὰ τούτων παρυποφαίνεται ὅτι συναπώλετο Αἰγίσθῳ ἡ Κλυταιμνήστρα, τὸ
+							δὲ εἰ καὶ ὑπὸ Ὀρέστον, ἄδηλον εἶναι</quote>. The fact that the funeral
+					feast was given ‘to the Argives’ implies that they welcomed Orestes as a
+					deliverer, and also that (whatever had been the manner of his mother's death)
+					they did <emph>not</emph> regard him as resting under any defilement which
+					incapacitated him for religious acts.</note>.’</p>
+				<p>Two points distinguish this Homeric legend from later versions. First, Aegisthus
+					is the principal criminal<note anchored="true" place="foot" n="4"
+						resp="RCJ">The <emph>conception</emph> of the murder (no less than the
+					execution) is always attributed to him in the <title>Odyssey</title> (3. 194 <quote
+							xml:lang="grc">Αἴγισθος ἐμήσατο</quote>: 4. 529 <quote
+							xml:lang="grc">Αἴγ. δολίην ἐφράσσατο τέχνην</quote>: 11. 409 <quote
+							xml:lang="grc">Αἴγ. τεύξας θάνατόν τε μόρον τε</quote>).</note>.
+					Clytaemnestra's part is altogether subordinate to that of her paramour.
+					Secondly, the vengeance of Orestes is regarded as a simple act of retributive
+					justice. It is not said that he slew his mother; the conjecture is left open
+					that she may have died by her own hand. Nothing comes into the Epic view which
+					can throw a shadow upon the merit of the avenger. The goddess Athena herself
+					exhorts Telemachus to emulate the example and the renown of Orestes<note
+						anchored="true" place="foot" n="5" resp="RCJ">
+						<ref n="Hom. Od. 1.298">
+							<title>Od.</title> 1. 298</ref> ff. Cp. Nestor's comments on the good
+					deed of Orestes, in his speech to Telemachus, <ref n="Hom. Od. 3.196">
+							<title>Od.</title> 3. 196</ref> f. <quote xml:lang="grc">ὡς ἀγαθὸν
+							καὶ παῖδα καταφθιμένοιο λιπέσθαι</quote> | <quote xml:lang="grc">ἀνδρός,
+					κ.τ.λ.</quote>
+					</note>. </p>
+			</div>
+			<div type="section" n="2">
+				<p>In the interval between the <title>Odyssey</title> and the Lyric <note
+						anchored="true" place="marg" resp="RCJ">Cyclic epics.</note> age, legends
+					connected with the house of Pelops were further developed in some of the Cyclic
+					epics<note anchored="true" place="foot" n="1" resp="RCJ">The Epic Cycle (<quote
+							xml:lang="grc">Ἐπικὸς κύκλος</quote>) was a body of epic poems by
+					various hands, arranged in the chronological order of the subjects, so as to
+					form a continuous history of the mythical world. One part of this Cycle
+					consisted of poems concerning the Trojan war. A grammarian named Proclus (<foreign
+							xml:lang="lat">circ.</foreign> 140 A.D. ?), in his <quote
+							xml:lang="grc">Χρηστομάθεια</quote>, or ‘Manual of Literature,’ gave
+					short prose summaries of the poems in the Trojan part of the Cycle. The Manual
+					itself is lost, but fragments have been preserved by the patriarch Photius (9th
+					century) in his <title>Bibliotheca.</title>
+					</note>. The <title>
+					Cypria</title>
+						<note anchored="true" place="foot" n="2" resp="RCJ"> The <title>
+					Cypria</title> related the origin of the Trojan war, and its progress down to
+					the point at which the <title>
+							Iliad</title> begins. (Cp. my <title>Introduction to Homer</title>, p.
+					153.)</note>, ascribed to Stasînus of Cyprus (<foreign xml:lang="lat">circ.</foreign>
+					776 B.C.), related the immolation of Iphigeneia at Aulis,—a story unknown to
+					Homer,—and distinguished her from the Iphianassa of the <title>Iliad</title> (9.
+					145). A new source of poetical interest was thus created, since it could now be
+					asked (as Pindar asks<note anchored="true" place="foot" n="3"
+						resp="RCJ">
+						<title>Pyth.</title> 11. 22. See below, § 8.</note>) how far Clytaemnestra
+					was actuated by resentment for the sacrifice of her daughter. In another epic,
+					the <title>Nostoi</title>
+						<note anchored="true" place="foot"
+						n="4" resp="RCJ">The <title>Nostoi</title> described the adventures of some
+					Greek heroes on their return from Troy,—especially those of Menelaüs, who
+					visited Egypt, and of Agamemnon, who was slain by Aegisthus and Clytaemnestra. (<title>Introd.
+					to Homer</title>, p. 154.)</note> (by Agias of Troezen, <foreign xml:lang="lat">
+					circ.</foreign> 750 B.C.), Clytaemnestra aided Aegisthus in the murder, though
+					probably in a subordinate capacity. Further, Pylades was associated with
+					Orestes. And the name of Pylades at once points to Delphi<note anchored="true"
+						place="foot" n="5" resp="RCJ">There happens to be an independent proof (if
+					any were needed) that the religion of Delphi animated the <title>Nostoi.</title>
+					The poem related how Calchas committed suicide, because Mopsus, whom he met at
+					Colophon, proved to be a greater seer than himself. Mopsus belongs to the
+					traditions of the Apolline <quote
+							xml:lang="grc">μαντική</quote>: he is sometimes called the son of Apollo
+					by Manto, a daughter of Teiresias.</note>,—the agency by which the primitive
+					legend of Orestes was ultimately transformed.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Influence of Delphi.</note>
+				</p>
+			</div>
+			<div type="section" n="3">
+				<p>The influence of the Delphic priesthood rose and spread with the power of the
+					Dorians. It did so, not merely because that power was an apt instrument for its
+					propagation, but also because in Hellas at large the time was favourable. The
+					religion of Apollo, as his Pythian interpreters set it forth, was suited to an
+					age which had begun to reflect, but which retained a vivid faith in the older
+					mythology. Here we are concerned with only one aspect of the Apolline cult, that
+					which relates to blood-guiltiness. The Homeric man who has killed another may
+					either pay a fine to the kinsfolk, or go into exile<note anchored="true"
+						place="foot" n="1" resp="RCJ">In <ref
+							n="Hom. Il. 9.632">
+							<title>Il.</title> 9. 632</ref>—636 the payment of the fine is indicated
+					as the ordinary course, though <ref n="Hom. Il. 24.480">
+							<title>Il.</title> 24. 480</ref> f. suffices to show that cases of exile
+					were also frequent. In Homeric society the blood-feud is in process of being
+					extirpated by these compromises; and, further, there is already a moral pressure
+					of public opinion on the kinsmen of the slain man to accept the payment of the
+					fine when tendered. See Mr Leaf's paper in the <title>Journal
+							of Hellenic Studies</title>, vol. VIII. pp. 122—132.</note>; but in
+					Homer there is no idea that he can be purified by a ritual. In other words,
+					there is the notion of a debt in this respect, but hardly of a sin; of
+					quittance, but not of absolution. It was a somewhat later stage when men began
+					more distinctly to recognise that in cases of homicide there are kinds and
+					degrees of moral guilt which cannot be expressed in the terms of human debtor
+					and creditor. Clearly a man ought to do what the gods command. But what if a god
+					tells a man to do something which most men think wrong? If the man obeys, and if
+					his conduct is to be judged aright, the tribunal, like the instigation, must be
+					divine. Nor is this so only when the opinion offended is that of men. A god may
+					command a mortal to do an act by which some other god, or supernatural being,
+					will be incensed. Suppose, for instance, that a man receives a divine mandate to
+					slay a guilty kinsman; if he obeys, nothing can save him from angering the
+					Erinyes, who resent every injury to kinsfolk.</p>
+				<p>For questions such as these the Pythian creed provided <note anchored="true"
+						place="marg" resp="RCJ">Purification from bloodguilt.</note> an answer, or
+					at least a mystic compromise. Apollo, the god of light, is the all-seeing
+					arbiter of purity. A man who commits homicide displeases Apollo, who abhors
+					every stain of blood. But Apollo can estimate the degree of guilt. And he has
+					empowered his servants to administer rites by which, under certain conditions, a
+					defiled person may be freed from the stain. In later days the critics of Apollo
+					could object that he had encouraged crime by thus far alleviating its
+					consequences. But in the age when the doctrine was first put forth, it must have
+					been, on the whole, beneficent. It tempered the fear of capricious or vindictive
+					deities by trust in a god who, as his priests taught, never swerved from equity,
+					and who was always capable of clemency. At the same time it laid the unabsolved
+					offender under a ban worse than mere out lawry, for it cut him off from the
+					worship of the temple and of the hearth, and, indeed, from all intercourse with
+					god-fearing men. It made his hope depend on submission to a religion
+					representing the highest spiritual influence which ever became widely operative
+					among the people of pagan Hellas.</p>
+				<p>The ritual of Apollo the Purifier had already a place in the Cyclic epic called
+					the <title>Aethiopis</title>
+						<note anchored="true" place="foot" n="1"
+						resp="RCJ">The <title>Aethiopis</title> took up the war of Troy where the <title>
+					Iliad</title> left off. It included the death of Achilles; also the contest for
+					his arms between Ajax and Odysseus.</note>, said to have been composed by
+					Arctînus of Miletus, about 776 B.C. More than a century elapsed after that date
+					before Lyric poetry was matured; and meanwhile the worship of the Pythian
+					Apollo, with its ritual of purification from blood, was diffused throughout the
+					Greek world. It was to be expected, therefore, that, when the story of Orestes
+					began to receive lyric treatment, the influence of Delphi should be apparent.
+					If, in avenging his father, Orestes killed Clytaemnestra as well as Aegisthus,
+					the Pythian priesthood had a text than which they could desire none more
+					impressive. For, according to the immemorial and general belief of Hellenes,
+					Orestes did well to avenge Agamemnon. If, however, he slew his mother, the
+					Erinyes were necessarily called into activity. Who, then, was to vindicate the
+					avenger? Who was to assert, even against the Erinyes, that his deed was
+					righteous? Who but Apollo, the supreme judge of purity? And then it was only
+					another step to represent Apollo himself as having prescribed the vengeance. A
+					Greek vase-painting<note anchored="true" place="foot" n="2" resp="RCJ">On an
+					amphora found in South Italy (Lucania), and now in the Naples Museum. It is
+					reproduced by Baumeister, p. 1110 (from Rochette, <title>Mon.
+							inéd.</title>, pl. 37), and by Michaelis in Jahn's <title>Electra</title>,
+					p. 37 (cp. <foreign xml:lang="lat">ib.</foreign> p. vii).</note> portrays him in
+					the act of doing so. The scene is in the temple at Delphi. Apollo,
+					laurel-crowned, is sitting on the omphalos; in his left hand is a lyre; with the
+					stem of a laurel-branch, held in his right, he is touching the sheathed sword of
+					Orestes, who stands in a reverent attitude before him; he thus consecrates it to
+					the work of retribution. Behind Apollo, the Pythia sits upon the tripod, holding
+					a diadem for the brows of Orestes, when he shall have done the deed<note
+						anchored="true" place="foot" n="3" resp="RCJ">Cp. <ref
+							n="Eur. El. 872">Eur. <title>El.</title> 872</ref>, where Electra greets
+					Orestes after his slaying of Aegisthus:— <quote xml:lang="grc">στέψω
+							τ’ ἀδελφοῦ
+							κρᾶτα τοῦ νικηφόρου</quote>.</note>; and near her is Pylades. </p>
+			</div>
+			<div type="section" n="4">
+				<p>Stesichorus, of Himera in Sicily, flourished towards the <note
+						anchored="true" place="marg" resp="RCJ">The <title>Oresteia</title> of
+					Stesichorus.</note> close of the seventh, and in the earller part of the sixth,
+					century B.C.<note anchored="true" place="foot" n="1" resp="RCJ">Apollodorus (<foreign
+							xml:lang="lat">ap.</foreign> Hesychius) places his birth in Ol. 37 (630
+					B.C.) and his death in Ol. 56 (556 B.C.). Cp. Prof. Hans Flach, <title>Geschichte
+					der griechischen Lyrik</title> (1884), p. 316.</note>. The Choral Lyric, which
+					Alcman had already cultivated under the Dorian inspirations of Sparta, received
+					a new development from Stesichorus. He applied it to those heroic legends which
+					had hitherto been the peculiar domain of Epos. In style and in dialect, no less
+					than in choice of themes, he was here essentially an epic poet employing the
+					lyric form<note anchored="true" place="foot" n="2"
+						resp="RCJ">Quintilian (10. 1. 62) describes him as <quote xml:lang="lat">epici
+					carminis oncra lyra sustinentem.</quote>
+					</note>. This
+					character, and the popularity which he won by it, are significantly attested in
+					the words of Simonides<note anchored="true" place="foot" n="3"
+						resp="RCJ">Frag. 53. 4 <quote xml:lang="grc">οὕτω γὰρ
+							Ὅμηρος ἠδὲ Στησίχορος ἄεισε λαοῖς</quote>.</note>,—‘Thus Homer and
+					Stesichorus sang to the people.’ One of his most celebrated poems was that in
+					which he told the story of Orestes (<quote xml:lang="grc">Ὀρέστεια</quote>). It
+					was of large compass, being divided into at least two books or cantos<note
+						anchored="true" place="foot" n="4" resp="RCJ">Gramm. <foreign
+							xml:lang="lat">ap.</foreign> Bekker <title>Anecd.</title> II. p. 783, 14 <quote
+							xml:lang="grc">Στησίχορος δὲ ἐν δευτέρῳ Ὀρεστείας κ.τ.λ.</quote>
+					</note>.
+					The direct sources of information concerning it are meagre, consisting only of a
+					few small fragments (less than twelve lines altogether), gleaned from the
+					passing allusions of later writers. But archae- <note anchored="true"
+						place="marg" resp="RCJ">Its probable
+						outline.</note> ology comes to the aid of literature. The supplementary
+					evidence of Greek art makes it possible to reconstruct, if not with certainty,
+					at least with high probability, a partial outline of the once famous poem. This
+					has been done by Carl Robert, in an essay on ‘The death of Aegisthus,’—one of
+					the series of essays, entitled <title>Bild und
+						Lied</title>, in which he brings archaeological illustration to bear upon
+					the heroic myths<note anchored="true" place="foot" n="5" resp="RCJ">
+						<title>Bild und Lied: Archaeologische Beiträge zur Geschichte der
+					griechischen Heldensage</title> (Berlin, 1881). The fifth essay is ‘Der Tod des
+					Aigisthos,’ pp. 149—191.</note>. The substance of his results may be briefly
+					given as follows. </p>
+			</div>
+			<div type="section" n="5">
+				<p>A red-figured Attic vase<note anchored="true" place="foot" n="6" resp="RCJ">Found
+					at Cervetri (Caere), and now in the Museum at Vienna: published in <title>Monumenti
+					dell' Inst.</title>, vol. VIII. pl. xv, and described by Benndorf, <title>Annal.
+					dell' Inst.</title> (1865) pp. 212—216. Reproduced in O. Jahn's <title>
+							Electra</title>, p. 175 (cp. the note by Michaelis, <foreign
+							xml:lang="lat">
+							ib.</foreign> p. vii). The vase has been designated as a <quote
+							xml:lang="grc">πελίκη</quote>.</note>, belonging to the first half of <note
+						anchored="true" place="marg" resp="RCJ">Evidence from art.</note> the fifth
+					century B.C., depicts a scene which does not come from any extant literary
+					source. Orestes, wearing a cuirass, has plunged his sword into the breast of
+					Aegisthus, who is falling from his seat,—the throne that once was Agamemnon's.
+					Meanwhile, something has startled Orestes; his face is turned away from
+					Aegisthus; he glances over his right shoulder at a woman who hurries up behind
+					him. This is Clytaemnestra, as an inscription certifies. She grasps the handle
+					of an axe with both hands; she is coming to the rescue of Aegisthus. But an old
+					man, wearing the conical hat of a herald, has overtaken her; his left hand
+					grasps her right arm, his right, the axe; her purpose is baffled. Between her
+					and Orestes stands a maiden whose uplifted hands express horror; this (as the
+					artist informs us) is Chrysothemis. Vase A (as we shall call this one) must next
+					be compared with vase B,—another red-figured Attic vase<note anchored="true"
+						place="foot" n="1" resp="RCJ">A stamnos found on the site of Volci in
+					Etruria, and now in the Berlin Museum (no. 1007). Published by Gerhard, <title>Etrusk.
+					und Campanische
+							Vasenbilder</title>, pl. xxiv. It may be seen in Baumeister's <title>
+					Denkmäler</title>, p. 1113; and in Jahn's <title>Electra</title>, p. 148.</note>
+					of the fifth century, but of later date than the other. The subject on B is
+					fundamentally the same as on A, but it is curiously abridged, or rather
+					mutilated. Orestes—who here is in full armour, with helmet and greaves as well
+					as cuirass—has dealt the mortal wound to Aegisthus, and is looking straight at
+					him. Clytaemnestra, furiously brandishing her axe, is close behind Orestes,—so
+					close, that nothing can now save him from her blow. Electra (the name is
+					inscribed) stands behind the dying Aegisthus; her outstretched right hand points
+					at Clytaemnestra, her left is raised to the back of her head with a gesture of
+					bewilderment and terror; evidently she is uttering a cry of warning to Orestes.
+					The painter of B was led by considerations of style or convenience to omit a
+					vital feature of A,—viz., the old man who stops Clytaemnestra at the critical
+					moment.</p>
+				<p>Now A and B belong, as Robert shows, to a small group of vases which must have
+					had a common archetype; and while A has preserved the meaning of the whole scene
+					more truly than B, the latter has preserved some details which A has lost. The
+					scene represented by the archetype was probably as follows:—Orestes, in full
+					armour, slays Aegisthus, who falls from his throne; Clytaemnestra rushes up
+					behind Orestes, with an axe; Electra, standing at the back of Aegisthus, cries
+					out to warn her brother; but already the aged herald has seized Clytaemnestra,
+					and defeated her intent. Who is this old man, the herald, who interposes so
+					opportunely? He appears along with Orestes in another work of art, earlier than
+					these vases,—viz., a marble relief, in the developed archaic style, found at
+					Melos<note
+						anchored="true" place="foot" n="1" resp="RCJ">Published by Conze in <title>Monum.
+					dell' Instit.</title> vol. VI. pl. 57. Reproduced in Roscher's <title>Lexikon
+							der gr. und rom. Mythologie</title>, art. Elektra, p. 1238.</note>. The
+					scene there is as follows:—Electra sits in deep dejection at her father's tomb;
+					the aged Nurse stands behind her. Three travellers have just arrived together;
+					the foremost is the old man with the herald's hat and stave, who is accosting
+					the Nurse; behind him a youth of noble mien (Orestes) stands beside a horse, his
+					left hand resting on its back; a third person (Pylades, or a servant?) follows.
+					The question is answered when it is observed that, according to a widelyspread
+					legend, the person who saved Orestes from the murderers, by carrying him away
+					from Mycenae, was Talthybius, the faithful herald of Agamemnon<note
+						anchored="true" place="foot" n="2" resp="RCJ">Nicolaüs Damascenus (<foreign
+							xml:lang="lat">flor. circ.</foreign> 20 B.C.) fr. 34 (Müller, <title>Frag.
+					Hist.</title> vol. III. p. 374) <quote xml:lang="grc">τοῦτον
+							δὲ</quote> (Orestes) <quote xml:lang="grc">ἐρρύσατο Ταλθύβιος ἐξαρπάσας,
+					καὶ
+							ἐκθέμενος εἰς τὴν Φωκίδα παρὰ
+							Στρόφιον</quote>. The legend appears also in the so-called ‘Dictys
+					Cretensis,’ bk. 6, c. 2, <quote xml:lang="lat">Talthybius Oresten
+							Agamemnonis filium manibus Aegisthi ereptum Idomeneo, qui apud
+							Corinthum agebat, tradidit.</quote> This work, written probably in the
+					fourth cent. A. D. by one Septimius, purports to be translated from a history of
+					the Trojan war by a Cretan contemporary with that war, named Dictys. See
+					Teuffel, <title>Hist. Rom. Lit.</title>, vol. II. § 416.</note>. Talthybius is
+					here returning to Mycenae with the rightful heir, and preparing the way for the
+					recognition by speaking to the old Nurse, who will remember him. He is the
+					original of the Paedagogus in the <title>Electra</title> of Sophocles, and of
+					the Old Man (<quote xml:lang="grc">πρέσβυς</quote>) in the <title>Electra</title>
+					of Euripides; he also accounts for the prominence given to the herald in the <title>
+					Agamemnon</title> of Aeschylus. </p>
+			</div>
+			<div type="section" n="6">
+				<p>The scene described above, in which Talthybius once <note anchored="true"
+						place="marg" resp="RCJ">Literary evidence.</note> more saves Orestes by
+					foiling the armed Clytaemnestra, must have been taken from some familiar
+					literary source. It was essential for a vase-painter's purpose that his version
+					of a story should be popularly known. What, then, was this source? Certainly not
+					Aeschylus. Vase A is assigned on grounds of style to an earlier date than 458
+					B.C., the year of the Aeschylean <title>Oresteia</title>
+						<note
+						anchored="true" place="foot" n="3" resp="RCJ">Robert, <title>Bild und
+							Lied</title>, p. 160.</note>. But, even apart from this fact, it is
+					evident that the scene has not been suggested by anything in the <title>
+					Choephori.</title> Clytaemnestra there calls, indeed, for an axe, when she hears
+					that Orestes has slain Aegisthus (v. 889): </p>
+				<p>
+					<quote xml:lang="grc">δοίη τις ἀνδροκμῆτα πέλεκυν ὡς τάχος· εἰδῶμεν ἢ
+						νικῶμεν ἢ νικώμεθα</quote>.</p>
+				<p>But there is no time for her to obtain the weapon; at that moment Orestes
+					confronts her. Her futile cry rather indicates that Aeschylus had in mind some
+					earlier version which actually armed her with an axe at a similar crisis. And in
+					Sophocles, too, we find that the axe is prominent. The murder of Agamemnon by
+					the guilty pair is thus described (v. 99): <quote
+						xml:lang="grc">σχίζουσι κάρα φονίῳ πελέκει</quote>. Still more significant
+					is the passage in which Sophocles describes the axe itself as resenting the deed
+					of which it was made the instrument (482 ff.):— </p>
+				<p>
+					<quote xml:lang="grc">οὐ γάρ ποτ’ ἀμναστεῖ γ’ ὁ φύσας σ’ Ἑλλάνων ἄναξ, οὐδ’
+						ἁ παλαιὰ χαλκόπλακτος ἀμφάκης γένυς, ἅ νιν κατέπεφνεν αἰσχίσταις ἐν
+						αἰκίαις</quote>.</p>
+				<p>Some Roman sarcophagi<note anchored="true" place="foot" n="1" resp="RCJ"> Robert, <title>Bild
+					und Lied</title>, p. 177, n. 23. One of these sarcophagi, that in the Museo
+					Pio-Clementino in the Vatican, is reproduced (from <ref>Visconti, Mus. Pio-Clem.
+					v. 22</ref>) in Baumeister's <title>
+							Denkmäler</title>, p. 1115. The three sleeping Erinyes, with the axe,
+					occupy the left part of a relief of which the centre represents the slaying of
+					Clytaemnestra and Aegisthus. Michaelis (<title>Arch. Zeit.</title> 1875, p. 107)
+					was the first to point out that these Erinyes form a separate scene.</note>, on
+					which the story of Orestes is treated, show three Erinyes sleeping at the tomb
+					of Agamemnon. Among them lies the axe of Clytaemnestra,—a symbol, as with
+					Sophocles, of the crime which calls for vengeance.</p>
+				<p>The <title>Oresteia</title> of Stesichorus was popular at Athens in the fifth
+					century B.C. There is a striking proof of this. Aristophanes, in the <title>
+					Peace</title>(775 ff.), has adopted some verses from the beginning of that <title>
+					Oresteia</title>
+						<note anchored="true" place="foot" n="2" resp="RCJ">The
+					scholiast on <ref n="Aristoph. Peace 775">Ar. <title>Pax</title> 775</ref> and
+					800 informs us that the quotations are from Stesichorus, and in 797 refers to
+					the <quote xml:lang="grc">Ὀρέστεια</quote>. They are fragments 31—34 in Bergk.</note>,
+					without naming Stesichorus. He could reckon on his playful allusion to so famous
+					a poem being at once recognised by an Athenian audience. Between the <title>
+					Odyssey</title> and Aeschylus, no other handling of the subject seems to have
+					rivalled the work of Stesichorus in celebrity. In the epic <title>Nostoi</title>,
+					where the deed of Orestes was only one of many episodes, it would be treated,
+					one may suppose, on a relatively small scale.</p>
+				<p>Now it is known that Stesichorus made Clytaemnestra kill her husband by
+					wounds on the head,—probably, therefore, with the axe, as Sophocles
+					describes in the passages quoted above. This appears from the nature of the
+					dream which terrified the Clytaemnestra of Stesichorus just before the
+					retribution. A serpent approached her with gore upon its head, and then
+					changed into Agamemnon:— </p>
+				<p>
+					<quote xml:lang="grc">τᾷ δὲ δράκων ἐδόκησε μολεῖν κάρα βεβροτωμένος ἄκρον·
+						ἐκ δ’ ἄρα τοῦ βασιλεὺς Πλεισθενίδας ἐφάνη</quote>
+						<note anchored="true"
+						place="foot" n="1" resp="RCJ">Frag. 42 (ed. Bergk), preserved by <title>De
+					sera Numinis vindicta</title>, c. 10. Robert (<title>Bild u. Lied</title>, p.
+					171) thinks that these two verses give only the first part of the dream as
+					imagined by Stesichorus, and that the rest may be inferred from Aeschylus. When
+					the serpent changed into Agamemnon, the offspring of his renewed union with
+					Clytaemnestra was the serpent who, as she dreams in the <title>
+							Choephori</title>, drew blood in sucking her breast. It has struck me
+					that the missing link between the Stesichorean and the Aeschylean dream—viz.,
+					the renewed conjugal union—may be traced, as a reminiscence, in the language of
+					Sophocles, where Chrysothemis describes her mother's vision (417 f.):— <quote
+							xml:lang="grc">λόγος τις αὐτήν ἐστιν εἰσιδεῖν πατρὸς</quote> | <quote
+							xml:lang="grc">τοῦ σοῦ τε κἀμοῦ δευτέραν ὁμιλίαν</quote> | <quote
+							xml:lang="grc">ἐλθόντος εἰς φῶς</quote>.</note>.</p>
+				<p>Such a dream would necessarily (according to Greek ideas) act upon her mind in
+					the manner described by the Attic dramatists. In the <title>Oresteia</title> of
+					Stesichorus, just as in the <title>Choephori</title> and in the Sophoclean <title>
+					Electra</title>, the guilty and terrified woman must have sent propitiatory
+					offerings to the grave of her murdered husband. But, like the dramatists again,
+					the lyric poet would make her send them by the hands of some one else; even her
+					hardihood could not dispense with an intermediary in this case. Whom did
+					Stesichorus choose as her emissary? It is a notable fact that Electra, who is
+					unknown to Homer, <note anchored="true"
+						place="marg" resp="RCJ">First
+						mention of Electra.</note> appears in the fifth century B.C. as a central
+					personage of the story. And it seems that Aeschylus was not the first poet who
+					had spoken of her. The earliest writer recorded as mentioning her is a lyric
+					poet named Xanthus, who said that her original name was Laodicè, and that she
+					was called Electra because she was so long unmarried (<quote
+						xml:lang="grc">ἄλεκτρος</quote>); an etymology which points to a Dorian
+					source (<quote xml:lang="grc">Ἀλέκτρα</quote>)<note anchored="true"
+						place="foot" n="1" resp="RCJ">Aelian <title>Var. Hist.</title> 4. 26 <quote
+							xml:lang="grc">Ξάνθος ὁ ποιητὴς τῶν μελῶν, ἐγένετο γὰρ οὖτος
+							πρεσβύτερος Στησιχόρου τοῦ Ἱμεραίου, λέγει τὴν Ἠλέκτραν τοῦ
+							Ἀγαμέμνονος οὐ τοῦτο ἔχειν τοὔνομα πρῶτον, ἀλλὰ Λαοδίκην. ἐπεὶ γὰρ
+					Ἀγαμέμνων ἀνῃρέθη, τὴν γὰρ Κλυταιμνήστραν ὁ Αἴγισθος ἔγημε καὶ
+							ἐβασίλευσεν, ἄλεκτρον οὖσαν καὶ καταγηρῶσαν παρθένον Ἀργεῖοι
+							Ἠλέκτραν ἐκάλεσαν διὰ τὸ ἀμοιρεῖν ἀνδρὸς καὶ μὴ πεπειρᾶσθαι
+							λέκτρου</quote>.</note>. Stesi<note anchored="true" place="marg"
+						resp="RCJ">Xanthus.</note>chorus, we are told, mentioned Xanthus as a lyric
+					predecessor, and adapted much from him. The <title>Oresteia</title> is
+					especially named as a work in which Stesichorus was thus indebted to Xanthus<note
+						anchored="true" place="foot" n="2" resp="RCJ">Athen. 12. p. 513 A (quoting
+					from Megacleides, who wrote <quote xml:lang="grc">περὶ
+							Ὁμήρου</quote>, and was, as some think, a peripatetic): <quote
+							xml:lang="grc">καὶ Ξάνθος δ’ ὁ μελοποιός, πρεσβύτερος ὢν Στησιχόρου,
+							ὡς καὶ αὐτὸς ὁ Στησίχορος μαρτυρεῖ, ὥς φησιν ὁ Μεγακλείδης, οὐ
+							ταύτην αὐτῷ</quote> (Heracles) <quote xml:lang="grc">περιτίθησι τὴν
+					στολήν, ἀλλὰ τὴν Ὁμηρικήν, πολλὰ δὲ τῶν Ξάνθου παραπεποίηκεν ὁ
+							Στησίχορος, ὥσπερ καὶ τὴν Ὀρεστείαν καλουμένην</quote>. The meaning of <quote
+							xml:lang="grc">παραπεποίηκεν</quote> seems to be ‘adapted.’ It certainly
+					need not mean ‘spoiled in copying,’ as Schweighäuser takes it (‘dum mutuatus
+					est, mutavit et corrupit’). Robert, <title>Bild und
+							Lied</title>, p. 174 f. thinks that Megacleides was the source of Aelian
+					also (see last note), and thus is our sole authority for the existence of this
+					Xanthus. That Stesichorus mentioned some one named Xanthus cannot be doubted;
+					but whether his debt to an earlier lyric poet of that name was such as
+					Megacleides affirms, is (the critic thinks) very questionable. It is certainly
+					strange that, if Xanthus was so important a source to Stesichorus, absolutely
+					nothing should have come down to us concerning him, beyond the two meagre
+					notices above quoted.</note>. How far, and in what sense, that statement is
+					true, cannot now be known; but it is at least certain that Xanthus remained
+					wholly obscure, while Stesichorus was widely popular. The introduction of
+					Electra may be one of the points in which the Stesichorean <title>Oresteia</title>
+					was indebted to Xanthus: and the fact of her figuring in that poem would fully
+					explain her later prominence. Let us suppose, then, that Stesichorus, like
+					Aeschylus, sent Electra with Clytaemnestra's offerings to Agamemnon's tomb.
+					Orestes, on his return, would hasten to make his offerings there—as is assumed
+					by all the three Attic dramatists. At the tomb the brother and sister would meet
+					and recognise each other, as they do in Aeschylus. We know that Stesichorus
+					brought in the nurse, whom he called Laodameia<note anchored="true"
+						place="foot" n="3" resp="RCJ">Schol. on <ref n="Aesch. Lib. 733.">Aesch. <title>
+					Cho.</title> 733.</ref>
+					</note>. Pindar makes a nurse save
+					Orestes from the hands of Clytaemnestra, but he does not say that she carried
+					him out of Argolis<note anchored="true" place="foot" n="4"
+						resp="RCJ">
+						<title>Pyth.</title> 11. 17.</note>. The Laodameia of Stesichorus may have
+					done likewise—giving Orestes to the trusty Talthybius, who carried him forth,
+					and in due time came back with him<note anchored="true" place="foot"
+						n="1" resp="RCJ">The relief from Melos has already been noticed, in which
+					Talthybius and Orestes find Electra and the nurse at the tomb (p. xvii). The
+					period indicated by the style of that work is the latter part of the sixth
+					century B.C., when the <title>Oresteia</title> of Stesichorus was already
+					well-known; and nothing is more likely than that the artist of the relief was
+					indebted to that source.</note>. After the recognition of Orestes by Electra at
+					the tomb, Stesichorus may have related the vengeance in the manner depicted on
+					the Attic vases above mentioned. We know that Euripides was following
+					Stesichorus in representing Orestes as defending himself against the Erinyes
+					with the bow and arrows given by Apollo<note
+						anchored="true" place="foot" n="2" resp="RCJ">Schol. on <ref
+							n="Eur. Orest. 268">Eur. <title>Or.</title> 268</ref>
+							<quote
+							xml:lang="grc">δὸς τόξα μοι κερουλκά, δῶρα
+							Λοξίου</quote>.</note>. And the fact that the Stesichorean Orestes was
+					pursued by the Erinyes shows that he slew Clytaemnestra as well as Aegisthus. </p>
+			</div>
+			<div type="section" n="7">
+				<p>A combination of literary with artistic evidence leads, <note anchored="true"
+						place="marg" resp="RCJ">Summary.</note> then, to the hypothesis that the <title>
+					Oresteia</title> of Stesichorus was planned somewhat as follows. Clytaemnestra
+					slew her husband by striking him on the head with an axe. The nurse Laodameia
+					saved the young Orestes, and entrusted him to his father's faithful herald
+					Talthybius, who carried him away,—probably to Phocis<note
+						anchored="true" place="foot" n="3" resp="RCJ">The influence of Delphi on
+						the poem of Stesichorus appears in the fact that Apollo provides Orestes
+						with the means of defence against the Erinyes; and it is therefore not
+					unlikely that the refuge of Orestes was with Strophius at Crisa. Whether
+					Stesichorus brought in Pylades, there is nothing to show.</note>. After some
+					years, Clytaemnestra has the alarming dream, and sends Electra (accompanied by
+					the nurse) with gifts to Agamemnon's tomb. Orestes arrives there with
+					Talthybius, and is recognised by his sister. He then enters the house, while
+					Talthybius keeps watch near the doors<note anchored="true" place="foot"
+						n="4" resp="RCJ">As the Paedagogus does in Sophocles ( <ref
+							n="Soph. El. 1331">
+							<title>El.</title> 1331</ref> f.).</note>. Clytaemnestra, hearing the
+					shriek of the dying Aegisthus, rushes to his aid with an axe; a cry from Electra
+					warns Orestes of the peril; but Talthybius has already seized Clytaemnestra; who
+					is presently slain by her son. The Erinyes then appear to Orestes, who defends
+					himself with the bow and arrows given by Apollo<note
+						anchored="true" place="foot" n="5" resp="RCJ">There is no clue to the manner
+					in which Stesichorus managed the sequel. He may have followed the local
+					Peloponnesian legend, which assigned a refuge to Orestes at the Arcadian town of
+					Orestheion ( <ref n="Thuc.  5. 64">Thuc. 5. 64</ref>) in Parrhasia, the
+					primitive home of the Orestes-myth. Robert (<title>Bild und
+							Lied</title>, p. 181, n. 30) finds a possible trace of this in <ref
+							n="Eur. Orest. 1643">Eur. <title>Or.</title> 1643</ref> ff.</note>.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Influence of Stesichorus on
+						the dramatists.</note>If this hypothesis be even approximately correct,—and
+					I, at least, am persuaded that it is so,—the result is of considerable interest,
+					not merely in relation to Stesichorus, but also in its bearing on the Attic
+					dramatists. It would appear that Aeschylus followed the general outlines of
+					Stesichorus pretty closely; while Sophocles, who did not do so, has retained at
+					least one Stesichorean trait, the part of the old man. Aeschylus did not need
+					him, since <emph>his</emph> Clytaemnestra herself sent Orestes to Strophius; on
+					the other hand, he retains the part of the nurse, which for Sophocles was
+					superfluous. But even if the hypothesis be rejected, there remains that fragment
+					of the Stesichorean poem which describes Clytaemnestra's dream. This proves that
+					Stesichorus conceived her in a manner which was much nearer to the Aeschylean
+					than to the Homeric. And this change—whether first made by him or not—was
+					connected with another of still larger scope. Stesichorus related in the <title>
+					Oresteia</title> that Tyndareus had incurred the anger of Aphroditè, who doomed
+					his daughters, Helen and Clytaemnestra, to evil careers<note anchored="true"
+						place="foot"
+						n="1" resp="RCJ">Frag. 35. It was from Hesiod that Stesichorus derived this
+					story. It is probable that the <quote xml:lang="grc">Κατάλογος</quote> of Hesiod
+					contained references to the crimes in the house of Pelops: see Robert, <title>Bild
+					u. Lied</title>, p. 189.</note>. Here is the tendency—wholly absent from the <title>
+					Iliad</title>—to bring crimes into the house of Pelops. The Dorian conquerors of
+					Peloponnesus envied the renown which the old local lore, worked up by Ionian art
+					in the <title>Iliad</title>, had shed around their Achaean predecessors, the
+					ancient masters of Mycenae and Sparta. Under Dorian influences, the story of the
+					Pelopidae was interwoven with those dark threads which appear in Attic Tragedy,
+					while brighter traits were given to the legends of Heracles and the Heracleidae.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Pindar</note>
+				</p>
+			</div>
+			<div type="section" n="8">
+				<p>Between Stesichorus and Aeschylus, the only poet who illustrates the story of
+					Orestes is Pindar. In the eleventh Pythian ode (478 B.C.), he describes a
+					victory in the Pythian games as won ‘in the rich corn-lands of Pylades, host of
+					Laconian Orestes; whom, when his sire was murdered, the nurse Arsinoè rescued
+					from the violent hands of Clytaemnestra and from her deadly guile.’ That
+					‘pitiless woman’ slew Aga memnon and Cassandra. What, asks Pindar, was her
+					motive? Was it ‘the slaying of Iphigeneia at the Euripus’? Or was it an
+					adulterous passion? ‘Meanwhile, Orestes, a young child, became the guest of the
+					aged Strophius, who dwelt at the foot of Parnassus. But in time, with the help
+					of Ares, he slew his mother, and laid Aegisthus in blood<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<title>Pyth.</title> 11. 15—37.</note>.’</p>
+				<p>Three points in this sketch are noteworthy. (1) Pindar makes Orestes ‘a
+					Laconian’; following the tradition, adopted also by Stesichorus and Simonides<note
+						anchored="true" place="foot" n="2" resp="RCJ">Schol. on <ref
+							n="Eur. Orest. 46.">Eur. <title>Or.</title> 46.</ref>
+					</note>,
+					that Amyclae in Lacedaemon was the place where Agamemnon was slain<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<title>Pyth.</title> 11. 31 <quote xml:lang="grc">θάνεν μὲν αὐτὸς ἤρως
+					Ἀτρεΐδας</quote> | <quote xml:lang="grc">ἵκων χρόνῳ κλυταῖς ἐν
+							Ἀμύκλαις</quote>. Pausanias (3. 19. 5) saw at Amyclae memorials of
+					Agamemnon, Clytaemnestra and Cassandra. The dominant influence of Sparta on the
+					early development of the Dorian Choral Lyric may possibly help to explain how,
+					in the lyric age, the local tradition of Lacedaemon could prevail over the
+					Homeric version on a point of such importance. It is certainly a curious
+					illustration of Dorian influence in modifying the Achaean legends of the
+					Peloponnesus—though, in this case, the influence was not permanent, as it was in
+					blackening the family history of the Pelopidae.</note>. (2) The house of
+					Strophius, ‘at the foot of Parnassus,’ is the refuge of Orestes; and Pylades is
+					his friend. Probably the <title>Nostoi</title> (<foreign
+						xml:lang="lat">circ.</foreign> 750 B.C.), in which Pylades figured, gave
+					this account; but Pindar is the earliest extant source of it<note
+						anchored="true" place="foot" n="4" resp="RCJ">In his brilliant and
+					suggestive Introduction to the <title>Choephori</title>, Mr Verrall holds (p.
+					xix, note 1) that Pindar gives no countenance to the legend followed by
+					Euripides, that Pylades was the son of Strophius. Pindar, he thinks, suggests no
+					connection between them. “The home of Pylades in the ‘rich fields’ of Cirrha is
+					distinguished clearly from that of Strophius on ‘the foot (spur) of Parnassus,’
+					that is to say at Crisa.” Is this so? Pindar first designates the Pythian
+					festival by the words <quote xml:lang="grc">ἀγῶνι...
+							Κίρρας</quote> (<title>Pyth.</title> 11. 12), and presently adds that
+					the victory of which he sings was won <quote xml:lang="grc">ἐν ἀφνεαῖς ἀρούραισι
+					Πυλάδα</quote> (<foreign xml:lang="lat">ib.</foreign> 15). In <title>Pyth.</title>
+					10. 15 f. the Pythian festival is similarly designated as <quote
+							xml:lang="grc">βαθυλείμων ὑπὸ Κίρρας ἀγὼν</quote> | <quote
+							xml:lang="grc">πέτραν</quote>: where <quote xml:lang="grc">
+					Κίρρας...πέτραν</quote> is clearly equivalent to the <quote xml:lang="grc">Κρισαῖον
+					λόφον</quote> of <title>Pyth.</title> 5. 35, and the <quote xml:lang="grc">Κρισαίαις
+					ἐνὶ πτυχαῖς</quote> of <title>Pyth.</title> 6. 18. It is the spur of Parnassus
+					under which Crisa was situated: there was no such <quote
+							xml:lang="grc">πέτρα</quote> or <quote xml:lang="grc">λόφος</quote> near
+					the site of Cirrha on the gulf. And, by adding <quote xml:lang="grc">
+							βαθυλείμων</quote>, Pindar interprets this large sense of <quote
+							xml:lang="grc">Κίρρας</quote>. In his time the town of Cirrha no longer
+					existed (see <ref target="cl180">n. on <ref n="Soph. El. 180">Soph. <title>
+									El.</title> 180</ref>
+						</ref>). The plain
+					in which the Pythian games were held extended from the site of Cirrha on the
+					south to that of Crisa (the seat of Strophius) on the north. It was called
+					‘Cirrhaean’ as well as ‘Crisaean.’ Hence the festival could be called ‘the
+					contest of Cirrha,’ and its scene could also be identified with ‘the cornlands
+					of Pylades.’ Was Euripides (in <title>I. T.</title> 917 f.) the first poet, as
+					Mr Verrall suggests, who made Strophius a brother-in-law, and Pylades a nephew,
+					of Agamemnon? It seems hardly probable. Anaxibia, daughter of Pleisthenes by
+					Aëropè, and sister of Agamemnon, was mentioned by Hesiod (Tzetzes, <title>Exeg.
+					in Iliad.</title>, p. 68, 20); and as her only mythological function was to be
+					the wife of Strophius and the mother of Pylades, it may be supposed that Hesiod
+					knew those relationships. As we have seen, the association of Pylades with
+					Orestes dates at least from the <title>Nostoi</title> (<foreign xml:lang="lat">
+					circ.</foreign> 750 B.C.).</note>. (3) Clytaem nestra, not Aegisthus, is in the
+					foreground; and the speculation as to her <emph>
+						motive</emph> reminds us that the myth had now grown into a shape which was
+					ready for dramatic handling. Twenty years after this ode was written, Aeschylus
+					produced his <title>Oresteia.</title>
+				</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Aeschylus.</note>
+				</p>
+			</div>
+			<div type="section" n="9">
+				<p>A poet imbued with the ideas of Aeschylus could never have accepted the view
+					presented in the <title>Odyssey;</title> that the vengeance of Orestes was a
+					simply righteous retribution, by which the troubles of the house were closed. To
+					the mind of Aeschylus the version which Stesichorus had followed would naturally
+					commend itself: Orestes, the slayer of a mother, could be saved from the Erinyes
+					only by divine aid. And the trilogy, the distinctively Aeschylean form of work,
+					was a framework perfectly suited to such a conception. Clytaemnestra's crime is
+					the subject of the <title>
+						Agamemnon;</title> the vengeance of Orestes fills the <title>Choephori;</title>
+					and the judgment upon him is given in the <title>Eumenides.</title>
+				</p>
+				<p>The <title>Agamemnon</title> is pervaded from first to last by the thought of the
+					hereditary curse upon the house: Clytaemnestra, indeed, identifies herself with
+					this ‘ancient, bitter Alastor’; and the Argive Elders recognise that this dread
+					power, though it does not excuse her, has presumably helped her<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<title>Agam.</title> 1500—1508.</note>. She is the principal agent in the
+					crime. Her dominant motive is not love of her paramour, but hatred of the
+					husband who slew Iphigeneia<note anchored="true" place="foot" n="2"
+						resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 1415 ff.: 1431—1447: 1526: 1555.</note>.
+					Aegisthus is a dastard, ‘the wolf mated with the lioness’<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 1258.</note>; at the close he
+					blusters, and threatens the Elders, while the strong woman treats them with a
+					cold scorn. The shadow of the vengeance is cast before. Cassandra predicts the
+					return of the exiled heir; ‘for the gods have sworn a great oath<note
+						anchored="true" place="foot" n="4" resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 1280 ff.</note>.’ And the Chorus reply
+					to the menaces of Aegisthus by reminding him that Orestes lives<note
+						anchored="true" place="foot" n="5" resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 1646, 1667.</note>.</p>
+				<p>The <title>Choephori</title> begins with a scene at Agamemnon's grave, <note
+						anchored="true" place="marg" resp="RCJ">Analysis of the <title>Choephori</title>
+					I. Prologue: 1—21.</note> near the palace<note anchored="true" place="foot"
+						n="1" resp="RCJ">Mycenae is not named by Aeschylus, but is not excluded by
+					his mention of ‘Argos’ ( <ref n="Aesch. Ag. 24">
+							<title>Ag.</title> 24</ref>, etc.), where it may mean the land, as in <ref
+							n="Soph. El. 4">Soph. <title>El.</title> 4</ref>(n.). See on this point
+					W. G. Clark, <title>Peloponnesus</title>, pp. 70 ff. (1858).</note>. Orestes,
+					who has just arrived from Phocis, enters with Pylades, and lays a lock of his
+					own hair on the tomb. A train of women, dressed in mourning, approaches. These
+					are fifteen Trojan captives, now domestics of the palace, who form the Chorus.
+					They escort Electra. Orestes thinks that he recognises his sister, and draws
+					aside, with Pylades, to observe the procession.</p>
+				<p>The Chorus chant the parodos, and we learn that they have <note
+						anchored="true" place="marg" resp="RCJ">Parodos: 22—83.</note> come with
+					libations to the tomb. ‘The impious woman’ has been alarmed by a dream; and the
+					sooth-sayers declare that then dead king is wroth. But such offerings, the
+					Chorus add, cannot atone for her deed. Agamemnon inspired reverence by his
+					majesty; the usurpers rule by fear alone. How long will justice tarry?</p>
+				<p>Electra asks the Chorus what prayer she is to utter in pouring <note
+						anchored="true" place="marg" resp="RCJ">II. First episode:
+						84—584.</note> the libations<note anchored="true" place="foot" n="2"
+						resp="RCJ">Electra enters with the Chorus at v. 22, but it is not' till v.
+					84 that she speaks. Aeschylus knew the dramatic effectiveness of such silence.
+					In the <title>Persae</title>, when the Messenger first announces the disaster at
+					Salamis, he is interrupted by the Chorus, but Atossa is mute till v. 290 (<quote
+							xml:lang="grc">σιγῶ πάλαι</quote>). In the <title>Prometheus
+							Vinctus</title> it is only at v. 88 that the sufferer's voice is heard.
+					Cassandra is long dumb before Clytaemnestra ( <ref n="Aesch. Ag. 1035">
+							<title>Ag.</title> 1035</ref>—1071). The Aristophanic Euripides
+					criticises this device, but the god Dionysus reproves him:—<quote
+							xml:lang="grc">ἐγὼ δ’ ἔχαιρον τῇ σιωπῇ</quote> ( <ref
+							n="Aristoph. Frogs 911">
+							<title>Ran.</title> 911</ref> ff.).</note>. Can she ask the dead to
+					receive these gifts from the murderess? Or shall she present them in silence?
+					Guided by the counsel of her attendants, she prays to Hermes, and to her
+					father's spirit,—with a special petition that Orestes may return.</p>
+				<p>In pouring the drink-offerings on the tomb, she finds the lock of hair, and
+					turns in excitement to the Chorus. It resembles her own, and she surmises
+					that it is the hair of Orestes,—not brought by him, of course, but sent.
+					Presently she notices footmarks, which have a resemblance to her own.
+					Orestes now steps forward, and, after a short dialogue, reveals himself. She
+					at first fears an imposture, but is convinced by his appeal to the signs
+					which she had already seen and also to a third,—a piece of work embroidered
+					by her own hand.</p>
+				<p>She welcomes him as ‘the hope awaited with tears, the heir and the deliverer<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Aesch. Lib. 236">
+							<title>Cho.</title> 236</ref>
+							<quote xml:lang="grc">δακρυτὸς ἐλπὶς
+					σπέρματος
+							σωτηρίου</quote>.</note>’; to her, at once father, mother, sister<note
+						anchored="true" place="foot" n="2" resp="RCJ">In the <title>Choephori</title>
+					no living sister of Electra is mentioned.</note>, and brother. Orestes responds
+					with a prayer to Zeus for Electra and himself. He then declares the oracle of
+					Apollo, commanding him, under terrible penalties, to avenge his father. ‘Must
+					not such oracles be trusted? In any case, the deed must be done<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<ref n="Aesch. Lib. 297">
+							<title>Cho.</title> 297</ref> f. <quote xml:lang="grc">τοιοῖσδε
+							χρησμοῖς ἆρα χρὴ πεποιθέναι</quote>; | <quote xml:lang="grc">κεἰ μὴ
+					πέποιθα, τοὔργον ἔστ’ ἐργαστέον</quote>.</note>.’</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Kommos: 306—478.</note>Then comes
+					one of the most characteristic and magnificent passages of the play,—a prolonged
+					lyric chant or dirge (kommos), in which the Chorus, Orestes, and Electra take
+					part by turns. It is a solemn litany, addressed to the divine powers who are to
+					aid the vengeance, and to the spirit of the dead.</p>
+				<p>After the lyric chant, Orestes and Electra continue in iambic verse the same
+					strain of supplication. Then Orestes asks why his mother had sent gifts to
+					the tomb? She dreamed—the Chorus reply—that she gave birth to a serpent, and
+					was suckling it, when it drew blood from her breast. Orestes accepts the
+					omen: the part of the serpent shall be his own.</p>
+				<p>He announces his plan. Electra is to enter the house. He and Pylades will arrive
+					at the outer gate<note anchored="true" place="foot" n="4" resp="RCJ">
+						<ref n="Aesch. Lib. 561">
+							<title>Cho.</title> 561</ref>
+							<quote xml:lang="grc">ἑρκείους πύλας</quote>,
+					as distinguished from those of the women's apartments mentioned in 878 (<quote
+							xml:lang="grc">γυναικείους πύλας</quote>).</note>, wearing the garb of
+					travellers, and imitating the Phocian accent<note anchored="true"
+						place="foot" n="5" resp="RCJ">
+						<ref n="Aesch. Lib. 563">
+							<title>Cho.</title> 563</ref>
+							<quote xml:lang="grc">ἄμφω δὲ φωνὴν
+							ἥσομεν Παρνησίδα</quote>, | <quote xml:lang="grc">γλώσσης ἀϋτὴν Φωκίδος
+					μιμουμένω</quote>.</note>. Electra now goes within, while Orestes and Pylades
+					withdraw to prepare for their enterprise.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">First stasimon:
+						585—652.</note>The Chorus, left alone, comment on the power of passion over
+					women; Althaea wrought the death of Meleager, and Scylla, of Nisus; the Lemmian
+					women slew their lords. And this house, too, has known such a deed. But now ‘the
+					anvil of Justice is firmly set, and Fate is forging the sword.’</p>
+				<p>Here ends the first of the three main chapters or ‘acts’ into which the drama
+					falls.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">III. Second episode:
+						653—782.</note>Orestes and Pylades are courteously received by
+					Clytaemnestra. He describes himself as a Phocian from Daulis. With his
+					companion, he was on his way to Argos, when a Phocian named Strophius—a
+					stranger—asked him to carry the news that Orestes was dead, in case the youth's
+					friends should wish to fetch the ashes home.—Clytaemnestra speaks, or rather
+					declaims, as the afflicted mother, and then has the two visitors ushered into
+					the guest-chambers, saying that she will break the sad news to ‘the master of
+					the house.’</p>
+				<p>A short choral ode follows. It is time that deceiving Persua- <note
+						anchored="true" place="marg" resp="RCJ">Choral song: 719—733.</note> sion
+					should help the avenger, and that Hermes of the shades should be his guide.</p>
+				<p>An old slave-woman, who had been the nurse of Orestes, then comes forth, having
+					been sent by Clytaemnestra to summon Aegisthus. She mourns for
+					Orestes,—recalling, with quaint pathos, all the trouble that the child had given
+					her.—It seems that the queen has ordered Aegisthus to come <emph>with
+						armed attendants</emph>
+						<note anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Aesch. Lib. 769">
+							<title>Cho.</title> 769</ref>
+							<quote xml:lang="grc">&lt;*&gt;γειν
+							κελεύει δορυφόρους
+							ὀπάονας</quote>.</note>. The Chorus prevail on the nurse not to give
+					this part of the message, but to summon Aegisthus alone. At the same time they
+					give her a hint that Orestes still lives, and that all may yet be well.</p>
+				<p>In the second stasimon the Chorus invoke Zeus, Apollo and <note
+						anchored="true" place="marg" resp="RCJ">Second stasimon: 783—837.</note>
+					Hermes. Next, apostrophising Orestes as though he were present, they exhort him
+					to answer his mother's cry, ‘my son,’ with the name of ‘father,’ and to bear a
+					heart like that of Perseus when he slew the Medusa<note
+						anchored="true" place="foot" n="2" resp="RCJ">
+						<ref n="Aesch. Lib. 827">
+							<title>Cho.</title> 827</ref> ff.</note>.</p>
+				<p>Aegisthus enters. The report that Orestes is dead seems to <note
+						anchored="true" place="marg" resp="RCJ">IV. Third episode:
+						838—854.</note> him doubtful. Women are credulous. He must see the
+					messenger, who will not impose on <emph>him.</emph> And so he enters the house.</p>
+				<p>A moment of suspense is marked by the short third stasimon. <note
+						anchored="true" place="marg" resp="RCJ">Third stasimon: 855—868.</note> Now
+					is the struggle that must bring ruin or freedom. May Orestes succeed!</p>
+				<p>The shriek of the dying Aegisthus is heard within. A slave <note
+						anchored="true" place="marg" resp="RCJ">V. Fourth episode:
+						875—934.</note> runs out, crying that his master is slain; and, knocking at
+					the door of the women's apartments, summons Clytaemnestra. She knows that she is
+					lost; but her spirit never quails; she calls for a battle-axe—‘let us see if we
+					are to conquer or to fall.’ But, before she can obtain a weapon, Orestes comes
+					forth:— ‘'Tis for thee that I am looking;—with <emph>him</emph>, 'tis well
+					enough.’ consummation? Whither shall the fury of disaster go, ere it finish its
+					course, and be laid to rest?’ </p>
+			</div>
+			<div type="section" n="10">
+				<p>The leading characteristic of the <title>Choephori</title> is the tre- <note
+						anchored="true" place="marg" resp="RCJ">Supernatural agency.</note> mendous
+					importance of those invisible and supernatural allies who assist the vengeance.
+					Zeus, Apollo, Hermes, Hades, the spirit of Agamemnon, are felt throughout as if
+					they were present with the human agents. This is the significance of the
+					prolonged scene at the tomb, which forms more than one half of the play. It is
+					not properly a suspension of action, but rather a dramatic prelude, emphasising
+					the greatness of the issues involved in the action to come. It brings out the
+					heinousness of the crime which calls for retribution, the appalling nature of
+					the divine mandate to Orestes, and the supreme need of arousing and marshalling
+					those superhuman forces which alone can secure the victory. The human strategy,
+					as subsequently developed, is not especially skilful. The story told to
+					Clytaemnestra by the pretended Phocian, who mentions the death of Orestes as a
+					bare fact casually learned from a stranger, was not well fitted to find ready
+					credence with the astute woman whose fears had just been quickened, as the
+					conspirators knew, by a warning dream,—even if they assumed that she had missed
+					the meaning which her dream at once conveyed to Orestes. And that Clytaemnestra
+					did, in fact, suspect the ‘Phocian's’ story appears from her wish that Aegisthus
+					should bring his body-guards. But then again the old nurse of Orestes was hardly
+					the safest person to whom a message of such critical moment could be entrusted.
+					The gods indeed justify the maxim of Pylades; they are the worst enemies of the
+					guilty.</p>
+				<p>From the moment when the two ‘Phocians’ enter the house, <note
+						anchored="true" place="marg" resp="RCJ">Clytaem nestra.</note> the swiftness
+					of the concentrated action is unchecked, save by that brief pause in which the
+					tragic interest culminates,—the dialogue between Clytaemnestra and her son. She
+					holds the same place in the retribution which she held in the crime. Her death
+					is the climax; it is by her Erinyes that Orestes is driven forth to seek refuge
+					with Apollo. The fate of Aegisthus is a subordinate incident<note
+						anchored="true" place="foot" n="1" resp="RCJ">In <ref
+							n="Aesch. Lib. 989 .">
+							<title>Cho.</title> 989 .</ref>Orestes says:—<quote xml:lang="grc">Αἰγίσθου
+					γὰρ οὐ λέγω μόρον·</quote> | <quote xml:lang="grc">ἔχει
+							γὰρ αἰσχυντῆρος, ὡς νόμος, δίκην</quote>.</note>. Though Clytaemnestra's
+					longest speech is limited to twelve lines, and her whole part to forty-six,
+					Aeschylus has been marvellously successful in continuing that sense of horror,
+					hard to describe or to define, which she produces in the <title>Agamemnon.</title>
+					When she welcomes the strangers, there is in her language a ghastly reminiscence
+					of another welcome which she had given beneath that roof; they will find, she
+					tells them, ‘warm baths, a couch to give rest from toil, and the presence of
+					just eyes’; this is a house in which travellers arriving from a long journey
+					find—‘what is fitting<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Aesch. Lib. 668">
+							<title>Cho.</title> 668</ref>—671: 710 f.</note>.’</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Orestes.</note>The attitude of the
+					Aeschylean Orestes is illustrated by the nature of the command which he obeys.
+					In the play of Sophocles the oracle briefly directs that he shall take the just
+					vengeance without the aid of an armed force. But in the <title>
+						Choephori</title> he speaks of reiterated admonitions from the god, full of
+					explicit threats as to the penalties which await him if he <emph>refuses</emph>
+					to act. Spectral terrors shall haunt him in the night; leprous ulcers shall rise
+					upon his flesh; his whole body shall be shrivelled and blasted with torturing
+					disease; he shall be an outcast, under a ban cutting him off from human
+					fellowship and from the altars of the gods. Oracles of such a tenor plainly
+					intimate that the task prescribed was one from which even a brave man might
+					recoil. Apollo's purpose is to make Orestes feel that disobedience is the
+					greater of two evils. It is dreadful to shed a mother's blood, but worse to
+					leave a father unavenged. In the <title>Choephori</title> Orestes is indeed
+					resolute; not, however, because the duty before him is simple, but because the
+					god's messages have braced him to perform it. Once—at the moment when a mother's
+					claim to pity is presented in the most pathetic form—he does hesitate;— <quote
+						xml:lang="grc">Πυλάδη, τί δράσω; μητέρ’ αἰδεσθῶ κτανεῖν</quote>
+						<note
+						anchored="true" place="foot" n="2" resp="RCJ">
+						<ref n="Aesch. Lib. 899.">
+							<title>Cho.</title> 899.</ref>
+					</note>; But Pylades
+					reminds him of the god's word. It will presently be seen how marked is the
+					contrast here between Aeschylus and Sophocles.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Electra.</note>The Electra of
+					Aeschylus appears to have no sister living. She performs the errand which
+					Sophocles assigns to Chrysothemis, by carrying her mother's gifts to the tomb;
+					she could not refuse, for she is virtually a slave<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<ref n="Aesch. Lib. 135">
+							<title>Cho.</title> 135</ref>
+							<quote xml:lang="grc">ἀντίδουλος</quote> .</note>.
+					Turning to the real slaves, her companions, she appeals to the common hatred
+					which unites them<note anchored="true" place="foot" n="1"
+						resp="RCJ">
+						<ref n="Aesch. Lib. 101">
+							<title>Cho.</title> 101</ref>
+							<quote xml:lang="grc">κοινὸν γὰρ ἔχθος
+							ἐν δόμοις
+							νομίζομεν</quote>.</note>, and asks what prayer she is to make. The
+					Sophoclean Electra would hardly have sought advice on that point; yet the
+					question is in place here, since her action, if contrary to the queen's orders,
+					might compromise her unhappy escort. The heroic fortitude and bold initiative of
+					the Sophoclean Electra are qualities which Aeschylus, with his different plan,
+					has not desired to portray; but he has done full justice to her steadfast and
+					affectionate loyalty. And with regard to the actual mechanism of the plot, she
+					is, in one sense, even more important with Aeschylus than with Sophocles. It
+					rests with her alone to decide whether the young stranger is her brother, and,
+					if she is convinced, to aid his plan within the house. The latter service is
+					assigned by Sophocles to the old man, who could also have established the
+					identity of Orestes, if there had been need. When the ‘recognition’ has been
+					effected, and the prayers at the tomb are over, the Aeschylean Electra can be
+					dismissed from the scene. Orestes directs her to go in, and watch events in the
+					house. She does not speak after verse 509, and is not seen after verse 584; that
+					is, she appears only in the first of the three ‘acts’ into which the play may be
+					divided.</p>
+				<p>The part of Aegisthus is notably brief, even allowing for the <note
+						anchored="true" place="marg" resp="RCJ">Minor persons.</note> indifference
+					with which his fate is treated. He merely passes across the scene; fourteen
+					verses are all that he has to speak. The part of the Nurse is a masterpiece in
+					its kind. And we note the happy inspiration by which Pylades is made to break
+					silence once—at the supreme moment—as the voice of Apollo.</p>
+				<p>Nearly a third of the play is lyric. The Chorus have their <note
+						anchored="true" place="marg" resp="RCJ">The Chorus.</note> share in the
+					action; at the outset they are the counsellors of Electra; they persuade the
+					Nurse to help the plan; and they send Aegisthus forward to his doom. But their
+					function is, above all, to interpret the sense of reliance upon divine aid.
+					‘Justice may delay, but it will come,’ is the burden of the choral song; ‘the
+					sinner shall suffer’ (<quote xml:lang="grc">δράσαντι
+						παθεῖν</quote>); ‘even now, Destiny is preparing the sword.’ And when, at
+					the close, a dark cloud gathers over Orestes, it is with unwavering faith that
+					the Chorus commend him to Apollo, though no human eye can pierce the gloom which
+					rests upon the future.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The title ‘<title>Choephori.</title>
+					’</note>No one of the three Greek plays on this subject takes its name from
+					Orestes, though his deed forms the central interest. Aeschylus calls his play
+					the <title>Choephori</title>, because that title suggests the claim of the
+					murdered father—as <title>Eumenides</title> expresses that of the mother slain
+					by a son—and therefore suits the link in the trilogy. On the other hand, if the
+					story was to be treated in a single play, the <emph>antecedents</emph> of the
+					vengeance became especially important. Electra, the daughter who, remaining at
+					home, had been faithful to her father's memory throughout the interval between
+					the flight and the return of Orestes, was the character best fitted to supply
+					the needful background. Thus far, Sophocles and Euripides had the same motive
+					for describing their subject by her name.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The <title>Electra</title> of
+						Sophocles.</note>
+				</p>
+			</div>
+			<div type="section" n="11">
+				<p>In the case of Sophocles there was a further reason. He reverts to the epic
+					view that the deed of Orestes is simply laudable, and therefore final. It
+					suited this aim to concentrate the sympathies of the spectators against
+					Clytaemnestra as well as Aegisthus. And nothing could be more effective for
+					that purpose than to show how their long oppression had failed to break down
+					the heroic constancy of Electra.</p>
+				<p>We will now trace the plot of Sophocles.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Analysis of the play. I.
+						Prologue: 1—120.</note>The scene is laid before the palace of the Pelopidae
+					at Mycenae. Three persons enter,—on the left of the spectator, for they are
+					travellers from a distant place. These are, Orestes, who is about twenty years
+					of age; his Phocian friend Pylades (son of Strophius, king of Crisa near
+					Delphi—from whose home they come); and an old man, a faithful retainer of
+					Agamemnon, who had been the paedagogus of Orestes, and had secretly carried him,
+					as a child, away from Mycenae to Crisa, at the time when Agamemnon was slain.</p>
+				<p>The old man points out to Orestes the chief features in the landscape before
+					them, and then exhorts the two youths to concert their plan of action
+					without delay; already it is the hour of dawn, and the morning-song of the
+					birds is beginning.</p>
+				<p>Orestes, in reply, states the purport of the oracle given to him at Delphi.
+					Apollo commanded him to ‘snatch his righteous vengeance by stealth,’ without
+					the aid of an armed force. He then sets forth his plan. The old man is to
+					enter the palace in the guise of a messenger sent by Phanoteus, a Phocian
+					prince friendly to Clytaemnestra and Aegisthus. He is to announce that
+					Orestes has been killed in a chariot-race at the Pythian games. Meanwhile
+					Orestes and Pylades will make offerings at the tomb of Agamemnon near the
+					palace. They will then present themselves in the house, bearing a funeral
+					urn. They, like the old man, will pretend to be Phocians, who have brought
+					the ashes of Orestes to Mycenae.</p>
+				<p>A female voice of lament is now heard in the house (v. 77). Orestes asks if
+					it can be Electra's, and proposes to wait and listen; but the old man
+					dissuades him. All three now leave the scene (v. 85).</p>
+				<p>Electra comes out of the house; she is alone, for the Chorus <note
+						anchored="true" place="marg" resp="RCJ">(<quote xml:lang="grc">θρῆνος
+							ἀπὸ σκηνῆς·</quote> 86—120.)</note> have not yet appeared. Greeting the
+					‘pure sunlight and the air,’ to which her sorrow has so often been uttered at
+					dawn, she speaks of the grief which ceases not, day or night, for her father,
+					whom the wicked pair struck down, ‘as woodmen fell an oak.’ She invokes the
+					Powers of the nether world to avenge him,— and to send her brother; for her own
+					strength is well-nigh spent.</p>
+				<p>The Chorus, composed of fifteen Mycenaean women, had <note anchored="true"
+						place="marg" resp="RCJ">Parodos: 121—250.</note> entered as Electra's lament
+					was closing. They sympathise with her; and they do not conceal their abhorrence
+					of the deed which she mourns. But they remind her that grief cannot restore the
+					dead to life: they urge her to be calm, trusting in the gods, and hoping for the
+					return of Orestes. She must not aggravate her lot by waging a fruitless strife
+					with the rulers.</p>
+				<p>Electra replies that to abandon her grief would be disloyalty. If her father
+					is not to be avenged, there will be an end to reverence for gods or men.</p>
+				<p>The Chorus say that they spoke only for her good; she <note anchored="true"
+						place="marg" resp="RCJ">II. First episode: 251—471.</note> knows best, and
+					she shall be their guide. Electra then justifies her conduct by describing what
+					she has to see and suffer daily in the house;—Aegisthus in her father's place;
+					her mother living with Aegisthus, and keeping the death-day of Agamem non as a
+					festival. Hardship and insult are her own portion continually. The Chorus
+					cautiously inquire if Aegisthus is at home; and, on learning that he is absent
+					in the country, ask Electra whether she thinks that Orestes will return. ‘He
+					promises,’ she answers, ‘but does not keep his promise.’ ‘Courage,’ they reply:
+					‘he is too noble to fail his friends.’</p>
+				<p>At this moment Chrysothemis approaches, bearing funeral offerings. She begins
+					by sharply chiding her sister for this ‘vain indulgence of idle wrath,’—in
+					public, too, at the palacegates. But she admits that she herself feels anger
+					against the tyrants; were she strong enough, she would let them know it.
+					Electra has right upon her side: only, if one is to live in freedom, one
+					must yield to the stronger.</p>
+				<p>Electra tells her that the choice is between loyalty to the dead and worldly
+					prudence. ‘Canst thou, the daughter of Agamemnon, wish to be only the daughter
+					of Clytaemnestra?’ The Chorus timidly deprecate a quarrel. Chrysothemis says
+					that she is used to Electra's vehemence. She would not have spoken, but that she
+					had to convey a warning. As soon as Aegisthus returns, Electra is to be
+					imprisoned in a dungeon, at a distance from Mycenae—unless she becomes more
+					docile. Electra declares that she would welcome such a doom;—‘that I may
+					escape,’ she says, ‘far from <emph>you</emph>,’—thus identifying her sister with
+					the oppressors.</p>
+				<p>Chrysothemis, finding her counsels repelled, is about to proceed on her
+					errand, when Electra asks her whither she is taking those offerings. ‘Our
+					mother sends me,’ is the answer, ‘with libations to our father's grave.’ It
+					then appears that Clytaemnestra has been terrified by a dream. Agamemnon
+					returned to life; he planted his sceptre at the hearth; a branch blossomed
+					from it, and overshadowed the land.</p>
+				<p>Electra feels a sudden joy. This dream, she believes, has been sent by the gods
+					below, and by the spirit of the dead. ‘Dear sister,’ she cries, ‘cast those
+					impious offerings away; take, instead of them, such gifts as <emph>we</emph> can
+					give,—and pray at the tomb that our father's spirit may come to help us, and
+					that Orestes may live to conquer.’</p>
+				<p>Chrysothemis is touched and subdued. She agrees to do as her sister bids;
+					only Electra and the Chorus must keep the secret; she dreads her mother's
+					anger.</p>
+				<p>The Chorus, encouraged by Clytaemnestra's dream, predict <note
+						anchored="true" place="marg" resp="RCJ">First stasimon: 472—515.</note> the
+					vengeance. Agamemnon's spirit is not forgetful. The Erinys, now lurking in
+					ambush, will come. The curse upon the house of Pelops claims yet more victims.</p>
+				<p>Clytaemnestra enters, followed by a handmaid bearing <note anchored="true"
+						place="marg" resp="RCJ">III. Second episode: 516— 1057. (1) 1st scene:
+					516—659.</note> offerings of various fruits for Apollo Lykeios, whose altar
+					stands in front of the house. ‘At large once more, it seems!’ is her greeting to
+					Electra;—‘since Aegisthus is not here to restrain thee.’ She defends her murder
+					of Agamemnon. ‘Justice slew him, and not I alone.’ Had he not slain her
+					daughter, Iphigeneia, in the cause of his brother Menelaüs?</p>
+				<p>Electra replies that her father acted therein under constraint from the
+					goddess Artemis; but that, even if he had been a free agent, Clytaemnestra's
+					plea would not avail. Then, passing from argument to reproach and defiance,
+					Electra avows her wish that Orestes might come as an avenger; though she
+					also shows the anguish which she feels at the attitude towards a mother
+					which is forced upon her.</p>
+				<p>An angry dialogue ends by Clytaemnestra enjoining silence, in order that she
+					may make her offerings to Apollo. She prays that the god will rule the
+					issues of the vision for her good, and for the discomfiture of her foes.
+					Other wishes, too, she has, but will not utter them; the god can divine
+					them...</p>
+				<p>Here the Paedagogus enters, disguised as a Phocian mes- <note anchored="true"
+						place="marg" resp="RCJ">(2) 2nd scene: 660—803.</note> senger from
+					Phanoteus. He relates how the young Orestes, after wonderful feats at the
+					Pythian games, was killed in the chariot-race. Other Phocians are on their way
+					to Mycenae with his ashes.</p>
+				<p>Clytaemnestra hears the news with feelings in which joy is crossed by at
+					least a touch of natural grief; but the joy quickly prevails, and she openly
+					recognises that the news is good. At last she will be safe from Orestes—and
+					from Electra, who has been even a worse foe.</p>
+				<p>Electra invokes Nemesis to avenge her brother; while Clytaemnestra cruelly
+					taunts her, and then conducts the Phocian messenger into the house.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">(3) 3rd scene:
+						804—870.</note>Left alone with the Chorus, Electra gives free vent to her
+					anguish and despair. She will enter that house no more, but cast herself down at
+					the gates, and await death—which cannot come too soon.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Kommos: 823—870.</note>In the
+					lyric dialogue which follows, the women of Mycenae gently endeavour to suggest
+					comfort. Was not the seer Amphiaraüs betrayed to death by a false wife? And is
+					not his spirit now great beneath the earth? Alas, Electra answers, there was a
+					son to avenge him, and to slay the murderess; but Agamemnon can have no such
+					avenger. Orestes has perished, in a foreign land, without receiving the last
+					offices of sisterly love.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">(4) 4th scene: 871—
+						1057.</note>Chrysothemis enters hurriedly, in a flutter of joyful
+					excitement. On reaching the tomb, with her sister's gifts and her own, she found
+					that unknown hands had just been honouring it. Libations of milk had been poured
+					there; the mound was wreathed with flowers; and on the edge of it lay a lock of
+					hair. These gifts can be from no one but Orestes!</p>
+				<p>With pitying sorrow, Electra breaks to her the news which has come from
+					Phocis. Probably the gifts at the tomb were brought by some one in memory of
+					the dead youth. And now, as the delusive hope vanishes from her sister's
+					mind, Electra seeks to replace it by a heroic resolve. Will Chrysothemis aid
+					her in the purpose which she has formed—to slay the two murderers with her
+					own hand? Electra reminds her of the joyless lot which otherwise awaits both
+					Chrysothemis and herself; and pictures the noble renown which such a deed
+					would achieve.</p>
+				<p>To Chrysothemis this is sheer madness. She foresees only certain failure and
+					a terrible death. In vain she seeks to dissuade Electra, who declares that
+					she will make the attempt unaided. With a parting word of compassionate
+					warning, Chrysothemis enters the house. Electra remains outside.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Second stasimon: 1058—
+						1097.</note>The Chorus lament the weaker sister's failure in that natural
+					piety which the very birds of the air teach us. A sorrowful message for
+					Agamemnon in the shades will be this quarrel between his daughters. How noble is
+					Electra,—all alone, yet unshaken, in her loyalty! May she yet win the reward
+					which she has deserved!</p>
+				<p>Orestes enters, with Pylades, followed by two attendants, one <note
+						anchored="true" place="marg" resp="RCJ">IV. Third episode: 1098— 1383.
+						(1) The recognition: 1098 —1287.</note> of whom carries the funeral urn (v.
+					1123). He asks for the house of Aegisthus, and, on learning that he has reached
+					it, requests that their arrival may be announced. The Chorus suggest that
+					Electra should do this. A dialogue ensues between Electra and the disguised
+					Orestes. She learns that the strangers come from Strophius, king of Crisa, with
+					her brother's ashes; and she is allowed to take the urn into her hands<note
+						anchored="true" place="foot" n="1" resp="RCJ">This was the scene in which
+					the famous actor Polus , when playing the part of Electra, used an urn which
+					contained the ashes of a son whom he had recently lost (Aulus Gellius 7. 5). See
+					Soph. <title>O. T.</title>, Introd., p. xxxi (3rd ed.).</note>. She then utters
+					a most touching lament, recalling the memories of her brother's childhood,—the
+					close affection which bound them to each other,—her care for him, and her bright
+					hopes, which have thus ended. ‘Therefore take me to this thy home, me, who am as
+					nothing, to thy nothingness... When thou wast on earth, we shared alike; and now
+					I fain would die, that I may not be parted from thee in the grave.’</p>
+				<p>The disguised Orestes finds it hard to restrain himself. In the dialogue
+					which follows, he gradually prepares her mind for the discovery,—leading her
+					through surprise, conjecture, and hope, to conviction. The scene is one of
+					exquisite art and beauty (vv. 1176—1226).</p>
+				<p>In lyrics, Electra now utters her joy,—which reaches the <note
+						anchored="true" place="marg" resp="RCJ">
+						<quote xml:lang="grc">μέλος ἀσκηνῆς</quote>: 1232— 1287.</note> height, when
+					Orestes tells her that he has been sent by Apollo. He endeavours to check her
+					transports (though he is loth to do so), lest she should be overheard.</p>
+				<p>At length he succeeds in recalling her to their scheme of <note
+						anchored="true" place="marg" resp="RCJ">The plan of action: 1288—
+						1383.</note> action, and warns her against allowing Clytaemnestra to
+					perceive her happiness. She promises obedience in all things. The old Paedagogus
+					now comes out, and scolds them both for their imprudence. When Electra learns
+					that the faithful servant is before her, she greets him warmly, as the preserver
+					of their house. Then, by his advice, Orestes and Pylades enter the palace, after
+					saluting the ancestral gods in the porch; and the old man follows them. Electra
+					addresses a brief prayer to Apollo Lykeios, and then she also enters.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Third stasimon: 1384—
+						1397.</note>The Chorus, now alone, sing a short ode. The Erinyes have passed
+					beneath the roof; the Avenger is being led by Hermes, in secrecy, to his goal.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">V. Exodos: 1398— 1510. Kommos:
+					1398— 1441.</note>Electra rushes forth to tell the Chorus that Orestes and
+					Pylades are about to do the deed Clytaemnestra is dressing the funeral urn for
+					burial, while the two youths stand beside her. In another moment her dying
+					shrieks are heard. Orestes, with Pylades, then comes out; and, in answer to his
+					sister's question, says: ‘<title>All is well in the
+						house</title>, <emph>if Apollo's oracle spake well.</emph>’</p>
+				<p>Aegisthus is seen approaching, and the youths quickly reenter the house. He
+					is exultant, for he has heard the report that Orestes is dead. Electra
+					confirms it, adding that the body has been brought to Mycenae; Aegisthus can
+					satisfy his own eyes. The tyrant orders the palace-doors to be thrown wide,
+					in order that his subjects may see the corpse, and know that all hope from
+					that quarter is over.</p>
+				<p>The doors are opened; a corpse, hidden by a veil, lies on a bier; close to it
+					stand the two Phocians who are supposed to have brought it. Aegisthus lifts
+					the veil—and sees the dead Clytaemnestra. He knows that he is doomed, and
+					that Orestes stands before him. Nor is he suffered to plead at length:
+					though some bitter words pass his lips, before Orestes drives him in, to
+					slay him in the hall where Agamemnon was slain. The Chorus rejoice that the
+					house of Atreus has at last found peace.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">General comparison with the <title>
+						Choephori.</title>
+					</note>
+				</p>
+			</div>
+			<div type="section" n="12">
+				<p>When this play is compared with the <title>Choephori</title>, the first
+					difference which appears is broader than any that could arise from divergent
+					views of the particular story. It concerns the whole stamp of the drama, and
+					illustrates the difference, in bent of genius, between the two poets. Aeschylus
+					exhibits in grand outline the working of an eternal law, full of mystery and
+					terror. Justice, Destiny, the Erinys, are the paramount agencies. The human
+					agents are drawn, indeed, with a master's hand, but by a few powerful strokes
+					rather than with subtle touches or fine shading. Nor is much care shown for
+					probability in minor details of the plot. With Sophocles the interest depends
+					primarily on the portraiture of human character. The opportunities for this are
+					contrived by a series of ingenious situations, fruitful in contrasts and
+					dramatic effects. We have seen that the Greek art of the sixth century B.C. knew
+					a version of this legend in which Talthybius, the herald of Agamemnon, saved the
+					young Orestes from murder,—receiving him, doubtless, from the hands of the
+					nurse—and in due time conducted the heir home again; a version which Stesichorus
+					had probably popularised. It suited Aeschylus to leave out Talthybius, while
+					keeping the part of the nurse. Sophocles revives the old herald in the person of
+					the trusty Paedagogus, who received the child, not from a nurse, but from
+					Electra herself, and carried him to Crisa. This change is a source of large
+					advantage to the plot. It is a weak point in the <title>Choephori</title> that
+					the story told by Orestes was not likely to impose upon Clytaemnestra, and does
+					not, in fact, disarm her suspicion. The Sophoclean stratagem is of a different
+					order. When the old man, as an envoy from Phanoteus, gives Clytaemnestra his
+					circumstantial account of her son's death, he plays his part to perfection. He
+					evinces some natural feeling for the tragic death of a brilliant youth, but at
+					the same time shows that he is disappointed when the queen hesitates whether to
+					rejoice or to mourn. ‘Then it seems that I have come in vain,’ he says, half
+					aggrieved; and she hastens to re-assure him. A little later the two ‘Phocians’
+					arrive with the urn, as envoys from Strophius, the old ally of Agamemnon. This
+					device of two independent missions, each from an appropriate quarter, was really
+					fitted to win belief. It also provides a keen interest for the spectator, who is
+					in the secret. The Aeschylean Electra is from the outset the accomplice of the
+					avengers. But here she is herself deceived by them. And from the belief that her
+					brother is dead springs the resolve which shows her spirit at the highest—to
+					execute the vengeance without aid. In the <title>
+						Choephori</title>, again, Electra is still trembling between hope and doubt,
+					when Orestes steps forward, and almost at once reveals himself. Here, she is
+					convinced that his ashes are in the urn which the young Phocian permits her to
+					handle; the irresistible pathos of her lament over it compels him to shorten her
+					probation; and then comes the dialogue, so characteristic of Sophocles, which
+					gently leads up to the recognition.</p>
+				<p>Like the poet of the <title>Odyssey</title>, Sophocles regards the venge ance as
+					a deed of unalloyed merit, which brings the troubles of the house to an end.
+					Clytaemnestra's part is much larger than in the <title>Choephori</title>; but it
+					is the death of Aegisthus which forms the climax. Sophocles reverses the
+					Aeschylean plan. Here it is Clytaemnestra whose dying shriek is heard; it is
+					Aegisthus whose doom is preceded by a dialogue with Orestes.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The stain of matricide is
+						ignored.</note>
+				</p>
+			</div>
+			<div type="section" n="13">
+				<p>Throughout the play, there is not a hint that a son who slays his mother is
+					liable to the Erinyes. This silence cannot be explained by the plea that
+					Sophocles was concerned only with the vengeance itself. For, although the
+					pursuit of Orestes by the Erinyes was not to be included in the plot, still the
+					play shows him both when he was meditating the deed, and after he has done it.
+					Yet he neither shrinks from it in prospect, nor feels the slightest uneasiness
+					when it has been accomplished. From first to last, his confidence is as cheerful
+					as the morning <note anchored="true" place="marg" resp="RCJ">Question
+						thus raised.</note>sunshine in which the action commences. When he comes
+					forth with dripping sword, this is his comment; ‘All is well in the house, if
+					Apollo's oracle spake well.’ How could an Athenian poet of the fifth century
+					B.C. venture thus to treat the subject before an Athenian audience, whose
+					general sentiment would assuredly be that of the <title>Choephori</title>, and
+					in the forefront of which sat priestly exponents<note anchored="true"
+						place="foot" n="1" resp="RCJ">The <quote xml:lang="grc">θρόνοι</quote> of
+					Pentelic marble which form the lowest row of seats in the Dionysiac theatre are
+					generally referred to the Roman age, and no view has made them older than the
+					time of Lycurgus (<foreign xml:lang="lat">c.</foreign> 330 B.C.). The
+					inscriptions upon them are unquestionably of the Roman age. We cannot appeal to
+					them, then, as certain evidence for details of arrangement in the time of
+					Sophocles. But they must embody, in the main, an old tradition: and they show a
+					large representation of the Apolline cult. The priest of Dionysus Eleuthereus
+					has (as in the fifth century B.C.) the central place of honour. The <quote
+							xml:lang="grc">θρόνος</quote> on his right is inscribed <quote
+							xml:lang="grc">Πυθοχρήστου ἐξηγητοῦ</quote>,—the interpreter of the
+					sacred law, appointed by the Delphic oracle. Other seats are those <quote
+							xml:lang="grc">Ἀπόλλωνος Πατρῴου, Ἀπόλλωνος
+							Λυκήου, Ἀπόλλωνος Δηλίου</quote>. Cp. MA. üller, <title>Lehrbuch der
+					Griech. Bühnenalterthümer</title>, p. 93 (1886).</note> of the religious view
+					which was so signally ignored? Euripides is here, at least, at one with
+					Aeschylus. True, Sophocles has been careful to remind us, again and again, how
+					completely Clytaemnestra had forfeited all <emph>moral</emph> claim to a son's
+					loyalty. The question here is, however, not moral but religious; a matter, not
+					of conduct, but of kinship. It may also be granted that the Sophoclean oracle of
+					Apollo differs from that in the <title>Choephori.</title> It is a brief command
+					to do a righteous deed; it threatens no penalties, and so implies no reason for
+					reluctance. Still, that does not alter the fact of the matricidal stain upon
+					Orestes. I do not know any adequate solution of this difficulty, which seems
+					greater than has generally been recognised: I can only suggest one consideration
+					which may help to explain it. The Homeric colouring in the <title>Electra</title>
+					is strongly marked; thus the <title>
+						Odyssey</title> is followed in the version of Agamemnon's murder as
+					perpetrated at the banquet,—there are even verbal echoes of it<note
+						anchored="true" place="foot" n="1" resp="RCJ">See
+						commentary on v. 95, and on vv. 193—196.</note>; the chariot-race in the <title>
+					Iliad</title> (book XXIII) has furnished several traits to the narrative of the
+					disaster at the Pythian games<note anchored="true" place="foot" n="2"
+						resp="RCJ">See on vv. 712, 721 f., 748.</note>. Sophocles seems to say to
+					his audience, ‘I give you, modified for drama, the story that Homer tells; put
+					yourselves at the Homeric stand-point; regard the act of Orestes under the light
+					in which the <title>Odyssey</title> presents it.’ The Homeric Athena declares
+					that Orestes has won universal praise by slaying the villainous Aegisthus. The
+					final scene of Sophocles is designed to leave a similar impression; the tyrant
+					is exhibited in all his baseness,—insolent and heartless; he is driven in to
+					meet his just doom; Orestes points the moral; and the Chorus welcome the
+					retribution. Having resolved to limit his view by the epic horizon, Sophocles
+					has executed the plan with great skill. But his plot labours under a
+					disadvantage which no skill could quite overcome. He could not, like his Homeric
+					original, dispense with Apollo: the Apolline thread had long ago become so
+					essential a part of the texture that he could not get rid of it. But, the moment
+					that Apollo is introduced, the thought of the stain upon Orestes becomes
+					importunate, since the very purpose for which Apollo first came into the story
+					was that of showing how the supreme arbiter of purity could defend his emissary
+					against the claim of the Erinyes. Stesichorus and Aeschylus had deeply impressed
+					this on the Greek mind; and it would have been hard for Athenians, familiar with
+					the lyric and the dramatic <title>Oresteia</title>, to feel that the story, as
+					told by Sophocles, reached a true conclusion. His Chorus might, indeed, close
+					the play by describing the house of Atreus as </p>
+				<p>
+					<quote xml:lang="grc">τῇ νῦν ὁρμῇ τελεωθέν</quote>.</p>
+				<p>But would not many spectators have ringing in their ears the last words of the <title>
+					Choephori</title>? </p>
+				<p>
+					<quote xml:lang="grc">ποῖ δῆτα κρανεῖ, ποῖ καταλήξει μετακοιμισθὲν μένος
+						ἄτης</quote>;</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Character of Electra.</note>
+				</p>
+			</div>
+			<div type="section" n="14">
+				<p>The Sophoclean Electra resembles Antigone in heroism and in loyalty to the dead,
+					but the modes in which their characters are manifested differ as widely as the
+					situations. Antigone is suddenly required to choose between omitting a sacred
+					duty and incurring death; within a day she has chosen, and died. The ordeal of
+					Electra is that of maintaining a solitary protest through years of suffering.
+					Her timid sister's sympathy is only secret; the tyrants ill-treat her, and she
+					witnesses their insults to her father's memory. Meanwhile there is only one
+					feeble ray of light for her, the hope that Orestes may return; but it becomes
+					fainter as time goes on. One of the finest traits in the delineation of Electra
+					by Sophocles is the manner in which he suggests that inward life of the
+					imagination into which she has shrunk back from the world around her. To her,
+					the dead father is an ally ever watchful to aid the retribution; when she hears
+					of Clytaemnestra's dream, it at once occurs to her that <emph>he</emph> has
+					helped to send it<note
+						anchored="true" place="foot" n="1" resp="RCJ">Vv. 459,
+						460.</note>. The youthful Orestes, as her brooding fancy pictures him, is
+					already invested with the heroic might of an avenger<note anchored="true"
+						place="foot" n="2" resp="RCJ">Vv. 1220 f. Electra (to the disguised
+					Orestes), <quote xml:lang="grc">πῶς εἶπας, ὦ παῖ</quote>; <quote
+							xml:lang="grc"> οπ.ψεῦδος οὐδὲν &lt;*&gt;ν λέγω</quote>. | <quote
+							xml:lang="grc">ΗΛ. ἦ ζῇ γὰρ ἁνήρ</quote>; </note>. There are moments
+					when she can almost forget her misery in visions of his triumph<note
+						anchored="true" place="foot" n="3" resp="RCJ">See on v. 814.</note>. Like
+					Antigone, she is contrasted with a weaker, though amiable, sister. Chrysothemis
+					is of the same type as Ismene; her instincts are right, and respond to the
+					appeal of Electra, whom she loves; only she is not heroic. The stronger nature,
+					when brought into conflict with the feebler, almost inevitably assumes, at
+					certain moments, an aspect of harshness<note
+						anchored="true" place="foot" n="4" resp="RCJ">Vv. 391; 1027 ff. Cp.
+					Introduction to the <title>Antigone</title>, p. xxix.</note>: yet the union in
+					Electra of tenderness with strength can be felt throughout, and finds expression
+					in more than one passage of exquisite beauty<note anchored="true"
+						place="foot" n="1" resp="RCJ">See especially the kommos,
+						823—870; and her lament, 1126—1170.</note>. When she believes that Orestes
+					is dead, and that it rests with her alone to avenge Agamemnon, she calls upon
+					Chrysothemis to co-operate, who reproves her as forgetting that she is a woman<note
+						anchored="true" place="foot" n="2" resp="RCJ">997 <quote
+							xml:lang="grc">γυνὴ μὲν οὐδ’ ἀνὴρ ἔφυς</quote>.</note>. But when Orestes
+					is restored to her, she submits herself in all things to his wishes<note
+						anchored="true" place="foot" n="3" resp="RCJ">1301 ff. 4 Electra played the
+					chief part in another play also of Sophocles,—the <quote xml:lang="grc">
+							Ἀλήτης</quote>, to which Attius was probably indebted in his <title>
+					Agamemnonidae</title> and <title>Erigona.</title> A sketch of the plot is
+					conjecturally recognised in Hyginus <ref n="Hyg. Fab. 122.">
+							<title>Fab.</title> 122.</ref>Aletes, son of Aegisthus, sends Electra a
+					false message to the effect that Orestes (who is in exile) is dead, and that
+					Aletes therefore accedes to the throne at Mycenae. Electra goes to consult the
+					oracle at Delphi. She there meets a woman who (she is told) has slain Orestes;
+					and is about to blind her with a brand snatched from the altar, when Orestes
+					rushes between them—reveals himself—and tells her that the woman is her sister
+					Iphigeneia. Orestes slays Aletes, whose daughter Erigona goes to Attica; and
+					Pylades marries Electra. (Cp. Roscher, <title>
+							Lex.</title>p. 1238.) The time supposed in the <quote xml:lang="grc">
+					Ἀλήτης</quote> was apparently just after the year of exile (<quote
+							xml:lang="grc">
+							ἀπενιαυτισμός</quote>) imposed upon Orestes by the slaying of his
+					mother. Here, then (as in the presence of Iphigeneia), would be proof that in
+					his <title>
+							Aletes</title> the poet followed a different conception of the story
+					from that which he adopts in his <title>Electra.</title>
+					</note>.
+					Hers is the part which Aeschylus gives to the Chorus, of speaking with Aegisthus
+					on his way to the house. She is present almost from the beginning to the end of
+					the play, and the series of her emotions is the thread which gives unity to the
+					whole. </p>
+			</div>
+			<div type="section" n="15">
+				<p>The cause which she holds sacred is elaborately ar- <note anchored="true"
+						place="marg" resp="RCJ">Clytaemnestra.</note> raigned and defended in the
+					scene with Clytaemnestra. Sophocles portrays the queen in a manner very distinct
+					from that of Aeschylus; a difference due not merely to the general tendencies of
+					the poets, but also to the dramatic setting. Aeschylus created his Clytaemnestra
+					in the <title>Agamemnon</title>, where she is seen just before and just after
+					the murder. There is a fascination in her dreadful presence of mind; what an
+					adamantine purpose can be felt under the fluent eloquence with which she
+					welcomes her husband<note anchored="true"
+						place="foot" n="5" resp="RCJ">
+						<ref n="Aesch. Ag. 855">
+							<title>Ag.</title> 855</ref>—913.</note>! How fearful, again, is her
+					exultation in the deed, when she tells the Argive elders that she rejoices in
+					the blood upon her robe ‘as a cornfield in the dews of spring<note
+						anchored="true" place="foot" n="6" resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 1390 ff.</note>,’ or when she imagines
+					Iphigeneia advancing to greet Agamemnon in the shades, and kissing him<note
+						anchored="true" place="foot" n="7" resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 1555 ff.</note>! Sophocles had to show
+					Clytaemnestra, not at a crisis of action, but as she lived and felt in the years
+					which followed her crime. Electra's fortitude was to be illustrated by
+					withstanding and denouncing her. The Clytaemnestra of Aeschylus was ill-suited
+					to such a situation. If she had been confronted with a daughter who impugned her
+					deed, scorn and hatred would have flashed from her; but she would not have
+					argued her case in detail, and then listened to a reply. The almost superhuman
+					force of that dark soul would have been fatal to the dramatic effect of any
+					woman opposed to her. In the <title>
+						Choephori</title> Aeschylus has taken care that Electra shall have no
+					dialogue with Clytaemnestra. Sophocles clearly felt this. The Clytaemnestra whom
+					he draws is strong and wicked, but her temperament is not one which separates
+					her from ordinary humanity. She feels at least a pang of maternal grief when she
+					first hears that Orestes is dead<note anchored="true"
+						place="foot" n="1" resp="RCJ">
+						<ref n="Soph. El. 766">
+							<title>El.</title> 766</ref> ff. Contrast her hypocritical rhetoric at
+					the corresponding moment in <ref n="Aesch. Lib. 691">Aesch. <title>Cho.</title>
+					691</ref> ff.</note>, even though a little later she can address heartless
+					taunts to Electra. She has not the Aeschylean queen's cynical contempt for
+					public opinion; thus she complains that Electra misrepresents her, and seeks to
+					justify herself<note anchored="true" place="foot" n="2" resp="RCJ">
+						<ref n="Soph. El. 520">Soph. <title>El.</title> 520</ref> ff.</note>. When
+					she meets her daughter in argument, she is forcible, but the better cause has
+					the advantage which it deserves<note anchored="true" place="foot"
+						n="3" resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 516—609.</note>. A desire to avenge
+					Iphigeneia is the plea which she puts forward, and which Electra refutes; but
+					the women of Mycenae had already given voice to the popular belief that guilty
+					love was the true motive of the crime<note
+						anchored="true" place="foot" n="4" resp="RCJ">
+						<foreign xml:lang="lat">ib.</foreign> 197 <quote xml:lang="grc">δόλος
+					&lt;*&gt;ν ὁ φράσας, ἔρος ὁ κτείνας</quote>.</note>. Sophocles has thus avoided
+					investing Clytaemnestra with a tragic interest which would have required that
+					her punishment, rather than her paramour's, should form the climax.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The Chorus.</note>The function of
+					the Chorus is naturally to some extent the same as in the <title>
+						Choephori</title>,—viz., to sympathise with Electra and to assert the moral
+					law: but there is a difference. The Trojan slave-women of the Aeschylean Chorus
+					hate the tyrants and are friendly to Electra's cause, but have no further
+					interest in the vengeance. The Sophoclean Chorus consists of freeborn women,
+					belonging to Mycenae, but external to the palace. They represent a patriotic
+					sentiment in the realm at large, favourable to the son of Agamemnon, and hostile
+					to the usurper. The city is sympathetic with the family<note anchored="true"
+						place="foot" n="1" resp="RCJ">Cp. the words of the Chorus in v. 1413, <quote
+							xml:lang="grc">ὦ πόλις, ὦ γενεὰ
+							κ.τ.λ.</quote> In v. 1227 Electra addresses them as <quote
+							xml:lang="grc">πολίτιδες</quote>. Their feeling towards Orestes as the
+					heir is seen in 160 ff.: cp. too 251 ff. (n.).</note>. </p>
+			</div>
+			<div type="section" n="16">
+				<p>While the strictly human interest predominates in the <note anchored="true"
+						place="marg" resp="RCJ">Supernatural agency</note>
+						<title>Electra</title>, we
+					must not undervalue the dramatic importance which Sophocles has given to the
+					supernatural agency, or the skill with which it is carried through the texture
+					of the play. In the opening scene we hear the oracle which Apollo has given to
+					Orestes. The enterprise is presently placed under the protection of the
+					Chthonian powers by those ceremonies at the tomb which, as the old man urges,
+					must precede everything else. Then Electra comes forth, and invokes the deities
+					of the underworld. A little later it appears that Clytaemnestra has had an
+					ominous dream; Electra sees in it an answer to her prayer, and the Chorus
+					express the same conviction. Next, the queen makes her offerings and half-secret
+					prayers to Apollo; the very god, though she knows it not, who has already sent
+					Orestes home. With a similar unconsciousness, in her joy at the news from
+					Phocis, she declares that Nemesis has heard those who deserved to be heard, and
+					has ordained aright. The last act. of Orestes and Pylades before entering the
+					house is to salute the images of the gods; while Electra makes a short prayer to
+					Apollo. Lastly, in the moments of suspense before the deed, the choral song
+					reminds us that the Erinyes have passed beneath the roof, and that Hermes is
+					guiding the avenger to the goal.</p>
+				<p>Thus the whole drama is pervaded by an under-current of divine co-operation; the
+					gods are silently at work; step by step the irresistible allies advance; the
+					very effort of Clytaemnestra to bespeak Apollo's favour is a new impiety, which
+					only makes his wrath more certain. In the <title>Choephori</title> darkness
+					broods over all; the shadow of the curse rests upon the murderers, and then the
+					menace of the Erinyes comes upon the avenger. In the <title>
+						Electra</title> of Sophocles it is the bright influence of Apollo that
+					prevails from the first. Those sights and sounds of early morning with which the
+					play opens are fit symbols of his presence; the powers of the nether world are
+					also, indeed, active, but here they are making common cause with the Pythian god
+					of light and purity.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The <title>Electra</title> of
+						Euripides.</note>
+				</p>
+			</div>
+			<div type="section" n="17">
+				<p>Let us now see how the subject is treated by Euripides.</p>
+				<p>The scene is laid before the cottage of a husbandman, or small farmer (<quote
+						xml:lang="grc">αὐτουργός</quote>), who lives in Argolis, but near the
+					borders (v. 96), and far from the city of Argos (v. 246). The time is dawn.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Analysis. I. Prologue: 1— 166.
+						(1) 1st scene, 1— 53.</note>The play is opened by a speech of the farmer.
+					Aegisthus and Clytaemnestra have given him Electra in marriage; fearing that, if
+					she wedded a richer<note anchored="true" place="foot" n="1"
+						resp="RCJ">Euripides seeks to soften the strangeness of the alliance by vv.
+					37 f., where the <quote xml:lang="grc">αὐτουργός</quote> says that his
+					‘Mycenaean fathers,’ though poor, were <quote xml:lang="grc">λαμπροὶ
+							ἐς γένος</quote>. No doubt the invention of the <quote
+							xml:lang="grc">αὐτουργός</quote> was primarily suggested to the poet's
+					mind by his feeling that Aeschylus had violated probability when he made Orestes
+					adventure himself in the lion's (or wolf's) den, by going to the palace. But, if
+					Orestes was not to do that, his meeting with Electra could be managed only by
+					fixing her abode somewhere else, at a safe distance from the palace; and how was
+					this to be done?</note> spouse, he or his offspring might avenge Agamemnon. The
+					worthy man adds that respect for the family has forbidden him to regard the
+					union as more than formal<note
+						anchored="true" place="foot" n="2" resp="RCJ">Vv. 43 ff.: <quote
+							xml:lang="grc">ἣν οὔποθ’ ἁνὴρ ὅδε, σύνοιδέ μοι
+							Κύπρις</quote>, | <quote xml:lang="grc">ᾔσχυνεν εὐνῇ· παρθένος δ’
+							ἔτ’
+							ἐστὶ δή</quote>. | <quote xml:lang="grc">αἰσχύνομαι γὰρ ὀλβίων
+							ἀνδρῶν τέκνα</quote> | <quote xml:lang="grc">λαβὼν ὑβρίζειν, οὐ
+							κατάξιος γεγώς</quote>.</note>.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">(2) 2nd scene, 54
+						—81.</note>Electra comes out of the cottage, poorly clad, with her hair cut
+					short (in sign of mourning), and bearing a water-jar upon her head. She is not
+					forced, she says, to do these menial tasks, but she wishes to show the insolence
+					of Aegisthus to the gods (v. 58). The farmer deprecates such work for her, and
+					she expresses her grateful esteem for him. Then she goes on her way to the
+					spring, and he to his plough.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">(3) 3rd scene, 82
+						—166.</note>Orestes enters, with Pylades<note anchored="true"
+						place="foot" n="3" resp="RCJ">Though Pylades is with him, Orestes is not
+					supposed to
+						come, directly at least, from Crisa; he is a wandering exile (233 f.),
+						on whose head Aegisthus has set a price (v. 33).</note> (who is a mute
+					person throughout). An oracle of Apollo (he says) has sent him. He does not dare
+					to go within the walls of the city. But in the night he has secretly sacrificed
+					at Agamemnon's tomb, and has placed a lock of hair upon it. He has now come to
+					find Electra, of whose marriage he has heard, and to seek her co-operation. —He
+					now sees a woman, apparently a slave, approaching, and proposes to seek
+					information from her. This is Electra, returning with her water-jar from the
+					spring. In a lyric lament she speaks of Agamemnon's fate and her brother's
+					exile. Orestes, listening, soon learns who she is, for she introduces her own
+					name.</p>
+				<p>The Chorus enters. It consists of fifteen maidens from <note anchored="true"
+						place="marg" resp="RCJ">Parodos: 167—212.</note> the neighbourhood, who hold
+					a lyric dialogue with Electra. They invite her to a festival of the Argive Hera,
+					but she excuses herself, on the ground of her sorrow, and also of her poor
+					attire. They offer to lend her better clothes, but she replies by reminding them
+					of the unavenged wrongs which she is mourning<note
+						anchored="true" place="foot" n="1" resp="RCJ">This Parodos has been made
+					famous by the story in <title>Lysander</title> 15. After the surrender of Athens
+					in the spring of 404 B.C., the Peloponnesian leaders were deliberating on its
+					fate, when they chanced to hear this ode sung, and were softened towards the
+					city which had produced such a poet. (<quote
+							xml:lang="grc">παρὰ πότον τινὸς Φωκέως ᾄσαντος ἐκ τῆς Εὐριπίδου
+							Ἠλέκτρας τὴν πάροδον, ἢς ἡ ἀρχὴ Ἀγαμέμνονος ὦ κόρα..., πάντας
+					ἐπικλασθῆναι κ.τ.λ.</quote>)</note>.</p>
+				<p>Electra now perceives that two armed strangers are near her <note
+						anchored="true" place="marg" resp="RCJ">II. First episode: 213—431. (1)
+						1st scene, 213 —340.</note> cottage, and is disquieted. Orestes does not
+					reveal himself, but says that he has come to bring her news of her brother.
+					Having heard his tidings, she speaks of her own fortunes. If Orestes returned,
+					she would help him to slay their mother (vv. 278 f.). She describes how
+					Aegisthus insults Agamemnon's tomb, and mocks at Orestes.</p>
+				<p>The farmer now reappears, and is somewhat disconcerted <note anchored="true"
+						place="marg" resp="RCJ">(2) 2nd scene, 341 —431.</note> at first, but
+					quickly recovers himself, and gracefully offers hospitality to the strangers.
+					Orestes accepts the invitation, after moralising on the nobility of nature which
+					may lurk under a rustic exterior. The two guests having gone in, Electra
+					reproves her husband for having invited them, when he knew the poverty of the
+					household. He must now go, she says, and look for a certain old man in the
+					neighbourhood, who is capable of bringing some better fare for the visitors.
+					This old man, it seems, had been an attendant of Agamemnon when the latter was a
+					boy (v. 409). The farmer obeys, and goes forth—to be seen no more.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">&lt;*&gt; staslmon: 432
+						—486.</note>The Chorus sing of the voyage of the Greek heroes to Troy, and
+					the shield of Achilles. They end with imprecations upon Clytaemnestra, who slew
+					the leader of such a host.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">III. Second episode: 487—698.
+						(1) 1st scene, 487 —552.</note>The old retainer of Agamemnon, for whom the
+					farmer went, now arrives, bringing lamb, cheeses, and some good wine for the
+					guests; but, though he can provide these comforts, he is clad, after Euripidean
+					fashion, in rags (v. 501).</p>
+				<p>On his way he has visited Agamemnon's tomb, and has been surprised by finding
+					recent offerings there. One of these, a lock of hair, he brings with him, and
+					suggests that, since it is like Electra's, it may be from the head of Orestes.
+					She ridicules his surmise; and here follows the well-known satire on the other
+					signs used by Aeschylus for the ‘recognition<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Eur. El. 524">Eur. <title>El.</title> 524—544</ref>. The fact that
+					two locks of hair are <quote xml:lang="grc">ὁμόπτεροι</quote>—by which she
+					means, ‘of the same colour’—is, she reminds him, no proof of kinship. When he
+					suggests that she should go and see whether the <emph>footprints</emph> tally
+					with her own, she observes that (1) the soil is too hard to receive a footprint,
+					and (2) a brother's foot is likely to be larger than his sister's. When he
+					lastly suggests that Orestes may have a garment woven for him long ago by his
+					sister, she replies that by this time it must be much too small for him. Dr
+					Verrall (<title>Choephori</title>, pp. xxxv ff.) thinks that the meaning of
+					Aeschylus was subtler than that fixed upon him by Euripides. (1) The resemblance
+					between the hair of Orestes and that of Electra was not in <emph>colour</emph>
+					merely, but in some Asiatic quality by which the foreign race of Pelops could be
+					distinguished from Achaeans. (2) So as to the footprints: the resemblance meant
+					was not in <emph>size</emph>, but in the character of the outline. (3) The <quote
+							xml:lang="grc">ὔφασμα</quote> was not a <emph>garment</emph>, but a
+					small specimen of Electra's work which the brother had with him. Euripides
+					himself seems to make a slip here. Electra reproves the old man for suggesting
+					that Orestes would have deigned, through fear of Aegisthus, to <emph>conceal</emph>
+					his visit to the tomb (524—526). That, however, is what Orestes had done (90).</note>
+					.’</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">(2) 2nd scene, 553
+						—595.</note>Orestes and Pylades come out of the cottage. Electra introduces
+					the old man to the strangers as one who formerly saved her brother's life. The
+					old man recognises Orestes by a scar over one eyebrow (v. 573), caused by a fall
+					in childhood, when he and Electra were chasing a fawn. The joy of the
+					recognition is compressed into very narrow limits; but the Chorus sings a short
+					ode (vv. 585—595).</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">(3) 3rd scene, 596
+						—698.</note>Orestes now consults the old man as to a scheme of vengeance. It
+					would be impossible (says the old man) for Orestes to enter the guarded
+					stronghold of the usurpers (615 ff.). But Aegisthus is now in the country, about
+					to sacrifice to the Nymphs. He has no guards with him,—only servants. Orestes
+					must present himself at the sacrifice, and take his chance of being asked to
+					assist. Clytaemnestra is at Argos. But Electra undertakes to send her a message
+					which will bring her to the cottage (v. 652). It was customary that, ten days
+					after the birth of a child, offerings should be made to Eileithyia. The old man
+					must tell Clytaemnestra that her daughter entreats this pious office at her
+					hands, as she herself is unacquainted with the ritual (v. 1125).</p>
+				<p>The old man promises to take this message. He will also guide Orestes to
+					Aegisthus. The brother and sister pray to the gods. Electra then enters the
+					house, while Orestes sets forth with his guide.</p>
+				<p>The Chorus recite the legend of the golden lamb, the cause <note
+						anchored="true" place="marg" resp="RCJ">Second stasimon: 699—746. IV.
+						Third episode: 747— 1146. (1) 1st scene, 747 —958.</note> of the quarrel
+					between Atreus and Thyestes.</p>
+				<p>A messenger tells Electra how Orestes has slain Aegisthus. The tyrant
+					welcomed the youth and his comrade (Pylades), who described themselves as
+					Thessalians going to Olympia. Orestes was asked to assist in dismembering a
+					bull; and, while Aegisthus was stooping to scan the omens, felled him from
+					behind. The slaves, on hearing the name of Orestes, acclaimed him as their
+					rightful king.</p>
+				<p>The Chorus and Electra express their joy. Orestes enters (v. 880) with a ghastly
+					trophy—the body<note anchored="true" place="foot" n="1" resp="RCJ">M. Patin
+					doubts this, <title>Sophocle</title>, p. 355. But it is proved by v. 959 (<quote
+							xml:lang="grc">τοῦδε σῶμ)</quote>), and by 1178 ff. <quote
+							xml:lang="grc">ἴδετε...δίγονα σώματα</quote>.</note> of Aegisthus,
+					carried by attendants. Electra expresses her hatred in a long speech over the
+					corpse (vv. 907—956).</p>
+				<p>Clytaemnestra now approaches from Mycenae (v. 963), in a <note
+						anchored="true" place="marg" resp="RCJ">(2) 2nd scene, 959 —1146.</note>
+					chariot, with a retinue. Orestes is seized with shuddering at the thought of
+					slaying his mother. Electra nerves him; reminds him of his duty to his father,
+					and of Apollo's oracle. He enters the cottage—resolved to do the deed, and yet
+					shrinking from it.</p>
+				<p>The Chorus briefly greet Clytaemnestra with pretended reverence. She bids her
+					Trojan handmaids assist her to alight, but Electra claims the office,
+					remarking that she herself is virtually a slave. Then follows a dispute
+					between mother and daughter as to the fate of Iphigeneia and of Agamemnon
+					(1011—1099). But the queen is presently touched by Electra's misery, and
+					expresses regret for the past. Electra, however, is not softened. Then
+					Clytaemnestra enters the house, to perform the rite on behalf of the
+					(supposed) child. Electra bids her be careful that in the smoky cottage her
+					robes are not soiled—and presently follows her in (v. 1146).</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Kommos: 1147— 1237.</note>The
+					Chorus recall the death of Agamemnon, and foretell the vengeance. In the midst
+					of their chant, Clytaemnestra's dying shriek is heard from within.</p>
+				<p>Orestes and Electra are now shown (by the eccyclema) standing by the corpse
+					of Clytaemnestra; that of Aegisthus lies near.</p>
+				<p>Orestes is full of anguish and despair. He describes how he drew his cloak over
+					his eyes as he slew his mother. Electra, on the contrary, is in this scene
+					almost a Lady Macbeth. She tells how she urged her brother on, and even guided
+					his sword when he covered his eyes<note anchored="true"
+						place="foot" n="1" resp="RCJ">1224 f. <quote xml:lang="grc">ΗΛ. ἐγὼ δέ
+							γ’ ἐπεκέλευσά σοι</quote>, | <quote xml:lang="grc">ξίφους τ’
+							ἐφηψάμην ἅμα</quote>.</note>. Then she throws a covering over her
+					mother's body.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Exodos: 1238— 1359.</note>At this
+					moment the Chorus greet the apparition of two bright forms in the air. These are
+					the Dioscuri. Clytaemnestra, they say, has been justly slain, and yet Orestes is
+					defiled. Apollo gave him <emph>an unwise oracle</emph>; though, as that god is
+					their superior, they will say no more<note
+						anchored="true" place="foot" n="2" resp="RCJ">1245 <quote xml:lang="grc">ἀλλ’
+					ἄναξ γάρ ἐστ’ ἐμός</quote>, | <quote xml:lang="grc">σιγῶ·
+							σοφὸς δ’ ὢν οὐκ ἔχρησέ σοι σοφά</quote>.</note>. Electra is to marry
+					Pylades, and go to Phocis—taking with her the good farmer, who is to receive a
+					large estate (v. 1287). Orestes is to go to Athens, where, under the presidency
+					of Pallas, he will be tried and acquitted; he will then settle in Arcadia<note
+						anchored="true" place="foot" n="3" resp="RCJ">1273 f. <quote
+							xml:lang="grc">σὲ δ’ Ἀρκάδων χρὴ πόλιν ἐπ’ Ἀλφειοῦ
+							ῥοαῖς</quote> | <quote xml:lang="grc">οἰκεῖν Λυκαίου πλησίον
+							σηκώματος</quote>. The city meant is Tegea, where there was a temple of
+					Zeus <quote
+							xml:lang="grc">Λυκαῖος</quote>, and where the supposed relics of Orestes
+					were found ( <ref n="Hdt. 1. 68">Her. 1.
+							68</ref>).</note>. Aegisthus will be buried by the Argives;
+					Clytaemnestra, by Menelaüs and Helen, who have just arrived at Nauplia from
+					Egypt.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">1292— 1359.</note>The play ends
+					with a most curious dialogue in anapaests between the Dioscuri and the other
+					persons. The Chorus bluntly ask the demigods why they did not avert murder from
+					their sister Clytaemnestra? Well, they reply, the blame rests on Fate, and on <emph>the
+					unwise utterances of Phoebus</emph>
+						<note
+						anchored="true" place="foot" n="1" resp="RCJ">1302 <quote xml:lang="grc">Φοίβου
+					τ’ ἄσοφοι γλώσσης ἐνοπαί</quote>.</note>. Electra then asks why she—to whom no
+					oracle had been given—was involved in the guilt of matricide? The only answer
+					which occurs to them is that she suffers through the hereditary curse upon the
+					whole house of Pelops<note anchored="true" place="foot" n="2"
+						resp="RCJ">1305 ff. <quote xml:lang="grc">κοιναὶ πράξεις, κοινοὶ δὲ
+							πότμοι·</quote> | <quote xml:lang="grc">μία δ’ ἀμφοτέρους</quote> | <quote
+							xml:lang="grc">ἄτη
+							πατέρων διέκναισεν</quote>.</note>. Orestes changes the awkward subject
+					by taking leave of Electra, whom he is not to see again. The Dioscuri have words
+					of comfort for each. And then they warn Orestes to hasten away; already dark
+					forms can be seen approaching, with snaky arms<note
+						anchored="true" place="foot" n="3" resp="RCJ">1345 <quote xml:lang="grc">χειροδράκοντες,
+					χρῶτα κελαιναί</quote>. This description of the Erinyes is exactly illustrated
+					by a vase-painting given in Baumeister's <title>Denkmäler</title> p. 1116. They
+					grasp the snakes, which are coiled round their arms, near the head, so that
+					snake and arm are, as it were, one.</note>. The Dioscuri themselves ‘will go
+					with speed to the Sicilian sea, to save the ships<note
+						anchored="true" place="foot" n="4" resp="RCJ">1347 ff. The play was
+						probably produced at
+						the great Dionysia of March, 413 B.C.</note>.’ </p>
+			</div>
+			<div type="section" n="18">
+				<p>It is in this closing scene, where the Dioscuri are cross- <note
+						anchored="true" place="marg" resp="RCJ">Drift of Euripides —adverse to
+					Apollo.</note> examined, that the drift of Euripides is most patent. The
+					dialogue is equivalent to an epilogue by the dramatist, who, in effect,
+					addresses the audience as follows:—‘I have now told you this story in my own
+					way—adhering to the main lines of the tradition, but reconciling it, as far as
+					possible, with reason. And now, having done my best with it, I feel bound to add
+					that it remains a damning indictment against Apollo, and a scandal to the moral
+					sense of mankind.’</p>
+				<p>Euripides could not relieve Orestes from the guilt of matri- <note
+						anchored="true" place="marg" resp="RCJ">His Orestes and Electra.</note>
+					cide; tradition forbad; but he has sought to modify that guilt. He has divided
+					the responsibility between Orestes and Electra in such a manner as to make the
+					sister appear the more coldblooded of the two. It is she who plans the snare
+					into which her mother falls. While Orestes wavers and falters, Electra never
+					hesitates for a moment. She unflinchingly bears her part in the murder, when her
+					brother is fain to cover his eyes while he strikes. Yet (as is brought out in
+					the dialogue with the Dioscuri) she had not his excuse. No oracle had been given
+					to <emph>her.</emph> Her ruling motive appears as an inflexible hatred of her
+					mother. The Electra of the two other dramatists has in deed that feeling, but
+					the noble and gentle side of her character is far more prominent<note
+						anchored="true" place="foot" n="1"
+						resp="RCJ">The Electra of Sophocles, standing outside of the house, hears
+					the shriek of Clytaemnestra, whom Orestes is at that moment slaying within; and
+					exclaims, <quote xml:lang="grc">παῖσον, εἰ σθένεις,
+							διπλῆν</quote> (v. 1415). That is, to modern feeling, the most repellent
+					trait which Sophocles has given to her. But it is as nothing in comparison with
+					the part which the Euripidean Electra bears in the actual deed; and it is also
+					an isolated utterance at a moment of extreme tension.</note>. The general
+					result, then, is this:— Euripides gives up Apollo, who told Orestes to commit
+					matricide, as indefensible; while, by a skilful contrast with a more odious
+					person, he contrives to increase our commiseration for Orestes, the hapless
+					instrument of the god.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">General estimate of the
+						play.</note>The play was unduly depreciated by Schlegel, and a reaction has
+					long since made itself felt<note anchored="true" place="foot" n="2"
+						resp="RCJ">Among the earlier exponents of this reaction may be mentioned
+					Hartung (<title>Euripides restitutus</title>, vol. II. pp. 305 ff.), and Halévy
+					(<title>Grèce Tragique</title>, vol. I. pp. 90 ff.). See also Patin, <title>
+					Sophocle</title>, p. 340.</note>. Yet a critic who is second to none, either in
+					appreciation for the genius of Euripides or in power of interpreting
+					it,—Professor von Wilamowitz-Möllendorff,—has said that, when one passes from
+					Aeschylus to the Euripidean <title>Electra</title>, it is like turning from
+					Goethe to Heine, —not merely to a less elevated strain, but rather to a wholly
+					different tone,—sordid, trivial, and (from a Greek point of view) blasphemous<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<title>Hermes</title>, vol. XVIII. p. 233. Es ist als käme man von Goethe zu
+					Heine, als läse man nicht sowohl eine geringere Poesie, als eine Umsetzung ins
+					Meskine Frivole Blasphemische.</note>. We may recognise to the utmost the bold
+					originality of Euripides, the inventive power, and the skilful execution; but
+					his <title>Electra</title>, viewed as a Greek tragedy, cannot be pronounced a
+					success.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Did it precede and influence the <title>
+						Electra</title> of Sophocles?</note>
+				</p>
+			</div>
+			<div type="section" n="19">
+				<p>It has hitherto been generally held that the <title>Electra</title> of Sophocles
+					belongs to an earlier date than its Euripidean namesake. A contrary view is
+					however maintained by v. Wilamowitz, who further thinks that the <title>Electra</title>
+					of Euripides was the stimulus which moved Sophocles to treat the subject<note
+						anchored="true" place="foot" n="4"
+						resp="RCJ">
+						<title>Hermes</title>, vol. XVIII. pp. 214—263: <title>Die beiden
+							Elektren.</title>
+					</note>. Certain relations (the
+					able critic contends) exist between the two plays which show that one of them
+					was influenced by the other, and a closer scrutiny proves that the play of
+					Euripides was the original. I propose to examine this view.</p>
+				<p>The first resemblance to which the critic points is between <note
+						anchored="true" place="marg" resp="RCJ">The openings of the two plays
+					compared.</note> the openings of the two dramas. In the Euripidean prologue
+					Orestes appears and speaks (vv. 82—111). Then Electra sings a monody (112—166);
+					and she is presently joined by the Chorus (167). In the Sophoclean prologue also
+					Orestes appears; then there is a monody for Electra (86—120); and she is joined
+					by the Chorus (121). Such a coincidence, it is argued, cannot be accidental. And
+					there is internal evidence that Euripides was the model. For, with him, the
+					appearance of Orestes at that early moment is necessary; while, with Sophocles,
+					there is no reason why Orestes should be seen until he is ready to enter the
+					house. Again, the Chorus of Euripides have a motive for their visit; they invite
+					Electra to a festival. But the Sophoclean Chorus come without any special cause.
+					Nor has Sophocles the reason of Euripides for composing his Chorus of persons
+					external to the palace; indeed, it is hard to see how such persons could have
+					established such intimacy with Electra, who was almost a prisoner.</p>
+				<p>In reply to this argument I wish to point out, first, that the likeness between
+					the two openings, in the particular points just noticed, is immeasurably less
+					striking than the general contrast. The play of Sophocles begins with a dialogue
+					between the old man and Orestes, after which they and Pylades leave the scene.
+					Electra then comes forth and sings her monody. Euripides opens with a speech by
+					the farmer, who next has a dialogue with Electra. They depart. Orestes enters
+					with Pylades, to whom he makes a speech. Presently he sees a slave, as he
+					thinks—<foreign xml:lang="lat">i.e.</foreign> Electra—approaching. He and
+					Pylades draw aside; and Electra then sings her monody. Is it not manifest that,
+					so far, the openings are fundamentally different? But, it will be said, the
+					Parodos, at least, is, in each play, shared between Electra and the Chorus; is
+					not this suspicious? Even here the contrast is stronger than the likeness. The
+					Sophoclean Parodos is a long ode of 129 verses, containing a discussion of
+					Electra's wrongs and hopes, and of the course which she ought to pursue. The
+					Euripidean Parodos consists of only 35 verses. The maidens briefly invite
+					Electra, and she declines.</p>
+				<p>It seems to me, then, that the openings of the two plays entirely fail to
+					support the critic's major premiss, viz., that one of them must have been
+					imitated from the other. But let us assume, for the sake of argument, that
+					such imitation could be proved. Is it true that internal evidence points to
+					Sophocles as the imitator? His Orestes, we are told, has no reason for
+					appearing at the house before he is prepared to enter it. In defending a
+					dramatist on such a point, it suffices, I suppose, to show that the action
+					is natural and probable; we are not required to prove that it is necessary.
+					Orestes and his companions have just arrived, and have hidden the urn
+					somewhere near the house: the time is day-break. Is it strange that they
+					should reconnoitre the ground on which they will soon have to act, or that
+					the old man should point out the chief features of the scene? As to the
+					poet's motive, that is evident. His invention of the double embassy from
+					Phocis was a novelty, and he wished to give a clue to it at the outset,
+					since the spectator, who is thus in the secret, will enjoy the play more.
+					Again, it is said that Sophocles bewrays his model when he composes his
+					Chorus of persons external to the house. A desire to vary from Aeschylus
+					would account for this as easily as a desire to copy Euripides; but why
+					should not the poet's motive have been independent of both? The free-born
+					women of Mycenae are exponents of the public goodwill towards the rightful
+					heir. But how, we are asked, had they become friends of Electra?
+					Chrysothemis and Clytaemnestra tell us, it may be answered, that Electra
+					frequently passed beyond the doors. Lastly, it is objected that the Chorus
+					come to Electra without a definite reason. Is there not reason enough in
+					their purpose of consoling and counselling her,—the purpose which she
+					gratefully acknowledges?</p>
+				<p>Thus, even if the openings of the two plays could justly be regarded as
+					showing a debt of either to the other, still there would be no presumption
+					that Sophocles was the debtor.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Relation of Electra to
+					Clytaemnestra.</note>A further argument is, however, adduced in support of the
+					view which we are discussing. Both Sophocles and Euripides bring Electra into
+					controversy with Clytaemnestra. In the play of Euripides, the tenor of this
+					controversy is such as to mitigate the odiousness of Clytaemnestra, and to
+					emphasise the hardness of Electra. This was what Euripides meant to do. The aim
+					of Sophocles was the opposite, to concentrate our sympathy upon Electra. But,
+					says Prof. v. Wilamowitz, Sophocles has involuntarily given the advantage in
+					dignity and self-command to Clytaemnestra; and this shows that he has
+					(unskilfully) imitated Euripides. Is it true that the Clytaemnestra of Sophocles
+					appears to more advantage than his Electra? Every reader must judge for himself;
+					I should not have said so, nor, indeed, do I find it easy to understand how any
+					one could receive that impression. But, even if this were granted, the inference
+					of an imitation would still be unwarranted, since the controversies in the two
+					plays respectively differ both in topics and in style.</p>
+				<p>Finally, let us consider the more general ground upon which <note
+						anchored="true" place="marg" resp="RCJ">Argument from general
+						probability.</note> it is argued that Sophocles was stimulated to write his <title>
+					Electra</title> by the work of Euripides. The Euripidean <title>Electra</title>
+					is certainly a play which Sophocles would have viewed with repugnance. He would
+					have thought that both the divine and the human persons were degraded. The
+					earlier scenes, with their homely realism, approximate, in fact, to the stamp of
+					the Middle Comedy. The whole treatment is a negation of that ideal art to which
+					Sophocles had devoted his life. It is perfectly conceivable that such a piece
+					should have roused him to make a protest,—to show how the theme could once more
+					be nobly treated, as Aeschylus long ago had treated it, and yet without raising
+					the moral and religious problem of the <title>
+						Choephori.</title> But is such a hypothesis <emph>more</emph> probable than
+					the converse? Suppose that the Sophoclean <title>Electra</title> was the earlier
+					of the two. Is it not equally conceivable that Euripides should have been
+					stirred to protest against the calm condonation of matricide? Might he not have
+					wished to show how the subject could be handled without ignoring, as Sophocles
+					does, this aspect of the vengeance, and also without refraining from criticism
+					on the solution propounded by Aeschylus? This, in my belief, is what Euripides
+					actually did wish to do. But assume for a moment that the other theory is right,
+					and that the Euripidean <title>Electra</title> was the earlier. Then, surely,
+					when Euripides had just been renewing the impression left by Aeschylus,—that
+					matricide, though enjoined by a god, brings a fearful stain,—Sophocles would
+					have chosen a peculiarly unfortunate moment for inviting Athenians to admire the
+					unruffled equanimity of his Orestes.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Conclusion.</note>I cannot, then,
+					see any valid reason for supposing that Euripides preceded Sophocles in treating
+					this subject. On the other hand, the new line taken by Euripides is the more
+					intelligible if he had before him the pieces of both the elder dramatists<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<ref n="Eur. El. 883">Eur. <title>El.</title> 883 f.</ref> (<quote
+							xml:lang="grc">ἥκεις γὰρ οὐκ ἀχρεῖον ἕκπλεθρον δραμὼν | ἀγῶν’ ἐς
+							οἴκους</quote>) seems to glance at <ref n="Soph. El. 680">Soph. <title>
+					El.</title> 680</ref>—763.</note>.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The <title>Electra</title> of
+						Sophocles is one of his later plays.</note>
+				</p>
+			</div>
+			<div type="section" n="20">
+				<p>There are, however, strong grounds of internal coincidence for believing that the <title>
+					Electra</title> is among the later plays of Sophocles. It cannot, on any view,
+					be placed more than a few years before the Euripidean <title>
+						Electra</title>, of which the probable date is 413 B.C. The traits which
+					warrant this conclusion are the <note anchored="true" place="marg"
+						resp="RCJ">Internal evidence.</note>following. (1) The frequency of <quote
+						xml:lang="grc">ἀντιλαβή</quote>, <foreign xml:lang="lat">i.e.</foreign> the
+					partition of an iambic trimeter between two speakers. The ordinary form of such
+					partition is when each person speaks once, so that the trimeter falls into two
+					parts (<emph>a</emph>, <emph>b</emph>). Taking the two latest plays, we find 22
+					such examples in the <title>Philoctetes</title>, and 52 in the <title>Oedipus
+					Coloneus.</title> The <title>Electra</title> ranks between them, with 25. Next
+					comes the <title>Oedipus Tyrannus</title>, with only 10. Further, verse 1502 of <title>
+					Electra</title> is so divided between two persons that it falls into three parts
+					(<emph>a</emph>, <emph>b</emph>, <emph>a</emph>). The other Sophoclean instances
+					of this are confined to the <title>
+						Philoctetes</title> (810, 814, 816)<note anchored="true" place="foot" n="2"
+						resp="RCJ">
+						<ref n="Soph. Phil. 753">
+							<title>Ph.</title> 753</ref> is unique in being similarly divided so
+					that it falls into <emph>four</emph> parts.</note>, and the <title>Oedipus
+					Coloneus</title> (832).</p>
+				<p>(2) Anapaestic verses (1160—1162) are inserted in a series of iambic trimeters.
+					The only parallel for this occurs in the <title>Trachiniae</title> (v. 1081, vv.
+					1085 f.), a piece which may be placed somewhere between 420 and 410 B.C.
+					(Introd. to <title>Trach.</title>, p. xxiii). It was an innovation due to the
+					melodramatic tendency which marked the last two decades of the century. In the
+					earlier practice, a series of iambic trimeters could be broken only by shorter
+					iambic measures, or by mere interjections.</p>
+				<p>(3) The ‘free’ or ‘melic’ anapaests in <ref n="Soph. El. 86">
+						<title>El.</title> 86</ref>—120<note anchored="true" place="foot" n="3"
+						resp="RCJ">Vv. 88 f. are two successive paroemiacs.</note> are of a type
+					which can be strictly matched only in plays of a date later than <foreign
+						xml:lang="lat">circ.</foreign> 420 B.C., such as the <title>Troades</title>,
+					the <title>Ion</title>, and the <title>Iphigeneia in Tauris.</title>
+				</p>
+				<p>(4) The actors have a notably large share in the lyric element of the play. (<emph>
+					a</emph>) Thus the anapaests just mentioned are delivered by Electra as a <quote
+						xml:lang="grc">μονῳδία</quote>. Such a monody can be paralleled only from
+					the later plays of Euripides. It is characteristic of the new music—satirised by
+					Aristophanes in the <title>Frogs</title>—which came into vogue <foreign
+						xml:lang="lat">circ.</foreign> 420 B.C. (<emph>b</emph>) Again, the Parodos
+					of the <title>Electra</title> is in the form of a lyric dialogue (<quote
+						xml:lang="grc">κομμός</quote>) between the heroine and the Chorus. Here,
+					too, it is only in the latest plays that we find parallels. A ‘kommatic’ parodos
+					occurs also in the <title>Oedipus
+						Coloneus.</title> That of the <title>Philoctetes</title> has something of
+					the same general character, although there Neoptolemus replies to the Chorus
+					only in anapaests. (<emph>c</emph>) Another illustration of the same tendency is
+					the lyric duet between Electra and the coryphaeus in vv. 823—870, which may be
+					compared with similar duets in the <title>Philoctetes</title> (<foreign
+						xml:lang="lat">e.g.</foreign> 1170 ff.), and the <title>Oedipus
+						Coloneus</title> (178 ff., 1677 ff.). (<emph>d</emph>) In the <quote
+						xml:lang="grc">μέλος ἀπὸ σκηνῆς</quote> between Electra and Orestes
+					(1232—1287), the Chorus take no part. On the other hand, the songs given to the
+					Chorus alone are of relatively small compass (472—515; 1058—1097; 1384—1397).</p>
+				<p>(5) The Parodos shows different classes of metre (the <quote xml:lang="grc">γένος
+					ἴσον</quote> and the <quote xml:lang="grc">γένος
+						διπλάσιον</quote>) combined within the same strophe; and, at the close, the
+					epode re-echoes them all. This <quote xml:lang="grc">πολυμετρία</quote> is a
+					further sign of a late period<note anchored="true" place="foot" n="1"
+						resp="RCJ">See <title>Metrical Analysis</title>, p. lxxiii. These lyric
+					criteria for the date are searchingly examined by Prof. v. Wilamowitz in <title>
+					Hermes</title>, vol. XVIII. pp. 242 ff.</note>.</p>
+				<p>When all these indications are considered, there seems to be <note
+						anchored="true" place="marg" resp="RCJ">Conclusio</note> at least a very
+					strong probability that the <title>Electra</title> was written not earlier than
+					420 B.C. There is only one point that might seem to favour an earlier date. The
+					long syllables of the trimeter are here resolved more rarely than in any other
+					of the seven extant plays<note anchored="true" place="foot"
+						n="2" resp="RCJ">The statistics are given in G. Wolff's <title>Elektra</title>
+					(3rd ed., revised by L. Bellermann), p. 123, n. 1. The ratio of the number of
+					resolved feet to the whole number of trimeters in each play is stated as
+					follows:— 1. <title>Electra</title>, 1 to 30 1/2. 2. <title>Antigone</title>, 1
+					to 26. 3. <title>Trachiniae</title>, 1 to 18 1/2. 4. <title>Ajax</title>, 1 to
+					18. 5. <title>Oedipus Coloneus</title>, 1 to 18. 6. <title>Oedipus
+							Tyrannus</title>, 1 to 14 1/2. 7. <title>Philoctetes</title>, 1 to 9
+					1/2. The extraordinarily high proportion in the <title>Philoctetes</title> (409
+					B.C.) must be considered as indicative of the poet's latest period, and showing
+					the influence of Euripides. But the danger of inference from a comparison of <emph>
+					lower</emph> ratios is evident. The ratio in the <title>Oedipus
+							Coloneus</title> is lower than in the earlier <title>Tyrannus</title>,
+					and only the same as in the <title>Ajax</title>, which is the oldest play after
+					the <title>Antigone.</title>
+					</note>. But, though a very
+					great <emph>frequency</emph> of such resolution (as in the <title>
+						Philoctetes</title>) has a clear significance, a <emph>negative</emph>
+					application of the test would be, as the statistics show, most unsafe; and, in
+					this instance, all the other internal evidence is on the opposite side. Those,
+					then, who hold (as I do) that the play was produced before the <title>
+						Electra</title> of Euripides (413 B.C.), will conclude that the years 420
+					and 414 B.C. mark the limits of the period to which it may be referred.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Ancient repute of the play.
+						Translation by Atilius.</note>
+				</p>
+			</div>
+			<div type="section" n="21">
+				<p>The <title>Electra</title> of Sophocles was a favourite with Greek and Roman
+					readers, as traces in literature indicate<note anchored="true" place="foot"
+						n="1" resp="RCJ">Cephisodorus (<foreign xml:lang="lat">circ.</foreign> 340
+					B.C.), the pupil of Isocrates, alludes to verse 61 of the <title>Electra</title>
+					(Athen. p. 122 C). Machon of Corinth (<foreign xml:lang="lat">circ.</foreign>
+					270 B.C.), who became eminent at Alexandria as a comic poet, tells a story of
+					which the point turns on the first two verses of the play (Athen. p. 579 B).
+					Dioscorides (<foreign xml:lang="lat">circ.</foreign> 230 B.C.), in a well-known
+					epigram (<title>Anthol. Pal.</title> 7. 37), imagines the tomb of Sophocles
+					surmounted by the figure of an actor, holding in his hand a tragic mask of the
+					type called <quote xml:lang="grc">ἡ κούριμος
+							παρθένος</quote> (Pollux IV. § 139), <foreign xml:lang="lat">i.e.</foreign>,
+					with the hair clipped in sign of mourning. Of this mask, the actor says:— <quote
+							xml:lang="grc">εἴτε σοι Ἀντιγόνην εἰπεῖν
+							φίλον, οὐκ ἂν ἁμάρτοις, εἴτε καὶ Ἠλέκτραν· ἀμφότεραι γὰρ
+							ἄκρον</quote>. Cicero's judgment (<title>De Fin.</title> 1. 2) is cited
+					below. The Electra of Propertius (3. 6. 5 f.) is the Sophoclean:—<title>
+							Electra</title>, <quote xml:lang="lat">salvum cum
+							aspexit Oresten, | cuius falsa tenens fleverat ossa soror</quote> ( <ref
+							n="Soph. El. 1126">Soph. <title>El.</title> 1126</ref> ff.).</note>. It
+					was translated into Latin by a poet named Atilius, who lived probably in the
+					early part of the second century B.C.<note anchored="true" place="foot"
+						n="2" resp="RCJ">Teuffel, <title>Hist. Rom.
+							Lit.</title> vol. 1. § 96, identifies this Atilius with the writer of <foreign
+							xml:lang="lat">palliatae</foreign> in the time of Caecilius.</note> This
+					version, though it is unfavourably judged by Cicero<note
+						anchored="true" place="foot" n="3" resp="RCJ">
+						<title>De Fin.</title> 1. 2 <quote xml:lang="lat">A quibus <note
+								anchored="true" place="inline" resp="RCJ" xml:lang="eng">(viz.,
+								the depreciators of Latin literature)</note> tantum dissentio ut,
+					cum Sophocles vel optime scripserit Electram, tamen male conversam Atilii mihi
+					legendam putem.</quote> In the same passage Atilius is described (by a critic
+					whom Cicero quotes) as a ‘ferreus scriptor,’ and in <title>Epp. ad
+							Att.</title> 14. 20, § 3, as ‘poeta durissimus.’ Cicero's brother
+					Quintus wrote an <title>Electra</title>—one of four tragedies which he finished
+					in sixteen days (<title>Ad Qu. Fr.</title> 3. 5, § 7).</note>, seems to have
+					acquired some popularity, since, according to Suetonius, it was one of two
+					pieces from which the verses sung at the funeral of Julius Caesar were
+					adapted,—the other being the <title>Armorum Iudicium</title> of Pacuvius<note
+						anchored="true" place="foot" n="4" resp="RCJ">
+						<title>Iul. Caes.</title> 84.</note>. </p>
+			</div>
+			<div type="section" n="22">
+				<p>Two modern plays on the subject,—the <title>Oreste</title> of <note
+						anchored="true" place="marg" resp="RCJ">The <title>Oreste</title> of
+					Voltaire.</note> Voltaire and the <title>Oreste</title> of Alfieri,—so directly
+					invite a comparison with the Greek dramatists, and especially with Sophocles,
+					that they claim a brief notice here. Each is, in its own way, the work of one
+					who has endeavoured to seize the spirit of antiquity; who appreciates the charms
+					of the Greek treatment; and who wishes to preserve the beauty of Greek outline,
+					while telling the story in a new manner, such as he deems more effective for the
+					modern theatre. Each play thus becomes a suggestive criticism on the antique.</p>
+				<p>Voltaire was not the first French dramatist who had handled this theme.
+					Crébillon, whose <title xml:lang="fra">Électre</title> appeared in 1708, had
+					followed the precedent set in the <title xml:lang="fra">Œdipe</title> of
+					Corneille (1657), by interweaving love-affairs with the tragic action: the son
+					of Aegisthus has won the heart of Electra, and his daughter is beloved by
+					Orestes. Longepierre, whose <title xml:lang="fra">Électre</title> was acted in
+					1719, failed for a different reason; he preserved the classical simplicity, but
+					lacked knowledge of the stage and charm of style. Voltaire's <title>
+						Oreste</title> was produced in 1750. In the letter of dedication prefixed to
+					it, he says that his aim is to restore a purer taste; and he thus describes the
+					relation of his work to the Sophoclean. ‘I have not copied the <title>
+						Electra</title> of Sophocles,— far from it; but I have reproduced, as well
+					as I could, its spirit and its substance<note anchored="true" place="foot"
+						n="1" resp="RCJ">‘<quote xml:lang="fra">Je n'ai point copié l'<title>
+								Électre</title> de Sophocle, il s'en faut beaucoup; j'en ai pris,
+					autant que j'ai pu, tout l'esprit et toute la substance.</quote>’ <title
+							xml:lang="fra">Épître
+							à la Duchesse du
+							Maine</title>, in Beuchot's <title xml:lang="fra">Œuvres de
+							Voltaire</title>, vol. VI. p. 157.</note>.’ This is true; it is only in
+					general outline that his plot resembles the other; the details are his own. The
+					scene is laid near the tomb of Agamemnon, on the shore of the Argolic Gulf.
+					Thither, from Argos, come Aegisthus and Clytaemnestra, to hold a festival<note
+						anchored="true" place="foot" n="2" resp="RCJ">A touch borrowed from <ref
+							n="Soph. El. 278">Soph. <title>El.</title> 278</ref> ff.</note>;
+					bringing with them Electra, their slave, with fetters on her wrists. On the same
+					day, Orestes and Pylades are driven ashore at a neighbouring spot, and fall in
+					with Pammène<note anchored="true" place="foot" n="3" resp="RCJ">As
+						Pammène answers to the Sophoclean
+						Paedagogus, the Sophoclean Chrysothemis has a counterpart in Iphise, who
+						has been allowed to dwell apart, in an old palace near the tomb.</note>, a
+					faithful old retainer of the house, who becomes their accomplice. The disguised
+					Orestes, with Pylades, presents himself to Aegisthus, bearing a funeral urn. It
+					contains, he says, the ashes of Orestes, whom he has slain at Epidaurus. There
+					are, in fact, human ashes in the urn; but they are those of Plistène, the son of
+					Aegisthus, whom his father had sent to kill Orestes. Presently Aegisthus learns
+					by a message that his son is dead. He promptly arrests the two young strangers,
+					and Pammène also. Meanwhile Orestes has met Electra at the tomb, and, overcome
+					by affection and pity, has made himself known to her; though the oracle of
+					Delphi had strictly forbidden him to do so. Electra now appeals to
+					Clytaemnestra—tells her the secret—and persuades her to intercede with
+					Aegisthus, but without divulging her son's identity. Clytaemnestra complies.
+					Aegisthus—now certain that Orestes is in his hands—spurns her prayer, and sends
+					the two youths to instant death. They are saved by a popular rising at Argos.
+					The people acclaim Orestes as their king. He then takes vengeance. Electra hears
+					Clytaemnestra's cry of supplication (behind the scenes), and, believing that her
+					mother is pleading for Aegisthus, cries to her brother, ‘Strike!’<note
+						anchored="true"
+						place="foot" n="1" resp="RCJ">
+						<ref>Act V, Sc. 8.</ref> The trait is borrowed from <ref
+							n="Soph. El. 1415">Soph. <title>El.</title> 1415</ref>, <quote
+							xml:lang="grc">ΚΛ. ὤμοι πέπληγμαι. ΗΛ. παῖσον, εἰ σθένεις,
+							διπλῆν</quote>: but the new setting given to it by the French dramatist
+					is admirably ingenious.</note> The next moment Clytaemnestra is heard crying,
+					‘My son, I die by thy hand!’ Electra is overwhelmed with horror; and the play
+					ends with the anguish of Orestes, who prepares to go forth into exile.</p>
+				<p>The feature which Voltaire himself regarded as most distinctive of his work is
+					the character of Clytaemnestra. He has caught up the hint given by Sophocles
+					(vv. 766 ff.), and carried further by Euripides, that the murderess of Agamemnon
+					may remain capable of tenderness for Orestes and Electra. The Clytaemnestra of
+					Voltaire can be touched by the entreaties of her children, though she replies to
+					their taunts with anger and scorn<note
+						anchored="true" place="foot" n="2" resp="RCJ">
+						<title xml:lang="fra">Épître</title> (prefixed to the <title
+							xml:lang="fra">Oreste</title>), p. 157. ‘<quote xml:lang="fra">Rien
+							n'est en effet plus dans la nature qu'une femme criminelle envers
+							son époux, et qui se laisse attendrir par ses enfants, qui reçoit la
+					pitié dans son cœur altier et farouche, qui s'irrite, qui reprend la
+							dureté de son caractère quand on lui fait des reproches trop
+							violents, et qui s'apaise ensuite par les soumissions et par les
+							larmes.</quote>’</note>. ‘The germ of this personage,’ he says, ‘was in
+					Sophocles and Euripides, and I have developed it.’ In doing so, he has gone a
+					little too far; the ‘cri du sang’ is somewhat too obtrusive and theatrical.
+					Greek Tragedy, with its severe sanity, would have felt that there was
+					extravagance in making Clytaemnestra intercede with Aegisthus for the life of
+					one who could return only as an avenger. Nevertheless, the French dramatist has
+					derived many touches of real beauty and pathos from this motive<note
+						anchored="true" place="foot" n="1" resp="RCJ">As in the scene between
+					Clytaemnestra, Electra, and Iphise (the Chrysothemis of the play), <ref>Act 1,
+					Sc. 3</ref>; and in the scenes where Clytaemnestra pleads with Aegisthus for
+					Orestes (<ref>Act 1, Sc.
+							5</ref>; <ref>Act V, Sc. 3</ref>).</note>. His other chief innovation
+					consists in rendering the course of the stratagem less smooth. Orestes and
+					Pylades are placed in deadly peril. Our hopes and fears alternate almost to the
+					end. The demand for this kind of interest is modern. An old Greek audience,
+					familiar beforehand with the main lines of the story, could feel no anxiety for
+					the safety of the hero. Voltaire's treatment of the urn-scene is noteworthy. He
+					saw that here it was impossible to reproduce the Sophoclean pathos; that was
+					only for people who had this custom in respect to the relics of the dead,—a
+					custom surrounded with sacred and tender associations. Voltaire substituted an
+					interest of a different kind, —the thrill felt by the spectators who know that
+					the urn presented to Aegisthus contains the ashes of his son<note
+						anchored="true" place="foot"
+						n="2" resp="RCJ">‘Il a fallu suppléer au pathétique qu'ils [<foreign
+							xml:lang="lat">i.e.</foreign> les anciens] y trouvaient par la terreur
+					que doit inspirer la vue des cendres de Plistène, première victime de la
+					vengeance d'Oreste.’ This remark occurs in an essay published in the same year
+					as Voltaire's play (1750),—<title xml:lang="fra">Dissertation sur
+							les principales Tragédies anciennes
+							et modernes, qui ont paru sur le sujet d'Électre, et en particulier
+							sur celle de Sophocle.</title> It appeared under the name of M.
+					Dumolard, a critic of the day; but it clearly reveals the mind, if not the pen,
+					of Voltaire, among whose works it has long been included: see Beuchot, <title
+							xml:lang="fra">Œuvres de Voltaire</title>, vol. VI. p. 255. The words
+					quoted above are on p. 279.</note>. The device is ingenious, but reduces the
+					incident to a lower level; it is no longer a dramatic beauty, but rather a
+					stroke of theatrical effect. A more serious departure from the ancient model is
+					involved in his attempt to vindicate the gods. He refuses to conceive that they
+					could have commanded an <emph>innocent</emph> man to slay his mother, however
+					guilty she might be. In his version, they ultimately doom Orestes to do so; but
+					only as a punishment. And for what? For having failed, through love and pity, to
+					persevere in obedience to their arbitrary command against revealing him self to
+					his sister<note
+						anchored="true" place="foot" n="1" resp="RCJ">
+						<title>Dissertation</title>, etc. p. 281: ‘<quote xml:lang="fra">Oreste est
+					certainement plus à plaindre dans l'auteur français que dans l'athénien, <emph>et
+					la divinité y est plus ménagée.</emph>
+						</quote>’ The
+					Orestes of Voltaire is indeed to be pitied; but precisely because the divine
+					caprice is so frightful.</note>. This surely does not exhibit their justice in a
+					more favourable light. So perilous is it to tamper with Greek Tragedy on this
+					side,—as Euripides, indeed, was the first to show. The inscrutable destiny
+					interwoven with the legend is a thread which cannot be removed without marring
+					the whole texture.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">The <title>Oreste</title> of
+						Alfieri.</note>
+				</p>
+			</div>
+			<div type="section" n="23">
+				<p>A lesson of a different kind is taught by the <title>Oreste</title> of Alfieri<note
+						anchored="true" place="foot" n="2" resp="RCJ">It was
+						published in 1783, when the poet was thirty-four years of age.</note>. More
+					rigorous than the ancients themselves in limiting the number of the characters,
+					he employs only five persons,— Aegisthus, Orestes, Pylades, Clytaemnestra, and
+					Electra. Sophocles is the classical poet who has chiefly influenced him in
+					detail; but he owes still more to Voltaire. His Clytaemnestra is a woman broken
+					down by misery and remorse; despised by Aegisthus; upbraided by Electra;
+					vacillating between hysterical tenderness for her children and returns of the
+					old passion for her paramour. Orestes arrives, with Pylades, and is recognised
+					by Electra merely through the emotions which he manifests at the tomb of
+					Agamemnon. The youths then announce, first to Clytaemnestra and afterwards to
+					Aegisthus, the news that Orestes has been killed in a Cretan chariot-race.
+					Aegisthus detects the fiction owing to the folly of Orestes, who, throughout the
+					play, is incapable of self-control; he is perpetually reproved, or helped out of
+					difficulties, by the more prudent Pylades. Aegisthus orders the young men to be
+					executed, and dooms Electra to the same fate. They are saved, as with Voltaire,
+					by an insurrection of the Argives. Orestes then takes the righteous vengeance.
+					He slays Aegisthus, and at the same moment, in his blind fury, unconsciously
+					deals a death-wound to Clytaemnestra, who is endeavouring to protect the tyrant.
+					The play closes with his incipient madness, when he learns from Electra and
+					Pylades that he has shed a mother's blood.</p>
+				<p>Alfieri has a genuine, though limited, sympathy with the classical spirit, and,
+					unlike most of his modern predecessors in the treatment of such themes, avoids
+					everything that is positively incongruous with that spirit. It is the more
+					instructive to observe the reason why he fails, in this <title>Oreste</title>,
+					to be truly classical. An Attic tragedy, though severely simple in outline, owes
+					much of its artistic charm to those minor incidents which diversify the plot,
+					and to those secondary persons who serve as foils or contrasts to the chief
+					actors. The part of the Nurse in the <title>Choephori</title> is a small one,
+					and yet how much the play would lose if it were omitted! In the <title>
+						Electra</title> of Sophocles, the Old Man is not merely a link in a chain of
+					agency, but a source of dramatic interest: and the portraiture of the heroine
+					herself is the more vivid because Chrysothemis is placed at her side. It is this
+					variety and relief, this skilful use of undertones, that we miss in the work of
+					the Italian dramatist. He has cut out everything that is not indispensable.
+					Without deviation or pause, the action pursues its direct, but somewhat
+					monotonous course<note anchored="true" place="foot"
+						n="1" resp="RCJ">Charles Lloyd, in the preface to his English translation of
+					Alfieri's Tragedies (vol. I. p. xxvii, Lond. 1815), quotes some remarks of
+					Madame de Stael (in <title>Corinne</title>): —‘<quote
+							xml:lang="fra">Alfieri, par un hasard singulier, était, pour ainsi dire,
+					transplanté de l'antiquité dans les temps modernes; il était né pour agir, et il
+					n'a pu qu'écrire... Il a voulu donner à ses tragédies <emph>le
+								caractère le
+								plus austère.</emph> Il en a retranché les confidens, les coups de
+					théâtre, tout, hors l'intérêt du dialogue.</quote>’ ‘Austerity’ is indeed the
+					word which best describes the general stamp of his tragedies. He represents a
+					reaction from the extravagance of Italian drama in the seventeenth century; but
+					his endeavour after classical form is that of a mind which had more force and
+					passion than sensibility or imagination.</note>. There are occasional beauties<note
+						anchored="true" place="foot" n="2"
+						resp="RCJ">Conspicuous among these is the scene at the tomb, where Electra
+					divines the identity of Orestes by overhearing his outburst of grief and vows of
+					vengeance, while Pylades (fearing a recognition) pretends to her that his friend
+					is of unsound mind (<ref>Act II, Sc. 2</ref>). A few verses, which immediately
+					precede the discovery, will serve to give some idea of the style:— ELETTRA. Gli
+					sguardi Fissi ei tien sulla tomba, immoti, ardenti; È terribile in atto...—O tu,
+					chi sei, Che generoso ardisci?... ORESTE. A me la cura Lasciane, a me. PILADE.
+					Già più non t' ode. O donna, Scusa i trasporti insani: ai detti suoi Non badar
+					punto: è fuor di se.—Scoprirti Vuoi dunque a forza? ORESTE. Immergerò; il mio
+					brando Nel traditor tante fiate e tante, Quante versasti dalla orribil piaga
+					Stille di sangue. ELETTRA. Ei non vaneggia. Un padre... ORESTE. Sì, mi fu tolto
+					un padre. Oh rabbia! E inulto Rimane ancora? ELETTRA. E chi sarai tu dunque, Se
+					Oreste non sei tu? PILADE. Che ascolto? ORESTE. Oreste! Chi, chi mi appella?
+					PILADE. Or sei perduto. ELETTRA. Elettra Ti appella; Elettra io son, che al sen
+					ti stringo Fra le mie braccia.</note>, but the general effect is not that of a
+					Greek drama; it is rather that of an abridgement from such a work. Thus both
+					Voltaire and Alfieri—the two moderns who, in treating the story of Electra, have
+					been most closely studious of the classical models—have, in their different
+					ways, something to teach us with regard to those qualities which distinguish the
+					Greek masterpieces<note anchored="true" place="foot" n="1" resp="RCJ">M. Patin (<title
+							xml:lang="fra">Études sur les Tragiques grecs</title>, vol. II. pp. 382
+					ff.) notices, among other plays on this subject, two which present certain
+					points of interest. One is the <title>Clytemnestre</title> of SoumetAlex. ,
+					produced in 1822, when the part of Orestes was acted by Talma. The influence of
+					the Greek dramatists is mingled with that of Alfieri. Unlike his modern
+					predecessors, the author makes use of Clytaemnestra's dream, to which he gives a
+					new and striking form. From the <title>
+							Orestie</title> of Dumas Alex. (produced in 1856) is cited a beautiful
+					lament of Electra (<ref>Act II, Sc. 6</ref>), an echo of several passages in
+					Sophocles.</note>.</p>
+				<p>
+					<note anchored="true" place="marg" resp="RCJ">Traces in art of the
+						Aeschylean and Sophoclean plays.</note>
+				</p>
+			</div>
+			<div type="section" n="24">
+				<p>We have already seen how the lyric <title>Oresteia</title> of Stesichorus is
+					related to certain works of Greek art. It may be interesting, in conclusion, to
+					observe how far the dramatic versions of the story can be traced in that
+					province. As might have been expected, the Aeschylean trilogy has been the most
+					influential. Thus the <title>Choephori</title> has helped to inspire a
+					vase-painting<note anchored="true" place="foot" n="1" resp="RCJ">The vase is
+					from Lower Italy, and is now at Naples: Rochette, <title>Mon.
+							inédit.</title> pl. 34. It is reproduced in Baumeister's <title>
+					Denkmäler</title>, p. 1111, with Overbeck's interpretation of it.</note> in
+					which Electra, Orestes and Pylades, with some other figures, are seen at the
+					grave of Agamemnon,—the god Hermes (whom Orestes invokes at the beginning of
+					that play) being also present. The passage of the <title>Eumenides</title> which
+					alludes to the purification of Orestes by the blood of swine (<quote
+						xml:lang="grc">καθαρμοὶ χοιροκτόνοι</quote>, v. 283) is illustrated by
+					another vase<note anchored="true" place="foot" n="2" resp="RCJ">From Apulia,
+					published in <title>Mon. Inst.</title> IV. 48: Baumeister, <title>Denkm.</title>
+					p. 1117.</note>; Apollo, at Delphi, is holding a slain sucking-pig over the head
+					of Orestes, while the ghost of Clytaemnestra seeks to arouse the slumbering
+					Furies. In a third vase-picture<note anchored="true" place="foot"
+						n="3" resp="RCJ">Millin, <title>Peintures de Vases</title>, II. 68:
+					Baumeister, <title>Denkm.</title> p. 1118.</note>, also indebted to the <title>
+					Eumenides</title> (187—223), we see the Furies now awake, and about to resume
+					their chase of Orestes; Apollo, at his side, sternly reproves them; while the
+					benign figure of Athena, to whom Orestes looks up, typifies his approaching
+					acquittal at Athens. Lastly, the crisis in the trial on the hill of Ares, when
+					the goddess places her pebble in the urn, is depicted on a vase<note
+						anchored="true" place="foot" n="4" resp="RCJ">Found at Kertsch: Baumeister, <title>
+					Denkm.</title> p. 1119, where Stephani's explanation of it is given.</note> of
+					the later Roman age. The <title>Electra</title> of Sophocles has suggested the
+					subject represented on an Apulian vase<note
+						anchored="true" place="foot" n="5" resp="RCJ">Reproduced by Prof. Michaelis
+					A. at the head of the Preface to his revision of Otto Jahn's <title>Sophoclis
+					Electra</title> (3rd ed., p. iii, Bonn, 1892). He refers (p. vii) to the
+					publications and interpretations of the vase by <ref>Laborde (<title>Vases
+					Lamberg</title> I, pl. 8)</ref>, <ref>J. de Witte and C. Lenormant (<title
+								xml:lang="fra">Élite céramogr.</title> II. pl. 79)</ref>, and <ref>Overbeck
+					(<title xml:lang="deu">Bildwerke</title> pl. 29, 61)</ref>.</note>; Orestes,
+					wearing a chlamys, and carrying a spear in his left hand, shows a funeral urn to
+					Electra; Pylades, also with chlamys and spear, follows him. The moment is that
+					at which the two youths, disguised as Phocian messengers from Strophius, arrive
+					before the gates of the palace, and inform Electra of their errand (1113 f.):— </p>
+				<p>
+					<quote xml:lang="grc">φέροντες αὐτοῦ σμικρὰ λείψαν’ ἐν βραχεῖ τεύχει
+						θανόντος, ὡς ὁρᾷς, κομίζομεν</quote>.</p>
+				<p>A marble group<note anchored="true" place="foot" n="6" resp="RCJ">Reproduced in
+					Baumeister's <title>Denkm.</title> p. 1192; and by Michaelis in Jahn's <title>
+					Electra</title>, p. 31.</note>, now in the Museum at Naples, represents a youth
+					standing at the right side of a maiden whose outstretched right arm encircles
+					his neck, the hand resting on his right shoulder. This work, remarkable for a
+					grave and chastened beauty, is suggestive of an elder sister with her brother;
+					and, according to a probable interpretation<note
+						anchored="true" place="foot" n="1" resp="RCJ">This view is accepted by Prof.
+					Michaelis (<foreign xml:lang="lat">op.
+							cit.</foreign> p. vii). According to others, the persons are Merope and
+					her son Cresphontes (from the <title>Cresphontes</title> of Euripides); or
+					Deianeira exhorting her son Hyllus to go in search of Heracles ( <ref
+							n="Soph. Trach. 82">Soph. <title>Tr.</title> 82</ref> ff.); or Penelope
+					and Telemachus. The group is the work of Stephanus, a pupil of Menelaüs, himself
+					the pupil of Pasiteles, a sculptor and versatile artist of Lower Italy, who
+					lived in the earlier half of the first century B.C. See Dr C. Waldstein's
+					article on Pasiteles in Baumeister's <title>Denkmäler</title>, p. 1190.</note>,
+					the persons are Electra and Orestes. We are reminded of the sequel to the
+					recognition in the play of Sophocles, where the sister says, <quote
+						xml:lang="grc">ἔχω δε
+						χερσίν</quote>; and Orestes answers, <quote xml:lang="grc">ὡς τὰ λοίπ’
+						ἔχοις ἀεί</quote> (v. 1226); though the moment imagined by the sculptor is
+					one when the first transport of joy has subsided into a calmer happiness. It
+					remains to notice a slight but significant testimony to Sophoclean influence on
+					the treatment of this subject in the art of the Imperial age. Lucian describes a
+					picture in which Orestes and Pylades are slaying Aegisthus, while Clytaemnestra,
+					already slain, is seen on a couch<note anchored="true"
+						place="foot" n="2" resp="RCJ">Lucian <quote xml:lang="grc">Περὶ τοῦ
+							οἴκου</quote>, § 23.</note>. He commends the skill which fixes attention
+					on the doom of a wicked man, but leaves in the background the vengeance taken on
+					a mother by a son<note anchored="true" place="foot" n="3" resp="RCJ">
+						<quote xml:lang="grc">
+							<title>ιβ.</title>σεμνὸν δέ τι ὁ γραφεὺς ἐπενόησεν, τὸ μὲν ἀσεβὲς τῆς
+					ἐπιχειρήσεως δείξας μόνον καὶ ὡς ἤδη πεπραγμένον παραδραμών, ἐμβραδύνοντας δὲ
+					τοὺς νεανίσκους ἐργασάμενος τῷ τοῦ μοιχοῦ φόνῳ</quote>.</note>. Now, among the
+					extant literary sources for the story, the <title>Electra</title> of Sophocles
+					is the only one in which the death of Clytaemnestra precedes that of Aegisthus<note
+						anchored="true" place="foot" n="4" resp="RCJ">With regard to the authority
+					followed by the painter, Lucian remarks, <quote
+							xml:lang="grc">τὸ ἀρχέτυπον ὁ
+							γραφεὺς παρ’ Εὐριπίδου ἢ Σοφοκλέους δοκεῖ μοι λαβεῖν</quote>, forgetting
+					that no situation even distantly similar occurs in the play of the younger
+					dramatist. Indeed, so far as I can discover, the Euripidean <title>
+							Electra</title> is nowhere traceable in ancient art, to which it offered
+					no specially suitable material. It will be observed that the picture described
+					above does not agree in detail with the closing scene in the play of Sophocles;
+					it is the order of the retributive acts, and the prominence given to them
+					respectively, which unmistakably shows his influence.</note>; and the effect for
+					which Lucian gives credit to the painter is the same which is obtained, in a
+					subtler form, by the dramatic perspective of the poet.</p>
+			</div>
+
+		</body>
+	</text>
+</TEI>

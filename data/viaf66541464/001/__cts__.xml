@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    urn="urn:cts:greekLit:viaf66541464.viaf001" xml:lang="eng"
+    groupUrn="urn:cts:greekLit:viaf66541464">
+    <ti:title xml:lang="eng">An Intermediate Greek-English Lexicon</ti:title>
+
+    <ti:edition xml:lang="eng" workUrn="urn:cts:greekLit:viaf66541464.viaf001"
+        urn="urn:cts:greekLit:viaf66541464.viaf001.perseus-eng1">
+        <ti:label xml:lang="eng">An Intermediate Greek-English Lexicon</ti:label>
+        <ti:description>An Intermediate Greek-English Lexicon. Liddell, Henry George; Scott, Robert, editors. Oxford: Clarendon Press, 1889.</ti:description>
+    </ti:edition>
+</ti:work>

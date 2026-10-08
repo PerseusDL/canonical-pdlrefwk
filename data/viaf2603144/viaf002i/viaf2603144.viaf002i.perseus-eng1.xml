@@ -1,0 +1,1948 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title>Introduction to Commentary on Sophocles: Oedipus at Colonus</title>
+				<author>Sir Richard C. Jebb</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>Jeffrey Rydberg-Cox</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Digital Library Project</authority>
+				<date cert="high" type="release" when="2000-08-16">Perseus 3.0</date>
+				<idno type="filename">viaf2603144.viaf002i.perseus-eng1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+						under a Creative Commons Attribution-ShareAlike 4.0 International
+						License</licence>
+				</availability>
+			</publicationStmt>
+			<!-- &Perseus.publish; -->
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Sophocles: The Plays and Fragments</title>
+						<title type="subtitle" xml:lang="mul">The Oedipus Coloneus</title>
+						<author>Richard Claverhouse Jebb</author>
+						<imprint>
+							<pubPlace>Cambridge</pubPlace>
+							<publisher>Cambridge University Press</publisher>
+							<date>1899</date>
+						</imprint>
+						<biblScope unit="part">2</biblScope>
+					</monogr>
+					<ref
+						target="https://archive.org/details/sophoclesplaysfr0000unse_k8j6/page/10/mode/2up">The
+						Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+)"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"
+					n="subsection">
+					<p>This pointer extracts section and subsection.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+					n="section">
+					<p>This pointer extracts section.</p>
+				</cRefPattern>
+			</refsDecl>
+			<refsDecl xml:id="CTS" n="CTS">
+				<citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0"
+					match="/tei:TEI/tei:text/tei:body" use="@xml:base">
+					<citeStructure unit="section" delim=":" match="tei:div[@type='section']"
+						use="@n">
+						<citeStructure unit="subsection" delim="."
+							match="tei:div[@type='subsection']" use="@n" />
+					</citeStructure>
+				</citeStructure>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+				<language ident="deu">German</language>
+				<language ident="fr">French</language>
+				<language ident="ita">Italian</language>
+				<language ident="meter">quantitative meter symbols</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2026-09-16" who="Alison Babeu">Final review and updating of header information</change>
+			<change when="2026-07-21" who="Charles Pletcher">Added citeStructure and other TEI changes</change>
+			<change when="2025-03-24" who="Alison Babeu">Created separate file for intro</change>
+			<change when="2025-03-10" who="Alison Babeu">Updated header metadata</change>
+			<change when="2011-12-16" who="lcerrato">Revision 1.6 fixed Aristotle bibls</change>
+			<change when="2011-10-04" who="lcerrato">Revision 1.5 fixing bad bibl refs mainly
+				apollodorus</change>
+			<change when="2011-09-02" who="lcerrato">Revision 1.4 fixed empty bibl tags</change>
+			<change when="2010-09-07" who="rsingh04">Revision 1.3 fixed some incorrect Strabo bibls</change>
+			<change when="2010-06-16" who="lcerrato">Revision 1.2 fixed bibls for Plut. Mor. to
+				correct work title</change>
+			<change when="2009-12-08" who="rsingh04">Revision 1.1 moved more xml files around based
+				on copyright status</change>
+			<change when="2009-07-30" who="student">Revision 1.19 fixed Aristot. Met. reference - zr</change>
+			<change when="2009-07-29" who="lcerrato">Revision 1.18 fixed references to Aristot. Pol.</change>
+			<change when="2009-07-24" who="student">Revision 1.17 fixed bibl errors - zr</change>
+			<change when="2009-07-02" who="lcerrato">Revision 1.16 fixed references to Aristot. Pol.
+				up through book 4</change>
+			<change when="2009-06-24" who="student">Revision 1.15 fixed Ter. Hec. and Ph. references
+				- zr</change>
+			<change when="2009-06-23" who="student">Revision 1.14 fixed Ter. Ad. references - zr</change>
+			<change when="2009-06-19" who="rsingh04">Revision 1.13 removed ?bibl? tags</change>
+			<change when="2009-06-19" who="lcerrato">Revision 1.12 fixed bad bibls</change>
+			<change when="2009-06-12" who="lcerrato">Revision 1.11 fixed bad bibls</change>
+			<change when="2009-06-03" who="lcerrato">Revision 1.10 fixed bad bibls</change>
+			<change when="2009-05-19" who="lcerrato">Revision 1.9 fixed bad bibls</change>
+			<change when="2009-04-17" who="lcerrato">Revision 1.8 fixing bad bibls</change>
+			<change when="2009-04-03" who="lcerrato">Revision 1.7 fixing bad bibl refs</change>
+			<change when="2009-03-05" who="lcerrato">Revision 1.6 fixing bad bibls</change>
+			<change when="2009-01-07" who="lcerrato">Revision 1.5 fixed bibl refs to Bacchylides</change>
+			<change when="2008-11-19" who="lcerrato">Revision 1.4 fixed bad refs to Aristot. Nic.
+				Eth. and Solon</change>
+			<change when="2008-11-14" who="lcerrato">Revision 1.3 fixed author names for consistent
+				sorting</change>
+			<change when="2005-08-01" who="packel">Revision 1.2 removed stray item tags</change>
+			<change when="2005-07-25" who="packel">Revision 1.1 Converted to XML</change>
+			<change when="2003-07-01" who="yorkc">Revision 1.40 Updated texts to TEI P4 and Perseus
+				P4 extensions; minor cleanup (esp. character encodings and typos.)</change>
+			<change when="2002-08-06" who="amahoney">Revision 1.39 fix references to Theocritus</change>
+			<change when="2002-07-23" who="amahoney">Revision 1.38 ensure refs to Callimachus and
+				Theophrastus (Characters) are correct</change>
+			<change when="2002-06-27" who="amahoney">Revision 1.37 don't use braces for
+				second-hand-in-L</change>
+			<change when="2002-03-25" who="amahoney">Revision 1.36 more places for meter markup</change>
+			<change when="2001-09-27" who="amahoney">Revision 1.35 use new metrical markup</change>
+			<change when="2001-02-21" who="amahoney">Revision 1.34 mark more cits (which make better
+				reverse links)</change>
+			<change when="2001-02-20" who="amahoney">Revision 1.33 put proper bibl refs for
+				Shakespeare</change>
+			<change when="2000-11-13" who="amahoney">Revision 1.32 add correctness indicator</change>
+			<change when="2000-09-19" who="cwulfman">Revision 1.31 changed to bibls to test
+				shakespeare abbreviations.</change>
+			<change when="2000-07-21" who="amahoney">Revision 1.29 run citation fisher</change>
+			<change when="2000-04-14" who="amahoney">Revision 1.29 more cleanup: in particular,
+				lemmata joined to previous Greek passages</change>
+			<change when="2000-04-03" who="amahoney">Revision 1.28 make Jebb, not Sophocles, the
+				author of the commentary</change>
+			<change when="2000-03-27" who="amahoney">Revision 1.27 oops, forgot to list a funder;
+				not sure who's really paying for this, so list the agency that's paying for *me* as
+				a first cut</change>
+			<change when="2000-03-27" who="amahoney">Revision 1.26 finish cleaning up line-groups</change>
+			<change when="2000-03-27" who="amahoney">Revision 1.25 finish marking broken lemmata</change>
+			<change when="2000-03-24" who="amahoney">Revision 1.24 more general cleanup</change>
+			<change when="2000-03-11" who="amahoney">Revision 1.23 more on badly marked quoted lines
+				of verse</change>
+			<change when="2000-03-03" who="amahoney">Revision 1.22 finish fixing bogus lemma tags</change>
+			<change when="2000-03-01" who="amahoney">Revision 1.21 most of the spurious lemma tags
+				are now gone</change>
+			<change when="2000-03-01" who="amahoney">Revision 1.20 few changes, just making sure the
+				right version is stashed since my machine is flaky again this afternoon</change>
+			<change when="2000-02-28" who="amahoney">Revision 1.19 refs to Demosthenes and Aeschines</change>
+			<change when="2000-02-25" who="amahoney">Revision 1.18 fix bad line number</change>
+			<change when="2000-02-23" who="amahoney">Revision 1.17 fix refs to Philoctetes,
+				additional cleanup</change>
+			<change when="2000-02-18" who="amahoney">Revision 1.16 first pass on getting cit tags
+				around all quotes</change>
+			<change when="2000-02-04" who="amahoney">Revision 1.15 more on clean-up</change>
+			<change when="2000-01-26" who="amahoney">Revision 1.14 more on bad lemma tags</change>
+			<change when="2000-01-21" who="amahoney">Revision 1.13 still plugging at mis-identified
+				lemmata</change>
+			<change when="2000-01-20" who="amahoney">Revision 1.12 more on wrong lemma tags</change>
+			<change when="2000-01-19" who="amahoney">Revision 1.11 finish the mis-coded apostrophes</change>
+			<change when="2000-01-18" who="amahoney">Revision 1.10 more on emphasis marked as
+				lemmata, more on apostrophes marked as breathings</change>
+			<change when="2000-01-04" who="amahoney">Revision 1.9 keep plugging at mis-identified
+				lemmata</change>
+			<change when="1999-12-22" who="amahoney">Revision 1.8 more proofreading</change>
+			<change when="1999-12-21" who="amahoney">Revision 1.7 more on bad lemma tags, more bibl
+				refs</change>
+			<change when="1999-12-14" who="amahoney">Revision 1.6 fill in references to the
+				commentary (of the form "see on N" or "cp. on N"), refine identification of lemmata
+				and line numbers</change>
+			<change when="1999-12-10" who="amahoney">Revision 1.5 continue proofing and getting refs
+				to other authors</change>
+			<change when="1999-12-09" who="amahoney">Revision 1.4 references to more prose authors,
+				rest of div2s, more proofing</change>
+			<change when="1999-12-07" who="amahoney">Revision 1.3 finish tidying up introduction,
+				use commLine for divisions of commentary</change>
+			<change when="1996-12-03" who="amahoney">Revision 1.2 manual fixups for the things that
+				automation wouldn't get: broken characters, language of quotes, etc.</change>
+			<change when="1996-12-03" who="amahoney">Revision 1.1 initial markup, from raw data
+				entry file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text xml:lang="eng">
+		<body xml:base="urn:cts:greekLit:viaf2603144.viaf002i.perseus-eng1" xml:lang="eng">
+			<div n="introduction" type="section">
+				<div xml:id="cis1" n="1" type="subsection">
+					<p>At the close of the <title>Oedipus Tyrannus</title> the situation is <note
+							anchored="true" place="marg" resp="RCJ"> Situation at the end of the <title>
+						Tyrannus.</title>
+						</note>briefly this. By the fact of
+						the guilt which has been brought home to him Oedipus is tacitly considered
+						to have forfeited the throne. His two sons being still young boys, their
+						maternal uncle, Creon, succeeds to the direction of affairs. The selfblinded
+						Oedipus, in his first agony of horror and despair, beseeches Creon to send
+						him away from Thebes. Let him no longer pollute it by his presence: let him
+						perish in the wilds of Cithaeron, as his parents would have had it. Creon
+						replies that he cannot assume the responsibility of acceding to the wish of
+						Oedipus: the oracle at Delphi must be consulted. If Apollo says that Oedipus
+						is to be sent away from Thebes, then it shall be done.</p>
+					<p>Sophocles supposes a long interval—some twenty years, <note anchored="true"
+							place="marg" resp="RCJ">Events of the interval between the plays.</note>
+						perhaps—between the two dramas of which Oedipus is the hero. As the exile
+						himself says, <cit>
+							<bibl n="Soph. OC 395">395</bibl>
+							<quote xml:lang="eng">"'Tis little to uplift old age, when youth
+								was ruined."</quote>
+						</cit>We have to make
+						out the events of this interval, as best we can, from stray hints in the <title>
+						Coloneus</title>
+							<note anchored="true" n="1" place="foot" resp="RCJ">
+							<p> The Greek title of the play is <title xml:lang="grc">Οἰδίπους
+									ἐπὶ Κολωνῷ</title> ,—the prep. meaning <emph>at</emph> , as in
+						such phrases as <foreign xml:lang="grc">ἐπ’
+									ἐσχάρῃ</foreign> ( <bibl n="Hom. Od. 7.160">
+									<title>Od.</title> 7.160</bibl>), <foreign xml:lang="grc">ἐπὶ
+						θύραις</foreign> , etc. It is cited by the authors of the Arguments as <title
+									xml:lang="grc">ὁ ἐπὶ
+									Κολωνῷ Οἰδίπους</title> (pp. 3 ff.). The earlier play was
+						doubtless called simply <title xml:lang="grc">Οἰδίπους</title> by
+						Sophocles,— <foreign xml:lang="grc">Τύραννος</foreign> having been a later
+						addition (cp. <bibl n="Soph. OT">
+									<title>O. T.</title>
+								</bibl>p.
+						4): but the second play required a distinguishing epithet, and the words <foreign
+									xml:lang="grc">ἐπὶ
+									Κολωνῷ</foreign> must be ascribed to the poet himself. The
+						traditional Latin title, <title xml:lang="lat">Oedipus
+									Coloneus,</title> is from <bibl n="Cic. Sen. 7.21"> Cic. <title>De
+						Sen.</title> 7.21</bibl>, where it occurs in the accus., <title>Oedipum
+						Coloneum.</title> Did Cicero intend <title>Coloneum</title> to represent <foreign
+									xml:lang="grc">Κολώνειον</foreign> or <foreign xml:lang="grc">
+						Κολωνέα</foreign> ? In other words, ought we to pronounce <emph>Colonēüs</emph>
+						or <emph>Colonēūs</emph> ? 1. In favour of the former view, which seems much
+						the more probable, we may observe two points. (i) In <bibl
+									n="Cic. Fin. 5.1.3">
+									<title>De Fin.</title> 5. 1 § 3</bibl>Cicero writes: <cit>
+									<bibl n="Cic. Fin. 5.1.3">Cic. Fin. 5.1.3</bibl>
+									<quote xml:lang="lat"> “Nam me ipsum huc modo venientem
+						convertebat ad sese <emph>Coloneus ille
+											locus</emph> , cuius incola Sophocles ob oculos
+						obversabatur; quem scis quam admirer, quamque eo delecter.”</quote>
+								</cit>
+						There, <foreign xml:lang="lat">locus
+									Coloneus</foreign> , as a periphrasis for <foreign
+									xml:lang="lat">Colonus</foreign> , represents <foreign
+									xml:lang="grc">τόπος Κολώνειος</foreign> , not <foreign
+									xml:lang="grc">τόπος Κολωνεύς</foreign> . (ii) <foreign
+									xml:lang="grc">Κολωνεύς</foreign> (properly, a demesman of
+						Colonus, <title>Corp. Inscr.</title> 172. 42) would not have been
+						appropriate in the title of this play, since it would have implied that
+						Oedipus had been resident at Colonus. In the <title xml:lang="grc">Γλαῦκος
+						Ποτνιεύς</title> of Aeschylus ( <bibl> Nauck, <title>Trag.
+										Fragm.</title> 34-41</bibl>) Glaucus was supposed to have
+						had a fixed abode at Potniae. On the other hand, <foreign xml:lang="lat">
+						Coloneus</foreign> , as= <foreign xml:lang="grc">Κολώνειος</foreign> , might
+						well have been used by Cicero to express the same sense as <foreign
+									xml:lang="grc">ἐπὶ Κολωνῷ</foreign> (which would have been more
+						closely rendered by <foreign xml:lang="lat">ad
+									Colonum</foreign> ),—"at Colonus," <q type="unspecified"
+									xml:lang="eng">connected with
+									it.</q> The Greek adjectives in <foreign xml:lang="grc">ειος</foreign>
+						which Cicero transliterates usually answer to names of persons, not of
+						places (as <cit>
+									<bibl n="Cic. Fin. 2.7.20">
+										<title>De Fin.</title> 2. 7 § 20</bibl>
+									<quote xml:lang="lat">Aristippeo</quote>
+								</cit>
+						; <cit>
+									<bibl n="Cic. Fin. 2.7.22">
+										<foreign xml:lang="lat">ib.</foreign> § 22</bibl>
+									<quote xml:lang="lat">Epicurea</quote>
+								</cit>);
+						but here he could hardly have used <foreign xml:lang="lat">Colonensis</foreign>
+						, which would have suggested a native or inhabitant of the place. </p>
+							<p>2. While decidedly preferring the view just stated, I must, however,
+						also notice what can fairly be said in favour of the other view,—that by <foreign
+									xml:lang="lat">Coloneum</foreign> Cicero meant <foreign
+									xml:lang="grc">Κολωνέα</foreign> . (i) In <bibl
+									n="Cic. Tusc. 5.12.34">
+									<title>Tusc. Disp.</title> 5. 12 § 34</bibl>he has <foreign
+									xml:lang="lat">Zeno Citieus</foreign> = <foreign xml:lang="grc">
+						Κιτιεύς</foreign> (for which Gellius uses <foreign>Citiensis</foreign> ): in <cit>
+									<bibl n="Cic. Div. 2.42.88">
+										<title>De Div.</title> 2. 42 § 88</bibl>
+									<quote xml:lang="lat">Scylax Halicarnasseus</quote>
+								</cit>
+						= <foreign xml:lang="grc">Ἁλικαρνασσεύς</foreign> (for which Livy uses <foreign
+									xml:lang="lat">Halicarnassensis</foreign> , and Tacitus <foreign
+									xml:lang="lat">Halicarnassius</foreign> );—as similarly, he
+						sometimes retains Greek forms in <foreign xml:lang="grc">ίτης</foreign> or <foreign
+									xml:lang="grc">ιάτης</foreign> ( <cit>
+									<bibl n="Cic. N.D. 1.23.63">
+										<title>De Nat.</title> 1. 23 § 63</bibl>
+									<quote xml:lang="lat">Abderites Protagoras</quote>
+								</cit>
+						: <cit>
+									<bibl n="Cic. N.D. 1.23.29">
+										<foreign xml:lang="lat">ib.</foreign> § 29</bibl>
+									<quote xml:lang="lat">Diogenes Apolloniates</quote>
+								</cit>).
+						Hence, the nomin. <title xml:lang="lat">Oedipus
+									Coloneus</title> , if it had occurred in Cicero, might well have
+						stood for <foreign xml:lang="grc">Οἰδίπους
+									Κολωνεύς</foreign> . (ii) With regard to the accus. of Latin
+						adjectives taken from Greek forms in <foreign xml:lang="grc">εύς</foreign> ,
+						cp. <cit>
+									<bibl n="Cic. Att. 7.3.10"> Cic. <title>ad Att.</title> 3 § 10,</bibl>
+									<quote xml:lang="lat">Venio ad Piraeea; in quo magis
+						reprehendendus sum, quod homo Romanus <emph>Piraeea</emph> scripserim, non <emph>
+						Piraeeum</emph> (sic enim omnes nostri locuti sunt).</quote>
+								</cit>It
+						may, indeed, be said that, if he wrote <foreign xml:lang="lat">Piraeea</foreign>
+						, he might also have ventured on <foreign xml:lang="lat">Colonea:</foreign>
+						but more weight seems due to the other fact,—that, if he had represented <foreign
+									xml:lang="grc">Κολωνέα</foreign> by <foreign xml:lang="lat">
+						Coloneum</foreign> he would have been warranted by Roman usage. It is just
+						possible, then, that by <foreign xml:lang="lat">Coloneum</foreign> Cicero
+						meant <foreign xml:lang="grc">Κολωνέα</foreign> , though it seems much more
+						likely that he meant <foreign xml:lang="grc">Κολώνειον</foreign> . [The form <foreign
+									xml:lang="grc">Κολώνειος</foreign> does not seem to be actually
+						extant in Greek. In the scholia on vv. 60, 65 of the play the men of Colonus
+						are called <foreign xml:lang="grc">Κολωνιᾶται</foreign> , probably a
+						corruption of <foreign xml:lang="grc">Κολωνῖται</foreign> . The latter term
+						was applied by Hypereides to the artisans frequenting the Colonus Agoraeus
+						(Pollux 7. 132), and is miswritten <foreign xml:lang="grc">Κολωναῖται</foreign>
+						in Harpocration.]</p>
+						</note>. </p>
+					<p>The promise with which Creon pacified Oedipus at the end of the <title>
+						Tyrannus</title> does not appear to have been fulfilled. The oracle was not
+						consulted as to whether Oedipus should remain at Thebes. He remained there;
+						and, as the lapse of time softened his anguish, the blind and discrowned
+						sufferer learned to love the seclusion of the house in which he had once
+						reigned so brilliantly. Creon continued to act as regent. But at last a
+						change took place in the disposition of the Thebans, or at least <note
+							anchored="true" place="marg" resp="RCJ">Expulsion of Oedipus.</note> in
+						Creon's. A feeling grew up that Thebes was harbouring a defilement, and it
+						was decided to expel Oedipus. There is no mention of an oracle as the cause;
+						indeed, the idea of a divine mandate is incompatible with the tenor of the
+						story, since Oedipus could not then have charged the whole blame on Thebes.
+						One circumstance of his expulsion was bitter to him above all the rest. His
+						two sons, who had now reached manhood, said not a word in arrest of his
+						doom. </p>
+					<p>But his two daughters were nobly loyal. Antigone went forth from
+						Thebes with her blind father,—his sole attendant,— and thenceforth
+						shared the privations of his lot, which could now be only that of a
+						wandering mendicant. Ismene stayed at Thebes, but it was in order to
+						watch the course of events there in her father's interest. We hear
+						of one occasion, at least, on which she risked a secret journey for
+						the purpose of acquainting him with certain oracles which had just
+						been received. The incident marks the uneasy feeling with which the
+						Thebans still regarded the blind exile, and their unwillingness that
+						he should share such light on his own destiny as they could obtain
+						from Apollo. </p>
+					<p>Oedipus had now grown old in his destitute wanderings, when a sacred mission
+						sent from Thebes to Delphi brought back an oracle concerning him which
+						excited a lively interest in the minds of his former subjects. It was to the
+						effect that the <note anchored="true" place="marg" resp="RCJ">The new
+							oracle.</note> welfare of Thebes depended on Oedipus, not merely while
+						he lived, but also after his death. The Thebans now conceived the desire of
+						establishing Oedipus somewhere just beyond their border. In this way they
+						thought that they would have him under their control, while at the same time
+						they would avoid the humiliation of confessing themselves wrong, and
+						receiving him back to dwell among them. Their main object was that, on his
+						death, they might secure the guardianship of his grave. </p>
+					<p>The new oracle obviously made an opportunity for the sons of Oedipus
+						at Thebes, if they were true to their banished father. They could
+						urge that Apollo, by this latest utterance, had condoned any
+						pollution that might still be supposed to attach to the person of
+						Oedipus, and had virtually authorised his recall to his ancient
+						realm. Thebes could not be defiled by the presence of a man whom the
+						god had declared to be the arbiter of its fortunes. </p>
+					<p>Unhappily, the sons—Polyneices and Eteocles—were no longer in a mood to hear
+						the dictates of filial piety. When they had first reached manhood, they had
+						been oppressed by a sense of the curse on their family, and the taint on
+						their own birth. They had wished to spare Thebes the contamination of their
+						rule; they had been desirous that the regent,—their uncle Creon,—should
+						become king. But presently,— <cit>
+							<bibl n="Soph. OC 371">371</bibl>
+							<quote xml:lang="eng">"moved by some god, and by a sinful
+								mind,"</quote>
+						</cit>—compelled by the
+						inexorable Fury of their house,—they renounced these intentions of wise
+						selfdenial. Not only were they fired with the passion for power, <note
+							anchored="true" place="marg" resp="RCJ">The strife between the sons.</note>
+						but they fell to striving with each other for the sole power. Eteocles, the
+						younger <note anchored="true" n="1" place="foot" resp="RCJ"> See <ref
+								target="cl375">note on v. 375</ref> .</note>brother, managed to win
+						over the citizens. The elder brother, Polyneices, was driven out of Thebes.
+						He went to Argos, where he married the daughter of king Adrastus. All the
+						most renowned warriors of the Peloponnesus became his allies, and he made
+						ready to lead a great host against Thebes. But, while the mightiest
+						chieftains were marshalling their followers in his cause, the voices of
+						prophecy warned him that the issue of his mortal feud depended on the blind
+						and aged beggar whom, years before, he had coldly seen thrust out from house
+						and home. That side would prevail which Oedipus should join. </p>
+				</div>
+				<div xml:id="cis2" n="2" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Analysis of the
+							play.</note>
+					</p>
+					<p>This is the moment at which our play begins. The action falls into
+						six principal divisions or chapters, marked off, as usual, by choral
+						lyrics. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">I. <bibl n="Soph. OC 1">Prologue:
+						1-116</bibl> .</note>The scene, which remains the same throughout the play,
+						is at Colonus, about a mile and a quarter north-west of Athens. We are in
+						front of a grove sacred to the Furies,—here worshipped under a propitiatory
+						name, as the Eumenides or Kindly Powers. While the snow still lingers on
+						distant hills ( <bibl n="Soph. OC 1060">v. 1060</bibl> ), the song of many
+						nightingales is already heard from the thick covert of this grove in the
+						Attic plain; we seem to breathe the air of a bright, calm day at the
+						beginning of April <note anchored="true" n="2" place="foot" resp="RCJ"> The
+						dates of the nightingale's arrival in Attica, for the years indicated, are
+						thus given by Dr Krüper, the best authority on the birds of Greece ( <bibl>
+								<title xml:lang="deu">Griechische Jahrzeiten</title> for 1875, Heft
+						III., p. 243</bibl>):— <date when="1867-03-29">March 29 (1867)</date> , <date
+								when="1873-04-13">April 13
+								(1873)</date> , <date when="1874-04-06">April 6
+								(1874)</date> . The dates for several other localities in the
+						Hellenic countries (Acarnania— Parnassus—Thessalonica—Olympia—Smyrna), as
+						recorded by the same observer for two years in each case, all range between
+						March 27 and April 15. For this reference I am indebted to Professor Alfred
+						Newton, F.R.S., of Cambridge. The male birds (who alone sing) arrive some
+						days before the females, as is usually the case with migratory birds, and
+						sing as soon as they come. Thus it is interesting to notice that the period
+						of the year at which the nightingale's song would first be heard in Attica
+						coincides closely with the celebration of the Great Dionysia, in the last
+						days of March and the first days of April ( <bibl> C. Hermann <title>Gr.
+									Ant.</title> II. 59. 6</bibl>). If the play was produced at that
+						festival, the allusions to the nightingale (vv. <bibl n="Soph. OC 18">18</bibl>
+						, <bibl
+								n="Soph. OC 671">671</bibl> ) would have been felt as specially
+						appropriate to the season.</note>. The blind Oedipus, led by Antigone,
+						enters on the left hand of the spectator. He is in the squalid garb of a
+						beggar-man,— carrying a wallet, wherein to put alms ( <bibl
+							n="Soph. OC 1262">v. 1262</bibl> ); the wind plays with his unkempt
+						white hair; the wounds by which, in the prime of manhood, he had destroyed
+						his sight, have left ghastly traces on the worn face; but there is a certain
+						nobleness in his look and bearing which tempers the beholder's sense of pity
+						or repulsion. The old man is tired with a long day's journey; they have
+						heard from people whom they met on the way that they are near Athens, but
+						they do not know the name of the spot at which they have halted. Antigone
+						seats her father on a rock which is just within the limits of the sacred
+						grove. As she is about to go in search of information, a man belonging to
+						Colonus appears. Oedipus is beginning to accost him, when the stranger cuts
+						his words short by a peremptory command to come off the sacred ground. "To
+						whom is it sacred?" Oedipus asks. To the Eumenides, is the reply. On hearing
+						that name, Oedipus invokes the grace of those goddesses, and declares that
+						he will never leave the rest which he has found. He begs the stranger to
+						summon Theseus, the king of Athens, <cit>
+							<bibl n="Soph. OC 72">72</bibl>
+							<quote xml:lang="eng">"that by a small service he may find a
+								great gain."</quote>
+						</cit>The stranger, who
+						is struck by the noble mien of the blind old man, says that he will go and
+						consult the people of Colonus; and meanwhile he tells Oedipus to stay where
+						he is. </p>
+					<p>Left alone with Antigone, Oedipus utters a solemn and very beautiful prayer
+						to the Eumenides, which discloses the motive of his refusal to leave the
+						sacred ground. In his early manhood, when he inquired at Delphi concerning
+						his parentage, Apollo predicted the calamities which awaited him; but also
+						promised him rest, so soon as he should reach <cit>
+							<bibl n="Soph. OC 89">89</bibl>
+							<quote xml:lang="eng"> " <emph>a seat of the Awful
+									Goddesses.</emph> "</quote>
+						</cit>There
+						he should close his troubled life; and along with the release, he should
+						have this reward,—power to benefit the folk who sheltered him, and to hurt
+						the folk who had cast him out. And when his end was near, there should be a
+						sign from the sky. Apollo and the Eumenides themselves have led him to this
+						grove: he prays the goddesses to receive him, and to give him peace. </p>
+					<p>Hardly has his prayer been spoken, when Antigone hears footsteps
+						approaching, and retires with her father into the covert of the
+						grove.</p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Parodos: <bibl
+								n="Soph. OC 117">117-253</bibl> .</note>The elders of Colonus, who
+						form the Chorus, now enter the orchestra. They have heard that a wanderer
+						has entered the grove, and are in eager search for the perpetrator of so
+						daring an impiety. Oedipus, led by Antigone, suddenly discovers himself. His
+						appearance is greeted with a cry of horror from the Chorus; but horror
+						gradually yields to pity for his blindness, his age, and his misery. They
+						insist, however, on his coming out of the sacred grove. If he is to speak to
+						them, it must be on lawful ground. Before he consents, he exacts a pledge
+						that he shall not be removed from the ground outside of the grove. They
+						promise this. Antigone then guides him to a seat beyond the sacred precinct.
+						The Chorus now ask him who he is. He implores them to spare the question;
+						but their curiosity has been aroused. They extort an answer. No sooner has
+						the name OEDIPUS passed his lips, than his voice is drowned in a shout of
+						execration. They call upon him to leave Attica instantly. He won their
+						promise by a fraud, and it is void. They refuse to hear him. Antigone makes
+						an imploring appeal. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">II. First episode: <bibl
+								n="Soph. OC 254">254-667</bibl> .</note>In answer to her appeal, the
+						Chorus say that they pity both father and daughter, but fear the gods still
+						more; the wanderers must go. </p>
+					<p>Oedipus now speaks with powerful eloquence, tinged at first with
+						bitter scorn. Is this the traditional compassion of Athens for the
+						oppressed? They have lured him from his sanctuary, and now they are
+						driving him out of their country,—for fear of what? Simply of his
+						name. He is free from moral guilt. He brings a blessing for Athens.
+						What it is, he will reveal when their king arrives.—The Chorus agree
+						to await the decision of Theseus. He will come speedily, they are
+						sure, when he hears the name of Oedipus. </p>
+					<p>At this moment, Antigone descries the approach of her sister Ismene,
+						who has come from Thebes with tidings for her father. Ismene tells
+						him of the fierce strife which has broken out between her
+						brothers,—and how Polyneices has gone to Argos. Then she mentions
+						the new oracle which the Thebans have just received,—that their
+						welfare depends on him, in life and death. Creon will soon come, she
+						adds, in the hope of enticing him back. </p>
+					<p>Oedipus asks whether <emph>his sons</emph> knew of this oracle. "true," she
+						reluctantly answers. At that answer, the measure of his bitterness is full:
+						he breaks into a prayer that the gods may hear him, and make this new strife
+						fatal to both brothers alike. And then, turning to the Chorus, he assures
+						them that he is destined to be a deliverer of Attica: for his mind is now
+						made up; he has no longer any doubt where his blessing, or his curse, is to
+						descend. The Chorus, in reply, instruct him how a proper atonement may be
+						made to the Eumenides for his trespass on their precinct; and Ismene goes to
+						perform the prescribed rites in a more distant part of the grove. </p>
+					<p>Here follows a lyric dialogue between the Chorus and <note anchored="true"
+							place="marg" resp="RCJ"> (Kommos: <bibl n="Soph. OC 510">510-548</bibl>
+						.)</note>Oedipus. They question him on his past deeds, and he pathetically
+						asserts his moral innocence. </p>
+					<p>Theseus now enters, on the spectator's right hand, as coming from
+						Athens. Addressing Oedipus as "son of Laïus," he assures him, with
+						generous courtesy, of protection and sympathy; he has himself known
+						what it is to be an exile. Oedipus explains his desire. He craves to
+						be protected in Attica while he lives, and to be buried there when
+						he is dead. He has certain benefits to bestow in return; but these
+						will not be felt until after his decease. He fears that his sons
+						will seek to remove him to Thebes. If Theseus promises to protect
+						him, it must be at the risk of a struggle. Theseus gives the
+						promise. He publicly adopts Oedipus as a citizen. He then leaves the
+						scene. </p>
+					<p>Oedipus having now been formally placed under the protection <note
+							anchored="true" place="marg" resp="RCJ"> First stasimon: <bibl
+								n="Soph. OC 668">668-719</bibl> .</note>of Athens, the Chorus
+						appropriately celebrate the land which has become his home. Beginning with
+						Colonus, they pass to themes of honour for Attica at large,—the olive,
+						created by Athena and guarded by Zeus,—the horses and horsemanship of the
+						land, gifts of Poseidon,—and his other gift, the empire of the sea. Of all
+						the choral songs in extant Greek drama, this short ode is perhaps the most
+						widely famous; a distinction partly due, no doubt, to the charm of the
+						subject, and especially to the manifest glow of a personal sentiment in the
+						verses which describe Colonus; but, apart from this, the intrinsic poetical
+						beauty is of the highest and rarest order <note anchored="true" n="1"
+							place="foot" resp="RCJ"> Dr Heinrich Schmidt, in his <title>
+						Compositionslehre</title> , has selected this First Stasimon as a typical
+						masterpiece of ancient choral composition, and has shown by a thorough
+						analysis ( <bibl>pp.
+								428-432</bibl> ) how perfect is the construction, alike from a
+						metrical and from a properly lyric or musical point of view. <quote
+								xml:lang="deu">Da ist keine einzige Note
+								unnütz,</quote> he concludes; <quote xml:lang="deu">jeder
+								Vers, jeder Satz, jeder Takt in dem schönsten rhythmischen
+								Connexe.</quote>
+						</note>. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">III. Second episode: <bibl
+								n="Soph. OC 720">720-1043</bibl> .</note>As the choral praises
+						cease, Antigone exclaims that the moment has come for proving that Athens
+						deserves them. Creon enters, with an escort of guards. </p>
+					<p>His speech, addressed at first to the Chorus, is short, and skilfully
+						conceived. They will not suppose that an old man like himself has been sent
+						to commit an act of violence against a powerful State. No; he comes on
+						behalf of Thebes, to plead with his aged kinsman, whose present wandering
+						life is truly painful for everybody concerned. The honour of the city and of
+						the family is involved. Oedipus should express his gratitude to Athens, and
+						then return to a decent privacy <cit>
+							<bibl n="Soph. OC 777">777</bibl>
+							<quote xml:lang="eng">"in the house of his fathers."</quote>
+						</cit>
+					</p>
+					<p>With a burst of scathing indignation, Oedipus replies. They want him now; but
+						they thrust him out when he was longing to stay. <cit>
+							<bibl n="Soph. OC 777">777</bibl>
+							<quote xml:lang="eng">"In the house of his fathers!"</quote>
+						</cit>No,
+						that is not their design. They intend to plant him somewhere just beyond
+						their border, for their own purposes. <cit>
+							<bibl n="Soph. OC 787">787</bibl>
+							<quote xml:lang="eng">"That portion is not for thee,"</quote>
+						</cit>he
+						tells Creon, <cit>
+							<bibl n="Soph. OC 788">788</bibl>
+							<quote xml:lang="eng">"but this,—my curse upon your land, ever
+								abiding therein;—and for my sons, this heritage—room enough
+								in my realm, wherein — to die."</quote>
+						</cit>
+					</p>
+					<p>Failing to move him, Creon drops the semblance of persuasion. He
+						bluntly announces that he already holds one hostage; —Ismene, who
+						had gone to perform the rites in the grove, has been captured by his
+						guards;—and he will soon have a second. He lays his hand upon
+						Antigone. Another moment, and his attendants drag her from the
+						scene. He is himself on the point of seizing Oedipus, when Theseus
+						enters,—having been startled by the outcry, while engaged in a
+						sacrifice at the neighbouring altar of Poseidon. </p>
+					<p>On hearing what has happened, Theseus first sends a message to Poseidon's
+						altar, directing the Athenians who were present at the sacrifice to start in
+						pursuit of Creon's guards and the captured maidens.—Then, turning to Creon,
+						he upbraids him with his lawless act, and tells him that he shall not leave
+						Attica until the maidens are restored. Creon, with ready effrontery, replies
+						that, in attempting to remove a polluted wretch from Attic soil, he was only
+						doing what the Areiopagus itself would have wished to do; if his manner was
+						somewhat rough, the violence of Oedipus was a provocation. This speech draws
+						from Oedipus an eloquent vindication of his life, which is more than a mere
+						repetition of the defence which he had already made to the Chorus. Here he
+						brings out with vivid force the helplessness of man against fate, and the
+						hypocrisy of his accuser.—Theseus now calls on Creon to lead the way, and
+						show him where the captured maidens are,—adding a hint, characteristically
+						Greek, that no help from Attic accomplices shall avail him. Creon sulkily
+						submits,—with a muttered menace of what he will do when he reaches home. <foreign
+							xml:lang="lat">Exeunt</foreign> Theseus and his attendants, with Creon,
+						on the spectator's left. </p>
+					<p>The Chorus imagine themselves at the scene of the coming <note
+							anchored="true" place="marg" resp="RCJ"> Second stasimon: <bibl
+								n="Soph. OC 1044">1044-1095</bibl> .</note>fray, and predict the
+						speedy triumph of the rescuers,—invoking the gods of the land to help. A
+						beautiful trait of this ode is the reference to the <cit>
+							<bibl n="Soph. OC 1049">1049</bibl>
+							<quote xml:lang="eng">"torch-lit strand"</quote>
+						</cit>of
+						Eleusis, and to the mysteries which the initiated poet held in devout
+						reverence. </p>
+					<p>At the close of their chant, the Chorus give Oedipus the <note
+							anchored="true" place="marg" resp="RCJ"> IV. Third episode: <bibl
+								n="Soph. OC 1096">1096-1210</bibl> .</note>welcome news that they
+						see his daughters approaching, escorted by Theseus and his followers. The
+						first words of Antigone to her blind father express the wish that some
+						wonder-working god could enable him to see their brave deliverer; and then,
+						with much truth to nature, father and daughters are allowed to forget for a
+						while that anyone else is present. When at last Oedipus turns to thank
+						Theseus, his words are eminently noble, and also touching. His impulse is to
+						salute his benefactor by kissing his cheek, but it is quickly checked by the
+						thought that this is not for him; no, nor can he permit it, if Theseus
+						would. The line drawn by fate, the line which parts him and his from human
+						fellowship, is rendered only more sacred by gratitude. </p>
+					<p>At this point we may note, in passing, a detail of dramatic economy. The
+						story of the rescue would have been material for a brilliant speech, either
+						by Theseus, or, before his entrance, by a messenger. But the poet's sense of
+						fitness would not allow him to adorn an accident of the plot at the cost of
+						curtailing an essential part,—viz., the later scene with Polyneices, which
+						must have been greatly abridged if a narrative had been admitted here. So,
+						when Antigone is questioned by her father as to the circumstances of the
+						rescue, she refers him to Theseus; and Theseus says that it is needless for <emph>
+						him</emph> to vaunt his own deeds, since Oedipus can hear them at leisure
+						from his daughters. </p>
+					<p>There is a matter, Theseus adds, on which he should like to consult Oedipus.
+						A stranger, it seems, has placed himself as a suppliant at the altar of
+						Poseidon. This happened while they were all away at the rescue, and no one
+						knows anything about the man. He is not from Thebes, but he declares that he
+						is a kinsman of Oedipus, and prays for a few words with him. It is only
+						guessed whence he comes; can Oedipus have any relations at Argos? Oedipus
+						remembers what Ismene told him; he knows who it is; and he implores Theseus
+						to spare him the torture of hearing <emph>that</emph> voice. But Antigone's
+						entreaties prevail. Theseus leaves the scene, in order to let the suppliant
+						know that the interview will be granted. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Third stasimon: <bibl
+								n="Soph. OC 1211">1211-1248</bibl> .</note>The choral ode which
+						fills the pause glances forward rather than backward, though it is suggested
+						by the presage of some new vexation for Oedipus. It serves to turn our
+						thoughts towards the approaching end.—Not to be born is best of all; the
+						next best thing is to die as soon as possible. And the extreme of folly is
+						the desire to outlive life's joys. Behold yon aged and afflicted
+						stranger,—lashed by the waves of trouble from east and west, from south and
+						north! But there is one deliverer, who come to all at last. </p>
+					<p>Polyneices now enters,—not attended, like Creon, by guards, <note
+							anchored="true" place="marg" resp="RCJ"> V. Fourth episode: <bibl
+								n="Soph. OC 1249">1249-1555</bibl> .</note>but alone. He is shedding
+						tears; he begins by uttering the deepest pity for his father's plight, and
+						the bitterest selfreproach.—Oedipus, with averted head, makes no reply.—
+						Polyneices appeals to his sisters; will they plead for him? Antigone advises
+						him to state in his own words the object of his visit.—Then Polyneices sets
+						forth his petition. His Argive allies are already gathered before Thebes. He
+						has come as a suppliant to Oedipus, for himself, and for his friends too.
+						Oracles say that victory will be with the side for which Oedipus may
+						declare. Eteocles, in his pride at Thebes, is mocking father and brother
+						alike. <cit>
+							<bibl n="Soph. OC 1340">1340</bibl>
+							<quote xml:lang="eng">"If thou assist me, I will soon scatter
+								his power, and will stablish thee in thine own house, and
+								stablish myself, when I have cast him out by force."</quote>
+						</cit>
+					</p>
+					<p>Oedipus now breaks silence; but it is in order to let the <emph>Chorus</emph>
+						know why he does so. His son, he reminds them, has been sent to them by
+						their king.—Then, suddenly turning on Polyneices, he delivers an appalling
+						curse, dooming both his sons to die at Thebes by each other's hands. In
+						concentrated force of tragic passion this passage has few rivals. The great
+						scene is closed by a short dialogue between Polyneices and his elder
+						sister,—one of the delicate links between this play and the poet's earlier <title>
+						Antigone</title> . She implores him to abandon his fatal enterprise. But he
+						is not to be dissuaded; he only asks that, if he falls, she and Ismene will
+						give him burial rites; he disengages himself from their embrace, and goes
+						forth, under the shadow of the curse. </p>
+					<p>A lyric passage now follows, which affords a moment of <note anchored="true"
+							place="marg" resp="RCJ"> (Kommos: <bibl n="Soph. OC 1447">1447-1499</bibl>
+						.)</note>relief to the strained feelings of the spectators, and also serves
+						(like a similar passage before, vv. 510—548) to separate the two principal
+						situations comprised in this chapter of the drama.— The Chorus are
+						commenting on the dread doom which they have just heard pronounced, when
+						they are startled by the sound of thunder. As peal follows peal, and
+						lightnings glare from the darkened sky, the terror-stricken elders of
+						Colonus utter broken prayers to averting gods. But for Oedipus the storm has
+						another meaning; it has filled him with a strange eagerness. He prays
+						Antigone to summon Theseus. </p>
+					<p>As Theseus had left the scene in order to communicate with the suppliant at
+						Poseidon's altar, no breach of probability is involved in his timely
+						re-appearance. Oedipus announces that, by sure signs, he knows his hour to
+						have come. Unaided by human hand, he will now show the way to the spot where
+						his life must be closed. When he arrives there, to Theseus alone will be
+						revealed the place appointed for his grave. At the approach of death,
+						Theseus shall impart the secret to his heir alone; and, so, from age to age,
+						that sacred knowledge shall descend in the line of the Attic kings. While
+						the secret is religiously guarded, the grave of Oedipus shall protect Attica
+						against invading foemen; Thebes shall be powerless to harm her.— <cit>
+							<bibl n="Soph. OC 1540">1540</bibl>
+							<quote xml:lang="eng">"And now let us set forth, for the divine
+								summons urges me."</quote>
+						</cit>As Oedipus
+						utters these words, Theseus and his daughters become aware of a change; the
+						blind etrue are still dark, but the moral conditions of blindness have been
+						annulled; no sense of dependence remains, no trace of hesitation or
+						timidity; like one inspired, the blind man eagerly beckons them on; and so,
+						followed by them, he finally passes from the view of the spectators. </p>
+					<p>This final exit of Oedipus is magnificently conceived. As the idea of
+						a spiritual illumination is one which pervades the play, so it is
+						fitting that, in the last moment of his presence with us, the inward
+						vision should be manifested in its highest clearness and power. It
+						is needless to point out what a splendid opportunity this scene
+						would give to an actor,—in the modern theatre not less than in the
+						ancient. It shows the genius of a great poet combined with that
+						instinct for dramatic climax which is seldom unerring unless guided
+						by a practical knowledge of the stage. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Fourth stasimon: <bibl
+								n="Soph. OC 1556">1556-1578</bibl> .</note>The elders of Colonus are
+						now alone; they have looked their last on Oedipus; and they know that the
+						time of his end has come. The strain of their chant is in harmony with this
+						moment of suspense and stillness. It is a choral litany for the soul which
+						is passing from earth. May the Powers of the unseen world be gracious; may
+						no dread apparition vex the path to the fields below. </p>
+					<p>A Messenger, one of the attendants of Theseus, relates what <note
+							anchored="true" place="marg" resp="RCJ"> VI. Exodos: <bibl
+								n="Soph. OC 1579">1579-1779</bibl> .</note>befell after Oedipus,
+						followed by his daughters and the king, arrived at the spot where he was
+						destined to depart. Theseus was then left alone with him, and to Theseus
+						alone of mortals the manner of his passing is known. </p>
+					<p>The daughters enter. After the first utterances of grief, one <note
+							anchored="true" place="marg" resp="RCJ"> (Kommos: <bibl
+								n="Soph. OC 1670">1670-1750</bibl> .)</note>feeling is seen to be
+						foremost in Antigone's mind,—the longing to see her father's grave. She
+						cannot bear the thought that it should lack a tribute from her hands. Ismene
+						vainly represents that their father's own command makes such a wish
+						unlawful,— impossible. Theseus arrives, and to him Antigone urges her
+						desire. In gentle and solemn words he reminds her of the pledge which he had
+						given to Oedipus. She acquiesces; and now prays that she and Ismene may be
+						sent to Thebes: perhaps they may yet be in time to avert death from their
+						brothers. Theseus consents; and the elders of Colonus say farewell to the
+						Theban maidens in words which speak of submission to the gods: <cit>
+							<bibl n="Soph. OC 1777">1777</bibl>
+							<quote xml:lang="eng">"Cease lamentation, lift it up no more;
+								for verily these things stand fast."</quote>
+						</cit>
+					</p>
+				</div>
+				<div xml:id="cis3" n="3" type="subsection">
+					<p>In the <title>Oedipus Tyrannus</title> a man is crushed by the discovery <note
+							anchored="true" place="marg" resp="RCJ"> Relation of the <title>Coloneus</title>
+						to the <title>Tyrannus.</title>
+						</note>that, without
+						knowing it, he has committed two crimes, parricide and incest. At the moment
+						of discovery he can feel nothing but the double stain: he cries out that <cit>
+							<bibl n="Soph. OT 1345">OT 1345</bibl>
+							<quote xml:lang="eng">"he has become most hateful to the
+								gods."</quote>
+						</cit>He has, indeed, broken
+						divine laws, and the divine Power has punished him by bringing his deeds to
+						light. This Power does not, in the first instance, regard the intention, but
+						the fact. It does not matter that his unconscious sins were due to the
+						agency of an inherited curse, and that he is morally innocent. He has
+						sinned, and he must suffer. </p>
+					<p>In the <title>Oedipus Coloneus</title> we meet with this man again, after the
+						lapse of several years. In a religious aspect he still rests under the
+						stain, and he knows this. But, in the course of time, he has mentally risen
+						to a point of view from which he can survey his own past more clearly.
+						Consciousness of the stain is now subordinate to another feeling, which in
+						his first despair had not availed to console him. He has gained a firm
+						grasp, not to be lost, on the fact of his moral innocence. He remembers the
+						word of Apollo long ago, which coupled the prediction of his woes with a
+						promise of final rest and reward; and he believes that his moral innocence
+						is recognised by the Power which punished him. Thinking, then, on the two
+						great facts of his life, his defilement and his innocence, he has come to
+						look upon himself as neither pure nor yet guilty, but as a person set apart
+						by the gods to illustrate their will,—as sacred. Hence that apparently
+						strange contrast which belongs to the heart of the <title>Oedipus Coloneus.</title>
+						He declines to pollute his benefactor, Theseus, by his touch,—describing
+						himself as one with whom <cit>
+							<quote xml:lang="eng">"all stain of sin hath made its
+								dwelling"</quote>
+							<bibl n="Soph. OC 1133">(1133)</bibl>
+						</cit>.
+						Yet, with equal truth and sincerity, he can assure the Athenians that he has
+						come to them <cit>
+							<bibl n="Soph. OC 287">287</bibl>
+							<quote xml:lang="eng">"as one sacred and pious,"</quote>
+						</cit>—the
+						suppliant of the Eumenides, the disciple of Apollo ( <bibl n="Soph. OC 287">
+						287</bibl> ).</p>
+					<p>In the <title>Oedipus Tyrannus</title> , when the king pronounces a ban on
+						the unknown murderer of Laïus, he charges his subjects that no one shall
+						make that man <cit>
+							<quote xml:lang="eng">"partner of his prayer or sacrifice, or
+								serve him with the lustral rite"</quote>
+							<bibl n="Soph. OC 239">(239 f.)</bibl>
+						</cit>.
+						Ceremonial purity thus becomes a prominent idea at an early point in the <title>
+						Tyrannus</title> ; and rightly so; for that play turns on acts as such. In
+						the <title>Oedipus Coloneus</title> we have a description of the ritual to
+						be observed in the grove of the Eumenides; but, as if to mark the difference
+						of spirit between the two plays, it is followed by the striking words of
+						Oedipus, when he suggests that a daughter shall officiate in his stead:— <cit>
+							<quote xml:lang="eng">"I think that one soul suffices to pay
+								this debt for ten thousand, if it come with good-will to the
+								shrine"</quote>
+							<bibl n="Soph. OC 497">(497)</bibl>
+						</cit>. When
+						eternal laws are broken by men, the gods punish the breach, whether wilful
+						or involuntary; but their ultimate judgment depends on the intent. That
+						thought is dominant in the <title>Oedipus Coloneus.</title> The contrast
+						between physical blindness and inward vision is an under-note, in harmony
+						with the higher distinction between the form of conduct and its spirit. </p>
+				</div>
+				<div xml:id="cis4" n="4" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">The Oedipus of this
+							play.</note>
+					</p>
+					<p>The Oedipus whom we find at Colonus utters not a word of self-reproach,
+						except on one point; he regrets the excess of the former self-reproach which
+						stung him into blinding himself. He has done nothing else that calls for
+						repentance; he has been the passive instrument of destiny. It would be a
+						mistake to aim at bringing the play more into harmony with modern sentiment
+						by suffusing it in a mild and almost Christian radiance, as though Oedipus
+						had been softened, chastened, morally purified by suffering. Suffering has,
+						indeed, taught him endurance ( <foreign xml:lang="grc">στέργειν</foreign> ),
+						and some degree of caution; he is also exalted in mind by a new sense of
+						power; but he has not been softened. Anger, <cit>
+							<bibl n="Soph. OC 855">(855)</bibl>
+							<quote xml:lang="eng">"which was ever his bane"</quote>
+						</cit>,
+						blazes up in him as fiercely as ever; Creon rebukes him for it; his friends
+						are only too painfully conscious of it. The unrestrained anger of an old man
+						may easily be a very pitiful and deplorable spectacle; in order to be that,
+						it need only be lost to justice and to generosity, to reason and to taste;
+						but it requires the touch of a powerful dramatist to deal successfully with
+						a subject so dangerously near to comedy, and to make a choleric old man
+						tragic; Shakspeare has done it, with pathos of incomparable grasp and range;
+						Sophocles, in a more limited way, has done it too. Throughout the scene with
+						Polyneices there is a malign sublimity in the anger of the aged Oedipus; it
+						is profoundly in the spirit of the antique, and we imply a different
+						standard if we condemn it as vindictive. The Erinys has no mercy for sins
+						against kindred; the man cannot pardon, because the Erinys acts through him.
+						Oedipus at Colonus is a sacred person, but this character depends on his
+						relation to the gods, and not on any inward holiness developed in him by a
+						discipline of pain. Probably the chief danger which the <title>Oedipus
+						Coloneus</title> runs with modern readers is from the sense of repulsion apt
+						to be excited by this inexorable resentment of Oedipus towards his sons. It
+						is not so when Lear cries— <quote xml:lang="eng">
+							<lg type="blankverse">
+								<l part="F">No, you unnatural hags,</l>
+								<l>I will have such revenges on you both,</l>
+								<l>That all the world shall—I will do such things,—</l>
+								<l>What they are yet, I know not; but they shall be</l>
+								<l>The terrors of the earth. You think I'll weep;</l>
+								<l part="I">No, I'll not weep.</l>
+							</lg>
+						</quote>
+					</p>
+					<p>Sophocles has left it possible for <emph>us</emph> to abhor the implacable
+						father more than the heartless children. The ancient Greek spectator,
+						however, would have been less likely to experience such a revulsion of
+						sympathy. Nearer to the conditions imagined, he would more quickly feel all
+						that was implied in the attitude of the sons at the moment when Oedipus was
+						expelled from Thebes; his religious sense would demand a nemesis, while his
+						ethical code would not require forgiveness of wrongs; and, lastly, he would
+						feel that the implacability of Oedipus was itself a manifestation of the
+						Fury which pursued the house. </p>
+				</div>
+				<div xml:id="cis5" n="5" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">The divine
+							amend.</note>
+					</p>
+					<p>On the part of the gods there is nothing that can properly be called
+						tenderness <note anchored="true" n="1" place="foot" resp="RCJ">
+							<foreign xml:lang="grc">εὔνουν</foreign> in <bibl n="Soph. OC 1662">1662</bibl>
+						, and <foreign xml:lang="grc">χάρις</foreign> in <bibl n="Soph. OC 1752">
+						1752</bibl> , refer merely to the painless death.</note>for Oedipus; we
+						should not convey a true impression if we spoke of him as attaining to final
+						pardon and peace, in the full sense which a Christian would attach to those
+						words. The gods, who have vexed Oedipus from youth to age, make this amend
+						to him,—that just before his death he is recognised by men as a mysteriously
+						sacred person, who has the power to bequeath a blessing and a malison. They
+						further provide that his departure out of his wretched life shall be
+						painless, and such as to distinguish him from other men. But their attitude
+						towards him is not that of a Providence which chastises men in love, for
+						their good. They are the inscrutable powers who have had their will of a
+						mortal. If such honour as they concede to him at the last is indeed the
+						completion of a kindly purpose, it is announced only as the end of an
+						arbitrary doom. If it is the crown of a salutary, though bitter, education,
+						it appears only as the final justice ( <bibl n="Soph. OC 1567">1567</bibl> )
+						prescribed by a divine sense of measure. In the foreground of the <title>Oedipus
+						Coloneus</title> a weary wanderer is arriving at his goal; but the drama is
+						only half appreciated if we neglect the action which occupies the
+						background. While the old man finds rest, the hereditary curse on his family
+						continues its work. At the very moment when he passes away, the Fury is busy
+						with his sons. The total impression made by the play as a work of art
+						depends essentially on the manner in which the scene of sacred peace at
+						Colonus is brought into relief against the dark fortunes of Polyneices and
+						Eteocles. </p>
+				</div>
+				<div xml:id="cis6" n="6" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">The curse on the
+							sons.</note>
+					</p>
+					<p>Here it becomes important to notice an innovation made by Sophocles. In the
+						epic version of the story, as also in the versions adopted by Aeschylus and
+						Euripides, Oedipus cursed his sons at Thebes, before the strife had broken
+						out between them. <note anchored="true" n="1" place="foot" resp="RCJ"> See
+						Introduction to the <title>Oedipus Tyrannus</title> , pp. xvi and xix.</note>He
+						doomed them to divide their heritage with the sword. Their subsequent
+						quarrel was the direct consequence of their father's curse. But, according
+						to Sophocles, the curse had nothing to do with the quarrel. The strife which
+						broke out between the sons was inspired by the evil genius of their race,
+						and by their own sinful thoughts <note anchored="true" n="2" place="foot"
+							resp="RCJ"> See vv. <bibl n="Soph. OC 371">371</bibl> , <bibl
+								n="Soph. OC 421">421</bibl> , <bibl n="Soph. OC 1299">1299</bibl> .</note>.
+						At that time Oedipus had uttered no imprecation. His curse was pronounced, <emph>
+						after</emph> the breach between them, because they had preferred their
+						selfish ambitions to the opportunity of recalling their father <bibl
+							n="Soph. OC 421">(421)</bibl>
+							<note anchored="true" n="3" place="foot"
+							resp="RCJ"> See <ref target="cl1375">note on v. 1375</ref> .</note>.
+						Long before, when he was driven from Thebes <bibl n="Soph. OC 441">(441)</bibl>
+						, he had felt their apathy to be heartless; but he had uttered no curse
+						then. There is a twofold dramatic advantage in the modification thus
+						introduced by Sophocles. First, the two sons no longer appear as helpless
+						victims of fate; they have incurred moral blame, and are just objects of the
+						paternal anger. Secondly, when Polyneices—on the eve of combat with his
+						brother—appeals to Oedipus, the outraged father still holds the weapon with
+						which to smite him. The curse descends at the supreme crisis, and with more
+						terrible effect because it has been delayed. </p>
+				</div>
+				<div xml:id="cis7" n="7" type="subsection">
+					<p>The secondary persons, like the hero, are best interpreted <note
+							anchored="true" place="marg" resp="RCJ">The other
+							characters.</note> by the play itself; but one or two traits may be
+						briefly noticed. The two scenes in which the removal of Oedipus is attempted
+						are contrasted not merely in outward circumstance—Creon relying on armed
+						force, while Polyneices is a solitary suppliant—but also in regard to the
+						characters of the two visitors. It is idle to look for the Creon of the <title>
+						Tyrannus</title> in the Creon of the <title>Coloneus:</title> they are
+						different men, and Sophocles has not cared to preserve even a semblance of
+						identity. The Creon of the <title>Tyrannus</title> is marked by strong
+						self-respect, and is essentially kind-hearted, though undemonstrative; the
+						Creon of this play is a heartless and hypocritical villain. A well-meaning
+						but wrongheaded martinet, such as the Creon of the <title>Antigone</title> ,
+						is a conceivable development of the <title>Tyrannus</title> Creon, but at
+						least stands on a much higher level than the Creon of the <title>Coloneus.</title>
+						Polyneices is cold-hearted, selfish, and of somewhat coarse fibre, but he is
+						sincere and straightforward; in the conversation with Antigone he evinces
+						real dignity and fortitude. In the part of Theseus, which might so easily
+						have been commonplace, Sophocles has shown a fine touch; this typical
+						Athenian is more than a walking king; he is a soldier bred in the school of
+						adversity, loyal to gods and men, perfect in courtesy, but stern at need.
+						Comparing the representation of the two sisters in the <title>Antigone</title>
+						with that given in this play, we may remark the tact with which the poet has
+						abstained here from tingeing the character of Ismene with anything like
+						selfish timidity. At the end of the play, where the more passionate nature
+						of the heroic Antigone manifests itself, Ismene is the sister whose calm
+						common-sense is not overpowered by grief; but she grieves sincerely and
+						remains, as she has been throughout, entirely loyal. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Attitude of the
+							Chorus.</note>A word should be added on the conduct of the Chorus in
+						regard to Oedipus. Before they know who he is, they regard him with horror
+						as the man who has profaned the grove; but their feeling quickly changes to
+						compassion on perceiving that he is blind, aged, and miserable. Then they
+						learn his name, and wish to expel him because they conceive his presence to
+						be a defilement. They next relent, not simply because he says that he brings
+						benefits for Athens,—though they take account of that fact, which is itself
+						a proof that he is at peace with the gods,—but primarily because he is able
+						to assure them that he is <cit>
+							<quote xml:lang="eng">"sacred and pious"</quote>
+							<bibl n="Soph. OC 287">(287)</bibl>
+						</cit>. They
+						then leave the matter to Theseus. Thus these elders of Colonus represent the
+						conflict of two feelings which the situation might be supposed to arouse in
+						the minds of ordinary Athenians,—fear of the gods, and compassion for human
+						suffering,—the two qualities which Oedipus recognises as distinctly Athenian
+						( <ref target="cl260">260 n.</ref> ). </p>
+				</div>
+				<div xml:id="cis8" n="8" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">The Oedipus-myth at
+							Colonus.</note>
+					</p>
+					<p>The connection of Oedipus with Colonus was no invention of Sophocles. He
+						found the local legend existing, and only gave it such a form as should
+						harmonise it with his own treatment of the first chapter in the
+						Oedipus-myth. It is unnecessary to suppose that, when he composed the <title>Oedipus
+						Tyrannus</title> , he contemplated an <title>Oedipus at Colonus.</title> As
+						a drama, the former is complete in itself; it is only as an expression of
+						the myth that it is supplemented by the latter. </p>
+					<p>But why, it may be asked, should the King of Thebes have been connected by an
+						ancient legend with this particular place in Attica? The primary link was a
+						cult of the Eumenides at Colonus, which must have been still older than the
+						association of Oedipus with that spot. This cult was itself connected, as
+						the play indicates, with the existence at or near Colonus of a rift or
+						cavernous opening in the ground, supposed to communicate with the
+						under-world. The worship of the Eumenides at Colonus was identical in spirit
+						with their worship at the Areiopagus, where a similar "descent to Hades" was
+						the physical origin. The ancient rigour which required that bloodshed,
+						whether deliberate or not, should be expiated by blood, was expressed by the
+						older idea of the Erintrue, the implacable pursuers. The metamorphosis of
+						the Erintrue into the Eumenides corresponds with a later and milder sense
+						that bloodshed is compatible with varying degrees of guilt, ranging from
+						premeditated murder to homicide in self-defence or by accident. Athenian
+						legend claimed that this transformation of the Avengers took place in
+						Attica, and that the institution of the court on the Areiopagus marked the
+						moment. The claim was a mythical expression of qualities which history
+						attests in the Athenian character, and of which the Athenians themselves
+						were conscious as distinguishing them from other Greeks. It was Athenian to
+						temper the letter of the law with considerations of equity ( <foreign
+							xml:lang="grc">τοὐπιεικές</foreign> ); to use clemency; to feel
+						compassion ( <foreign xml:lang="grc">αἰδώς</foreign> ) for unmerited
+						misfortune; to shelter the oppressed; to restrict the sphere of violence;
+						and to sacrifice,—where no other Greeks did,—at the altar of Persuasion <note
+							anchored="true" n="1" place="foot" resp="RCJ">
+							<bibl n="Isoc. 15.249">Isocr. or. 15 § 249</bibl> .</note>. This
+						character is signally impressed on the <title>Oedipus
+							Coloneus</title> , and is personified in Theseus. The first session of
+						the tribunal on the Hill of Ares was, in Attic story, the first occasion on
+						which this humane character asserted itself against a hitherto inflexible
+						precedent. Orestes slew his mother to avenge his father, whom she had slain;
+						and the Erintrue demanded his blood. He is tried, and acquitted,—but not by
+						the Erintrue; by Athene and her Athenian court. The Erintrue are the
+						accusers, and Apollo is counsel for the prisoner. Then it is,— <emph>after</emph>
+						the acquittal of Orestes,—that Athene's gentle pleading effects a change in
+						the defeated Avengers <note anchored="true" n="1" place="foot" resp="RCJ">
+						In the recent performance of the <title>Eumenides</title> by members of the
+						University of Cambridge a beautiful feature was the expression of this
+						gradual change. Dr Stanford's music for the successive choral songs from <bibl
+								n="Aesch. Eum. 778">v. 778</bibl> onwards interpreted each step of
+						the transition from fierce rage to gentleness; and the acting of the Chorus
+						was in unison with it throughout. We saw, and heard, the Erintrue becoming
+						the Eumenides.</note>. They cease to be the Erintrue: they become the <soCalled>
+						Benign</soCalled> or <soCalled>Majestic</soCalled> goddesses ( <soCalled>
+						Eumenides,</soCalled>
+							<soCalled xml:lang="eng">Semnae</soCalled> ), and are
+						installed, as guardian deities of Attica, in a shrine beneath the
+						Areiopagus. Henceforth they are symbols of the spirit which presided over
+						the Attic criminal law of homicide ( <foreign xml:lang="grc">φόνος</foreign>
+						),—so remarkable for its combination of the unbending religious view, in
+						which bloodshed was always a pollution, with a finely graduated scale of
+						moral guilt, and with ample provision for the exercise of clemency. </p>
+					<p>Oedipus was a passive Orestes,—like him, the instrument of an
+						inherited destiny, but, unlike him, a sufferer, not a doer; for his
+						involuntary acts, as he could justly say, were in reality sufferings
+						rather than deeds. The Eumenides of Colonus could not refuse to
+						admit his plea, commended to them, as it was, by Apollo. His was a
+						typical case for the display of their gentler attributes. And, as
+						Greek religion was prone to associate the cult of deities with that
+						of mortals in whom their power had been shown, it was natural that
+						the Eumenides and Oedipus should be honoured at the same place. A
+						chapel which Pausanias saw at Colonus was dedicated jointly to
+						Oedipus and Adrastus, —a further illustration of this point. For
+						Adrastus was another example of inevitable destiny tempered by
+						divine equity; he shared in the Argive disasters at Thebes; but he
+						was personally innocent; and, alone of the chiefs, he survived. </p>
+				</div>
+				<div xml:id="cis9" n="9" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">The grave of
+							Oedipus.</note>
+					</p>
+					<p>The grave of Oedipus in Attic ground is to form a perpetual safeguard for
+						Attica against invaders. It is interesting to observe ancient traces of an
+						exactly opposite feeling with regard to his resting-place. According to a
+						Boeotian legend <note anchored="true" n="2" place="foot" resp="RCJ"> Schol.
+						on <bibl n="Soph. OC 91">
+								<title>O. C.</title> 91</bibl>, quoting Lysimachus of Alexandria, in
+						the 13th book of his <title xml:lang="grc">Θηβαϊκά</title> . This
+						Lysimachus, best known as the author of a prose <title xml:lang="grc">Νόστοι</title>
+						, lived probably <date when="-0025">about 25 B.C.</date> See <bibl> Müller, <title>Fragm.
+						Hist.</title> III. 334</bibl>.</note>, Oedipus died at Thebes, and his
+						friends wished to bury him there; but the Thebans refused permission. His
+						friends then carried the body to <q type="unspecified" xml:lang="eng">"a
+						place in Boeotia
+							called Ceos,"</q> and there interred it. But <q type="unspecified"
+							xml:lang="eng">"certain misfortunes"</q> presently befell the people of
+						Ceos, and they requested the friends of Oedipus to remove him. The friends
+						next carried him to Eteonus, a place near the frontier between Boeotia and
+						Attica, and buried him by night, without knowing that the ground which they
+						chose for that purpose was sacred to Demeter. The matter having become
+						known, the people of Eteonus sent to Delphi, and asked what they were to do.
+						Apollo replied that they must not <q type="unspecified" xml:lang="eng">"disturb
+						the suppliant of the goddess"</q> (Demeter). Oedipus was therefore allowed
+						to rest in peace, and the place of his burial was thenceforth called the <title>
+						Oedipodeum.</title> We see how this Boeotian dread of his grave, as a bane
+						to the place afflicted with it, answers to the older conception of the
+						Erintrue; just as the Attic view, that his grave is a blessing, is in unison
+						with the character of the Eumenides. It is only when the buried Oedipus has
+						become associated with a <emph>benevolent</emph> Chthonian power,—namely,
+						with Demeter,—that he ceases to be terrible. </p>
+				</div>
+				<div xml:id="cis10" n="10" type="subsection">
+					<p>In the Attic view, <q type="unspecified" xml:lang="eng">"the suppliant of the
+						Benign Goddesses"</q>
+							<note anchored="true" place="marg" resp="RCJ">Oedipus
+						and Attica.</note> at Colonus had not only become, like them, a beneficent
+						agency, but had also been adopted into an Attic citizenship outlasting
+						death. Sophocles expresses this feeling by the passage in which Theseus
+						proclaims his formal acceptance of the new Athenian <bibl n="Soph. OC 631">
+						(631)</bibl> . The permanent identification of Oedipus with Attica is
+						strikingly illustrated by a passage of the rhetor Aristeides, <date
+							when="0170">about 170 A.D.</date>
+							<note anchored="true" n="1"
+							place="foot" resp="RCJ"> In the oration <title xml:lang="grc">ὑπὲρ τῶν
+						τεττάρων</title> , p. 284: <quote xml:lang="grc">κἀκείνους</quote> (those
+						who fell for Greece), <quote xml:lang="grc">πλὴν ὅσον οὐ δαίμονας ἀλλὰ
+						δαιμονίους καλῶν, θαρρούντως ἂν ἔχοις λέγειν ὑποχθονίους τινὰς φύλακας καὶ
+						σωτῆρας τῶν Ἑλλήνων, ἀλεξικάκους καὶ πάντα ἀγαθούς· καὶ ῥύεσθαί γε τὴν χώραν
+						οὐ χεῖρον ἢ τὸν ἐν Κολωνῷ κείμενον Οἰδίπουν, ἢ εἴτις ἄλλοθί που τῆς χώρας ἐν
+						καιρῷ τοῖς ζῶσι κεῖσθαι πεπίστευται. καὶ τοσούτῳ μοι δοκοῦσι τὸν Σόλωνα
+						παρελθεῖν τὸν ἀρχηγέτην ὥσθ’ ὁ μὲν ἐν τῇ Σαλαμῖνι σπαρεὶς φυλάττειν τὴν
+								νῆσον Ἀθηναίοις δοκεῖ, οἱ δὲ ὑπὲρ ἧς διετάχθησαν πεσόντες διετήρησαν
+						πᾶσαν
+								τὴν Ἀττικήν</quote> .</note>He is referring to the men of olden time
+						who fell in battle for Greece; the souls of those men, he says, have become
+						guardian spirits of the land; <quote xml:lang="eng"> "aye, and protect the
+						country no less surely than <emph>Oedipus who sleeps at Colonus</emph> , or
+						any whose grave, in any other part of the land, is believed to be for the
+						weal of the living."</quote>We remember how, by command of oracles, the
+						relics of Theseus were brought from Scyros to Athens, and those of Orestes
+						from Tegea to Sparta,—victory in war being specially named, in the latter
+						instance, as dependent on the local presence of such relics. So, too, the
+						grave of the Argive Eurystheus in Attica was to be a blessing for the land ( <bibl
+							n="Eur. Her. 1032"> Eur. <title>Her.</title> 1032</bibl>). Nor did this
+						belief relate merely to the great heroes of mythology; a similar power was
+						sometimes ascribed to the graves of historical men. Thus, as we learn from
+						Aristeides, the tomb of Solon in Salamis was popularly regarded as securing
+						the possession of that island to Athens.</p>
+				</div>
+				<div xml:id="cis11" n="11" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Topography.</note>
+					</p>
+					<p>The topography of the play, in its larger aspects, is illustrated by the
+						accompanying map <note anchored="true" n="1" place="foot" resp="RCJ">
+						Reduced, by permission, from part of Plate II. in the <bibl>
+								<title xml:lang="deu">Atlas von Athen: im Auftrage des
+									Kaiserlich Deutschen Archäologischen Instituts
+									herausgegeben von E. Curtius und J. A. Kaupert</title> (Berlin,
+						1878. Dietrich Reimer)</bibl>.</note>. The knoll of whitish earth known as
+						Colonus Hippius, which gave its name to the deme or township of Colonus <note
+							anchored="true" n="2" place="foot" resp="RCJ"> The familiarity of the
+						word <foreign xml:lang="grc">κολωνός</foreign> was no impediment to the
+						Greek love of a personal myth; and the hero Colonus, the legendary founder
+						of the township ( <foreign xml:lang="grc">ἀρχηγός</foreign> , <bibl
+								n="Soph. OC 60">v. 60</bibl> ) was called <foreign xml:lang="grc">
+						ἱππότης</foreign> in honour of the local god.—Similar names of places were
+						Colonè in Messenia, Colonae in Thessaly and Phocis; while higher eminences
+						suggested such names as Acragas (Sicily) or Aipeia (Messenia): cp. <bibl>
+						Tozer, <title>Geo. of Greece</title> , p. 357</bibl>.</note>, was about a
+						mile and a quarter N.W.N. from <note anchored="true" place="marg" resp="RCJ">Colonus
+						Hippius.</note> the Dipylon gate of Athens. The epithet Hippius belonged to
+						the god Poseidon, as horse-creating and horse-taming (see <ref
+							target="cl715">on
+							715</ref> ); it was given to this place because Poseidon Hippius was
+						worshipped there, and served to distinguish this extramural Colonus from the
+						Colonus Agoraeus, or "Market Hill," within the walls of Athens <note
+							anchored="true" n="3" place="foot" resp="RCJ">In
+							the district of Melitè (see map): cp. below, p. 5.</note> . In the
+						absence of a distinguishing epithet, "Colonus" would usually mean Colonus
+						Hippius; Thucydides calls it simply Colonus, and describes it as "a
+						sanctuary ( <foreign xml:lang="grc">ἱερόν</foreign> ) of Poseidon." His
+						mention of it occurs in connection with the oligarchical conspiracy of <date
+							when="-0411">411 B.C.</date> , when Peisander and his associates chose
+						Colonus, instead of the Pnyx, as the place of meeting for the Assembly which
+						established the government of the Four Hundred. It is a fair, though not a
+						necessary, inference from the historian's words that the assembly was held <emph>
+						within</emph> the sacred precinct of Poseidon, with the double advantage for
+						the oligarchs of limiting the numbers and of precluding forcible
+						interruption <note anchored="true" n="1" place="foot" resp="RCJ">
+							<cit>
+								<bibl n="Thuc. 8.67">Thuc. 8. 67</bibl>
+								<quote xml:lang="grc">ξυνέκλῃσαν τὴν ἐκκλησίαν ἐς τὸν
+									Κολωνόν (ἔστι δὲ ἱερὸν Ποσειδῶνος ἔξω τῆς πόλεως, ἀπέχον
+									σταδίους μάλιστα δέκἀ</quote>
+							</cit>
+						.— <bibl>Grote (VIII. 47)</bibl> renders <foreign xml:lang="grc">
+								ἱερόν</foreign> "temple," but it seems rather to denote the whole
+						precinct sacred to Poseidon. <bibl>Prof.
+								Curtius (III. 438, Eng. tr.)</bibl> supposes the ecclesia to be held
+						on the knoll of Colonus, near (and not within) the sanctuary,—understanding <foreign
+								xml:lang="grc">ξυνέκλῃσαν</foreign> to denote an enclosure made for
+						the occasion, partly to limit the numbers, partly "on account of the
+						proximity of the enemy's army" (at Deceleia). Grote refers <foreign
+								xml:lang="grc">ξυνέκλῃσαν</foreign> to some stratagem used by the
+						oligarchs. I should rather refer it simply to the limit imposed by the <foreign
+								xml:lang="grc">ἱερόν</foreign> itself. Thucydides, as his words
+						show, here identifies Colonus with the <foreign xml:lang="grc">ἱερόν</foreign>
+						. The temenos of Poseidon having been chosen as the place for the ecclesia,
+						the <foreign xml:lang="grc">περίστια</foreign> would be carried round its
+						boundary; after which no person outside of that lustral line would be
+						considered as participating in the assembly. A choice of place which
+						necessarily restricted the numbers might properly be described by <foreign
+								xml:lang="grc">ξυνέκλῃσαν</foreign> .—Cp. <ref target="cl1491">n. on
+						1491</ref> .</note>. The altar of Poseidon in this precinct is not visible
+						to the spectators of our play, but is supposed to be near. When Pausanias
+						visited Colonus ( <date when="0180">c. 180 A.D.</date> ), he saw an altar of
+						Poseidon Hippius and Athene Hippia. A grove and a temple of Poseidon had
+						formerly existed there, but had perished long before the date of his visit.
+						He found, too, that divine honours were paid at Colonus to Peirithous and
+						Theseus, to Oedipus and Adrastus: there were perhaps two shrines or chapels
+						( <foreign xml:lang="grc">ἡρῷα</foreign> ), one for each pair of heroes <note
+							anchored="true" n="2" place="foot" resp="RCJ"> His use of the singular
+						is ambiguous, owing to its place in the sentence: <cit>
+								<quote xml:lang="grc">ἡρῷον δὲ Πειρίθου καὶ Θησέως Οἰδίποδός
+									τε καὶ Ἀδράστου</quote>
+								<bibl n="Paus. 1.30.4">(I. 30. 4)</bibl>
+							</cit>
+						.</note>. He does not mention the grove of the Eumenides, which, like that
+						of Poseidon, had doubtless been destroyed at an earlier period. </p>
+					<p>About a quarter of a mile N.E.N. of the Colonus Hippius <note anchored="true"
+							place="marg" resp="RCJ">Demeter Euchloüs.</note> rises a second mound,
+						identified by E. Curtius and others with the <cit>
+							<quote xml:lang="eng">"hill of Demeter Euchloüs"</quote>
+							<bibl n="Soph. OC 1600">(1600)</bibl>
+						</cit>.
+						When Oedipus stood at the spot where he finally disappeared, this hill was
+						"in full view" ( <foreign xml:lang="grc">προσόψιος</foreign> ). Traces of an
+						ancient building exist at its southern edge. Similar traces exist at the
+						N.W. edge of the Colonus Hippius. If, as is likely, these ancient buildings
+						were connected with religious purposes, it is possible that the specially
+						sacred region of the ancient Colonus lay between the two mounds <note
+							anchored="true" n="3" place="foot" resp="RCJ">
+							<p> The present aspect of Colonus is thus described by an accomplished
+						scholar, <bibl>Mr George Wotherspoon (Longmans'
+									Magazine, Feb. 1884)</bibl> : <quote xml:lang="eng">
+									<lg type="sonnet">
+										<l>Was this the noble dwelling-place he sings,</l>
+										<l>Fair-steeded glistening land, which once t'
+											adorn</l>
+										<l>Gold-reinèd Aphroditè did not scorn,</l>
+										<l>And where blithe Bacchus kept his revellings?</l>
+										<l>Oh, Time and Change! Of all those goodly
+											things,</l>
+										<l>Of coverts green by nightingales forlorn</l>
+										<l>Lov'd well; of flow'r-bright fields, from morn to
+											morn</l>
+										<l>New-water'd by Cephissus' sleepless springs,</l>
+										<l>What now survives? This stone-capt mound, the
+											plain</l>
+										<l>Sterile and bare, these meagre groves of
+											shade,</l>
+										<l>Pale hedges, the scant stream unfed by rain:</l>
+										<l>No more? The genius of the place replied,</l>
+										<l>"Still blooms inspirèd Art tho' Nature fade:</l>
+										<l>The memory of Colonus hath not died."</l>
+									</lg>
+								</quote>
+							</p>
+							<p>The "stone-capt mound" is the Colonus Hippius, on which are
+								the monuments of Otfried Müller and Lenormant. If Colonus
+								itself has thus lost its ancient charms, at least the views
+								from it in every direction are very fine; especially so is
+								the view of the Acropolis.</p>
+						</note>. </p>
+				</div>
+				<div xml:id="cis12" n="12" type="subsection">
+					<p>The grove of the Eumenides may have been on the N. <note anchored="true"
+							place="marg" resp="RCJ">Probable site of the grove.</note> or N.E. side
+						of the Colonus Hippius. But the only condition fixed by the play fails to be
+						precise, viz. that a road, passing by Colonus to Athens, skirted the
+						grove,—the inner or most sacred part of the grove being on the side furthest
+						from the road. The <note anchored="true" place="marg" resp="RCJ">A
+						suggestion.</note> roads marked on our map are the ancient roads <note
+							anchored="true" n="1" place="foot" resp="RCJ"> On these, see the
+						letter-press by Prof. Curtius to the <bibl>
+								<title xml:lang="deu">Atlas von Athen,</title> pp. 14 f</bibl>.</note>.
+						It will be observed that one of them passes between Colonus Hippius and the
+						hill of Demeter Euchloüs, going in the direction of Athens. There is no
+						reason why the wandering Oedipus should not be conceived as entering Attica
+						from the N.W.; <foreign xml:lang="lat">i.e.</foreign> , as having passed
+						into the Attic plain round the N. end of Aegaleos. And, in that case, the
+						road in question might well represent the route by which Sophocles, familiar
+						with the local details of Colonus in his own day, imagined Oedipus as
+						arriving. Then Oedipus, moving towards Athens, would have the grove of the
+						Eumenides on his right hand <note anchored="true" n="2" place="foot"
+							resp="RCJ">It is scarcely necessary to say that no objection, or
+						topographical inference of any kind, can be drawn from the conventional
+						arrangement of the Greek stage by which Oedipus (as coming from the country)
+						would enter on the spectator's left, and therefore have the scenic grove on
+						his left.</note> , if, as we were supposing, this grove was on the N. side
+						of the Colonus Hippius. The part of the grove furthest from him ( <cit>
+							<quote xml:lang="grc">τοὐκεῖθεν ἄλσους</quote>
+							<bibl n="Soph. OC 505">505</bibl>
+						</cit>) would
+						thus be near the remains of the ancient building at the N.W. edge. When
+						Ismene is sent to that part of the grove, she is told that there is a
+						guardian of the place ( <cit>
+							<quote xml:lang="grc">ἔποικος</quote>
+							<bibl n="Soph. OC 506">506</bibl>
+						</cit>), who
+						can supply her with anything needful for the rites. </p>
+					<p>In this play the sanctities of Colonus are closely associated with those of
+						the neighbouring Academy. To the latter belonged the altar of Prometheus ( <bibl
+							n="Soph. OC 56">56</bibl> , see map), the altar of the Muses ( <bibl
+							n="Soph. OC 691">691</bibl> ), and the altar of Zeus Morios ( <bibl
+							n="Soph. OC 705">705</bibl> ). The sidechannel of Cephisus shown in the
+						map may serve to illustrate the word <foreign xml:lang="grc">νομάδες</foreign>
+						in <bibl n="Soph. OC 687">v.
+							687</bibl> ,—which alludes to a system of irrigation, practised in
+						ancient as in modern times, by artificial canals. </p>
+				</div>
+				<div xml:id="cis13" n="13" type="subsection">
+					<p>When Oedipus knows that his end is near, he leads his <note anchored="true"
+							place="marg" resp="RCJ"> The <foreign xml:lang="grc">καταρ· ράκτης ὀδός</foreign>
+						.</note>friends to a place called the <foreign xml:lang="grc">καταρράκτης
+						ὀδός</foreign> , the "sheer threshold," <cit>
+							<quote xml:lang="eng">"bound by brazen steps to earth's roots."</quote>
+							<bibl n="Soph. OC 1591">Soph. OC 1591</bibl>
+						</cit>There
+						can be no doubt that this "threshold" denotes a natural fissure or chasm,
+						supposed to be the commencement of a passage leading down to the nether
+						world. Such a chasm exists at the foot of the Areiopagus, where Pausanias
+						saw a tomb of Oedipus in the precinct of the Eumenides. Near this, at the
+						S.W. angle of the Acropolis, was a shrine of Demeter Chloë <note
+							anchored="true" n="1" place="foot" resp="RCJ">
+							<cit>
+								<bibl> Schol. on <title>O. C.</title> 1600</bibl>
+								<quote xml:lang="grc">Εὐχλόου Δήμητρος ἱερόν ἐστι πρὸς τῇ
+									ἀκροπόλει</quote>
+							</cit>: quoting the <cit>
+								<bibl>
+									<title xml:lang="grc">Μαρικᾶς</title> of Eupolis,</bibl>
+								<quote xml:lang="grc">
+									<lg type="trimeter">
+										<l>ἀλλ’ εὐθὺ πόλεως εἶμι· θῦσαι γάρ με δεῖ</l>
+										<l>κριὸν Χλόῃ Δήμητρι.</l>
+									</lg>
+								</quote>
+							</cit>If
+						the scholiast is right as to the situation of the temple, Eupolis used <foreign
+								xml:lang="grc">πόλεως</foreign> in the sense of "acropolis," as
+						Athenians still used it in the time of <bibl n="Thuc. 2.15">Thucydides (2.
+						15)</bibl> .</note>. Are we to suppose, then, that Sophocles alludes to the
+						chasm at the Areiopagus, and that "the hill of Demeter Euchloüs" means this
+						shrine of Demeter Chloë on the slope of the Acropolis? This view <note
+							anchored="true" n="2" place="foot" resp="RCJ"> It is beautifully and
+						persuasively stated in <bibl> Wordsworth's <title>Athens and Attica</title>
+						, ch. XXX. (p. 203, 4th ed.)</bibl>. The author holds that the poet,
+						embarrassed by the rival claims of the Areiopagus and Colonus, intended to
+						suggest the former without definitely excluding the latter.</note>—which the
+						coincidence might reasonably suggest—seems to present insuperable
+						difficulties. At <bibl n="Soph. OC 643">v. 643</bibl> Theseus asks Oedipus
+						whether he will come to Athens or stay at Colonus. He replies that he will
+						stay at Colonus, because it is the scene appointed for his victory over his
+						foes ( <bibl n="Soph. OC 646">646</bibl> ). But the victory was to take
+						place at his grave ( <bibl n="Soph. OC 411">411</bibl> ); which the poet
+						therefore supposed to be at or near Colonus,—not at Athens. If, then, in the
+						time of Sophocles an Areiopagus-legend already claimed the grave of Oedipus,
+						the poet disregarded it. And, when the grave was to be associated with
+						Colonus, it would be strange to send Oedipus so far for the purpose of
+						vanishing at the Areiopagus. The brevity of the choral ode which separates
+						the final exit of Oedipus ( <bibl n="Soph. OC 1555">1555</bibl> ) from the
+						entrance of the Messenger ( <bibl n="Soph. OC 1579">1579</bibl> ) implies,
+						as does the whole context, that Oedipus passed away somewhere near the
+						grove—not at a distance of more than a mile and a half, as the other theory
+						requires. Then the phrase <cit>
+							<quote xml:lang="grc">Εὐχλόου Δήμητρος πάγος</quote>
+							<bibl n="Soph. OC 1600">(1600)</bibl>
+						</cit>applies
+						to the knoll far more naturally than to a shrine at the foot of the
+						Acropolis. Referring to a tomb of Oedipus which he saw in the precinct of
+						the Furies at the Areiopagus, <cit>
+							<bibl n="Paus. 1.28.7">Pausanias says: </bibl>
+							<quote xml:lang="eng">"On inquiry, I found that the bones had
+								been brought from Thebes. As to the version of the death of
+								Oedipus given by Sophocles, Homer did not permit me to think
+								it credible."</quote>
+						</cit>
+							<note
+							anchored="true" n="1" place="foot" resp="RCJ">
+							<cit>
+								<bibl n="Paus. 1.28.7">1. 28. 7</bibl>
+								<quote xml:lang="grc">ἔστι δὲ καὶ ἐντὸς τοῦ περιβόλου μνῆμα
+						Οἰδίποδος. πολυπραγμονῶν δὲ εὕρισκον τὰ ὀστᾶ ἐκ Θηβῶν
+									κομισθέντα· τὰ γὰρ ἐς τὸν θάνατον Σοφοκλεῖ πεποιημένα
+									τὸν Οἰδίποδος Ὅμηρος οὐκ εἴα μοι δόξαι πιστά</quote>
+							</cit>,
+						etc. He refers to <bibl n="Hom. Il. 23.679">
+								<title>Il.</title> 23.679 f.</bibl>See my Introd. to the <bibl
+								n="Soph. OT">
+								<title>O. T.</title>
+							</bibl>, p. xiv.</note>(since
+						the <title>Iliad</title> buries Oedipus at Thebes). Thus Pausanias, at
+						least, understood Sophocles to mean that the grave was somewhere near
+						Colonus. It did not occur to him that the Colonus-myth as to the grave could
+						be harmonised with the Areiopagus-myth. Sophocles adopts the Colonus-myth
+						unreservedly; nor can I believe that he intended, by any deliberate
+						vagueness, to leave his hearers free to think of the Areiopagus. The chasm
+						called the <foreign xml:lang="grc">καταρράκτης ὀδός</foreign> must be
+						imagined, then, as not very distant from the grove. No such chasm is visible
+						at the present day in the neighbourhood of Colonus. But this fact is
+						insufficient to prove that no appearance of the kind can have existed there
+						in antiquity <note anchored="true" n="2" place="foot" resp="RCJ"> Prof. T.
+						McK. Hughes, Woodwardian Professor of Geology in the University of
+						Cambridge, kindly permits me to quote his answer to a question of mine on
+						this point. His remarks refer to the general conditions of such phenomena in
+						Greece at large, and must be taken as subject to the possibility that
+						special conditions in the neighbourhood of Colonus may be adverse to the
+						processes described; though I am not aware of any reason for thinking that
+						such is the case. <quote xml:lang="eng">"It is quite possible that a chasm,
+						such as is common in the limestone rocks of Greece, might
+								become first choked, so as no longer to allow the passage of
+								the winter's flood, and then overgrown and levelled, so that
+								there might be no trace of it visible on the surface. The
+								water from the high ground during winter rains rushes down
+								the slopes until it reaches the jointed limestone rock. It
+								filters slowly at first into the fissures. But the water,
+								especially when it contains (as most surface water does) a
+								little acid, dissolves the sides of the fissure, and soon
+								admits sand and pebbles, the mechanical action of which
+								hurries on the work of opening out a great chasm, which
+								swallows up the winter's torrent, and becomes a katavothron.
+								But during the summer no water runs in, and, even without an
+						earthquake shock, such a chasm may get choked. The waters
+								which cannot find their way through then stand in holes, and
+								deposit their mud. There would be for some time a pond
+								above, but that would at last get filled, and all trace of
+								the chasm be lost."</quote>
+						</note>. </p>
+				</div>
+				<div xml:id="cis14" n="14" type="subsection">
+					<p>Sophocles accurately defines the position of the <quote xml:lang="eng">
+						"sheer <note anchored="true" place="marg" resp="RCJ">The secret tomb.</note>
+						threshold"</quote>by naming certain objects near it, familiar, evidently, to
+						the people of the place, though unknown to us <note anchored="true" n="1"
+							place="foot" resp="RCJ"> See <ref target="cl1593">on vv. 1593-1595</ref>
+						.</note>. Here it was that Oedipus disappeared. But the place of his <cit>
+							<quote xml:lang="eng"> "sacred <emph>tomb</emph> "</quote>
+							<bibl n="Soph. OC 1545">(1545)</bibl>
+						</cit>was
+						to be a secret, known only to Theseus. The tomb, then, was not at the spot
+						where he disappeared, since that spot was known to all. The poet's
+						conception appears to have been of this kind. At the moment when Oedipus
+						passed away, in the mystic vision which left Theseus dazzled, it was
+						revealed to the king of Athens where the mortal remains of Oedipus would be
+						found. The soul of Oedipus went down to Hades, whether ushered by a
+						conducting god, or miraculously drawn to the embrace of the spirits below ( <bibl
+							n="Soph. OC 1661">1661</bibl> ); the tenantless body left on earth was
+						wafted by a supernatural agency to the secret tomb appointed for it. As in
+						the <title>Iliad</title> the corpse of Sarpedon is borne from Troy to Lycia
+						by <quote xml:lang="eng">"the twin-brothers, Sleep and
+							Death,"</quote> so divine hands were to minister here. When Theseus
+						rejoins the desolate daughters, he already knows where the tomb is, though
+						he is not at liberty to divulge the place ( <bibl n="Soph. OC 1763">1763</bibl>
+						). </p>
+				</div>
+				<div xml:id="cis15" n="15" type="subsection">
+					<p>The ground on which the grove of the Eumenides at Colonus <note
+							anchored="true" place="marg" resp="RCJ"> The <foreign xml:lang="grc">χαλκοῦς
+						ὀδός</foreign> .</note>stands is called <cit>
+							<quote xml:lang="eng">"the Brazen Threshold, the stay of Athens"</quote>
+							<bibl n="Soph. OC 57">(57)</bibl>
+						</cit>. How is
+						this name related to that of the spot at which Oedipus disappeared, — <cit>
+							<quote xml:lang="eng">"the sheer threshold"</quote>
+							<bibl n="Soph. OC 1590">(1590)</bibl>
+						</cit>? One
+						view is that the same spot is meant in both cases. We have then to suppose
+						that in verses 1-116 (the "prologue") the scene is laid at the <foreign
+							xml:lang="grc">καταρράκτης ὀδός</foreign> , "the sheer threshold"; and
+						that at <bibl n="Soph. OC 117">v.
+							117</bibl> the scene changes to another side of the grove, where the
+						rest of the action takes place. This supposition is, however, extremely
+						improbable, and derives no support from any stage arrangements which the
+						opening scene implies. Rather the "Brazen Threshold" of <bibl
+							n="Soph. OC 57">v. 57</bibl> was a name derived from the particular spot
+						which is called the "sheer threshold," and applied in a larger sense to the
+						immediately adjacent region, including the ground on which the grove stood.
+						The epithet "brazen" properly belonged to the actual chasm or "threshold," —
+						the notion being that a flight of brazen steps connected the upper world
+						with the Homeric "brazen threshold" of Hades. In its larger application to
+						the neighbouring ground, "brazen" was a poetical equivalent for "rocky," and
+						this ground was called the "stay" or "support" ( <foreign xml:lang="grc">
+						ἔρεισμα</foreign> ) of Athens, partly in the physical sense of "firm basis,"
+						partly also with the notion that the land had a safeguard in the benevolence
+						of those powers to whose nether realm the "threshold" led. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Evidence from
+							Istros.</note>This view is more than a conjecture; it can be supported
+						by ancient authority. Istros, a native of Cyrene, was first the slave, then
+						the disciple and friend, of the Alexandrian poet Callimachus; he lived,
+						then, <date when="-0240">about 240
+							B.C.</date> , or less than 170 years after <date when="-0406">the
+							death of Sophocles</date>
+							<note anchored="true" n="1" place="foot"
+							resp="RCJ">
+							<bibl> Müller, <title>Fragm. Hist.</title> I., lxxxv., 418</bibl>.</note>.
+						He is reckoned among the authors of <title>Atthides</title> , having
+						written, among other things, a work entitled <title xml:lang="grc">Ἀττικά</title>
+						, in at least sixteen books. In the later Alexandrian age he was one of the
+						chief authorities on Attic topography; and he is quoted six times in the
+						ancient scholia on the <title>Oedipus Coloneus.</title> One of these
+						quotations has not (so far as I know) been noticed in its bearing on the
+						point now under discussion; it does not occur in the scholium on <bibl
+							n="Soph. OC 57">v. 57</bibl> , but on <bibl n="Soph. OC 1059">1059</bibl>
+						, in connection with another subject ("the snowy rock"). It would appear
+						that in the first book of his <title xml:lang="grc">Ἀττικά</title> Istros
+						sketched an itinerary of Attica, marking off certain stages or distances.
+						Along with some other words, the scholiast quotes these:— <quote
+							xml:lang="grc">ἀπὸ δὲ τούτου ἕως Κολωνοῦ παρὰ τὸν Χαλκοῦν
+						προσαγορευόμενον· ὅθεν πρὸς τὸν Κηφισὸν ἕως τῆς μυστικῆς εἰσόδου
+							εἰς Ἐλευσῖνα</quote> . We do not know to what <foreign xml:lang="grc">ἀπὸ
+						τούτου</foreign> referred: but the context is clear. Two distances are here
+						indicated: (1) one is from the point meant by <foreign xml:lang="grc">τοῦτο</foreign>
+						, " <emph>along the
+							Brazen Threshold, as it is called</emph> ," to Colonus: (2) the second
+						is from Colonus "in the direction of the Cephisus, as far as the road by
+						which the Initiated approach Eleusis," — <foreign xml:lang="lat">i.e.</foreign>
+						, as far as the point at which the Sacred Way crosses the Cephisus (see
+						map). A third stage is then introduced by the words, <foreign xml:lang="grc">ἀπὸ
+						ταύτης
+							δὲ</foreign> ( <foreign xml:lang="lat">sc.</foreign>
+							<foreign
+							xml:lang="grc">τῆς εἰσόδου</foreign> ) <foreign xml:lang="grc">βαδιζόντων
+						εἰς Ἐλευσῖνα</foreign> , etc. Thus the course of the second stage is from
+						N.E. to S.W.; and the third stage continues the progress westward. Hence it
+						would be natural to infer that the unknown point meant by <foreign
+							xml:lang="grc">τοῦτο</foreign> , from which one set out "along the
+						Brazen Threshold," was somewhere to the E. or N.E. of Colonus. At any rate,
+						wherever that point was, the question with which we are chiefly concerned is
+						settled by this passage. The "Brazen Threshold" was not merely the name of a
+						definite spot. It was the name given to a whole strip of ground, or region,
+						"along which" the wayfarer proceeded to Colonus. And this perfectly agrees
+						with the manner in which Sophocles refers to it ( <bibl n="Soph. OC 57">v.
+							57</bibl> ). </p>
+				</div>
+				<div xml:id="cis16" n="16" type="subsection">
+					<p>In order to understand the opening part of the play (as <note anchored="true"
+							place="marg" resp="RCJ">Stage arrangements in the opening scene.</note>
+						far as <bibl n="Soph. OC 201">v. 201</bibl> ), it is necessary to form some
+						distinct notion of the stage arrangements. It is of comparatively little
+						moment that we cannot pretend to say exactly how far the aids of scenery and
+						carpentry were actually employed when the play was first produced at Athens.
+						Without knowing this, we can still make out all that is needful for a clear
+						comprehension of the text. First, it is evident that the back-scene (the
+						palace-front of so many plays) must here have been supposed to represent a
+						landscape of some sort,—whether the acropolis of Athens was shown in the
+						distance, or not. Secondly, the sacred grove on the stage must have been so
+						contrived that Oedipus could retire into its covert, and then show himself <bibl
+							n="Soph. OC 138">(138)</bibl> as if in an opening or glade, along which
+						Antigone gradually leads him until he is beyond the precinct. If one of the
+						doors in the back-scene had been used for the exit of Oedipus into the
+						grove, then it would at least have been necessary to show, within the door,
+						a tolerably deep vista. It seems more likely that the doors of the
+						back-scene were not used at all in this play. I give a diagram to show how
+						the action as far as <bibl n="Soph. OC 201">v. 201</bibl> might be managed <note
+							anchored="true" n="1" place="foot" resp="RCJ">I was glad to find that
+							the view expressed by this diagram approved itself to a critic who is
+						peculiarly well qualified to judge, — Mr J. W. Clark, formerly Fellow of
+						Trin. Coll., Cambridge.</note> . <!-- There is a diagram here. -->
+					</p>
+					<p>Antigone leads in her blind father on the spectators' left. She places him on
+						a seat of natural rock (the "1st seat" in the diagram). This rock is just
+						within the bounds of the grove; which evidently was not surrounded by a
+						fence of any kind, ingress and egress being free. When the Chorus approach,
+						Antigone and her father hide in the grove, following the left of the two
+						dotted lines <bibl n="Soph. OC 113">(113)</bibl> . When Oedipus discloses
+						himself to the Chorus <bibl n="Soph. OC 138">(138)</bibl> , he is well
+						within the grove. Assured of safety, he is gradually led forward by Antigone <bibl
+							n="Soph. OC 173">(173-191)</bibl> , along the right-hand dotted line. At
+						the limit of the grove, in this part, there is a low ledge of natural rock,
+						forming a sort of threshold. When he has set foot on this ledge of
+						rock,—being now just outside the grove,—he is told to halt <bibl
+							n="Soph. OC 192">(192)</bibl> . A low seat of natural rock,—the outer
+						edge ( <foreign xml:lang="grc">ἄκρου</foreign> ) of the rocky threshold,— is
+						now close to him. He has only to take a step sideways ( <foreign
+							xml:lang="grc">λέχριος</foreign> ) to reach it. Guided by Antigone, he
+						moves to it, and she places him on it (the "2nd seat" in the diagram: <bibl
+							n="Soph. OC 201">v. 201</bibl> ). </p>
+				</div>
+				<div xml:id="cis17" n="17" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">The Attic plays of
+							Euripides.</note>
+					</p>
+					<p>Not only the local colour but the Athenian sentiment of the <title>Coloneus</title>
+						naturally suggests a comparison, or a contrast, with some plays of
+						Euripides. It may be said that the especially Attic plays of the latter fall
+						under two classes. First, there are the pieces in which he indirectly links
+						his fable with the origin of Attic institutions, religious or civil, though
+						the action does not pass in Attica; thus the <title>Ion</title> ,—of which
+						the scene is at Delphi,— bears on the origin of the Attic tribes; the <title>Iphigenia
+						in Tauris</title> refers to the cult of Artemis as practised in Attica at
+						Halae and Brauron. Then there are the more directly Athenian plays,— the <title>
+						Supplices</title> , where Theseus takes the part of the Argive king
+						Adrastus, and compels the Thebans to allow the burial of the Argives slain
+						at Thebes; the <title>Heracleidae</title> , where the son of Theseus
+						protects the children of Heracles,—as Theseus himself, in the <title>Hercules
+						Furens</title> (of which the scene is at Thebes), had induced their father
+						to seek an asylum at Athens. If the Attic elements in the <title>Oedipus
+						Coloneus</title> are compared with those of the plays just mentioned, the
+						difference is easily felt. In the first of the two Euripidean groups, the
+						tone of the Attic traits is antiquarian; in the second, it tends to be
+						political,— <foreign xml:lang="lat">i.e.</foreign> , we meet with allusions,
+						more or less palpable, to the relations of Athens with Argos or with Thebes
+						at certain moments of the Peloponnesian war. The <title>Oedipus
+							Coloneus</title> has many references to local usages,—in particular, the
+						minute description of the rites observed in the grove of the Eumenides; it
+						is a reflex of contemporary Attic life, in so far as it is a faithful
+						expression of qualities which actually distinguished the Athens of Sophocles
+						in public action, at home and abroad. But the poet is an artist working in a
+						purely ideal spirit; and the proof of his complete success is the
+						unobtrusive harmony of the local touches with all the rest. In <note
+							anchored="true" place="marg" resp="RCJ"> The <title>Eumenides.</title>
+						</note>this
+						respect the <title>Oedipus Coloneus</title> might properly be compared with
+						the <title>Eumenides</title> ,—with which it has the further affinity of
+						subject already noticed above. Yet there is a difference. Contemporary
+						events affecting the Areiopagus were vividly present to the mind of
+						Aeschylus. He had a political sympathy, if not a political purpose, which
+						might easily have marred the ideal beauty of a lesser poet's creation.
+						Prudently bold, he deprived it of all power to do this by the direct
+						simplicity with which he expressed it ( <bibl n="Aesch. Eum. 693">
+							<title>Eum.</title> 693-701</bibl>). The <title>Oedipus
+							Coloneus</title> contains perhaps one verse in which we might surmise
+						that the poet was thinking of his own days <bibl n="Soph. OC 1537">(1537)</bibl>
+						; but it does not contain a word which could be interpreted as directly
+						alluding to them. </p>
+				</div>
+				<div xml:id="cis18" n="18" type="subsection">
+					<p>The general voice of ancient tradition attributed the <note anchored="true"
+							place="marg" resp="RCJ"> The <title>Coloneus</title> ascribed to the
+						poet's last years.</note>
+							<title>Oedipus Coloneus</title>to the latest years
+						of Sophocles, who is said to have died at the age of ninety, <date
+							notBefore="-0406-07" notAfter="-0405-06">either at the beginning of 405
+						B.C., or in the latter half of 406 B.C.</date> According to the author of
+						the second Greek argument to the play (p. 4), it was brought out, after the
+						poet's death, by his grandson and namesake, Sophocles, the son of Ariston,
+						in <date when="-0402">the archonship of Micon, Ol. 94. 3 (402 B.C.)</date> .
+						The ancient belief is expressed by the well-known story for which Cicero is
+						our earliest authority:— <quote xml:lang="eng">
+							<p> "Sophocles wrote tragedies to extreme old age; and as, owing to this
+						pursuit, he was thought to neglect his property, he was brought by his sons
+						before a court of law, in order that the judges might declare him incapable
+						of managing his affairs,—as Roman law withdraws the control of an estate
+						from the incompetent head of a family. Then, they say, the old man recited
+						to the judges the play on which he was engaged, and which he had last
+						written,—the <title>Oedipus Coloneus;</title> and asked whether that poem
+						was suggestive of imbecility. Having recited it, he was acquitted by the
+						verdict of the court."</p>
+						</quote>
+							<note
+							anchored="true" n="1" place="foot" resp="RCJ">
+							<bibl n="Cic. Sen. 7.22">Cic. <title>Cato ma. seu De
+									Sen.</title> 7. 22</bibl>. The phrase, <quote xml:lang="lat">
+						"eam fabulam <emph>quam in manibus habebat et
+									proxime scripserat</emph> ,"</quote>admits of a doubt. I
+						understand it to mean that he had lately finished the play, but had not yet
+						brought it out; it was still "in his hands" for revision and last touches.
+						This seems better than to give the words a literal sense, "which he was then
+						carrying in his hands." <bibl> Schneidewin ( <title>Allgemeine Einleitung</title>
+						, p. 13)</bibl>, in quoting the passage, omits the words, <foreign
+								xml:lang="lat">et proxime scripserat</foreign> , whether
+						accidentally, or regarding them as interpolated. — The story occurs also in <bibl
+								n="Plut. An Seni 785b"> Plut. <title>Mor.</title> 785 B</bibl>; <bibl
+								n="Lucian Macr. 24"> Lucian <title>Macrob.</title> 24</bibl>; <bibl
+								n="Apul. Apol. 37"> Apuleius <title>De Magia</title> 298</bibl>; <bibl
+								n="V. Max. 1.7.12">Valerius Maximus I. 7.
+								12</bibl> ; and the anonymous Life of Sophocles.</note>. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">The story of the
+							recitation —not impossible.</note>Plutarch specifies the part
+						recited,—viz. the first stasimon, —which by an oversight he calls the
+						parodos,—quoting <bibl n="Soph. OC 668">vv. 668-673</bibl> , and adding that
+						Sophocles was escorted from the court with applauding shouts, as from a
+						theatre in which he had triumphed. The story should not be too hastily
+						rejected because, in a modern estimate, it may seem melodramatic or absurd.
+						There was nothing impossible in the incident supposed. The legal phrase used
+						by the Greek authorities is correct, describing an action which could be,
+						and sometimes was, brought by Athenian sons against their fathers <note
+							anchored="true" n="2" place="foot" resp="RCJ">
+							<cit>
+								<bibl n="Plut. An Seni 785 B"> Plut. <title>Mor.</title> 785 B </bibl>
+								<quote xml:lang="grc">ὑπὸ παίδων παρανοίας δίκην
+									φεύγων</quote>
+							</cit>: <cit>
+								<bibl n="Lucian Macr. 24"> Lucian <title>Macrob.</title> 24</bibl>
+								<quote xml:lang="grc">ὑπὸ Ἰοφῶντος τοῦ υἱέος...παρανοίας
+									κρινόμενος</quote>
+							</cit>. Cp. <cit>
+								<bibl n="Xen. Mem. 1.2.49"> Xen. <title>Mem.</title> I. 2. 49</bibl>
+								<quote xml:lang="grc">κατὰ νόμον ἐξεῖναι παρανοίας ἑλόντι
+									καὶ τὸν πατέρα δῆσαι</quote>
+							</cit>. <cit>
+								<bibl n="Aristoph. Cl. 844"> Aristoph. <title>Nub.</title> 844</bibl>
+								<quote xml:lang="grc">
+									<lg type="trimeter">
+										<l>οἴμοι, τί δράσω παραφρονοῦντος τοῦ πατρός;</l>
+										<l>πότερα παρανοίας αὐτὸν εἰσαγαγὼν ἕλω;</l>
+									</lg>
+								</quote>
+							</cit>
+						</note>
+						. <!-- still in the same paragraph, after the note --> As to the recitation, a jury of some hundreds of citizens in an Athenian
+						law-court formed a body to which such a <foreign xml:lang="fra">coup
+							de théâtre</foreign> could be addressed with great effect. The general
+						spirit of Greek forensic oratory makes it quite intelligible that a
+						celebrated dramatist should have vindicated his sanity in the manner
+						supposed. The true ground for doubt is of another kind. It <note
+							anchored="true" place="marg" resp="RCJ">Its probable
+							origin.</note> appears that an arraignment of the aged Sophocles, by his
+						son Iophon, before a court of his clansmen (phratores), had furnished a
+						scene to a contemporary comedy <note anchored="true" n="1" place="foot"
+							resp="RCJ"> The passage which shows this is in the anonymous <foreign
+								xml:lang="grc">Βίος</foreign> ; — <quote xml:lang="grc">φέρεται δὲ
+						καὶ παρὰ
+								πολλοῖς ἡ πρὸς τὸν υἱὸν Ἰοφῶντα γενομένη αὐτῷ δίκη ποτέ.
+								ἔχων γὰρ ἐκ μὲν Νικοστράτης Ἰοφῶντα, ἐκ δὲ Θεώριδος
+								Σικυωνίας Ἀρίστωνα, τὸν ἐκ τούτου γενόμενον παῖδα Σοφοκλέα
+								πλέον ἔστεργεν. καί ποτε ἐν δράματι εἰσήγαγε τὸν Ἰοφῶντα
+								αὐτῷ φθονοῦντα καὶ πρὸς τοὺς φράτορας ἐγκαλοῦντα τῷ πατρὶ ὡς
+								ὑπὸ γήρως παραφρονοῦντι· οἱ δὲ τῷ Ἰοφῶντι ἐπετίμησαν.
+								Σάτυρος δέ φησιν αὐτὸν εἰπεῖν· εἰ μέν εἰμι Σοφοκλῆς, οὐ
+								παραφρονῶ· εἰ δὲ παραφρονῶ, οὐκ εἰμὶ Σοφοκλῆς· καὶ τότε τὸν
+								Οἰδίποδα ἀναγνῶναι</quote> . In the sentence, <foreign
+								xml:lang="grc">καί ποτε...εἰσήγαγε</foreign> , the name of a comic
+						poet, who was the subject to <foreign xml:lang="grc">εἰσήγαγε</foreign> ,
+						has evidently been lost. Some would supply <foreign xml:lang="grc">Λεύκων</foreign>
+						, one of whose plays was entitled <title xml:lang="grc">Φράτορες</title> .
+						Hermann conjectured, <foreign xml:lang="grc">καί ποτε
+								Ἀριστοφάνης ἐν Δράμασιν</foreign> ,—Aristophanes having written a
+						play called <title xml:lang="grc">Δράματα</title> , or rather two, unless
+						the <title xml:lang="grc">Δράματα ἢ
+								Κένταυρος</title> and <title xml:lang="grc">Δράματα ἢ
+								Νίοβος</title> were only different editions of the same. Whoever the
+						comic poet was, his purpose towards Sophocles was benevolent, as the
+						phratores censured Iophon. This tone, at least, is quite consistent with the
+						conjecture that the poet was Aristophanes (cp. <bibl n="Aristoph. Frogs 79">
+								<title>Ran.</title> 79</bibl>). Just after the death of Sophocles,
+						Phrynichus wrote of him as one whose happiness had been unclouded to the
+						very end— <foreign xml:lang="grc">καλῶς δ’
+								ἐτελεύτης), οὐδὲν ὑπομείνας κακόν</foreign> . There is some force in
+						Schneidewin's remark that this would be strange if the poet's last days had
+						been troubled by such a scandal as the supposed trial.</note>; and it is
+						highly probable that the comic poet's invention—founded possibly on gossip
+						about differences between Sophocles and his sons —was the origin of the
+						story. This inference is slightly confirmed by the words which, according to
+						one account, Sophocles used in the law-court: <quote xml:lang="grc">εἰ
+							μέν εἰμι Σοφοκλῆς, οὐ παραφρονῶ· εἰ δὲ παραφρονῶ, οὐκ εἰμὶ
+							Σοφοκλῆς</quote> . That has the ring of the Old Comedy <note
+							anchored="true" n="2" place="foot" resp="RCJ"> I need scarcely point out
+						how easily the words could be made into a pair of comic trimeters, <foreign
+								xml:lang="lat">e.g.</foreign>
+								<quote xml:lang="grc">
+								<lg type="trimeter">
+									<l>εἰ μὲν Σοφοκλέης εἰμί, παραφρονοῖμ’ ἂν οὔ·</l>
+									<l>εἰ δ’ αὖ παραφρονῶ, Σοφοκλέης οὐκ εἴμ’ ἐγώ</l>
+								</lg>
+							</quote>.
+						This would fit into a burlesque forensic speech, in the style of the new
+						rhetoric, which the comedy may have put into the mouth of Sophocles. As
+						though, in a modern comedy, the pedagogue should say,— <q type="unspecified"
+								xml:lang="eng">"If
+								I am Doctor X., I am not fallible; if I am fallible, I am
+								not Doctor X."</q>
+						</note>. The words are
+						quoted in the anonymous Life of Sophocles as being recorded by Satyrus, a
+						Peripatetic who lived <date when="-0200">about 200 B.C.</date> , and left a
+						collection of biographies. His work appears to have been of a superficial
+						character, and uncritical <note anchored="true" n="1" place="foot"
+							resp="RCJ"> The literary vestiges of this Satyrus will be found in <bibl>
+						Müller, <title>Fragm. Hist.</title> III. 159 ff</bibl>.</note>. The incident
+						of the trial, as he found it in a comedy of the time of Sophocles, would
+						doubtless have found easy acceptance at his hands. From Satyrus, directly or
+						indirectly, the story was probably derived by Cicero and later writers. </p>
+				</div>
+				<div xml:id="cis19" n="19" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Internal evidence
+							—supposed political bearings.</note>
+					</p>
+					<p>It must now be asked how far the internal evidence of the play supports the
+						belief that it belongs to the poet's latest years. Lachmann, maintaining the
+						singular view that the <title>Oedipus
+							Coloneus</title> was <quote xml:lang="eng">"political through
+							and through"</quote> ( <quote xml:lang="deu">"durch und durch
+							politisch"</quote> ), held that it was composed just before the
+						beginning of the Peloponnesian war, with the purpose of kindling Athenian
+						patriotism. Another conjecture is that the play was prepared for the Great
+						Dionysia of <date when="-0411">411
+							B.C.</date> , just after the Government of Four Hundred had been
+						established by the assembly held at Colonus; that Colonus Hippius may have
+						been "in some special sense the Knights' Quarter"; that hence the play would
+						commend itself to a class of men among whom the new oligarchy had found most
+						of its adherents; and that, after the fall of the Four Hundred, political
+						considerations prevented a reproduction of the play, until, after the poet's
+						death, it was revived in <date when="-0402">402 B.C.</date>
+							<note
+							anchored="true" n="2" place="foot" resp="RCJ">
+							<bibl> Prof. L. Campbell, <title>Sophocles</title> , vol. I. 276 ff</bibl>
+						.</note>This is an ingenious view, but not (to my apprehension) a probable
+						one. That the play would have been especially popular with the Athenian
+						Knights need not be doubted; but it is another thing to suppose that the
+						composition of the play had regard to their political sympathies in <date
+							when="-0411">411
+							B.C.</date> In a time of public excitement any drama bearing on the past
+						of one's country is pretty sure to furnish some words that will seem fraught
+						with a present meaning. We may grant that such a meaning would sometimes,
+						perhaps, have been found by an Athenian spectator of this play, and also
+						that the poet's mind, when he wrote it, was not insensible to the influence
+						of contemporary events. But it seems not the less true to affirm that, from
+						the first verse to the last, in great things and in small, the play is
+						purely a work of ideal art. </p>
+				</div>
+				<div xml:id="cis20" n="20" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Character of the
+							composition.</note>
+					</p>
+					<p>Another species of internal evidence has been sought in the character of the
+						dramatic composition. It has been held that the <title>Oedipus Coloneus</title>
+						shares certain traits with the <title>Philoctetes</title> , the other play
+						which tradition assigns to the latest years of Sophocles. One such trait is
+						the larger scope given to scenic effects which appeal to the eye and the
+						ear,—such as the pitiable garb of Oedipus, the personal violence of Creon,
+						the scenery of Colonus, the thunder-storm. Another is the change from a
+						severer type of tragedy, which concentrates the interest on a single
+						issue—as in the <title>Tyrannus</title> —to a type which admits the relief
+						of secondary interests,—such as the cult at Colonus, the rescue of the
+						maidens, the glory of Athens, the fortunes of Thebes. A third trait of
+						similar significance has been recognised in the contemplative tendency of
+						the play, which leaves the spectator at leisure to meditate on questions
+						other than those which are solved by a stroke of dramatic action,—such as
+						the religious and the moral aspects of the hero's acts, or the probable
+						effect of his pleas on the Athenian mind <note anchored="true" n="1"
+							place="foot" resp="RCJ"> See <bibl>Campbell, I. 259
+								ff.</bibl>
+						</note>. Akin to this tendency is
+						the choice of subjects like those of the <title>Coloneus</title> and the <title>
+						Philoctetes</title> , which end with a reconciliation, not with a disaster.
+						And here there is an analogy with some of the latest of Shakspeare's
+						plays,—the <title>Winter's Tale</title> , <title>Tempest</title> , and <title>
+						Cymbeline</title> , —which end, as Prof. Dowden says, with <quote
+							xml:lang="eng">"a resolution of the dissonance, a
+							reconciliation."</quote>
+							<note anchored="true" n="2" place="foot"
+							resp="RCJ">
+							<bibl>
+								<title>Shakspere—His Mind and Art</title> , p. 406.</bibl>
+						</note>
+					</p>
+					<p>It may at once be conceded that the traits above mentioned are present in the <title>
+						Coloneus</title> , and that they are among those which distinguish it from
+						the <title>Tyrannus.</title> The <title>Coloneus</title> is indeed more
+						picturesque, more tolerant of a distributed interest, more meditative; and
+						its end is peace. But it is less easy to decide how far these traits are due
+						to the subject itself, and how far they can safely be regarded as
+						distinctive of the poet's latest period. Let us suppose for a moment that
+						external evidence had assigned the <title>Coloneus</title> to the earlier
+						years of Sophocles. It would not then, perhaps, seem less reasonable to
+						suggest that these same traits are characteristic of youth. Here, it might
+						be said, we find the openness of a youthful imagination to impressions of
+						the senses; its preference of variety to intensity, in the absence of that
+						matured and virile sternness of dramatic purpose which can concentrate the
+						thoughts on a single issue; its affinity to such themes as temper the darker
+						view of human destiny with some gladness and some hope. In saying this, I do
+						not mean to suggest that the latter view of the traits in question is
+						actually more correct than the former, but merely to illustrate the facility
+						with which considerations of this nature can be turned to the support of
+						opposite hypotheses. </p>
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Rhetoric.</note>Another
+						feature of the play which has been supposed to indicate the <date
+							notBefore="-0415" notAfter="-0400">close of the fifth century
+							B.C.</date> is the prominence of the rhetorical element in certain
+						places, especially in the scenes with Creon and Polyneices. We should
+						recollect, however, that the <title>Ajax</title> is generally allowed to be
+						one of the earlier plays, and that the scenes there between Teucer and the
+						Atreidae show the taste for rhetorical discussion quite as strongly as any
+						part of the <title>Coloneus.</title> Rhetoric should be distinguished from
+						rhetorical dialectic. Subtleties of the kind which appear in some plays of
+						Euripides are really marks of date, as showing new tendencies of thought.
+						But the natural rhetoric of debate, such as we find it in the <title>Ajax</title>
+						and the <title>Coloneus</title> , was as congenial to Greeks in the days of
+						Homer as in the days of Protagoras. </p>
+				</div>
+				<div xml:id="cis21" n="21" type="subsection">
+					<p>
+						<note anchored="true" place="marg" resp="RCJ">Conclusion.</note>
+					</p>
+					<p>Our conclusion may be as follows. There is no reason to question the external
+						evidence which refers the <title>Oedipus Coloneus</title> to <date
+							notBefore="-0410" notAfter="-0406">the latest years of
+							Sophocles</date>. But no corroboration of it can be derived from the
+						internal evidence, except in one general aspect and one detail,—viz. the
+						choice of an Attic subject, and the employment of a fourth actor. The Attic
+						plays of Euripides, mentioned above, belong to the latter part of the
+						Peloponnesian war, which naturally tended to a concentration of home
+						sympathies. An Attic theme was the most interesting that a dramatist could
+						choose; and he was doing a good work, if, by recalling the past glories of
+						Athens, he could inspire new courage in her sons. If Attica was to furnish a
+						subject, the author of the <title>Oedipus Tyrannus</title> had no need to
+						look beyond his native Colonus; and it is conceivable that this general
+						influence of the time should have decided the choice. In three scenes of the
+						play, four actors are on the stage together. This innovation may be allowed
+						as indicating the latest period of Sophocles <note anchored="true"
+							place="foot" resp="RCJ">A
+							discussion of this point will be found below, in the note on the
+							Dramatis Personae, p. 7.</note> . </p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

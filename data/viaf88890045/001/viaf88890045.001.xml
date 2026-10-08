@@ -1,12 +1,13 @@
-<?xml version="1.0"?>     <!ENTITY drachm "[drachm]" > <!ENTITY drachm1 "[drachm1]" > <!ENTITY drachm5 "[drachm5]" > <!ENTITY drachm10 "[drachm10]" > <!ENTITY drachm50 "[drachm50]" > <!ENTITY drachm100 "[drachm100]" > <!ENTITY drachm500 "[drachm500]" > <!ENTITY drachm1000 "[drachm1000]" > <!ENTITY drachm5000 "[drachm5000]" > <!ENTITY CC "[CC]" > <!ENTITY CF "[CF]" > <!ENTITY CI "[CI]" > <!ENTITY Dmacr "[Dmacr]" > <!ENTITY Psi "[Psi]" > <!ENTITY breveict "[breveict]" > <!ENTITY drachm1000000 "[drachm1000000]" > <!ENTITY frac160 "[frac160]" > <!ENTITY lceil "[lceil]" > <!ENTITY lg "[lg]" > <!ENTITY macrict "[macrict]" > <!ENTITY macrictict "[macrictict]" > <!ENTITY macrpause "[macrpause]" > <!ENTITY multi "[multi]" > <!ENTITY music1 "[music1]" > <!ENTITY music2 "[music2]" > <!ENTITY music3 "[music3]" > <!ENTITY music4 "[music4]" > <!ENTITY music5 "[music5]" > <!ENTITY music6 "[music6]" > <!ENTITY music7 "[music7]" > <!ENTITY music8 "[music8]" > <!ENTITY music9 "[music9]" > <!ENTITY music10 "[music10]" > <!ENTITY music11 "[music11]" > <!ENTITY music12 "[music12]" > <!ENTITY music13 "[music13]" > <!ENTITY music14 "[music14]" > <!ENTITY music15 "[music15]" > <!ENTITY music16 "[music16]" > <!ENTITY music17 "[music17]" > <!ENTITY music18 "[music18]" > <!ENTITY music19 "[music19]" > <!ENTITY music20 "[music20]" > <!ENTITY music21 "[music21]" > <!ENTITY music22 "[music22]" > <!ENTITY music23 "[music23]" > <!ENTITY otimes "[otimes]" > <!ENTITY pause "[pause]" > <!ENTITY pentaseme "[pentaseme]" > <!ENTITY rceil "[rceil]" > <!ENTITY tetmseme "[tetmseme]" > <!ENTITY tetraseme "[tetraseme]" > <!ENTITY tetrasemeict "[tetrasemeict]" > <!ENTITY tetrasemepause "[tetrasemepause]" > <!ENTITY triseme "[triseme]" > <!ENTITY trisemepause "[trisemepause]" > <!ENTITY uprime "[uprime]" > 
+<?xml version="1.0"?>   
+<!ENTITY drachm "[drachm]" > <!ENTITY drachm1 "[drachm1]" > <!ENTITY drachm5 "[drachm5]" > <!ENTITY drachm10 "[drachm10]" > <!ENTITY drachm50 "[drachm50]" > <!ENTITY drachm100 "[drachm100]" > <!ENTITY drachm500 "[drachm500]" > <!ENTITY drachm1000 "[drachm1000]" > <!ENTITY drachm5000 "[drachm5000]" > <!ENTITY CC "[CC]" > <!ENTITY CF "[CF]" > <!ENTITY CI "[CI]" > <!ENTITY Dmacr "[Dmacr]" > <!ENTITY Psi "[Psi]" > <!ENTITY breveict "[breveict]" > <!ENTITY drachm1000000 "[drachm1000000]" > <!ENTITY frac160 "[frac160]" > <!ENTITY lceil "[lceil]" > <!ENTITY lg "[lg]" > <!ENTITY macrict "[macrict]" > <!ENTITY macrictict "[macrictict]" > <!ENTITY macrpause "[macrpause]" > <!ENTITY multi "[multi]" > <!ENTITY music1 "[music1]" > <!ENTITY music2 "[music2]" > <!ENTITY music3 "[music3]" > <!ENTITY music4 "[music4]" > <!ENTITY music5 "[music5]" > <!ENTITY music6 "[music6]" > <!ENTITY music7 "[music7]" > <!ENTITY music8 "[music8]" > <!ENTITY music9 "[music9]" > <!ENTITY music10 "[music10]" > <!ENTITY music11 "[music11]" > <!ENTITY music12 "[music12]" > <!ENTITY music13 "[music13]" > <!ENTITY music14 "[music14]" > <!ENTITY music15 "[music15]" > <!ENTITY music16 "[music16]" > <!ENTITY music17 "[music17]" > <!ENTITY music18 "[music18]" > <!ENTITY music19 "[music19]" > <!ENTITY music20 "[music20]" > <!ENTITY music21 "[music21]" > <!ENTITY music22 "[music22]" > <!ENTITY music23 "[music23]" > <!ENTITY otimes "[otimes]" > <!ENTITY pause "[pause]" > <!ENTITY pentaseme "[pentaseme]" > <!ENTITY rceil "[rceil]" > <!ENTITY tetmseme "[tetmseme]" > <!ENTITY tetraseme "[tetraseme]" > <!ENTITY tetrasemeict "[tetrasemeict]" > <!ENTITY tetrasemepause "[tetrasemepause]" > <!ENTITY triseme "[triseme]" > <!ENTITY trisemepause "[trisemepause]" > <!ENTITY uprime "[uprime]" > 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
+<teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>A Dictionary of Greek and Roman Antiquities (1890)</title>
-                <editor role="editor">William Smith, LLD</editor>
-                <editor role="editor">William Wayte</editor>
-                <editor role="editor">G. E. Marindin</editor>
+                <title>A Dictionary of Greek and Roman Antiquities</title>
+                <editor>William Smith</editor>
+                <editor>William Wayte</editor>
+                <editor>G. E. Marindin</editor>
                 <sponsor>Perseus Project, Tufts University</sponsor>
                 <principal>Gregory Crane</principal>
                 <respStmt>
@@ -21,20 +22,29 @@
                 <publisher>Trustees of Tufts University</publisher>
                 <pubPlace>Medford, MA</pubPlace>
                 <authority>Perseus Project</authority>
-                <date type="release">2004-07-20</date>
+                <date type="release" when="2004-07-20">Perseus 3.0</date>
+                <idno type="filename">viaf88890045.001.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+                        under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</licence></availability>
             </publicationStmt> <sourceDesc>
                 <biblStruct>
                     <monogr>
                         <title>A Dictionary of Greek and Roman Antiquities</title>
-                        <editor role="editor">William Smith, LLD</editor>
-                        <editor role="editor">William Wayte</editor>
-                        <editor role="editor">G. E. Marindin</editor>
+                        <editor>William Smith</editor>
+                        <editor>William Wayte</editor>
+                        <editor>G. E. Marindin</editor>
+                        <edition>3rd edition</edition>
                         <imprint>
-                            <pubPlace>Albemarle Street, London</pubPlace>
+                            <pubPlace>London</pubPlace>
                             <publisher>John Murray</publisher>
-                            <date>1890</date>
+                            <date>1890-1891</date>
+                            <biblScope unit="volume">1-2</biblScope>
                         </imprint>
-                    </monogr>
+                    </monogr>                   
+                    <ref target="https://hdl.handle.net/2027/mdp.39015069901745" n="Volume 1">HathiTrust</ref>
+                    <ref target="https://archive.org/details/adictionarygree01smitgoog" n="Volume 2">Internet Archive</ref>
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
@@ -52,13 +62,13 @@
         </encodingDesc>
         <profileDesc>
             <langUsage>
-                <language ident="en">English </language>
-                <language ident="la">Latin </language>
-                <language ident="greek">Greek </language>
-                <language ident="fr">French </language>
-                <language ident="it">Italian </language>
-                <language ident="es">Spanish </language>
-                <language ident="he">Hebrew </language>
+                <language ident="en">English</language>
+                <language ident="la">Latin</language>
+                <language ident="greek">Greek</language>
+                <language ident="fr">French</language>
+                <language ident="it">Italian</language>
+                <language ident="es">Spanish</language>
+                <language ident="he">Hebrew</language>
             </langUsage>
         </profileDesc>
     </teiHeader>
@@ -274145,4 +274155,3 @@
             </div>
         </body>
     </text>
-</TEI>
